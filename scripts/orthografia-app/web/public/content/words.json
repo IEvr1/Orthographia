@@ -1,0 +1,656 @@
+{
+  "version": 1,
+  "grade": 3,
+  "words": [
+    {
+      "id": "word-001",
+      "word": "ήλιος",
+      "grade": 3,
+      "axis": "R",
+      "hintSentence": "Ο ήλιος λάμπει ψηλά στον ουρανό.",
+      "feedbackRule": "Ίδια ρίζα με ήλιο· -ος στο τέλος.",
+      "audioFile": "audio/ilios.wav",
+      "morphemes": {
+        "root": "ήλι",
+        "suffix": "ος"
+      }
+    },
+    {
+      "id": "word-002",
+      "word": "θάλασσα",
+      "grade": 3,
+      "axis": "R",
+      "hintSentence": "Η θάλασσα είναι γαλάζια το καλοκαίρι.",
+      "feedbackRule": "Διπλό σ στο τέλος της λέξης.",
+      "audioFile": "audio/thalassa.wav",
+      "morphemes": {
+        "root": "θαλασσ",
+        "suffix": "α"
+      }
+    },
+    {
+      "id": "word-003",
+      "word": "σχολείο",
+      "grade": 3,
+      "axis": "R",
+      "hintSentence": "Πηγαίνω στο σχολείο κάθε πρωί.",
+      "feedbackRule": "Ρίζα σχολ- + -είο.",
+      "audioFile": "audio/scholeio.wav",
+      "morphemes": {
+        "root": "σχολ",
+        "suffix": "είο"
+      }
+    },
+    {
+      "id": "word-004",
+      "word": "βιβλίο",
+      "grade": 3,
+      "axis": "R",
+      "hintSentence": "Διάβασα ένα ωραίο βιβλίο.",
+      "feedbackRule": "Διπλό β στην αρχή.",
+      "audioFile": "audio/vivlio.wav",
+      "morphemes": {
+        "root": "βιβλ",
+        "suffix": "ίο"
+      }
+    },
+    {
+      "id": "word-005",
+      "word": "φίλος",
+      "grade": 3,
+      "axis": "R",
+      "hintSentence": "Ο καλύτερός μου φίλος μένει δίπλα.",
+      "feedbackRule": "Φίλ- + -ος.",
+      "audioFile": "audio/filos.wav",
+      "morphemes": {
+        "root": "φίλ",
+        "suffix": "ος"
+      }
+    },
+    {
+      "id": "word-006",
+      "word": "γάτα",
+      "grade": 3,
+      "axis": "R",
+      "hintSentence": "Η γάτα κοιμάται στον καναπέ.",
+      "feedbackRule": "Γάτ- + -α.",
+      "audioFile": "audio/gata.wav",
+      "morphemes": {
+        "root": "γάτ",
+        "suffix": "α"
+      }
+    },
+    {
+      "id": "word-007",
+      "word": "σκύλος",
+      "grade": 3,
+      "axis": "R",
+      "hintSentence": "Ο σκύλος μας τρέχει στην αυλή.",
+      "feedbackRule": "Σκύλ- + -ος.",
+      "audioFile": "audio/skylos.wav",
+      "morphemes": {
+        "root": "σκύλ",
+        "suffix": "ος"
+      }
+    },
+    {
+      "id": "word-008",
+      "word": "ποτάμι",
+      "grade": 3,
+      "axis": "R",
+      "hintSentence": "Το ποτάμι ρέει γρήγορα.",
+      "feedbackRule": "Ποτ- + -άμι.",
+      "audioFile": "audio/potami.wav",
+      "morphemes": {
+        "root": "ποτ",
+        "suffix": "άμι"
+      }
+    },
+    {
+      "id": "word-009",
+      "word": "βουνό",
+      "grade": 3,
+      "axis": "R",
+      "hintSentence": "Το βουνό έχει χιόνι το χειμώνα.",
+      "feedbackRule": "Βουν- + -ό.",
+      "audioFile": "audio/vouno.wav",
+      "morphemes": {
+        "root": "βουν",
+        "suffix": "ό"
+      }
+    },
+    {
+      "id": "word-010",
+      "word": "λουλούδι",
+      "grade": 3,
+      "axis": "R",
+      "hintSentence": "Μύρισε το κόκκινο λουλούδι.",
+      "feedbackRule": "Διπλό λ και διπλό ού.",
+      "audioFile": "audio/louloudi.wav",
+      "morphemes": {
+        "root": "λουλουδ",
+        "suffix": "ι"
+      }
+    },
+    {
+      "id": "word-011",
+      "word": "κήπος",
+      "grade": 3,
+      "axis": "R",
+      "hintSentence": "Παίζουμε στον κήπο του σπιτιού.",
+      "feedbackRule": "Κήπ- + -ος (τελικό σ).",
+      "audioFile": "audio/kipos.wav",
+      "morphemes": {
+        "root": "κήπ",
+        "suffix": "ος"
+      }
+    },
+    {
+      "id": "word-012",
+      "word": "ψωμί",
+      "grade": 3,
+      "axis": "R",
+      "hintSentence": "Φάγαμε φρέσκο ψωμί στο πρωινό.",
+      "feedbackRule": "Ψωμ- + -ί.",
+      "audioFile": "audio/psomi.wav",
+      "morphemes": {
+        "root": "ψωμ",
+        "suffix": "ί"
+      }
+    },
+    {
+      "id": "word-013",
+      "word": "γάλα",
+      "grade": 3,
+      "axis": "R",
+      "hintSentence": "Ήπιε γάλα πριν κοιμηθεί.",
+      "feedbackRule": "Γάλ- + -α.",
+      "audioFile": "audio/gala.wav",
+      "morphemes": {
+        "root": "γάλ",
+        "suffix": "α"
+      }
+    },
+    {
+      "id": "word-014",
+      "word": "μήλο",
+      "grade": 3,
+      "axis": "R",
+      "hintSentence": "Έφαγα ένα κόκκινο μήλο.",
+      "feedbackRule": "Μήλ- + -ο.",
+      "audioFile": "audio/milo.wav",
+      "morphemes": {
+        "root": "μήλ",
+        "suffix": "ο"
+      }
+    },
+    {
+      "id": "word-015",
+      "word": "πορτοκάλι",
+      "grade": 3,
+      "axis": "R",
+      "hintSentence": "Το πορτοκάλι είναι γλυκό.",
+      "feedbackRule": "Πορτοκαλ- + -ι.",
+      "audioFile": "audio/portokali.wav",
+      "morphemes": {
+        "root": "πορτοκαλ",
+        "suffix": "ι"
+      }
+    },
+    {
+      "id": "word-016",
+      "word": "χειμώνας",
+      "grade": 3,
+      "axis": "R",
+      "hintSentence": "Τον χειμώνα βρέχει πολύ.",
+      "feedbackRule": "Χειμων- + -ας.",
+      "audioFile": "audio/cheimonas.wav",
+      "morphemes": {
+        "root": "χειμων",
+        "suffix": "ας"
+      }
+    },
+    {
+      "id": "word-017",
+      "word": "καλοκαίρι",
+      "grade": 3,
+      "axis": "R",
+      "hintSentence": "Το καλοκαίρι πάμε στη θάλασσα.",
+      "feedbackRule": "Καλοκαιρ- + -ι.",
+      "audioFile": "audio/kalokairi.wav",
+      "morphemes": {
+        "root": "καλοκαιρ",
+        "suffix": "ι"
+      }
+    },
+    {
+      "id": "word-018",
+      "word": "άνεμος",
+      "grade": 3,
+      "axis": "R",
+      "hintSentence": "Ο άνεμος φύσηξε δυνατά.",
+      "feedbackRule": "Ανεμ- + -ος.",
+      "audioFile": "audio/anemos.wav",
+      "morphemes": {
+        "root": "ανεμ",
+        "suffix": "ος"
+      }
+    },
+    {
+      "id": "word-019",
+      "word": "βροχή",
+      "grade": 3,
+      "axis": "R",
+      "hintSentence": "Η βροχή έπεσε όλη μέρα.",
+      "feedbackRule": "Βροχ- + -ή.",
+      "audioFile": "audio/vrochi.wav",
+      "morphemes": {
+        "root": "βροχ",
+        "suffix": "ή"
+      }
+    },
+    {
+      "id": "word-020",
+      "word": "χιόνι",
+      "grade": 3,
+      "axis": "R",
+      "hintSentence": "Έπεσε πολύ χιόνι χθες.",
+      "feedbackRule": "Χιον- + -ι.",
+      "audioFile": "audio/chioni.wav",
+      "morphemes": {
+        "root": "χιον",
+        "suffix": "ι"
+      }
+    },
+    {
+      "id": "word-021",
+      "word": "αετός",
+      "grade": 3,
+      "axis": "R",
+      "hintSentence": "Ο αετός πέταξε ψηλά.",
+      "feedbackRule": "Αετ- + -ός.",
+      "audioFile": "audio/aetos.wav",
+      "morphemes": {
+        "root": "αετ",
+        "suffix": "ός"
+      }
+    },
+    {
+      "id": "word-022",
+      "word": "πεταλούδα",
+      "grade": 3,
+      "axis": "R",
+      "hintSentence": "Μια πεταλούδα κάθισε στο λουλούδι.",
+      "feedbackRule": "Πεταλουδ- + -α.",
+      "audioFile": "audio/petalouda.wav",
+      "morphemes": {
+        "root": "πεταλουδ",
+        "suffix": "α"
+      }
+    },
+    {
+      "id": "word-023",
+      "word": "δέντρο",
+      "grade": 3,
+      "axis": "R",
+      "hintSentence": "Το δέντρο έχει πολλά φύλλα.",
+      "feedbackRule": "Δέντρ- + -ο.",
+      "audioFile": "audio/dentro.wav",
+      "morphemes": {
+        "root": "δέντρ",
+        "suffix": "ο"
+      }
+    },
+    {
+      "id": "word-024",
+      "word": "φύλλο",
+      "grade": 3,
+      "axis": "R",
+      "hintSentence": "Έπεσε ένα κίτρινο φύλλο.",
+      "feedbackRule": "Φυλλ- + -ο (διπλό λ).",
+      "audioFile": "audio/fyllo.wav",
+      "morphemes": {
+        "root": "φυλλ",
+        "suffix": "ο"
+      }
+    },
+    {
+      "id": "word-025",
+      "word": "σπίτι",
+      "grade": 3,
+      "axis": "R",
+      "hintSentence": "Το σπίτι μας είναι μπλε.",
+      "feedbackRule": "Σπιτ- + -ι.",
+      "audioFile": "audio/spiti.wav",
+      "morphemes": {
+        "root": "σπιτ",
+        "suffix": "ι"
+      }
+    },
+    {
+      "id": "word-026",
+      "word": "παράθυρο",
+      "grade": 3,
+      "axis": "R",
+      "hintSentence": "Άνοιξε το παράθυρο για αέρα.",
+      "feedbackRule": "Παραθυρ- + -ο.",
+      "audioFile": "audio/parathyro.wav",
+      "morphemes": {
+        "root": "παραθυρ",
+        "suffix": "ο"
+      }
+    },
+    {
+      "id": "word-027",
+      "word": "πόρτα",
+      "grade": 3,
+      "axis": "R",
+      "hintSentence": "Χτύπησε στην πόρτα.",
+      "feedbackRule": "Πορτ- + -α.",
+      "audioFile": "audio/porta.wav",
+      "morphemes": {
+        "root": "πορτ",
+        "suffix": "α"
+      }
+    },
+    {
+      "id": "word-028",
+      "word": "τραπέζι",
+      "grade": 3,
+      "axis": "R",
+      "hintSentence": "Βάλαμε τα πιάτα στο τραπέζι.",
+      "feedbackRule": "Τραπεζ- + -ι.",
+      "audioFile": "audio/trapezi.wav",
+      "morphemes": {
+        "root": "τραπεζ",
+        "suffix": "ι"
+      }
+    },
+    {
+      "id": "word-029",
+      "word": "καρέκλα",
+      "grade": 3,
+      "axis": "R",
+      "hintSentence": "Κάθισε στην καρέκλα.",
+      "feedbackRule": "Καρεκλ- + -α.",
+      "audioFile": "audio/karekla.wav",
+      "morphemes": {
+        "root": "καρεκλ",
+        "suffix": "α"
+      }
+    },
+    {
+      "id": "word-030",
+      "word": "κρεβάτι",
+      "grade": 3,
+      "axis": "R",
+      "hintSentence": "Πήγε για ύπνο στο κρεβάτι.",
+      "feedbackRule": "Κρεβατ- + -ι.",
+      "audioFile": "audio/krevati.wav",
+      "morphemes": {
+        "root": "κρεβατ",
+        "suffix": "ι"
+      }
+    },
+    {
+      "id": "word-031",
+      "word": "μάθημα",
+      "grade": 3,
+      "axis": "R",
+      "hintSentence": "Το μάθημα των μαθηματικών ξεκίνησε.",
+      "feedbackRule": "Μαθημ- + -α.",
+      "audioFile": "audio/mathima.wav",
+      "morphemes": {
+        "root": "μαθημ",
+        "suffix": "α"
+      }
+    },
+    {
+      "id": "word-032",
+      "word": "τετράδιο",
+      "grade": 3,
+      "axis": "R",
+      "hintSentence": "Έγραψα στο τετράδιό μου.",
+      "feedbackRule": "Τετραδ- + -ιο.",
+      "audioFile": "audio/tetradio.wav",
+      "morphemes": {
+        "root": "τετραδ",
+        "suffix": "ιο"
+      }
+    },
+    {
+      "id": "word-033",
+      "word": "μολύβι",
+      "grade": 3,
+      "axis": "R",
+      "hintSentence": "Έσπασε το μολύβι μου.",
+      "feedbackRule": "Μολυβ- + -ι.",
+      "audioFile": "audio/molyvi.wav",
+      "morphemes": {
+        "root": "μολυβ",
+        "suffix": "ι"
+      }
+    },
+    {
+      "id": "word-034",
+      "word": "γόμα",
+      "grade": 3,
+      "axis": "R",
+      "hintSentence": "Διόρθωσε με τη γόμα το λάθος.",
+      "feedbackRule": "Γόμ- + -α.",
+      "audioFile": "audio/goma.wav",
+      "morphemes": {
+        "root": "γόμ",
+        "suffix": "α"
+      }
+    },
+    {
+      "id": "word-035",
+      "word": "κραγιόνι",
+      "grade": 3,
+      "axis": "R",
+      "hintSentence": "Ζωγράφισε με κόκκινο κραγιόνι.",
+      "feedbackRule": "Κραγιον- + -ι.",
+      "audioFile": "audio/kraggioni.wav",
+      "morphemes": {
+        "root": "κραγιον",
+        "suffix": "ι"
+      }
+    },
+    {
+      "id": "word-036",
+      "word": "ποδήλατο",
+      "grade": 3,
+      "axis": "R",
+      "hintSentence": "Πήγα σχολείο με ποδήλατο.",
+      "feedbackRule": "Ποδηλατ- + -ο.",
+      "audioFile": "audio/podilato.wav",
+      "morphemes": {
+        "root": "ποδηλατ",
+        "suffix": "ο"
+      }
+    },
+    {
+      "id": "word-037",
+      "word": "αυτοκίνητο",
+      "grade": 3,
+      "axis": "R",
+      "hintSentence": "Το αυτοκίνητο σταμάτησε στο φανάρι.",
+      "feedbackRule": "Αυτοκινητ- + -ο.",
+      "audioFile": "audio/aftokinito.wav",
+      "morphemes": {
+        "root": "αυτοκινητ",
+        "suffix": "ο"
+      }
+    },
+    {
+      "id": "word-038",
+      "word": "λεωφορείο",
+      "grade": 3,
+      "axis": "R",
+      "hintSentence": "Πήραμε το λεωφορείο για την πόλη.",
+      "feedbackRule": "Λεωφορ- + -είο.",
+      "audioFile": "audio/leoforeio.wav",
+      "morphemes": {
+        "root": "λεωφορ",
+        "suffix": "είο"
+      }
+    },
+    {
+      "id": "word-039",
+      "word": "γέφυρα",
+      "grade": 3,
+      "axis": "R",
+      "hintSentence": "Περάσαμε τη γέφυρα πάνω από το ποτάμι.",
+      "feedbackRule": "Γεφυρ- + -α.",
+      "audioFile": "audio/gefyra.wav",
+      "morphemes": {
+        "root": "γεφυρ",
+        "suffix": "α"
+      }
+    },
+    {
+      "id": "word-040",
+      "word": "πλατεία",
+      "grade": 3,
+      "axis": "R",
+      "hintSentence": "Παίξαμε στην πλατεία του χωριού.",
+      "feedbackRule": "Πλατει- + -α.",
+      "audioFile": "audio/plateia.wav",
+      "morphemes": {
+        "root": "πλατει",
+        "suffix": "α"
+      }
+    },
+    {
+      "id": "word-041",
+      "word": "αγορά",
+      "grade": 3,
+      "axis": "R",
+      "hintSentence": "Πήγαμε στην αγορά για ψωμί.",
+      "feedbackRule": "Αγορ- + -ά.",
+      "audioFile": "audio/agora.wav",
+      "morphemes": {
+        "root": "αγορ",
+        "suffix": "ά"
+      }
+    },
+    {
+      "id": "word-042",
+      "word": "νοσοκομείο",
+      "grade": 3,
+      "axis": "R",
+      "hintSentence": "Ο γιατρός δούλεψε στο νοσοκομείο.",
+      "feedbackRule": "Νοσοκομ- + -είο.",
+      "audioFile": "audio/nosokomeio.wav",
+      "morphemes": {
+        "root": "νοσοκομ",
+        "suffix": "είο"
+      }
+    },
+    {
+      "id": "word-043",
+      "word": "γιατρός",
+      "grade": 3,
+      "axis": "R",
+      "hintSentence": "Ο γιατρός μας εξέτασε.",
+      "feedbackRule": "Γιατρ- + -ός.",
+      "audioFile": "audio/giatros.wav",
+      "morphemes": {
+        "root": "γιατρ",
+        "suffix": "ός"
+      }
+    },
+    {
+      "id": "word-044",
+      "word": "δάσκαλος",
+      "grade": 3,
+      "axis": "R",
+      "hintSentence": "Η δασκάλα μας διάβασε μια ιστορία.",
+      "feedbackRule": "Δασκαλ- + -ος.",
+      "audioFile": "audio/daskalos.wav",
+      "morphemes": {
+        "root": "δασκαλ",
+        "suffix": "ος"
+      }
+    },
+    {
+      "id": "word-045",
+      "word": "μαθητής",
+      "grade": 3,
+      "axis": "R",
+      "hintSentence": "Ο μαθητής απάντησε σωστά.",
+      "feedbackRule": "Μαθητ- + -ής.",
+      "audioFile": "audio/mathitis.wav",
+      "morphemes": {
+        "root": "μαθητ",
+        "suffix": "ής"
+      }
+    },
+    {
+      "id": "word-046",
+      "word": "γονιός",
+      "grade": 3,
+      "axis": "R",
+      "hintSentence": "Ο γονιός μου με πήγε στο σχολείο.",
+      "feedbackRule": "Γον- + -ιός.",
+      "audioFile": "audio/gonios.wav",
+      "morphemes": {
+        "root": "γον",
+        "suffix": "ιός"
+      }
+    },
+    {
+      "id": "word-047",
+      "word": "αδελφός",
+      "grade": 3,
+      "axis": "R",
+      "hintSentence": "Η αδελφή μου παίζει μαζί μου.",
+      "feedbackRule": "Αδελφ- + -ός.",
+      "audioFile": "audio/adelphos.wav",
+      "morphemes": {
+        "root": "αδελφ",
+        "suffix": "ός"
+      }
+    },
+    {
+      "id": "word-048",
+      "word": "γειτονιά",
+      "grade": 3,
+      "axis": "R",
+      "hintSentence": "Η γειτονιά μας είναι ήσυχη.",
+      "feedbackRule": "Γειτον- + -ιά.",
+      "audioFile": "audio/geitonia.wav",
+      "morphemes": {
+        "root": "γειτον",
+        "suffix": "ιά"
+      }
+    },
+    {
+      "id": "word-049",
+      "word": "χαρά",
+      "grade": 3,
+      "axis": "R",
+      "hintSentence": "Ένιωσα χαρά όταν κέρδισα.",
+      "feedbackRule": "Χαρ- + -ά.",
+      "audioFile": "audio/chara.wav",
+      "morphemes": {
+        "root": "χαρ",
+        "suffix": "ά"
+      }
+    },
+    {
+      "id": "word-050",
+      "word": "ελπίδα",
+      "grade": 3,
+      "axis": "R",
+      "hintSentence": "Έχω ελπίδα ότι θα τα καταφέρω.",
+      "feedbackRule": "Ελπιδ- + -α.",
+      "audioFile": "audio/elpida.wav",
+      "morphemes": {
+        "root": "ελπιδ",
+        "suffix": "α"
+      }
+    }
+  ]
+}
