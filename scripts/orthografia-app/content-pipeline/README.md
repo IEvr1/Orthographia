@@ -2,20 +2,46 @@
 
 Παράγει `words.json` και mp3 ήχο για την PWA.
 
-## 1. Seed λέξεων
+## Workflow
 
 ```powershell
 cd scripts/orthografia-app/content-pipeline
+
+# 1. (Προαιρετικό) Λήψη HelexKids CSV → inputs/helexkids/
+#    Δες inputs/README.md — CC BY-NC 4.0, non-commercial
+
+# 2. Παραγωγή λεξικού (χειροκίνητο seed + HelexKids αν υπάρχουν CSV)
+..\..\..\.venv\Scripts\python.exe generate_seed.py
+
+# 3. Ήχος μόνο για νέες λέξεις (όχι πλήρες TTS run)
+..\..\..\.venv\Scripts\python.exe generate_audio.py
+
+# Εναλλακτικά, μόνο HelexKids import:
+..\..\..\.venv\Scripts\python.exe import_helexkids.py
+```
+
+### HelexKids import
+
+1. Κατέβασε λίστες από [Wordlist Tool](https://gradience.lit.auth.gr/wordlist_tool/) ή HelexKids 2.0 Excel export.
+2. Αποθήκευσε σε `inputs/helexkids/` (π.χ. `grade1.csv`, `grade2.csv`).
+3. Τρέξε `import_helexkids.py` ή `generate_seed.py` (κάνει merge αυτόματα).
+
+- **Άδεια:** CC BY-NC 4.0 — μη εμπορική χρήση (OK για αυτή την εφαρμογή).
+- **Φίλτρα:** ΚΝΕ, ουσιαστικά/επίθετα/ρήματα, hints με `___` (χωρίς διαρροή ορθογραφίας).
+- **Όριο:** ~90 λέξεις/τάξη (ρυθμιζόμενο με `--cap`).
+- **Δείγμα:** `inputs/helexkids/sample_grade1.csv` για smoke test.
+
+Αν δεν υπάρχουν CSV, το import τερματίζει με οδηγίες (exit 0).
+
+## 1. Seed λέξεων
+
+```powershell
 ..\..\..\.venv\Scripts\python.exe generate_seed.py
 ```
 
-Παράγει `words.json` v2 (Β΄/Γ΄/Δ΄) και το συγχρονίζει στο `web/public/content/`.
+Παράγει `words.json` v2 (Α΄/Β΄/Γ΄/Δ΄) και το συγχρονίζει στο `web/public/content/`.
 
 Για νέες λέξεις χωρίς mp3, τρέξε αργότερα `generate_audio.py` (χωρίς `--force` δημιουργεί μόνο τα νέα).
-
-### HelexKids import (προαιρετικό)
-
-Δες `inputs/README.md` και `import_helexkids.py`.
 
 ## 2. Google Cloud TTS — ρύθμιση (μία φορά)
 
@@ -51,10 +77,10 @@ GOOGLE_TTS_API_KEY=AIza...το-κλειδί-σου
 .venv\Scripts\pip.exe install -r scripts/orthografia-app/content-pipeline/requirements.txt
 
 cd scripts/orthografia-app/content-pipeline
-..\..\..\.venv\Scripts\python.exe generate_audio.py --force
+..\..\..\.venv\Scripts\python.exe generate_audio.py
 ```
 
-Το `--force` ξαναφτιάχνει όλα τα mp3 (χρειάζεται μετά την πρώτη ρύθμιση για να αντικαταστήσει τα silent wav).
+Χωρίς `--force` δημιουργεί mp3 μόνο για λέξεις που δεν έχουν ήχο. Με `--force` ξαναφτιάχνει όλα.
 
 ## 4. Τρέξε την εφαρμογή
 
@@ -72,7 +98,8 @@ npm run dev
 | `403 API key not valid` | Λάθος κλειδί ή API δεν enabled |
 | `403 Cloud Text-to-Speech API has not been used` | Enable το API (Βήμα Α.3) |
 | `400 billing` | Ενεργοποίησε billing στο project |
-| Δεν ακούς τίποτα | Τρέξε `generate_audio.py --force` και refresh browser |
+| Δεν ακούς τίποτα | Τρέξε `generate_audio.py` για νέες λέξεις και refresh browser |
+| HelexKids: no new words | Έλεγξε στήλες word/grade/pos και φίλτρα ΚΝΕ |
 
 ## Azure (εναλλακτικά)
 

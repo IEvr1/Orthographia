@@ -1,6 +1,6 @@
 {
-  "version": 1,
-  "grade": 3,
+  "version": 2,
+  "grade": 0,
   "words": [
     {
       "word": "μαμά",
@@ -3424,6 +3424,136 @@
       "difficulty": 3,
       "ruleId": "tonos-basic",
       "id": "g4-050"
+    },
+    {
+      "id": "hk-g1-0001",
+      "word": "ήλιος",
+      "grade": 1,
+      "axis": "R",
+      "hintSentence": "Η λέξη ___ χρησιμοποιείται σε μια πρόταση για να ονομάσουμε κάτι.",
+      "feedbackRule": "ήλι- + -ος.",
+      "audioFile": "audio/ilios.mp3",
+      "morphemes": {
+        "root": "ήλι",
+        "suffix": "ος"
+      }
+    },
+    {
+      "id": "hk-g1-0002",
+      "word": "γάτα",
+      "grade": 1,
+      "axis": "R",
+      "hintSentence": "Γράφουμε τη λέξη ___ όταν μιλάμε για ένα αντικείμενο ή ιδέα.",
+      "feedbackRule": "γάτ- + -α.",
+      "audioFile": "audio/gata.mp3",
+      "morphemes": {
+        "root": "γάτ",
+        "suffix": "α"
+      }
+    },
+    {
+      "id": "hk-g1-0003",
+      "word": "σκύλος",
+      "grade": 1,
+      "axis": "R",
+      "hintSentence": "Στην πρόταση μπαίνει η λέξη ___.",
+      "feedbackRule": "σκύλ- + -ος.",
+      "audioFile": "audio/skylos.mp3",
+      "morphemes": {
+        "root": "σκύλ",
+        "suffix": "ος"
+      }
+    },
+    {
+      "id": "hk-g1-0004",
+      "word": "μήλο",
+      "grade": 1,
+      "axis": "R",
+      "hintSentence": "Η λέξη ___ χρησιμοποιείται σε μια πρόταση για να ονομάσουμε κάτι.",
+      "feedbackRule": "μήλ- + -ο.",
+      "audioFile": "audio/milo.mp3",
+      "morphemes": {
+        "root": "μήλ",
+        "suffix": "ο"
+      }
+    },
+    {
+      "id": "hk-g1-0005",
+      "word": "νερό",
+      "grade": 1,
+      "axis": "R",
+      "hintSentence": "Γράφουμε τη λέξη ___ όταν μιλάμε για ένα αντικείμενο ή ιδέα.",
+      "feedbackRule": "νερ- + -ό.",
+      "audioFile": "audio/nero.mp3",
+      "morphemes": {
+        "root": "νερ",
+        "suffix": "ό"
+      }
+    },
+    {
+      "id": "hk-g1-0006",
+      "word": "σπίτι",
+      "grade": 1,
+      "axis": "R",
+      "hintSentence": "Στην πρόταση μπαίνει η λέξη ___.",
+      "feedbackRule": "σπίτ- + -ι.",
+      "audioFile": "audio/spiti.mp3",
+      "morphemes": {
+        "root": "σπίτ",
+        "suffix": "ι"
+      }
+    },
+    {
+      "id": "hk-g1-0007",
+      "word": "βιβλίο",
+      "grade": 1,
+      "axis": "R",
+      "hintSentence": "Η λέξη ___ χρησιμοποιείται σε μια πρόταση για να ονομάσουμε κάτι.",
+      "feedbackRule": "βιβλί- + -ο.",
+      "audioFile": "audio/vivlio.mp3",
+      "morphemes": {
+        "root": "βιβλί",
+        "suffix": "ο"
+      }
+    },
+    {
+      "id": "hk-g1-0008",
+      "word": "μολύβι",
+      "grade": 1,
+      "axis": "R",
+      "hintSentence": "Γράφουμε τη λέξη ___ όταν μιλάμε για ένα αντικείμενο ή ιδέα.",
+      "feedbackRule": "μολύβ- + -ι.",
+      "audioFile": "audio/molyvi.mp3",
+      "morphemes": {
+        "root": "μολύβ",
+        "suffix": "ι"
+      }
+    },
+    {
+      "id": "hk-g1-0009",
+      "word": "χέρι",
+      "grade": 1,
+      "axis": "R",
+      "hintSentence": "Στην πρόταση μπαίνει η λέξη ___.",
+      "feedbackRule": "χέρ- + -ι.",
+      "audioFile": "audio/cheri.mp3",
+      "morphemes": {
+        "root": "χέρ",
+        "suffix": "ι"
+      }
+    },
+    {
+      "id": "hk-g1-0010",
+      "word": "πόδι",
+      "grade": 1,
+      "axis": "R",
+      "hintSentence": "Η λέξη ___ χρησιμοποιείται σε μια πρόταση για να ονομάσουμε κάτι.",
+      "feedbackRule": "πόδ- + -ι.",
+      "audioFile": "audio/podi.mp3",
+      "morphemes": {
+        "root": "πόδ",
+        "suffix": "ι"
+      }
     }
   ]
 }

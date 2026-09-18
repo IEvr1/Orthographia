@@ -7,6 +7,7 @@ import json
 import shutil
 from pathlib import Path
 
+from import_helexkids import INPUTS_DIR, append_helexkids, count_by_grade
 from word_lists import GRADE_2, GRADE_3_EXTRA, GRADE_4
 
 OUTPUT_DIR = Path(__file__).resolve().parent / "outputs"
@@ -545,9 +546,9 @@ def build_words() -> list[dict]:
 
 def main() -> None:
     words = build_words()
-    by_grade = {2: 0, 3: 0, 4: 0}
-    for w in words:
-        by_grade[w["grade"]] = by_grade.get(w["grade"], 0) + 1
+    seed_count = len(words)
+    words, hk_counts, imported = append_helexkids(words, INPUTS_DIR)
+    by_grade = count_by_grade(words)
 
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     payload = {"version": 2, "grade": 0, "words": words}
@@ -556,9 +557,16 @@ def main() -> None:
     WEB_WORDS.parent.mkdir(parents=True, exist_ok=True)
     WEB_WORDS.write_text(text, encoding="utf-8")
 
-    print(f"Wrote {len(words)} words to {OUTPUT_FILE}")
+    print(f"Wrote {len(words)} words to {OUTPUT_FILE} ({seed_count} seed + {imported} HelexKids)")
     print(f"Synced to {WEB_WORDS}")
-    print(f"By grade: G2={by_grade.get(2, 0)}, G3={by_grade.get(3, 0)}, G4={by_grade.get(4, 0)}")
+    print(
+        f"By grade: G1={by_grade[1]}, G2={by_grade[2]}, G3={by_grade[3]}, G4={by_grade[4]}"
+    )
+    if imported:
+        print(
+            f"HelexKids added: G1={hk_counts[1]}, G2={hk_counts[2]}, "
+            f"G3={hk_counts[3]}, G4={hk_counts[4]}"
+        )
 
 
 if __name__ == "__main__":
