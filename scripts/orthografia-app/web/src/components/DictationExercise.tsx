@@ -120,7 +120,7 @@ export function DictationExercise({ words, onComplete, onQuit }: DictationExerci
         <AudioPlayer src={audioSrc} autoPlay key={current.id} />
         <p className="hint-sentence">
           <span className="hint-label">Πρόταση βοήθειας</span>
-          {maskWordInHint(current.hintSentence, current.word)
+          {maskWordInHint(current.hintSentence, current.word, current.morphemes.root)
             .split("___")
             .map((part, i, parts) => (
               <Fragment key={i}>
