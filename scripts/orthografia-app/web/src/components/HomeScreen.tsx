@@ -1,10 +1,27 @@
+const GRADE_LABELS: Record<number, string> = {
+  1: "Α΄",
+  2: "Β΄",
+  3: "Γ΄",
+  4: "Δ΄",
+};
+
 interface HomeScreenProps {
   onStart: () => void;
   masteredCount: number;
   totalWords: number;
+  selectedGrade: number;
+  availableGrades: Set<number>;
+  onGradeChange: (grade: number) => void;
 }
 
-export function HomeScreen({ onStart, masteredCount, totalWords }: HomeScreenProps) {
+export function HomeScreen({
+  onStart,
+  masteredCount,
+  totalWords,
+  selectedGrade,
+  availableGrades,
+  onGradeChange,
+}: HomeScreenProps) {
   return (
     <main className="screen screen--home fade-in">
       <div className="hero">
@@ -16,18 +33,21 @@ export function HomeScreen({ onStart, masteredCount, totalWords }: HomeScreenPro
       <div className="grade-picker">
         <p className="section-label">Διάλεξε τάξη</p>
         <div className="grade-options">
-          <button type="button" className="grade-chip" disabled>
-            Α΄
-          </button>
-          <button type="button" className="grade-chip" disabled>
-            Β΄
-          </button>
-          <button type="button" className="grade-chip grade-chip--active">
-            Γ΄
-          </button>
-          <button type="button" className="grade-chip" disabled>
-            Δ΄
-          </button>
+          {[1, 2, 3, 4].map((grade) => {
+            const active = availableGrades.has(grade);
+            const selected = selectedGrade === grade;
+            return (
+              <button
+                key={grade}
+                type="button"
+                className={`grade-chip${selected ? " grade-chip--active" : ""}`}
+                disabled={!active}
+                onClick={() => active && onGradeChange(grade)}
+              >
+                {GRADE_LABELS[grade]}
+              </button>
+            );
+          })}
         </div>
       </div>
 

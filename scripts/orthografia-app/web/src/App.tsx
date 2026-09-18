@@ -1,10 +1,13 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
 import type { AppScreen, SessionSummary, WordEntry, WordsPayload } from "./types";
-import { buildDailySession } from "./lib/session";
+import { buildDailySession, gradesWithWords } from "./lib/session";
 import { getWordProgress, loadProgress } from "./lib/storage";
 import { DictationExercise } from "./components/DictationExercise";
 import { HomeScreen } from "./components/HomeScreen";
+import { RuleCard } from "./components/RuleCard";
 import { SessionSummary as SummaryScreen } from "./components/SessionSummary";
+
+const TONOS_RULE_KEY = "orthografia-seen-tonos-rule";
 
 export default function App() {
   const [screen, setScreen] = useState<AppScreen>("home");
@@ -12,6 +15,7 @@ export default function App() {
   const [sessionWords, setSessionWords] = useState<WordEntry[]>([]);
   const [summary, setSummary] = useState<SessionSummary | null>(null);
   const [loadError, setLoadError] = useState<string | null>(null);
+  const [selectedGrade, setSelectedGrade] = useState(3);
 
   useEffect(() => {
     fetch("/content/words.json")
@@ -19,22 +23,50 @@ export default function App() {
         if (!r.ok) throw new Error("Δεν βρέθηκε το words.json");
         return r.json() as Promise<WordsPayload>;
       })
-      .then((data) => setWords(data.words))
+      .then((data) => {
+        setWords(data.words);
+        const grades = gradesWithWords(data.words);
+        if (!grades.has(selectedGrade)) {
+          const defaultGrade = grades.has(3) ? 3 : [...grades].sort()[0];
+          if (defaultGrade != null) setSelectedGrade(defaultGrade);
+        }
+      })
       .catch((err: Error) => setLoadError(err.message));
   }, []);
 
+  const availableGrades = useMemo(() => gradesWithWords(words), [words]);
+
+  const gradeWords = useMemo(
+    () => words.filter((w) => w.grade === selectedGrade),
+    [words, selectedGrade]
+  );
+
   const masteredCount = useMemo(() => {
     const store = loadProgress();
-    return words.filter((w) => getWordProgress(store, w.id).mastered).length;
-  }, [words, screen]);
+    return gradeWords.filter((w) => getWordProgress(store, w.id).mastered).length;
+  }, [gradeWords, screen]);
 
-  const startSession = useCallback(() => {
+  const launchSession = useCallback(() => {
     const store = loadProgress();
-    const daily = buildDailySession(words, store);
+    const daily = buildDailySession(words, store, selectedGrade);
     setSessionWords(daily);
     setSummary(null);
     setScreen("exercise");
-  }, [words]);
+  }, [words, selectedGrade]);
+
+  const startSession = useCallback(() => {
+    const seenRule = localStorage.getItem(TONOS_RULE_KEY);
+    if (!seenRule) {
+      setScreen("rule");
+      return;
+    }
+    launchSession();
+  }, [launchSession]);
+
+  const handleRuleContinue = () => {
+    localStorage.setItem(TONOS_RULE_KEY, "1");
+    launchSession();
+  };
 
   const handleComplete = (s: SessionSummary) => {
     setSummary(s);
@@ -60,8 +92,16 @@ export default function App() {
   return (
     <div className="app">
       {screen === "home" && (
-        <HomeScreen onStart={startSession} masteredCount={masteredCount} totalWords={words.length} />
+        <HomeScreen
+          onStart={startSession}
+          masteredCount={masteredCount}
+          totalWords={gradeWords.length}
+          selectedGrade={selectedGrade}
+          availableGrades={availableGrades}
+          onGradeChange={setSelectedGrade}
+        />
       )}
+      {screen === "rule" && <RuleCard onContinue={handleRuleContinue} />}
       {screen === "exercise" && sessionWords.length > 0 && (
         <DictationExercise
           words={sessionWords}

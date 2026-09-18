@@ -9,6 +9,14 @@ cd scripts/orthografia-app/content-pipeline
 ..\..\..\.venv\Scripts\python.exe generate_seed.py
 ```
 
+Παράγει `words.json` v2 (Β΄/Γ΄/Δ΄) και το συγχρονίζει στο `web/public/content/`.
+
+Για νέες λέξεις χωρίς mp3, τρέξε αργότερα `generate_audio.py` (χωρίς `--force` δημιουργεί μόνο τα νέα).
+
+### HelexKids import (προαιρετικό)
+
+Δες `inputs/README.md` και `import_helexkids.py`.
+
 ## 2. Google Cloud TTS — ρύθμιση (μία φορά)
 
 ### Βήμα Α: Project & API

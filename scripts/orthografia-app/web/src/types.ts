@@ -20,6 +20,12 @@ export interface WordEntry {
   feedbackRule: string;
   audioFile: string;
   morphemes: Morphemes;
+  /** 1=easy within grade, 3=hard */
+  difficulty?: 1 | 2 | 3;
+  /** Needs hint context to disambiguate homophones */
+  homophone?: boolean;
+  /** Spelling rule id, e.g. "tonos-basic", "double-consonant" */
+  ruleId?: string;
 }
 
 export interface WordsPayload {
@@ -61,4 +67,4 @@ export interface SessionSummary {
   rewrites: number;
 }
 
-export type AppScreen = "home" | "exercise" | "summary";
+export type AppScreen = "home" | "rule" | "exercise" | "summary";

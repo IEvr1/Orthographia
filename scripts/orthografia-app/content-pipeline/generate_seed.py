@@ -1,25 +1,31 @@
 #!/usr/bin/env python3
-"""Generate words.json with 50 curated grade-3 KNE spelling words."""
+"""Generate words.json v2 with multi-grade KNE spelling words."""
 
 from __future__ import annotations
 
 import json
+import shutil
 from pathlib import Path
+
+from word_lists import GRADE_2, GRADE_3_EXTRA, GRADE_4
 
 OUTPUT_DIR = Path(__file__).resolve().parent / "outputs"
 OUTPUT_FILE = OUTPUT_DIR / "words.json"
+WEB_WORDS = Path(__file__).resolve().parent.parent / "web" / "public" / "content" / "words.json"
 
-# Hand-curated Γ΄ τάξη — ΚΝΕ only, each with hintSentence for context
-WORDS: list[dict] = [
+# Original 50 Γ΄ words (keep ids word-001..word-050 for existing progress)
+GRADE_3_BASE: list[dict] = [
     {
         "id": "word-001",
         "word": "ήλιος",
         "grade": 3,
-        "axis": "R",
+        "axis": "K",
         "hintSentence": "Ο ήλιος λάμπει ψηλά στον ουρανό.",
         "feedbackRule": "Ίδια ρίζα με ήλιο· -ος στο τέλος.",
         "audioFile": "audio/ilios.mp3",
         "morphemes": {"root": "ήλι", "suffix": "ος"},
+        "difficulty": 1,
+        "ruleId": "tonos-basic",
     },
     {
         "id": "word-002",
@@ -30,6 +36,7 @@ WORDS: list[dict] = [
         "feedbackRule": "Διπλό σ στο τέλος της λέξης.",
         "audioFile": "audio/thalassa.mp3",
         "morphemes": {"root": "θαλασσ", "suffix": "α"},
+        "ruleId": "double-consonant",
     },
     {
         "id": "word-003",
@@ -110,6 +117,7 @@ WORDS: list[dict] = [
         "feedbackRule": "Διπλό λ και διπλό ού.",
         "audioFile": "audio/louloudi.mp3",
         "morphemes": {"root": "λουλουδ", "suffix": "ι"},
+        "ruleId": "double-consonant",
     },
     {
         "id": "word-011",
@@ -185,21 +193,23 @@ WORDS: list[dict] = [
         "id": "word-018",
         "word": "άνεμος",
         "grade": 3,
-        "axis": "R",
+        "axis": "K",
         "hintSentence": "Ο άνεμος φύσηξε δυνατά.",
         "feedbackRule": "Ανεμ- + -ος.",
         "audioFile": "audio/anemos.mp3",
         "morphemes": {"root": "ανεμ", "suffix": "ος"},
+        "ruleId": "tonos-basic",
     },
     {
         "id": "word-019",
         "word": "βροχή",
         "grade": 3,
-        "axis": "R",
+        "axis": "K",
         "hintSentence": "Η βροχή έπεσε όλη μέρα.",
         "feedbackRule": "Βροχ- + -ή.",
         "audioFile": "audio/vrochi.mp3",
         "morphemes": {"root": "βροχ", "suffix": "ή"},
+        "ruleId": "tonos-basic",
     },
     {
         "id": "word-020",
@@ -215,11 +225,12 @@ WORDS: list[dict] = [
         "id": "word-021",
         "word": "αετός",
         "grade": 3,
-        "axis": "R",
+        "axis": "K",
         "hintSentence": "Ο αετός πέταξε ψηλά.",
         "feedbackRule": "Αετ- + -ός.",
         "audioFile": "audio/aetos.mp3",
         "morphemes": {"root": "αετ", "suffix": "ός"},
+        "ruleId": "tonos-basic",
     },
     {
         "id": "word-022",
@@ -250,6 +261,7 @@ WORDS: list[dict] = [
         "feedbackRule": "Φυλλ- + -ο (διπλό λ).",
         "audioFile": "audio/fyllo.mp3",
         "morphemes": {"root": "φυλλ", "suffix": "ο"},
+        "ruleId": "double-consonant",
     },
     {
         "id": "word-025",
@@ -275,11 +287,12 @@ WORDS: list[dict] = [
         "id": "word-027",
         "word": "πόρτα",
         "grade": 3,
-        "axis": "R",
+        "axis": "K",
         "hintSentence": "Χτύπησε στην πόρτα.",
         "feedbackRule": "Πορτ- + -α.",
         "audioFile": "audio/porta.mp3",
         "morphemes": {"root": "πορτ", "suffix": "α"},
+        "ruleId": "tonos-basic",
     },
     {
         "id": "word-028",
@@ -514,11 +527,38 @@ WORDS: list[dict] = [
 ]
 
 
+def assign_ids(words: list[dict], prefix: str) -> list[dict]:
+    result = []
+    for i, word in enumerate(words, start=1):
+        entry = dict(word)
+        entry["id"] = f"{prefix}-{i:03d}"
+        result.append(entry)
+    return result
+
+
+def build_words() -> list[dict]:
+    grade_2 = assign_ids(GRADE_2[:50], "g2")
+    grade_3_extra = assign_ids(GRADE_3_EXTRA[:100], "g3")
+    grade_4 = assign_ids(GRADE_4[:50], "g4")
+    return grade_2 + GRADE_3_BASE + grade_3_extra + grade_4
+
+
 def main() -> None:
+    words = build_words()
+    by_grade = {2: 0, 3: 0, 4: 0}
+    for w in words:
+        by_grade[w["grade"]] = by_grade.get(w["grade"], 0) + 1
+
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
-    payload = {"version": 1, "grade": 3, "words": WORDS}
-    OUTPUT_FILE.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
-    print(f"Wrote {len(WORDS)} words to {OUTPUT_FILE}")
+    payload = {"version": 2, "grade": 0, "words": words}
+    text = json.dumps(payload, ensure_ascii=False, indent=2)
+    OUTPUT_FILE.write_text(text, encoding="utf-8")
+    WEB_WORDS.parent.mkdir(parents=True, exist_ok=True)
+    WEB_WORDS.write_text(text, encoding="utf-8")
+
+    print(f"Wrote {len(words)} words to {OUTPUT_FILE}")
+    print(f"Synced to {WEB_WORDS}")
+    print(f"By grade: G2={by_grade.get(2, 0)}, G3={by_grade.get(3, 0)}, G4={by_grade.get(4, 0)}")
 
 
 if __name__ == "__main__":
