@@ -108,8 +108,21 @@ export async function migrateProgressOnSignIn(auth: ProgressAuth & { userId: str
 
   const profileId = auth.profileId ?? getActiveProfileId();
   const local = loadProgress(profileId);
-  const remote = await fetchRemoteProgress(auth);
+  const remote = await fetchRemoteProgress({ ...auth, profileId });
   const merged = remote ? mergeProgressStores(local, remote) : local;
   saveProgress(importProgressStore(merged, profileId), profileId);
-  await syncProgressToServer(auth);
+  await syncProgressToServer({ ...auth, profileId });
+}
+
+/** Migrate default progress and each family child profile after sign-in. */
+export async function migrateAllProfilesOnSignIn(
+  auth: ProgressAuth & { userId: string },
+  profileIds: string[],
+): Promise<void> {
+  if (!isProgressSyncAvailable()) return;
+
+  const targets = profileIds.length > 0 ? profileIds : [null];
+  for (const profileId of targets) {
+    await migrateProgressOnSignIn({ ...auth, profileId });
+  }
 }

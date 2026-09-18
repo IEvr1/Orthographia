@@ -2,6 +2,7 @@ import { useCallback, useMemo, useState } from "react";
 import type { SessionSummary, WordEntry } from "../types";
 import { buildChoiceOptions } from "../lib/choiceOptions";
 import { loadProgress, recordAttempt, saveProgress } from "../lib/storage";
+import { DifficultyBadge } from "./DifficultyBadge";
 
 interface ChoiceExerciseProps {
   words: WordEntry[];
@@ -64,6 +65,7 @@ export function ChoiceExercise({ words, allWords, onComplete, onQuit }: ChoiceEx
         </button>
         <p className="progress-bar-label">
           Επιλογή {index + 1} από {words.length}
+          <DifficultyBadge word={current} />
         </p>
       </header>
 

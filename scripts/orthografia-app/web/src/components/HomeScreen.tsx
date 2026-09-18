@@ -8,6 +8,9 @@ import {
   canUseCloudSync,
   tierLabel,
 } from "../lib/access";
+import type { DifficultyMix } from "../lib/difficulty";
+import { formatDifficultyMix } from "../lib/difficulty";
+import type { GradeProgressStats } from "../lib/progressStats";
 import type { ChildProfile } from "../lib/subscription";
 import { isClerkEnabled } from "../lib/subscription";
 import { ChildProfileManager } from "./ChildProfileManager";
@@ -38,6 +41,9 @@ interface HomeScreenProps {
   syncEnabled: boolean;
   masteredCount: number;
   totalWords: number;
+  progressStats?: GradeProgressStats;
+  activeChildName?: string | null;
+  sessionMix?: DifficultyMix | null;
   selectedGrade: number;
   availableGrades: Set<number>;
   onGradeChange: (grade: number) => void;
@@ -66,6 +72,9 @@ export function HomeScreen({
   syncEnabled,
   masteredCount,
   totalWords,
+  progressStats,
+  activeChildName,
+  sessionMix,
   selectedGrade,
   availableGrades,
   onGradeChange,
@@ -80,6 +89,7 @@ export function HomeScreen({
   const showCloudSync = syncEnabled && onSyncProgress && canUseCloudSync(tier);
   const showFamilyProfiles = Boolean(familyProfiles);
   const needsProfile = showFamilyProfiles && familyProfiles!.profiles.length === 0;
+  const mixLabel = sessionMix ? formatDifficultyMix(sessionMix) : null;
 
   return (
     <main className="screen screen--home fade-in">
@@ -193,16 +203,46 @@ export function HomeScreen({
           <p className="section-label">Κανόνας της εβδομάδας</p>
           <p className="weekly-rule-title">{weeklyRule!.title}</p>
           <p className="weekly-rule-body">{weeklyRule!.body}</p>
-          <button type="button" className="btn btn-secondary btn-xl" onClick={onWeeklyStart}>
-            5 λέξεις για τον κανόνα
+          <button
+            type="button"
+            className="btn btn-secondary btn-xl"
+            disabled={needsProfile}
+            onClick={onWeeklyStart}
+          >
+            {needsProfile ? "Πρόσθεσε προφίλ παιδιού" : "5 λέξεις για τον κανόνα"}
           </button>
         </div>
       )}
 
       {totalWords > 0 && (
-        <p className="progress-hint">
-          Ξέρεις ήδη {masteredCount} από {totalWords} λέξεις!
-        </p>
+        <div className="progress-panel">
+          {activeChildName ? (
+            <p className="progress-hint progress-hint--child">
+              Πρόοδος: {activeChildName} — {masteredCount}/{totalWords} λέξεις ({GRADE_LABELS[selectedGrade]})
+            </p>
+          ) : (
+            <p className="progress-hint">
+              Ξέρεις ήδη {masteredCount} από {totalWords} λέξεις!
+            </p>
+          )}
+
+          {progressStats && progressStats.needsReview > 0 && (
+            <p className="progress-detail">
+              {progressStats.needsReview} λέξ{progressStats.needsReview === 1 ? "η" : "εις"} για επανάληψη
+            </p>
+          )}
+
+          {progressStats && progressStats.mastered > 0 && (
+            <p className="progress-detail">
+              Εύκολες: {progressStats.easyMastered} · Μέτριες: {progressStats.mediumMastered} · Δύσκολες:{" "}
+              {progressStats.hardMastered}
+            </p>
+          )}
+
+          {mixLabel && (
+            <p className="progress-detail">Σημερινή αποστολή: {mixLabel}</p>
+          )}
+        </div>
       )}
 
       <div className="progress-sync">

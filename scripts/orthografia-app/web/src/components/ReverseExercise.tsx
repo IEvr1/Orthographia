@@ -2,6 +2,7 @@ import { useCallback, useEffect, useState } from "react";
 import type { GradeResult, SessionSummary, WordEntry } from "../types";
 import { gradeAnswer } from "../lib/grader";
 import { loadProgress, recordAttempt, saveProgress } from "../lib/storage";
+import { DifficultyBadge } from "./DifficultyBadge";
 import { FeedbackPanel } from "./FeedbackPanel";
 import { GreekKeyboard } from "./GreekKeyboard";
 
@@ -85,6 +86,7 @@ export function ReverseExercise({ words, onComplete, onQuit }: ReverseExercisePr
         </button>
         <p className="progress-bar-label">
           Αναζήτηση {index + 1} από {words.length}
+          <DifficultyBadge word={current} />
         </p>
       </header>
 

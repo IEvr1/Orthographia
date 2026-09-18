@@ -3,6 +3,7 @@ import type { FamiliesPayload, GradeResult, SessionSummary, WordEntry } from "..
 import { gradeAnswer } from "../lib/grader";
 import { maskWordInHint } from "../lib/hintMask";
 import { loadProgress, recordAttempt, saveProgress } from "../lib/storage";
+import { DifficultyBadge } from "./DifficultyBadge";
 import { AudioPlayer } from "./AudioPlayer";
 import { FeedbackPanel } from "./FeedbackPanel";
 import { GreekKeyboard } from "./GreekKeyboard";
@@ -109,6 +110,7 @@ export function DictationExercise({ words, families, onComplete, onQuit }: Dicta
         </button>
         <p className="progress-bar-label">
           Λέξη {index + 1} από {words.length}
+          <DifficultyBadge word={current} />
         </p>
         <div className="progress-bar">
           <div

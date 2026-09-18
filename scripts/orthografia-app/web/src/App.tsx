@@ -31,13 +31,17 @@ import {
 
   isProgressSyncAvailable,
 
+  migrateAllProfilesOnSignIn,
+
   syncProgressToServer,
 
 } from "./lib/progressSync";
 
-import { buildDailySession, gradesWithWords } from "./lib/session";
+import { buildDailySession, gradesWithWords, previewDailySessionMix } from "./lib/session";
 
-import { getWordProgress, loadProgress } from "./lib/storage";
+import { computeGradeStats } from "./lib/progressStats";
+
+import { loadProgress } from "./lib/storage";
 
 import { buildWeeklyWordSession, getWeeklyRule } from "./lib/weeklyRule";
 
@@ -136,9 +140,11 @@ const FREE_SUBSCRIPTION: SubscriptionState = {
 function AppShell({
   subscription,
   getToken,
+  userId,
 }: {
   subscription: SubscriptionState & { refresh?: () => Promise<void> };
   getToken?: () => Promise<string | null>;
+  userId?: string | null;
 }) {
 
   const [consentGiven, setConsentGiven] = useState(hasLocalConsent());
@@ -169,6 +175,8 @@ function AppShell({
 
   const [activeProfileId, setActiveProfileIdState] = useState<string | null>(() => getActiveProfileId());
 
+  const [progressVersion, setProgressVersion] = useState(0);
+
   const importRef = useRef<HTMLInputElement>(null);
 
 
@@ -178,6 +186,11 @@ function AppShell({
   const showFamilyProfiles = tier === "family" && subscription.active;
 
   const isPaid = isPaidTier(tier);
+
+  const activeProfile = useMemo(
+    () => subscription.profiles.find((p) => p.id === activeProfileId) ?? null,
+    [subscription.profiles, activeProfileId],
+  );
 
   const dailyLimitReached = !canStartDailySession(isPaid, FREE_DAILY_SESSIONS);
 
@@ -196,68 +209,6 @@ function AppShell({
     }
 
   }, [subscription]);
-
-
-
-  useEffect(() => {
-
-    if (!showFamilyProfiles) return;
-
-    const profiles = subscription.profiles;
-
-    if (profiles.length === 0) {
-
-      setActiveProfileIdState(null);
-
-      setActiveProfileId(null);
-
-      return;
-
-    }
-
-    const storedId = getActiveProfileId();
-
-    const active = profiles.find((p) => p.id === storedId) ?? profiles[0];
-
-    setActiveProfileIdState(active.id);
-
-    setActiveProfileId(active.id);
-
-    setSelectedGrade(active.grade);
-
-  }, [showFamilyProfiles, subscription.profiles]);
-
-
-
-  const handleSelectProfile = useCallback(
-
-    (id: string) => {
-
-      if (!id) {
-
-        setActiveProfileIdState(null);
-
-        setActiveProfileId(null);
-
-        return;
-
-      }
-
-      const profile = subscription.profiles.find((p) => p.id === id);
-
-      if (!profile) return;
-
-      setActiveProfileIdState(id);
-
-      setActiveProfileId(id);
-
-      setSelectedGrade(profile.grade);
-
-    },
-
-    [subscription.profiles],
-
-  );
 
 
 
@@ -337,6 +288,56 @@ function AppShell({
 
 
 
+  useEffect(() => {
+    if (!showFamilyProfiles) {
+      if (activeProfileId) {
+        setActiveProfileId(null);
+        setActiveProfileIdState(null);
+      }
+      return;
+    }
+
+    const profiles = subscription.profiles;
+    if (profiles.length === 0) {
+      setActiveProfileId(null);
+      setActiveProfileIdState(null);
+      return;
+    }
+
+    const stored = getActiveProfileId();
+    const validStored = stored && profiles.some((p) => p.id === stored);
+    const next = validStored ? profiles.find((p) => p.id === stored)! : profiles[0];
+    if (next.id !== activeProfileId) {
+      setActiveProfileId(next.id);
+      setActiveProfileIdState(next.id);
+    }
+    setSelectedGrade(next.grade);
+  }, [showFamilyProfiles, subscription.profiles, activeProfileId]);
+
+
+
+  const handleSelectProfile = useCallback(
+    (id: string) => {
+      if (!id) {
+        setActiveProfileId(null);
+        setActiveProfileIdState(null);
+        setProgressVersion((v) => v + 1);
+        return;
+      }
+
+      const profile = subscription.profiles.find((p) => p.id === id);
+      if (!profile) return;
+
+      setActiveProfileId(id);
+      setActiveProfileIdState(id);
+      setSelectedGrade(profile.grade);
+      setProgressVersion((v) => v + 1);
+    },
+    [subscription.profiles],
+  );
+
+
+
   const gradeWords = useMemo(
 
     () => words.filter((w) => w.grade === selectedGrade),
@@ -357,13 +358,22 @@ function AppShell({
 
 
 
-  const masteredCount = useMemo(() => {
+  const progressStore = useMemo(
+    () => loadProgress(activeProfileId),
+    [activeProfileId, progressVersion, screen],
+  );
 
-    const store = loadProgress();
+  const progressStats = useMemo(
+    () => computeGradeStats(progressStore, words, selectedGrade),
+    [progressStore, words, selectedGrade],
+  );
 
-    return gradeWords.filter((w) => getWordProgress(store, w.id).mastered).length;
+  const masteredCount = progressStats.mastered;
 
-  }, [gradeWords, screen, activeProfileId]);
+  const sessionMix = useMemo(
+    () => (gradeWords.length > 0 ? previewDailySessionMix(words, progressStore, selectedGrade) : null),
+    [words, progressStore, selectedGrade, gradeWords.length, progressVersion],
+  );
 
 
 
@@ -371,7 +381,7 @@ function AppShell({
 
     (kind: SessionKind) => {
 
-      const store = loadProgress();
+      const store = loadProgress(activeProfileId);
 
       let daily =
 
@@ -411,7 +421,7 @@ function AppShell({
 
     },
 
-    [words, selectedGrade, gameMode, weeklyRule],
+    [words, selectedGrade, gameMode, weeklyRule, activeProfileId],
 
   );
 
@@ -420,6 +430,8 @@ function AppShell({
   const startSession = useCallback(() => {
 
     setPaywallMessage(null);
+
+    if (showFamilyProfiles && !activeProfileId) return;
 
     if (!canAccessGrade(tier, selectedGrade)) {
 
@@ -473,13 +485,15 @@ function AppShell({
 
     launchSession("daily");
 
-  }, [launchSession, rules, selectedGrade, weeklyRule, tier, gameMode, isPaid]);
+  }, [launchSession, rules, selectedGrade, weeklyRule, tier, gameMode, isPaid, showFamilyProfiles, activeProfileId]);
 
 
 
   const startWeeklySession = useCallback(() => {
 
     if (!weeklyRule) return;
+
+    if (showFamilyProfiles && !activeProfileId) return;
 
     if (!canAccessWeeklyRule(tier)) {
 
@@ -497,7 +511,7 @@ function AppShell({
 
     setScreen("rule");
 
-  }, [weeklyRule, tier]);
+  }, [weeklyRule, tier, showFamilyProfiles, activeProfileId]);
 
 
 
@@ -529,6 +543,8 @@ function AppShell({
 
     setSummary(s);
 
+    setProgressVersion((v) => v + 1);
+
     setScreen("summary");
 
   };
@@ -551,7 +567,9 @@ function AppShell({
 
     const text = await file.text();
 
-    importProgressFromJson(text);
+    importProgressFromJson(text, activeProfileId);
+
+    setProgressVersion((v) => v + 1);
 
     setScreen("home");
 
@@ -573,13 +591,17 @@ function AppShell({
 
     }
 
-    const ok = await syncProgressToServer();
+    const auth = { userId, getToken, profileId: activeProfileId };
+
+    const ok = await syncProgressToServer(auth);
 
     if (!ok) {
 
-      await fetchProgressFromServer();
+      await fetchProgressFromServer(auth);
 
     }
+
+    setProgressVersion((v) => v + 1);
 
     setScreen("home");
 
@@ -653,7 +675,7 @@ function AppShell({
 
           onWeeklyStart={startWeeklySession}
 
-          onExportProgress={downloadProgressBackup}
+          onExportProgress={() => downloadProgressBackup(activeProfileId)}
 
           onImportProgress={handleImportProgress}
 
@@ -666,6 +688,12 @@ function AppShell({
           masteredCount={masteredCount}
 
           totalWords={gradeWords.length}
+
+          progressStats={progressStats}
+
+          activeChildName={activeProfile?.name ?? null}
+
+          sessionMix={sessionMix}
 
           selectedGrade={selectedGrade}
 
@@ -804,15 +832,38 @@ function AppShell({
 
 
 function AuthedApp() {
-  const { isSignedIn, getToken } = useAuth();
+  const { isSignedIn, getToken, userId } = useAuth();
   const subscription = useSubscription();
+  const migratedKeyRef = useRef<string | null>(null);
 
   useEffect(() => {
-    if (!isSignedIn) return;
+    if (!isSignedIn || !userId) return;
     void syncConsentToServer(getToken);
-  }, [isSignedIn, getToken]);
+  }, [isSignedIn, getToken, userId]);
 
-  return <AppShell subscription={subscription} getToken={getToken} />;
+  useEffect(() => {
+    if (!isSignedIn || !userId || subscription.loading) return;
+
+    const profileIds =
+      subscription.tier === "family" && subscription.active
+        ? subscription.profiles.map((p) => p.id)
+        : [];
+    const migrationKey = `${userId}:${profileIds.join(",")}`;
+    if (migratedKeyRef.current === migrationKey) return;
+    migratedKeyRef.current = migrationKey;
+
+    void migrateAllProfilesOnSignIn({ userId, getToken }, profileIds);
+  }, [
+    isSignedIn,
+    userId,
+    getToken,
+    subscription.loading,
+    subscription.tier,
+    subscription.active,
+    subscription.profiles,
+  ]);
+
+  return <AppShell subscription={subscription} getToken={getToken} userId={userId} />;
 }
 
 

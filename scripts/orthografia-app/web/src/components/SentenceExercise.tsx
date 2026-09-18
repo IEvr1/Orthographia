@@ -2,6 +2,7 @@ import { useCallback, useEffect, useState } from "react";
 import type { GradeResult, SessionSummary, WordEntry } from "../types";
 import { gradeAnswer } from "../lib/grader";
 import { loadProgress, recordAttempt, saveProgress } from "../lib/storage";
+import { DifficultyBadge } from "./DifficultyBadge";
 import { AudioPlayer } from "./AudioPlayer";
 import { FeedbackPanel } from "./FeedbackPanel";
 import { GreekKeyboard } from "./GreekKeyboard";
@@ -86,6 +87,7 @@ export function SentenceExercise({ words, onComplete, onQuit }: SentenceExercise
         </button>
         <p className="progress-bar-label">
           Πρόταση {index + 1} από {words.length}
+          <DifficultyBadge word={current} />
         </p>
       </header>
 
