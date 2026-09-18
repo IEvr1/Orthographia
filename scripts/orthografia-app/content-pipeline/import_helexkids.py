@@ -24,6 +24,7 @@ from pathlib import Path
 from typing import Any
 
 from audio_slug import is_broken_audio_path, slugify
+from hint_generator import generate_hint, is_homophone_prone, load_overrides
 
 PIPELINE = Path(__file__).resolve().parent
 INPUTS_DIR = PIPELINE / "inputs" / "helexkids"
@@ -258,10 +259,8 @@ def feedback_rule(word: str, morphemes: dict[str, str]) -> str:
     return "Διάβασε προσεκτικά τη λέξη."
 
 
-def hint_sentence(pos: str, index: int) -> str:
-    key = pos if pos in POS_HINT_TEMPLATES else "default"
-    templates = POS_HINT_TEMPLATES[key]
-    return templates[index % len(templates)]
+def hint_sentence(word: str, pos: str, index: int, overrides: dict | None = None) -> str:
+    return generate_hint(word, pos=pos, index=index, overrides=overrides)
 
 
 def parse_frequency(row: dict[str, str]) -> float:
@@ -379,6 +378,7 @@ def build_helexkids_entries(
 
     entries: list[dict[str, Any]] = []
     counters: dict[int, int] = {1: 0, 2: 0, 3: 0, 4: 0}
+    overrides = load_overrides()
 
     for grade in (1, 2, 3, 4):
         for i, row in enumerate(by_grade[grade][:cap_per_grade]):
@@ -389,11 +389,13 @@ def build_helexkids_entries(
                 "word": row["word"],
                 "grade": grade,
                 "axis": "R",
-                "hintSentence": hint_sentence(row["pos"], i),
+                "hintSentence": hint_sentence(row["word"], row["pos"], i, overrides),
                 "feedbackRule": feedback_rule(row["word"], morphemes),
                 "audioFile": audio_path_for_word(row["word"], existing_audio),
                 "morphemes": morphemes,
             }
+            if is_homophone_prone(row["word"]):
+                entry["homophone"] = True
             entries.append(entry)
 
     return entries
