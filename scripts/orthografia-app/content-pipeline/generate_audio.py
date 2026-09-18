@@ -1,11 +1,17 @@
 #!/usr/bin/env python3
-"""Generate mp3 audio files for dictation words."""
+"""Generate mp3 audio files for dictation words via Google or Azure TTS."""
 
 from __future__ import annotations
 
+import argparse
+import base64
 import json
 import os
 import struct
+import sys
+import urllib.error
+import urllib.parse
+import urllib.request
 import wave
 from pathlib import Path
 
@@ -21,6 +27,8 @@ AUDIO_DIR = OUTPUT_DIR / "audio"
 WORDS_FILE = OUTPUT_DIR / "words.json"
 WEB_AUDIO = PIPELINE.parent / "web" / "public" / "content" / "audio"
 
+GOOGLE_VOICE = "el-GR-Wavenet-A"
+
 
 def load_env() -> None:
     if load_dotenv is None:
@@ -31,7 +39,6 @@ def load_env() -> None:
 
 
 def write_silent_wav(path: Path, duration_ms: int = 400) -> None:
-    """Write a short silent WAV (fallback when no TTS)."""
     sample_rate = 22050
     n_frames = int(sample_rate * duration_ms / 1000)
     path.parent.mkdir(parents=True, exist_ok=True)
@@ -40,6 +47,41 @@ def write_silent_wav(path: Path, duration_ms: int = 400) -> None:
         wf.setsampwidth(2)
         wf.setframerate(sample_rate)
         wf.writeframes(struct.pack("<" + "h" * n_frames, *([0] * n_frames)))
+
+
+def generate_google(text: str, out_path: Path) -> bool:
+    api_key = os.getenv("GOOGLE_TTS_API_KEY")
+    if not api_key:
+        return False
+
+    url = "https://texttospeech.googleapis.com/v1/text:synthesize"
+    body = json.dumps(
+        {
+            "input": {"text": text},
+            "voice": {"languageCode": "el-GR", "name": GOOGLE_VOICE},
+            "audioConfig": {"audioEncoding": "MP3", "speakingRate": 0.92},
+        }
+    ).encode("utf-8")
+    req = urllib.request.Request(
+        f"{url}?key={urllib.parse.quote(api_key)}",
+        data=body,
+        headers={"Content-Type": "application/json"},
+        method="POST",
+    )
+    try:
+        with urllib.request.urlopen(req, timeout=30) as resp:
+            payload = json.loads(resp.read().decode("utf-8"))
+    except urllib.error.HTTPError as err:
+        detail = err.read().decode("utf-8", errors="replace")
+        print(f"  Google TTS HTTP {err.code}: {detail[:300]}")
+        return False
+    except urllib.error.URLError as err:
+        print(f"  Google TTS network error: {err.reason}")
+        return False
+
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    out_path.write_bytes(base64.b64decode(payload["audioContent"]))
+    return True
 
 
 def generate_azure(text: str, out_path: Path) -> bool:
@@ -62,64 +104,40 @@ def generate_azure(text: str, out_path: Path) -> bool:
     return result.reason == speechsdk.ResultReason.SynthesizingAudioCompleted
 
 
-def generate_google(text: str, out_path: Path) -> bool:
-    api_key = os.getenv("GOOGLE_TTS_API_KEY")
-    if not api_key:
-        return False
-    try:
-        import urllib.parse
-        import urllib.request
-    except ImportError:
-        return False
-
-    url = "https://texttospeech.googleapis.com/v1/text:synthesize"
-    body = json.dumps(
-        {
-            "input": {"text": text},
-            "voice": {"languageCode": "el-GR", "name": "el-GR-Wavenet-A"},
-            "audioConfig": {"audioEncoding": "MP3"},
-        }
-    ).encode("utf-8")
-    req = urllib.request.Request(
-        f"{url}?key={urllib.parse.quote(api_key)}",
-        data=body,
-        headers={"Content-Type": "application/json"},
-        method="POST",
-    )
-    with urllib.request.urlopen(req, timeout=30) as resp:
-        payload = json.loads(resp.read().decode("utf-8"))
-    import base64
-
-    out_path.parent.mkdir(parents=True, exist_ok=True)
-    out_path.write_bytes(base64.b64decode(payload["audioContent"]))
-    return True
+def generate_tts(text: str, mp3_out: Path) -> bool:
+    if os.getenv("GOOGLE_TTS_API_KEY"):
+        return generate_google(text, mp3_out)
+    if os.getenv("AZURE_SPEECH_KEY"):
+        return generate_azure(text, mp3_out)
+    return False
 
 
-def generate_placeholder(out_path: Path) -> None:
-    """Write short silent WAV for offline dev when no TTS keys."""
-    wav_path = out_path.with_suffix(".wav")
+def generate_placeholder(stem: str) -> None:
+    wav_path = AUDIO_DIR / f"{stem}.wav"
     write_silent_wav(wav_path, duration_ms=500)
     print(f"  placeholder: {wav_path.name}")
 
 
 def sync_words_audio_paths(words: list[dict]) -> list[dict]:
-    """Point audioFile to .wav when only placeholder exists."""
     synced = []
     for entry in words:
         item = dict(entry)
-        rel = item["audioFile"]
-        stem = Path(rel).stem
-        wav_rel = f"audio/{stem}.wav"
-        mp3_path = OUTPUT_DIR / "audio" / f"{stem}.mp3"
-        wav_path = OUTPUT_DIR / "audio" / f"{stem}.wav"
-        if wav_path.exists() and not mp3_path.exists():
-            item["audioFile"] = wav_rel
+        stem = Path(item["audioFile"]).stem
+        mp3_path = AUDIO_DIR / f"{stem}.mp3"
+        wav_path = AUDIO_DIR / f"{stem}.wav"
+        if mp3_path.exists():
+            item["audioFile"] = f"audio/{stem}.mp3"
+        elif wav_path.exists():
+            item["audioFile"] = f"audio/{stem}.wav"
         synced.append(item)
     return synced
 
 
 def copy_to_web(words: list[dict]) -> None:
     WEB_AUDIO.mkdir(parents=True, exist_ok=True)
+    for old in WEB_AUDIO.glob("*.*"):
+        if old.suffix.lower() in {".mp3", ".wav"}:
+            old.unlink()
     for audio in AUDIO_DIR.glob("*.*"):
         if audio.suffix.lower() not in {".mp3", ".wav"}:
             continue
@@ -133,29 +151,58 @@ def copy_to_web(words: list[dict]) -> None:
 
 
 def main() -> None:
+    parser = argparse.ArgumentParser(description="Generate dictation audio files.")
+    parser.add_argument(
+        "--force",
+        action="store_true",
+        help="Regenerate all files even if they already exist.",
+    )
+    args = parser.parse_args()
+
     load_env()
     if not WORDS_FILE.exists():
         raise SystemExit(f"Missing {WORDS_FILE}. Run generate_seed.py first.")
+
+    has_google = bool(os.getenv("GOOGLE_TTS_API_KEY"))
+    has_azure = bool(os.getenv("AZURE_SPEECH_KEY"))
+    has_tts = has_google or has_azure
+
+    if not has_tts:
+        print("No TTS API key found.")
+        print(f"Create {ROOT / '.env.local'} with GOOGLE_TTS_API_KEY=...")
+        print("See scripts/orthografia-app/content-pipeline/README.md for setup steps.")
+        sys.exit(1)
+
+    provider = "Google" if has_google else "Azure"
+    print(f"Using {provider} TTS" + (" (--force)" if args.force else ""))
 
     data = json.loads(WORDS_FILE.read_text(encoding="utf-8"))
     words = data["words"]
     AUDIO_DIR.mkdir(parents=True, exist_ok=True)
 
-    has_tts = bool(os.getenv("AZURE_SPEECH_KEY") or os.getenv("GOOGLE_TTS_API_KEY"))
-    if not has_tts:
-        print("No TTS keys found — generating placeholder audio (silent wav as mp3).")
+    ok_count = 0
+    fail_count = 0
 
     for entry in words:
         text = entry["word"]
-        rel = entry["audioFile"]
-        out_path = OUTPUT_DIR / rel.replace("audio/", "audio/")
-        if out_path.exists() and has_tts:
+        stem = Path(entry["audioFile"]).stem
+        mp3_out = AUDIO_DIR / f"{stem}.mp3"
+        wav_out = AUDIO_DIR / f"{stem}.wav"
+
+        if mp3_out.exists() and not args.force:
+            ok_count += 1
             continue
-        ok = False
-        if has_tts:
-            ok = generate_azure(text, out_path) or generate_google(text, out_path)
-        if not ok:
-            generate_placeholder(out_path)
+
+        if generate_tts(text, mp3_out):
+            wav_out.unlink(missing_ok=True)
+            ok_count += 1
+            print(f"  ok: {stem}.mp3")
+        else:
+            fail_count += 1
+            print(f"  FAIL: {stem}")
+
+    if fail_count:
+        raise SystemExit(f"Failed to generate {fail_count} files. Check API key and billing.")
 
     synced_words = sync_words_audio_paths(words)
     OUTPUT_DIR.joinpath("words.json").write_text(
@@ -163,8 +210,7 @@ def main() -> None:
         encoding="utf-8",
     )
     copy_to_web(synced_words)
-    count = len(list(AUDIO_DIR.glob("*.mp3"))) + len(list(AUDIO_DIR.glob("*.wav")))
-    print(f"Done — {count} audio files in {AUDIO_DIR}")
+    print(f"Done — {ok_count} mp3 files in {AUDIO_DIR}")
 
 
 if __name__ == "__main__":

@@ -246,6 +246,22 @@ body {
   border-radius: var(--radius);
 }
 
+.hint-label {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+  margin-bottom: 0.35rem;
+}
+
+.hint-blank {
+  display: inline-block;
+  min-width: 3rem;
+  padding: 0 0.25rem;
+  color: var(--teal);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
 /* Keyboard */
 .keyboard {
   display: flex;

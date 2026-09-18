@@ -2,37 +2,27 @@
 
 Εφαρμογή υπαγόρευσης για εκμάθηση ελληνικής ορθογραφίας (Γ΄ Δημοτικού, ΚΝΕ).
 
-## Εγκατάσταση
+## Γρήγορη εκκίνηση
 
 ```powershell
-# Από root Orthographia
+# 1. Python venv + deps
+cd c:\AI_apps\Orthographia
 python -m venv .venv
-.venv\Scripts\Activate.ps1
-pip install -r scripts/orthografia-app/content-pipeline/requirements.txt
+.venv\Scripts\pip.exe install -r scripts/orthografia-app/content-pipeline/requirements.txt
 
-cd scripts/orthografia-app/content-pipeline
-..\..\..\.venv\Scripts\python.exe generate_seed.py
-..\..\..\.venv\Scripts\python.exe generate_audio.py
+# 2. Βάλε GOOGLE_TTS_API_KEY στο .env.local (δες content-pipeline/README.md)
 
-cd ../web
+# 3. Seed + audio
+.venv\Scripts\python.exe scripts/orthografia-app/content-pipeline/generate_seed.py
+.venv\Scripts\python.exe scripts/orthografia-app/content-pipeline/generate_audio.py --force
+
+# 4. Web
+cd scripts/orthografia-app/web
 npm install
 npm run dev
 ```
 
-Linux/macOS: αντικατάστησε `.venv\Scripts\python.exe` με `.venv/bin/python`.
-
-## TTS (προαιρετικό)
-
-Δημιούργησε `.env.local` στο root:
-
-```env
-AZURE_SPEECH_KEY=your-key
-AZURE_SPEECH_REGION=westeurope
-# ή
-GOOGLE_TTS_API_KEY=your-key
-```
-
-Χωρίς κλειδιά, δημιουργούνται placeholder αρχεία ήχου (σίγαση) για offline dev.
+**Οδηγός Google TTS:** [content-pipeline/README.md](content-pipeline/README.md)
 
 ## Build PWA
 
@@ -41,16 +31,6 @@ cd scripts/orthografia-app/web
 npm run build
 npm run preview
 ```
-
-## Manual test checklist
-
-- [ ] Play audio λειτουργεί
-- [ ] «ήλιος» σωστά → πράσινο, επόμενη λέξη
-- [ ] «ηλιος» χωρίς τόνο → feedback τόνου
-- [ ] «ηλιοσ» → κόκκινο + υποχρεωτική επανάγραφη
-- [ ] Συνεδρία 10 λέξεων (8+2) ολοκληρώνεται
-- [ ] Refresh διατηρεί πρόοδο (localStorage)
-- [ ] `npm run build` χωρίς errors
 
 ## Μετά το MVP
 

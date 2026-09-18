@@ -1,48 +1,76 @@
 # Content Pipeline — Ορθογραφία
 
-Παράγει `words.json` και αρχεία ήχου για την PWA.
+Παράγει `words.json` και mp3 ήχο για την PWA.
 
-## Απαιτήσεις
+## 1. Seed λέξεων
 
-- Python 3.12+
-- Root venv: `../../../.venv`
+```powershell
+cd scripts/orthografia-app/content-pipeline
+..\..\..\.venv\Scripts\python.exe generate_seed.py
+```
 
-## Χρήση
+## 2. Google Cloud TTS — ρύθμιση (μία φορά)
+
+### Βήμα Α: Project & API
+
+1. Άνοιξε [Google Cloud Console](https://console.cloud.google.com/)
+2. Δημιούργησε project (π.χ. `orthografia-tts`) ή διάλεξε υπάρχον
+3. **APIs & Services → Library** → αναζήτησε **Cloud Text-to-Speech API** → **Enable**
+4. **APIs & Services → Billing** → σύνδεσε billing account (υπάρχει free tier ~4M chars/μήνα)
+
+### Βήμα Β: API key
+
+1. **APIs & Services → Credentials → Create credentials → API key**
+2. (Προαιρετικό αλλά συνιστάται) **Restrict key**:
+   - Application restrictions: None (για local dev) ή IP αν deploy
+   - API restrictions: **Cloud Text-to-Speech API** μόνο
+3. Αντίγραψε το κλειδί
+
+### Βήμα Γ: `.env.local`
+
+Στο root `Orthographia/` (δίπλα στο `.gitignore`):
+
+```env
+GOOGLE_TTS_API_KEY=AIza...το-κλειδί-σου
+```
+
+> **Μην** κάνεις commit το `.env.local` — είναι ήδη στο `.gitignore`.
+
+## 3. Παραγωγή ήχου
 
 ```powershell
 # Από root Orthographia
-python -m venv .venv
-.venv\Scripts\Activate.ps1
-pip install -r scripts/orthografia-app/content-pipeline/requirements.txt
+.venv\Scripts\pip.exe install -r scripts/orthografia-app/content-pipeline/requirements.txt
 
 cd scripts/orthografia-app/content-pipeline
-..\..\..\.venv\Scripts\python.exe generate_seed.py
-..\..\..\.venv\Scripts\python.exe generate_audio.py
+..\..\..\.venv\Scripts\python.exe generate_audio.py --force
 ```
 
-## TTS (προαιρετικό)
+Το `--force` ξαναφτιάχνει όλα τα mp3 (χρειάζεται μετά την πρώτη ρύθμιση για να αντικαταστήσει τα silent wav).
 
-Δημιούργησε `.env.local` στο root `Orthographia/`:
-
-```env
-# Azure Speech
-AZURE_SPEECH_KEY=...
-AZURE_SPEECH_REGION=westeurope
-
-# ή Google Cloud TTS
-GOOGLE_TTS_API_KEY=...
-```
-
-Χωρίς κλειδιά, δημιουργούνται placeholder mp3 (σίγαση) για smoke test.
-
-## Έξοδος
-
-- `outputs/words.json` — 50 λέξεις Γ΄ τάξης
-- `outputs/audio/*.mp3` — προ-γεννημένα mp3
-
-Αντίγραψε στο web:
+## 4. Τρέξε την εφαρμογή
 
 ```powershell
-Copy-Item outputs/words.json ../web/public/content/
-Copy-Item outputs/audio/*.mp3 ../web/public/content/audio/
+cd ../web
+npm run dev
 ```
+
+Κάνε refresh και πάτα **«Άκου ξανά»**.
+
+## Αντιμετώπιση προβλημάτων
+
+| Σφάλμα | Λύση |
+|--------|------|
+| `403 API key not valid` | Λάθος κλειδί ή API δεν enabled |
+| `403 Cloud Text-to-Speech API has not been used` | Enable το API (Βήμα Α.3) |
+| `400 billing` | Ενεργοποίησε billing στο project |
+| Δεν ακούς τίποτα | Τρέξε `generate_audio.py --force` και refresh browser |
+
+## Azure (εναλλακτικά)
+
+```env
+AZURE_SPEECH_KEY=...
+AZURE_SPEECH_REGION=westeurope
+```
+
+Χρειάζεται: `pip install azure-cognitiveservices-speech`

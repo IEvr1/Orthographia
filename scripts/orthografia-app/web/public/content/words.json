@@ -9,7 +9,7 @@
       "axis": "R",
       "hintSentence": "Ο ήλιος λάμπει ψηλά στον ουρανό.",
       "feedbackRule": "Ίδια ρίζα με ήλιο· -ος στο τέλος.",
-      "audioFile": "audio/ilios.wav",
+      "audioFile": "audio/ilios.mp3",
       "morphemes": {
         "root": "ήλι",
         "suffix": "ος"
@@ -22,7 +22,7 @@
       "axis": "R",
       "hintSentence": "Η θάλασσα είναι γαλάζια το καλοκαίρι.",
       "feedbackRule": "Διπλό σ στο τέλος της λέξης.",
-      "audioFile": "audio/thalassa.wav",
+      "audioFile": "audio/thalassa.mp3",
       "morphemes": {
         "root": "θαλασσ",
         "suffix": "α"
@@ -35,7 +35,7 @@
       "axis": "R",
       "hintSentence": "Πηγαίνω στο σχολείο κάθε πρωί.",
       "feedbackRule": "Ρίζα σχολ- + -είο.",
-      "audioFile": "audio/scholeio.wav",
+      "audioFile": "audio/scholeio.mp3",
       "morphemes": {
         "root": "σχολ",
         "suffix": "είο"
@@ -48,7 +48,7 @@
       "axis": "R",
       "hintSentence": "Διάβασα ένα ωραίο βιβλίο.",
       "feedbackRule": "Διπλό β στην αρχή.",
-      "audioFile": "audio/vivlio.wav",
+      "audioFile": "audio/vivlio.mp3",
       "morphemes": {
         "root": "βιβλ",
         "suffix": "ίο"
@@ -61,7 +61,7 @@
       "axis": "R",
       "hintSentence": "Ο καλύτερός μου φίλος μένει δίπλα.",
       "feedbackRule": "Φίλ- + -ος.",
-      "audioFile": "audio/filos.wav",
+      "audioFile": "audio/filos.mp3",
       "morphemes": {
         "root": "φίλ",
         "suffix": "ος"
@@ -74,7 +74,7 @@
       "axis": "R",
       "hintSentence": "Η γάτα κοιμάται στον καναπέ.",
       "feedbackRule": "Γάτ- + -α.",
-      "audioFile": "audio/gata.wav",
+      "audioFile": "audio/gata.mp3",
       "morphemes": {
         "root": "γάτ",
         "suffix": "α"
@@ -87,7 +87,7 @@
       "axis": "R",
       "hintSentence": "Ο σκύλος μας τρέχει στην αυλή.",
       "feedbackRule": "Σκύλ- + -ος.",
-      "audioFile": "audio/skylos.wav",
+      "audioFile": "audio/skylos.mp3",
       "morphemes": {
         "root": "σκύλ",
         "suffix": "ος"
@@ -100,7 +100,7 @@
       "axis": "R",
       "hintSentence": "Το ποτάμι ρέει γρήγορα.",
       "feedbackRule": "Ποτ- + -άμι.",
-      "audioFile": "audio/potami.wav",
+      "audioFile": "audio/potami.mp3",
       "morphemes": {
         "root": "ποτ",
         "suffix": "άμι"
@@ -113,7 +113,7 @@
       "axis": "R",
       "hintSentence": "Το βουνό έχει χιόνι το χειμώνα.",
       "feedbackRule": "Βουν- + -ό.",
-      "audioFile": "audio/vouno.wav",
+      "audioFile": "audio/vouno.mp3",
       "morphemes": {
         "root": "βουν",
         "suffix": "ό"
@@ -126,7 +126,7 @@
       "axis": "R",
       "hintSentence": "Μύρισε το κόκκινο λουλούδι.",
       "feedbackRule": "Διπλό λ και διπλό ού.",
-      "audioFile": "audio/louloudi.wav",
+      "audioFile": "audio/louloudi.mp3",
       "morphemes": {
         "root": "λουλουδ",
         "suffix": "ι"
@@ -139,7 +139,7 @@
       "axis": "R",
       "hintSentence": "Παίζουμε στον κήπο του σπιτιού.",
       "feedbackRule": "Κήπ- + -ος (τελικό σ).",
-      "audioFile": "audio/kipos.wav",
+      "audioFile": "audio/kipos.mp3",
       "morphemes": {
         "root": "κήπ",
         "suffix": "ος"
@@ -152,7 +152,7 @@
       "axis": "R",
       "hintSentence": "Φάγαμε φρέσκο ψωμί στο πρωινό.",
       "feedbackRule": "Ψωμ- + -ί.",
-      "audioFile": "audio/psomi.wav",
+      "audioFile": "audio/psomi.mp3",
       "morphemes": {
         "root": "ψωμ",
         "suffix": "ί"
@@ -165,7 +165,7 @@
       "axis": "R",
       "hintSentence": "Ήπιε γάλα πριν κοιμηθεί.",
       "feedbackRule": "Γάλ- + -α.",
-      "audioFile": "audio/gala.wav",
+      "audioFile": "audio/gala.mp3",
       "morphemes": {
         "root": "γάλ",
         "suffix": "α"
@@ -178,7 +178,7 @@
       "axis": "R",
       "hintSentence": "Έφαγα ένα κόκκινο μήλο.",
       "feedbackRule": "Μήλ- + -ο.",
-      "audioFile": "audio/milo.wav",
+      "audioFile": "audio/milo.mp3",
       "morphemes": {
         "root": "μήλ",
         "suffix": "ο"
@@ -191,7 +191,7 @@
       "axis": "R",
       "hintSentence": "Το πορτοκάλι είναι γλυκό.",
       "feedbackRule": "Πορτοκαλ- + -ι.",
-      "audioFile": "audio/portokali.wav",
+      "audioFile": "audio/portokali.mp3",
       "morphemes": {
         "root": "πορτοκαλ",
         "suffix": "ι"
@@ -204,7 +204,7 @@
       "axis": "R",
       "hintSentence": "Τον χειμώνα βρέχει πολύ.",
       "feedbackRule": "Χειμων- + -ας.",
-      "audioFile": "audio/cheimonas.wav",
+      "audioFile": "audio/cheimonas.mp3",
       "morphemes": {
         "root": "χειμων",
         "suffix": "ας"
@@ -217,7 +217,7 @@
       "axis": "R",
       "hintSentence": "Το καλοκαίρι πάμε στη θάλασσα.",
       "feedbackRule": "Καλοκαιρ- + -ι.",
-      "audioFile": "audio/kalokairi.wav",
+      "audioFile": "audio/kalokairi.mp3",
       "morphemes": {
         "root": "καλοκαιρ",
         "suffix": "ι"
@@ -230,7 +230,7 @@
       "axis": "R",
       "hintSentence": "Ο άνεμος φύσηξε δυνατά.",
       "feedbackRule": "Ανεμ- + -ος.",
-      "audioFile": "audio/anemos.wav",
+      "audioFile": "audio/anemos.mp3",
       "morphemes": {
         "root": "ανεμ",
         "suffix": "ος"
@@ -243,7 +243,7 @@
       "axis": "R",
       "hintSentence": "Η βροχή έπεσε όλη μέρα.",
       "feedbackRule": "Βροχ- + -ή.",
-      "audioFile": "audio/vrochi.wav",
+      "audioFile": "audio/vrochi.mp3",
       "morphemes": {
         "root": "βροχ",
         "suffix": "ή"
@@ -256,7 +256,7 @@
       "axis": "R",
       "hintSentence": "Έπεσε πολύ χιόνι χθες.",
       "feedbackRule": "Χιον- + -ι.",
-      "audioFile": "audio/chioni.wav",
+      "audioFile": "audio/chioni.mp3",
       "morphemes": {
         "root": "χιον",
         "suffix": "ι"
@@ -269,7 +269,7 @@
       "axis": "R",
       "hintSentence": "Ο αετός πέταξε ψηλά.",
       "feedbackRule": "Αετ- + -ός.",
-      "audioFile": "audio/aetos.wav",
+      "audioFile": "audio/aetos.mp3",
       "morphemes": {
         "root": "αετ",
         "suffix": "ός"
@@ -282,7 +282,7 @@
       "axis": "R",
       "hintSentence": "Μια πεταλούδα κάθισε στο λουλούδι.",
       "feedbackRule": "Πεταλουδ- + -α.",
-      "audioFile": "audio/petalouda.wav",
+      "audioFile": "audio/petalouda.mp3",
       "morphemes": {
         "root": "πεταλουδ",
         "suffix": "α"
@@ -295,7 +295,7 @@
       "axis": "R",
       "hintSentence": "Το δέντρο έχει πολλά φύλλα.",
       "feedbackRule": "Δέντρ- + -ο.",
-      "audioFile": "audio/dentro.wav",
+      "audioFile": "audio/dentro.mp3",
       "morphemes": {
         "root": "δέντρ",
         "suffix": "ο"
@@ -308,7 +308,7 @@
       "axis": "R",
       "hintSentence": "Έπεσε ένα κίτρινο φύλλο.",
       "feedbackRule": "Φυλλ- + -ο (διπλό λ).",
-      "audioFile": "audio/fyllo.wav",
+      "audioFile": "audio/fyllo.mp3",
       "morphemes": {
         "root": "φυλλ",
         "suffix": "ο"
@@ -321,7 +321,7 @@
       "axis": "R",
       "hintSentence": "Το σπίτι μας είναι μπλε.",
       "feedbackRule": "Σπιτ- + -ι.",
-      "audioFile": "audio/spiti.wav",
+      "audioFile": "audio/spiti.mp3",
       "morphemes": {
         "root": "σπιτ",
         "suffix": "ι"
@@ -334,7 +334,7 @@
       "axis": "R",
       "hintSentence": "Άνοιξε το παράθυρο για αέρα.",
       "feedbackRule": "Παραθυρ- + -ο.",
-      "audioFile": "audio/parathyro.wav",
+      "audioFile": "audio/parathyro.mp3",
       "morphemes": {
         "root": "παραθυρ",
         "suffix": "ο"
@@ -347,7 +347,7 @@
       "axis": "R",
       "hintSentence": "Χτύπησε στην πόρτα.",
       "feedbackRule": "Πορτ- + -α.",
-      "audioFile": "audio/porta.wav",
+      "audioFile": "audio/porta.mp3",
       "morphemes": {
         "root": "πορτ",
         "suffix": "α"
@@ -360,7 +360,7 @@
       "axis": "R",
       "hintSentence": "Βάλαμε τα πιάτα στο τραπέζι.",
       "feedbackRule": "Τραπεζ- + -ι.",
-      "audioFile": "audio/trapezi.wav",
+      "audioFile": "audio/trapezi.mp3",
       "morphemes": {
         "root": "τραπεζ",
         "suffix": "ι"
@@ -373,7 +373,7 @@
       "axis": "R",
       "hintSentence": "Κάθισε στην καρέκλα.",
       "feedbackRule": "Καρεκλ- + -α.",
-      "audioFile": "audio/karekla.wav",
+      "audioFile": "audio/karekla.mp3",
       "morphemes": {
         "root": "καρεκλ",
         "suffix": "α"
@@ -386,7 +386,7 @@
       "axis": "R",
       "hintSentence": "Πήγε για ύπνο στο κρεβάτι.",
       "feedbackRule": "Κρεβατ- + -ι.",
-      "audioFile": "audio/krevati.wav",
+      "audioFile": "audio/krevati.mp3",
       "morphemes": {
         "root": "κρεβατ",
         "suffix": "ι"
@@ -399,7 +399,7 @@
       "axis": "R",
       "hintSentence": "Το μάθημα των μαθηματικών ξεκίνησε.",
       "feedbackRule": "Μαθημ- + -α.",
-      "audioFile": "audio/mathima.wav",
+      "audioFile": "audio/mathima.mp3",
       "morphemes": {
         "root": "μαθημ",
         "suffix": "α"
@@ -412,7 +412,7 @@
       "axis": "R",
       "hintSentence": "Έγραψα στο τετράδιό μου.",
       "feedbackRule": "Τετραδ- + -ιο.",
-      "audioFile": "audio/tetradio.wav",
+      "audioFile": "audio/tetradio.mp3",
       "morphemes": {
         "root": "τετραδ",
         "suffix": "ιο"
@@ -425,7 +425,7 @@
       "axis": "R",
       "hintSentence": "Έσπασε το μολύβι μου.",
       "feedbackRule": "Μολυβ- + -ι.",
-      "audioFile": "audio/molyvi.wav",
+      "audioFile": "audio/molyvi.mp3",
       "morphemes": {
         "root": "μολυβ",
         "suffix": "ι"
@@ -438,7 +438,7 @@
       "axis": "R",
       "hintSentence": "Διόρθωσε με τη γόμα το λάθος.",
       "feedbackRule": "Γόμ- + -α.",
-      "audioFile": "audio/goma.wav",
+      "audioFile": "audio/goma.mp3",
       "morphemes": {
         "root": "γόμ",
         "suffix": "α"
@@ -451,7 +451,7 @@
       "axis": "R",
       "hintSentence": "Ζωγράφισε με κόκκινο κραγιόνι.",
       "feedbackRule": "Κραγιον- + -ι.",
-      "audioFile": "audio/kraggioni.wav",
+      "audioFile": "audio/kraggioni.mp3",
       "morphemes": {
         "root": "κραγιον",
         "suffix": "ι"
@@ -464,7 +464,7 @@
       "axis": "R",
       "hintSentence": "Πήγα σχολείο με ποδήλατο.",
       "feedbackRule": "Ποδηλατ- + -ο.",
-      "audioFile": "audio/podilato.wav",
+      "audioFile": "audio/podilato.mp3",
       "morphemes": {
         "root": "ποδηλατ",
         "suffix": "ο"
@@ -477,7 +477,7 @@
       "axis": "R",
       "hintSentence": "Το αυτοκίνητο σταμάτησε στο φανάρι.",
       "feedbackRule": "Αυτοκινητ- + -ο.",
-      "audioFile": "audio/aftokinito.wav",
+      "audioFile": "audio/aftokinito.mp3",
       "morphemes": {
         "root": "αυτοκινητ",
         "suffix": "ο"
@@ -490,7 +490,7 @@
       "axis": "R",
       "hintSentence": "Πήραμε το λεωφορείο για την πόλη.",
       "feedbackRule": "Λεωφορ- + -είο.",
-      "audioFile": "audio/leoforeio.wav",
+      "audioFile": "audio/leoforeio.mp3",
       "morphemes": {
         "root": "λεωφορ",
         "suffix": "είο"
@@ -503,7 +503,7 @@
       "axis": "R",
       "hintSentence": "Περάσαμε τη γέφυρα πάνω από το ποτάμι.",
       "feedbackRule": "Γεφυρ- + -α.",
-      "audioFile": "audio/gefyra.wav",
+      "audioFile": "audio/gefyra.mp3",
       "morphemes": {
         "root": "γεφυρ",
         "suffix": "α"
@@ -516,7 +516,7 @@
       "axis": "R",
       "hintSentence": "Παίξαμε στην πλατεία του χωριού.",
       "feedbackRule": "Πλατει- + -α.",
-      "audioFile": "audio/plateia.wav",
+      "audioFile": "audio/plateia.mp3",
       "morphemes": {
         "root": "πλατει",
         "suffix": "α"
@@ -529,7 +529,7 @@
       "axis": "R",
       "hintSentence": "Πήγαμε στην αγορά για ψωμί.",
       "feedbackRule": "Αγορ- + -ά.",
-      "audioFile": "audio/agora.wav",
+      "audioFile": "audio/agora.mp3",
       "morphemes": {
         "root": "αγορ",
         "suffix": "ά"
@@ -542,7 +542,7 @@
       "axis": "R",
       "hintSentence": "Ο γιατρός δούλεψε στο νοσοκομείο.",
       "feedbackRule": "Νοσοκομ- + -είο.",
-      "audioFile": "audio/nosokomeio.wav",
+      "audioFile": "audio/nosokomeio.mp3",
       "morphemes": {
         "root": "νοσοκομ",
         "suffix": "είο"
@@ -555,7 +555,7 @@
       "axis": "R",
       "hintSentence": "Ο γιατρός μας εξέτασε.",
       "feedbackRule": "Γιατρ- + -ός.",
-      "audioFile": "audio/giatros.wav",
+      "audioFile": "audio/giatros.mp3",
       "morphemes": {
         "root": "γιατρ",
         "suffix": "ός"
@@ -568,7 +568,7 @@
       "axis": "R",
       "hintSentence": "Η δασκάλα μας διάβασε μια ιστορία.",
       "feedbackRule": "Δασκαλ- + -ος.",
-      "audioFile": "audio/daskalos.wav",
+      "audioFile": "audio/daskalos.mp3",
       "morphemes": {
         "root": "δασκαλ",
         "suffix": "ος"
@@ -581,7 +581,7 @@
       "axis": "R",
       "hintSentence": "Ο μαθητής απάντησε σωστά.",
       "feedbackRule": "Μαθητ- + -ής.",
-      "audioFile": "audio/mathitis.wav",
+      "audioFile": "audio/mathitis.mp3",
       "morphemes": {
         "root": "μαθητ",
         "suffix": "ής"
@@ -594,7 +594,7 @@
       "axis": "R",
       "hintSentence": "Ο γονιός μου με πήγε στο σχολείο.",
       "feedbackRule": "Γον- + -ιός.",
-      "audioFile": "audio/gonios.wav",
+      "audioFile": "audio/gonios.mp3",
       "morphemes": {
         "root": "γον",
         "suffix": "ιός"
@@ -607,7 +607,7 @@
       "axis": "R",
       "hintSentence": "Η αδελφή μου παίζει μαζί μου.",
       "feedbackRule": "Αδελφ- + -ός.",
-      "audioFile": "audio/adelphos.wav",
+      "audioFile": "audio/adelphos.mp3",
       "morphemes": {
         "root": "αδελφ",
         "suffix": "ός"
@@ -620,7 +620,7 @@
       "axis": "R",
       "hintSentence": "Η γειτονιά μας είναι ήσυχη.",
       "feedbackRule": "Γειτον- + -ιά.",
-      "audioFile": "audio/geitonia.wav",
+      "audioFile": "audio/geitonia.mp3",
       "morphemes": {
         "root": "γειτον",
         "suffix": "ιά"
@@ -633,7 +633,7 @@
       "axis": "R",
       "hintSentence": "Ένιωσα χαρά όταν κέρδισα.",
       "feedbackRule": "Χαρ- + -ά.",
-      "audioFile": "audio/chara.wav",
+      "audioFile": "audio/chara.mp3",
       "morphemes": {
         "root": "χαρ",
         "suffix": "ά"
@@ -646,7 +646,7 @@
       "axis": "R",
       "hintSentence": "Έχω ελπίδα ότι θα τα καταφέρω.",
       "feedbackRule": "Ελπιδ- + -α.",
-      "audioFile": "audio/elpida.wav",
+      "audioFile": "audio/elpida.mp3",
       "morphemes": {
         "root": "ελπιδ",
         "suffix": "α"

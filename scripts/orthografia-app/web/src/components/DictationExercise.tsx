@@ -1,6 +1,7 @@
-import { useCallback, useEffect, useState } from "react";
+import { Fragment, useCallback, useEffect, useState } from "react";
 import type { GradeResult, SessionSummary, WordEntry } from "../types";
 import { gradeAnswer } from "../lib/grader";
+import { maskWordInHint } from "../lib/hintMask";
 import { loadProgress, recordAttempt, saveProgress } from "../lib/storage";
 import { AudioPlayer } from "./AudioPlayer";
 import { FeedbackPanel } from "./FeedbackPanel";
@@ -117,7 +118,17 @@ export function DictationExercise({ words, onComplete, onQuit }: DictationExerci
 
       <section className="exercise-body">
         <AudioPlayer src={audioSrc} autoPlay key={current.id} />
-        <p className="hint-sentence">{current.hintSentence}</p>
+        <p className="hint-sentence">
+          <span className="hint-label">Πρόταση βοήθειας</span>
+          {maskWordInHint(current.hintSentence, current.word)
+            .split("___")
+            .map((part, i, parts) => (
+              <Fragment key={i}>
+                {part}
+                {i < parts.length - 1 && <span className="hint-blank">___</span>}
+              </Fragment>
+            ))}
+        </p>
 
         <GreekKeyboard
           value={input}
