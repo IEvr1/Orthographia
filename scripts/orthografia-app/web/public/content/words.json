@@ -3432,7 +3432,7 @@
       "axis": "R",
       "hintSentence": "Η λέξη ___ είναι ρήμα· δείχνει μια ενέργεια.",
       "feedbackRule": "ειν- + -αι.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/einai.mp3",
       "morphemes": {
         "root": "ειν",
         "suffix": "αι"
@@ -3445,7 +3445,7 @@
       "axis": "R",
       "hintSentence": "Γράφουμε τη λέξη ___ όταν μιλάμε για ένα αντικείμενο ή ιδέα.",
       "feedbackRule": "Προσοχή στον τόνο.",
-      "audioFile": "audio/s.mp3",
+      "audioFile": "audio/arithmous.mp3",
       "morphemes": {
         "root": "αριθμούς",
         "suffix": ""
@@ -3458,7 +3458,7 @@
       "axis": "R",
       "hintSentence": "Γράφουμε το ρήμα ___ στη σωστή ορθογραφία.",
       "feedbackRule": "Προσοχή στον τόνο.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/itan.mp3",
       "morphemes": {
         "root": "ήταν",
         "suffix": ""
@@ -3471,7 +3471,7 @@
       "axis": "R",
       "hintSentence": "Η λέξη ___ χρησιμοποιείται σε μια πρόταση για να ονομάσουμε κάτι.",
       "feedbackRule": "παιδ- + -ιά.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/paidia.mp3",
       "morphemes": {
         "root": "παιδ",
         "suffix": "ιά"
@@ -3484,7 +3484,7 @@
       "axis": "R",
       "hintSentence": "Συμπληρώνουμε με τη λέξη ___ την πρόταση που περιγράφει κάτι που κάνουμε.",
       "feedbackRule": "έχ- + -ει.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/echei.mp3",
       "morphemes": {
         "root": "έχ",
         "suffix": "ει"
@@ -3497,7 +3497,7 @@
       "axis": "R",
       "hintSentence": "Χρησιμοποιούμε την λέξη ___ για να περιγράψουμε.",
       "feedbackRule": "Προσοχή στον τόνο.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/kathe.mp3",
       "morphemes": {
         "root": "κάθε",
         "suffix": ""
@@ -3510,7 +3510,7 @@
       "axis": "R",
       "hintSentence": "Η λέξη ___ είναι ρήμα· δείχνει μια ενέργεια.",
       "feedbackRule": "Προσοχή στον τόνο.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/diavase.mp3",
       "morphemes": {
         "root": "διάβασε",
         "suffix": ""
@@ -3523,7 +3523,7 @@
       "axis": "R",
       "hintSentence": "Συμπληρώνουμε με τη λέξη ___ την πρόταση που περιγράφει κάτι που κάνουμε.",
       "feedbackRule": "Προσοχή στον τόνο.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/eipe.mp3",
       "morphemes": {
         "root": "είπε",
         "suffix": ""
@@ -3536,7 +3536,7 @@
       "axis": "R",
       "hintSentence": "Γράφουμε το ρήμα ___ στη σωστή ορθογραφία.",
       "feedbackRule": "Διάβασε προσεκτικά τη λέξη.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/grapse.mp3",
       "morphemes": {
         "root": "γραψε",
         "suffix": ""
@@ -3549,7 +3549,7 @@
       "axis": "R",
       "hintSentence": "Η λέξη ___ χρησιμοποιείται σε μια πρόταση για να ονομάσουμε κάτι.",
       "feedbackRule": "λέξ- + -εις.",
-      "audioFile": "audio/s.mp3",
+      "audioFile": "audio/lexeis.mp3",
       "morphemes": {
         "root": "λέξ",
         "suffix": "εις"
@@ -3562,7 +3562,7 @@
       "axis": "R",
       "hintSentence": "Συμπληρώνουμε με τη λέξη ___ την πρόταση που περιγράφει κάτι που κάνουμε.",
       "feedbackRule": "Προσοχή στον τόνο.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/symplirose.mp3",
       "morphemes": {
         "root": "συμπλήρωσε",
         "suffix": ""
@@ -3575,7 +3575,7 @@
       "axis": "R",
       "hintSentence": "Στην πρόταση μπαίνει η λέξη ___.",
       "feedbackRule": "τάξ- + -η.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/taxi.mp3",
       "morphemes": {
         "root": "τάξ",
         "suffix": "η"
@@ -3588,7 +3588,7 @@
       "axis": "R",
       "hintSentence": "Η λέξη ___ χρησιμοποιείται σε μια πρόταση για να ονομάσουμε κάτι.",
       "feedbackRule": "μαθητ- + -ές.",
-      "audioFile": "audio/s.mp3",
+      "audioFile": "audio/mathites.mp3",
       "morphemes": {
         "root": "μαθητ",
         "suffix": "ές"
@@ -3601,7 +3601,7 @@
       "axis": "R",
       "hintSentence": "Συμπληρώνουμε με τη λέξη ___ την πρόταση που περιγράφει κάτι που κάνουμε.",
       "feedbackRule": "Προσοχή στον τόνο.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/syzitame.mp3",
       "morphemes": {
         "root": "συζητάμε",
         "suffix": ""
@@ -3614,7 +3614,7 @@
       "axis": "R",
       "hintSentence": "Χρησιμοποιούμε την λέξη ___ για να περιγράψουμε.",
       "feedbackRule": "Προσοχή στον τόνο.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/poly.mp3",
       "morphemes": {
         "root": "πολύ",
         "suffix": ""
@@ -3627,7 +3627,7 @@
       "axis": "R",
       "hintSentence": "Η λέξη ___ είναι επίθετο· περιγράφει κάτι.",
       "feedbackRule": "όλ- + -α.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/ola.mp3",
       "morphemes": {
         "root": "όλ",
         "suffix": "α"
@@ -3640,7 +3640,7 @@
       "axis": "R",
       "hintSentence": "Συμπληρώνουμε με τη λέξη ___ την πρόταση που περιγράφει κάτι που κάνουμε.",
       "feedbackRule": "λέ- + -ει.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/leei.mp3",
       "morphemes": {
         "root": "λέ",
         "suffix": "ει"
@@ -3653,7 +3653,7 @@
       "axis": "R",
       "hintSentence": "Γράφουμε το ρήμα ___ στη σωστή ορθογραφία.",
       "feedbackRule": "λείπ- + -ουν.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/leipoun.mp3",
       "morphemes": {
         "root": "λείπ",
         "suffix": "ουν"
@@ -3679,7 +3679,7 @@
       "axis": "R",
       "hintSentence": "Συμπληρώνουμε με τη λέξη ___ την πρόταση που περιγράφει κάτι που κάνουμε.",
       "feedbackRule": "γράφ- + -ω.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/grafo.mp3",
       "morphemes": {
         "root": "γράφ",
         "suffix": "ω"
@@ -3692,7 +3692,7 @@
       "axis": "R",
       "hintSentence": "Στην πρόταση μπαίνει η λέξη ___.",
       "feedbackRule": "ποσ- + -ά.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/posa.mp3",
       "morphemes": {
         "root": "ποσ",
         "suffix": "ά"
@@ -3705,7 +3705,7 @@
       "axis": "R",
       "hintSentence": "Η λέξη ___ χρησιμοποιείται σε μια πρόταση για να ονομάσουμε κάτι.",
       "feedbackRule": "κεφαλαί- + -ο.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/kefalaio.mp3",
       "morphemes": {
         "root": "κεφαλαί",
         "suffix": "ο"
@@ -3718,7 +3718,7 @@
       "axis": "R",
       "hintSentence": "Συμπληρώνουμε με το επίθετο ___ την πρόταση.",
       "feedbackRule": "αυτ- + -ό.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/ayto.mp3",
       "morphemes": {
         "root": "αυτ",
         "suffix": "ό"
@@ -3744,7 +3744,7 @@
       "axis": "R",
       "hintSentence": "Η λέξη ___ χρησιμοποιείται σε μια πρόταση για να ονομάσουμε κάτι.",
       "feedbackRule": "αριθμ- + -ό.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/arithmo.mp3",
       "morphemes": {
         "root": "αριθμ",
         "suffix": "ό"
@@ -3757,7 +3757,7 @@
       "axis": "R",
       "hintSentence": "Συμπληρώνουμε με τη λέξη ___ την πρόταση που περιγράφει κάτι που κάνουμε.",
       "feedbackRule": "Διάβασε προσεκτικά τη λέξη.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/vale.mp3",
       "morphemes": {
         "root": "βαλε",
         "suffix": ""
@@ -3783,7 +3783,7 @@
       "axis": "R",
       "hintSentence": "Η λέξη ___ χρησιμοποιείται σε μια πρόταση για να ονομάσουμε κάτι.",
       "feedbackRule": "σειρ- + -ά.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/seira.mp3",
       "morphemes": {
         "root": "σειρ",
         "suffix": "ά"
@@ -3796,7 +3796,7 @@
       "axis": "R",
       "hintSentence": "Συμπληρώνουμε με το επίθετο ___ την πρόταση.",
       "feedbackRule": "ποι- + -α.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/poia.mp3",
       "morphemes": {
         "root": "ποι",
         "suffix": "α"
@@ -3809,7 +3809,7 @@
       "axis": "R",
       "hintSentence": "Στην πρόταση μπαίνει η λέξη ___.",
       "feedbackRule": "εικόν- + -ες.",
-      "audioFile": "audio/s.mp3",
+      "audioFile": "audio/eikones.mp3",
       "morphemes": {
         "root": "εικόν",
         "suffix": "ες"
@@ -3835,7 +3835,7 @@
       "axis": "R",
       "hintSentence": "Συμπληρώνουμε με τη λέξη ___ την πρόταση που περιγράφει κάτι που κάνουμε.",
       "feedbackRule": "υπολογίζ- + -ω.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/ypologizo.mp3",
       "morphemes": {
         "root": "υπολογίζ",
         "suffix": "ω"
@@ -3861,7 +3861,7 @@
       "axis": "R",
       "hintSentence": "Η λέξη ___ χρησιμοποιείται σε μια πρόταση για να ονομάσουμε κάτι.",
       "feedbackRule": "ζώ- + -α.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/zoa.mp3",
       "morphemes": {
         "root": "ζώ",
         "suffix": "α"
@@ -3887,7 +3887,7 @@
       "axis": "R",
       "hintSentence": "Χρησιμοποιούμε την λέξη ___ για να περιγράψουμε.",
       "feedbackRule": "όλο- + -ι.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/oloi.mp3",
       "morphemes": {
         "root": "όλο",
         "suffix": "ι"
@@ -3900,7 +3900,7 @@
       "axis": "R",
       "hintSentence": "Η λέξη ___ είναι ρήμα· δείχνει μια ενέργεια.",
       "feedbackRule": "έχ- + -ουν.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/echoun.mp3",
       "morphemes": {
         "root": "έχ",
         "suffix": "ουν"
@@ -3926,7 +3926,7 @@
       "axis": "R",
       "hintSentence": "Στην πρόταση μπαίνει η λέξη ___.",
       "feedbackRule": "αθροισ- + -ματα.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/athroismata.mp3",
       "morphemes": {
         "root": "αθροισ",
         "suffix": "ματα"
@@ -3965,7 +3965,7 @@
       "axis": "R",
       "hintSentence": "Στην πρόταση μπαίνει η λέξη ___.",
       "feedbackRule": "χρώ- + -ματα.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/chromata.mp3",
       "morphemes": {
         "root": "χρώ",
         "suffix": "ματα"
@@ -3991,7 +3991,7 @@
       "axis": "R",
       "hintSentence": "Γράφουμε τη λέξη ___ όταν μιλάμε για ένα αντικείμενο ή ιδέα.",
       "feedbackRule": "οικογενει- + -α.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/oikogeneia.mp3",
       "morphemes": {
         "root": "οικογενει",
         "suffix": "α"
@@ -4004,7 +4004,7 @@
       "axis": "R",
       "hintSentence": "Στην πρόταση μπαίνει η λέξη ___.",
       "feedbackRule": "παιδ- + -ι.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/paidi.mp3",
       "morphemes": {
         "root": "παιδ",
         "suffix": "ι"
@@ -4017,7 +4017,7 @@
       "axis": "R",
       "hintSentence": "Η λέξη ___ χρησιμοποιείται σε μια πρόταση για να ονομάσουμε κάτι.",
       "feedbackRule": "παιχνίδι- + -α.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/paichnidia.mp3",
       "morphemes": {
         "root": "παιχνίδι",
         "suffix": "α"
@@ -4030,7 +4030,7 @@
       "axis": "R",
       "hintSentence": "Συμπληρώνουμε με τη λέξη ___ την πρόταση που περιγράφει κάτι που κάνουμε.",
       "feedbackRule": "Προσοχή στον τόνο.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/eiche.mp3",
       "morphemes": {
         "root": "είχε",
         "suffix": ""
@@ -4043,7 +4043,7 @@
       "axis": "R",
       "hintSentence": "Στην πρόταση μπαίνει η λέξη ___.",
       "feedbackRule": "Προσοχή στον τόνο.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/mathiti.mp3",
       "morphemes": {
         "root": "μαθητή",
         "suffix": ""
@@ -4069,7 +4069,7 @@
       "axis": "R",
       "hintSentence": "Γράφουμε τη λέξη ___ όταν μιλάμε για ένα αντικείμενο ή ιδέα.",
       "feedbackRule": "Προσοχή στον τόνο.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/dimotikou.mp3",
       "morphemes": {
         "root": "δημοτικού",
         "suffix": ""
@@ -4108,7 +4108,7 @@
       "axis": "R",
       "hintSentence": "Γράφουμε τη λέξη ___ όταν μιλάμε για ένα αντικείμενο ή ιδέα.",
       "feedbackRule": "σχη- + -ματα.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/schimata.mp3",
       "morphemes": {
         "root": "σχη",
         "suffix": "ματα"
@@ -4121,7 +4121,7 @@
       "axis": "R",
       "hintSentence": "Χρησιμοποιούμε την λέξη ___ για να περιγράψουμε.",
       "feedbackRule": "άλλ- + -ο.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/allo.mp3",
       "morphemes": {
         "root": "άλλ",
         "suffix": "ο"
@@ -4147,7 +4147,7 @@
       "axis": "R",
       "hintSentence": "Συμπληρώνουμε με το επίθετο ___ την πρόταση.",
       "feedbackRule": "σωστ- + -ά.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/sosta.mp3",
       "morphemes": {
         "root": "σωστ",
         "suffix": "ά"
@@ -4160,7 +4160,7 @@
       "axis": "R",
       "hintSentence": "Χρησιμοποιούμε την λέξη ___ για να περιγράψουμε.",
       "feedbackRule": "ποι- + -ος.",
-      "audioFile": "audio/s.mp3",
+      "audioFile": "audio/poios.mp3",
       "morphemes": {
         "root": "ποι",
         "suffix": "ος"
@@ -4173,7 +4173,7 @@
       "axis": "R",
       "hintSentence": "Η λέξη ___ χρησιμοποιείται σε μια πρόταση για να ονομάσουμε κάτι.",
       "feedbackRule": "εικόν- + -α.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/eikona.mp3",
       "morphemes": {
         "root": "εικόν",
         "suffix": "α"
@@ -4199,7 +4199,7 @@
       "axis": "R",
       "hintSentence": "Χρησιμοποιούμε την λέξη ___ για να περιγράψουμε.",
       "feedbackRule": "άλλ- + -α.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/alla.mp3",
       "morphemes": {
         "root": "άλλ",
         "suffix": "α"
@@ -4212,7 +4212,7 @@
       "axis": "R",
       "hintSentence": "Η λέξη ___ είναι ρήμα· δείχνει μια ενέργεια.",
       "feedbackRule": "κάν- + -ει.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/kanei.mp3",
       "morphemes": {
         "root": "κάν",
         "suffix": "ει"
@@ -4225,7 +4225,7 @@
       "axis": "R",
       "hintSentence": "Γράφουμε τη λέξη ___ όταν μιλάμε για ένα αντικείμενο ή ιδέα.",
       "feedbackRule": "κύκλ- + -ο.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/kyklo.mp3",
       "morphemes": {
         "root": "κύκλ",
         "suffix": "ο"
@@ -4251,7 +4251,7 @@
       "axis": "R",
       "hintSentence": "Η λέξη ___ είναι ρήμα· δείχνει μια ενέργεια.",
       "feedbackRule": "μάθ- + -εις.",
-      "audioFile": "audio/s.mp3",
+      "audioFile": "audio/matheis.mp3",
       "morphemes": {
         "root": "μάθ",
         "suffix": "εις"
@@ -4264,7 +4264,7 @@
       "axis": "R",
       "hintSentence": "Γράφουμε τη λέξη ___ όταν μιλάμε για ένα αντικείμενο ή ιδέα.",
       "feedbackRule": "φορ- + -ά.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/fora.mp3",
       "morphemes": {
         "root": "φορ",
         "suffix": "ά"
@@ -4277,7 +4277,7 @@
       "axis": "R",
       "hintSentence": "Στην πρόταση μπαίνει η λέξη ___.",
       "feedbackRule": "παπαγάλ- + -ος.",
-      "audioFile": "audio/s.mp3",
+      "audioFile": "audio/papagalos.mp3",
       "morphemes": {
         "root": "παπαγάλ",
         "suffix": "ος"
@@ -4290,7 +4290,7 @@
       "axis": "R",
       "hintSentence": "Η λέξη ___ χρησιμοποιείται σε μια πρόταση για να ονομάσουμε κάτι.",
       "feedbackRule": "δασκάλ- + -α.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/daskala.mp3",
       "morphemes": {
         "root": "δασκάλ",
         "suffix": "α"
@@ -4303,7 +4303,7 @@
       "axis": "R",
       "hintSentence": "Γράφουμε τη λέξη ___ όταν μιλάμε για ένα αντικείμενο ή ιδέα.",
       "feedbackRule": "γράμ- + -ματα.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/grammata.mp3",
       "morphemes": {
         "root": "γράμ",
         "suffix": "ματα"
@@ -4316,7 +4316,7 @@
       "axis": "R",
       "hintSentence": "Γράφουμε το ρήμα ___ στη σωστή ορθογραφία.",
       "feedbackRule": "παίζ- + -ουμε.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/paizoume.mp3",
       "morphemes": {
         "root": "παίζ",
         "suffix": "ουμε"
@@ -4329,7 +4329,7 @@
       "axis": "R",
       "hintSentence": "Η λέξη ___ είναι ρήμα· δείχνει μια ενέργεια.",
       "feedbackRule": "πληρών- + -ω.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/plirono.mp3",
       "morphemes": {
         "root": "πληρών",
         "suffix": "ω"
@@ -4342,7 +4342,7 @@
       "axis": "R",
       "hintSentence": "Γράφουμε τη λέξη ___ όταν μιλάμε για ένα αντικείμενο ή ιδέα.",
       "feedbackRule": "νομισ- + -ματα.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/nomismata.mp3",
       "morphemes": {
         "root": "νομισ",
         "suffix": "ματα"
@@ -4368,7 +4368,7 @@
       "axis": "R",
       "hintSentence": "Η λέξη ___ είναι ρήμα· δείχνει μια ενέργεια.",
       "feedbackRule": "Προσοχή στον τόνο.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/mathe.mp3",
       "morphemes": {
         "root": "μάθε",
         "suffix": ""
@@ -4394,7 +4394,7 @@
       "axis": "R",
       "hintSentence": "Γράφουμε το ρήμα ___ στη σωστή ορθογραφία.",
       "feedbackRule": "μπορε- + -ί.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/mporei.mp3",
       "morphemes": {
         "root": "μπορε",
         "suffix": "ί"
@@ -4407,7 +4407,7 @@
       "axis": "R",
       "hintSentence": "Η λέξη ___ είναι ρήμα· δείχνει μια ενέργεια.",
       "feedbackRule": "Προσοχή στον τόνο.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/rotise.mp3",
       "morphemes": {
         "root": "ρώτησε",
         "suffix": ""
@@ -4420,7 +4420,7 @@
       "axis": "R",
       "hintSentence": "Συμπληρώνουμε με τη λέξη ___ την πρόταση που περιγράφει κάτι που κάνουμε.",
       "feedbackRule": "γράφ- + -εις.",
-      "audioFile": "audio/s.mp3",
+      "audioFile": "audio/grafeis.mp3",
       "morphemes": {
         "root": "γράφ",
         "suffix": "εις"
@@ -4433,7 +4433,7 @@
       "axis": "R",
       "hintSentence": "Γράφουμε το ρήμα ___ στη σωστή ορθογραφία.",
       "feedbackRule": "κάν- + -ουμε.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/kanoume.mp3",
       "morphemes": {
         "root": "κάν",
         "suffix": "ουμε"
@@ -4446,7 +4446,7 @@
       "axis": "R",
       "hintSentence": "Η λέξη ___ είναι επίθετο· περιγράφει κάτι.",
       "feedbackRule": "πολλ- + -ά.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/polla.mp3",
       "morphemes": {
         "root": "πολλ",
         "suffix": "ά"
@@ -4459,7 +4459,7 @@
       "axis": "R",
       "hintSentence": "Γράφουμε τη λέξη ___ όταν μιλάμε για ένα αντικείμενο ή ιδέα.",
       "feedbackRule": "Προσοχή στον τόνο.",
-      "audioFile": "audio/s.mp3",
+      "audioFile": "audio/mikros.mp3",
       "morphemes": {
         "root": "μικρός",
         "suffix": ""
@@ -4472,7 +4472,7 @@
       "axis": "R",
       "hintSentence": "Χρησιμοποιούμε την λέξη ___ για να περιγράψουμε.",
       "feedbackRule": "ίδ- + -ιο.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/idio.mp3",
       "morphemes": {
         "root": "ίδ",
         "suffix": "ιο"
@@ -4485,7 +4485,7 @@
       "axis": "R",
       "hintSentence": "Η λέξη ___ είναι επίθετο· περιγράφει κάτι.",
       "feedbackRule": "αυτ- + -ά.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/ayta.mp3",
       "morphemes": {
         "root": "αυτ",
         "suffix": "ά"
@@ -4498,7 +4498,7 @@
       "axis": "R",
       "hintSentence": "Γράφουμε τη λέξη ___ όταν μιλάμε για ένα αντικείμενο ή ιδέα.",
       "feedbackRule": "μικρ- + -ό.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/mikro.mp3",
       "morphemes": {
         "root": "μικρ",
         "suffix": "ό"
@@ -4511,7 +4511,7 @@
       "axis": "R",
       "hintSentence": "Γράφουμε το ρήμα ___ στη σωστή ορθογραφία.",
       "feedbackRule": "πά- + -ει.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/paei.mp3",
       "morphemes": {
         "root": "πά",
         "suffix": "ει"
@@ -4524,7 +4524,7 @@
       "axis": "R",
       "hintSentence": "Η λέξη ___ χρησιμοποιείται σε μια πρόταση για να ονομάσουμε κάτι.",
       "feedbackRule": "τρόπ- + -ο.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/tropo.mp3",
       "morphemes": {
         "root": "τρόπ",
         "suffix": "ο"
@@ -4537,7 +4537,7 @@
       "axis": "R",
       "hintSentence": "Συμπληρώνουμε με τη λέξη ___ την πρόταση που περιγράφει κάτι που κάνουμε.",
       "feedbackRule": "χρειάζετ- + -αι.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/chreiazetai.mp3",
       "morphemes": {
         "root": "χρειάζετ",
         "suffix": "αι"
@@ -4550,7 +4550,7 @@
       "axis": "R",
       "hintSentence": "Γράφουμε το ρήμα ___ στη σωστή ορθογραφία.",
       "feedbackRule": "βρίσκ- + -ω.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/vrisko.mp3",
       "morphemes": {
         "root": "βρίσκ",
         "suffix": "ω"
@@ -4563,7 +4563,7 @@
       "axis": "R",
       "hintSentence": "Η λέξη ___ είναι επίθετο· περιγράφει κάτι.",
       "feedbackRule": "πο- + -ιο.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/poio.mp3",
       "morphemes": {
         "root": "πο",
         "suffix": "ιο"
@@ -4576,7 +4576,7 @@
       "axis": "R",
       "hintSentence": "Συμπληρώνουμε με τη λέξη ___ την πρόταση που περιγράφει κάτι που κάνουμε.",
       "feedbackRule": "πρέπ- + -ει.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/prepei.mp3",
       "morphemes": {
         "root": "πρέπ",
         "suffix": "ει"
@@ -4589,7 +4589,7 @@
       "axis": "R",
       "hintSentence": "Στην πρόταση μπαίνει η λέξη ___.",
       "feedbackRule": "χρώμ- + -α.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/chroma.mp3",
       "morphemes": {
         "root": "χρώμ",
         "suffix": "α"
@@ -4602,7 +4602,7 @@
       "axis": "R",
       "hintSentence": "Η λέξη ___ είναι ρήμα· δείχνει μια ενέργεια.",
       "feedbackRule": "είν- + -αι.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/einai-1.mp3",
       "morphemes": {
         "root": "είν",
         "suffix": "αι"
@@ -4615,7 +4615,7 @@
       "axis": "R",
       "hintSentence": "Συμπληρώνουμε με το επίθετο ___ την πρόταση.",
       "feedbackRule": "Διάβασε προσεκτικά τη λέξη.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/kathe-1.mp3",
       "morphemes": {
         "root": "καθε",
         "suffix": ""
@@ -4628,7 +4628,7 @@
       "axis": "R",
       "hintSentence": "Γράφουμε το ρήμα ___ στη σωστή ορθογραφία.",
       "feedbackRule": "εχ- + -ει.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/echei-1.mp3",
       "morphemes": {
         "root": "εχ",
         "suffix": "ει"
@@ -4641,7 +4641,7 @@
       "axis": "R",
       "hintSentence": "Η λέξη ___ χρησιμοποιείται σε μια πρόταση για να ονομάσουμε κάτι.",
       "feedbackRule": "παιδ- + -ιά.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/paidia-1.mp3",
       "morphemes": {
         "root": "παιδ",
         "suffix": "ιά"
@@ -4654,7 +4654,7 @@
       "axis": "R",
       "hintSentence": "Γράφουμε τη λέξη ___ όταν μιλάμε για ένα αντικείμενο ή ιδέα.",
       "feedbackRule": "λέξ- + -εις.",
-      "audioFile": "audio/s.mp3",
+      "audioFile": "audio/lexeis-1.mp3",
       "morphemes": {
         "root": "λέξ",
         "suffix": "εις"
@@ -4667,7 +4667,7 @@
       "axis": "R",
       "hintSentence": "Γράφουμε το ρήμα ___ στη σωστή ορθογραφία.",
       "feedbackRule": "Προσοχή στον τόνο.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/itan-1.mp3",
       "morphemes": {
         "root": "ήταν",
         "suffix": ""
@@ -4680,7 +4680,7 @@
       "axis": "R",
       "hintSentence": "Η λέξη ___ χρησιμοποιείται σε μια πρόταση για να ονομάσουμε κάτι.",
       "feedbackRule": "ποσ- + -ά.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/posa-1.mp3",
       "morphemes": {
         "root": "ποσ",
         "suffix": "ά"
@@ -4693,7 +4693,7 @@
       "axis": "R",
       "hintSentence": "Γράφουμε τη λέξη ___ όταν μιλάμε για ένα αντικείμενο ή ιδέα.",
       "feedbackRule": "ταξ- + -η.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/taxi-1.mp3",
       "morphemes": {
         "root": "ταξ",
         "suffix": "η"
@@ -4706,7 +4706,7 @@
       "axis": "R",
       "hintSentence": "Χρησιμοποιούμε την λέξη ___ για να περιγράψουμε.",
       "feedbackRule": "αυτ- + -ό.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/ayto-1.mp3",
       "morphemes": {
         "root": "αυτ",
         "suffix": "ό"
@@ -4719,7 +4719,7 @@
       "axis": "R",
       "hintSentence": "Η λέξη ___ είναι ρήμα· δείχνει μια ενέργεια.",
       "feedbackRule": "εχ- + -ουν.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/echoun-1.mp3",
       "morphemes": {
         "root": "εχ",
         "suffix": "ουν"
@@ -4732,7 +4732,7 @@
       "axis": "R",
       "hintSentence": "Γράφουμε τη λέξη ___ όταν μιλάμε για ένα αντικείμενο ή ιδέα.",
       "feedbackRule": "άσκησ- + -η.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/askisi.mp3",
       "morphemes": {
         "root": "άσκησ",
         "suffix": "η"
@@ -4745,7 +4745,7 @@
       "axis": "R",
       "hintSentence": "Στην πρόταση μπαίνει η λέξη ___.",
       "feedbackRule": "Προσοχή στον τόνο.",
-      "audioFile": "audio/s.mp3",
+      "audioFile": "audio/arithmous-1.mp3",
       "morphemes": {
         "root": "αριθμούς",
         "suffix": ""
@@ -4758,7 +4758,7 @@
       "axis": "R",
       "hintSentence": "Η λέξη ___ είναι επίθετο· περιγράφει κάτι.",
       "feedbackRule": "Προσοχή στον τόνο.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/poly-1.mp3",
       "morphemes": {
         "root": "πολύ",
         "suffix": ""
@@ -4771,7 +4771,7 @@
       "axis": "R",
       "hintSentence": "Συμπληρώνουμε με τη λέξη ___ την πρόταση που περιγράφει κάτι που κάνουμε.",
       "feedbackRule": "Προσοχή στον τόνο.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/eipe-1.mp3",
       "morphemes": {
         "root": "είπε",
         "suffix": ""
@@ -4784,7 +4784,7 @@
       "axis": "R",
       "hintSentence": "Γράφουμε το ρήμα ___ στη σωστή ορθογραφία.",
       "feedbackRule": "Προσοχή στον τόνο.",
-      "audioFile": "audio/s.mp3",
+      "audioFile": "audio/mporeis.mp3",
       "morphemes": {
         "root": "μπορείς",
         "suffix": ""
@@ -4797,7 +4797,7 @@
       "axis": "R",
       "hintSentence": "Η λέξη ___ είναι επίθετο· περιγράφει κάτι.",
       "feedbackRule": "αυτ- + -ά.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/ayta-1.mp3",
       "morphemes": {
         "root": "αυτ",
         "suffix": "ά"
@@ -4810,7 +4810,7 @@
       "axis": "R",
       "hintSentence": "Γράφουμε τη λέξη ___ όταν μιλάμε για ένα αντικείμενο ή ιδέα.",
       "feedbackRule": "ζω- + -α.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/zoa-1.mp3",
       "morphemes": {
         "root": "ζω",
         "suffix": "α"
@@ -4823,7 +4823,7 @@
       "axis": "R",
       "hintSentence": "Χρησιμοποιούμε την λέξη ___ για να περιγράψουμε.",
       "feedbackRule": "ποι- + -α.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/poia-1.mp3",
       "morphemes": {
         "root": "ποι",
         "suffix": "α"
@@ -4836,7 +4836,7 @@
       "axis": "R",
       "hintSentence": "Η λέξη ___ είναι ρήμα· δείχνει μια ενέργεια.",
       "feedbackRule": "υπολογίζ- + -ω.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/ypologizo-1.mp3",
       "morphemes": {
         "root": "υπολογίζ",
         "suffix": "ω"
@@ -4849,7 +4849,7 @@
       "axis": "R",
       "hintSentence": "Συμπληρώνουμε με το επίθετο ___ την πρόταση.",
       "feedbackRule": "όλ- + -α.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/ola-1.mp3",
       "morphemes": {
         "root": "όλ",
         "suffix": "α"
@@ -4862,7 +4862,7 @@
       "axis": "R",
       "hintSentence": "Χρησιμοποιούμε την λέξη ___ για να περιγράψουμε.",
       "feedbackRule": "σωστ- + -ά.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/sosta-1.mp3",
       "morphemes": {
         "root": "σωστ",
         "suffix": "ά"
@@ -4875,7 +4875,7 @@
       "axis": "R",
       "hintSentence": "Η λέξη ___ χρησιμοποιείται σε μια πρόταση για να ονομάσουμε κάτι.",
       "feedbackRule": "παιδ- + -ι.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/paidi-1.mp3",
       "morphemes": {
         "root": "παιδ",
         "suffix": "ι"
@@ -4888,7 +4888,7 @@
       "axis": "R",
       "hintSentence": "Συμπληρώνουμε με το επίθετο ___ την πρόταση.",
       "feedbackRule": "ποι- + -ό.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/poio-1.mp3",
       "morphemes": {
         "root": "ποι",
         "suffix": "ό"
@@ -4901,7 +4901,7 @@
       "axis": "R",
       "hintSentence": "Χρησιμοποιούμε την λέξη ___ για να περιγράψουμε.",
       "feedbackRule": "ολο- + -ι.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/oloi-1.mp3",
       "morphemes": {
         "root": "ολο",
         "suffix": "ι"
@@ -4914,7 +4914,7 @@
       "axis": "R",
       "hintSentence": "Η λέξη ___ είναι ρήμα· δείχνει μια ενέργεια.",
       "feedbackRule": "Προσοχή στον τόνο.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/grapse-1.mp3",
       "morphemes": {
         "root": "γράψε",
         "suffix": ""
@@ -4927,7 +4927,7 @@
       "axis": "R",
       "hintSentence": "Συμπληρώνουμε με τη λέξη ___ την πρόταση που περιγράφει κάτι που κάνουμε.",
       "feedbackRule": "Προσοχή στον τόνο.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/diavase-1.mp3",
       "morphemes": {
         "root": "διάβασε",
         "suffix": ""
@@ -4940,7 +4940,7 @@
       "axis": "R",
       "hintSentence": "Στην πρόταση μπαίνει η λέξη ___.",
       "feedbackRule": "χρώ- + -ματα.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/chromata-1.mp3",
       "morphemes": {
         "root": "χρώ",
         "suffix": "ματα"
@@ -4953,7 +4953,7 @@
       "axis": "R",
       "hintSentence": "Η λέξη ___ είναι ρήμα· δείχνει μια ενέργεια.",
       "feedbackRule": "ελέγχ- + -ω.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/elegcho.mp3",
       "morphemes": {
         "root": "ελέγχ",
         "suffix": "ω"
@@ -4966,7 +4966,7 @@
       "axis": "R",
       "hintSentence": "Γράφουμε τη λέξη ___ όταν μιλάμε για ένα αντικείμενο ή ιδέα.",
       "feedbackRule": "ώρ- + -α.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/ora.mp3",
       "morphemes": {
         "root": "ώρ",
         "suffix": "α"
@@ -4992,7 +4992,7 @@
       "axis": "R",
       "hintSentence": "Η λέξη ___ είναι ρήμα· δείχνει μια ενέργεια.",
       "feedbackRule": "καν- + -ει.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/kanei-1.mp3",
       "morphemes": {
         "root": "καν",
         "suffix": "ει"
@@ -5005,7 +5005,7 @@
       "axis": "R",
       "hintSentence": "Συμπληρώνουμε με το επίθετο ___ την πρόταση.",
       "feedbackRule": "αλλ- + -α.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/alla-1.mp3",
       "morphemes": {
         "root": "αλλ",
         "suffix": "α"
@@ -5018,7 +5018,7 @@
       "axis": "R",
       "hintSentence": "Χρησιμοποιούμε την λέξη ___ για να περιγράψουμε.",
       "feedbackRule": "πολλ- + -α.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/polla-1.mp3",
       "morphemes": {
         "root": "πολλ",
         "suffix": "α"
@@ -5031,7 +5031,7 @@
       "axis": "R",
       "hintSentence": "Η λέξη ___ χρησιμοποιείται σε μια πρόταση για να ονομάσουμε κάτι.",
       "feedbackRule": "φορ- + -ά.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/fora-1.mp3",
       "morphemes": {
         "root": "φορ",
         "suffix": "ά"
@@ -5044,7 +5044,7 @@
       "axis": "R",
       "hintSentence": "Συμπληρώνουμε με το επίθετο ___ την πρόταση.",
       "feedbackRule": "Προσοχή στον τόνο.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/ayti.mp3",
       "morphemes": {
         "root": "αυτή",
         "suffix": ""
@@ -5057,7 +5057,7 @@
       "axis": "R",
       "hintSentence": "Στην πρόταση μπαίνει η λέξη ___.",
       "feedbackRule": "γράμματ- + -ά.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/grammata-1.mp3",
       "morphemes": {
         "root": "γράμματ",
         "suffix": "ά"
@@ -5070,7 +5070,7 @@
       "axis": "R",
       "hintSentence": "Η λέξη ___ είναι επίθετο· περιγράφει κάτι.",
       "feedbackRule": "συνολικ- + -ά.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/synolika.mp3",
       "morphemes": {
         "root": "συνολικ",
         "suffix": "ά"
@@ -5083,7 +5083,7 @@
       "axis": "R",
       "hintSentence": "Συμπληρώνουμε με το επίθετο ___ την πρόταση.",
       "feedbackRule": "άλλ- + -ο.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/allo-1.mp3",
       "morphemes": {
         "root": "άλλ",
         "suffix": "ο"
@@ -5096,7 +5096,7 @@
       "axis": "R",
       "hintSentence": "Γράφουμε το ρήμα ___ στη σωστή ορθογραφία.",
       "feedbackRule": "Προσοχή στον τόνο.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/ektimo.mp3",
       "morphemes": {
         "root": "εκτιμώ",
         "suffix": ""
@@ -5109,7 +5109,7 @@
       "axis": "R",
       "hintSentence": "Η λέξη ___ είναι ρήμα· δείχνει μια ενέργεια.",
       "feedbackRule": "γράφ- + -εις.",
-      "audioFile": "audio/s.mp3",
+      "audioFile": "audio/grafeis-1.mp3",
       "morphemes": {
         "root": "γράφ",
         "suffix": "εις"
@@ -5122,7 +5122,7 @@
       "axis": "R",
       "hintSentence": "Συμπληρώνουμε με τη λέξη ___ την πρόταση που περιγράφει κάτι που κάνουμε.",
       "feedbackRule": "μπορε- + -ί.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/mporei-1.mp3",
       "morphemes": {
         "root": "μπορε",
         "suffix": "ί"
@@ -5135,7 +5135,7 @@
       "axis": "R",
       "hintSentence": "Γράφουμε το ρήμα ___ στη σωστή ορθογραφία.",
       "feedbackRule": "πρέπ- + -ει.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/prepei-1.mp3",
       "morphemes": {
         "root": "πρέπ",
         "suffix": "ει"
@@ -5148,7 +5148,7 @@
       "axis": "R",
       "hintSentence": "Η λέξη ___ χρησιμοποιείται σε μια πρόταση για να ονομάσουμε κάτι.",
       "feedbackRule": "αριθμ- + -ό.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/arithmo-1.mp3",
       "morphemes": {
         "root": "αριθμ",
         "suffix": "ό"
@@ -5161,7 +5161,7 @@
       "axis": "R",
       "hintSentence": "Γράφουμε τη λέξη ___ όταν μιλάμε για ένα αντικείμενο ή ιδέα.",
       "feedbackRule": "ενοτητ- + -α.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/enotita.mp3",
       "morphemes": {
         "root": "ενοτητ",
         "suffix": "α"
@@ -5174,7 +5174,7 @@
       "axis": "R",
       "hintSentence": "Γράφουμε το ρήμα ___ στη σωστή ορθογραφία.",
       "feedbackRule": "Προσοχή στον τόνο.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/mathe-1.mp3",
       "morphemes": {
         "root": "μάθε",
         "suffix": ""
@@ -5187,7 +5187,7 @@
       "axis": "R",
       "hintSentence": "Η λέξη ___ είναι ρήμα· δείχνει μια ενέργεια.",
       "feedbackRule": "συμπληρών- + -ω.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/symplirono.mp3",
       "morphemes": {
         "root": "συμπληρών",
         "suffix": "ω"
@@ -5200,7 +5200,7 @@
       "axis": "R",
       "hintSentence": "Συμπληρώνουμε με τη λέξη ___ την πρόταση που περιγράφει κάτι που κάνουμε.",
       "feedbackRule": "λέ- + -ει.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/leei-1.mp3",
       "morphemes": {
         "root": "λέ",
         "suffix": "ει"
@@ -5213,7 +5213,7 @@
       "axis": "R",
       "hintSentence": "Στην πρόταση μπαίνει η λέξη ___.",
       "feedbackRule": "πίνακ- + -α.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/pinaka.mp3",
       "morphemes": {
         "root": "πίνακ",
         "suffix": "α"
@@ -5226,7 +5226,7 @@
       "axis": "R",
       "hintSentence": "Η λέξη ___ είναι ρήμα· δείχνει μια ενέργεια.",
       "feedbackRule": "Προσοχή στον τόνο.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/mporoume.mp3",
       "morphemes": {
         "root": "μπορούμε",
         "suffix": ""
@@ -5239,7 +5239,7 @@
       "axis": "R",
       "hintSentence": "Γράφουμε τη λέξη ___ όταν μιλάμε για ένα αντικείμενο ή ιδέα.",
       "feedbackRule": "σελίδ- + -α.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/selida.mp3",
       "morphemes": {
         "root": "σελίδ",
         "suffix": "α"
@@ -5252,7 +5252,7 @@
       "axis": "R",
       "hintSentence": "Γράφουμε το ρήμα ___ στη σωστή ορθογραφία.",
       "feedbackRule": "υπάρχ- + -ουν.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/yparchoun.mp3",
       "morphemes": {
         "root": "υπάρχ",
         "suffix": "ουν"
@@ -5265,7 +5265,7 @@
       "axis": "R",
       "hintSentence": "Η λέξη ___ χρησιμοποιείται σε μια πρόταση για να ονομάσουμε κάτι.",
       "feedbackRule": "προπαίδει- + -α.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/propaideia.mp3",
       "morphemes": {
         "root": "προπαίδει",
         "suffix": "α"
@@ -5278,7 +5278,7 @@
       "axis": "R",
       "hintSentence": "Γράφουμε τη λέξη ___ όταν μιλάμε για ένα αντικείμενο ή ιδέα.",
       "feedbackRule": "σειρ- + -ά.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/seira-1.mp3",
       "morphemes": {
         "root": "σειρ",
         "suffix": "ά"
@@ -5291,7 +5291,7 @@
       "axis": "R",
       "hintSentence": "Γράφουμε το ρήμα ___ στη σωστή ορθογραφία.",
       "feedbackRule": "Προσοχή στον τόνο.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/syzitame-1.mp3",
       "morphemes": {
         "root": "συζητάμε",
         "suffix": ""
@@ -5304,7 +5304,7 @@
       "axis": "R",
       "hintSentence": "Η λέξη ___ είναι επίθετο· περιγράφει κάτι.",
       "feedbackRule": "κατ- + -ι.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/kati.mp3",
       "morphemes": {
         "root": "κατ",
         "suffix": "ι"
@@ -5317,7 +5317,7 @@
       "axis": "R",
       "hintSentence": "Γράφουμε τη λέξη ___ όταν μιλάμε για ένα αντικείμενο ή ιδέα.",
       "feedbackRule": "τρόπ- + -ο.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/tropo-1.mp3",
       "morphemes": {
         "root": "τρόπ",
         "suffix": "ο"
@@ -5330,7 +5330,7 @@
       "axis": "R",
       "hintSentence": "Στην πρόταση μπαίνει η λέξη ___.",
       "feedbackRule": "χρον- + -ιά.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/chronia.mp3",
       "morphemes": {
         "root": "χρον",
         "suffix": "ιά"
@@ -5343,7 +5343,7 @@
       "axis": "R",
       "hintSentence": "Η λέξη ___ είναι επίθετο· περιγράφει κάτι.",
       "feedbackRule": "αυτ- + -ές.",
-      "audioFile": "audio/s.mp3",
+      "audioFile": "audio/aytes.mp3",
       "morphemes": {
         "root": "αυτ",
         "suffix": "ές"
@@ -5356,7 +5356,7 @@
       "axis": "R",
       "hintSentence": "Συμπληρώνουμε με τη λέξη ___ την πρόταση που περιγράφει κάτι που κάνουμε.",
       "feedbackRule": "Προσοχή στον τόνο.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/eiche-1.mp3",
       "morphemes": {
         "root": "είχε",
         "suffix": ""
@@ -5382,7 +5382,7 @@
       "axis": "R",
       "hintSentence": "Η λέξη ___ είναι επίθετο· περιγράφει κάτι.",
       "feedbackRule": "πόσ- + -ες.",
-      "audioFile": "audio/s.mp3",
+      "audioFile": "audio/poses.mp3",
       "morphemes": {
         "root": "πόσ",
         "suffix": "ες"
@@ -5395,7 +5395,7 @@
       "axis": "R",
       "hintSentence": "Γράφουμε τη λέξη ___ όταν μιλάμε για ένα αντικείμενο ή ιδέα.",
       "feedbackRule": "φυτ- + -ά.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/fyta.mp3",
       "morphemes": {
         "root": "φυτ",
         "suffix": "ά"
@@ -5408,7 +5408,7 @@
       "axis": "R",
       "hintSentence": "Χρησιμοποιούμε την λέξη ___ για να περιγράψουμε.",
       "feedbackRule": "ποι- + -ος.",
-      "audioFile": "audio/s.mp3",
+      "audioFile": "audio/poios-1.mp3",
       "morphemes": {
         "root": "ποι",
         "suffix": "ος"
@@ -5421,7 +5421,7 @@
       "axis": "R",
       "hintSentence": "Η λέξη ___ χρησιμοποιείται σε μια πρόταση για να ονομάσουμε κάτι.",
       "feedbackRule": "ομάδ- + -α.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/omada.mp3",
       "morphemes": {
         "root": "ομάδ",
         "suffix": "α"
@@ -5434,7 +5434,7 @@
       "axis": "R",
       "hintSentence": "Γράφουμε τη λέξη ___ όταν μιλάμε για ένα αντικείμενο ή ιδέα.",
       "feedbackRule": "σχή- + -ματα.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/schimata-1.mp3",
       "morphemes": {
         "root": "σχή",
         "suffix": "ματα"
@@ -5447,7 +5447,7 @@
       "axis": "R",
       "hintSentence": "Στην πρόταση μπαίνει η λέξη ___.",
       "feedbackRule": "φορ- + -ές.",
-      "audioFile": "audio/s.mp3",
+      "audioFile": "audio/fores.mp3",
       "morphemes": {
         "root": "φορ",
         "suffix": "ές"
@@ -5460,7 +5460,7 @@
       "axis": "R",
       "hintSentence": "Η λέξη ___ χρησιμοποιείται σε μια πρόταση για να ονομάσουμε κάτι.",
       "feedbackRule": "παιχνίδι- + -α.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/paichnidia-1.mp3",
       "morphemes": {
         "root": "παιχνίδι",
         "suffix": "α"
@@ -5473,7 +5473,7 @@
       "axis": "R",
       "hintSentence": "Συμπληρώνουμε με τη λέξη ___ την πρόταση που περιγράφει κάτι που κάνουμε.",
       "feedbackRule": "Προσοχή στον τόνο.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/paratiro.mp3",
       "morphemes": {
         "root": "παρατηρώ",
         "suffix": ""
@@ -5486,7 +5486,7 @@
       "axis": "R",
       "hintSentence": "Γράφουμε το ρήμα ___ στη σωστή ορθογραφία.",
       "feedbackRule": "Προσοχή στον τόνο.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/ekane.mp3",
       "morphemes": {
         "root": "έκανε",
         "suffix": ""
@@ -5512,7 +5512,7 @@
       "axis": "R",
       "hintSentence": "Γράφουμε τη λέξη ___ όταν μιλάμε για ένα αντικείμενο ή ιδέα.",
       "feedbackRule": "λεξικ- + -ό.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/lexiko.mp3",
       "morphemes": {
         "root": "λεξικ",
         "suffix": "ό"
@@ -5525,7 +5525,7 @@
       "axis": "R",
       "hintSentence": "Στην πρόταση μπαίνει η λέξη ___.",
       "feedbackRule": "ακρίβει- + -α.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/akriveia.mp3",
       "morphemes": {
         "root": "ακρίβει",
         "suffix": "α"
@@ -5538,7 +5538,7 @@
       "axis": "R",
       "hintSentence": "Η λέξη ___ χρησιμοποιείται σε μια πρόταση για να ονομάσουμε κάτι.",
       "feedbackRule": "κείμεν- + -ο.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/keimeno.mp3",
       "morphemes": {
         "root": "κείμεν",
         "suffix": "ο"
@@ -5551,7 +5551,7 @@
       "axis": "R",
       "hintSentence": "Συμπληρώνουμε με τη λέξη ___ την πρόταση που περιγράφει κάτι που κάνουμε.",
       "feedbackRule": "έχ- + -ω.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/echo.mp3",
       "morphemes": {
         "root": "έχ",
         "suffix": "ω"
@@ -5564,7 +5564,7 @@
       "axis": "R",
       "hintSentence": "Χρησιμοποιούμε την λέξη ___ για να περιγράψουμε.",
       "feedbackRule": "ίδ- + -ιο.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/idio-1.mp3",
       "morphemes": {
         "root": "ίδ",
         "suffix": "ιο"
@@ -5577,7 +5577,7 @@
       "axis": "R",
       "hintSentence": "Η λέξη ___ είναι ρήμα· δείχνει μια ενέργεια.",
       "feedbackRule": "βρίσκ- + -ω.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/vrisko-1.mp3",
       "morphemes": {
         "root": "βρίσκ",
         "suffix": "ω"
@@ -5590,7 +5590,7 @@
       "axis": "R",
       "hintSentence": "Συμπληρώνουμε με το επίθετο ___ την πρόταση.",
       "feedbackRule": "ίδι- + -α.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/idia.mp3",
       "morphemes": {
         "root": "ίδι",
         "suffix": "α"
@@ -5603,7 +5603,7 @@
       "axis": "R",
       "hintSentence": "Στην πρόταση μπαίνει η λέξη ___.",
       "feedbackRule": "Προσοχή στον τόνο.",
-      "audioFile": "audio/s.mp3",
+      "audioFile": "audio/mikros-1.mp3",
       "morphemes": {
         "root": "μικρός",
         "suffix": ""
@@ -5616,7 +5616,7 @@
       "axis": "R",
       "hintSentence": "Η λέξη ___ είναι ρήμα· δείχνει μια ενέργεια.",
       "feedbackRule": "Προσοχή στον τόνο.",
-      "audioFile": "audio/s.mp3",
+      "audioFile": "audio/vreis.mp3",
       "morphemes": {
         "root": "βρείς",
         "suffix": ""
@@ -5629,7 +5629,7 @@
       "axis": "R",
       "hintSentence": "Γράφουμε τη λέξη ___ όταν μιλάμε για ένα αντικείμενο ή ιδέα.",
       "feedbackRule": "εικόν- + -α.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/eikona-1.mp3",
       "morphemes": {
         "root": "εικόν",
         "suffix": "α"
@@ -5642,7 +5642,7 @@
       "axis": "R",
       "hintSentence": "Στην πρόταση μπαίνει η λέξη ___.",
       "feedbackRule": "κομμάτι- + -α.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/kommatia.mp3",
       "morphemes": {
         "root": "κομμάτι",
         "suffix": "α"
@@ -5655,7 +5655,7 @@
       "axis": "R",
       "hintSentence": "Η λέξη ___ χρησιμοποιείται σε μια πρόταση για να ονομάσουμε κάτι.",
       "feedbackRule": "άνθρωπο- + -ι.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/anthropoi.mp3",
       "morphemes": {
         "root": "άνθρωπο",
         "suffix": "ι"
@@ -5668,7 +5668,7 @@
       "axis": "R",
       "hintSentence": "Γράφουμε τη λέξη ___ όταν μιλάμε για ένα αντικείμενο ή ιδέα.",
       "feedbackRule": "παράδειγμ- + -α.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/paradeigma.mp3",
       "morphemes": {
         "root": "παράδειγμ",
         "suffix": "α"
@@ -5681,7 +5681,7 @@
       "axis": "R",
       "hintSentence": "Στην πρόταση μπαίνει η λέξη ___.",
       "feedbackRule": "σχήμ- + -α.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/schima.mp3",
       "morphemes": {
         "root": "σχήμ",
         "suffix": "α"
@@ -5694,7 +5694,7 @@
       "axis": "R",
       "hintSentence": "Η λέξη ___ είναι ρήμα· δείχνει μια ενέργεια.",
       "feedbackRule": "κάν- + -ουν.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/kanoun.mp3",
       "morphemes": {
         "root": "κάν",
         "suffix": "ουν"
@@ -5707,7 +5707,7 @@
       "axis": "R",
       "hintSentence": "Γράφουμε τη λέξη ___ όταν μιλάμε για ένα αντικείμενο ή ιδέα.",
       "feedbackRule": "προβλή- + -ματα.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/provlimata.mp3",
       "morphemes": {
         "root": "προβλή",
         "suffix": "ματα"
@@ -5720,7 +5720,7 @@
       "axis": "R",
       "hintSentence": "Χρησιμοποιούμε την λέξη ___ για να περιγράψουμε.",
       "feedbackRule": "άλλ- + -η.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/alli.mp3",
       "morphemes": {
         "root": "άλλ",
         "suffix": "η"
@@ -5733,7 +5733,7 @@
       "axis": "R",
       "hintSentence": "Η λέξη ___ είναι ρήμα· δείχνει μια ενέργεια.",
       "feedbackRule": "έχ- + -εις.",
-      "audioFile": "audio/s.mp3",
+      "audioFile": "audio/echeis.mp3",
       "morphemes": {
         "root": "έχ",
         "suffix": "εις"
@@ -5746,7 +5746,7 @@
       "axis": "R",
       "hintSentence": "Γράφουμε τη λέξη ___ όταν μιλάμε για ένα αντικείμενο ή ιδέα.",
       "feedbackRule": "ρέστ- + -α.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/resta.mp3",
       "morphemes": {
         "root": "ρέστ",
         "suffix": "α"
@@ -5759,7 +5759,7 @@
       "axis": "R",
       "hintSentence": "Η λέξη ___ είναι ρήμα· δείχνει μια ενέργεια.",
       "feedbackRule": "είν- + -αι.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/einai-2.mp3",
       "morphemes": {
         "root": "είν",
         "suffix": "αι"
@@ -5772,7 +5772,7 @@
       "axis": "R",
       "hintSentence": "Συμπληρώνουμε με τη λέξη ___ την πρόταση που περιγράφει κάτι που κάνουμε.",
       "feedbackRule": "Προσοχή στον τόνο.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/itan-2.mp3",
       "morphemes": {
         "root": "ήταν",
         "suffix": ""
@@ -5785,7 +5785,7 @@
       "axis": "R",
       "hintSentence": "Χρησιμοποιούμε την λέξη ___ για να περιγράψουμε.",
       "feedbackRule": "αυτ- + -ό.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/ayto-2.mp3",
       "morphemes": {
         "root": "αυτ",
         "suffix": "ό"
@@ -5798,7 +5798,7 @@
       "axis": "R",
       "hintSentence": "Η λέξη ___ είναι επίθετο· περιγράφει κάτι.",
       "feedbackRule": "Προσοχή στον τόνο.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/kathe-2.mp3",
       "morphemes": {
         "root": "κάθε",
         "suffix": ""
@@ -5811,7 +5811,7 @@
       "axis": "R",
       "hintSentence": "Γράφουμε τη λέξη ___ όταν μιλάμε για ένα αντικείμενο ή ιδέα.",
       "feedbackRule": "παιδ- + -ιά.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/paidia-2.mp3",
       "morphemes": {
         "root": "παιδ",
         "suffix": "ιά"
@@ -5824,7 +5824,7 @@
       "axis": "R",
       "hintSentence": "Γράφουμε το ρήμα ___ στη σωστή ορθογραφία.",
       "feedbackRule": "έχ- + -ει.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/echei-2.mp3",
       "morphemes": {
         "root": "έχ",
         "suffix": "ει"
@@ -5837,7 +5837,7 @@
       "axis": "R",
       "hintSentence": "Η λέξη ___ χρησιμοποιείται σε μια πρόταση για να ονομάσουμε κάτι.",
       "feedbackRule": "λεξ- + -εις.",
-      "audioFile": "audio/s.mp3",
+      "audioFile": "audio/lexeis-2.mp3",
       "morphemes": {
         "root": "λεξ",
         "suffix": "εις"
@@ -5850,7 +5850,7 @@
       "axis": "R",
       "hintSentence": "Συμπληρώνουμε με το επίθετο ___ την πρόταση.",
       "feedbackRule": "Προσοχή στον τόνο.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/poly-2.mp3",
       "morphemes": {
         "root": "πολύ",
         "suffix": ""
@@ -5863,7 +5863,7 @@
       "axis": "R",
       "hintSentence": "Γράφουμε το ρήμα ___ στη σωστή ορθογραφία.",
       "feedbackRule": "Προσοχή στον τόνο.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/eiche-2.mp3",
       "morphemes": {
         "root": "είχε",
         "suffix": ""
@@ -5876,7 +5876,7 @@
       "axis": "R",
       "hintSentence": "Η λέξη ___ χρησιμοποιείται σε μια πρόταση για να ονομάσουμε κάτι.",
       "feedbackRule": "τάξ- + -η.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/taxi-2.mp3",
       "morphemes": {
         "root": "τάξ",
         "suffix": "η"
@@ -5889,7 +5889,7 @@
       "axis": "R",
       "hintSentence": "Συμπληρώνουμε με το επίθετο ___ την πρόταση.",
       "feedbackRule": "αυτ- + -ά.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/ayta-2.mp3",
       "morphemes": {
         "root": "αυτ",
         "suffix": "ά"
@@ -5902,7 +5902,7 @@
       "axis": "R",
       "hintSentence": "Χρησιμοποιούμε την λέξη ___ για να περιγράψουμε.",
       "feedbackRule": "ποι- + -α.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/poia-2.mp3",
       "morphemes": {
         "root": "ποι",
         "suffix": "α"
@@ -5915,7 +5915,7 @@
       "axis": "R",
       "hintSentence": "Η λέξη ___ χρησιμοποιείται σε μια πρόταση για να ονομάσουμε κάτι.",
       "feedbackRule": "κεφαλα- + -ιο.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/kefalaio-1.mp3",
       "morphemes": {
         "root": "κεφαλα",
         "suffix": "ιο"
@@ -5928,7 +5928,7 @@
       "axis": "R",
       "hintSentence": "Συμπληρώνουμε με το επίθετο ___ την πρόταση.",
       "feedbackRule": "όλο- + -ι.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/oloi-2.mp3",
       "morphemes": {
         "root": "όλο",
         "suffix": "ι"
@@ -5941,7 +5941,7 @@
       "axis": "R",
       "hintSentence": "Γράφουμε το ρήμα ___ στη σωστή ορθογραφία.",
       "feedbackRule": "εχ- + -ουν.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/echoun-2.mp3",
       "morphemes": {
         "root": "εχ",
         "suffix": "ουν"
@@ -5954,7 +5954,7 @@
       "axis": "R",
       "hintSentence": "Η λέξη ___ χρησιμοποιείται σε μια πρόταση για να ονομάσουμε κάτι.",
       "feedbackRule": "κείμεν- + -ό.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/keimeno-1.mp3",
       "morphemes": {
         "root": "κείμεν",
         "suffix": "ό"
@@ -5967,7 +5967,7 @@
       "axis": "R",
       "hintSentence": "Συμπληρώνουμε με το επίθετο ___ την πρόταση.",
       "feedbackRule": "όλ- + -α.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/ola-2.mp3",
       "morphemes": {
         "root": "όλ",
         "suffix": "α"
@@ -5980,7 +5980,7 @@
       "axis": "R",
       "hintSentence": "Γράφουμε το ρήμα ___ στη σωστή ορθογραφία.",
       "feedbackRule": "Προσοχή στον τόνο.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/eipe-2.mp3",
       "morphemes": {
         "root": "είπε",
         "suffix": ""
@@ -6006,7 +6006,7 @@
       "axis": "R",
       "hintSentence": "Γράφουμε τη λέξη ___ όταν μιλάμε για ένα αντικείμενο ή ιδέα.",
       "feedbackRule": "Προσοχή στον τόνο.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/zoi.mp3",
       "morphemes": {
         "root": "ζωή",
         "suffix": ""
@@ -6019,7 +6019,7 @@
       "axis": "R",
       "hintSentence": "Στην πρόταση μπαίνει η λέξη ___.",
       "feedbackRule": "άνθρωπο- + -ί.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/anthropoi-1.mp3",
       "morphemes": {
         "root": "άνθρωπο",
         "suffix": "ί"
@@ -6032,7 +6032,7 @@
       "axis": "R",
       "hintSentence": "Η λέξη ___ είναι ρήμα· δείχνει μια ενέργεια.",
       "feedbackRule": "γράφ- + -ω.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/grafo-1.mp3",
       "morphemes": {
         "root": "γράφ",
         "suffix": "ω"
@@ -6045,7 +6045,7 @@
       "axis": "R",
       "hintSentence": "Γράφουμε τη λέξη ___ όταν μιλάμε για ένα αντικείμενο ή ιδέα.",
       "feedbackRule": "ενοτητ- + -α.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/enotita-1.mp3",
       "morphemes": {
         "root": "ενοτητ",
         "suffix": "α"
@@ -6058,7 +6058,7 @@
       "axis": "R",
       "hintSentence": "Χρησιμοποιούμε την λέξη ___ για να περιγράψουμε.",
       "feedbackRule": "Προσοχή στον τόνο.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/ayti-1.mp3",
       "morphemes": {
         "root": "αυτή",
         "suffix": ""
@@ -6071,7 +6071,7 @@
       "axis": "R",
       "hintSentence": "Η λέξη ___ είναι επίθετο· περιγράφει κάτι.",
       "feedbackRule": "πολλ- + -ά.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/polla-2.mp3",
       "morphemes": {
         "root": "πολλ",
         "suffix": "ά"
@@ -6084,7 +6084,7 @@
       "axis": "R",
       "hintSentence": "Γράφουμε τη λέξη ___ όταν μιλάμε για ένα αντικείμενο ή ιδέα.",
       "feedbackRule": "δημοτικ- + -ου.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/dimotikou-1.mp3",
       "morphemes": {
         "root": "δημοτικ",
         "suffix": "ου"
@@ -6097,7 +6097,7 @@
       "axis": "R",
       "hintSentence": "Στην πρόταση μπαίνει η λέξη ___.",
       "feedbackRule": "αγών- + -ες.",
-      "audioFile": "audio/s.mp3",
+      "audioFile": "audio/agones.mp3",
       "morphemes": {
         "root": "αγών",
         "suffix": "ες"
@@ -6110,7 +6110,7 @@
       "axis": "R",
       "hintSentence": "Η λέξη ___ χρησιμοποιείται σε μια πρόταση για να ονομάσουμε κάτι.",
       "feedbackRule": "χρον- + -ιά.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/chronia-1.mp3",
       "morphemes": {
         "root": "χρον",
         "suffix": "ιά"
@@ -6123,7 +6123,7 @@
       "axis": "R",
       "hintSentence": "Γράφουμε τη λέξη ___ όταν μιλάμε για ένα αντικείμενο ή ιδέα.",
       "feedbackRule": "εικον- + -α.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/eikona-2.mp3",
       "morphemes": {
         "root": "εικον",
         "suffix": "α"
@@ -6136,7 +6136,7 @@
       "axis": "R",
       "hintSentence": "Στην πρόταση μπαίνει η λέξη ___.",
       "feedbackRule": "μαθητ- + -ές.",
-      "audioFile": "audio/s.mp3",
+      "audioFile": "audio/mathites-1.mp3",
       "morphemes": {
         "root": "μαθητ",
         "suffix": "ές"
@@ -6149,7 +6149,7 @@
       "axis": "R",
       "hintSentence": "Η λέξη ___ χρησιμοποιείται σε μια πρόταση για να ονομάσουμε κάτι.",
       "feedbackRule": "ζώ- + -α.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/zoa-2.mp3",
       "morphemes": {
         "root": "ζώ",
         "suffix": "α"
@@ -6162,7 +6162,7 @@
       "axis": "R",
       "hintSentence": "Συμπληρώνουμε με το επίθετο ___ την πρόταση.",
       "feedbackRule": "πο- + -ιο.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/poio-2.mp3",
       "morphemes": {
         "root": "πο",
         "suffix": "ιο"
@@ -6175,7 +6175,7 @@
       "axis": "R",
       "hintSentence": "Γράφουμε το ρήμα ___ στη σωστή ορθογραφία.",
       "feedbackRule": "Προσοχή στον τόνο.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/grapse-2.mp3",
       "morphemes": {
         "root": "γράψε",
         "suffix": ""
@@ -6188,7 +6188,7 @@
       "axis": "R",
       "hintSentence": "Η λέξη ___ είναι επίθετο· περιγράφει κάτι.",
       "feedbackRule": "μόν- + -ο.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/mono.mp3",
       "morphemes": {
         "root": "μόν",
         "suffix": "ο"
@@ -6201,7 +6201,7 @@
       "axis": "R",
       "hintSentence": "Γράφουμε τη λέξη ___ όταν μιλάμε για ένα αντικείμενο ή ιδέα.",
       "feedbackRule": "ανθρώπ- + -ους.",
-      "audioFile": "audio/s.mp3",
+      "audioFile": "audio/anthropous.mp3",
       "morphemes": {
         "root": "ανθρώπ",
         "suffix": "ους"
@@ -6214,7 +6214,7 @@
       "axis": "R",
       "hintSentence": "Γράφουμε το ρήμα ___ στη σωστή ορθογραφία.",
       "feedbackRule": "υπάρχ- + -ουν.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/yparchoun-1.mp3",
       "morphemes": {
         "root": "υπάρχ",
         "suffix": "ουν"
@@ -6227,7 +6227,7 @@
       "axis": "R",
       "hintSentence": "Η λέξη ___ χρησιμοποιείται σε μια πρόταση για να ονομάσουμε κάτι.",
       "feedbackRule": "Προσοχή στον τόνο.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/mathiti-1.mp3",
       "morphemes": {
         "root": "μαθητή",
         "suffix": ""
@@ -6240,7 +6240,7 @@
       "axis": "R",
       "hintSentence": "Συμπληρώνουμε με το επίθετο ___ την πρόταση.",
       "feedbackRule": "άλλ- + -ο.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/allo-2.mp3",
       "morphemes": {
         "root": "άλλ",
         "suffix": "ο"
@@ -6253,7 +6253,7 @@
       "axis": "R",
       "hintSentence": "Στην πρόταση μπαίνει η λέξη ___.",
       "feedbackRule": "έργ- + -α.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/erga.mp3",
       "morphemes": {
         "root": "έργ",
         "suffix": "α"
@@ -6266,7 +6266,7 @@
       "axis": "R",
       "hintSentence": "Η λέξη ___ χρησιμοποιείται σε μια πρόταση για να ονομάσουμε κάτι.",
       "feedbackRule": "σχή- + -ματα.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/schimata-2.mp3",
       "morphemes": {
         "root": "σχή",
         "suffix": "ματα"
@@ -6279,7 +6279,7 @@
       "axis": "R",
       "hintSentence": "Γράφουμε τη λέξη ___ όταν μιλάμε για ένα αντικείμενο ή ιδέα.",
       "feedbackRule": "ομάδ- + -α.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/omada-1.mp3",
       "morphemes": {
         "root": "ομάδ",
         "suffix": "α"
@@ -6292,7 +6292,7 @@
       "axis": "R",
       "hintSentence": "Χρησιμοποιούμε την λέξη ___ για να περιγράψουμε.",
       "feedbackRule": "αλλ- + -α.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/alla-2.mp3",
       "morphemes": {
         "root": "αλλ",
         "suffix": "α"
@@ -6305,7 +6305,7 @@
       "axis": "R",
       "hintSentence": "Η λέξη ___ χρησιμοποιείται σε μια πρόταση για να ονομάσουμε κάτι.",
       "feedbackRule": "εικον- + -ες.",
-      "audioFile": "audio/s.mp3",
+      "audioFile": "audio/eikones-1.mp3",
       "morphemes": {
         "root": "εικον",
         "suffix": "ες"
@@ -6318,7 +6318,7 @@
       "axis": "R",
       "hintSentence": "Συμπληρώνουμε με τη λέξη ___ την πρόταση που περιγράφει κάτι που κάνουμε.",
       "feedbackRule": "Προσοχή στον τόνο.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/eichan.mp3",
       "morphemes": {
         "root": "είχαν",
         "suffix": ""
@@ -6331,7 +6331,7 @@
       "axis": "R",
       "hintSentence": "Χρησιμοποιούμε την λέξη ___ για να περιγράψουμε.",
       "feedbackRule": "μεγάλ- + -η.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/megali.mp3",
       "morphemes": {
         "root": "μεγάλ",
         "suffix": "η"
@@ -6344,7 +6344,7 @@
       "axis": "R",
       "hintSentence": "Η λέξη ___ χρησιμοποιείται σε μια πρόταση για να ονομάσουμε κάτι.",
       "feedbackRule": "Προσοχή στον τόνο.",
-      "audioFile": "audio/s.mp3",
+      "audioFile": "audio/arithmous-2.mp3",
       "morphemes": {
         "root": "αριθμούς",
         "suffix": ""
@@ -6357,7 +6357,7 @@
       "axis": "R",
       "hintSentence": "Συμπληρώνουμε με το επίθετο ___ την πρόταση.",
       "feedbackRule": "αυτ- + -ές.",
-      "audioFile": "audio/s.mp3",
+      "audioFile": "audio/aytes-1.mp3",
       "morphemes": {
         "root": "αυτ",
         "suffix": "ές"
@@ -6370,7 +6370,7 @@
       "axis": "R",
       "hintSentence": "Χρησιμοποιούμε την λέξη ___ για να περιγράψουμε.",
       "feedbackRule": "Προσοχή στον τόνο.",
-      "audioFile": "audio/s.mp3",
+      "audioFile": "audio/aytos.mp3",
       "morphemes": {
         "root": "αυτός",
         "suffix": ""
@@ -6383,7 +6383,7 @@
       "axis": "R",
       "hintSentence": "Η λέξη ___ χρησιμοποιείται σε μια πρόταση για να ονομάσουμε κάτι.",
       "feedbackRule": "έργ- + -ο.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/ergo.mp3",
       "morphemes": {
         "root": "έργ",
         "suffix": "ο"
@@ -6396,7 +6396,7 @@
       "axis": "R",
       "hintSentence": "Γράφουμε τη λέξη ___ όταν μιλάμε για ένα αντικείμενο ή ιδέα.",
       "feedbackRule": "τρόπ- + -ο.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/tropo-2.mp3",
       "morphemes": {
         "root": "τρόπ",
         "suffix": "ο"
@@ -6409,7 +6409,7 @@
       "axis": "R",
       "hintSentence": "Γράφουμε το ρήμα ___ στη σωστή ορθογραφία.",
       "feedbackRule": "Προσοχή στον τόνο.",
-      "audioFile": "audio/s.mp3",
+      "audioFile": "audio/mporeis-1.mp3",
       "morphemes": {
         "root": "μπορείς",
         "suffix": ""
@@ -6422,7 +6422,7 @@
       "axis": "R",
       "hintSentence": "Η λέξη ___ είναι ρήμα· δείχνει μια ενέργεια.",
       "feedbackRule": "κάν- + -ει.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/kanei-2.mp3",
       "morphemes": {
         "root": "κάν",
         "suffix": "ει"
@@ -6435,7 +6435,7 @@
       "axis": "R",
       "hintSentence": "Γράφουμε τη λέξη ___ όταν μιλάμε για ένα αντικείμενο ή ιδέα.",
       "feedbackRule": "φορ- + -ά.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/fora-2.mp3",
       "morphemes": {
         "root": "φορ",
         "suffix": "ά"
@@ -6448,7 +6448,7 @@
       "axis": "R",
       "hintSentence": "Χρησιμοποιούμε την λέξη ___ για να περιγράψουμε.",
       "feedbackRule": "κοντ- + -ά.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/konta.mp3",
       "morphemes": {
         "root": "κοντ",
         "suffix": "ά"
@@ -6461,7 +6461,7 @@
       "axis": "R",
       "hintSentence": "Η λέξη ___ χρησιμοποιείται σε μια πρόταση για να ονομάσουμε κάτι.",
       "feedbackRule": "ποσ- + -ά.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/posa-2.mp3",
       "morphemes": {
         "root": "ποσ",
         "suffix": "ά"
@@ -6474,7 +6474,7 @@
       "axis": "R",
       "hintSentence": "Συμπληρώνουμε με τη λέξη ___ την πρόταση που περιγράφει κάτι που κάνουμε.",
       "feedbackRule": "Προσοχή στον τόνο.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/ekane-1.mp3",
       "morphemes": {
         "root": "έκανε",
         "suffix": ""
@@ -6487,7 +6487,7 @@
       "axis": "R",
       "hintSentence": "Χρησιμοποιούμε την λέξη ___ για να περιγράψουμε.",
       "feedbackRule": "λίγ- + -ο.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/ligo.mp3",
       "morphemes": {
         "root": "λίγ",
         "suffix": "ο"
@@ -6500,7 +6500,7 @@
       "axis": "R",
       "hintSentence": "Η λέξη ___ χρησιμοποιείται σε μια πρόταση για να ονομάσουμε κάτι.",
       "feedbackRule": "παιδ- + -ί.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/paidi-2.mp3",
       "morphemes": {
         "root": "παιδ",
         "suffix": "ί"
@@ -6513,7 +6513,7 @@
       "axis": "R",
       "hintSentence": "Συμπληρώνουμε με το επίθετο ___ την πρόταση.",
       "feedbackRule": "πολλ- + -ές.",
-      "audioFile": "audio/s.mp3",
+      "audioFile": "audio/polles.mp3",
       "morphemes": {
         "root": "πολλ",
         "suffix": "ές"
@@ -6526,7 +6526,7 @@
       "axis": "R",
       "hintSentence": "Χρησιμοποιούμε την λέξη ___ για να περιγράψουμε.",
       "feedbackRule": "κάτ- + -ι.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/kati-1.mp3",
       "morphemes": {
         "root": "κάτ",
         "suffix": "ι"
@@ -6539,7 +6539,7 @@
       "axis": "R",
       "hintSentence": "Η λέξη ___ χρησιμοποιείται σε μια πρόταση για να ονομάσουμε κάτι.",
       "feedbackRule": "πίνακ- + -α.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/pinaka-1.mp3",
       "morphemes": {
         "root": "πίνακ",
         "suffix": "α"
@@ -6552,7 +6552,7 @@
       "axis": "R",
       "hintSentence": "Γράφουμε τη λέξη ___ όταν μιλάμε για ένα αντικείμενο ή ιδέα.",
       "feedbackRule": "μερ- + -ος.",
-      "audioFile": "audio/s.mp3",
+      "audioFile": "audio/meros.mp3",
       "morphemes": {
         "root": "μερ",
         "suffix": "ος"
@@ -6565,7 +6565,7 @@
       "axis": "R",
       "hintSentence": "Στην πρόταση μπαίνει η λέξη ___.",
       "feedbackRule": "θε- + -ό.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/theo.mp3",
       "morphemes": {
         "root": "θε",
         "suffix": "ό"
@@ -6578,7 +6578,7 @@
       "axis": "R",
       "hintSentence": "Η λέξη ___ χρησιμοποιείται σε μια πρόταση για να ονομάσουμε κάτι.",
       "feedbackRule": "λόγι- + -α.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/logia.mp3",
       "morphemes": {
         "root": "λόγι",
         "suffix": "α"
@@ -6591,7 +6591,7 @@
       "axis": "R",
       "hintSentence": "Γράφουμε τη λέξη ___ όταν μιλάμε για ένα αντικείμενο ή ιδέα.",
       "feedbackRule": "πληροφορι- + -ες.",
-      "audioFile": "audio/s.mp3",
+      "audioFile": "audio/plirofories.mp3",
       "morphemes": {
         "root": "πληροφορι",
         "suffix": "ες"
@@ -6604,7 +6604,7 @@
       "axis": "R",
       "hintSentence": "Γράφουμε το ρήμα ___ στη σωστή ορθογραφία.",
       "feedbackRule": "Προσοχή στον τόνο.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/symplirose-1.mp3",
       "morphemes": {
         "root": "συμπλήρωσε",
         "suffix": ""
@@ -6617,7 +6617,7 @@
       "axis": "R",
       "hintSentence": "Η λέξη ___ χρησιμοποιείται σε μια πρόταση για να ονομάσουμε κάτι.",
       "feedbackRule": "Προσοχή στον τόνο.",
-      "audioFile": "audio/s.mp3",
+      "audioFile": "audio/theos.mp3",
       "morphemes": {
         "root": "θεός",
         "suffix": ""
@@ -6630,7 +6630,7 @@
       "axis": "R",
       "hintSentence": "Συμπληρώνουμε με τη λέξη ___ την πρόταση που περιγράφει κάτι που κάνουμε.",
       "feedbackRule": "Προσοχή στον τόνο.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/pire.mp3",
       "morphemes": {
         "root": "πήρε",
         "suffix": ""
@@ -6643,7 +6643,7 @@
       "axis": "R",
       "hintSentence": "Στην πρόταση μπαίνει η λέξη ___.",
       "feedbackRule": "ωρ- + -α.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/ora-1.mp3",
       "morphemes": {
         "root": "ωρ",
         "suffix": "α"
@@ -6669,7 +6669,7 @@
       "axis": "R",
       "hintSentence": "Γράφουμε τη λέξη ___ όταν μιλάμε για ένα αντικείμενο ή ιδέα.",
       "feedbackRule": "κοσμ- + -ου.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/kosmou.mp3",
       "morphemes": {
         "root": "κοσμ",
         "suffix": "ου"
@@ -6682,7 +6682,7 @@
       "axis": "R",
       "hintSentence": "Στην πρόταση μπαίνει η λέξη ___.",
       "feedbackRule": "δραστηριότητ- + -ές.",
-      "audioFile": "audio/s.mp3",
+      "audioFile": "audio/drastiriotites.mp3",
       "morphemes": {
         "root": "δραστηριότητ",
         "suffix": "ές"
@@ -6695,7 +6695,7 @@
       "axis": "R",
       "hintSentence": "Η λέξη ___ χρησιμοποιείται σε μια πρόταση για να ονομάσουμε κάτι.",
       "feedbackRule": "τελ- + -ος.",
-      "audioFile": "audio/s.mp3",
+      "audioFile": "audio/telos.mp3",
       "morphemes": {
         "root": "τελ",
         "suffix": "ος"
@@ -6708,7 +6708,7 @@
       "axis": "R",
       "hintSentence": "Συμπληρώνουμε με τη λέξη ___ την πρόταση που περιγράφει κάτι που κάνουμε.",
       "feedbackRule": "γιν- + -ει.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/ginei.mp3",
       "morphemes": {
         "root": "γιν",
         "suffix": "ει"
@@ -6721,7 +6721,7 @@
       "axis": "R",
       "hintSentence": "Στην πρόταση μπαίνει η λέξη ___.",
       "feedbackRule": "κόσμ- + -ο.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/kosmo.mp3",
       "morphemes": {
         "root": "κόσμ",
         "suffix": "ο"
@@ -6734,7 +6734,7 @@
       "axis": "R",
       "hintSentence": "Η λέξη ___ είναι ρήμα· δείχνει μια ενέργεια.",
       "feedbackRule": "λέ- + -ει.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/leei-2.mp3",
       "morphemes": {
         "root": "λέ",
         "suffix": "ει"
@@ -6760,7 +6760,7 @@
       "axis": "R",
       "hintSentence": "Γράφουμε το ρήμα ___ στη σωστή ορθογραφία.",
       "feedbackRule": "Προσοχή στον τόνο.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/egine.mp3",
       "morphemes": {
         "root": "έγινε",
         "suffix": ""
@@ -6773,7 +6773,7 @@
       "axis": "R",
       "hintSentence": "Η λέξη ___ είναι ρήμα· δείχνει μια ενέργεια.",
       "feedbackRule": "Προσοχή στον τόνο.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/syzitame-2.mp3",
       "morphemes": {
         "root": "συζητάμε",
         "suffix": ""
@@ -6786,7 +6786,7 @@
       "axis": "R",
       "hintSentence": "Συμπληρώνουμε με τη λέξη ___ την πρόταση που περιγράφει κάτι που κάνουμε.",
       "feedbackRule": "μπορε- + -ί.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/mporei-2.mp3",
       "morphemes": {
         "root": "μπορε",
         "suffix": "ί"
@@ -6799,7 +6799,7 @@
       "axis": "R",
       "hintSentence": "Γράφουμε το ρήμα ___ στη σωστή ορθογραφία.",
       "feedbackRule": "πρέπ- + -ει.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/prepei-2.mp3",
       "morphemes": {
         "root": "πρέπ",
         "suffix": "ει"
@@ -6812,7 +6812,7 @@
       "axis": "R",
       "hintSentence": "Η λέξη ___ χρησιμοποιείται σε μια πρόταση για να ονομάσουμε κάτι.",
       "feedbackRule": "ερωτησ- + -εις.",
-      "audioFile": "audio/s.mp3",
+      "audioFile": "audio/erotiseis.mp3",
       "morphemes": {
         "root": "ερωτησ",
         "suffix": "εις"
@@ -6825,7 +6825,7 @@
       "axis": "R",
       "hintSentence": "Συμπληρώνουμε με τη λέξη ___ την πρόταση που περιγράφει κάτι που κάνουμε.",
       "feedbackRule": "Προσοχή στον τόνο.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/mporoume-1.mp3",
       "morphemes": {
         "root": "μπορούμε",
         "suffix": ""
@@ -6838,7 +6838,7 @@
       "axis": "R",
       "hintSentence": "Χρησιμοποιούμε την λέξη ___ για να περιγράψουμε.",
       "feedbackRule": "άλλ- + -η.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/alli-1.mp3",
       "morphemes": {
         "root": "άλλ",
         "suffix": "η"
@@ -6851,7 +6851,7 @@
       "axis": "R",
       "hintSentence": "Η λέξη ___ χρησιμοποιείται σε μια πρόταση για να ονομάσουμε κάτι.",
       "feedbackRule": "εποχ- + -η.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/epochi.mp3",
       "morphemes": {
         "root": "εποχ",
         "suffix": "η"
@@ -6864,7 +6864,7 @@
       "axis": "R",
       "hintSentence": "Συμπληρώνουμε με το επίθετο ___ την πρόταση.",
       "feedbackRule": "δικ- + -ό.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/diko.mp3",
       "morphemes": {
         "root": "δικ",
         "suffix": "ό"
@@ -6877,7 +6877,7 @@
       "axis": "R",
       "hintSentence": "Γράφουμε το ρήμα ___ στη σωστή ορθογραφία.",
       "feedbackRule": "καν- + -ω.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/kano.mp3",
       "morphemes": {
         "root": "καν",
         "suffix": "ω"
@@ -6890,7 +6890,7 @@
       "axis": "R",
       "hintSentence": "Η λέξη ___ χρησιμοποιείται σε μια πρόταση για να ονομάσουμε κάτι.",
       "feedbackRule": "χέρι- + -α.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/cheria.mp3",
       "morphemes": {
         "root": "χέρι",
         "suffix": "α"
@@ -6903,7 +6903,7 @@
       "axis": "R",
       "hintSentence": "Συμπληρώνουμε με τη λέξη ___ την πρόταση που περιγράφει κάτι που κάνουμε.",
       "feedbackRule": "βρίσκ- + -ω.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/vrisko-2.mp3",
       "morphemes": {
         "root": "βρίσκ",
         "suffix": "ω"
@@ -6916,7 +6916,7 @@
       "axis": "R",
       "hintSentence": "Χρησιμοποιούμε την λέξη ___ για να περιγράψουμε.",
       "feedbackRule": "Προσοχή στον τόνο.",
-      "audioFile": "audio/s.mp3",
+      "audioFile": "audio/poios-2.mp3",
       "morphemes": {
         "root": "ποιός",
         "suffix": ""
@@ -6929,7 +6929,7 @@
       "axis": "R",
       "hintSentence": "Η λέξη ___ είναι ρήμα· δείχνει μια ενέργεια.",
       "feedbackRule": "ειν- + -αι.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/einai-3.mp3",
       "morphemes": {
         "root": "ειν",
         "suffix": "αι"
@@ -6942,7 +6942,7 @@
       "axis": "R",
       "hintSentence": "Συμπληρώνουμε με τη λέξη ___ την πρόταση που περιγράφει κάτι που κάνουμε.",
       "feedbackRule": "Προσοχή στον τόνο.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/itan-3.mp3",
       "morphemes": {
         "root": "ήταν",
         "suffix": ""
@@ -6955,7 +6955,7 @@
       "axis": "R",
       "hintSentence": "Γράφουμε το ρήμα ___ στη σωστή ορθογραφία.",
       "feedbackRule": "έχ- + -ει.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/echei-3.mp3",
       "morphemes": {
         "root": "έχ",
         "suffix": "ει"
@@ -6968,7 +6968,7 @@
       "axis": "R",
       "hintSentence": "Η λέξη ___ είναι επίθετο· περιγράφει κάτι.",
       "feedbackRule": "Προσοχή στον τόνο.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/kathe-3.mp3",
       "morphemes": {
         "root": "κάθε",
         "suffix": ""
@@ -6981,7 +6981,7 @@
       "axis": "R",
       "hintSentence": "Συμπληρώνουμε με το επίθετο ___ την πρόταση.",
       "feedbackRule": "αυτ- + -ό.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/ayto-3.mp3",
       "morphemes": {
         "root": "αυτ",
         "suffix": "ό"
@@ -6994,7 +6994,7 @@
       "axis": "R",
       "hintSentence": "Στην πρόταση μπαίνει η λέξη ___.",
       "feedbackRule": "παιδ- + -ιά.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/paidia-3.mp3",
       "morphemes": {
         "root": "παιδ",
         "suffix": "ιά"
@@ -7007,7 +7007,7 @@
       "axis": "R",
       "hintSentence": "Η λέξη ___ είναι επίθετο· περιγράφει κάτι.",
       "feedbackRule": "Προσοχή στον τόνο.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/poly-3.mp3",
       "morphemes": {
         "root": "πολύ",
         "suffix": ""
@@ -7020,7 +7020,7 @@
       "axis": "R",
       "hintSentence": "Συμπληρώνουμε με το επίθετο ___ την πρόταση.",
       "feedbackRule": "κάτ- + -ι.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/kati-2.mp3",
       "morphemes": {
         "root": "κάτ",
         "suffix": "ι"
@@ -7033,7 +7033,7 @@
       "axis": "R",
       "hintSentence": "Στην πρόταση μπαίνει η λέξη ___.",
       "feedbackRule": "λεξ- + -εις.",
-      "audioFile": "audio/s.mp3",
+      "audioFile": "audio/lexeis-3.mp3",
       "morphemes": {
         "root": "λεξ",
         "suffix": "εις"
@@ -7046,7 +7046,7 @@
       "axis": "R",
       "hintSentence": "Η λέξη ___ χρησιμοποιείται σε μια πρόταση για να ονομάσουμε κάτι.",
       "feedbackRule": "ουσιαστικ- + -ό.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/ousiastiko.mp3",
       "morphemes": {
         "root": "ουσιαστικ",
         "suffix": "ό"
@@ -7059,7 +7059,7 @@
       "axis": "R",
       "hintSentence": "Συμπληρώνουμε με τη λέξη ___ την πρόταση που περιγράφει κάτι που κάνουμε.",
       "feedbackRule": "έχ- + -ουν.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/echoun-3.mp3",
       "morphemes": {
         "root": "έχ",
         "suffix": "ουν"
@@ -7072,7 +7072,7 @@
       "axis": "R",
       "hintSentence": "Χρησιμοποιούμε την λέξη ___ για να περιγράψουμε.",
       "feedbackRule": "αυτ- + -ά.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/ayta-3.mp3",
       "morphemes": {
         "root": "αυτ",
         "suffix": "ά"
@@ -7085,7 +7085,7 @@
       "axis": "R",
       "hintSentence": "Η λέξη ___ χρησιμοποιείται σε μια πρόταση για να ονομάσουμε κάτι.",
       "feedbackRule": "τάξ- + -η.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/taxi-3.mp3",
       "morphemes": {
         "root": "τάξ",
         "suffix": "η"
@@ -7098,7 +7098,7 @@
       "axis": "R",
       "hintSentence": "Συμπληρώνουμε με το επίθετο ___ την πρόταση.",
       "feedbackRule": "ποι- + -α.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/poia-3.mp3",
       "morphemes": {
         "root": "ποι",
         "suffix": "α"
@@ -7124,7 +7124,7 @@
       "axis": "R",
       "hintSentence": "Η λέξη ___ είναι ρήμα· δείχνει μια ενέργεια.",
       "feedbackRule": "Προσοχή στον τόνο.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/eiche-3.mp3",
       "morphemes": {
         "root": "είχε",
         "suffix": ""
@@ -7137,7 +7137,7 @@
       "axis": "R",
       "hintSentence": "Συμπληρώνουμε με το επίθετο ___ την πρόταση.",
       "feedbackRule": "όλ- + -α.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/ola-3.mp3",
       "morphemes": {
         "root": "όλ",
         "suffix": "α"
@@ -7150,7 +7150,7 @@
       "axis": "R",
       "hintSentence": "Χρησιμοποιούμε την λέξη ___ για να περιγράψουμε.",
       "feedbackRule": "όλο- + -ι.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/oloi-3.mp3",
       "morphemes": {
         "root": "όλο",
         "suffix": "ι"
@@ -7163,7 +7163,7 @@
       "axis": "R",
       "hintSentence": "Η λέξη ___ είναι επίθετο· περιγράφει κάτι.",
       "feedbackRule": "μεγάλ- + -η.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/megali-1.mp3",
       "morphemes": {
         "root": "μεγάλ",
         "suffix": "η"
@@ -7176,7 +7176,7 @@
       "axis": "R",
       "hintSentence": "Γράφουμε τη λέξη ___ όταν μιλάμε για ένα αντικείμενο ή ιδέα.",
       "feedbackRule": "φράσ- + -εις.",
-      "audioFile": "audio/s.mp3",
+      "audioFile": "audio/fraseis.mp3",
       "morphemes": {
         "root": "φράσ",
         "suffix": "εις"
@@ -7189,7 +7189,7 @@
       "axis": "R",
       "hintSentence": "Χρησιμοποιούμε την λέξη ___ για να περιγράψουμε.",
       "feedbackRule": "Προσοχή στον τόνο.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/ayti-2.mp3",
       "morphemes": {
         "root": "αυτή",
         "suffix": ""
@@ -7202,7 +7202,7 @@
       "axis": "R",
       "hintSentence": "Η λέξη ___ χρησιμοποιείται σε μια πρόταση για να ονομάσουμε κάτι.",
       "feedbackRule": "χρον- + -ιά.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/chronia-2.mp3",
       "morphemes": {
         "root": "χρον",
         "suffix": "ιά"
@@ -7215,7 +7215,7 @@
       "axis": "R",
       "hintSentence": "Συμπληρώνουμε με το επίθετο ___ την πρόταση.",
       "feedbackRule": "Προσοχή στον τόνο.",
-      "audioFile": "audio/s.mp3",
+      "audioFile": "audio/aytos-1.mp3",
       "morphemes": {
         "root": "αυτός",
         "suffix": ""
@@ -7228,7 +7228,7 @@
       "axis": "R",
       "hintSentence": "Χρησιμοποιούμε την λέξη ___ για να περιγράψουμε.",
       "feedbackRule": "πολλ- + -ά.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/polla-3.mp3",
       "morphemes": {
         "root": "πολλ",
         "suffix": "ά"
@@ -7241,7 +7241,7 @@
       "axis": "R",
       "hintSentence": "Η λέξη ___ είναι επίθετο· περιγράφει κάτι.",
       "feedbackRule": "μόν- + -ο.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/mono-1.mp3",
       "morphemes": {
         "root": "μόν",
         "suffix": "ο"
@@ -7254,7 +7254,7 @@
       "axis": "R",
       "hintSentence": "Συμπληρώνουμε με τη λέξη ___ την πρόταση που περιγράφει κάτι που κάνουμε.",
       "feedbackRule": "Προσοχή στον τόνο.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/eipe-3.mp3",
       "morphemes": {
         "root": "είπε",
         "suffix": ""
@@ -7267,7 +7267,7 @@
       "axis": "R",
       "hintSentence": "Στην πρόταση μπαίνει η λέξη ___.",
       "feedbackRule": "ανθρωπο- + -ι.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/anthropoi-2.mp3",
       "morphemes": {
         "root": "ανθρωπο",
         "suffix": "ι"
@@ -7293,7 +7293,7 @@
       "axis": "R",
       "hintSentence": "Γράφουμε τη λέξη ___ όταν μιλάμε για ένα αντικείμενο ή ιδέα.",
       "feedbackRule": "τρόπ- + -ο.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/tropo-3.mp3",
       "morphemes": {
         "root": "τρόπ",
         "suffix": "ο"
@@ -7306,7 +7306,7 @@
       "axis": "R",
       "hintSentence": "Χρησιμοποιούμε την λέξη ___ για να περιγράψουμε.",
       "feedbackRule": "πολλ- + -ές.",
-      "audioFile": "audio/s.mp3",
+      "audioFile": "audio/polles-1.mp3",
       "morphemes": {
         "root": "πολλ",
         "suffix": "ές"
@@ -7319,7 +7319,7 @@
       "axis": "R",
       "hintSentence": "Η λέξη ___ χρησιμοποιείται σε μια πρόταση για να ονομάσουμε κάτι.",
       "feedbackRule": "ρήμ- + -α.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/rima.mp3",
       "morphemes": {
         "root": "ρήμ",
         "suffix": "α"
@@ -7332,7 +7332,7 @@
       "axis": "R",
       "hintSentence": "Συμπληρώνουμε με τη λέξη ___ την πρόταση που περιγράφει κάτι που κάνουμε.",
       "feedbackRule": "Προσοχή στον τόνο.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/eichan-1.mp3",
       "morphemes": {
         "root": "είχαν",
         "suffix": ""
@@ -7358,7 +7358,7 @@
       "axis": "R",
       "hintSentence": "Η λέξη ___ είναι επίθετο· περιγράφει κάτι.",
       "feedbackRule": "άλλ- + -α.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/alla-3.mp3",
       "morphemes": {
         "root": "άλλ",
         "suffix": "α"
@@ -7371,7 +7371,7 @@
       "axis": "R",
       "hintSentence": "Συμπληρώνουμε με τη λέξη ___ την πρόταση που περιγράφει κάτι που κάνουμε.",
       "feedbackRule": "μπορε- + -ί.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/mporei-3.mp3",
       "morphemes": {
         "root": "μπορε",
         "suffix": "ί"
@@ -7384,7 +7384,7 @@
       "axis": "R",
       "hintSentence": "Χρησιμοποιούμε την λέξη ___ για να περιγράψουμε.",
       "feedbackRule": "άλλ- + -ο.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/allo-3.mp3",
       "morphemes": {
         "root": "άλλ",
         "suffix": "ο"
@@ -7397,7 +7397,7 @@
       "axis": "R",
       "hintSentence": "Η λέξη ___ χρησιμοποιείται σε μια πρόταση για να ονομάσουμε κάτι.",
       "feedbackRule": "ζώ- + -α.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/zoa-3.mp3",
       "morphemes": {
         "root": "ζώ",
         "suffix": "α"
@@ -7410,7 +7410,7 @@
       "axis": "R",
       "hintSentence": "Συμπληρώνουμε με τη λέξη ___ την πρόταση που περιγράφει κάτι που κάνουμε.",
       "feedbackRule": "υπάρχ- + -ουν.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/yparchoun-2.mp3",
       "morphemes": {
         "root": "υπάρχ",
         "suffix": "ουν"
@@ -7436,7 +7436,7 @@
       "axis": "R",
       "hintSentence": "Η λέξη ___ χρησιμοποιείται σε μια πρόταση για να ονομάσουμε κάτι.",
       "feedbackRule": "μέρ- + -ος.",
-      "audioFile": "audio/s.mp3",
+      "audioFile": "audio/meros-1.mp3",
       "morphemes": {
         "root": "μέρ",
         "suffix": "ος"
@@ -7462,7 +7462,7 @@
       "axis": "R",
       "hintSentence": "Στην πρόταση μπαίνει η λέξη ___.",
       "feedbackRule": "κεφάλα- + -ιο.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/kefalaio-2.mp3",
       "morphemes": {
         "root": "κεφάλα",
         "suffix": "ιο"
@@ -7475,7 +7475,7 @@
       "axis": "R",
       "hintSentence": "Η λέξη ___ είναι ρήμα· δείχνει μια ενέργεια.",
       "feedbackRule": "Προσοχή στον τόνο.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/egine-1.mp3",
       "morphemes": {
         "root": "έγινε",
         "suffix": ""
@@ -7488,7 +7488,7 @@
       "axis": "R",
       "hintSentence": "Γράφουμε τη λέξη ___ όταν μιλάμε για ένα αντικείμενο ή ιδέα.",
       "feedbackRule": "έργ- + -α.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/erga-1.mp3",
       "morphemes": {
         "root": "έργ",
         "suffix": "α"
@@ -7501,7 +7501,7 @@
       "axis": "R",
       "hintSentence": "Χρησιμοποιούμε την λέξη ___ για να περιγράψουμε.",
       "feedbackRule": "πο- + -ιο.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/poio-3.mp3",
       "morphemes": {
         "root": "πο",
         "suffix": "ιο"
@@ -7514,7 +7514,7 @@
       "axis": "R",
       "hintSentence": "Η λέξη ___ είναι ρήμα· δείχνει μια ενέργεια.",
       "feedbackRule": "πρέπ- + -ει.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/prepei-3.mp3",
       "morphemes": {
         "root": "πρέπ",
         "suffix": "ει"
@@ -7540,7 +7540,7 @@
       "axis": "R",
       "hintSentence": "Στην πρόταση μπαίνει η λέξη ___.",
       "feedbackRule": "έργ- + -ο.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/ergo-1.mp3",
       "morphemes": {
         "root": "έργ",
         "suffix": "ο"
@@ -7553,7 +7553,7 @@
       "axis": "R",
       "hintSentence": "Η λέξη ___ χρησιμοποιείται σε μια πρόταση για να ονομάσουμε κάτι.",
       "feedbackRule": "πίνακ- + -α.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/pinaka-2.mp3",
       "morphemes": {
         "root": "πίνακ",
         "suffix": "α"
@@ -7566,7 +7566,7 @@
       "axis": "R",
       "hintSentence": "Γράφουμε τη λέξη ___ όταν μιλάμε για ένα αντικείμενο ή ιδέα.",
       "feedbackRule": "φορ- + -ά.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/fora-3.mp3",
       "morphemes": {
         "root": "φορ",
         "suffix": "ά"
@@ -7579,7 +7579,7 @@
       "axis": "R",
       "hintSentence": "Γράφουμε το ρήμα ___ στη σωστή ορθογραφία.",
       "feedbackRule": "έχ- + -ουμε.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/echoume.mp3",
       "morphemes": {
         "root": "έχ",
         "suffix": "ουμε"
@@ -7592,7 +7592,7 @@
       "axis": "R",
       "hintSentence": "Η λέξη ___ χρησιμοποιείται σε μια πρόταση για να ονομάσουμε κάτι.",
       "feedbackRule": "πόλ- + -η.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/poli.mp3",
       "morphemes": {
         "root": "πόλ",
         "suffix": "η"
@@ -7605,7 +7605,7 @@
       "axis": "R",
       "hintSentence": "Συμπληρώνουμε με το επίθετο ___ την πρόταση.",
       "feedbackRule": "Προσοχή στον τόνο.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/kapoion.mp3",
       "morphemes": {
         "root": "κάποιον",
         "suffix": ""
@@ -7618,7 +7618,7 @@
       "axis": "R",
       "hintSentence": "Στην πρόταση μπαίνει η λέξη ___.",
       "feedbackRule": "μαθητ- + -ές.",
-      "audioFile": "audio/s.mp3",
+      "audioFile": "audio/mathites-2.mp3",
       "morphemes": {
         "root": "μαθητ",
         "suffix": "ές"
@@ -7631,7 +7631,7 @@
       "axis": "R",
       "hintSentence": "Η λέξη ___ χρησιμοποιείται σε μια πρόταση για να ονομάσουμε κάτι.",
       "feedbackRule": "όνομ- + -α.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/onoma.mp3",
       "morphemes": {
         "root": "όνομ",
         "suffix": "α"
@@ -7644,7 +7644,7 @@
       "axis": "R",
       "hintSentence": "Συμπληρώνουμε με το επίθετο ___ την πρόταση.",
       "feedbackRule": "αυτ- + -ές.",
-      "audioFile": "audio/s.mp3",
+      "audioFile": "audio/aytes-2.mp3",
       "morphemes": {
         "root": "αυτ",
         "suffix": "ές"
@@ -7657,7 +7657,7 @@
       "axis": "R",
       "hintSentence": "Γράφουμε το ρήμα ___ στη σωστή ορθογραφία.",
       "feedbackRule": "Προσοχή στον τόνο.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/mporoume-2.mp3",
       "morphemes": {
         "root": "μπορούμε",
         "suffix": ""
@@ -7670,7 +7670,7 @@
       "axis": "R",
       "hintSentence": "Η λέξη ___ χρησιμοποιείται σε μια πρόταση για να ονομάσουμε κάτι.",
       "feedbackRule": "αγών- + -ες.",
-      "audioFile": "audio/s.mp3",
+      "audioFile": "audio/agones-1.mp3",
       "morphemes": {
         "root": "αγών",
         "suffix": "ες"
@@ -7683,7 +7683,7 @@
       "axis": "R",
       "hintSentence": "Συμπληρώνουμε με τη λέξη ___ την πρόταση που περιγράφει κάτι που κάνουμε.",
       "feedbackRule": "κάν- + -ει.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/kanei-3.mp3",
       "morphemes": {
         "root": "κάν",
         "suffix": "ει"
@@ -7696,7 +7696,7 @@
       "axis": "R",
       "hintSentence": "Στην πρόταση μπαίνει η λέξη ___.",
       "feedbackRule": "ομάδ- + -α.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/omada-2.mp3",
       "morphemes": {
         "root": "ομάδ",
         "suffix": "α"
@@ -7709,7 +7709,7 @@
       "axis": "R",
       "hintSentence": "Η λέξη ___ χρησιμοποιείται σε μια πρόταση για να ονομάσουμε κάτι.",
       "feedbackRule": "έλλην- + -ες.",
-      "audioFile": "audio/s.mp3",
+      "audioFile": "audio/ellines.mp3",
       "morphemes": {
         "root": "έλλην",
         "suffix": "ες"
@@ -7722,7 +7722,7 @@
       "axis": "R",
       "hintSentence": "Συμπληρώνουμε με τη λέξη ___ την πρόταση που περιγράφει κάτι που κάνουμε.",
       "feedbackRule": "γίνετ- + -αι.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/ginetai.mp3",
       "morphemes": {
         "root": "γίνετ",
         "suffix": "αι"
@@ -7735,7 +7735,7 @@
       "axis": "R",
       "hintSentence": "Στην πρόταση μπαίνει η λέξη ___.",
       "feedbackRule": "φορ- + -ές.",
-      "audioFile": "audio/s.mp3",
+      "audioFile": "audio/fores-1.mp3",
       "morphemes": {
         "root": "φορ",
         "suffix": "ές"
@@ -7748,7 +7748,7 @@
       "axis": "R",
       "hintSentence": "Η λέξη ___ χρησιμοποιείται σε μια πρόταση για να ονομάσουμε κάτι.",
       "feedbackRule": "ανθρώπ- + -ους.",
-      "audioFile": "audio/s.mp3",
+      "audioFile": "audio/anthropous-1.mp3",
       "morphemes": {
         "root": "ανθρώπ",
         "suffix": "ους"
@@ -7761,7 +7761,7 @@
       "axis": "R",
       "hintSentence": "Γράφουμε τη λέξη ___ όταν μιλάμε για ένα αντικείμενο ή ιδέα.",
       "feedbackRule": "Προσοχή στον τόνο.",
-      "audioFile": "audio/s.mp3",
+      "audioFile": "audio/arithmous-3.mp3",
       "morphemes": {
         "root": "αριθμούς",
         "suffix": ""
@@ -7774,7 +7774,7 @@
       "axis": "R",
       "hintSentence": "Χρησιμοποιούμε την λέξη ___ για να περιγράψουμε.",
       "feedbackRule": "ίδ- + -ιο.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/idio-2.mp3",
       "morphemes": {
         "root": "ίδ",
         "suffix": "ιο"
@@ -7787,7 +7787,7 @@
       "axis": "R",
       "hintSentence": "Η λέξη ___ χρησιμοποιείται σε μια πρόταση για να ονομάσουμε κάτι.",
       "feedbackRule": "λόγι- + -α.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/logia-1.mp3",
       "morphemes": {
         "root": "λόγι",
         "suffix": "α"
@@ -7800,7 +7800,7 @@
       "axis": "R",
       "hintSentence": "Γράφουμε τη λέξη ___ όταν μιλάμε για ένα αντικείμενο ή ιδέα.",
       "feedbackRule": "εικον- + -ες.",
-      "audioFile": "audio/s.mp3",
+      "audioFile": "audio/eikones-2.mp3",
       "morphemes": {
         "root": "εικον",
         "suffix": "ες"
@@ -7813,7 +7813,7 @@
       "axis": "R",
       "hintSentence": "Γράφουμε το ρήμα ___ στη σωστή ορθογραφία.",
       "feedbackRule": "Προσοχή στον τόνο.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/ekane-2.mp3",
       "morphemes": {
         "root": "έκανε",
         "suffix": ""
@@ -7826,7 +7826,7 @@
       "axis": "R",
       "hintSentence": "Η λέξη ___ χρησιμοποιείται σε μια πρόταση για να ονομάσουμε κάτι.",
       "feedbackRule": "κείμεν- + -ό.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/keimeno-2.mp3",
       "morphemes": {
         "root": "κείμεν",
         "suffix": "ό"
@@ -7839,7 +7839,7 @@
       "axis": "R",
       "hintSentence": "Συμπληρώνουμε με το επίθετο ___ την πρόταση.",
       "feedbackRule": "κοντ- + -ά.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/konta-1.mp3",
       "morphemes": {
         "root": "κοντ",
         "suffix": "ά"
@@ -7852,7 +7852,7 @@
       "axis": "R",
       "hintSentence": "Στην πρόταση μπαίνει η λέξη ___.",
       "feedbackRule": "κόσμ- + -ο.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/kosmo-1.mp3",
       "morphemes": {
         "root": "κόσμ",
         "suffix": "ο"
@@ -7878,7 +7878,7 @@
       "axis": "R",
       "hintSentence": "Γράφουμε τη λέξη ___ όταν μιλάμε για ένα αντικείμενο ή ιδέα.",
       "feedbackRule": "παιδ- + -ί.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/paidi-3.mp3",
       "morphemes": {
         "root": "παιδ",
         "suffix": "ί"
@@ -7891,7 +7891,7 @@
       "axis": "R",
       "hintSentence": "Στην πρόταση μπαίνει η λέξη ___.",
       "feedbackRule": "πληροφορι- + -ες.",
-      "audioFile": "audio/s.mp3",
+      "audioFile": "audio/plirofories-1.mp3",
       "morphemes": {
         "root": "πληροφορι",
         "suffix": "ες"
@@ -7917,7 +7917,7 @@
       "axis": "R",
       "hintSentence": "Γράφουμε τη λέξη ___ όταν μιλάμε για ένα αντικείμενο ή ιδέα.",
       "feedbackRule": "ποσ- + -ά.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/posa-3.mp3",
       "morphemes": {
         "root": "ποσ",
         "suffix": "ά"
@@ -7930,7 +7930,7 @@
       "axis": "R",
       "hintSentence": "Χρησιμοποιούμε την λέξη ___ για να περιγράψουμε.",
       "feedbackRule": "κάποι- + -α.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/kapoia.mp3",
       "morphemes": {
         "root": "κάποι",
         "suffix": "α"
@@ -7943,7 +7943,7 @@
       "axis": "R",
       "hintSentence": "Η λέξη ___ χρησιμοποιείται σε μια πρόταση για να ονομάσουμε κάτι.",
       "feedbackRule": "δρόμ- + -ο.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/dromo.mp3",
       "morphemes": {
         "root": "δρόμ",
         "suffix": "ο"
@@ -7956,7 +7956,7 @@
       "axis": "R",
       "hintSentence": "Γράφουμε τη λέξη ___ όταν μιλάμε για ένα αντικείμενο ή ιδέα.",
       "feedbackRule": "θε- + -ό.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/theo-1.mp3",
       "morphemes": {
         "root": "θε",
         "suffix": "ό"
@@ -7969,7 +7969,7 @@
       "axis": "R",
       "hintSentence": "Χρησιμοποιούμε την λέξη ___ για να περιγράψουμε.",
       "feedbackRule": "ίδι- + -α.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/idia-1.mp3",
       "morphemes": {
         "root": "ίδι",
         "suffix": "α"
@@ -7982,7 +7982,7 @@
       "axis": "R",
       "hintSentence": "Η λέξη ___ είναι ρήμα· δείχνει μια ενέργεια.",
       "feedbackRule": "έχ- + -ω.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/echo-1.mp3",
       "morphemes": {
         "root": "έχ",
         "suffix": "ω"
@@ -7995,7 +7995,7 @@
       "axis": "R",
       "hintSentence": "Γράφουμε τη λέξη ___ όταν μιλάμε για ένα αντικείμενο ή ιδέα.",
       "feedbackRule": "ωρ- + -α.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/ora-2.mp3",
       "morphemes": {
         "root": "ωρ",
         "suffix": "α"
@@ -8008,7 +8008,7 @@
       "axis": "R",
       "hintSentence": "Στην πρόταση μπαίνει η λέξη ___.",
       "feedbackRule": "αρχαι- + -α.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/archaia.mp3",
       "morphemes": {
         "root": "αρχαι",
         "suffix": "α"
@@ -8021,7 +8021,7 @@
       "axis": "R",
       "hintSentence": "Η λέξη ___ είναι ρήμα· δείχνει μια ενέργεια.",
       "feedbackRule": "γίν- + -ει.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/ginei-1.mp3",
       "morphemes": {
         "root": "γίν",
         "suffix": "ει"
@@ -8034,7 +8034,7 @@
       "axis": "R",
       "hintSentence": "Γράφουμε τη λέξη ___ όταν μιλάμε για ένα αντικείμενο ή ιδέα.",
       "feedbackRule": "γλώσσ- + -α.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/glossa.mp3",
       "morphemes": {
         "root": "γλώσσ",
         "suffix": "α"
@@ -8047,7 +8047,7 @@
       "axis": "R",
       "hintSentence": "Στην πρόταση μπαίνει η λέξη ___.",
       "feedbackRule": "πόλ- + -εις.",
-      "audioFile": "audio/s.mp3",
+      "audioFile": "audio/poleis.mp3",
       "morphemes": {
         "root": "πόλ",
         "suffix": "εις"
@@ -8060,7 +8060,7 @@
       "axis": "R",
       "hintSentence": "Η λέξη ___ χρησιμοποιείται σε μια πρόταση για να ονομάσουμε κάτι.",
       "feedbackRule": "εικόν- + -α.",
-      "audioFile": "audio/.mp3.mp3",
+      "audioFile": "audio/eikona-3.mp3",
       "morphemes": {
         "root": "εικόν",
         "suffix": "α"
@@ -8073,7 +8073,7 @@
       "axis": "R",
       "hintSentence": "Γράφουμε τη λέξη ___ όταν μιλάμε για ένα αντικείμενο ή ιδέα.",
       "feedbackRule": "προτάσ- + -εις.",
-      "audioFile": "audio/s.mp3",
+      "audioFile": "audio/protaseis.mp3",
       "morphemes": {
         "root": "προτάσ",
         "suffix": "εις"
@@ -8086,7 +8086,7 @@
       "axis": "R",
       "hintSentence": "Χρησιμοποιούμε την λέξη ___ για να περιγράψουμε.",
       "feedbackRule": "άλλ- + -ες.",
-      "audioFile": "audio/s.mp3",
+      "audioFile": "audio/alles.mp3",
       "morphemes": {
         "root": "άλλ",
         "suffix": "ες"

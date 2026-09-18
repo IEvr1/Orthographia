@@ -23,6 +23,8 @@ import unicodedata
 from pathlib import Path
 from typing import Any
 
+from audio_slug import is_broken_audio_path, slugify
+
 PIPELINE = Path(__file__).resolve().parent
 INPUTS_DIR = PIPELINE / "inputs" / "helexkids"
 OUTPUT = PIPELINE / "outputs" / "words.json"
@@ -121,12 +123,6 @@ COMMON_SUFFIXES = (
 
 ABBREV_RE = re.compile(r"^[A-ZΑ-ΩΆ-Ώ]{2,6}\.?$|^[α-ωά-ώ]\.$")
 PROPER_RE = re.compile(r"^[A-ZΑ-ΩΆ-Ώ][a-zα-ωά-ώ]+$")
-
-
-def slugify(word: str) -> str:
-    base = unicodedata.normalize("NFD", word.lower())
-    base = "".join(c for c in base if unicodedata.category(c) != "Mn")
-    return base.replace("ς", "s").encode("ascii", "ignore").decode("ascii")
 
 
 def normalize_key(key: str) -> str:
@@ -424,6 +420,33 @@ def count_by_grade(words: list[dict[str, Any]]) -> dict[int, int]:
     return counts
 
 
+def repair_all_audio_paths(words: list[dict[str, Any]]) -> tuple[list[dict[str, Any]], int]:
+    """Fix broken audioFile slugs; preserve valid existing mp3 paths."""
+    used_stems: set[str] = set()
+    fixed = 0
+    for entry in words:
+        current = entry.get("audioFile", "")
+        fname = current.rsplit("/", 1)[-1] if current else ""
+        stem = fname.removesuffix(".mp3") if fname.endswith(".mp3") else fname
+
+        if current and not is_broken_audio_path(current) and (WEB_AUDIO / fname).exists():
+            used_stems.add(stem)
+            continue
+
+        base_slug = slugify(entry["word"])
+        slug = base_slug
+        suffix = 1
+        while slug in used_stems:
+            slug = f"{base_slug}-{suffix}"
+            suffix += 1
+        used_stems.add(slug)
+        new_path = f"audio/{slug}.mp3"
+        if entry.get("audioFile") != new_path:
+            fixed += 1
+        entry["audioFile"] = new_path
+    return words, fixed
+
+
 def write_words(words: list[dict[str, Any]], dry_run: bool = False) -> None:
     payload = {"version": 2, "grade": 0, "words": words}
     if dry_run:
@@ -478,23 +501,36 @@ def main() -> None:
     parser.add_argument("--input-dir", type=Path, default=INPUTS_DIR, help="Directory with CSV/Excel files")
     parser.add_argument("--cap", type=int, default=DEFAULT_CAP_PER_GRADE, help="Max new words per grade")
     parser.add_argument("--dry-run", action="store_true", help="Show counts without writing")
+    parser.add_argument(
+        "--repair-audio",
+        action="store_true",
+        help="Fix broken audioFile paths in current merged word list",
+    )
     args = parser.parse_args()
-
-    files = discover_input_files(args.input_dir)
-    if not files:
-        print_no_input_message()
-        raise SystemExit(0)
 
     from generate_seed import build_words
 
-    base_words = build_words()
-    merged, hk_counts, imported_count = append_helexkids(base_words, args.input_dir, args.cap)
-
-    if imported_count == 0:
-        print("HelexKids files found but no new words passed filters (or all duplicates).")
-        total = count_by_grade(merged)
-        print(f"Existing words by grade: G1={total[1]}, G2={total[2]}, G3={total[3]}, G4={total[4]}")
+    files = discover_input_files(args.input_dir)
+    if args.repair_audio and WEB_WORDS.exists():
+        merged = json.loads(WEB_WORDS.read_text(encoding="utf-8"))["words"]
+        imported_count = 0
+        hk_counts = {1: 0, 2: 0, 3: 0, 4: 0}
+    elif not files:
+        print_no_input_message()
         raise SystemExit(0)
+    else:
+        base_words = build_words()
+        merged, hk_counts, imported_count = append_helexkids(base_words, args.input_dir, args.cap)
+
+        if imported_count == 0 and not args.repair_audio:
+            print("HelexKids files found but no new words passed filters (or all duplicates).")
+            total = count_by_grade(merged)
+            print(f"Existing words by grade: G1={total[1]}, G2={total[2]}, G3={total[3]}, G4={total[4]}")
+            raise SystemExit(0)
+
+    merged, audio_fixed = repair_all_audio_paths(merged)
+    if audio_fixed:
+        print(f"Repaired {audio_fixed} audioFile paths.")
 
     write_words(merged, dry_run=args.dry_run)
     total = count_by_grade(merged)
