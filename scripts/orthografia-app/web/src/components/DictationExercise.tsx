@@ -1,5 +1,5 @@
 import { Fragment, useCallback, useEffect, useState } from "react";
-import type { GradeResult, SessionSummary, WordEntry } from "../types";
+import type { FamiliesPayload, GradeResult, SessionSummary, WordEntry } from "../types";
 import { gradeAnswer } from "../lib/grader";
 import { maskWordInHint } from "../lib/hintMask";
 import { loadProgress, recordAttempt, saveProgress } from "../lib/storage";
@@ -9,13 +9,14 @@ import { GreekKeyboard } from "./GreekKeyboard";
 
 interface DictationExerciseProps {
   words: WordEntry[];
+  families: FamiliesPayload;
   onComplete: (summary: SessionSummary) => void;
   onQuit: () => void;
 }
 
 type Phase = "writing" | "feedback" | "rewrite";
 
-export function DictationExercise({ words, onComplete, onQuit }: DictationExerciseProps) {
+export function DictationExercise({ words, families, onComplete, onQuit }: DictationExerciseProps) {
   const [index, setIndex] = useState(0);
   const [input, setInput] = useState("");
   const [phase, setPhase] = useState<Phase>("writing");
@@ -29,6 +30,7 @@ export function DictationExercise({ words, onComplete, onQuit }: DictationExerci
 
   const current = words[index];
   const audioSrc = `/content/${current.audioFile}`;
+  const family = current.familyId ? families[current.familyId] ?? null : null;
 
   useEffect(() => {
     setInput("");
@@ -144,6 +146,8 @@ export function DictationExercise({ words, onComplete, onQuit }: DictationExerci
               result={result}
               correctWord={current.word}
               mode={needsRewrite ? "rewrite" : "check"}
+              definition={current.definition}
+              family={family}
             />
             {needsRewrite && (
               <button type="button" className="btn btn-primary btn-xl" onClick={startRewrite}>

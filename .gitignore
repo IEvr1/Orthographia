@@ -20,6 +20,13 @@ npm-debug.log*
 **/outputs/*
 !**/outputs/.gitkeep
 
+# School-book PDFs and raw PDF text (copyrighted; do not commit)
+scripts/orthografia-app/content-pipeline/inputs/textbooks/*.pdf
+scripts/orthografia-app/content-pipeline/inputs/textbooks/_extract/
+scripts/orthografia-app/content-pipeline/inputs/lexika/*.pdf
+scripts/orthografia-app/content-pipeline/inputs/lexika/_extract/
+scripts/orthografia-app/content-pipeline/_test_abc_decode.py
+
 # OS
 .DS_Store
 Thumbs.db
@@ -31,3 +38,6 @@ desktop.ini
 *.swp
 *.swo
 .vercel
+scripts/orthografia-app/progress-api/data/
+scripts/orthografia-app/web/.env.local
+.env*

@@ -48,3 +48,17 @@ python generate_audio.py
 ```
 
 Αν δεν υπάρχουν CSV, το `import_helexkids.py` εμφανίζει οδηγίες και τερματίζει χωρίς σφάλμα.
+
+## Γλώσσα Β΄ Δημοτικού (βιβλία μαθητή)
+
+Βάλε τα PDF στο Downloads ή στο `inputs/textbooks/`:
+
+- `b_dim_glossa_tefchos_1_vivlio_mathiti.pdf`
+- `b_dim_glossa_tefchos_2_vivlio_mathiti.pdf`
+
+```powershell
+python extract_textbook.py --extract-only
+python generate_seed.py
+```
+
+Το script παίρνει λέξεις ορθογραφίας (λίστες «Μάθε να γράφεις» + συχνές λέξεις κειμένου) και σύντομες προτάσεις με `___`. Δεν αποθηκεύει ολόκληρο το βιβλίο.

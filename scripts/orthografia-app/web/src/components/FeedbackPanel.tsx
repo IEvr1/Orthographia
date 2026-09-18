@@ -1,9 +1,11 @@
-import type { GradeResult } from "../types";
+import type { GradeResult, WordFamily } from "../types";
 
 interface FeedbackPanelProps {
   result: GradeResult;
   correctWord: string;
   mode: "check" | "rewrite";
+  definition?: string;
+  family?: WordFamily | null;
 }
 
 const CATEGORY_LABELS: Record<string, string> = {
@@ -15,7 +17,13 @@ const CATEGORY_LABELS: Record<string, string> = {
   other: "Δες προσεκτικά κάθε γράμμα",
 };
 
-export function FeedbackPanel({ result, correctWord, mode }: FeedbackPanelProps) {
+export function FeedbackPanel({
+  result,
+  correctWord,
+  mode,
+  definition,
+  family,
+}: FeedbackPanelProps) {
   if (result.isCorrect) {
     return (
       <div className="feedback feedback--success bounce-in" role="status">
@@ -53,6 +61,19 @@ export function FeedbackPanel({ result, correctWord, mode }: FeedbackPanelProps)
           </span>
         ))}
       </div>
+
+      {definition && (
+        <p className="lexicon-def">
+          <span className="lexicon-label">Λεξικό:</span> {definition}
+        </p>
+      )}
+
+      {family && family.members.length > 0 && (
+        <p className="family-hint">
+          <span className="lexicon-label">Οικογένεια λέξεων:</span>{" "}
+          {family.members.join(", ")} — {family.rule}
+        </p>
+      )}
 
       <p className="feedback-rule">{result.feedbackRule}</p>
       <p className="feedback-correct">

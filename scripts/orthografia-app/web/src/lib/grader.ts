@@ -1,4 +1,5 @@
 import type { ErrorCategory, GradeResult, GraphemeAlignment, WordEntry } from "../types";
+import { endsWithDeclensionSuffix } from "./declension";
 import { normalizeGreek, stripStress, stressIndex } from "./normalize";
 
 const DIGRAPHS = [
@@ -87,6 +88,13 @@ function categorizeError(
   const total = alignments.length;
 
   if (mismatchIdx >= total - suffixLen) return "ending";
+  const actualTail = alignments
+    .slice(Math.max(0, mismatchIdx))
+    .map((a) => a.actual)
+    .join("");
+  if (endsWithDeclensionSuffix(actualTail) || endsWithDeclensionSuffix(entry.morphemes.suffix)) {
+    return "ending";
+  }
   if (mismatchIdx >= rootLen) return "derivation";
   if (mismatchIdx < rootLen) return "root";
   return "other";

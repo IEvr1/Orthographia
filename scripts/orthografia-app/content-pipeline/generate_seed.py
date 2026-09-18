@@ -7,7 +7,9 @@ import json
 import shutil
 from pathlib import Path
 
+from extract_textbook import append_textbooks
 from import_helexkids import INPUTS_DIR, append_helexkids, count_by_grade
+from import_lexika import append_lexika, sync_families_and_rules
 from word_lists import GRADE_2, GRADE_3_EXTRA, GRADE_4
 
 OUTPUT_DIR = Path(__file__).resolve().parent / "outputs"
@@ -545,9 +547,19 @@ def build_words() -> list[dict]:
 
 
 def main() -> None:
+    try:
+        from extract_grammar import run_extraction as extract_grammar
+
+        extract_grammar()
+    except Exception as exc:
+        print(f"Grammar extract skipped: {exc}")
+
     words = build_words()
     seed_count = len(words)
+    words, tb_counts, tb_imported = append_textbooks(words)
     words, hk_counts, imported = append_helexkids(words, INPUTS_DIR)
+    words, lx_counts, lx_imported = append_lexika(words)
+    sync_families_and_rules()
     by_grade = count_by_grade(words)
 
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
@@ -557,15 +569,31 @@ def main() -> None:
     WEB_WORDS.parent.mkdir(parents=True, exist_ok=True)
     WEB_WORDS.write_text(text, encoding="utf-8")
 
-    print(f"Wrote {len(words)} words to {OUTPUT_FILE} ({seed_count} seed + {imported} HelexKids)")
+    extra = []
+    if tb_imported:
+        extra.append(f"{tb_imported} textbooks")
+    if imported:
+        extra.append(f"{imported} HelexKids")
+    if lx_imported:
+        extra.append(f"{lx_imported} lexika")
+    extra_note = f" + {' + '.join(extra)}" if extra else ""
+    print(f"Wrote {len(words)} words to {OUTPUT_FILE} ({seed_count} seed{extra_note})")
     print(f"Synced to {WEB_WORDS}")
     print(
-        f"By grade: G1={by_grade[1]}, G2={by_grade[2]}, G3={by_grade[3]}, G4={by_grade[4]}"
+        f"By grade: G1={by_grade[1]}, G2={by_grade[2]}, G3={by_grade[3]}, "
+        f"G4={by_grade[4]}, G5={by_grade[5]}, G6={by_grade[6]}"
     )
+    if tb_imported:
+        print(f"Textbooks added: G2={tb_counts[2]}")
     if imported:
         print(
             f"HelexKids added: G1={hk_counts[1]}, G2={hk_counts[2]}, "
             f"G3={hk_counts[3]}, G4={hk_counts[4]}"
+        )
+    if lx_imported:
+        print(
+            f"Lexika added: G1={lx_counts[1]}, G2={lx_counts[2]}, G3={lx_counts[3]}, "
+            f"G4={lx_counts[4]}, G5={lx_counts[5]}, G6={lx_counts[6]}"
         )
 
 

@@ -1,32 +1,28 @@
+import type { RuleDefinition } from "../types";
+
 interface RuleCardProps {
+  rule: RuleDefinition;
   onContinue: () => void;
 }
 
-const EXAMPLES = [
-  { word: "ήλιος", hint: "Ο ήλιος λάμπει ψηλά." },
-  { word: "πόρτα", hint: "Χτύπησε στην πόρτα." },
-  { word: "βιβλίο", hint: "Διάβασα ένα βιβλίο." },
-];
-
-export function RuleCard({ onContinue }: RuleCardProps) {
+export function RuleCard({ rule, onContinue }: RuleCardProps) {
   return (
     <main className="screen screen--rule fade-in">
       <div className="rule-card">
         <p className="rule-badge">Κανόνας</p>
-        <h1 className="rule-title">Ο τόνος δείχνει ποια συλλαβή τονούμε</h1>
-        <p className="rule-body">
-          Στην ορθογραφία βάζουμε τόνο πάνω από το φωνήεν της τονισμένης συλλαβής. Έτσι
-          ξέρουμε πώς να διαβάζουμε και να γράφουμε τη λέξη σωστά.
-        </p>
+        <h1 className="rule-title">{rule.title}</h1>
+        <p className="rule-body">{rule.body}</p>
 
-        <ul className="rule-examples">
-          {EXAMPLES.map((ex) => (
-            <li key={ex.word}>
-              <span className="rule-example-word">{ex.word}</span>
-              <span className="rule-example-hint">{ex.hint}</span>
-            </li>
-          ))}
-        </ul>
+        {rule.examples.length > 0 && (
+          <ul className="rule-examples">
+            {rule.examples.map((ex) => (
+              <li key={ex.word}>
+                <span className="rule-example-word">{ex.word}</span>
+                <span className="rule-example-hint">{ex.hint}</span>
+              </li>
+            ))}
+          </ul>
+        )}
 
         <button type="button" className="btn btn-primary btn-xl" onClick={onContinue}>
           Ξεκινάμε!

@@ -414,7 +414,7 @@ def merge_words(base: list[dict[str, Any]], imported: list[dict[str, Any]]) -> l
 
 
 def count_by_grade(words: list[dict[str, Any]]) -> dict[int, int]:
-    counts: dict[int, int] = {1: 0, 2: 0, 3: 0, 4: 0}
+    counts: dict[int, int] = {1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}
     for w in words:
         g = w.get("grade", 0)
         if g in counts:

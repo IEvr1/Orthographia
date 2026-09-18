@@ -26,7 +26,38 @@ export interface WordEntry {
   homophone?: boolean;
   /** Spelling rule id, e.g. "tonos-basic", "double-consonant" */
   ruleId?: string;
+  /** Short dictionary definition from school lexicon */
+  definition?: string;
+  /** Key into families.json */
+  familyId?: string;
 }
+
+export interface RuleExample {
+  word: string;
+  hint: string;
+}
+
+export interface RuleDefinition {
+  id: string;
+  title: string;
+  body: string;
+  examples: RuleExample[];
+  grades: number[];
+}
+
+export interface RulesPayload {
+  rules: RuleDefinition[];
+}
+
+export interface WordFamily {
+  root: string;
+  members: string[];
+  rule: string;
+}
+
+export type FamiliesPayload = Record<string, WordFamily>;
+
+export type GameMode = "dictation" | "reverse" | "choice" | "sentence";
 
 export interface WordsPayload {
   version: number;
@@ -49,6 +80,15 @@ export interface GradeResult {
   feedbackRule: string;
 }
 
+export interface FsrsProgress {
+  due: string;
+  stability: number;
+  difficulty: number;
+  state: string;
+  reps: number;
+  lapses: number;
+}
+
 export interface WordProgress {
   attempts: number;
   correct: number;
@@ -58,6 +98,8 @@ export interface WordProgress {
   lastSeen: string | null;
   intervalDays: number;
   rewrites: number;
+  /** FSRS scheduling snapshot */
+  fsrs?: FsrsProgress;
 }
 
 export interface SessionSummary {
@@ -67,4 +109,8 @@ export interface SessionSummary {
   rewrites: number;
 }
 
-export type AppScreen = "home" | "rule" | "exercise" | "summary";
+export type AppScreen = "home" | "rule" | "exercise" | "summary" | "pricing";
+
+export interface DeclensionTables {
+  tables: Record<string, string[]>;
+}

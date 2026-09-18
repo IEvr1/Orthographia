@@ -10,11 +10,19 @@ cd scripts/orthografia-app/content-pipeline
 # 1. (Προαιρετικό) Λήψη HelexKids CSV → inputs/helexkids/
 #    Δες inputs/README.md — CC BY-NC 4.0, non-commercial
 
-# 2. Παραγωγή λεξικού (χειροκίνητο seed + HelexKids αν υπάρχουν CSV)
+# 1β. (Προαιρετικό) Λέξεις από Γλώσσα Β΄ (PDF βιβλία μαθητή)
+#     python extract_textbook.py --extract-only
+
+# 1γ. (Προαιρετικό) Σχολικά λεξικά ΑΒΓ + ΔΕΣΤ + Γραμματική Ε-ΣΤ (PDF στο Downloads)
+#     python extract_lexikon.py
+#     python extract_grammar.py
+
+# 2. Παραγωγή λεξικού (seed + textbooks + HelexKids + lexika)
 ..\..\..\.venv\Scripts\python.exe generate_seed.py
 
-# 3. Ήχος μόνο για νέες λέξεις (όχι πλήρες TTS run)
+# 3. Ήχος μόνο για νέες λέξεις (χωρίς --force)
 ..\..\..\.venv\Scripts\python.exe generate_audio.py
+# Dev χωρίς API key: generate_audio.py --placeholder
 
 # Εναλλακτικά, μόνο HelexKids import:
 ..\..\..\.venv\Scripts\python.exe import_helexkids.py
@@ -32,6 +40,33 @@ cd scripts/orthografia-app/content-pipeline
 - **Δείγμα:** `inputs/helexkids/sample_grade1.csv` για smoke test.
 
 Αν δεν υπάρχουν CSV, το import τερματίζει με οδηγίες (exit 0).
+
+### Γλώσσα Β΄ Δημοτικού (βιβλία μαθητή)
+
+Από τα PDF `b_dim_glossa_tefchos_1_vivlio_mathiti.pdf` και `..._tefchos_2_...` (Downloads ή `inputs/textbooks/`):
+
+```powershell
+python extract_textbook.py --extract-only
+python generate_seed.py
+```
+
+Γράφει `inputs/textbooks/grade2.csv` (λέξεις + σύντομα cloze με `___`). Τα PDF και το raw κείμενο **δεν** μπαίνουν στο git.
+
+### Σχολικά λεξικά & Γραμματική (Α΄–Στ΄)
+
+Βάλε στο `Downloads` (ή `inputs/lexika/`):
+
+- `a_b_c_lexiko.pdf` — Το Πρώτο μου Λεξικό (Α΄–Γ΄)
+- `d_e_st_lexiko.pdf` — Ορθογραφικό–Ερμηνευτικό (Δ΄–Στ΄)
+- `e_st_grammatiki_vivlio_mathiti.pdf` — Γραμματική Ε΄ & Στ΄
+
+```powershell
+python extract_lexikon.py
+python extract_grammar.py
+python generate_seed.py
+```
+
+Παράγει `inputs/lexika/grade{1-6}.csv`, `families.json`, `rules.json`, `declension_tables.json` και επεκτείνει το `words.json` (τάξεις Ε΄/Στ΄).
 
 ## 1. Seed λέξεων
 
@@ -81,6 +116,14 @@ cd scripts/orthografia-app/content-pipeline
 ```
 
 Χωρίς `--force` δημιουργεί mp3 μόνο για λέξεις που δεν έχουν ήχο. Με `--force` ξαναφτιάχνει όλα.
+
+Για τοπική ανάπτυξη **χωρίς** Google/Azure key:
+
+```powershell
+python generate_audio.py --placeholder
+```
+
+Δημιουργεί σιωπηλά `.wav` placeholders ώστε η εφαρμογή να μην σπάει στο κουμπί «Άκου».
 
 ## 4. Τρέξε την εφαρμογή
 

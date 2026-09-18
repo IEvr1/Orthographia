@@ -1,0 +1,204 @@
+#!/usr/bin/env python3
+"""Merge school lexicon CSV exports into words.json v2."""
+
+from __future__ import annotations
+
+import csv
+import json
+from pathlib import Path
+from typing import Any
+
+from hint_generator import generate_hint, is_homophone_prone, load_overrides
+from import_helexkids import (
+    audio_path_for_word,
+    count_by_grade,
+    feedback_rule,
+    guess_morphemes,
+    merge_words,
+    normalize_word,
+    repair_all_audio_paths,
+    write_words,
+)
+
+PIPELINE = Path(__file__).resolve().parent
+LEXIKA_DIR = PIPELINE / "inputs" / "lexika"
+WEB_CONTENT = PIPELINE.parent / "web" / "public" / "content"
+FAMILIES_SRC = LEXIKA_DIR / "families.json"
+RULES_SRC = LEXIKA_DIR / "rules_snippets.json"
+
+CAPS = {1: 90, 2: 90, 3: 90, 4: 80, 5: 100, 6: 120}
+
+
+def load_lexika_rows(input_dir: Path = LEXIKA_DIR) -> list[dict[str, Any]]:
+    rows: list[dict[str, Any]] = []
+    if not input_dir.is_dir():
+        return rows
+    for path in sorted(input_dir.glob("grade*.csv")):
+        with path.open(encoding="utf-8-sig", newline="") as f:
+            for raw in csv.DictReader(f):
+                word = (raw.get("word") or "").strip()
+                if not word:
+                    continue
+                try:
+                    grade = int(raw.get("grade") or 0)
+                except ValueError:
+                    continue
+                if grade < 1 or grade > 6:
+                    continue
+                rows.append(
+                    {
+                        "word": word,
+                        "grade": grade,
+                        "pos": (raw.get("pos") or "noun").strip() or "noun",
+                        "hint": (raw.get("hint") or "").strip(),
+                        "definition": (raw.get("definition") or "").strip(),
+                        "family": (raw.get("family") or "").strip(),
+                        "source": raw.get("source") or path.name,
+                        "difficulty": int(raw.get("difficulty") or 1),
+                    }
+                )
+    return rows
+
+
+def infer_rule_id(word: str, entry: dict[str, Any]) -> str | None:
+    if any(c in word for c in "άέήίόύώΆΈΉΊΌΎΏ"):
+        if entry.get("grade", 0) >= 5:
+            return "tonos-advanced"
+        return "tonos-basic"
+    if entry.get("family"):
+        return None
+    key = normalize_word(word)
+    if len(key) >= 2 and key[-1] == key[-2]:
+        return "double-consonant"
+    return None
+
+
+def build_lexika_entries(
+    rows: list[dict[str, Any]],
+    existing_words: list[dict[str, Any]],
+    caps: dict[int, int] | None = None,
+) -> list[dict[str, Any]]:
+    caps = caps or CAPS
+    existing_keys = {(normalize_word(w["word"]), w["grade"]) for w in existing_words}
+    existing_audio = {
+        normalize_word(w["word"]): w.get("audioFile", "")
+        for w in existing_words
+        if w.get("audioFile")
+    }
+    overrides = load_overrides()
+
+    by_grade: dict[int, list[dict[str, Any]]] = {g: [] for g in range(1, 7)}
+    seen: set[tuple[str, int]] = set()
+    for row in rows:
+        key = (normalize_word(row["word"]), row["grade"])
+        if key in seen or key in existing_keys:
+            continue
+        seen.add(key)
+        by_grade[row["grade"]].append(row)
+
+    entries: list[dict[str, Any]] = []
+    counters: dict[int, int] = {g: 0 for g in range(1, 7)}
+
+    for grade in range(1, 7):
+        cap = caps.get(grade, 90)
+        for i, row in enumerate(by_grade[grade][:cap]):
+            counters[grade] += 1
+            morphemes = guess_morphemes(row["word"])
+            hint = row.get("hint") or generate_hint(
+                row["word"], pos=row.get("pos", "noun"), index=i, overrides=overrides
+            )
+            if "___" not in hint:
+                hint = generate_hint(row["word"], pos=row.get("pos", "noun"), index=i, overrides=overrides)
+
+            axis = "K" if row.get("family") or infer_rule_id(row["word"], row) else "R"
+            entry: dict[str, Any] = {
+                "id": f"lx-g{grade}-{counters[grade]:04d}",
+                "word": row["word"],
+                "grade": grade,
+                "axis": axis,
+                "hintSentence": hint,
+                "feedbackRule": feedback_rule(row["word"], morphemes),
+                "audioFile": audio_path_for_word(row["word"], existing_audio),
+                "morphemes": morphemes,
+                "difficulty": min(3, max(1, int(row.get("difficulty") or 1))),
+            }
+            if row.get("definition"):
+                entry["definition"] = row["definition"][:200]
+            if row.get("family"):
+                entry["familyId"] = row["word"]
+            rule_id = infer_rule_id(row["word"], row)
+            if rule_id:
+                entry["ruleId"] = rule_id
+            if is_homophone_prone(row["word"]):
+                entry["homophone"] = True
+            entries.append(entry)
+    return entries
+
+
+def sync_families_and_rules() -> tuple[int, int]:
+    families_count = 0
+    rules_count = 0
+
+    if FAMILIES_SRC.exists():
+        families = json.loads(FAMILIES_SRC.read_text(encoding="utf-8"))
+        WEB_CONTENT.mkdir(parents=True, exist_ok=True)
+        (WEB_CONTENT / "families.json").write_text(
+            json.dumps(families, ensure_ascii=False, indent=2), encoding="utf-8"
+        )
+        families_count = len(families)
+
+    base_rules = [
+        {
+            "id": "tonos-basic",
+            "title": "Ο τόνος δείχνει ποια συλλαβή τονούμε",
+            "body": "Στην ορθογραφία βάζουμε τόνο πάνω από το φωνήεν της τονισμένης συλλαβής.",
+            "examples": [
+                {"word": "ήλιος", "hint": "Ο ήλιος λάμπει ψηλά."},
+                {"word": "πόρτα", "hint": "Χτύπησε στην πόρτα."},
+            ],
+            "grades": [1, 2, 3, 4],
+        },
+        {
+            "id": "double-consonant",
+            "title": "Διπλά σύμφωνα",
+            "body": "Μερικές λέξεις έχουν διπλό σύμφωνο (π.χ. θάλασσα, γράμμα).",
+            "examples": [{"word": "θάλασσα", "hint": "Η θάλασσα είναι γαλάζια."}],
+            "grades": [2, 3, 4],
+        },
+        {
+            "id": "final-sigma",
+            "title": "Το σ και το ς",
+            "body": "Στο τέλος της λέξης γράφουμε ς, ενώ μέσα στη λέξη γράφουμε σ.",
+            "examples": [{"word": "θάλασσα", "hint": "Η θάλασσα έχει δύο σ."}],
+            "grades": [5, 6],
+        },
+    ]
+    if RULES_SRC.exists():
+        snippets = json.loads(RULES_SRC.read_text(encoding="utf-8"))
+        base_rules.extend(snippets.get("rules", []))
+    grammar_rules_path = LEXIKA_DIR / "grammar_rules.json"
+    if grammar_rules_path.exists():
+        grammar = json.loads(grammar_rules_path.read_text(encoding="utf-8"))
+        existing_ids = {r["id"] for r in base_rules}
+        for rule in grammar.get("rules", []):
+            if rule["id"] not in existing_ids:
+                base_rules.append(rule)
+
+    (WEB_CONTENT / "rules.json").write_text(
+        json.dumps({"rules": base_rules}, ensure_ascii=False, indent=2), encoding="utf-8"
+    )
+    rules_count = len(base_rules)
+    return families_count, rules_count
+
+
+def append_lexika(
+    base_words: list[dict[str, Any]],
+    input_dir: Path = LEXIKA_DIR,
+    caps: dict[int, int] | None = None,
+) -> tuple[list[dict[str, Any]], dict[int, int], int]:
+    rows = load_lexika_rows(input_dir)
+    if not rows:
+        return base_words, count_by_grade(base_words), 0
+    imported = build_lexika_entries(rows, base_words, caps)
+    merged = merge_words(base_words, imported)
+    return merged, count_by_grade(imported), len(imported)

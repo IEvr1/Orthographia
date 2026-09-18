@@ -1,0 +1,14 @@
+{
+  "tables": {
+    "masculine_isosyllaba": [],
+    "feminine_isosyllaba": [
+      "-ος",
+      "-η",
+      "-ο",
+      "-ες",
+      "-ων",
+      "-ους"
+    ],
+    "neuter_isosyllaba": []
+  }
+}
