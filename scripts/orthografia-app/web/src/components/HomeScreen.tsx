@@ -208,7 +208,15 @@ export function HomeScreen({
           <p className="section-label">Κανόνας της εβδομάδας</p>
           <p className="weekly-rule-title">{weeklyRule!.title}</p>
           <p className="weekly-rule-body">{weeklyRule!.body}</p>
-          {!needsProfile && (
+          {needsProfile ? (
+            <button
+              type="button"
+              className="btn btn-secondary btn-xl"
+              onClick={() => onOpenSettings({ addChild: true })}
+            >
+              Ρυθμίσεις → Πρόσθεσε παιδί
+            </button>
+          ) : (
             <button type="button" className="btn btn-secondary btn-xl" onClick={onWeeklyStart}>
               5 λέξεις για τον κανόνα
             </button>
