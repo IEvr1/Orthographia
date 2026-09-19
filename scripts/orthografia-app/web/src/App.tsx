@@ -27,8 +27,6 @@ import {
 
   fetchProgressFromServer,
 
-  importProgressFromJson,
-
   isProgressSyncAvailable,
 
   migrateAllProfilesOnSignIn,
@@ -180,10 +178,6 @@ function AppShell({
   const [activeProfileId, setActiveProfileIdState] = useState<string | null>(() => getActiveProfileId());
 
   const [progressVersion, setProgressVersion] = useState(0);
-
-  const importRef = useRef<HTMLInputElement>(null);
-
-
 
   const tier = subscription.tier;
 
@@ -372,8 +366,6 @@ function AppShell({
     [progressStore, words, selectedGrade],
   );
 
-  const masteredCount = progressStats.mastered;
-
   const sessionMix = useMemo(
     () => (gradeWords.length > 0 ? previewDailySessionMix(words, progressStore, selectedGrade) : null),
     [words, progressStore, selectedGrade, gradeWords.length, progressVersion],
@@ -555,34 +547,6 @@ function AppShell({
 
 
 
-  const handleImportProgress = () => {
-
-    importRef.current?.click();
-
-  };
-
-
-
-  const onImportFile = async (e: React.ChangeEvent<HTMLInputElement>) => {
-
-    const file = e.target.files?.[0];
-
-    if (!file) return;
-
-    const text = await file.text();
-
-    importProgressFromJson(text, activeProfileId);
-
-    setProgressVersion((v) => v + 1);
-
-    setScreen("home");
-
-    e.target.value = "";
-
-  };
-
-
-
   const handleSync = async () => {
 
     if (!canUseCloudSync(tier)) {
@@ -657,20 +621,6 @@ function AppShell({
 
     <div className="app">
 
-      <input
-
-        ref={importRef}
-
-        type="file"
-
-        accept="application/json,.json"
-
-        hidden
-
-        onChange={onImportFile}
-
-      />
-
       {screen === "home" && (
 
         <HomeScreen
@@ -679,9 +629,7 @@ function AppShell({
 
           onWeeklyStart={startWeeklySession}
 
-          onExportProgress={() => downloadProgressBackup(activeProfileId)}
-
-          onImportProgress={handleImportProgress}
+          onBackupProgress={() => downloadProgressBackup(activeProfileId)}
 
           onSyncProgress={handleSync}
 
@@ -689,11 +637,9 @@ function AppShell({
 
           syncEnabled={SYNC_ENABLED}
 
-          masteredCount={masteredCount}
-
-          totalWords={gradeWords.length}
-
           progressStats={progressStats}
+
+          lastSessionDate={progressStore.lastSessionDate}
 
           activeChildName={activeProfile?.name ?? null}
 

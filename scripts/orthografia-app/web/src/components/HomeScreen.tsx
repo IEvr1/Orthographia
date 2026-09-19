@@ -9,11 +9,11 @@ import {
   tierLabel,
 } from "../lib/access";
 import type { DifficultyMix } from "../lib/difficulty";
-import { formatDifficultyMix } from "../lib/difficulty";
 import type { GradeProgressStats } from "../lib/progressStats";
 import type { ChildProfile } from "../lib/subscription";
 import { isClerkEnabled } from "../lib/subscription";
 import { ChildProfileManager } from "./ChildProfileManager";
+import { ProgressSummaryPanel } from "./ProgressSummaryPanel";
 
 const GRADE_LABELS: Record<number, string> = {
   1: "Α΄",
@@ -34,14 +34,12 @@ const MODE_LABELS: Record<GameMode, string> = {
 interface HomeScreenProps {
   onStart: () => void;
   onWeeklyStart: () => void;
-  onExportProgress: () => void;
-  onImportProgress: () => void;
+  onBackupProgress?: () => void;
   onSyncProgress?: () => void;
   onOpenPricing: () => void;
   syncEnabled: boolean;
-  masteredCount: number;
-  totalWords: number;
   progressStats?: GradeProgressStats;
+  lastSessionDate?: string | null;
   activeChildName?: string | null;
   sessionMix?: DifficultyMix | null;
   selectedGrade: number;
@@ -66,14 +64,12 @@ interface HomeScreenProps {
 export function HomeScreen({
   onStart,
   onWeeklyStart,
-  onExportProgress,
-  onImportProgress,
+  onBackupProgress,
   onSyncProgress,
   onOpenPricing,
   syncEnabled,
-  masteredCount,
-  totalWords,
   progressStats,
+  lastSessionDate = null,
   activeChildName,
   sessionMix,
   selectedGrade,
@@ -91,7 +87,6 @@ export function HomeScreen({
   const showCloudSync = syncEnabled && onSyncProgress && canUseCloudSync(tier);
   const showFamilyProfiles = Boolean(familyProfiles);
   const needsProfile = showFamilyProfiles && familyProfiles!.profiles.length === 0;
-  const mixLabel = sessionMix ? formatDifficultyMix(sessionMix) : null;
 
   return (
     <main className="screen screen--home fade-in">
@@ -219,55 +214,32 @@ export function HomeScreen({
         </div>
       )}
 
-      {totalWords > 0 && (
-        <div className="progress-panel">
-          {activeChildName ? (
-            <p className="progress-hint progress-hint--child">
-              Πρόοδος: {activeChildName} — {masteredCount}/{totalWords} λέξεις ({GRADE_LABELS[selectedGrade]})
-            </p>
-          ) : (
-            <p className="progress-hint">
-              Ξέρεις ήδη {masteredCount} από {totalWords} λέξεις!
-            </p>
-          )}
+      {progressStats && (
+        <ProgressSummaryPanel
+          stats={progressStats}
+          gradeLabel={GRADE_LABELS[selectedGrade]}
+          activeChildName={activeChildName}
+          lastSessionDate={lastSessionDate}
+          sessionMix={sessionMix}
+          onBackup={onBackupProgress}
+          showBackup={Boolean(onBackupProgress)}
+        />
+      )}
 
-          {progressStats && progressStats.needsReview > 0 && (
-            <p className="progress-detail">
-              {progressStats.needsReview} λέξ{progressStats.needsReview === 1 ? "η" : "εις"} για επανάληψη
-            </p>
+      {(showCloudSync || (syncEnabled && !canUseCloudSync(tier))) && (
+        <div className="progress-sync">
+          {showCloudSync && (
+            <button type="button" className="btn-text btn-text--subtle" onClick={onSyncProgress}>
+              Συγχρονισμός cloud
+            </button>
           )}
-
-          {progressStats && progressStats.mastered > 0 && (
-            <p className="progress-detail">
-              Εύκολες: {progressStats.easyMastered} · Μέτριες: {progressStats.mediumMastered} · Δύσκολες:{" "}
-              {progressStats.hardMastered}
-            </p>
-          )}
-
-          {mixLabel && (
-            <p className="progress-detail">Σημερινή αποστολή: {mixLabel}</p>
+          {syncEnabled && !canUseCloudSync(tier) && (
+            <button type="button" className="btn-text btn-text--subtle" onClick={onOpenPricing}>
+              Cloud sync (Premium)
+            </button>
           )}
         </div>
       )}
-
-      <div className="progress-sync">
-        <button type="button" className="btn-text" onClick={onExportProgress}>
-          Εξαγωγή προόδου
-        </button>
-        <button type="button" className="btn-text" onClick={onImportProgress}>
-          Εισαγωγή προόδου
-        </button>
-        {showCloudSync && (
-          <button type="button" className="btn-text" onClick={onSyncProgress}>
-            Συγχρονισμός cloud
-          </button>
-        )}
-        {syncEnabled && !canUseCloudSync(tier) && (
-          <button type="button" className="btn-text" onClick={onOpenPricing}>
-            Cloud sync (Premium)
-          </button>
-        )}
-      </div>
 
       <footer className="legal-footer">
         <a href="/privacy">Απορρήτο</a>
