@@ -9,7 +9,6 @@ import {
   tierLabel,
 } from "../lib/access";
 import type { DifficultyMix } from "../lib/difficulty";
-import { formatDifficultyMix } from "../lib/difficulty";
 import type { GradeProgressStats } from "../lib/progressStats";
 import type { ChildProfile } from "../lib/subscription";
 import { isClerkEnabled } from "../lib/subscription";
@@ -75,7 +74,6 @@ export function HomeScreen({
   totalWords,
   progressStats,
   activeChildName,
-  sessionMix,
   selectedGrade,
   availableGrades,
   onGradeChange,
@@ -91,7 +89,6 @@ export function HomeScreen({
   const showCloudSync = syncEnabled && onSyncProgress && canUseCloudSync(tier);
   const showFamilyProfiles = Boolean(familyProfiles);
   const needsProfile = showFamilyProfiles && familyProfiles!.profiles.length === 0;
-  const mixLabel = sessionMix ? formatDifficultyMix(sessionMix) : null;
 
   return (
     <main className="screen screen--home fade-in">
@@ -121,8 +118,7 @@ export function HomeScreen({
 
       <div className="hero">
         <p className="brand">Ορθογραφία</p>
-        <h1 className="hero-title">Μάθε να γράφεις σωστά!</h1>
-        <p className="hero-sub">Άκου τη λέξη, δες την πρόταση και γράψε την με τον τόνο της.</p>
+        <h1 className="hero-title">Μάθε να γράφεις σωστά</h1>
       </div>
 
       {showFamilyProfiles && (
@@ -138,7 +134,7 @@ export function HomeScreen({
 
       {!showFamilyProfiles && (
         <div className="grade-picker">
-          <p className="section-label">Διάλεξε τάξη</p>
+          <p className="section-label">Τάξη</p>
           <div className="grade-options">
             {[1, 2, 3, 4, 5, 6].map((grade) => {
               const hasWords = availableGrades.has(grade);
@@ -158,14 +154,11 @@ export function HomeScreen({
               );
             })}
           </div>
-          {tier === "free" && (
-            <p className="hint-text">Δωρεάν: Α΄ και Β΄ τάξη. Premium: όλες οι τάξεις.</p>
-          )}
         </div>
       )}
 
       <div className="grade-picker">
-        <p className="section-label">Τρόπος εξάσκησης</p>
+        <p className="section-label">Τρόπος</p>
         <div className="grade-options">
           {(Object.keys(MODE_LABELS) as GameMode[]).map((mode) => {
             const allowed = canAccessMode(tier, mode);
@@ -192,79 +185,56 @@ export function HomeScreen({
         onClick={onStart}
       >
         {needsProfile
-          ? "Πρόσθεσε προφίλ παιδιού"
+          ? "Πρόσθεσε παιδί"
           : dailyLimitReached
             ? "Έφτασες το ημερήσιο όριο"
-            : "Σημερινή αποστολή"}
+            : "Ξεκίνα"}
       </button>
       {dailyLimitReached && tier === "free" && (
         <button type="button" className="btn btn-secondary btn-xl" onClick={onOpenPricing}>
-          Αναβάθμιση για απεριόριστη εξάσκηση
+          Αναβάθμιση
         </button>
       )}
 
       {showWeekly && (
-        <div className="weekly-rule-card">
-          <p className="section-label">Κανόνας της εβδομάδας</p>
-          <p className="weekly-rule-title">{weeklyRule!.title}</p>
-          <p className="weekly-rule-body">{weeklyRule!.body}</p>
-          <button
-            type="button"
-            className="btn btn-secondary btn-xl"
-            disabled={needsProfile}
-            onClick={onWeeklyStart}
-          >
-            {needsProfile ? "Πρόσθεσε προφίλ παιδιού" : "5 λέξεις για τον κανόνα"}
-          </button>
-        </div>
+        <button
+          type="button"
+          className="btn btn-secondary btn-xl weekly-rule-btn"
+          disabled={needsProfile}
+          onClick={onWeeklyStart}
+        >
+          {needsProfile ? "Πρόσθεσε παιδί" : `Κανόνας: ${weeklyRule!.title}`}
+        </button>
       )}
 
       {totalWords > 0 && (
         <div className="progress-panel">
-          {activeChildName ? (
-            <p className="progress-hint progress-hint--child">
-              Πρόοδος: {activeChildName} — {masteredCount}/{totalWords} λέξεις ({GRADE_LABELS[selectedGrade]})
-            </p>
-          ) : (
-            <p className="progress-hint">
-              Ξέρεις ήδη {masteredCount} από {totalWords} λέξεις!
-            </p>
-          )}
-
-          {progressStats && progressStats.needsReview > 0 && (
-            <p className="progress-detail">
-              {progressStats.needsReview} λέξ{progressStats.needsReview === 1 ? "η" : "εις"} για επανάληψη
-            </p>
-          )}
-
-          {progressStats && progressStats.mastered > 0 && (
-            <p className="progress-detail">
-              Εύκολες: {progressStats.easyMastered} · Μέτριες: {progressStats.mediumMastered} · Δύσκολες:{" "}
-              {progressStats.hardMastered}
-            </p>
-          )}
-
-          {mixLabel && (
-            <p className="progress-detail">Σημερινή αποστολή: {mixLabel}</p>
-          )}
+          <p className="progress-hint">
+            {activeChildName
+              ? `${activeChildName}: ${masteredCount}/${totalWords}`
+              : `${masteredCount}/${totalWords} λέξεις`}
+            {progressStats && progressStats.needsReview > 0 && (
+              <span className="progress-review"> · {progressStats.needsReview} επανάληψη</span>
+            )}
+          </p>
         </div>
       )}
 
       <div className="progress-sync">
-        <button type="button" className="btn-text" onClick={onExportProgress}>
-          Εξαγωγή προόδου
+        <button type="button" className="btn-text btn-text--subtle" onClick={onExportProgress}>
+          Εξαγωγή
         </button>
-        <button type="button" className="btn-text" onClick={onImportProgress}>
-          Εισαγωγή προόδου
+        <button type="button" className="btn-text btn-text--subtle" onClick={onImportProgress}>
+          Εισαγωγή
         </button>
         {showCloudSync && (
-          <button type="button" className="btn-text" onClick={onSyncProgress}>
-            Συγχρονισμός cloud
+          <button type="button" className="btn-text btn-text--subtle" onClick={onSyncProgress}>
+            Cloud
           </button>
         )}
         {syncEnabled && !canUseCloudSync(tier) && (
-          <button type="button" className="btn-text" onClick={onOpenPricing}>
-            Cloud sync (Premium)
+          <button type="button" className="btn-text btn-text--subtle" onClick={onOpenPricing}>
+            Cloud (Premium)
           </button>
         )}
       </div>
