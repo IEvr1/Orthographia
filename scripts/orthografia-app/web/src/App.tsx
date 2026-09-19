@@ -546,7 +546,7 @@ function AppShell({
 
     if (!canUseCloudSync(tier)) {
 
-      setPaywallMessage("Ο συγχρονισμός cloud είναι διαθέσιμος με Premium.");
+      setPaywallMessage("Ο συγχρονισμός με άλλες συσκευές είναι διαθέσιμος με Premium.");
 
       setScreen("pricing");
 

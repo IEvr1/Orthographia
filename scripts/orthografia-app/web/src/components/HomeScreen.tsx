@@ -230,12 +230,12 @@ export function HomeScreen({
         <div className="progress-sync">
           {showCloudSync && (
             <button type="button" className="btn-text btn-text--subtle" onClick={onSyncProgress}>
-              Συγχρονισμός cloud
+              Συγχρονισμός με άλλες συσκευές
             </button>
           )}
           {syncEnabled && !canUseCloudSync(tier) && (
             <button type="button" className="btn-text btn-text--subtle" onClick={onOpenPricing}>
-              Cloud sync (Premium)
+              Συγχρονισμός με άλλες συσκευές (Premium)
             </button>
           )}
         </div>
