@@ -31,7 +31,6 @@ export { SettingsIcon };
 interface SettingsScreenProps {
   onBack: () => void;
   onOpenPricing: () => void;
-  onBackupProgress?: () => void;
   onSyncProgress?: () => void;
   syncEnabled: boolean;
   tier: PlanTier;
@@ -50,7 +49,6 @@ interface SettingsScreenProps {
 export function SettingsScreen({
   onBack,
   onOpenPricing,
-  onBackupProgress,
   onSyncProgress,
   syncEnabled,
   tier,
@@ -117,11 +115,6 @@ export function SettingsScreen({
           {syncEnabled && !canUseCloudSync(tier) && (
             <button type="button" className="settings-action" onClick={onOpenPricing}>
               Συγχρονισμός με άλλες συσκευές (Premium)
-            </button>
-          )}
-          {onBackupProgress && (
-            <button type="button" className="settings-action" onClick={onBackupProgress}>
-              Αντίγραφο ασφαλείας (JSON)
             </button>
           )}
         </div>

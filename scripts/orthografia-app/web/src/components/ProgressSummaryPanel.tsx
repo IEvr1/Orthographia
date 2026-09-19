@@ -9,8 +9,6 @@ interface ProgressSummaryPanelProps {
   activeChildName?: string | null;
   lastSessionDate: string | null;
   sessionMix?: DifficultyMix | null;
-  onBackup?: () => void;
-  showBackup?: boolean;
 }
 
 export function ProgressSummaryPanel({
@@ -19,8 +17,6 @@ export function ProgressSummaryPanel({
   activeChildName,
   lastSessionDate,
   sessionMix,
-  onBackup,
-  showBackup = false,
 }: ProgressSummaryPanelProps) {
   if (stats.total <= 0) return null;
 
@@ -54,12 +50,6 @@ export function ProgressSummaryPanel({
         )}
         {mixLabel && <li>Σημερινή αποστολή: {mixLabel}</li>}
       </ul>
-
-      {showBackup && onBackup && (
-        <button type="button" className="btn-text btn-text--subtle progress-summary__backup" onClick={onBackup}>
-          Αντίγραφο ασφαλείας (JSON)
-        </button>
-      )}
     </section>
   );
 }

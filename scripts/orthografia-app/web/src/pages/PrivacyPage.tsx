@@ -65,7 +65,7 @@ export function PrivacyPage() {
         <section className="legal-section">
           <h2>7. Δικαιώματα (GDPR)</h2>
           <ul className="legal-list">
-            <li>Πρόσβαση και εξαγωγή δεδομένων (αντίγραφο ασφαλείας JSON από την αρχική οθόνη)</li>
+            <li>Πρόσβαση και εξαγωγή δεδομένων — επικοινωνία με privacy@orthografia.app</li>
             <li>Διόρθωση μέσω συγχρονισμού με άλλες συσκευές ή επικοινωνίας μαζί μας</li>
             <li>Διαγραφή: email στο privacy@orthografia.app ή διαγραφή λογαριασμού</li>
             <li>Ανάκληση συγκατάθεσης: διαγραφή λογαριασμού και επικοινωνία μαζί μας</li>

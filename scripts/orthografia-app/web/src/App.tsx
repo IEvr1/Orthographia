@@ -23,8 +23,6 @@ import type {
 
 import {
 
-  downloadProgressBackup,
-
   fetchProgressFromServer,
 
   isProgressSyncAvailable,
@@ -661,8 +659,6 @@ function AppShell({
           onBack={closeSettings}
 
           onOpenPricing={() => setScreen("pricing")}
-
-          onBackupProgress={() => downloadProgressBackup(activeProfileId)}
 
           onSyncProgress={handleSync}
 

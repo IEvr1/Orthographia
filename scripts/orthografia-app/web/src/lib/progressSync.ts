@@ -52,33 +52,6 @@ async function fetchRemoteProgress(auth?: ProgressAuth): Promise<ProgressStore |
   }
 }
 
-export function exportProgressJson(profileId?: string | null): string {
-  const id = profileId ?? getActiveProfileId();
-  return JSON.stringify(loadProgress(id), null, 2);
-}
-
-export function downloadProgressBackup(profileId?: string | null): void {
-  const id = profileId ?? getActiveProfileId();
-  const store = loadProgress(id);
-  const suffix = id ? `-${id.slice(0, 8)}` : "";
-  const blob = new Blob([JSON.stringify(store, null, 2)], { type: "application/json" });
-  const url = URL.createObjectURL(blob);
-  const anchor = document.createElement("a");
-  anchor.href = url;
-  anchor.download = `orthografia-progress${suffix}-${new Date().toISOString().slice(0, 10)}.json`;
-  anchor.style.display = "none";
-  document.body.appendChild(anchor);
-  anchor.click();
-  document.body.removeChild(anchor);
-  window.setTimeout(() => URL.revokeObjectURL(url), 1000);
-}
-
-export function importProgressFromJson(text: string, profileId?: string | null): ProgressStore {
-  const data = JSON.parse(text) as ProgressStore;
-  const targetProfile = profileId ?? data.profileId ?? getActiveProfileId();
-  return importProgressStore(data, targetProfile);
-}
-
 export async function syncProgressToServer(auth?: ProgressAuth): Promise<boolean> {
   if (!isProgressSyncAvailable()) return false;
   const profileId = auth?.profileId ?? getActiveProfileId();
