@@ -562,14 +562,14 @@ body {
   box-shadow: none;
 }
 
-.key--wide {
-  min-width: 52px;
-  font-size: 0.95rem;
-}
-
 .key--action {
   background: var(--sand-deep);
   font-size: 0.9rem;
+}
+
+.keyboard-row--actions {
+  margin-top: 0.25rem;
+  gap: 0.5rem;
 }
 
 .key--check {
@@ -577,9 +577,9 @@ body {
   color: var(--white);
   font-family: var(--font-display);
   font-weight: 700;
-  min-width: 100px;
+  min-width: 120px;
   flex: 1;
-  max-width: 160px;
+  max-width: 200px;
 }
 
 .key:disabled,
@@ -1351,10 +1351,6 @@ body {
 @media (min-width: 600px) {
   .screen {
     padding-inline: 2rem;
-  }
-
-  .keyboard-row--digraphs {
-    max-width: 100%;
   }
 
   .pricing-grid {

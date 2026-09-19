@@ -1,4 +1,4 @@
-import { useCallback, useRef, useState } from "react";
+import { useCallback, useRef } from "react";
 
 interface GreekKeyboardProps {
   value: string;
@@ -10,8 +10,6 @@ interface GreekKeyboardProps {
 
 const ROW1 = ["α", "β", "γ", "δ", "ε", "ζ", "η", "θ", "ι", "κ", "λ", "μ"];
 const ROW2 = ["ν", "ξ", "ο", "π", "ρ", "σ", "ς", "τ", "υ", "φ", "χ", "ψ", "ω"];
-const DIGRAPHS = ["αι", "ει", "οι", "ου", "μπ", "ντ", "γκ", "τσ", "τζ"];
-const ACCENTED = ["ά", "έ", "ή", "ί", "ό", "ύ", "ώ"];
 
 const ACCENT_MAP: Record<string, string> = {
   α: "ά",
@@ -30,7 +28,6 @@ export function GreekKeyboard({
   disabled = false,
   checkLabel = "Έλεγξε",
 }: GreekKeyboardProps) {
-  const [showAccents, setShowAccents] = useState(false);
   const longPressTimer = useRef<number | null>(null);
   const longPressKey = useRef<string | null>(null);
 
@@ -125,35 +122,7 @@ export function GreekKeyboard({
           </div>
         ))}
 
-        <div className="keyboard-row keyboard-row--digraphs">
-          {DIGRAPHS.map((d) => (
-            <button
-              key={d}
-              type="button"
-              className="key key--wide"
-              disabled={disabled}
-              onClick={() => append(d)}
-            >
-              {d}
-            </button>
-          ))}
-        </div>
-
         <div className="keyboard-row keyboard-row--actions">
-          <button
-            type="button"
-            className="key key--action"
-            disabled={disabled}
-            onClick={() => setShowAccents((s) => !s)}
-          >
-            {showAccents ? "abc" : "Ά"}
-          </button>
-          {showAccents &&
-            ACCENTED.map((a) => (
-              <button key={a} type="button" className="key" disabled={disabled} onClick={() => append(a)}>
-                {a}
-              </button>
-            ))}
           <button type="button" className="key key--action" disabled={disabled} onClick={accentLastVowel}>
             τόνος
           </button>
