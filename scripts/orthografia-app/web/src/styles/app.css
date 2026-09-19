@@ -167,6 +167,16 @@ body {
   border-color: var(--teal);
 }
 
+.mode-chip--active {
+  border-color: var(--teal);
+  background: var(--teal);
+  color: var(--white);
+}
+
+.mode-chip--locked {
+  opacity: 0.45;
+}
+
 .mode-chip:disabled {
   opacity: 0.4;
 }

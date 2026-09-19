@@ -142,17 +142,16 @@ export function HomeScreen({
         <p className="section-label">Τρόπος</p>
         <div className="mode-options">
           {(Object.keys(MODE_LABELS) as GameMode[]).map((mode) => {
-            const allowed = subscriptionLoading || canAccessMode(tier, mode);
             const locked = !subscriptionLoading && !canAccessMode(tier, mode);
             return (
               <button
                 key={mode}
                 type="button"
-                className={`mode-chip${gameMode === mode ? " grade-chip--active" : ""}${locked ? " grade-chip--locked" : ""}`}
+                className={`mode-chip${gameMode === mode ? " mode-chip--active" : ""}${locked ? " mode-chip--locked" : ""}`}
                 aria-pressed={gameMode === mode}
                 onClick={() => {
-                  if (!allowed) {
-                    if (isClerkEnabled()) onOpenPricing();
+                  if (locked) {
+                    onOpenPricing();
                     return;
                   }
                   onModeChange(mode);
@@ -166,22 +165,32 @@ export function HomeScreen({
         </div>
       </div>
 
-      {canStartFromHome && (
-        <>
-          <button
-            type="button"
-            className="btn btn-primary btn-xl"
-            disabled={dailyLimitReached}
-            onClick={onStart}
-          >
-            {dailyLimitReached ? "Έφτασες το ημερήσιο όριο" : "Ξεκίνα"}
-          </button>
-          {dailyLimitReached && tier === "free" && (
-            <button type="button" className="btn btn-secondary btn-xl" onClick={onOpenPricing}>
-              Αναβάθμιση
+      {showFamilyProfiles && !activeChildName ? (
+        <button
+          type="button"
+          className="btn btn-primary btn-xl"
+          onClick={() => onOpenSettings({ addChild: true })}
+        >
+          Ρυθμίσεις → Πρόσθεσε παιδί
+        </button>
+      ) : (
+        canStartFromHome && (
+          <>
+            <button
+              type="button"
+              className="btn btn-primary btn-xl"
+              disabled={dailyLimitReached}
+              onClick={onStart}
+            >
+              {dailyLimitReached ? "Έφτασες το ημερήσιο όριο" : "Ξεκίνα"}
             </button>
-          )}
-        </>
+            {dailyLimitReached && tier === "free" && (
+              <button type="button" className="btn btn-secondary btn-xl" onClick={onOpenPricing}>
+                Αναβάθμιση
+              </button>
+            )}
+          </>
+        )
       )}
 
       {progressStats && (

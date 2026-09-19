@@ -144,7 +144,11 @@ function AppShell({
   getToken,
   userId,
 }: {
-  subscription: SubscriptionState & { refresh?: () => Promise<void> };
+  subscription: SubscriptionState & {
+    refresh?: () => Promise<void>;
+    startCheckout?: (plan: "monthly" | "yearly" | "family") => Promise<string | null>;
+    openPortal?: () => Promise<string | null>;
+  };
   getToken?: () => Promise<string | null>;
   userId?: string | null;
 }) {
@@ -275,11 +279,12 @@ function AppShell({
       const fallback = [1, 2].find((g) => availableGrades.has(g)) ?? 1;
       setSelectedGrade(fallback);
     }
+  }, [subscription.loading, tier, selectedGrade, availableGrades]);
 
-    if (!canAccessMode(tier, gameMode)) {
-      setGameMode("dictation");
-    }
-  }, [subscription.loading, tier, selectedGrade, gameMode, availableGrades]);
+  useEffect(() => {
+    if (subscription.loading) return;
+    setGameMode((current) => (canAccessMode(tier, current) ? current : "dictation"));
+  }, [subscription.loading, tier]);
 
 
 
@@ -704,7 +709,14 @@ function AppShell({
 
           {paywallMessage && <p className="pricing-banner">{paywallMessage}</p>}
 
-          <PricingScreen onBack={() => setScreen("home")} />
+          <PricingScreen
+            onBack={() => setScreen("home")}
+            tier={tier}
+            active={subscription.active}
+            currentPeriodEnd={subscription.currentPeriodEnd}
+            startCheckout={subscription.startCheckout}
+            openPortal={subscription.openPortal}
+          />
 
         </>
 
