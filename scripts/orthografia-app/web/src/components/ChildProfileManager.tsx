@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { MAX_CHILD_NAME_LENGTH, sanitizeChildName, validateChildName } from "../lib/childName";
 import type { ChildProfile } from "../lib/subscription";
 import { deleteChildProfile, upsertChildProfile } from "../lib/subscription";
@@ -19,6 +19,7 @@ interface ChildProfileManagerProps {
   getToken: () => Promise<string | null>;
   onSelectProfile: (id: string) => void;
   onRefresh: () => Promise<void>;
+  autoOpenAdd?: boolean;
 }
 
 interface FormState {
@@ -34,10 +35,12 @@ export function ChildProfileManager({
   getToken,
   onSelectProfile,
   onRefresh,
+  autoOpenAdd = false,
 }: ChildProfileManagerProps) {
   const [editing, setEditing] = useState<FormState | null>(null);
   const [saving, setSaving] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const autoOpenedRef = useRef(false);
 
   const openAdd = () => {
     setError(null);
@@ -108,6 +111,13 @@ export function ChildProfileManager({
   };
 
   const canAdd = profiles.length < maxProfiles;
+
+  useEffect(() => {
+    if (!autoOpenAdd || autoOpenedRef.current || !canAdd) return;
+    autoOpenedRef.current = true;
+    setError(null);
+    setEditing({ name: "", grade: 3 });
+  }, [autoOpenAdd, canAdd]);
 
   return (
     <div className="profile-manager">

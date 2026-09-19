@@ -95,6 +95,8 @@ import { HomeScreen } from "./components/HomeScreen";
 
 import { PricingScreen } from "./components/PricingScreen";
 
+import { SettingsScreen } from "./components/SettingsScreen";
+
 import { ReverseExercise } from "./components/ReverseExercise";
 
 import { RuleCard } from "./components/RuleCard";
@@ -175,6 +177,8 @@ function AppShell({
 
   const [paywallMessage, setPaywallMessage] = useState<string | null>(null);
 
+  const [settingsAddChild, setSettingsAddChild] = useState(false);
+
   const [activeProfileId, setActiveProfileIdState] = useState<string | null>(() => getActiveProfileId());
 
   const [progressVersion, setProgressVersion] = useState(0);
@@ -182,6 +186,8 @@ function AppShell({
   const tier = subscription.tier;
 
   const showFamilyProfiles = tier === "family" && subscription.active;
+
+  const needsProfile = showFamilyProfiles && subscription.profiles.length === 0;
 
   const isPaid = isPaidTier(tier);
 
@@ -566,9 +572,27 @@ function AppShell({
 
     setProgressVersion((v) => v + 1);
 
+  };
+
+
+
+  const openSettings = useCallback((options?: { addChild?: boolean }) => {
+
+    setSettingsAddChild(Boolean(options?.addChild));
+
+    setScreen("settings");
+
+  }, []);
+
+
+
+  const closeSettings = useCallback(() => {
+
+    setSettingsAddChild(false);
+
     setScreen("home");
 
-  };
+  }, []);
 
 
 
@@ -624,13 +648,9 @@ function AppShell({
 
           onWeeklyStart={startWeeklySession}
 
-          onBackupProgress={() => downloadProgressBackup(activeProfileId)}
-
-          onSyncProgress={handleSync}
+          onOpenSettings={openSettings}
 
           onOpenPricing={() => setScreen("pricing")}
-
-          syncEnabled={SYNC_ENABLED}
 
           progressStats={progressStats}
 
@@ -659,6 +679,34 @@ function AppShell({
           isSuperAdmin={subscription.isSuperAdmin}
 
           dailyLimitReached={dailyLimitReached}
+
+          showFamilyProfiles={showFamilyProfiles}
+
+          needsProfile={needsProfile}
+
+        />
+
+      )}
+
+      {screen === "settings" && (
+
+        <SettingsScreen
+
+          onBack={closeSettings}
+
+          onOpenPricing={() => setScreen("pricing")}
+
+          onBackupProgress={() => downloadProgressBackup(activeProfileId)}
+
+          onSyncProgress={handleSync}
+
+          syncEnabled={SYNC_ENABLED}
+
+          tier={tier}
+
+          isSuperAdmin={subscription.isSuperAdmin}
+
+          autoOpenAddChild={settingsAddChild}
 
           familyProfiles={
 

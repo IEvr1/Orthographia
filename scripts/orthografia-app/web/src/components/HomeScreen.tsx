@@ -5,15 +5,13 @@ import {
   canAccessGrade,
   canAccessMode,
   canAccessWeeklyRule,
-  canUseCloudSync,
   tierLabel,
 } from "../lib/access";
 import type { DifficultyMix } from "../lib/difficulty";
 import type { GradeProgressStats } from "../lib/progressStats";
-import type { ChildProfile } from "../lib/subscription";
 import { isClerkEnabled } from "../lib/subscription";
-import { ChildProfileManager } from "./ChildProfileManager";
 import { ProgressSummaryPanel } from "./ProgressSummaryPanel";
+import { SettingsIcon } from "./SettingsScreen";
 
 const GRADE_LABELS: Record<number, string> = {
   1: "Α΄",
@@ -34,10 +32,8 @@ const MODE_LABELS: Record<GameMode, string> = {
 interface HomeScreenProps {
   onStart: () => void;
   onWeeklyStart: () => void;
-  onBackupProgress?: () => void;
-  onSyncProgress?: () => void;
+  onOpenSettings: (options?: { addChild?: boolean }) => void;
   onOpenPricing: () => void;
-  syncEnabled: boolean;
   progressStats?: GradeProgressStats;
   lastSessionDate?: string | null;
   activeChildName?: string | null;
@@ -52,23 +48,15 @@ interface HomeScreenProps {
   subscriptionLoading?: boolean;
   isSuperAdmin?: boolean;
   dailyLimitReached: boolean;
-  familyProfiles?: {
-    profiles: ChildProfile[];
-    maxProfiles: number;
-    activeProfileId: string | null;
-    getToken: () => Promise<string | null>;
-    onSelectProfile: (id: string) => void;
-    onRefreshProfiles: () => Promise<void>;
-  };
+  showFamilyProfiles?: boolean;
+  needsProfile?: boolean;
 }
 
 export function HomeScreen({
   onStart,
   onWeeklyStart,
-  onBackupProgress,
-  onSyncProgress,
+  onOpenSettings,
   onOpenPricing,
-  syncEnabled,
   progressStats,
   lastSessionDate = null,
   activeChildName,
@@ -83,12 +71,10 @@ export function HomeScreen({
   subscriptionLoading = false,
   isSuperAdmin = false,
   dailyLimitReached,
-  familyProfiles,
+  showFamilyProfiles = false,
+  needsProfile = false,
 }: HomeScreenProps) {
   const showWeekly = weeklyRule && canAccessWeeklyRule(tier);
-  const showCloudSync = syncEnabled && onSyncProgress && canUseCloudSync(tier);
-  const showFamilyProfiles = Boolean(familyProfiles);
-  const needsProfile = showFamilyProfiles && familyProfiles!.profiles.length === 0;
 
   return (
     <main className="screen screen--home fade-in">
@@ -100,36 +86,44 @@ export function HomeScreen({
             {tier === "free" && " · Αναβάθμιση"}
           </button>
         </div>
-        {isClerkEnabled() && (
-          <div className="home-auth">
-            <SignedOut>
-              <SignInButton mode="modal">
-                <button type="button" className="btn-text">
-                  Σύνδεση
-                </button>
-              </SignInButton>
-            </SignedOut>
-            <SignedIn>
-              <UserButton afterSignOutUrl="/" />
-            </SignedIn>
-          </div>
-        )}
+        <div className="home-topbar__actions">
+          <button
+            type="button"
+            className="icon-btn"
+            onClick={() => onOpenSettings()}
+            aria-label="Ρυθμίσεις"
+          >
+            <SettingsIcon />
+          </button>
+          {isClerkEnabled() && (
+            <div className="home-auth">
+              <SignedOut>
+                <SignInButton mode="modal">
+                  <button type="button" className="btn-text">
+                    Σύνδεση
+                  </button>
+                </SignInButton>
+              </SignedOut>
+              <SignedIn>
+                <UserButton afterSignOutUrl="/" />
+              </SignedIn>
+            </div>
+          )}
+        </div>
       </div>
 
       <div className="hero">
         <p className="brand">Ορθογραφία</p>
         <h1 className="hero-title">Μάθε να γράφεις σωστά</h1>
+        {showFamilyProfiles && activeChildName && (
+          <p className="hero-child">{activeChildName} · {GRADE_LABELS[selectedGrade]} τάξη</p>
+        )}
       </div>
 
-      {showFamilyProfiles && (
-        <ChildProfileManager
-          profiles={familyProfiles!.profiles}
-          maxProfiles={familyProfiles!.maxProfiles}
-          activeProfileId={familyProfiles!.activeProfileId}
-          getToken={familyProfiles!.getToken}
-          onSelectProfile={familyProfiles!.onSelectProfile}
-          onRefresh={familyProfiles!.onRefreshProfiles}
-        />
+      {needsProfile && (
+        <p className="hint-text profile-setup-hint">
+          Πρόσθεσε προφίλ παιδιού στις ρυθμίσεις για να ξεκινήσεις.
+        </p>
       )}
 
       {!showFamilyProfiles && (
@@ -185,7 +179,15 @@ export function HomeScreen({
         </div>
       </div>
 
-      {!needsProfile && (
+      {needsProfile ? (
+        <button
+          type="button"
+          className="btn btn-primary btn-xl"
+          onClick={() => onOpenSettings({ addChild: true })}
+        >
+          Ρυθμίσεις → Πρόσθεσε παιδί
+        </button>
+      ) : (
         <button
           type="button"
           className="btn btn-primary btn-xl"
@@ -221,24 +223,7 @@ export function HomeScreen({
           activeChildName={activeChildName}
           lastSessionDate={lastSessionDate}
           sessionMix={sessionMix}
-          onBackup={onBackupProgress}
-          showBackup={Boolean(onBackupProgress)}
         />
-      )}
-
-      {(showCloudSync || (syncEnabled && !canUseCloudSync(tier))) && (
-        <div className="progress-sync">
-          {showCloudSync && (
-            <button type="button" className="btn-text btn-text--subtle" onClick={onSyncProgress}>
-              Συγχρονισμός με άλλες συσκευές
-            </button>
-          )}
-          {syncEnabled && !canUseCloudSync(tier) && (
-            <button type="button" className="btn-text btn-text--subtle" onClick={onOpenPricing}>
-              Συγχρονισμός με άλλες συσκευές (Premium)
-            </button>
-          )}
-        </div>
       )}
 
       <footer className="legal-footer">

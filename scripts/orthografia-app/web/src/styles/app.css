@@ -874,6 +874,43 @@ body {
   gap: 0.5rem;
 }
 
+.home-topbar__actions {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 12px;
+  background: transparent;
+  color: var(--ink-soft);
+  cursor: pointer;
+}
+
+.icon-btn:hover {
+  background: var(--sand-deep);
+  color: var(--ink);
+}
+
+.hero-child {
+  font-size: 0.9rem;
+  color: var(--teal-dark);
+  font-weight: 600;
+  margin: 0.15rem 0 0;
+}
+
+.profile-setup-hint {
+  max-width: 320px;
+  text-align: center;
+  margin: 0;
+}
+
 .admin-badge {
   font-family: var(--font-display);
   font-size: 0.75rem;
@@ -1066,6 +1103,78 @@ body {
 
 .btn-text--danger {
   color: var(--coral-dark);
+}
+
+/* Settings */
+.screen--settings {
+  gap: 1.25rem;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: left;
+}
+
+.settings-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 720px;
+}
+
+.settings-header__right {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.settings-hero {
+  width: 100%;
+}
+
+.settings-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.5rem, 5vw, 1.85rem);
+  font-weight: 800;
+  margin: 0;
+  color: var(--ink);
+}
+
+.settings-subtitle {
+  margin: 0.25rem 0 0;
+  font-size: 0.9rem;
+  color: var(--ink-muted);
+}
+
+.settings-section {
+  width: 100%;
+  max-width: 360px;
+}
+
+.settings-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.settings-action {
+  width: 100%;
+  padding: 0.75rem 0.85rem;
+  border: 2px solid var(--sand-deep);
+  border-radius: 12px;
+  background: var(--white);
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  color: var(--ink);
+  text-align: left;
+  cursor: pointer;
+}
+
+.settings-action:hover {
+  border-color: var(--teal);
+}
+
+.settings-upgrade {
+  width: 100%;
 }
 
 /* Pricing */
