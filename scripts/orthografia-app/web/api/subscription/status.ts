@@ -33,6 +33,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
         maxProfiles: 1,
         profiles: [],
         currentPeriodEnd: null,
+        isSuperAdmin: false,
       });
     }
 

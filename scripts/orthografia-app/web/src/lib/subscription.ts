@@ -1,6 +1,7 @@
 import { useAuth } from "@clerk/clerk-react";
 import { useCallback, useEffect, useState } from "react";
 import type { PlanTier } from "./access";
+import { SUPER_ADMIN_TIER } from "./access";
 
 const API_BASE = import.meta.env.VITE_PROGRESS_API_URL ?? "/api";
 
@@ -67,14 +68,15 @@ export function useSubscription(): SubscriptionState & {
       const res = await fetch(`${API_BASE.replace(/\/$/, "")}/subscription/status`, { headers });
       if (!res.ok) throw new Error("Αποτυχία φόρτωσης συνδρομής");
       const data = await res.json();
+      const isSuperAdmin = Boolean(data.isSuperAdmin);
       setState({
-        tier: data.tier ?? "free",
-        active: Boolean(data.active),
-        planType: data.planType ?? "free",
-        maxProfiles: data.maxProfiles ?? 1,
+        tier: isSuperAdmin ? SUPER_ADMIN_TIER : (data.tier ?? "free"),
+        active: isSuperAdmin ? true : Boolean(data.active),
+        planType: isSuperAdmin ? SUPER_ADMIN_TIER : (data.planType ?? "free"),
+        maxProfiles: isSuperAdmin ? Math.max(data.maxProfiles ?? 1, 3) : (data.maxProfiles ?? 1),
         profiles: mapProfiles(data.profiles ?? []),
         currentPeriodEnd: data.currentPeriodEnd ?? null,
-        isSuperAdmin: Boolean(data.isSuperAdmin),
+        isSuperAdmin,
         loading: false,
         error: null,
       });

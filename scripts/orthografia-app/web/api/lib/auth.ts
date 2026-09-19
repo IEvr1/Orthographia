@@ -43,7 +43,10 @@ export async function requireAuth(req: VercelRequest): Promise<AuthUser | null> 
     try {
       const clerk = createClerkClient({ secretKey: secret });
       const user = await clerk.users.getUser(userId);
-      email = user.emailAddresses[0]?.emailAddress ?? null;
+      const primary =
+        user.emailAddresses.find((entry) => entry.id === user.primaryEmailAddressId) ??
+        user.emailAddresses[0];
+      email = primary?.emailAddress ?? null;
     } catch {
       email = typeof payload.email === "string" ? payload.email : null;
     }
