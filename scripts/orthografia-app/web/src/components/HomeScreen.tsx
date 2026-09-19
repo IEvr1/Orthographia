@@ -50,6 +50,7 @@ interface HomeScreenProps {
   onModeChange: (mode: GameMode) => void;
   weeklyRule: RuleDefinition | null;
   tier: PlanTier;
+  subscriptionLoading?: boolean;
   isSuperAdmin?: boolean;
   dailyLimitReached: boolean;
   familyProfiles?: {
@@ -81,6 +82,7 @@ export function HomeScreen({
   onModeChange,
   weeklyRule,
   tier,
+  subscriptionLoading = false,
   isSuperAdmin = false,
   dailyLimitReached,
   familyProfiles,
@@ -161,15 +163,22 @@ export function HomeScreen({
         <p className="section-label">Τρόπος</p>
         <div className="grade-options">
           {(Object.keys(MODE_LABELS) as GameMode[]).map((mode) => {
-            const allowed = canAccessMode(tier, mode);
+            const allowed = subscriptionLoading || canAccessMode(tier, mode);
+            const locked = !subscriptionLoading && !canAccessMode(tier, mode);
             return (
               <button
                 key={mode}
                 type="button"
-                className={`grade-chip${gameMode === mode ? " grade-chip--active" : ""}${!allowed ? " grade-chip--locked" : ""}`}
-                disabled={!allowed}
-                onClick={() => allowed && onModeChange(mode)}
-                title={!allowed ? "Διαθέσιμο με Premium" : undefined}
+                className={`grade-chip${gameMode === mode ? " grade-chip--active" : ""}${locked ? " grade-chip--locked" : ""}`}
+                aria-pressed={gameMode === mode}
+                onClick={() => {
+                  if (!allowed) {
+                    if (isClerkEnabled()) onOpenPricing();
+                    return;
+                  }
+                  onModeChange(mode);
+                }}
+                title={locked ? "Διαθέσιμο με Premium" : undefined}
               >
                 {MODE_LABELS[mode]}
               </button>
