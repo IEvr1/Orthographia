@@ -134,6 +134,43 @@ body {
   color: var(--white);
 }
 
+.mode-options {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
+  width: 100%;
+  max-width: 360px;
+  margin: 0 auto;
+}
+
+.mode-chip {
+  min-height: 56px;
+  padding: 0.75rem 1rem;
+  border-radius: 12px;
+  border: 2px solid var(--sand-deep);
+  background: var(--white);
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.05rem;
+  line-height: 1.25;
+  color: var(--ink-soft);
+  cursor: default;
+  text-align: center;
+  white-space: normal;
+}
+
+.mode-chip:not(:disabled) {
+  cursor: pointer;
+}
+
+.mode-chip:not(:disabled):hover {
+  border-color: var(--teal);
+}
+
+.mode-chip:disabled {
+  opacity: 0.4;
+}
+
 /* Rule card */
 .screen--rule {
   justify-content: center;

@@ -153,7 +153,7 @@ export function HomeScreen({
 
       <div className="grade-picker">
         <p className="section-label">Τρόπος</p>
-        <div className="grade-options">
+        <div className="mode-options">
           {(Object.keys(MODE_LABELS) as GameMode[]).map((mode) => {
             const allowed = subscriptionLoading || canAccessMode(tier, mode);
             const locked = !subscriptionLoading && !canAccessMode(tier, mode);
@@ -161,7 +161,7 @@ export function HomeScreen({
               <button
                 key={mode}
                 type="button"
-                className={`grade-chip${gameMode === mode ? " grade-chip--active" : ""}${locked ? " grade-chip--locked" : ""}`}
+                className={`mode-chip${gameMode === mode ? " grade-chip--active" : ""}${locked ? " grade-chip--locked" : ""}`}
                 aria-pressed={gameMode === mode}
                 onClick={() => {
                   if (!allowed) {
