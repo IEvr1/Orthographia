@@ -1,8 +1,8 @@
 import type { VercelRequest, VercelResponse } from "@vercel/node";
-import { requireAuth } from "../lib/auth";
-import { ensureSchema } from "../lib/db";
-import { isSuperAdmin } from "../lib/superAdmin";
-import { maxProfilesForPlan } from "../lib/stripe";
+import { requireAuth } from "../../server/auth.js";
+import { ensureSchema } from "../../server/db.js";
+import { isSuperAdmin } from "../../server/superAdmin.js";
+import { maxProfilesForPlan } from "../../server/stripe.js";
 import {
   deleteChildProfile,
   effectiveTier,
@@ -11,7 +11,7 @@ import {
   isActiveSubscription,
   listChildProfiles,
   upsertChildProfile,
-} from "../lib/subscriptions";
+} from "../../server/subscriptions.js";
 
 function cors(res: VercelResponse): void {
   res.setHeader("Access-Control-Allow-Origin", "*");

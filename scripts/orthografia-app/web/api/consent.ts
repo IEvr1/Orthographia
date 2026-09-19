@@ -1,7 +1,7 @@
 import type { VercelRequest, VercelResponse } from "@vercel/node";
-import { requireAuth } from "./lib/auth";
-import { cors } from "./lib/cors";
-import { ensureSchema, getSql } from "./lib/db";
+import { requireAuth } from "../server/auth.js";
+import { cors } from "../server/cors.js";
+import { ensureSchema, getSql } from "../server/db.js";
 
 const CURRENT_POLICY_VERSION = "privacy-v1";
 

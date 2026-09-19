@@ -1,12 +1,12 @@
 import type { VercelRequest, VercelResponse } from "@vercel/node";
-import { requireAuth } from "../lib/auth";
-import { ensureSchema } from "../lib/db";
+import { requireAuth } from "../../server/auth.js";
+import { ensureSchema } from "../../server/db.js";
 import {
   ensureUser,
   getStripeCustomerId,
   setStripeCustomerId,
-} from "../lib/subscriptions";
-import { getStripe, priceIdForPlan, type CheckoutPlan } from "../lib/stripe";
+} from "../../server/subscriptions.js";
+import { getStripe, priceIdForPlan, type CheckoutPlan } from "../../server/stripe.js";
 
 function cors(res: VercelResponse): void {
   res.setHeader("Access-Control-Allow-Origin", "*");

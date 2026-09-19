@@ -1,12 +1,12 @@
 import type { VercelRequest, VercelResponse } from "@vercel/node";
 import Stripe from "stripe";
-import { ensureSchema } from "../lib/db";
+import { ensureSchema } from "../../server/db.js";
 import {
   cancelSubscription,
   ensureUser,
   upsertSubscriptionFromStripe,
-} from "../lib/subscriptions";
-import { getStripe } from "../lib/stripe";
+} from "../../server/subscriptions.js";
+import { getStripe } from "../../server/stripe.js";
 
 export const config = {
   api: {
@@ -15,7 +15,7 @@ export const config = {
 };
 
 async function readRawBody(req: VercelRequest): Promise<Buffer> {
-  const chunks: Buffer[] = [];
+  const chunks: Uint8Array[] = [];
   for await (const chunk of req) {
     chunks.push(typeof chunk === "string" ? Buffer.from(chunk) : chunk);
   }
@@ -29,12 +29,16 @@ function mapStatus(status: Stripe.Subscription.Status): string {
   return "inactive";
 }
 
+function clerkUserIdFromCustomer(
+  customer: string | Stripe.Customer | Stripe.DeletedCustomer | null
+): string | null {
+  if (!customer || typeof customer === "string" || customer.deleted) return null;
+  return customer.metadata?.clerkUserId ?? null;
+}
+
 async function syncSubscription(subscription: Stripe.Subscription): Promise<void> {
   const userId =
-    subscription.metadata.clerkUserId ??
-    (typeof subscription.customer === "string"
-      ? null
-      : subscription.customer?.metadata?.clerkUserId);
+    subscription.metadata.clerkUserId ?? clerkUserIdFromCustomer(subscription.customer);
 
   if (!userId) {
     console.warn("[stripe/webhook] missing clerkUserId on subscription", subscription.id);
@@ -45,15 +49,14 @@ async function syncSubscription(subscription: Stripe.Subscription): Promise<void
   const priceId = item?.price.id;
   if (!priceId) return;
 
+  const periodEnd = item?.current_period_end;
   await ensureUser(userId, null);
   await upsertSubscriptionFromStripe({
     userId,
     subscriptionId: subscription.id,
     status: mapStatus(subscription.status),
     priceId,
-    currentPeriodEnd: subscription.current_period_end
-      ? new Date(subscription.current_period_end * 1000)
-      : null,
+    currentPeriodEnd: periodEnd ? new Date(periodEnd * 1000) : null,
   });
 }
 
@@ -74,7 +77,11 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     }
 
     const rawBody = await readRawBody(req);
-    const event = stripe.webhooks.constructEvent(rawBody, signature, webhookSecret);
+    const event = stripe.webhooks.constructEvent(
+      new Uint8Array(rawBody),
+      signature,
+      webhookSecret
+    );
 
     switch (event.type) {
       case "checkout.session.completed": {

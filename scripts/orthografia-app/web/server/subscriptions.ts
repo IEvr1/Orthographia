@@ -1,5 +1,5 @@
-import { getSql } from "./db";
-import { maxProfilesForPlan, planTypeForPrice } from "./stripe";
+import { getSql } from "./db.js";
+import { maxProfilesForPlan, planTypeForPrice } from "./stripe.js";
 
 export type PlanType = "free" | "child" | "family";
 export type SubscriptionStatus = "inactive" | "active" | "past_due" | "canceled";

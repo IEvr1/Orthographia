@@ -1,8 +1,8 @@
 import type { VercelRequest, VercelResponse } from "@vercel/node";
-import { requireAuth } from "../lib/auth";
-import { ensureSchema } from "../lib/db";
-import { getStripeCustomerId } from "../lib/subscriptions";
-import { getStripe } from "../lib/stripe";
+import { requireAuth } from "../../server/auth.js";
+import { ensureSchema } from "../../server/db.js";
+import { getStripeCustomerId } from "../../server/subscriptions.js";
+import { getStripe } from "../../server/stripe.js";
 
 function cors(res: VercelResponse): void {
   res.setHeader("Access-Control-Allow-Origin", "*");
