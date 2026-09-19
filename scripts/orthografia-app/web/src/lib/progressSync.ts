@@ -63,11 +63,14 @@ export function downloadProgressBackup(profileId?: string | null): void {
   const suffix = id ? `-${id.slice(0, 8)}` : "";
   const blob = new Blob([JSON.stringify(store, null, 2)], { type: "application/json" });
   const url = URL.createObjectURL(blob);
-  const a = document.createElement("a");
-  a.href = url;
-  a.download = `orthografia-progress${suffix}-${new Date().toISOString().slice(0, 10)}.json`;
-  a.click();
-  URL.revokeObjectURL(url);
+  const anchor = document.createElement("a");
+  anchor.href = url;
+  anchor.download = `orthografia-progress${suffix}-${new Date().toISOString().slice(0, 10)}.json`;
+  anchor.style.display = "none";
+  document.body.appendChild(anchor);
+  anchor.click();
+  document.body.removeChild(anchor);
+  window.setTimeout(() => URL.revokeObjectURL(url), 1000);
 }
 
 export function importProgressFromJson(text: string, profileId?: string | null): ProgressStore {

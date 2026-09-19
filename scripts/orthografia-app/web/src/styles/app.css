@@ -231,6 +231,57 @@ body {
   max-width: 360px;
 }
 
+.progress-summary {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+  max-width: 360px;
+  padding: 1rem 1.1rem;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid var(--border);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+}
+
+.progress-summary__headline {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.progress-summary__score {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 800;
+  font-family: var(--font-display);
+  color: var(--teal-dark);
+}
+
+.progress-summary__insights {
+  margin: 0;
+  padding-left: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+}
+
+.progress-summary__insights li {
+  line-height: 1.35;
+}
+
+.progress-summary__backup {
+  align-self: flex-start;
+  margin-top: 0.15rem;
+}
+
+.progress-bar--home {
+  margin: 0.1rem 0 0.15rem;
+}
+
 .progress-detail {
   color: var(--ink-soft);
   font-size: 0.85rem;

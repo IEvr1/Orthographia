@@ -13,6 +13,7 @@ import type { GradeProgressStats } from "../lib/progressStats";
 import type { ChildProfile } from "../lib/subscription";
 import { isClerkEnabled } from "../lib/subscription";
 import { ChildProfileManager } from "./ChildProfileManager";
+import { ProgressSummaryPanel } from "./ProgressSummaryPanel";
 
 const GRADE_LABELS: Record<number, string> = {
   1: "Α΄",
@@ -33,14 +34,12 @@ const MODE_LABELS: Record<GameMode, string> = {
 interface HomeScreenProps {
   onStart: () => void;
   onWeeklyStart: () => void;
-  onExportProgress: () => void;
-  onImportProgress: () => void;
+  onBackupProgress?: () => void;
   onSyncProgress?: () => void;
   onOpenPricing: () => void;
   syncEnabled: boolean;
-  masteredCount: number;
-  totalWords: number;
   progressStats?: GradeProgressStats;
+  lastSessionDate?: string | null;
   activeChildName?: string | null;
   sessionMix?: DifficultyMix | null;
   selectedGrade: number;
@@ -66,15 +65,14 @@ interface HomeScreenProps {
 export function HomeScreen({
   onStart,
   onWeeklyStart,
-  onExportProgress,
-  onImportProgress,
+  onBackupProgress,
   onSyncProgress,
   onOpenPricing,
   syncEnabled,
-  masteredCount,
-  totalWords,
   progressStats,
+  lastSessionDate = null,
   activeChildName,
+  sessionMix,
   selectedGrade,
   availableGrades,
   onGradeChange,
@@ -187,18 +185,16 @@ export function HomeScreen({
         </div>
       </div>
 
-      <button
-        type="button"
-        className="btn btn-primary btn-xl"
-        disabled={dailyLimitReached || needsProfile}
-        onClick={onStart}
-      >
-        {needsProfile
-          ? "Πρόσθεσε παιδί"
-          : dailyLimitReached
-            ? "Έφτασες το ημερήσιο όριο"
-            : "Ξεκίνα"}
-      </button>
+      {!needsProfile && (
+        <button
+          type="button"
+          className="btn btn-primary btn-xl"
+          disabled={dailyLimitReached}
+          onClick={onStart}
+        >
+          {dailyLimitReached ? "Έφτασες το ημερήσιο όριο" : "Ξεκίνα"}
+        </button>
+      )}
       {dailyLimitReached && tier === "free" && (
         <button type="button" className="btn btn-secondary btn-xl" onClick={onOpenPricing}>
           Αναβάθμιση
@@ -206,47 +202,44 @@ export function HomeScreen({
       )}
 
       {showWeekly && (
-        <button
-          type="button"
-          className="btn btn-secondary btn-xl weekly-rule-btn"
-          disabled={needsProfile}
-          onClick={onWeeklyStart}
-        >
-          {needsProfile ? "Πρόσθεσε παιδί" : `Κανόνας: ${weeklyRule!.title}`}
-        </button>
-      )}
-
-      {totalWords > 0 && (
-        <div className="progress-panel">
-          <p className="progress-hint">
-            {activeChildName
-              ? `${activeChildName}: ${masteredCount}/${totalWords}`
-              : `${masteredCount}/${totalWords} λέξεις`}
-            {progressStats && progressStats.needsReview > 0 && (
-              <span className="progress-review"> · {progressStats.needsReview} επανάληψη</span>
-            )}
-          </p>
+        <div className="weekly-rule-card">
+          <p className="section-label">Κανόνας της εβδομάδας</p>
+          <p className="weekly-rule-title">{weeklyRule!.title}</p>
+          <p className="weekly-rule-body">{weeklyRule!.body}</p>
+          {!needsProfile && (
+            <button type="button" className="btn btn-secondary btn-xl" onClick={onWeeklyStart}>
+              5 λέξεις για τον κανόνα
+            </button>
+          )}
         </div>
       )}
 
-      <div className="progress-sync">
-        <button type="button" className="btn-text btn-text--subtle" onClick={onExportProgress}>
-          Εξαγωγή
-        </button>
-        <button type="button" className="btn-text btn-text--subtle" onClick={onImportProgress}>
-          Εισαγωγή
-        </button>
-        {showCloudSync && (
-          <button type="button" className="btn-text btn-text--subtle" onClick={onSyncProgress}>
-            Cloud
-          </button>
-        )}
-        {syncEnabled && !canUseCloudSync(tier) && (
-          <button type="button" className="btn-text btn-text--subtle" onClick={onOpenPricing}>
-            Cloud (Premium)
-          </button>
-        )}
-      </div>
+      {progressStats && (
+        <ProgressSummaryPanel
+          stats={progressStats}
+          gradeLabel={GRADE_LABELS[selectedGrade]}
+          activeChildName={activeChildName}
+          lastSessionDate={lastSessionDate}
+          sessionMix={sessionMix}
+          onBackup={onBackupProgress}
+          showBackup={Boolean(onBackupProgress)}
+        />
+      )}
+
+      {(showCloudSync || (syncEnabled && !canUseCloudSync(tier))) && (
+        <div className="progress-sync">
+          {showCloudSync && (
+            <button type="button" className="btn-text btn-text--subtle" onClick={onSyncProgress}>
+              Συγχρονισμός cloud
+            </button>
+          )}
+          {syncEnabled && !canUseCloudSync(tier) && (
+            <button type="button" className="btn-text btn-text--subtle" onClick={onOpenPricing}>
+              Cloud sync (Premium)
+            </button>
+          )}
+        </div>
+      )}
 
       <footer className="legal-footer">
         <a href="/privacy">Απορρήτο</a>
