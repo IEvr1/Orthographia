@@ -81,11 +81,11 @@ export function useSubscription(): SubscriptionState & {
         error: null,
       });
     } catch (err) {
-      setState({
-        ...FREE_STATE,
+      setState((s) => ({
+        ...s,
         loading: false,
         error: err instanceof Error ? err.message : "Σφάλμα",
-      });
+      }));
     }
   }, [getToken, isSignedIn]);
 

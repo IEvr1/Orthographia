@@ -273,22 +273,17 @@ function AppShell({
 
 
   useEffect(() => {
+    if (subscription.loading) return;
 
     if (!canAccessGrade(tier, selectedGrade)) {
-
       const fallback = [1, 2].find((g) => availableGrades.has(g)) ?? 1;
-
       setSelectedGrade(fallback);
-
     }
 
     if (!canAccessMode(tier, gameMode)) {
-
       setGameMode("dictation");
-
     }
-
-  }, [tier, selectedGrade, gameMode, availableGrades]);
+  }, [subscription.loading, tier, selectedGrade, gameMode, availableGrades]);
 
 
 
@@ -712,6 +707,8 @@ function AppShell({
           weeklyRule={weeklyRule}
 
           tier={tier}
+
+          subscriptionLoading={subscription.loading}
 
           isSuperAdmin={subscription.isSuperAdmin}
 
