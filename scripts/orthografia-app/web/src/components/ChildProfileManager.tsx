@@ -112,7 +112,7 @@ export function ChildProfileManager({
 
       {profiles.length === 0 ? (
         <p className="hint-text profile-empty-hint">
-          Πρόσθεσε έως {maxProfiles} παιδιά για να ξεκινήσει η εξάσκηση.
+          Δημιούργησε προφίλ για κάθε παιδί (έως {maxProfiles}).
         </p>
       ) : (
         <div className="profile-chips">
@@ -145,7 +145,11 @@ export function ChildProfileManager({
       {error && !editing && <p className="error-msg profile-error">{error}</p>}
 
       {canAdd && (
-        <button type="button" className="btn btn-secondary profile-add-btn" onClick={openAdd}>
+        <button
+          type="button"
+          className={`btn profile-add-btn${profiles.length === 0 ? " btn-primary btn-xl" : " btn-secondary"}`}
+          onClick={openAdd}
+        >
           {profiles.length === 0 ? "Πρόσθεσε παιδί" : "Πρόσθεσε ακόμα ένα παιδί"}
         </button>
       )}
