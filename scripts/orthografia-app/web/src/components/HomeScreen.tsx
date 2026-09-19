@@ -180,18 +180,16 @@ export function HomeScreen({
         </div>
       </div>
 
-      <button
-        type="button"
-        className="btn btn-primary btn-xl"
-        disabled={dailyLimitReached || needsProfile}
-        onClick={onStart}
-      >
-        {needsProfile
-          ? "Πρόσθεσε προφίλ παιδιού"
-          : dailyLimitReached
-            ? "Έφτασες το ημερήσιο όριο"
-            : "Σημερινή αποστολή"}
-      </button>
+      {!needsProfile && (
+        <button
+          type="button"
+          className="btn btn-primary btn-xl"
+          disabled={dailyLimitReached}
+          onClick={onStart}
+        >
+          {dailyLimitReached ? "Έφτασες το ημερήσιο όριο" : "Σημερινή αποστολή"}
+        </button>
+      )}
       {dailyLimitReached && tier === "free" && (
         <button type="button" className="btn btn-secondary btn-xl" onClick={onOpenPricing}>
           Αναβάθμιση για απεριόριστη εξάσκηση
@@ -203,14 +201,11 @@ export function HomeScreen({
           <p className="section-label">Κανόνας της εβδομάδας</p>
           <p className="weekly-rule-title">{weeklyRule!.title}</p>
           <p className="weekly-rule-body">{weeklyRule!.body}</p>
-          <button
-            type="button"
-            className="btn btn-secondary btn-xl"
-            disabled={needsProfile}
-            onClick={onWeeklyStart}
-          >
-            {needsProfile ? "Πρόσθεσε προφίλ παιδιού" : "5 λέξεις για τον κανόνα"}
-          </button>
+          {!needsProfile && (
+            <button type="button" className="btn btn-secondary btn-xl" onClick={onWeeklyStart}>
+              5 λέξεις για τον κανόνα
+            </button>
+          )}
         </div>
       )}
 
