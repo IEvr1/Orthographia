@@ -46,7 +46,6 @@ interface HomeScreenProps {
   isSuperAdmin?: boolean;
   dailyLimitReached: boolean;
   showFamilyProfiles?: boolean;
-  needsProfile?: boolean;
 }
 
 export function HomeScreen({
@@ -67,8 +66,9 @@ export function HomeScreen({
   isSuperAdmin = false,
   dailyLimitReached,
   showFamilyProfiles = false,
-  needsProfile = false,
 }: HomeScreenProps) {
+  const canStartFromHome = !showFamilyProfiles || Boolean(activeChildName);
+
   return (
     <main className="screen screen--home fade-in">
       <div className="home-topbar">
@@ -112,12 +112,6 @@ export function HomeScreen({
           <p className="hero-child">{activeChildName} · {GRADE_LABELS[selectedGrade]} τάξη</p>
         )}
       </div>
-
-      {needsProfile && (
-        <p className="hint-text profile-setup-hint">
-          Πρόσθεσε προφίλ παιδιού στις ρυθμίσεις για να ξεκινήσεις.
-        </p>
-      )}
 
       {!showFamilyProfiles && (
         <div className="grade-picker">
@@ -172,28 +166,22 @@ export function HomeScreen({
         </div>
       </div>
 
-      {needsProfile ? (
-        <button
-          type="button"
-          className="btn btn-primary btn-xl"
-          onClick={() => onOpenSettings({ addChild: true })}
-        >
-          Ρυθμίσεις → Πρόσθεσε παιδί
-        </button>
-      ) : (
-        <button
-          type="button"
-          className="btn btn-primary btn-xl"
-          disabled={dailyLimitReached}
-          onClick={onStart}
-        >
-          {dailyLimitReached ? "Έφτασες το ημερήσιο όριο" : "Ξεκίνα"}
-        </button>
-      )}
-      {dailyLimitReached && tier === "free" && (
-        <button type="button" className="btn btn-secondary btn-xl" onClick={onOpenPricing}>
-          Αναβάθμιση
-        </button>
+      {canStartFromHome && (
+        <>
+          <button
+            type="button"
+            className="btn btn-primary btn-xl"
+            disabled={dailyLimitReached}
+            onClick={onStart}
+          >
+            {dailyLimitReached ? "Έφτασες το ημερήσιο όριο" : "Ξεκίνα"}
+          </button>
+          {dailyLimitReached && tier === "free" && (
+            <button type="button" className="btn btn-secondary btn-xl" onClick={onOpenPricing}>
+              Αναβάθμιση
+            </button>
+          )}
+        </>
       )}
 
       {progressStats && (

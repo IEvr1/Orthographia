@@ -187,8 +187,6 @@ function AppShell({
 
   const showFamilyProfiles = tier === "family" && subscription.active;
 
-  const needsProfile = showFamilyProfiles && subscription.profiles.length === 0;
-
   const isPaid = isPaidTier(tier);
 
   const activeProfile = useMemo(
@@ -651,8 +649,6 @@ function AppShell({
           dailyLimitReached={dailyLimitReached}
 
           showFamilyProfiles={showFamilyProfiles}
-
-          needsProfile={needsProfile}
 
         />
 
