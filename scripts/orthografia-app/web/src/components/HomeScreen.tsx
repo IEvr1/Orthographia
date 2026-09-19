@@ -1,10 +1,9 @@
 import { SignInButton, SignedIn, SignedOut, UserButton } from "@clerk/clerk-react";
-import type { GameMode, RuleDefinition } from "../types";
+import type { GameMode } from "../types";
 import type { PlanTier } from "../lib/access";
 import {
   canAccessGrade,
   canAccessMode,
-  canAccessWeeklyRule,
   tierLabel,
 } from "../lib/access";
 import type { DifficultyMix } from "../lib/difficulty";
@@ -31,7 +30,6 @@ const MODE_LABELS: Record<GameMode, string> = {
 
 interface HomeScreenProps {
   onStart: () => void;
-  onWeeklyStart: () => void;
   onOpenSettings: (options?: { addChild?: boolean }) => void;
   onOpenPricing: () => void;
   progressStats?: GradeProgressStats;
@@ -43,7 +41,6 @@ interface HomeScreenProps {
   onGradeChange: (grade: number) => void;
   gameMode: GameMode;
   onModeChange: (mode: GameMode) => void;
-  weeklyRule: RuleDefinition | null;
   tier: PlanTier;
   subscriptionLoading?: boolean;
   isSuperAdmin?: boolean;
@@ -54,7 +51,6 @@ interface HomeScreenProps {
 
 export function HomeScreen({
   onStart,
-  onWeeklyStart,
   onOpenSettings,
   onOpenPricing,
   progressStats,
@@ -66,7 +62,6 @@ export function HomeScreen({
   onGradeChange,
   gameMode,
   onModeChange,
-  weeklyRule,
   tier,
   subscriptionLoading = false,
   isSuperAdmin = false,
@@ -74,8 +69,6 @@ export function HomeScreen({
   showFamilyProfiles = false,
   needsProfile = false,
 }: HomeScreenProps) {
-  const showWeekly = weeklyRule && canAccessWeeklyRule(tier);
-
   return (
     <main className="screen screen--home fade-in">
       <div className="home-topbar">
@@ -201,27 +194,6 @@ export function HomeScreen({
         <button type="button" className="btn btn-secondary btn-xl" onClick={onOpenPricing}>
           Αναβάθμιση
         </button>
-      )}
-
-      {showWeekly && (
-        <div className="weekly-rule-card">
-          <p className="section-label">Κανόνας της εβδομάδας</p>
-          <p className="weekly-rule-title">{weeklyRule!.title}</p>
-          <p className="weekly-rule-body">{weeklyRule!.body}</p>
-          {needsProfile ? (
-            <button
-              type="button"
-              className="btn btn-secondary btn-xl"
-              onClick={() => onOpenSettings({ addChild: true })}
-            >
-              Ρυθμίσεις → Πρόσθεσε παιδί
-            </button>
-          ) : (
-            <button type="button" className="btn btn-secondary btn-xl" onClick={onWeeklyStart}>
-              5 λέξεις για τον κανόνα
-            </button>
-          )}
-        </div>
       )}
 
       {progressStats && (

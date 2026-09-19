@@ -486,32 +486,6 @@ function AppShell({
 
 
 
-  const startWeeklySession = useCallback(() => {
-
-    if (!weeklyRule) return;
-
-    if (showFamilyProfiles && !activeProfileId) return;
-
-    if (!canAccessWeeklyRule(tier)) {
-
-      setPaywallMessage("Ο κανόνας της εβδομάδας είναι διαθέσιμος με Premium.");
-
-      setScreen("pricing");
-
-      return;
-
-    }
-
-    setActiveRule(weeklyRule);
-
-    setSessionKind("weekly");
-
-    setScreen("rule");
-
-  }, [weeklyRule, tier, showFamilyProfiles, activeProfileId]);
-
-
-
   const handleRuleContinue = () => {
 
     if (activeRule) {
@@ -646,8 +620,6 @@ function AppShell({
 
           onStart={startSession}
 
-          onWeeklyStart={startWeeklySession}
-
           onOpenSettings={openSettings}
 
           onOpenPricing={() => setScreen("pricing")}
@@ -669,8 +641,6 @@ function AppShell({
           gameMode={gameMode}
 
           onModeChange={setGameMode}
-
-          weeklyRule={weeklyRule}
 
           tier={tier}
 
