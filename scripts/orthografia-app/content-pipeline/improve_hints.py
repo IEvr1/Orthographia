@@ -7,8 +7,9 @@ import argparse
 import json
 from pathlib import Path
 
+from fix_hints import fix_words
 from hint_generator import enrich_entry, is_generic_hint, load_overrides
-from import_helexkids import OUTPUT, WEB_WORDS
+from import_helexkids import OUTPUT, WEB_WORDS, write_words
 
 PIPELINE = Path(__file__).resolve().parent
 
@@ -53,21 +54,19 @@ def main() -> None:
     words = payload["words"]
 
     improved, stats = improve_words(words, only_generic=not args.force_all)
+    improved, fix_stats = fix_words(improved)
+    stats["final_fixes"] = fix_stats["changed"]
 
     print(f"Processed {stats['total']} words")
     print(f"Hints improved: {stats['hints_improved']}")
     print(f"Homophone marked: {stats['homophone_marked']}")
     print(f"Skipped (already good): {stats['skipped_good']}")
+    print(f"Final hint fixes: {stats['final_fixes']}")
 
     if args.dry_run:
         return
 
-    payload["words"] = improved
-    text = json.dumps(payload, ensure_ascii=False, indent=2)
-    OUTPUT.parent.mkdir(parents=True, exist_ok=True)
-    OUTPUT.write_text(text, encoding="utf-8")
-    WEB_WORDS.parent.mkdir(parents=True, exist_ok=True)
-    WEB_WORDS.write_text(text, encoding="utf-8")
+    write_words(improved)
     print(f"Wrote {len(improved)} words -> {OUTPUT}")
     print(f"Synced to {WEB_WORDS}")
 

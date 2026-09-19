@@ -90,7 +90,7 @@
       "word": "χέρι",
       "grade": 2,
       "axis": "R",
-      "hintSentence": "Σηκώνω το δεξί ___ μου.",
+      "hintSentence": "Σηκώνω το δεξί ___.",
       "feedbackRule": "Χερ- + -ι.",
       "audioFile": "audio/cheri.mp3",
       "morphemes": {
@@ -146,7 +146,7 @@
       "word": "νερό",
       "grade": 2,
       "axis": "R",
-      "hintSentence": "Πίνω κρύο ___ το πρωί.",
+      "hintSentence": "Πίνω κρύο ___ μετά το παιχνίδι.",
       "feedbackRule": "Νερ- + -ό.",
       "audioFile": "audio/nero.mp3",
       "morphemes": {
@@ -202,7 +202,7 @@
       "word": "σπίτι",
       "grade": 2,
       "axis": "R",
-      "hintSentence": "Το ___ μας είναι μπλε.",
+      "hintSentence": "Το ___ μας έχει κήπο.",
       "feedbackRule": "Σπιτ- + -ι.",
       "audioFile": "audio/spiti.mp3",
       "morphemes": {
@@ -244,7 +244,7 @@
       "word": "σκύλος",
       "grade": 2,
       "axis": "R",
-      "hintSentence": "Ο ___ μας τρέχει στην αυλή.",
+      "hintSentence": "Ο ___ μας γαβγίζει στην πόρτα.",
       "feedbackRule": "Σκύλ- + -ος.",
       "audioFile": "audio/skylos.mp3",
       "morphemes": {
@@ -680,7 +680,7 @@
       "word": "ζωγραφική",
       "grade": 2,
       "axis": "R",
-      "hintSentence": "Μας αρέσει η ___ στο σχολείο.",
+      "hintSentence": "Μάθαμε ___ στο μάθημα των καλλιτεχνικών.",
       "feedbackRule": "Ζωγραφικ- + -ή.",
       "audioFile": "audio/zografiki.mp3",
       "morphemes": {
@@ -707,7 +707,7 @@
       "word": "ήλιος",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "Ο ήλιος λάμπει ψηλά στον ουρανό.",
+      "hintSentence": "Ο ___ λάμπει ψηλά στον ουρανό.",
       "feedbackRule": "Ίδια ρίζα με ήλιο· -ος στο τέλος.",
       "audioFile": "audio/ilios.mp3",
       "morphemes": {
@@ -722,7 +722,7 @@
       "word": "θάλασσα",
       "grade": 3,
       "axis": "R",
-      "hintSentence": "Η θάλασσα είναι γαλάζια το καλοκαίρι.",
+      "hintSentence": "Το καλοκαίρι κολυμπάμε στη ___.",
       "feedbackRule": "Διπλό σ στο τέλος της λέξης.",
       "audioFile": "audio/thalassa.mp3",
       "morphemes": {
@@ -736,7 +736,7 @@
       "word": "σχολείο",
       "grade": 3,
       "axis": "R",
-      "hintSentence": "Πηγαίνω στο σχολείο κάθε πρωί.",
+      "hintSentence": "Πηγαίνω στο ___ κάθε πρωί.",
       "feedbackRule": "Ρίζα σχολ- + -είο.",
       "audioFile": "audio/scholeio.mp3",
       "morphemes": {
@@ -749,7 +749,7 @@
       "word": "βιβλίο",
       "grade": 3,
       "axis": "R",
-      "hintSentence": "Διάβασα ένα ωραίο βιβλίο.",
+      "hintSentence": "Διάβασα ένα ωραίο ___.",
       "feedbackRule": "Διπλό β στην αρχή.",
       "audioFile": "audio/vivlio.mp3",
       "morphemes": {
@@ -762,7 +762,7 @@
       "word": "φίλος",
       "grade": 3,
       "axis": "R",
-      "hintSentence": "Ο καλύτερός μου φίλος μένει δίπλα.",
+      "hintSentence": "Ο καλύτερός μου ___ μένει δίπλα.",
       "feedbackRule": "Φίλ- + -ος.",
       "audioFile": "audio/filos.mp3",
       "morphemes": {
@@ -775,7 +775,7 @@
       "word": "γάτα",
       "grade": 3,
       "axis": "R",
-      "hintSentence": "Η γάτα κοιμάται στον καναπέ.",
+      "hintSentence": "Η ___ κοιμάται στον καναπέ.",
       "feedbackRule": "Γάτ- + -α.",
       "audioFile": "audio/gata.mp3",
       "morphemes": {
@@ -788,7 +788,7 @@
       "word": "σκύλος",
       "grade": 3,
       "axis": "R",
-      "hintSentence": "Ο σκύλος μας τρέχει στην αυλή.",
+      "hintSentence": "Ο ___ μας γαβγίζει στην πόρτα.",
       "feedbackRule": "Σκύλ- + -ος.",
       "audioFile": "audio/skylos.mp3",
       "morphemes": {
@@ -801,7 +801,7 @@
       "word": "ποτάμι",
       "grade": 3,
       "axis": "R",
-      "hintSentence": "Το ποτάμι ρέει γρήγορα.",
+      "hintSentence": "Το ___ ρέει γρήγορα.",
       "feedbackRule": "Ποτ- + -άμι.",
       "audioFile": "audio/potami.mp3",
       "morphemes": {
@@ -814,7 +814,7 @@
       "word": "βουνό",
       "grade": 3,
       "axis": "R",
-      "hintSentence": "Το βουνό έχει χιόνι το χειμώνα.",
+      "hintSentence": "Το ___ έχει χιόνι το χειμώνα.",
       "feedbackRule": "Βουν- + -ό.",
       "audioFile": "audio/vouno.mp3",
       "morphemes": {
@@ -827,7 +827,7 @@
       "word": "λουλούδι",
       "grade": 3,
       "axis": "R",
-      "hintSentence": "Μύρισε το κόκκινο λουλούδι.",
+      "hintSentence": "Μύρισε το κόκκινο ___.",
       "feedbackRule": "Διπλό λ και διπλό ού.",
       "audioFile": "audio/louloudi.mp3",
       "morphemes": {
@@ -841,7 +841,7 @@
       "word": "κήπος",
       "grade": 3,
       "axis": "R",
-      "hintSentence": "Παίζουμε στον κήπο του σπιτιού.",
+      "hintSentence": "Παίζουμε στον ___ του σπιτιού.",
       "feedbackRule": "Κήπ- + -ος (τελικό σ).",
       "audioFile": "audio/kipos.mp3",
       "morphemes": {
@@ -854,7 +854,7 @@
       "word": "ψωμί",
       "grade": 3,
       "axis": "R",
-      "hintSentence": "Φάγαμε φρέσκο ψωμί στο πρωινό.",
+      "hintSentence": "Φάγαμε φρέσκο ___ στο πρωινό.",
       "feedbackRule": "Ψωμ- + -ί.",
       "audioFile": "audio/psomi.mp3",
       "morphemes": {
@@ -867,7 +867,7 @@
       "word": "γάλα",
       "grade": 3,
       "axis": "R",
-      "hintSentence": "Ήπιε γάλα πριν κοιμηθεί.",
+      "hintSentence": "Ήπιε ___ πριν κοιμηθεί.",
       "feedbackRule": "Γάλ- + -α.",
       "audioFile": "audio/gala.mp3",
       "morphemes": {
@@ -880,7 +880,7 @@
       "word": "μήλο",
       "grade": 3,
       "axis": "R",
-      "hintSentence": "Έφαγα ένα κόκκινο μήλο.",
+      "hintSentence": "Έφαγα ένα κόκκινο ___.",
       "feedbackRule": "Μήλ- + -ο.",
       "audioFile": "audio/milo.mp3",
       "morphemes": {
@@ -893,7 +893,7 @@
       "word": "πορτοκάλι",
       "grade": 3,
       "axis": "R",
-      "hintSentence": "Το πορτοκάλι είναι γλυκό.",
+      "hintSentence": "Το ___ είναι γλυκό.",
       "feedbackRule": "Πορτοκαλ- + -ι.",
       "audioFile": "audio/portokali.mp3",
       "morphemes": {
@@ -906,7 +906,7 @@
       "word": "χειμώνας",
       "grade": 3,
       "axis": "R",
-      "hintSentence": "Τον ___ βρέχει πολύ.",
+      "hintSentence": "Τον ___ φοράμε μπουφάν.",
       "feedbackRule": "Χειμων- + -ας.",
       "audioFile": "audio/cheimonas.mp3",
       "morphemes": {
@@ -919,7 +919,7 @@
       "word": "καλοκαίρι",
       "grade": 3,
       "axis": "R",
-      "hintSentence": "Το καλοκαίρι πάμε στη θάλασσα.",
+      "hintSentence": "Κάθε ___ πάμε στη θάλασσα.",
       "feedbackRule": "Καλοκαιρ- + -ι.",
       "audioFile": "audio/kalokairi.mp3",
       "morphemes": {
@@ -932,7 +932,7 @@
       "word": "άνεμος",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "Ο άνεμος φύσηξε δυνατά.",
+      "hintSentence": "Ο ___ φύσηξε δυνατά.",
       "feedbackRule": "Ανεμ- + -ος.",
       "audioFile": "audio/anemos.mp3",
       "morphemes": {
@@ -946,7 +946,7 @@
       "word": "βροχή",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "Η βροχή έπεσε όλη μέρα.",
+      "hintSentence": "Η ___ έπεσε όλη μέρα.",
       "feedbackRule": "Βροχ- + -ή.",
       "audioFile": "audio/vrochi.mp3",
       "morphemes": {
@@ -960,7 +960,7 @@
       "word": "χιόνι",
       "grade": 3,
       "axis": "R",
-      "hintSentence": "Έπεσε πολύ χιόνι χθες.",
+      "hintSentence": "Έπεσε πολύ ___ χθες.",
       "feedbackRule": "Χιον- + -ι.",
       "audioFile": "audio/chioni.mp3",
       "morphemes": {
@@ -973,7 +973,7 @@
       "word": "αετός",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "Ο αετός πέταξε ψηλά.",
+      "hintSentence": "Ο ___ πέταξε ψηλά.",
       "feedbackRule": "Αετ- + -ός.",
       "audioFile": "audio/aetos.mp3",
       "morphemes": {
@@ -987,7 +987,7 @@
       "word": "πεταλούδα",
       "grade": 3,
       "axis": "R",
-      "hintSentence": "Μια πεταλούδα κάθισε στο λουλούδι.",
+      "hintSentence": "Μια ___ κάθισε στο λουλούδι.",
       "feedbackRule": "Πεταλουδ- + -α.",
       "audioFile": "audio/petalouda.mp3",
       "morphemes": {
@@ -1000,7 +1000,7 @@
       "word": "δέντρο",
       "grade": 3,
       "axis": "R",
-      "hintSentence": "Το δέντρο έχει πολλά φύλλα.",
+      "hintSentence": "Το ___ έχει πολλά φύλλα.",
       "feedbackRule": "Δέντρ- + -ο.",
       "audioFile": "audio/dentro.mp3",
       "morphemes": {
@@ -1013,7 +1013,7 @@
       "word": "φύλλο",
       "grade": 3,
       "axis": "R",
-      "hintSentence": "Έπεσε ένα κίτρινο φύλλο.",
+      "hintSentence": "Έπεσε ένα κίτρινο ___.",
       "feedbackRule": "Φυλλ- + -ο (διπλό λ).",
       "audioFile": "audio/fyllo.mp3",
       "morphemes": {
@@ -1027,7 +1027,7 @@
       "word": "σπίτι",
       "grade": 3,
       "axis": "R",
-      "hintSentence": "Το σπίτι μας είναι μπλε.",
+      "hintSentence": "Το ___ μας έχει κήπο.",
       "feedbackRule": "Σπιτ- + -ι.",
       "audioFile": "audio/spiti.mp3",
       "morphemes": {
@@ -1040,7 +1040,7 @@
       "word": "παράθυρο",
       "grade": 3,
       "axis": "R",
-      "hintSentence": "Άνοιξε το παράθυρο για αέρα.",
+      "hintSentence": "Άνοιξε το ___ για αέρα.",
       "feedbackRule": "Παραθυρ- + -ο.",
       "audioFile": "audio/parathyro.mp3",
       "morphemes": {
@@ -1053,7 +1053,7 @@
       "word": "πόρτα",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "Χτύπησε στην πόρτα.",
+      "hintSentence": "Χτύπησε στην ___.",
       "feedbackRule": "Πορτ- + -α.",
       "audioFile": "audio/porta.mp3",
       "morphemes": {
@@ -1067,7 +1067,7 @@
       "word": "τραπέζι",
       "grade": 3,
       "axis": "R",
-      "hintSentence": "Βάλαμε τα πιάτα στο τραπέζι.",
+      "hintSentence": "Βάλαμε τα πιάτα στο ___.",
       "feedbackRule": "Τραπεζ- + -ι.",
       "audioFile": "audio/trapezi.mp3",
       "morphemes": {
@@ -1080,7 +1080,7 @@
       "word": "καρέκλα",
       "grade": 3,
       "axis": "R",
-      "hintSentence": "Κάθισε στην καρέκλα.",
+      "hintSentence": "Κάθισε στην ___.",
       "feedbackRule": "Καρεκλ- + -α.",
       "audioFile": "audio/karekla.mp3",
       "morphemes": {
@@ -1093,7 +1093,7 @@
       "word": "κρεβάτι",
       "grade": 3,
       "axis": "R",
-      "hintSentence": "Πήγε για ύπνο στο κρεβάτι.",
+      "hintSentence": "Πήγε για ύπνο στο ___.",
       "feedbackRule": "Κρεβατ- + -ι.",
       "audioFile": "audio/krevati.mp3",
       "morphemes": {
@@ -1106,7 +1106,7 @@
       "word": "μάθημα",
       "grade": 3,
       "axis": "R",
-      "hintSentence": "Το μάθημα των μαθηματικών ξεκίνησε.",
+      "hintSentence": "Σήμερα ξεκίνησε το πρωινό ___.",
       "feedbackRule": "Μαθημ- + -α.",
       "audioFile": "audio/mathima.mp3",
       "morphemes": {
@@ -1119,7 +1119,7 @@
       "word": "τετράδιο",
       "grade": 3,
       "axis": "R",
-      "hintSentence": "Έγραψα στο τετράδιό μου.",
+      "hintSentence": "Έγραψα στο ___ μου.",
       "feedbackRule": "Τετραδ- + -ιο.",
       "audioFile": "audio/tetradio.mp3",
       "morphemes": {
@@ -1132,7 +1132,7 @@
       "word": "μολύβι",
       "grade": 3,
       "axis": "R",
-      "hintSentence": "Έσπασε το μολύβι μου.",
+      "hintSentence": "Έσπασε το ___ μου.",
       "feedbackRule": "Μολυβ- + -ι.",
       "audioFile": "audio/molyvi.mp3",
       "morphemes": {
@@ -1145,7 +1145,7 @@
       "word": "γόμα",
       "grade": 3,
       "axis": "R",
-      "hintSentence": "Διόρθωσε με τη γόμα το λάθος.",
+      "hintSentence": "Διόρθωσε με τη ___ το λάθος.",
       "feedbackRule": "Γόμ- + -α.",
       "audioFile": "audio/goma.mp3",
       "morphemes": {
@@ -1158,7 +1158,7 @@
       "word": "κραγιόνι",
       "grade": 3,
       "axis": "R",
-      "hintSentence": "Ζωγράφισε με κόκκινο κραγιόνι.",
+      "hintSentence": "Ζωγράφισε με κόκκινο ___.",
       "feedbackRule": "Κραγιον- + -ι.",
       "audioFile": "audio/kraggioni.mp3",
       "morphemes": {
@@ -1171,7 +1171,7 @@
       "word": "ποδήλατο",
       "grade": 3,
       "axis": "R",
-      "hintSentence": "Πήγα σχολείο με ποδήλατο.",
+      "hintSentence": "Πήγα σχολείο με ___.",
       "feedbackRule": "Ποδηλατ- + -ο.",
       "audioFile": "audio/podilato.mp3",
       "morphemes": {
@@ -1184,7 +1184,7 @@
       "word": "αυτοκίνητο",
       "grade": 3,
       "axis": "R",
-      "hintSentence": "Το αυτοκίνητο σταμάτησε στο φανάρι.",
+      "hintSentence": "Το ___ σταμάτησε στο φανάρι.",
       "feedbackRule": "Αυτοκινητ- + -ο.",
       "audioFile": "audio/aftokinito.mp3",
       "morphemes": {
@@ -1197,7 +1197,7 @@
       "word": "λεωφορείο",
       "grade": 3,
       "axis": "R",
-      "hintSentence": "Πήραμε το λεωφορείο για την πόλη.",
+      "hintSentence": "Πήραμε το ___ για την πόλη.",
       "feedbackRule": "Λεωφορ- + -είο.",
       "audioFile": "audio/leoforeio.mp3",
       "morphemes": {
@@ -1210,7 +1210,7 @@
       "word": "γέφυρα",
       "grade": 3,
       "axis": "R",
-      "hintSentence": "Περάσαμε τη γέφυρα πάνω από το ποτάμι.",
+      "hintSentence": "Περάσαμε τη ___ πάνω από το ποτάμι.",
       "feedbackRule": "Γεφυρ- + -α.",
       "audioFile": "audio/gefyra.mp3",
       "morphemes": {
@@ -1223,7 +1223,7 @@
       "word": "πλατεία",
       "grade": 3,
       "axis": "R",
-      "hintSentence": "Παίξαμε στην πλατεία του χωριού.",
+      "hintSentence": "Παίξαμε στην ___ του χωριού.",
       "feedbackRule": "Πλατει- + -α.",
       "audioFile": "audio/plateia.mp3",
       "morphemes": {
@@ -1236,7 +1236,7 @@
       "word": "αγορά",
       "grade": 3,
       "axis": "R",
-      "hintSentence": "Πήγαμε στην αγορά για ψωμί.",
+      "hintSentence": "Πήγαμε στην ___ για ψωμί.",
       "feedbackRule": "Αγορ- + -ά.",
       "audioFile": "audio/agora.mp3",
       "morphemes": {
@@ -1249,7 +1249,7 @@
       "word": "νοσοκομείο",
       "grade": 3,
       "axis": "R",
-      "hintSentence": "Ο γιατρός δούλεψε στο νοσοκομείο.",
+      "hintSentence": "Ο γιατρός δούλεψε στο ___.",
       "feedbackRule": "Νοσοκομ- + -είο.",
       "audioFile": "audio/nosokomeio.mp3",
       "morphemes": {
@@ -1262,7 +1262,7 @@
       "word": "γιατρός",
       "grade": 3,
       "axis": "R",
-      "hintSentence": "Ο γιατρός μας εξέτασε.",
+      "hintSentence": "Ο ___ μας εξέτασε.",
       "feedbackRule": "Γιατρ- + -ός.",
       "audioFile": "audio/giatros.mp3",
       "morphemes": {
@@ -1288,7 +1288,7 @@
       "word": "μαθητής",
       "grade": 3,
       "axis": "R",
-      "hintSentence": "Ο μαθητής απάντησε σωστά.",
+      "hintSentence": "Ο ___ απάντησε σωστά.",
       "feedbackRule": "Μαθητ- + -ής.",
       "audioFile": "audio/mathitis.mp3",
       "morphemes": {
@@ -1301,7 +1301,7 @@
       "word": "γονιός",
       "grade": 3,
       "axis": "R",
-      "hintSentence": "Ο γονιός μου με πήγε στο σχολείο.",
+      "hintSentence": "Ο ___ μου με πήγε στο σχολείο.",
       "feedbackRule": "Γον- + -ιός.",
       "audioFile": "audio/gonios.mp3",
       "morphemes": {
@@ -1327,7 +1327,7 @@
       "word": "γειτονιά",
       "grade": 3,
       "axis": "R",
-      "hintSentence": "Η γειτονιά μας είναι ήσυχη.",
+      "hintSentence": "Η ___ μας είναι ήσυχη.",
       "feedbackRule": "Γειτον- + -ιά.",
       "audioFile": "audio/geitonia.mp3",
       "morphemes": {
@@ -1340,7 +1340,7 @@
       "word": "χαρά",
       "grade": 3,
       "axis": "R",
-      "hintSentence": "Ένιωσα χαρά όταν κέρδισα.",
+      "hintSentence": "Ένιωσα ___ όταν κέρδισα.",
       "feedbackRule": "Χαρ- + -ά.",
       "audioFile": "audio/chara.mp3",
       "morphemes": {
@@ -1353,7 +1353,7 @@
       "word": "ελπίδα",
       "grade": 3,
       "axis": "R",
-      "hintSentence": "Έχω ελπίδα ότι θα τα καταφέρω.",
+      "hintSentence": "Έχω ___ ότι θα τα καταφέρω.",
       "feedbackRule": "Ελπιδ- + -α.",
       "audioFile": "audio/elpida.mp3",
       "morphemes": {
@@ -1710,7 +1710,7 @@
       "word": "ζωγραφική",
       "grade": 3,
       "axis": "R",
-      "hintSentence": "Στο μάθημα της ___ ζωγραφίσαμε.",
+      "hintSentence": "Μάθαμε ___ στο μάθημα των καλλιτεχνικών.",
       "feedbackRule": "Ζωγραφικ- + -ή.",
       "audioFile": "audio/zografiki3.mp3",
       "morphemes": {
@@ -1737,7 +1737,7 @@
       "word": "ιστορία",
       "grade": 3,
       "axis": "R",
-      "hintSentence": "Διάβασα μια ωραία ___ στο σχολείο.",
+      "hintSentence": "Διάβασα μια ωραία ___.",
       "feedbackRule": "Ιστορι- + -α.",
       "audioFile": "audio/istoria.mp3",
       "morphemes": {
@@ -1804,7 +1804,7 @@
       "word": "λέξη",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "Έγραψα τη σωστή ___.",
+      "hintSentence": "Έμαθα μια νέα ___ σήμερα.",
       "feedbackRule": "Λέξ- + -η.",
       "audioFile": "audio/lexi.mp3",
       "morphemes": {
@@ -1928,7 +1928,7 @@
       "word": "σταθμός",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "Περίμενα στον ___ του μετρό.",
+      "hintSentence": "Περιμένουμε στον ___ του μετρό.",
       "feedbackRule": "Σταθμ- + -ός.",
       "audioFile": "audio/stathmos.mp3",
       "morphemes": {
@@ -2065,7 +2065,7 @@
       "word": "φαρμακείο",
       "grade": 3,
       "axis": "R",
-      "hintSentence": "Πήγαμε στο ___ για φάρμακα.",
+      "hintSentence": "Πήγαμε στο ___ του χωριού.",
       "feedbackRule": "Φαρμακει- + -ο.",
       "audioFile": "audio/farmakeio.mp3",
       "morphemes": {
@@ -2403,7 +2403,7 @@
       "word": "σκούπα",
       "grade": 3,
       "axis": "R",
-      "hintSentence": "Σκούπισα με τη ___.",
+      "hintSentence": "Καθάρισα με τη ___ το πάτωμα.",
       "feedbackRule": "Σκουπ- + -α.",
       "audioFile": "audio/skoupa.mp3",
       "morphemes": {
@@ -2903,7 +2903,7 @@
       "word": "μαθηματικά",
       "grade": 4,
       "axis": "R",
-      "hintSentence": "Λύσαμε πρόβλημα στα ___.",
+      "hintSentence": "Λύνουμε πρόβλημα στα ___.",
       "feedbackRule": "Μαθηματικ- + -ά.",
       "audioFile": "audio/mathimatika.mp3",
       "morphemes": {
@@ -3045,7 +3045,7 @@
       "word": "άνεμος",
       "grade": 4,
       "axis": "K",
-      "hintSentence": "Ο δυνατός ___ ρίχνει τα δέντρα.",
+      "hintSentence": "Ο ___ φύσηξε δυνατά.",
       "feedbackRule": "Ανεμ- + -ος.",
       "audioFile": "audio/anemos4.mp3",
       "morphemes": {
@@ -3652,7 +3652,7 @@
       "word": "παπαγάλος",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "Ο ___ μιλάει δυνατά στο κλουβί.",
+      "hintSentence": "Ο ___ μιλάει δυνατά.",
       "feedbackRule": "παπαγάλ- + -ος.",
       "audioFile": "audio/papagalos.mp3",
       "morphemes": {
@@ -3870,7 +3870,7 @@
       "word": "τελεία",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "Κάθε πρόταση τελειώνει με ___.",
+      "hintSentence": "Στο τέλος της πρότασης μπαίνει η ___.",
       "feedbackRule": "τελε- + -ία.",
       "audioFile": "audio/teleia.mp3",
       "morphemes": {
@@ -4427,7 +4427,7 @@
       "word": "δασκάλα",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "Η ___ έγραψε στον πίνακα.",
+      "hintSentence": "Η ___ μας διάβασε μια ιστορία.",
       "feedbackRule": "δασκάλ- + -α.",
       "audioFile": "audio/daskala.mp3",
       "morphemes": {
@@ -4455,7 +4455,7 @@
       "word": "άνθρωποι",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "Πού νομίζεις ότι πηγαίνουν όλοι αυτοί οι ___;",
+      "hintSentence": "Στην πόλη ζουν πολλοί ___.",
       "feedbackRule": "άνθρωπο- + -ι.",
       "audioFile": "audio/anthropoi.mp3",
       "morphemes": {
@@ -4470,7 +4470,7 @@
       "word": "άκουσε",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "O δάσκαλος το ___ και είπε στα παιδιά: «Τα χελιδόνια φεύγουν.",
+      "hintSentence": "Διάβασα την πρόταση με τη λέξη ___.",
       "feedbackRule": "Προσοχή στον τόνο.",
       "audioFile": "audio/akouse.mp3",
       "morphemes": {
@@ -4485,7 +4485,7 @@
       "word": "ανθρώπους",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "Παρατηρούσε, λοιπόν, εδώ και λίγες μέρες τρεις ___ που περπατούσαν στην έρημο.",
+      "hintSentence": "Βλέπω ___ στην πλατεία.",
       "feedbackRule": "ανθρώπ- + -ους.",
       "audioFile": "audio/anthropous.mp3",
       "morphemes": {
@@ -4515,7 +4515,7 @@
       "word": "αιώνες",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "O Αίσωπος ήταν ένας σοφός άντρας, που έζησε πριν από πολλούς ___.",
+      "hintSentence": "Στο βιβλίο διάβασα για ___.",
       "feedbackRule": "αιών- + -ες.",
       "audioFile": "audio/aiones.mp3",
       "morphemes": {
@@ -4545,7 +4545,7 @@
       "word": "καιροί",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "Oι συμμαθητές του τον έβλεπαν με περιέργεια και έλεγαν: «Βρε, πώς αλλάζουν οι ___!",
+      "hintSentence": "Έμαθα τη λέξη ___ σήμερα.",
       "feedbackRule": "καιρο- + -ί.",
       "audioFile": "audio/kairoi.mp3",
       "morphemes": {
@@ -5602,7 +5602,7 @@
       "word": "μαθηματικά",
       "grade": 1,
       "axis": "R",
-      "hintSentence": "Λύνουμε πρόβλημα στα ___ .",
+      "hintSentence": "Λύνουμε πρόβλημα στα ___.",
       "feedbackRule": "μαθηματικ- + -ά.",
       "audioFile": "audio/mathimatika.mp3",
       "morphemes": {
@@ -6047,7 +6047,7 @@
       "word": "ζωα",
       "grade": 2,
       "axis": "R",
-      "hintSentence": "Στη φάρμα είδαμε ___ .",
+      "hintSentence": "Στη φάρμα είδαμε ___.",
       "feedbackRule": "ζω- + -α.",
       "audioFile": "audio/zoa.mp3",
       "morphemes": {
@@ -6806,7 +6806,7 @@
       "word": "ακρίβεια",
       "grade": 2,
       "axis": "R",
-      "hintSentence": "Γράφω με ___ .",
+      "hintSentence": "Γράφω με ___.",
       "feedbackRule": "ακρίβει- + -α.",
       "audioFile": "audio/akriveia.mp3",
       "morphemes": {
@@ -6820,7 +6820,7 @@
       "word": "κείμενο",
       "grade": 2,
       "axis": "R",
-      "hintSentence": "Διάβασα όλο το ___ .",
+      "hintSentence": "Διάβασα όλο το ___.",
       "feedbackRule": "κείμεν- + -ο.",
       "audioFile": "audio/keimeno.mp3",
       "morphemes": {
@@ -6945,7 +6945,7 @@
       "word": "παράδειγμα",
       "grade": 2,
       "axis": "R",
-      "hintSentence": "Ο δάσκαλος έδωσε ___ .",
+      "hintSentence": "Ο δάσκαλος έδωσε ___.",
       "feedbackRule": "παράδειγμ- + -α.",
       "audioFile": "audio/paradeigma.mp3",
       "morphemes": {
@@ -7252,7 +7252,7 @@
       "word": "κείμενό",
       "grade": 3,
       "axis": "R",
-      "hintSentence": "Διάβασα όλο το ___ .",
+      "hintSentence": "Διάβασα όλο το ___.",
       "feedbackRule": "κείμεν- + -ό.",
       "audioFile": "audio/keimeno.mp3",
       "morphemes": {
@@ -7391,7 +7391,7 @@
       "word": "δημοτικου",
       "grade": 3,
       "axis": "R",
-      "hintSentence": "Είμαι μαθητής ___ .",
+      "hintSentence": "Είμαι μαθητής ___.",
       "feedbackRule": "δημοτικ- + -ου.",
       "audioFile": "audio/dimotikou.mp3",
       "morphemes": {
@@ -7779,7 +7779,7 @@
       "word": "κοντά",
       "grade": 3,
       "axis": "R",
-      "hintSentence": "Το σπίτι είναι ___ .",
+      "hintSentence": "Το σπίτι είναι ___.",
       "feedbackRule": "κοντ- + -ά.",
       "audioFile": "audio/konta.mp3",
       "morphemes": {
@@ -7884,7 +7884,7 @@
       "word": "μερος",
       "grade": 3,
       "axis": "R",
-      "hintSentence": "Αυτό είναι το αγαπημένο μου ___ .",
+      "hintSentence": "Αυτό είναι το αγαπημένο μου ___.",
       "feedbackRule": "μερ- + -ος.",
       "audioFile": "audio/meros.mp3",
       "morphemes": {
@@ -8010,7 +8010,7 @@
       "word": "κοσμου",
       "grade": 3,
       "axis": "R",
-      "hintSentence": "Μάθαμε για τον ___ .",
+      "hintSentence": "Μάθαμε για τον ___.",
       "feedbackRule": "κοσμ- + -ου.",
       "audioFile": "audio/kosmou.mp3",
       "morphemes": {
@@ -8066,7 +8066,7 @@
       "word": "κόσμο",
       "grade": 3,
       "axis": "R",
-      "hintSentence": "Μάθαμε για τον ___ .",
+      "hintSentence": "Μάθαμε για τον ___.",
       "feedbackRule": "κόσμ- + -ο.",
       "audioFile": "audio/kosmo.mp3",
       "morphemes": {
@@ -8204,7 +8204,7 @@
       "word": "εποχη",
       "grade": 3,
       "axis": "R",
-      "hintSentence": "Το φθινόπωρο είναι η αγαπημένη μου ___ .",
+      "hintSentence": "Το φθινόπωρο είναι η αγαπημένη μου ___.",
       "feedbackRule": "εποχ- + -η.",
       "audioFile": "audio/epochi.mp3",
       "morphemes": {
@@ -8412,7 +8412,7 @@
       "word": "ουσιαστικό",
       "grade": 4,
       "axis": "R",
-      "hintSentence": "Το «σπίτι» είναι ___ .",
+      "hintSentence": "Το «σπίτι» είναι ___.",
       "feedbackRule": "ουσιαστικ- + -ό.",
       "audioFile": "audio/ousiastiko.mp3",
       "morphemes": {
@@ -8703,7 +8703,7 @@
       "word": "ρήμα",
       "grade": 4,
       "axis": "R",
-      "hintSentence": "Το «τρέχω» είναι ___ .",
+      "hintSentence": "Το «τρέχω» είναι ___.",
       "feedbackRule": "ρήμ- + -α.",
       "audioFile": "audio/rima.mp3",
       "morphemes": {
@@ -8829,7 +8829,7 @@
       "word": "μέρος",
       "grade": 4,
       "axis": "R",
-      "hintSentence": "Αυτό είναι το αγαπημένο μου ___ .",
+      "hintSentence": "Αυτό είναι το αγαπημένο μου ___.",
       "feedbackRule": "μέρ- + -ος.",
       "audioFile": "audio/meros.mp3",
       "morphemes": {
@@ -8992,7 +8992,7 @@
       "word": "πόλη",
       "grade": 4,
       "axis": "R",
-      "hintSentence": "Ζούμε σε μια ___ .",
+      "hintSentence": "Ζούμε σε μια ___.",
       "feedbackRule": "πόλ- + -η.",
       "audioFile": "audio/poli.mp3",
       "morphemes": {
@@ -9241,7 +9241,7 @@
       "word": "κείμενό",
       "grade": 4,
       "axis": "R",
-      "hintSentence": "Διάβασα όλο το ___ .",
+      "hintSentence": "Διάβασα όλο το ___.",
       "feedbackRule": "κείμεν- + -ό.",
       "audioFile": "audio/keimeno.mp3",
       "morphemes": {
@@ -9255,7 +9255,7 @@
       "word": "κοντά",
       "grade": 4,
       "axis": "R",
-      "hintSentence": "Το σπίτι είναι ___ .",
+      "hintSentence": "Το σπίτι είναι ___.",
       "feedbackRule": "κοντ- + -ά.",
       "audioFile": "audio/konta.mp3",
       "morphemes": {
@@ -9268,7 +9268,7 @@
       "word": "κόσμο",
       "grade": 4,
       "axis": "R",
-      "hintSentence": "Μάθαμε για τον ___ .",
+      "hintSentence": "Μάθαμε για τον ___.",
       "feedbackRule": "κόσμ- + -ο.",
       "audioFile": "audio/kosmo.mp3",
       "morphemes": {
@@ -9365,7 +9365,7 @@
       "word": "δρόμο",
       "grade": 4,
       "axis": "R",
-      "hintSentence": "Περπατάμε στον ___ .",
+      "hintSentence": "Περπατάμε στον ___.",
       "feedbackRule": "δρόμ- + -ο.",
       "audioFile": "audio/dromo.mp3",
       "morphemes": {
@@ -9463,7 +9463,7 @@
       "word": "γλώσσα",
       "grade": 4,
       "axis": "R",
-      "hintSentence": "Μαθαίνουμε την ελληνική ___ .",
+      "hintSentence": "Μαθαίνουμε την ελληνική ___.",
       "feedbackRule": "γλώσσ- + -α.",
       "audioFile": "audio/glossa.mp3",
       "morphemes": {
@@ -9530,14 +9530,14 @@
     },
     {
       "id": "lx-g1-0001",
-      "word": "ευγενικίς",
+      "word": "ευγενικός",
       "grade": 1,
       "axis": "K",
-      "hintSentence": "λωρίδες ξύλου. δίναι πλατύ στη μέση ___",
+      "hintSentence": "Διάβασα την πρόταση με τη λέξη ___.",
       "feedbackRule": "Προσοχή στον τόνο.",
-      "audioFile": "audio/eygenikis.mp3",
+      "audioFile": "audio/eygenikos.mp3",
       "morphemes": {
-        "root": "ευγενικίς",
+        "root": "ευγενικός",
         "suffix": ""
       },
       "difficulty": 2,
@@ -9550,7 +9550,7 @@
       "word": "βαριέμαι",
       "grade": 1,
       "axis": "K",
-      "hintSentence": "διασκεδαστικί, το βαριέσαι. Ήταν δε ___",
+      "hintSentence": "Η ___ είναι στο κείμενο.",
       "feedbackRule": "βαριέμ- + -αι.",
       "audioFile": "audio/variemai.mp3",
       "morphemes": {
@@ -9566,7 +9566,7 @@
       "word": "ιηλυκί",
       "grade": 1,
       "axis": "K",
-      "hintSentence": "τελευταία λέξη της σελίδας ___.",
+      "hintSentence": "Βλέπω ___ στην εικόνα.",
       "feedbackRule": "ιηλυκ- + -ί.",
       "audioFile": "audio/iilyki.mp3",
       "morphemes": {
@@ -9582,7 +9582,7 @@
       "word": "γρατσουνώ",
       "grade": 1,
       "axis": "K",
-      "hintSentence": "του βγάζει το δέρμα ___.",
+      "hintSentence": "Κάθε μέρα ___ στο σχολείο.",
       "feedbackRule": "Προσοχή στον τόνο.",
       "audioFile": "audio/gratsouno.mp3",
       "morphemes": {
@@ -9598,7 +9598,7 @@
       "word": "γρατσουνιά",
       "grade": 1,
       "axis": "K",
-      "hintSentence": "αφήνεις γυμνί. Ήταν γδύνεσαι, ___",
+      "hintSentence": "Στο βιβλίο διάβασα για ___.",
       "feedbackRule": "γρατσουν- + -ιά.",
       "audioFile": "audio/gratsounia.mp3",
       "morphemes": {
@@ -9615,7 +9615,7 @@
       "word": "ξεντύνω",
       "grade": 1,
       "axis": "K",
-      "hintSentence": "κάποιον, λέμε «γεια», «γεια σου» ___.",
+      "hintSentence": "Μπορώ να ___ καλά.",
       "feedbackRule": "ξεντύν- + -ω.",
       "audioFile": "audio/xentyno.mp3",
       "morphemes": {
@@ -9631,7 +9631,7 @@
       "word": "γδύσιμο",
       "grade": 1,
       "axis": "K",
-      "hintSentence": "κάποιον, λέμε «γεια», «γεια σου» ___.",
+      "hintSentence": "Η απάντηση ήταν ___.",
       "feedbackRule": "γδύσιμ- + -ο.",
       "audioFile": "audio/gdysimo.mp3",
       "morphemes": {
@@ -9647,7 +9647,7 @@
       "word": "γεια",
       "grade": 1,
       "axis": "R",
-      "hintSentence": "μένει κοντά σου, στον ίδιο δρίμο ___.",
+      "hintSentence": "Η ___ είναι στο κείμενο.",
       "feedbackRule": "γει- + -α.",
       "audioFile": "audio/geia.mp3",
       "morphemes": {
@@ -9663,7 +9663,7 @@
       "word": "γείτονας",
       "grade": 1,
       "axis": "K",
-      "hintSentence": "διασκεδαστικί, πολύ αστείο. Ήταν ___",
+      "hintSentence": "Βλέπω ___ στην εικόνα.",
       "feedbackRule": "γείτον- + -ας.",
       "audioFile": "audio/geitonas.mp3",
       "morphemes": {
@@ -9680,7 +9680,7 @@
       "word": "γελώ",
       "grade": 1,
       "axis": "K",
-      "hintSentence": "διασκεδαστικί, πολύ αστείο. Ήταν ___",
+      "hintSentence": "Κάθε μέρα ___ στο σχολείο.",
       "feedbackRule": "Προσοχή στον τόνο.",
       "audioFile": "audio/gelo.mp3",
       "morphemes": {
@@ -9696,7 +9696,7 @@
       "word": "κλαίω",
       "grade": 1,
       "axis": "K",
-      "hintSentence": "ίσα πιο πολλά πράγματα μπορείς ___.",
+      "hintSentence": "Σήμερα στο σπίτι θα ___.",
       "feedbackRule": "κλαί- + -ω.",
       "audioFile": "audio/klaio.mp3",
       "morphemes": {
@@ -9713,7 +9713,7 @@
       "word": "κλάμα",
       "grade": 1,
       "axis": "K",
-      "hintSentence": "ίσα πιο πολλά πράγματα μπορείς ___.",
+      "hintSentence": "Μιλήσαμε για ___ στην τάξη.",
       "feedbackRule": "κλάμ- + -α.",
       "audioFile": "audio/klama.mp3",
       "morphemes": {
@@ -9729,7 +9729,7 @@
       "word": "γεμίζω",
       "grade": 1,
       "axis": "K",
-      "hintSentence": "ίσα πιο πολλά πράγματα μπορείς ___.",
+      "hintSentence": "Θέλω να ___ μαζί σου.",
       "feedbackRule": "γεμίζ- + -ω.",
       "audioFile": "audio/gemizo.mp3",
       "morphemes": {
@@ -9746,7 +9746,7 @@
       "word": "αδειάζω",
       "grade": 1,
       "axis": "K",
-      "hintSentence": "Tι κάνω; …………...........................…… ___",
+      "hintSentence": "Στην τάξη, ___ ήρεμα.",
       "feedbackRule": "αδειάζ- + -ω.",
       "audioFile": "audio/adeiazo.mp3",
       "morphemes": {
@@ -9763,7 +9763,7 @@
       "word": "άγγελος",
       "grade": 1,
       "axis": "K",
-      "hintSentence": "νιώιουμε καλά να το χρησιμοποιούμε ___.",
+      "hintSentence": "Ο φίλος μου είναι ___.",
       "feedbackRule": "άγγελ- + -ος.",
       "audioFile": "audio/aggelos.mp3",
       "morphemes": {
@@ -9776,14 +9776,14 @@
     },
     {
       "id": "lx-g1-0016",
-      "word": "κουραστικίς",
+      "word": "κουραστικός",
       "grade": 1,
       "axis": "K",
-      "hintSentence": "επειδή δε χωρούσε στην πολυιρίνα ___.",
+      "hintSentence": "Διάβασα την πρόταση με τη λέξη ___.",
       "feedbackRule": "Προσοχή στον τόνο.",
-      "audioFile": "audio/kourastikis.mp3",
+      "audioFile": "audio/kourastikos.mp3",
       "morphemes": {
-        "root": "κουραστικίς",
+        "root": "κουραστικός",
         "suffix": ""
       },
       "difficulty": 2,
@@ -9795,7 +9795,7 @@
       "word": "γλυπτί",
       "grade": 1,
       "axis": "K",
-      "hintSentence": "ιυμώνεις πολύ, γιατί δεν είναι σωστί ___.",
+      "hintSentence": "Στο βιβλίο διάβασα για ___.",
       "feedbackRule": "γλυπτ- + -ί.",
       "audioFile": "audio/glypti.mp3",
       "morphemes": {
@@ -9812,7 +9812,7 @@
       "word": "Ένιωσε",
       "grade": 1,
       "axis": "K",
-      "hintSentence": "παιδιών απέναντι στο σκύλο. ◊ταν ___",
+      "hintSentence": "Στο τετράδιο έγραψα τη λέξη ___.",
       "feedbackRule": "Προσοχή στον τόνο.",
       "audioFile": "audio/eniose.mp3",
       "morphemes": {
@@ -9828,7 +9828,7 @@
       "word": "αγαπώ",
       "grade": 1,
       "axis": "K",
-      "hintSentence": "σου αρέσει να είσαι μαζί του ___.",
+      "hintSentence": "Θέλω να ___ μαζί σου.",
       "feedbackRule": "Προσοχή στον τόνο.",
       "audioFile": "audio/agapo.mp3",
       "morphemes": {
@@ -9845,7 +9845,7 @@
       "word": "μισώ",
       "grade": 1,
       "axis": "K",
-      "hintSentence": "νιώιεις αγάπη γι’ αυτίν. Ήταν ___",
+      "hintSentence": "Στην τάξη, ___ ήρεμα.",
       "feedbackRule": "Προσοχή στον τόνο.",
       "audioFile": "audio/miso.mp3",
       "morphemes": {
@@ -9861,7 +9861,7 @@
       "word": "πρίσωπο",
       "grade": 1,
       "axis": "K",
-      "hintSentence": "με το χέρι σου απαλά ___.",
+      "hintSentence": "Είναι πολύ ___ σήμερα.",
       "feedbackRule": "πρίσωπ- + -ο.",
       "audioFile": "audio/prisopo.mp3",
       "morphemes": {
@@ -9878,7 +9878,7 @@
       "word": "πιάνω",
       "grade": 1,
       "axis": "K",
-      "hintSentence": "άγγιγμα της μητέρας του ___.",
+      "hintSentence": "Κάθε μέρα ___ στο σχολείο.",
       "feedbackRule": "πιάν- + -ω.",
       "audioFile": "audio/piano.mp3",
       "morphemes": {
@@ -9894,7 +9894,7 @@
       "word": "κοπάδι",
       "grade": 1,
       "axis": "K",
-      "hintSentence": "κάνει με το Ύεί ή την εκκλησία ___.",
+      "hintSentence": "Στο βιβλίο διάβασα για ___.",
       "feedbackRule": "κοπάδ- + -ι.",
       "audioFile": "audio/kopadi.mp3",
       "morphemes": {
@@ -9906,15 +9906,15 @@
     },
     {
       "id": "lx-g1-0024",
-      "word": "αγκάιι",
+      "word": "αγκαλιά",
       "grade": 1,
       "axis": "K",
-      "hintSentence": "τον παίρνεις αγκαλιά ___.",
+      "hintSentence": "Μιλήσαμε για ___ στην τάξη.",
       "feedbackRule": "αγκάι- + -ι.",
-      "audioFile": "audio/agkaii.mp3",
+      "audioFile": "audio/agkalia.mp3",
       "morphemes": {
-        "root": "αγκάι",
-        "suffix": "ι"
+        "root": "αγκαλ",
+        "suffix": "ιά"
       },
       "difficulty": 2,
       "definition": "αγκαλιά [η] ουσιαστικί(αγκαλιές)",
@@ -9925,7 +9925,7 @@
       "word": "αγκαλιά",
       "grade": 1,
       "axis": "K",
-      "hintSentence": "στην άκρη μίας μακριάς αλυσίδας ___.",
+      "hintSentence": "Έμαθα τη λέξη ___ σήμερα.",
       "feedbackRule": "αγκαλ- + -ιά.",
       "audioFile": "audio/agkalia.mp3",
       "morphemes": {
@@ -9938,14 +9938,14 @@
     },
     {
       "id": "lx-g1-0026",
-      "word": "καιαρίς",
+      "word": "καλός",
       "grade": 1,
       "axis": "K",
-      "hintSentence": "άνιρωπος κι έχει καλή ψυχή ___.",
+      "hintSentence": "Διάβασα την πρόταση με τη λέξη ___.",
       "feedbackRule": "Προσοχή στον τόνο.",
       "audioFile": "audio/kaiaris.mp3",
       "morphemes": {
-        "root": "καιαρίς",
+        "root": "καλός",
         "suffix": ""
       },
       "difficulty": 1,
@@ -9956,7 +9956,7 @@
       "word": "απονήρευτος",
       "grade": 1,
       "axis": "K",
-      "hintSentence": "O ιείος Αλέκος έχει αγνίτητα ___.",
+      "hintSentence": "Η απάντηση ήταν ___.",
       "feedbackRule": "απονήρευτ- + -ος.",
       "audioFile": "audio/aponireytos.mp3",
       "morphemes": {
@@ -9972,7 +9972,7 @@
       "word": "πονηρίς",
       "grade": 1,
       "axis": "K",
-      "hintSentence": "O ιείος Αλέκος έχει αγνίτητα ___.",
+      "hintSentence": "Στο τετράδιο έγραψα τη λέξη ___.",
       "feedbackRule": "Προσοχή στον τόνο.",
       "audioFile": "audio/poniris.mp3",
       "morphemes": {
@@ -9988,7 +9988,7 @@
       "word": "γνωστίς",
       "grade": 1,
       "axis": "K",
-      "hintSentence": "η Αιηνά στο ιείο Δάκη ___.",
+      "hintSentence": "Η λέξη της ημέρας είναι ___.",
       "feedbackRule": "Προσοχή στον τόνο.",
       "audioFile": "audio/gnostis.mp3",
       "morphemes": {
@@ -10005,7 +10005,7 @@
       "word": "αγορά",
       "grade": 1,
       "axis": "K",
-      "hintSentence": "O ∫ώστας είναι αγίρι. δίναι το ___",
+      "hintSentence": "Πήγαμε στην ___ για ψωμί.",
       "feedbackRule": "αγορ- + -ά.",
       "audioFile": "audio/agora.mp3",
       "morphemes": {
@@ -10021,7 +10021,7 @@
       "word": "γράμμα",
       "grade": 1,
       "axis": "K",
-      "hintSentence": "φύση, μακριά απί τον άνιρωπο. Δα ___",
+      "hintSentence": "Έμαθα τη λέξη ___ σήμερα.",
       "feedbackRule": "γράμμ- + -α.",
       "audioFile": "audio/gramma.mp3",
       "morphemes": {
@@ -10036,7 +10036,7 @@
       "word": "ήμερος",
       "grade": 1,
       "axis": "K",
-      "hintSentence": "τον πλησιάσουν εύκολα ___.",
+      "hintSentence": "Η απάντηση ήταν ___.",
       "feedbackRule": "ήμερ- + -ος.",
       "audioFile": "audio/imeros.mp3",
       "morphemes": {
@@ -10052,7 +10052,7 @@
       "word": "αγρίτης",
       "grade": 1,
       "axis": "K",
-      "hintSentence": "στα χωράφια και τα καλλιεργεί ___.",
+      "hintSentence": "Στο τετράδιο έγραψα τη λέξη ___.",
       "feedbackRule": "αγρίτ- + -ης.",
       "audioFile": "audio/agritis.mp3",
       "morphemes": {
@@ -10069,7 +10069,7 @@
       "word": "γεωργίς",
       "grade": 1,
       "axis": "K",
-      "hintSentence": "παράγει αγροτικά προ˚ίντα ___.",
+      "hintSentence": "Η λέξη της ημέρας είναι ___.",
       "feedbackRule": "Προσοχή στον τόνο.",
       "audioFile": "audio/georgis.mp3",
       "morphemes": {
@@ -10085,7 +10085,7 @@
       "word": "αγώνας",
       "grade": 1,
       "axis": "K",
-      "hintSentence": "Δο αγώνισμα είναι ένα άιλημα ___.",
+      "hintSentence": "Ο ___ για την ελευθερία συνεχίζεται.",
       "feedbackRule": "αγών- + -ας.",
       "audioFile": "audio/agonas.mp3",
       "morphemes": {
@@ -10102,7 +10102,7 @@
       "word": "κενίς",
       "grade": 1,
       "axis": "K",
-      "hintSentence": "άδειο, ίταν είναι βλάκας ή κουτίς ___.",
+      "hintSentence": "Διάβασα την πρόταση με τη λέξη ___.",
       "feedbackRule": "Προσοχή στον τόνο.",
       "audioFile": "audio/kenis.mp3",
       "morphemes": {
@@ -10117,7 +10117,7 @@
       "word": "γεμάτος",
       "grade": 1,
       "axis": "K",
-      "hintSentence": "άδειο, ίταν είναι βλάκας ή κουτίς ___.",
+      "hintSentence": "Η απάντηση ήταν ___.",
       "feedbackRule": "γεμάτ- + -ος.",
       "audioFile": "audio/gematos.mp3",
       "morphemes": {
@@ -10132,7 +10132,7 @@
       "word": "αδελφούλα",
       "grade": 1,
       "axis": "K",
-      "hintSentence": "Στον πληιυντικί λέμε και τα αδέρφια ___.",
+      "hintSentence": "Η ___ είναι στο κείμενο.",
       "feedbackRule": "αδελφούλ- + -α.",
       "audioFile": "audio/adelfoula.mp3",
       "morphemes": {
@@ -10146,14 +10146,14 @@
     },
     {
       "id": "lx-g1-0039",
-      "word": "αδιάιετος",
+      "word": "αδιάφορος",
       "grade": 1,
       "axis": "K",
-      "hintSentence": "ρούχα. Άεν ενδιαφέρεται για τη μίδα ___.",
+      "hintSentence": "Μου φάνηκε ___ η ιδέα.",
       "feedbackRule": "αδιάιετ- + -ος.",
-      "audioFile": "audio/adiaietos.mp3",
+      "audioFile": "audio/adiaforos.mp3",
       "morphemes": {
-        "root": "αδιάιετ",
+        "root": "αδιάφορ",
         "suffix": "ος"
       },
       "difficulty": 2,
@@ -10164,7 +10164,7 @@
       "word": "αδιάφορος",
       "grade": 1,
       "axis": "K",
-      "hintSentence": "ρούχα. Άεν ενδιαφέρεται για τη μίδα ___.",
+      "hintSentence": "Ο φίλος μου είναι ___.",
       "feedbackRule": "αδιάφορ- + -ος.",
       "audioFile": "audio/adiaforos.mp3",
       "morphemes": {
@@ -10179,7 +10179,7 @@
       "word": "άδικος",
       "grade": 1,
       "axis": "K",
-      "hintSentence": "υπάρχει ένας ψηλίς άσπρος τοίχος ___.",
+      "hintSentence": "Είναι πολύ ___ σήμερα.",
       "feedbackRule": "άδικ- + -ος.",
       "audioFile": "audio/adikos.mp3",
       "morphemes": {
@@ -10194,7 +10194,7 @@
       "word": "δίκαιος",
       "grade": 1,
       "axis": "K",
-      "hintSentence": "◊ταν δίκαιη και δεν έκανε αδικία ___.",
+      "hintSentence": "Ο δικαστής ήταν ___ στη απόφασή του.",
       "feedbackRule": "δίκαι- + -ος.",
       "audioFile": "audio/dikaios.mp3",
       "morphemes": {
@@ -10209,7 +10209,7 @@
       "word": "αδύναμος",
       "grade": 1,
       "axis": "K",
-      "hintSentence": "μέρες. Ένιωιε πολύ αδύναμη ___.",
+      "hintSentence": "Μετά την αρρώστια ένιωθε πολύ ___.",
       "feedbackRule": "αδύναμ- + -ος.",
       "audioFile": "audio/adynamos.mp3",
       "morphemes": {
@@ -10225,7 +10225,7 @@
       "word": "δυνατίς",
       "grade": 1,
       "axis": "K",
-      "hintSentence": "δύναμη, είχε αδυναμία ___.",
+      "hintSentence": "Η λέξη της ημέρας είναι ___.",
       "feedbackRule": "Προσοχή στον τόνο.",
       "audioFile": "audio/dynatis.mp3",
       "morphemes": {
@@ -10241,7 +10241,7 @@
       "word": "αδύνατος",
       "grade": 1,
       "axis": "K",
-      "hintSentence": "ιείος Αλέκος ψηλίς και χοντρίς ___.",
+      "hintSentence": "Ο φίλος μου είναι ___.",
       "feedbackRule": "αδύνατ- + -ος.",
       "audioFile": "audio/adynatos.mp3",
       "morphemes": {
@@ -10257,7 +10257,7 @@
       "word": "λεπτίς",
       "grade": 1,
       "axis": "K",
-      "hintSentence": "αριιμητική. Άεν την καταλαβαίνει ___",
+      "hintSentence": "Διάβασα την πρόταση με τη λέξη ___.",
       "feedbackRule": "Προσοχή στον τόνο.",
       "audioFile": "audio/leptis.mp3",
       "morphemes": {
@@ -10272,7 +10272,7 @@
       "word": "αέρας",
       "grade": 1,
       "axis": "K",
-      "hintSentence": "ούτε υγρά. O ___ που αναπνέουμε",
+      "hintSentence": "Στο βιβλίο διάβασα για ___.",
       "feedbackRule": "αέρ- + -ας.",
       "audioFile": "audio/aeras.mp3",
       "morphemes": {
@@ -10288,7 +10288,7 @@
       "word": "αεροσκάφος",
       "grade": 1,
       "axis": "K",
-      "hintSentence": "απογειώνονται στα αεροδρίμια. Δα ___",
+      "hintSentence": "Φαίνεται ___ στο μάθημα.",
       "feedbackRule": "αεροσκάφ- + -ος.",
       "audioFile": "audio/aeroskafos.mp3",
       "morphemes": {
@@ -10303,7 +10303,7 @@
       "word": "πιλίτος",
       "grade": 1,
       "axis": "K",
-      "hintSentence": "ταξίδι με αεροπλάνο ___.",
+      "hintSentence": "Μου φάνηκε ___ η ιδέα.",
       "feedbackRule": "πιλίτ- + -ος.",
       "audioFile": "audio/pilitos.mp3",
       "morphemes": {
@@ -10318,7 +10318,7 @@
       "word": "αεροπλάνο",
       "grade": 1,
       "axis": "K",
-      "hintSentence": "δυνατί ράμφος και μυτερά νύχια. Oι ___",
+      "hintSentence": "Ο φίλος μου είναι ___.",
       "feedbackRule": "αεροπλάν- + -ο.",
       "audioFile": "audio/aeroplano.mp3",
       "morphemes": {
@@ -10334,7 +10334,7 @@
       "word": "ινητίς",
       "grade": 1,
       "axis": "K",
-      "hintSentence": "τρέξιμο και το τένις είναι αιλήματα ___.",
+      "hintSentence": "Διάβασα την πρόταση με τη λέξη ___.",
       "feedbackRule": "Προσοχή στον τόνο.",
       "audioFile": "audio/initis.mp3",
       "morphemes": {
@@ -10351,7 +10351,7 @@
       "word": "σπορ",
       "grade": 1,
       "axis": "R",
-      "hintSentence": "για να συμμετέχουν σε αγώνες ___.",
+      "hintSentence": "Η πρόταση χρειάζεται τη λέξη ___.",
       "feedbackRule": "Διάβασε προσεκτικά τη λέξη.",
       "audioFile": "audio/spor.mp3",
       "morphemes": {
@@ -10383,7 +10383,7 @@
       "word": "ένοχος",
       "grade": 1,
       "axis": "K",
-      "hintSentence": "κακία. Δο ίδιο κι ένα αιώο αστείο ή ___",
+      "hintSentence": "Μου φάνηκε ___ η ιδέα.",
       "feedbackRule": "ένοχ- + -ος.",
       "audioFile": "audio/enochos.mp3",
       "morphemes": {
@@ -10398,7 +10398,7 @@
       "word": "άκακος",
       "grade": 1,
       "axis": "K",
-      "hintSentence": "ανιρώπους. Δέτοια δωμάτια είναι οι ___",
+      "hintSentence": "Ο φίλος μου είναι ___.",
       "feedbackRule": "άκακ- + -ος.",
       "audioFile": "audio/akakos.mp3",
       "morphemes": {
@@ -10414,7 +10414,7 @@
       "word": "αίμα",
       "grade": 1,
       "axis": "K",
-      "hintSentence": "λίγια. ∫άνουμε μία ερώτηση και ___",
+      "hintSentence": "Η ___ είναι στο κείμενο.",
       "feedbackRule": "αίμ- + -α.",
       "audioFile": "audio/aima.mp3",
       "morphemes": {
@@ -10430,7 +10430,7 @@
       "word": "δισκοβολία",
       "grade": 1,
       "axis": "K",
-      "hintSentence": "Eδώ παρουσιάσαμε μερικά αιλήματα του στίβου. ¶ροσπάιησε να ιυμηιείς και άλλα ___",
+      "hintSentence": "Βλέπω ___ στην εικόνα.",
       "feedbackRule": "δισκοβολ- + -ία.",
       "audioFile": "audio/diskovolia.mp3",
       "morphemes": {
@@ -10445,7 +10445,7 @@
       "word": "αίσιηση",
       "grade": 1,
       "axis": "K",
-      "hintSentence": "αυτί που αισιανίμαστε. ___",
+      "hintSentence": "Φαίνεται ___ στο μάθημα.",
       "feedbackRule": "αίσιησ- + -η.",
       "audioFile": "audio/aisiisi.mp3",
       "morphemes": {
@@ -10478,7 +10478,7 @@
       "word": "σκληρίκαρδος",
       "grade": 1,
       "axis": "K",
-      "hintSentence": "καταλαβαίνει η Αιηνά και να ιυμώνει ___.",
+      "hintSentence": "Ο φίλος μου είναι ___.",
       "feedbackRule": "σκληρίκαρδ- + -ος.",
       "audioFile": "audio/sklirikardos.mp3",
       "morphemes": {
@@ -10494,7 +10494,7 @@
       "word": "πονίψυχος",
       "grade": 1,
       "axis": "K",
-      "hintSentence": "καταλαβαίνει η Αιηνά και να ιυμώνει ___.",
+      "hintSentence": "Είναι πολύ ___ σήμερα.",
       "feedbackRule": "πονίψυχ- + -ος.",
       "audioFile": "audio/ponipsychos.mp3",
       "morphemes": {
@@ -10510,7 +10510,7 @@
       "word": "καταλαβαίνω",
       "grade": 1,
       "axis": "K",
-      "hintSentence": "παιχνίδι με τ’ αυτοκινητάκια του. Άεν ___",
+      "hintSentence": "Στην τάξη, ___ ήρεμα.",
       "feedbackRule": "καταλαβαίν- + -ω.",
       "audioFile": "audio/katalavaino.mp3",
       "morphemes": {
@@ -10526,7 +10526,7 @@
       "word": "ανοικοκύρευτος",
       "grade": 1,
       "axis": "K",
-      "hintSentence": "παιχνίδι με τ’ αυτοκινητάκια του. Άεν ___",
+      "hintSentence": "Φαίνεται ___ στο μάθημα.",
       "feedbackRule": "ανοικοκύρευτ- + -ος.",
       "audioFile": "audio/anoikokyreytos.mp3",
       "morphemes": {
@@ -10542,7 +10542,7 @@
       "word": "ατακτοποίητος",
       "grade": 1,
       "axis": "K",
-      "hintSentence": "Στο σχολείο, μιλάμε για ___.",
+      "hintSentence": "Το δωμάτιο ήταν ___ και χρειαζόταν τάξη.",
       "feedbackRule": "ατακτοποίητ- + -ος.",
       "audioFile": "audio/ataktopoiitos.mp3",
       "morphemes": {
@@ -10559,7 +10559,7 @@
       "word": "τακτοποιημένος",
       "grade": 1,
       "axis": "K",
-      "hintSentence": "Στην τάξη, γράφουμε τη λέξη που σημαίνει ___.",
+      "hintSentence": "Ο πάγκος μου είναι πάντα ___.",
       "feedbackRule": "τακτοποιημέν- + -ος.",
       "audioFile": "audio/taktopoiimenos.mp3",
       "morphemes": {
@@ -10576,7 +10576,7 @@
       "word": "ακούω",
       "grade": 1,
       "axis": "K",
-      "hintSentence": "ίταν πηγαίνει στη δουλειά του ___.",
+      "hintSentence": "Μπορώ να ___ καλά.",
       "feedbackRule": "ακού- + -ω.",
       "audioFile": "audio/akouo.mp3",
       "morphemes": {
@@ -10593,7 +10593,7 @@
       "word": "προηγούμαι",
       "grade": 1,
       "axis": "K",
-      "hintSentence": "φιινίπωρο. Έρχεται μετά το ___",
+      "hintSentence": "Έμαθα τη λέξη ___ σήμερα.",
       "feedbackRule": "προηγούμ- + -αι.",
       "audioFile": "audio/proigoumai.mp3",
       "morphemes": {
@@ -10609,7 +10609,7 @@
       "word": "αγγίζω",
       "grade": 1,
       "axis": "K",
-      "hintSentence": "πάιει η Αιηνά. Õφησε τη βαλίτσα της ___",
+      "hintSentence": "Στην τάξη, ___ ήρεμα.",
       "feedbackRule": "αγγίζ- + -ω.",
       "audioFile": "audio/aggizo.mp3",
       "morphemes": {
@@ -10625,7 +10625,7 @@
       "word": "ακριβίς",
       "grade": 1,
       "axis": "K",
-      "hintSentence": "έγινε στη χιεσινή εκδρομή. Ώας είπε ___",
+      "hintSentence": "Η λέξη της ημέρας είναι ___.",
       "feedbackRule": "Προσοχή στον τόνο.",
       "audioFile": "audio/akrivis.mp3",
       "morphemes": {
@@ -10641,7 +10641,7 @@
       "word": "φτηνίς",
       "grade": 1,
       "axis": "K",
-      "hintSentence": "έγινε στη χιεσινή εκδρομή. Ώας είπε ___",
+      "hintSentence": "Στην άσκηση γράφουμε τη λέξη ___.",
       "feedbackRule": "Προσοχή στον τόνο.",
       "audioFile": "audio/ftinis.mp3",
       "morphemes": {
@@ -10657,7 +10657,7 @@
       "word": "περίπου",
       "grade": 1,
       "axis": "K",
-      "hintSentence": "μεγάλα και δυνατά πίσω πίδια ___.",
+      "hintSentence": "Διάβασα την πρόταση με τη λέξη ___.",
       "feedbackRule": "περίπ- + -ου.",
       "audioFile": "audio/peripou.mp3",
       "morphemes": {
@@ -10674,7 +10674,7 @@
       "word": "ακροατής",
       "grade": 1,
       "axis": "K",
-      "hintSentence": "ν’ ακούσουν μία ομιλία ___.",
+      "hintSentence": "Η πρόταση χρειάζεται τη λέξη ___.",
       "feedbackRule": "ακροατ- + -ής.",
       "audioFile": "audio/akroatis.mp3",
       "morphemes": {
@@ -10691,7 +10691,7 @@
       "word": "ακροβάτης",
       "grade": 1,
       "axis": "K",
-      "hintSentence": "στεριάς δίπλα στη ιάλασσα. Π ___",
+      "hintSentence": "Στο τετράδιο έγραψα τη λέξη ___.",
       "feedbackRule": "ακροβάτ- + -ης.",
       "audioFile": "audio/akrovatis.mp3",
       "morphemes": {
@@ -10708,7 +10708,7 @@
       "word": "ακρογιαλιά",
       "grade": 1,
       "axis": "K",
-      "hintSentence": "στεριάς δίπλα στη ιάλασσα. Π ___",
+      "hintSentence": "Η ___ είναι στο κείμενο.",
       "feedbackRule": "ακρογιαλ- + -ιά.",
       "audioFile": "audio/akrogialia.mp3",
       "morphemes": {
@@ -10723,7 +10723,7 @@
       "word": "ακροιαλασσιά",
       "grade": 1,
       "axis": "K",
-      "hintSentence": "ρίδας με το λάστιχο ___.",
+      "hintSentence": "Βλέπω ___ στην εικόνα.",
       "feedbackRule": "ακροιαλασσ- + -ιά.",
       "audioFile": "audio/akroialassia.mp3",
       "morphemes": {
@@ -10740,7 +10740,7 @@
       "word": "αλάτι",
       "grade": 1,
       "axis": "K",
-      "hintSentence": "βούτυρο και μαρμελάδα. Õπλωσε ___",
+      "hintSentence": "Γράφω τη λέξη ___ στο τετράδιο.",
       "feedbackRule": "αλάτ- + -ι.",
       "audioFile": "audio/alati.mp3",
       "morphemes": {
@@ -10756,7 +10756,7 @@
       "word": "αλεύρι",
       "grade": 1,
       "axis": "K",
-      "hintSentence": "Στην τάξη, γράφουμε τη λέξη που σημαίνει ___.",
+      "hintSentence": "Η μαμά φτιάχνει ψωμί με ___.",
       "feedbackRule": "αλεύρ- + -ι.",
       "audioFile": "audio/aleyri.mp3",
       "morphemes": {
@@ -10772,7 +10772,7 @@
       "word": "οινίπνευμα",
       "grade": 1,
       "axis": "K",
-      "hintSentence": "ψήλωσε και αδυνάτισε ___.",
+      "hintSentence": "Μιλήσαμε για ___ στην τάξη.",
       "feedbackRule": "οινίπνευμ- + -α.",
       "audioFile": "audio/oinipneyma.mp3",
       "morphemes": {
@@ -10789,7 +10789,7 @@
       "word": "ψέμα",
       "grade": 1,
       "axis": "K",
-      "hintSentence": "απί τη φαντασία του» είπε ο ∫ώστας ___.",
+      "hintSentence": "Έμαθα τη λέξη ___ σήμερα.",
       "feedbackRule": "ψέμ- + -α.",
       "audioFile": "audio/psema.mp3",
       "morphemes": {
@@ -10801,14 +10801,14 @@
     },
     {
       "id": "lx-g1-0080",
-      "word": "αληιινίς",
+      "word": "αληθινός",
       "grade": 1,
       "axis": "K",
-      "hintSentence": "απί τη φαντασία του» είπε ο ∫ώστας ___.",
+      "hintSentence": "Στην άσκηση γράφουμε τη λέξη ___.",
       "feedbackRule": "Προσοχή σε διπλά γράμματα.",
       "audioFile": "audio/aliiinis.mp3",
       "morphemes": {
-        "root": "αληιινίς",
+        "root": "αληθινός",
         "suffix": ""
       },
       "difficulty": 2,
@@ -10820,7 +10820,7 @@
       "word": "ψεύτικος",
       "grade": 1,
       "axis": "K",
-      "hintSentence": "λυπίμαστε για κάτι που έγινε ___.",
+      "hintSentence": "Είναι πολύ ___ σήμερα.",
       "feedbackRule": "ψεύτικ- + -ος.",
       "audioFile": "audio/pseytikos.mp3",
       "morphemes": {
@@ -10833,14 +10833,14 @@
     },
     {
       "id": "lx-g1-0082",
-      "word": "πραγματικίς",
+      "word": "πραγματικός",
       "grade": 1,
       "axis": "K",
-      "hintSentence": "λυπίμαστε για κάτι που έγινε ___.",
+      "hintSentence": "Η πρόταση χρειάζεται τη λέξη ___.",
       "feedbackRule": "Προσοχή στον τόνο.",
-      "audioFile": "audio/pragmatikis.mp3",
+      "audioFile": "audio/pragmatikos.mp3",
       "morphemes": {
-        "root": "πραγματικίς",
+        "root": "πραγματικός",
         "suffix": ""
       },
       "difficulty": 2,
@@ -10851,7 +10851,7 @@
       "word": "αλήιεια",
       "grade": 1,
       "axis": "K",
-      "hintSentence": "λυπίμαστε για κάτι που έγινε ___.",
+      "hintSentence": "Στο βιβλίο διάβασα για ___.",
       "feedbackRule": "αλήιει- + -α.",
       "audioFile": "audio/aliieia.mp3",
       "morphemes": {
@@ -10867,7 +10867,7 @@
       "word": "ίππος",
       "grade": 1,
       "axis": "K",
-      "hintSentence": "σ’ ένα άλογο, κάνουμε ιππασία ___.",
+      "hintSentence": "Ο ___ τρέχει γρήγορα στο λιβάδι.",
       "feedbackRule": "ίππ- + -ος.",
       "audioFile": "audio/ippos.mp3",
       "morphemes": {
@@ -10882,7 +10882,7 @@
       "word": "αλείφω",
       "grade": 1,
       "axis": "K",
-      "hintSentence": "χοντρή αλυσίδα. Π αλυσίδα είναι ___",
+      "hintSentence": "Θέλω να ___ μαζί σου.",
       "feedbackRule": "αλείφ- + -ω.",
       "audioFile": "audio/aleifo.mp3",
       "morphemes": {
@@ -10899,7 +10899,7 @@
       "word": "αμαρτία",
       "grade": 1,
       "axis": "K",
-      "hintSentence": "Στην τάξη, γράφουμε τη λέξη που σημαίνει ___.",
+      "hintSentence": "Έμαθα τη λέξη ___ στο μάθημα.",
       "feedbackRule": "αμαρτ- + -ία.",
       "audioFile": "audio/amartia.mp3",
       "morphemes": {
@@ -10915,7 +10915,7 @@
       "word": "άπειρος",
       "grade": 1,
       "axis": "K",
-      "hintSentence": "κομματάκια πέτρας. Ώοιάζει με σκίνη ___",
+      "hintSentence": "Του χρωστάω ___ ευγνωμοσύνη.",
       "feedbackRule": "άπειρ- + -ος.",
       "audioFile": "audio/apeiros.mp3",
       "morphemes": {
@@ -10931,7 +10931,7 @@
       "word": "αμπελώνας",
       "grade": 1,
       "axis": "K",
-      "hintSentence": "με αμύγδαλα. δίναι οι μικροί καρποί ___",
+      "hintSentence": "Γράφω τη λέξη ___ στο τετράδιο.",
       "feedbackRule": "αμπελών- + -ας.",
       "audioFile": "audio/ampelonas.mp3",
       "morphemes": {
@@ -10948,7 +10948,7 @@
       "word": "κλήμα",
       "grade": 1,
       "axis": "K",
-      "hintSentence": "με αμύγδαλα. δίναι οι μικροί καρποί ___",
+      "hintSentence": "Στο βιβλίο διάβασα για ___.",
       "feedbackRule": "κλήμ- + -α.",
       "audioFile": "audio/klima.mp3",
       "morphemes": {
@@ -10965,7 +10965,7 @@
       "word": "αμύνομαι",
       "grade": 1,
       "axis": "K",
-      "hintSentence": "των ληστών, γιατί κινδύνευε η ζωή του ___.",
+      "hintSentence": "Μιλήσαμε για ___ στην τάξη.",
       "feedbackRule": "αμύνομ- + -αι.",
       "audioFile": "audio/amynomai.mp3",
       "morphemes": {
@@ -10982,7 +10982,7 @@
       "word": "αήττητος",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "μας. Ανιψιίς και ανιψιά είναι και τα ___",
+      "hintSentence": "Η ομάδα μας έμεινε ___.",
       "feedbackRule": "αήττητ- + -ος.",
       "audioFile": "audio/aittitos.mp3",
       "morphemes": {
@@ -10999,7 +10999,7 @@
       "word": "έξυπνος",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "ανοίγω και το κλείνω πολλές φορές ___.",
+      "hintSentence": "Η απάντηση ήταν ___.",
       "feedbackRule": "έξυπν- + -ος.",
       "audioFile": "audio/exypnos.mp3",
       "morphemes": {
@@ -11033,7 +11033,7 @@
       "word": "κλείνω",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "κτήμα του ιείου Αλέκου ___.",
+      "hintSentence": "Κάθε μέρα ___ στο σχολείο.",
       "feedbackRule": "κλείν- + -ω.",
       "audioFile": "audio/kleino.mp3",
       "morphemes": {
@@ -11049,7 +11049,7 @@
       "word": "κλειστίς",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "ιάλασσας είναι σκούρο γαλάζιο ___.",
+      "hintSentence": "Στην άσκηση γράφουμε τη λέξη ___.",
       "feedbackRule": "Προσοχή στον τόνο.",
       "audioFile": "audio/kleistis.mp3",
       "morphemes": {
@@ -11065,7 +11065,7 @@
       "word": "σκούρος",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "κάτι που έχεις και παίρνεις κάτι άλλο ___.",
+      "hintSentence": "Είναι πολύ ___ σήμερα.",
       "feedbackRule": "σκούρ- + -ος.",
       "audioFile": "audio/skouros.mp3",
       "morphemes": {
@@ -11082,7 +11082,7 @@
       "word": "ανοιχτά",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "κάτι που έχεις και παίρνεις κάτι άλλο ___.",
+      "hintSentence": "Έμαθα τη λέξη ___ σήμερα.",
       "feedbackRule": "ανοιχτ- + -ά.",
       "audioFile": "audio/anoichta.mp3",
       "morphemes": {
@@ -11099,7 +11099,7 @@
       "word": "άγευστος",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "κάτι που έχεις και παίρνεις κάτι άλλο ___.",
+      "hintSentence": "Φαίνεται ___ στο μάθημα.",
       "feedbackRule": "άγευστ- + -ος.",
       "audioFile": "audio/ageystos.mp3",
       "morphemes": {
@@ -11113,14 +11113,14 @@
     },
     {
       "id": "lx-g2-0009",
-      "word": "γευστικίς",
+      "word": "γευστικός",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "κάτι που έχεις και παίρνεις κάτι άλλο ___.",
+      "hintSentence": "Η λέξη της ημέρας είναι ___.",
       "feedbackRule": "Προσοχή στον τόνο.",
-      "audioFile": "audio/geystikis.mp3",
+      "audioFile": "audio/geystikos.mp3",
       "morphemes": {
-        "root": "γευστικίς",
+        "root": "γευστικός",
         "suffix": ""
       },
       "difficulty": 2,
@@ -11133,7 +11133,7 @@
       "word": "αλλαγή",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "φωνές του κ. Ώιχάλη ___.",
+      "hintSentence": "Ο φίλος μου είναι ___.",
       "feedbackRule": "Προσοχή σε διπλά γράμματα.",
       "audioFile": "audio/allagi.mp3",
       "morphemes": {
@@ -11150,7 +11150,7 @@
       "word": "ανταλλαγή",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "φωνές του κ. Ώιχάλη ___.",
+      "hintSentence": "Είναι πολύ ___ σήμερα.",
       "feedbackRule": "Προσοχή σε διπλά γράμματα.",
       "audioFile": "audio/antallagi.mp3",
       "morphemes": {
@@ -11167,7 +11167,7 @@
       "word": "ανάποδος",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "ÿγκλι. Άε συμφωνώ με την ιδέα της ___",
+      "hintSentence": "Η απάντηση ήταν ___.",
       "feedbackRule": "ανάποδ- + -ος.",
       "audioFile": "audio/anapodos.mp3",
       "morphemes": {
@@ -11182,7 +11182,7 @@
       "word": "αντιμετώπιση",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "ν’ αποχαιρετήσουμε τους ανιρώπους ___.",
+      "hintSentence": "Φαίνεται ___ στο μάθημα.",
       "feedbackRule": "αντιμετώπισ- + -η.",
       "audioFile": "audio/antimetopisi.mp3",
       "morphemes": {
@@ -11195,14 +11195,14 @@
     },
     {
       "id": "lx-g2-0014",
-      "word": "συμπαιητικίς",
+      "word": "συμπαθητικός",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "αγώνα ποδοσφαίρου.Ύ’ αγωνιστούν ο ___",
+      "hintSentence": "Η λέξη της ημέρας είναι ___.",
       "feedbackRule": "Προσοχή στον τόνο.",
       "audioFile": "audio/sympaiitikis.mp3",
       "morphemes": {
-        "root": "συμπαιητικίς",
+        "root": "συμπαθητικός",
         "suffix": ""
       },
       "difficulty": 3,
@@ -11214,7 +11214,7 @@
       "word": "αντέχω",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "γίνονται άντρες. O άντρας σε μία ___",
+      "hintSentence": "Δεν μπορώ να ___ άλλο.",
       "feedbackRule": "αντέχ- + -ω.",
       "audioFile": "audio/antecho.mp3",
       "morphemes": {
@@ -11228,15 +11228,15 @@
     },
     {
       "id": "lx-g2-0016",
-      "word": "απείιαρχος",
+      "word": "ανυπομονώ",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "να περιμένεις να γίνει κάτι, βιάζεσαι ___.",
+      "hintSentence": "Είναι πολύ ___ σήμερα.",
       "feedbackRule": "απείιαρχ- + -ος.",
-      "audioFile": "audio/apeiiarchos.mp3",
+      "audioFile": "audio/anypomono.mp3",
       "morphemes": {
-        "root": "απείιαρχ",
-        "suffix": "ος"
+        "root": "ανυπομονώ",
+        "suffix": ""
       },
       "difficulty": 3,
       "definition": "ανυπομονησία [η] ουσιαστικί",
@@ -11248,7 +11248,7 @@
       "word": "ανυπομονώ",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "να περιμένεις να γίνει κάτι, βιάζεσαι ___.",
+      "hintSentence": "Σήμερα στο σπίτι θα ___.",
       "feedbackRule": "Προσοχή στον τόνο.",
       "audioFile": "audio/anypomono.mp3",
       "morphemes": {
@@ -11264,7 +11264,7 @@
       "word": "λαχταρώ",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "άνοιξε ίλα τα παράιυρα ___.",
+      "hintSentence": "Μπορώ να ___ καλά.",
       "feedbackRule": "Προσοχή στον τόνο.",
       "audioFile": "audio/lachtaro.mp3",
       "morphemes": {
@@ -11280,7 +11280,7 @@
       "word": "αφίρητος",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "έχει λακκούβες και δεν είναι επίπεδος ___.",
+      "hintSentence": "Μου φάνηκε ___ η ιδέα.",
       "feedbackRule": "αφίρητ- + -ος.",
       "audioFile": "audio/afiritos.mp3",
       "morphemes": {
@@ -11296,7 +11296,7 @@
       "word": "υποφερτίς",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "έχει λακκούβες και δεν είναι επίπεδος ___.",
+      "hintSentence": "Στην άσκηση γράφουμε τη λέξη ___.",
       "feedbackRule": "Προσοχή στον τόνο.",
       "audioFile": "audio/ypofertis.mp3",
       "morphemes": {
@@ -11312,7 +11312,7 @@
       "word": "υποφέρω",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "έχει λακκούβες και δεν είναι επίπεδος ___.",
+      "hintSentence": "Χθες ___ στον κήπο.",
       "feedbackRule": "υποφέρ- + -ω.",
       "audioFile": "audio/ypofero.mp3",
       "morphemes": {
@@ -11343,7 +11343,7 @@
       "word": "ικανίς",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "κανείς δεν μπορεί να τον δει ___.",
+      "hintSentence": "Στο τετράδιο έγραψα τη λέξη ___.",
       "feedbackRule": "Προσοχή στον τόνο.",
       "audioFile": "audio/ikanis.mp3",
       "morphemes": {
@@ -11358,7 +11358,7 @@
       "word": "ανάξιος",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "κανείς δεν μπορεί να τον δει ___.",
+      "hintSentence": "Μου φάνηκε ___ η ιδέα.",
       "feedbackRule": "ανάξι- + -ος.",
       "audioFile": "audio/anaxios.mp3",
       "morphemes": {
@@ -11373,7 +11373,7 @@
       "word": "ορατίς",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "την άδειά μου να γίνει ___.",
+      "hintSentence": "Στην άσκηση γράφουμε τη λέξη ___.",
       "feedbackRule": "Προσοχή στον τόνο.",
       "audioFile": "audio/oratis.mp3",
       "morphemes": {
@@ -11389,7 +11389,7 @@
       "word": "επιτρέπω",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "κάνει κακί στη αιονάτη. Άεν είναι ίμως ___",
+      "hintSentence": "Στην τάξη, ___ ήρεμα.",
       "feedbackRule": "επιτρέπ- + -ω.",
       "audioFile": "audio/epitrepo.mp3",
       "morphemes": {
@@ -11405,7 +11405,7 @@
       "word": "απαιτώ",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "ίλους τους ανωτέρους ___.",
+      "hintSentence": "Χθες ___ στον κήπο.",
       "feedbackRule": "Προσοχή στον τόνο.",
       "audioFile": "audio/apaito.mp3",
       "morphemes": {
@@ -11421,7 +11421,7 @@
       "word": "κατώτερος",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "ίλους τους ανωτέρους ___.",
+      "hintSentence": "Φαίνεται ___ στο μάθημα.",
       "feedbackRule": "κατώτερ- + -ος.",
       "audioFile": "audio/katoteros.mp3",
       "morphemes": {
@@ -11437,7 +11437,7 @@
       "word": "ξεχνώ",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "να δώσουμε για να το αποκτήσουμε; ___",
+      "hintSentence": "Σήμερα στο σπίτι θα ___.",
       "feedbackRule": "Προσοχή στον τόνο.",
       "audioFile": "audio/xechno.mp3",
       "morphemes": {
@@ -11488,7 +11488,7 @@
       "word": "κοστίζω",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "ή πρέπει να το έχει ___.",
+      "hintSentence": "Στην τάξη, ___ ήρεμα.",
       "feedbackRule": "κοστίζ- + -ω.",
       "audioFile": "audio/kostizo.mp3",
       "morphemes": {
@@ -11504,7 +11504,7 @@
       "word": "αναγκαίος",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "ίλα τα απαραίτητα» είπε η Αιηνά ___.",
+      "hintSentence": "Φαίνεται ___ στο μάθημα.",
       "feedbackRule": "αναγκαί- + -ος.",
       "audioFile": "audio/anagkaios.mp3",
       "morphemes": {
@@ -11519,7 +11519,7 @@
       "word": "απασχολημένος",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "απειλές. «Αλίμονί σας αν σας πιάσω ___",
+      "hintSentence": "Μου φάνηκε ___ η ιδέα.",
       "feedbackRule": "απασχολημέν- + -ος.",
       "audioFile": "audio/apascholimenos.mp3",
       "morphemes": {
@@ -11536,7 +11536,7 @@
       "word": "υπάκουος",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "απειλές. «Αλίμονί σας αν σας πιάσω ___",
+      "hintSentence": "Ο φίλος μου είναι ___.",
       "feedbackRule": "υπάκου- + -ος.",
       "audioFile": "audio/ypakouos.mp3",
       "morphemes": {
@@ -11553,7 +11553,7 @@
       "word": "απειλώ",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "απειλές. «Αλίμονί σας αν σας πιάσω ___",
+      "hintSentence": "Μπορώ να ___ καλά.",
       "feedbackRule": "Προσοχή στον τόνο.",
       "audioFile": "audio/apeilo.mp3",
       "morphemes": {
@@ -11570,7 +11570,7 @@
       "word": "σκληρίς",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "απαλί τρίπο, προσεκτικά ___.",
+      "hintSentence": "Η πρόταση χρειάζεται τη λέξη ___.",
       "feedbackRule": "Προσοχή στον τόνο.",
       "audioFile": "audio/skliris.mp3",
       "morphemes": {
@@ -11586,7 +11586,7 @@
       "word": "ερώτηση",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "μιλάς σε κάποιον που σε ρωτάει κάτι ___.",
+      "hintSentence": "Φαίνεται ___ στο μάθημα.",
       "feedbackRule": "ερώτησ- + -η.",
       "audioFile": "audio/erotisi.mp3",
       "morphemes": {
@@ -11602,7 +11602,7 @@
       "word": "απάντηση",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "κάτι, Αιηνά» είπε η ιεία ∫ατερίνα ___.",
+      "hintSentence": "Μου φάνηκε ___ η ιδέα.",
       "feedbackRule": "απάντησ- + -η.",
       "audioFile": "audio/apantisi.mp3",
       "morphemes": {
@@ -11618,7 +11618,7 @@
       "word": "απελπίζομαι",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "κυρίου Άημήτρη. μρίσκεται μπροστά ___",
+      "hintSentence": "Γράφω τη λέξη ___ στο τετράδιο.",
       "feedbackRule": "απελπίζομ- + -αι.",
       "audioFile": "audio/apelpizomai.mp3",
       "morphemes": {
@@ -11633,7 +11633,7 @@
       "word": "αντίκρυ",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "ταξίδευε για να πάει στην ∫ρήτη. Απί ___",
+      "hintSentence": "Διάβασα την πρόταση με τη λέξη ___.",
       "feedbackRule": "Προσοχή στον τόνο.",
       "audioFile": "audio/antikry.mp3",
       "morphemes": {
@@ -11649,7 +11649,7 @@
       "word": "απεργία",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "∫ώστας. «O καιρίς είναι πολύ ___",
+      "hintSentence": "Μιλήσαμε για ___ στην τάξη.",
       "feedbackRule": "απεργ- + -ία.",
       "audioFile": "audio/apergia.mp3",
       "morphemes": {
@@ -11664,7 +11664,7 @@
       "word": "πιστεύω",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "ερώτηση» είπε η δασκάλα. Ώία ___",
+      "hintSentence": "Θέλω να ___ μαζί σου.",
       "feedbackRule": "πιστεύ- + -ω.",
       "audioFile": "audio/pisteyo.mp3",
       "morphemes": {
@@ -11680,7 +11680,7 @@
       "word": "πλένω",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "ξεδιπλώνω για να φαίνεται ολίκληρο ___.",
+      "hintSentence": "Στην τάξη, ___ ήρεμα.",
       "feedbackRule": "πλέν- + -ω.",
       "audioFile": "audio/pleno.mp3",
       "morphemes": {
@@ -11697,7 +11697,7 @@
       "word": "μαζεύω",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "μεσημέρι και πριν απί το βράδυ ___.",
+      "hintSentence": "Χθες ___ στον κήπο.",
       "feedbackRule": "μαζεύ- + -ω.",
       "audioFile": "audio/mazeyo.mp3",
       "morphemes": {
@@ -11714,7 +11714,7 @@
       "word": "άπλωμα",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "μεσημέρι και πριν απί το βράδυ ___.",
+      "hintSentence": "Γράφω τη λέξη ___ στο τετράδιο.",
       "feedbackRule": "άπλωμ- + -α.",
       "audioFile": "audio/aploma.mp3",
       "morphemes": {
@@ -11731,7 +11731,7 @@
       "word": "προσγειώνω",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "μεσημέρι και πριν απί το βράδυ ___.",
+      "hintSentence": "Σήμερα στο σπίτι θα ___.",
       "feedbackRule": "προσγειών- + -ω.",
       "audioFile": "audio/prosgeiono.mp3",
       "morphemes": {
@@ -11747,7 +11747,7 @@
       "word": "απογοητεύω",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "μπορείς. Ήταν απογοητεύεσαι, ___",
+      "hintSentence": "Το αποτέλεσμα με ___.",
       "feedbackRule": "απογοητεύ- + -ω.",
       "audioFile": "audio/apogoiteyo.mp3",
       "morphemes": {
@@ -11764,7 +11764,7 @@
       "word": "αποιήκη",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "Στο σχολείο, μιλάμε για ___.",
+      "hintSentence": "Βάλαμε τα παιχνίδια στην ___.",
       "feedbackRule": "αποιήκ- + -η.",
       "audioFile": "audio/apoiiki.mp3",
       "morphemes": {
@@ -11781,7 +11781,7 @@
       "word": "κάτω",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "ανιρώπους να περάσουν απ’ αυτίν ___.",
+      "hintSentence": "Στην τάξη, ___ ήρεμα.",
       "feedbackRule": "κάτ- + -ω.",
       "audioFile": "audio/kato.mp3",
       "morphemes": {
@@ -11798,7 +11798,7 @@
       "word": "κοιμάμαι",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "αποκοίμισε. ¶άω για ύπνο» είπε ο ___",
+      "hintSentence": "Βλέπω ___ στην εικόνα.",
       "feedbackRule": "κοιμάμ- + -αι.",
       "audioFile": "audio/koimamai.mp3",
       "morphemes": {
@@ -11815,7 +11815,7 @@
       "word": "κοιμίζω",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "∫αιαρή Άευτέρα. Δις μέρες αυτές ___",
+      "hintSentence": "Κάθε μέρα ___ στο σχολείο.",
       "feedbackRule": "κοιμίζ- + -ω.",
       "audioFile": "audio/koimizo.mp3",
       "morphemes": {
@@ -11832,7 +11832,7 @@
       "word": "προσλαμβάνω",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "κάπου αλλού πιο μακριά. Ήταν ___",
+      "hintSentence": "Σήμερα στο σπίτι θα ___.",
       "feedbackRule": "προσλαμβάν- + -ω.",
       "audioFile": "audio/proslamvano.mp3",
       "morphemes": {
@@ -11849,7 +11849,7 @@
       "word": "στέλνω",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "τη ƒοζαλία. Δο αποτέλεσμα ήταν να ___",
+      "hintSentence": "Μπορώ να ___ καλά.",
       "feedbackRule": "στέλν- + -ω.",
       "audioFile": "audio/stelno.mp3",
       "morphemes": {
@@ -11866,7 +11866,7 @@
       "word": "κατάληξη",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "κίπηκε αμέσως ο βήχας!» είπε η ___",
+      "hintSentence": "Ο φίλος μου είναι ___.",
       "feedbackRule": "κατάληξ- + -η.",
       "audioFile": "audio/katalixi.mp3",
       "morphemes": {
@@ -11882,7 +11882,7 @@
       "word": "επίπεδος",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "ξαφνικά, εκεί που δεν το περιμένουμε ___.",
+      "hintSentence": "Είναι πολύ ___ σήμερα.",
       "feedbackRule": "επίπεδ- + -ος.",
       "audioFile": "audio/epipedos.mp3",
       "morphemes": {
@@ -11894,14 +11894,14 @@
     },
     {
       "id": "lx-g2-0057",
-      "word": "ξαφνικίς",
+      "word": "ξαφνικός",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "τα σκυλάκια μακριά απί την αυλή του ___.",
+      "hintSentence": "Η πρόταση χρειάζεται τη λέξη ___.",
       "feedbackRule": "Προσοχή στον τόνο.",
-      "audioFile": "audio/xafnikis.mp3",
+      "audioFile": "audio/xafnikos.mp3",
       "morphemes": {
-        "root": "ξαφνικίς",
+        "root": "ξαφνικός",
         "suffix": ""
       },
       "difficulty": 1,
@@ -11912,7 +11912,7 @@
       "word": "μακριά",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "μπορείς να το εξηγήσεις ___.",
+      "hintSentence": "Γράφω τη λέξη ___ στο τετράδιο.",
       "feedbackRule": "μακρ- + -ιά.",
       "audioFile": "audio/makria.mp3",
       "morphemes": {
@@ -11928,7 +11928,7 @@
       "word": "απορία",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "σπίτι μετά το μαγείρεμα ___.",
+      "hintSentence": "Στο βιβλίο διάβασα για ___.",
       "feedbackRule": "απορ- + -ία.",
       "audioFile": "audio/aporia.mp3",
       "morphemes": {
@@ -11943,7 +11943,7 @@
       "word": "άγριος",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "που αφήνει κάτι πάνω σε κάτι άλλο ___.",
+      "hintSentence": "Ο φίλος μου είναι ___.",
       "feedbackRule": "άγρι- + -ος.",
       "audioFile": "audio/agrios.mp3",
       "morphemes": {
@@ -11959,7 +11959,7 @@
       "word": "απίτομα",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "που αφήνει κάτι πάνω σε κάτι άλλο ___.",
+      "hintSentence": "Έμαθα τη λέξη ___ σήμερα.",
       "feedbackRule": "απίτομ- + -α.",
       "audioFile": "audio/apitoma.mp3",
       "morphemes": {
@@ -11990,7 +11990,7 @@
       "word": "επιτυχία",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "τελευταία. Ώήπως είναι άρρωστος;» ___",
+      "hintSentence": "Βλέπω ___ στην εικόνα.",
       "feedbackRule": "επιτυχ- + -ία.",
       "audioFile": "audio/epitychia.mp3",
       "morphemes": {
@@ -12007,7 +12007,7 @@
       "word": "παρουσία",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "πράγματα αυτί που ιέλεις πιο πολύ ___.",
+      "hintSentence": "Γράφω τη λέξη ___ στο τετράδιο.",
       "feedbackRule": "παρουσ- + -ία.",
       "audioFile": "audio/parousia.mp3",
       "morphemes": {
@@ -12024,7 +12024,7 @@
       "word": "λείπω",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "πράγματα αυτί που ιέλεις πιο πολύ ___.",
+      "hintSentence": "Σήμερα στο σπίτι θα ___.",
       "feedbackRule": "λείπ- + -ω.",
       "audioFile": "audio/leipo.mp3",
       "morphemes": {
@@ -12041,7 +12041,7 @@
       "word": "απουσία",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "πράγματα αυτί που ιέλεις πιο πολύ ___.",
+      "hintSentence": "Μιλήσαμε για ___ στην τάξη.",
       "feedbackRule": "απουσ- + -ία.",
       "audioFile": "audio/apousia.mp3",
       "morphemes": {
@@ -12058,7 +12058,7 @@
       "word": "γλιτώνω",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "χαιρετάς τη στιγμή που χωρίζετε ___.",
+      "hintSentence": "Θέλω να ___ μαζί σου.",
       "feedbackRule": "γλιτών- + -ω.",
       "audioFile": "audio/glitono.mp3",
       "morphemes": {
@@ -12075,7 +12075,7 @@
       "word": "αποψινίς",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "και γι’ αυτί δεν το κάνει καλά ___.",
+      "hintSentence": "Στο τετράδιο έγραψα τη λέξη ___.",
       "feedbackRule": "Προσοχή στον τόνο.",
       "audioFile": "audio/apopsinis.mp3",
       "morphemes": {
@@ -12090,7 +12090,7 @@
       "word": "αφηρημένος",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "γίνεται χωρίς προσοχή ___.",
+      "hintSentence": "Μου φάνηκε ___ η ιδέα.",
       "feedbackRule": "αφηρημέν- + -ος.",
       "audioFile": "audio/afirimenos.mp3",
       "morphemes": {
@@ -12103,14 +12103,14 @@
     },
     {
       "id": "lx-g2-0070",
-      "word": "προσεκτικίς",
+      "word": "προσεκτικός",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "γίνεται χωρίς προσοχή ___.",
+      "hintSentence": "Στην άσκηση γράφουμε τη λέξη ___.",
       "feedbackRule": "Προσοχή στον τόνο.",
-      "audioFile": "audio/prosektikis.mp3",
+      "audioFile": "audio/prosektikos.mp3",
       "morphemes": {
-        "root": "προσεκτικίς",
+        "root": "προσεκτικός",
         "suffix": ""
       },
       "difficulty": 2,
@@ -12121,7 +12121,7 @@
       "word": "αφηρημένα",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "– ΅έμε και ο απρίσεχτος ___.",
+      "hintSentence": "Στο βιβλίο διάβασα για ___.",
       "feedbackRule": "αφηρημέν- + -α.",
       "audioFile": "audio/afirimena.mp3",
       "morphemes": {
@@ -12137,7 +12137,7 @@
       "word": "προσεκτικά",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "– ΅έμε και ο απρίσεχτος ___.",
+      "hintSentence": "Μιλήσαμε για ___ στην τάξη.",
       "feedbackRule": "προσεκτικ- + -ά.",
       "audioFile": "audio/prosektika.mp3",
       "morphemes": {
@@ -12152,7 +12152,7 @@
       "word": "αφηρημάδα",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "– ΅έμε και ο απρίσεχτος ___.",
+      "hintSentence": "Έμαθα τη λέξη ___ σήμερα.",
       "feedbackRule": "αφηρημάδ- + -α.",
       "audioFile": "audio/afirimada.mp3",
       "morphemes": {
@@ -12168,7 +12168,7 @@
       "word": "απρίσεκτος",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "μαλλιά. Άηλαδή έχει στο κεφάλι του ___",
+      "hintSentence": "Μου φάνηκε ___ η ιδέα.",
       "feedbackRule": "απρίσεκτ- + -ος.",
       "audioFile": "audio/aprisektos.mp3",
       "morphemes": {
@@ -12184,7 +12184,7 @@
       "word": "μπιζέλι",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "δίχτυ σαν δαντέλα. O ιστίς είναι ___",
+      "hintSentence": "Βλέπω ___ στην εικόνα.",
       "feedbackRule": "μπιζέλ- + -ι.",
       "audioFile": "audio/mpizeli.mp3",
       "morphemes": {
@@ -12200,7 +12200,7 @@
       "word": "σιγά",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "άλλο παιδιά, είναι αργά πια. Ίρήγορα ___",
+      "hintSentence": "Γράφω τη λέξη ___ στο τετράδιο.",
       "feedbackRule": "σιγ- + -ά.",
       "audioFile": "audio/siga.mp3",
       "morphemes": {
@@ -12215,7 +12215,7 @@
       "word": "νωρίς",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "γιορτάζουμε κάποια γιορτή ___.",
+      "hintSentence": "Η πρόταση χρειάζεται τη λέξη ___.",
       "feedbackRule": "Προσοχή στον τόνο.",
       "audioFile": "audio/noris.mp3",
       "morphemes": {
@@ -12232,7 +12232,7 @@
       "word": "αργώ",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "κάτι, δεν μπορεί να το κάνει γρήγορα ___.",
+      "hintSentence": "Μπορώ να ___ καλά.",
       "feedbackRule": "Προσοχή στον τόνο.",
       "audioFile": "audio/argo.mp3",
       "morphemes": {
@@ -12248,7 +12248,7 @@
       "word": "γρήγορος",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "του ανησύχησαν. «Ώην αργήσεις ξανά ___",
+      "hintSentence": "Μου φάνηκε ___ η ιδέα.",
       "feedbackRule": "γρήγορ- + -ος.",
       "audioFile": "audio/grigoros.mp3",
       "morphemes": {
@@ -12262,14 +12262,14 @@
     },
     {
       "id": "lx-g2-0080",
-      "word": "καιυστερώ",
+      "word": "καθυστερώ",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "να είναι εκεί. αργίς ___",
+      "hintSentence": "Στην τάξη, ___ ήρεμα.",
       "feedbackRule": "Προσοχή στον τόνο.",
-      "audioFile": "audio/kaiystero.mp3",
+      "audioFile": "audio/kathystero.mp3",
       "morphemes": {
-        "root": "καιυστερώ",
+        "root": "καθυστερώ",
         "suffix": ""
       },
       "difficulty": 2,
@@ -12281,7 +12281,7 @@
       "word": "βιάζομαι",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "να είναι εκεί. αργίς ___",
+      "hintSentence": "Βλέπω ___ στην εικόνα.",
       "feedbackRule": "βιάζομ- + -αι.",
       "audioFile": "audio/viazomai.mp3",
       "morphemes": {
@@ -12293,14 +12293,14 @@
     },
     {
       "id": "lx-g2-0082",
-      "word": "αριιμίς",
+      "word": "αριθμός",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "το 5. Αν ιέλεις να βρεις την απάντηση, ___",
+      "hintSentence": "Η πρόταση χρειάζεται τη λέξη ___.",
       "feedbackRule": "Προσοχή σε διπλά γράμματα.",
-      "audioFile": "audio/ariimis.mp3",
+      "audioFile": "audio/arithmos.mp3",
       "morphemes": {
-        "root": "αριιμίς",
+        "root": "αριθμός",
         "suffix": ""
       },
       "difficulty": 2,
@@ -12309,14 +12309,14 @@
     },
     {
       "id": "lx-g2-0083",
-      "word": "αριιμητική",
+      "word": "αριθμητική",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "πλευρά που είναι η καρδιά ___.",
+      "hintSentence": "Φαίνεται ___ στο μάθημα.",
       "feedbackRule": "Προσοχή σε διπλά γράμματα.",
-      "audioFile": "audio/ariimitiki.mp3",
+      "audioFile": "audio/arithmitiki.mp3",
       "morphemes": {
-        "root": "αριιμητική",
+        "root": "αριθμητική",
         "suffix": ""
       },
       "difficulty": 3,
@@ -12328,7 +12328,7 @@
       "word": "δεξιίς",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "ποδίσφαιρο» είπε ο κύριος Ίιάννης ___.",
+      "hintSentence": "Η λέξη της ημέρας είναι ___.",
       "feedbackRule": "Προσοχή σε διπλά γράμματα.",
       "audioFile": "audio/dexiis.mp3",
       "morphemes": {
@@ -12360,7 +12360,7 @@
       "word": "δέχομαι",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "γρήγορα για να μη σου φύγει ___.",
+      "hintSentence": "___ την πρόσκληση της φίλης μου.",
       "feedbackRule": "δέχομ- + -αι.",
       "audioFile": "audio/dechomai.mp3",
       "morphemes": {
@@ -12376,7 +12376,7 @@
       "word": "γραπώνω",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "ίταν την κολλάς απί κάποιον άλλον ___.",
+      "hintSentence": "Χθες ___ στον κήπο.",
       "feedbackRule": "γραπών- + -ω.",
       "audioFile": "audio/grapono.mp3",
       "morphemes": {
@@ -12392,7 +12392,7 @@
       "word": "αφήνω",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "ίταν την κολλάς απί κάποιον άλλον ___.",
+      "hintSentence": "Κάθε μέρα ___ στο σχολείο.",
       "feedbackRule": "αφήν- + -ω.",
       "audioFile": "audio/afino.mp3",
       "morphemes": {
@@ -12408,7 +12408,7 @@
       "word": "μπροστά",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "σ’ ίλους πως ια τον παντρευτείς ___.",
+      "hintSentence": "Στο βιβλίο διάβασα για ___.",
       "feedbackRule": "μπροστ- + -ά.",
       "audioFile": "audio/mprosta.mp3",
       "morphemes": {
@@ -12423,7 +12423,7 @@
       "word": "αρραβωνιάζω",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "να βγει έξω σήμερα και αύριο ___.",
+      "hintSentence": "Μπορώ να ___ καλά.",
       "feedbackRule": "αρραβωνιάζ- + -ω.",
       "audioFile": "audio/arravoniazo.mp3",
       "morphemes": {
@@ -12440,7 +12440,7 @@
       "word": "ανυπάκουος",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "σπίτι τής φάνηκε ατέλειωτος ___.",
+      "hintSentence": "Είναι πολύ ___ σήμερα.",
       "feedbackRule": "ανυπάκου- + -ος.",
       "audioFile": "audio/anypakouos.mp3",
       "morphemes": {
@@ -12456,7 +12456,7 @@
       "word": "τελειώνω",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "ούτε στον πληιυντικί αριιμί ___.",
+      "hintSentence": "Στην τάξη, ___ ήρεμα.",
       "feedbackRule": "τελειών- + -ω.",
       "audioFile": "audio/teleiono.mp3",
       "morphemes": {
@@ -12473,7 +12473,7 @@
       "word": "εργαστήριο",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "ούτε στον πληιυντικί αριιμί ___.",
+      "hintSentence": "Φαίνεται ___ στο μάθημα.",
       "feedbackRule": "εργαστήρ- + -ιο.",
       "audioFile": "audio/ergastirio.mp3",
       "morphemes": {
@@ -12490,7 +12490,7 @@
       "word": "αχνίς",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "και άλλους πλανήτες ___.",
+      "hintSentence": "Η λέξη της ημέρας είναι ___.",
       "feedbackRule": "Προσοχή στον τόνο.",
       "audioFile": "audio/achnis.mp3",
       "morphemes": {
@@ -12505,7 +12505,7 @@
       "word": "τυχερίς",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "Στην τάξη, γράφουμε τη λέξη που σημαίνει ___.",
+      "hintSentence": "Ήμουν ___ που βρήκα το βιβλίο μου.",
       "feedbackRule": "Προσοχή στον τόνο.",
       "audioFile": "audio/tycheris.mp3",
       "morphemes": {
@@ -12537,7 +12537,7 @@
       "word": "μεγαλώνω",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "και δε συγχωρεί τα λάιη ___.",
+      "hintSentence": "Θέλω να ___ μαζί σου.",
       "feedbackRule": "μεγαλών- + -ω.",
       "audioFile": "audio/megalono.mp3",
       "morphemes": {
@@ -12553,7 +12553,7 @@
       "word": "ελαττώνω",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "και δε συγχωρεί τα λάιη ___.",
+      "hintSentence": "Στην τάξη, ___ ήρεμα.",
       "feedbackRule": "ελαττών- + -ω.",
       "audioFile": "audio/elattono.mp3",
       "morphemes": {
@@ -12569,7 +12569,7 @@
       "word": "αυστηρά",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "μας χρησιμεύουν για ν’ ακούμε ___.",
+      "hintSentence": "Βλέπω ___ στην εικόνα.",
       "feedbackRule": "αυστηρ- + -ά.",
       "audioFile": "audio/aystira.mp3",
       "morphemes": {
@@ -12586,7 +12586,7 @@
       "word": "αυτίματα",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "μικρίτερος αριιμίς. ∫άνεις ___",
+      "hintSentence": "Γράφω τη λέξη ___ στο τετράδιο.",
       "feedbackRule": "αυτί- + -ματα.",
       "audioFile": "audio/aytimata.mp3",
       "morphemes": {
@@ -12603,7 +12603,7 @@
       "word": "αφαιρώ",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "μικρίτερος αριιμίς. ∫άνεις ___",
+      "hintSentence": "Σήμερα στο σπίτι θα ___.",
       "feedbackRule": "Προσοχή στον τόνο.",
       "audioFile": "audio/afairo.mp3",
       "morphemes": {
@@ -12620,7 +12620,7 @@
       "word": "αφαίρεση",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "οδηγούμε. Ώε το αυτοκίνητο πάμε ___",
+      "hintSentence": "Η ___ είναι αντίθετη της πρόσθεσης.",
       "feedbackRule": "αφαίρεσ- + -η.",
       "audioFile": "audio/afairesi.mp3",
       "morphemes": {
@@ -12637,7 +12637,7 @@
       "word": "άρχοντας",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "οδηγούμε. Ώε το αυτοκίνητο πάμε ___",
+      "hintSentence": "Έμαθα τη λέξη ___ σήμερα.",
       "feedbackRule": "άρχοντ- + -ας.",
       "audioFile": "audio/archontas.mp3",
       "morphemes": {
@@ -12653,7 +12653,7 @@
       "word": "αμάξι",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "γρήγορα απί τη μία πίλη στην άλλη ___.",
+      "hintSentence": "Η ___ είναι στο κείμενο.",
       "feedbackRule": "αμάξ- + -ι.",
       "audioFile": "audio/amaxi.mp3",
       "morphemes": {
@@ -12669,7 +12669,7 @@
       "word": "αυτοκινητάκι",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "γρήγορα απί τη μία πίλη στην άλλη ___.",
+      "hintSentence": "Βλέπω ___ στην εικόνα.",
       "feedbackRule": "αυτοκινητάκ- + -ι.",
       "audioFile": "audio/aytokinitaki.mp3",
       "morphemes": {
@@ -12686,7 +12686,7 @@
       "word": "αφετηρία",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "Στο σχολείο, μιλάμε για ___.",
+      "hintSentence": "Ξεκινήσαμε τον αγώνα στην ___.",
       "feedbackRule": "αφετηρ- + -ία.",
       "audioFile": "audio/afetiria.mp3",
       "morphemes": {
@@ -12703,7 +12703,7 @@
       "word": "τέρμα",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "στην κουζίνα να φάει ___.",
+      "hintSentence": "Στο βιβλίο διάβασα για ___.",
       "feedbackRule": "τέρμ- + -α.",
       "audioFile": "audio/terma.mp3",
       "morphemes": {
@@ -12719,7 +12719,7 @@
       "word": "παρατώ",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "αλλού και ίχι σ’ αυτί που κάνει ___.",
+      "hintSentence": "Μπορώ να ___ καλά.",
       "feedbackRule": "Προσοχή στον τόνο.",
       "audioFile": "audio/parato.mp3",
       "morphemes": {
@@ -12735,7 +12735,7 @@
       "word": "ερχομίς",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "ανακοινώνει ή διαφημίζει κάτι ___.",
+      "hintSentence": "Η λέξη της ημέρας είναι ___.",
       "feedbackRule": "Προσοχή στον τόνο.",
       "audioFile": "audio/erchomis.mp3",
       "morphemes": {
@@ -12751,7 +12751,7 @@
       "word": "αναχώρηση",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "ανακοινώνει ή διαφημίζει κάτι ___.",
+      "hintSentence": "Ο φίλος μου είναι ___.",
       "feedbackRule": "αναχώρησ- + -η.",
       "audioFile": "audio/anachorisi.mp3",
       "morphemes": {
@@ -12768,7 +12768,7 @@
       "word": "ατμίς",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "πια ή γιατί δε χρησιμεύει σε τίποτα ___.",
+      "hintSentence": "Διάβασα την πρόταση με τη λέξη ___.",
       "feedbackRule": "Προσοχή στον τόνο.",
       "audioFile": "audio/atmis.mp3",
       "morphemes": {
@@ -12783,7 +12783,7 @@
       "word": "άχνα",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "πια ή γιατί δε χρησιμεύει σε τίποτα ___.",
+      "hintSentence": "Γράφω τη λέξη ___ στο τετράδιο.",
       "feedbackRule": "άχν- + -α.",
       "audioFile": "audio/achna.mp3",
       "morphemes": {
@@ -12798,7 +12798,7 @@
       "word": "χρήσιμος",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "είναι άχρωμο. Δα τζάμια, το νερί, οι ___",
+      "hintSentence": "Φαίνεται ___ στο μάθημα.",
       "feedbackRule": "χρήσιμ- + -ος.",
       "audioFile": "audio/chrisimos.mp3",
       "morphemes": {
@@ -12814,7 +12814,7 @@
       "word": "χρησιμεύω",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "είναι άχρωμο. Δα τζάμια, το νερί, οι ___",
+      "hintSentence": "Μπορώ να ___ καλά.",
       "feedbackRule": "χρησιμεύ- + -ω.",
       "audioFile": "audio/chrisimeyo.mp3",
       "morphemes": {
@@ -12830,7 +12830,7 @@
       "word": "χλωμίς",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "το κριιαριού. δίναι ξερά χίρτα που ___",
+      "hintSentence": "Στην άσκηση γράφουμε τη λέξη ___.",
       "feedbackRule": "Προσοχή στον τόνο.",
       "audioFile": "audio/chlomis.mp3",
       "morphemes": {
@@ -12847,7 +12847,7 @@
       "word": "αφρίλουτρο",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "χαρά, λύπη ή επιιυμία ___.",
+      "hintSentence": "Είναι πολύ ___ σήμερα.",
       "feedbackRule": "αφρίλουτρ- + -ο.",
       "audioFile": "audio/afriloutro.mp3",
       "morphemes": {
@@ -12863,7 +12863,7 @@
       "word": "βαιύς",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "παίξει ποδίσφαιρο. Δον υποχρέωσε ___",
+      "hintSentence": "Η πρόταση χρειάζεται τη λέξη ___.",
       "feedbackRule": "Προσοχή στον τόνο.",
       "audioFile": "audio/vaiys.mp3",
       "morphemes": {
@@ -12879,7 +12879,7 @@
       "word": "βαγίνι",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "παίξει ποδίσφαιρο. Δον υποχρέωσε ___",
+      "hintSentence": "Γράφω τη λέξη ___ στο τετράδιο.",
       "feedbackRule": "βαγίν- + -ι.",
       "audioFile": "audio/vagini.mp3",
       "morphemes": {
@@ -12910,7 +12910,7 @@
       "word": "σκούρο",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "μεταφέρονται οι επιβάτες ___.",
+      "hintSentence": "Ο φίλος μου είναι ___.",
       "feedbackRule": "σκούρ- + -ο.",
       "audioFile": "audio/skouro.mp3",
       "morphemes": {
@@ -12927,7 +12927,7 @@
       "word": "ενδιαφέρων",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "που κινείται με κουπιά ή με μηχανή ___.",
+      "hintSentence": "Διάβασα την πρόταση με τη λέξη ___.",
       "feedbackRule": "ενδιαφέρ- + -ων.",
       "audioFile": "audio/endiaferon.mp3",
       "morphemes": {
@@ -12944,7 +12944,7 @@
       "word": "βαρύς",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "δύσκολο να το σηκώσουμε ___.",
+      "hintSentence": "Η πρόταση χρειάζεται τη λέξη ___.",
       "feedbackRule": "Προσοχή στον τόνο.",
       "audioFile": "audio/varys.mp3",
       "morphemes": {
@@ -12960,7 +12960,7 @@
       "word": "ελαφρύς",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "ένα πολύ βαρύ παλτί ___.",
+      "hintSentence": "Στο τετράδιο έγραψα τη λέξη ___.",
       "feedbackRule": "Προσοχή στον τόνο.",
       "audioFile": "audio/elafrys.mp3",
       "morphemes": {
@@ -12976,7 +12976,7 @@
       "word": "ζεστίς",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "δύσκολη και κουραστική ___.",
+      "hintSentence": "Η λέξη της ημέρας είναι ___.",
       "feedbackRule": "Προσοχή στον τόνο.",
       "audioFile": "audio/zestis.mp3",
       "morphemes": {
@@ -12991,7 +12991,7 @@
       "word": "δύσκολος",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "«Δι βάρος έχεις Αιηνά;» ρώτησε ο ___",
+      "hintSentence": "Ο φίλος μου είναι ___.",
       "feedbackRule": "δύσκολ- + -ος.",
       "audioFile": "audio/dyskolos.mp3",
       "morphemes": {
@@ -13007,7 +13007,7 @@
       "word": "εύκολος",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "«Δι βάρος έχεις Αιηνά;» ρώτησε ο ___",
+      "hintSentence": "Είναι πολύ ___ σήμερα.",
       "feedbackRule": "εύκολ- + -ος.",
       "audioFile": "audio/eykolos.mp3",
       "morphemes": {
@@ -13023,7 +13023,7 @@
       "word": "σοβαρίς",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "«Δι βάρος έχεις Αιηνά;» ρώτησε ο ___",
+      "hintSentence": "Η πρόταση χρειάζεται τη λέξη ___.",
       "feedbackRule": "Προσοχή στον τόνο.",
       "audioFile": "audio/sovaris.mp3",
       "morphemes": {
@@ -13038,7 +13038,7 @@
       "word": "βασανίζω",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "βάση του γράφει τ’ ίνομά της. δκεί ___",
+      "hintSentence": "Στην τάξη, ___ ήρεμα.",
       "feedbackRule": "βασανίζ- + -ω.",
       "audioFile": "audio/vasanizo.mp3",
       "morphemes": {
@@ -13055,7 +13055,7 @@
       "word": "κρατώ",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "πίνακας στον τοίχο. Δο καρφί που ___",
+      "hintSentence": "Χθες ___ στον κήπο.",
       "feedbackRule": "Προσοχή στον τόνο.",
       "audioFile": "audio/krato.mp3",
       "morphemes": {
@@ -13071,7 +13071,7 @@
       "word": "βατραχοπέδιλο",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "γούνα της είναι ροζ ___.",
+      "hintSentence": "Ο φίλος μου είναι ___.",
       "feedbackRule": "βατραχοπέδιλ- + -ο.",
       "audioFile": "audio/vatrachopedilo.mp3",
       "morphemes": {
@@ -13087,7 +13087,7 @@
       "word": "βαφτίζω",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "άσπρο» είπε η κυρία Ώαργαρίτα ___.",
+      "hintSentence": "Σήμερα στο σπίτι θα ___.",
       "feedbackRule": "βαφτίζ- + -ω.",
       "audioFile": "audio/vaftizo.mp3",
       "morphemes": {
@@ -13104,7 +13104,7 @@
       "word": "βάζω",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "σπυράκι στο μάγουλο ___.",
+      "hintSentence": "Μπορώ να ___ καλά.",
       "feedbackRule": "βάζ- + -ω.",
       "audioFile": "audio/vazo.mp3",
       "morphemes": {
@@ -13120,7 +13120,7 @@
       "word": "βέβαιος",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "πηγαίνεις έξω απί εκεί που ήσουν ___.",
+      "hintSentence": "Φαίνεται ___ στο μάθημα.",
       "feedbackRule": "βέβαι- + -ος.",
       "audioFile": "audio/vevaios.mp3",
       "morphemes": {
@@ -13135,7 +13135,7 @@
       "word": "μπαίνω",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "βγαίνουν έξω κάιε Σάββατο ___.",
+      "hintSentence": "Στην τάξη, ___ ήρεμα.",
       "feedbackRule": "μπαίν- + -ω.",
       "audioFile": "audio/mpaino.mp3",
       "morphemes": {
@@ -13151,7 +13151,7 @@
       "word": "κρύβομαι",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "το έχουν βέβαιο. Δο έχουν σίγουρο ___.",
+      "hintSentence": "Βλέπω ___ στην εικόνα.",
       "feedbackRule": "κρύβομ- + -αι.",
       "audioFile": "audio/kryvomai.mp3",
       "morphemes": {
@@ -13167,7 +13167,7 @@
       "word": "νικώ",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "το έχουν βέβαιο. Δο έχουν σίγουρο ___.",
+      "hintSentence": "Κάθε μέρα ___ στο σχολείο.",
       "feedbackRule": "Προσοχή στον τόνο.",
       "audioFile": "audio/niko.mp3",
       "morphemes": {
@@ -13183,7 +13183,7 @@
       "word": "χάνω",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "το έχουν βέβαιο. Δο έχουν σίγουρο ___.",
+      "hintSentence": "Σήμερα στο σπίτι θα ___.",
       "feedbackRule": "χάν- + -ω.",
       "audioFile": "audio/chano.mp3",
       "morphemes": {
@@ -13199,7 +13199,7 @@
       "word": "σίγουρος",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "έριεις στο πάρτι μου το Σάββατο;» ___",
+      "hintSentence": "Φαίνεται ___ στο μάθημα.",
       "feedbackRule": "σίγουρ- + -ος.",
       "audioFile": "audio/sigouros.mp3",
       "morphemes": {
@@ -13215,7 +13215,7 @@
       "word": "βελίνα",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "πνδιάνοι στις μάχες. Δο βέλος είναι ___",
+      "hintSentence": "Έμαθα τη λέξη ___ σήμερα.",
       "feedbackRule": "βελίν- + -α.",
       "audioFile": "audio/velina.mp3",
       "morphemes": {
@@ -13231,7 +13231,7 @@
       "word": "βήμα",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "πολύ και έχει πυρετί ___.",
+      "hintSentence": "Η ___ είναι στο κείμενο.",
       "feedbackRule": "βήμ- + -α.",
       "audioFile": "audio/vima.mp3",
       "morphemes": {
@@ -13248,7 +13248,7 @@
       "word": "βήχω",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "πολύ και έχει πυρετί ___.",
+      "hintSentence": "Χθες ___ στον κήπο.",
       "feedbackRule": "βήχ- + -ω.",
       "audioFile": "audio/vicho.mp3",
       "morphemes": {
@@ -13265,7 +13265,7 @@
       "word": "ζίρι",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "έχεις πολύ χρίνο. Δο κάνεις με ___",
+      "hintSentence": "Γράφω τη λέξη ___ στο τετράδιο.",
       "feedbackRule": "ζίρ- + -ι.",
       "audioFile": "audio/ziri.mp3",
       "morphemes": {
@@ -13278,14 +13278,14 @@
     },
     {
       "id": "lx-g3-0053",
-      "word": "βιαστικίς",
+      "word": "βιαστικός",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "Στην τάξη, γράφουμε τη λέξη που σημαίνει ___.",
+      "hintSentence": "Έτρεξα ___ για να φτάσω στο σχολείο.",
       "feedbackRule": "Προσοχή στον τόνο.",
-      "audioFile": "audio/viastikis.mp3",
+      "audioFile": "audio/viastikos.mp3",
       "morphemes": {
-        "root": "βιαστικίς",
+        "root": "βιαστικός",
         "suffix": ""
       },
       "difficulty": 2,
@@ -13297,7 +13297,7 @@
       "word": "ξεβιδώνω",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "ούτε στον πληιυντικί αριιμί.  Άες ντιβιντί ___",
+      "hintSentence": "Με το κατσαβίδι ___ την πόρτα.",
       "feedbackRule": "ξεβιδών- + -ω.",
       "audioFile": "audio/xevidono.mp3",
       "morphemes": {
@@ -13314,7 +13314,7 @@
       "word": "βίδα",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "ούτε στον πληιυντικί αριιμί.  Άες ντιβιντί ___",
+      "hintSentence": "Κούμπωσα τη ___ στο τραπέζι.",
       "feedbackRule": "βίδ- + -α.",
       "audioFile": "audio/vida.mp3",
       "morphemes": {
@@ -13330,7 +13330,7 @@
       "word": "βιβλιοπώλης",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "ίπου βάζουμε βιβλία ___.",
+      "hintSentence": "Διάβασα την πρόταση με τη λέξη ___.",
       "feedbackRule": "βιβλιοπώλ- + -ης.",
       "audioFile": "audio/vivliopolis.mp3",
       "morphemes": {
@@ -13346,7 +13346,7 @@
       "word": "βλάπτω",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "καλά, έχει κάποια βλάβη. Ίια να ___",
+      "hintSentence": "Χθες ___ στον κήπο.",
       "feedbackRule": "βλάπτ- + -ω.",
       "audioFile": "audio/vlapto.mp3",
       "morphemes": {
@@ -13363,7 +13363,7 @@
       "word": "βλάκας",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "καταλάβεις τι ή ποιος είναι ___.",
+      "hintSentence": "Γράφω τη λέξη ___ στο τετράδιο.",
       "feedbackRule": "βλάκ- + -ας.",
       "audioFile": "audio/vlakas.mp3",
       "morphemes": {
@@ -13379,7 +13379,7 @@
       "word": "βλάβη",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "καταλάβεις τι ή ποιος είναι ___.",
+      "hintSentence": "Μου φάνηκε ___ η ιδέα.",
       "feedbackRule": "βλάβ- + -η.",
       "audioFile": "audio/vlavi.mp3",
       "morphemes": {
@@ -13396,7 +13396,7 @@
       "word": "βλέπω",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "καταλάβεις τι ή ποιος είναι ___.",
+      "hintSentence": "Μπορώ να ___ καλά.",
       "feedbackRule": "βλέπ- + -ω.",
       "audioFile": "audio/vlepo.mp3",
       "morphemes": {
@@ -13413,7 +13413,7 @@
       "word": "ματιά",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "καλύπτει τα ___ μας. Ίύρω απί τα",
+      "hintSentence": "Έμαθα τη λέξη ___ σήμερα.",
       "feedbackRule": "ματ- + -ιά.",
       "audioFile": "audio/matia.mp3",
       "morphemes": {
@@ -13429,7 +13429,7 @@
       "word": "βλέφαρο",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "καλύπτει τα μάτια μας. Ίύρω απί τα ___",
+      "hintSentence": "Η απάντηση ήταν ___.",
       "feedbackRule": "βλέφαρ- + -ο.",
       "audioFile": "audio/vlefaro.mp3",
       "morphemes": {
@@ -13445,7 +13445,7 @@
       "word": "βίδι",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "ίταν ο ∫ώστας τής τράβηξε τα μαλλιά ___.",
+      "hintSentence": "Βλέπω ___ στην εικόνα.",
       "feedbackRule": "βίδ- + -ι.",
       "audioFile": "audio/vidi.mp3",
       "morphemes": {
@@ -13460,7 +13460,7 @@
       "word": "βοήιεια",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "βολίδα, τρέχει πάρα πολύ γρήγορα ___.",
+      "hintSentence": "Γράφω τη λέξη ___ στο τετράδιο.",
       "feedbackRule": "βοήιει- + -α.",
       "audioFile": "audio/voiieia.mp3",
       "morphemes": {
@@ -13474,14 +13474,14 @@
     },
     {
       "id": "lx-g3-0065",
-      "word": "αναπαυτικίς",
+      "word": "αναπαυτικός",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "Στην τάξη, γράφουμε τη λέξη που σημαίνει ___.",
+      "hintSentence": "Εκεί που κάθονται ___, συζητούν ήρεμα.",
       "feedbackRule": "Προσοχή στον τόνο.",
-      "audioFile": "audio/anapaytikis.mp3",
+      "audioFile": "audio/anapaytikos.mp3",
       "morphemes": {
-        "root": "αναπαυτικίς",
+        "root": "αναπαυτικός",
         "suffix": ""
       },
       "difficulty": 2,
@@ -13494,7 +13494,7 @@
       "word": "άβολος",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "Με αυτή τη λέξη ονομάζουμε κάτι γύρω μας: ___.",
+      "hintSentence": "Ήταν ___ στη νέα καρέκλα.",
       "feedbackRule": "άβολ- + -ος.",
       "audioFile": "audio/avolos.mp3",
       "morphemes": {
@@ -13510,7 +13510,7 @@
       "word": "βίμβα",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "βοήιεια για να βρει τη Pοζαλία; ___",
+      "hintSentence": "Έμαθα τη λέξη ___ σήμερα.",
       "feedbackRule": "βίμβ- + -α.",
       "audioFile": "audio/vimva.mp3",
       "morphemes": {
@@ -13526,7 +13526,7 @@
       "word": "νοτιάς",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "πυξίδα. μρίσκεται αριστερά μας, ίταν ___",
+      "hintSentence": "Η ___ είναι στο κείμενο.",
       "feedbackRule": "Προσοχή στον τόνο.",
       "audioFile": "audio/notias.mp3",
       "morphemes": {
@@ -13541,7 +13541,7 @@
       "word": "νίτος",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "βίσκουν. Ίια βοηιί του έχει ένα ___",
+      "hintSentence": "Μου φάνηκε ___ η ιδέα.",
       "feedbackRule": "νίτ- + -ος.",
       "audioFile": "audio/nitos.mp3",
       "morphemes": {
@@ -13557,7 +13557,7 @@
       "word": "βίσκω",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "ιεραπεύουν διάφορες αρρώστιες ___.",
+      "hintSentence": "Κάθε μέρα ___ στο σχολείο.",
       "feedbackRule": "βίσκ- + -ω.",
       "audioFile": "audio/visko.mp3",
       "morphemes": {
@@ -13574,7 +13574,7 @@
       "word": "βοσκίς",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "ιεραπεύουν διάφορες αρρώστιες ___.",
+      "hintSentence": "Διάβασα την πρόταση με τη λέξη ___.",
       "feedbackRule": "Προσοχή στον τόνο.",
       "audioFile": "audio/voskis.mp3",
       "morphemes": {
@@ -13590,7 +13590,7 @@
       "word": "βυιίζομαι",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "μπει κάτω απί το νερί ___.",
+      "hintSentence": "Μιλήσαμε για ___ στην τάξη.",
       "feedbackRule": "βυιίζομ- + -αι.",
       "audioFile": "audio/vyiizomai.mp3",
       "morphemes": {
@@ -13606,7 +13606,7 @@
       "word": "βυιίζω",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "δεν περνάει πια τίποτα απί μέσα του ___.",
+      "hintSentence": "Θέλω να ___ μαζί σου.",
       "feedbackRule": "βυιίζ- + -ω.",
       "audioFile": "audio/vyiizo.mp3",
       "morphemes": {
@@ -13622,7 +13622,7 @@
       "word": "οδοντίβουρτσα",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "καιαρίζουμε τα παπούτσια μας ___.",
+      "hintSentence": "Η ___ είναι στο κείμενο.",
       "feedbackRule": "οδοντίβουρτσ- + -α.",
       "audioFile": "audio/odontivourtsa.mp3",
       "morphemes": {
@@ -13638,7 +13638,7 @@
       "word": "βούρτσα",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "κατσίκας κι έχει πολύ λίπος. Ώε το ___",
+      "hintSentence": "Βλέπω ___ στην εικόνα.",
       "feedbackRule": "βούρτσ- + -α.",
       "audioFile": "audio/vourtsa.mp3",
       "morphemes": {
@@ -13655,7 +13655,7 @@
       "word": "βουτώ",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "κατσίκας κι έχει πολύ λίπος. Ώε το ___",
+      "hintSentence": "Κάθε μέρα ___ στο σχολείο.",
       "feedbackRule": "Προσοχή στον τόνο.",
       "audioFile": "audio/vouto.mp3",
       "morphemes": {
@@ -13672,7 +13672,7 @@
       "word": "μακροβούτι",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "ήλιου και τελειώνει τα μεσάνυχτα ___.",
+      "hintSentence": "Στο βιβλίο διάβασα για ___.",
       "feedbackRule": "μακροβούτ- + -ι.",
       "audioFile": "audio/makrovouti.mp3",
       "morphemes": {
@@ -13689,7 +13689,7 @@
       "word": "βράδυ",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "ήλιου και τελειώνει τα μεσάνυχτα ___.",
+      "hintSentence": "Στο τετράδιο έγραψα τη λέξη ___.",
       "feedbackRule": "Προσοχή στον τόνο.",
       "audioFile": "audio/vady.mp3",
       "morphemes": {
@@ -13706,7 +13706,7 @@
       "word": "πρωί",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "έφαγε βραδινίστο σπίτι ___.",
+      "hintSentence": "Έμαθα τη λέξη ___ σήμερα.",
       "feedbackRule": "πρω- + -ί.",
       "audioFile": "audio/proi.mp3",
       "morphemes": {
@@ -13722,7 +13722,7 @@
       "word": "βραχνίς",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "∫ώστα! ¶ώς βράχνιασες έτσι; ¶ιες ___",
+      "hintSentence": "Στην άσκηση γράφουμε τη λέξη ___.",
       "feedbackRule": "Προσοχή στον τόνο.",
       "audioFile": "audio/vrachnis.mp3",
       "morphemes": {
@@ -13737,7 +13737,7 @@
       "word": "βρύση",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "βρήκαν τη ƒοζαλία στην αποιήκη ___.",
+      "hintSentence": "Είναι πολύ ___ σήμερα.",
       "feedbackRule": "βρύσ- + -η.",
       "audioFile": "audio/vrysi.mp3",
       "morphemes": {
@@ -13754,7 +13754,7 @@
       "word": "βρισιά",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "βρήκαν τη ƒοζαλία στην αποιήκη ___.",
+      "hintSentence": "Γράφω τη λέξη ___ στο τετράδιο.",
       "feedbackRule": "βρισ- + -ιά.",
       "audioFile": "audio/vrisia.mp3",
       "morphemes": {
@@ -13770,7 +13770,7 @@
       "word": "βρίζω",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "βρήκαν τη ƒοζαλία στην αποιήκη ___.",
+      "hintSentence": "Σήμερα στο σπίτι θα ___.",
       "feedbackRule": "βρίζ- + -ω.",
       "audioFile": "audio/vrizo.mp3",
       "morphemes": {
@@ -13787,7 +13787,7 @@
       "word": "καιαριίτητα",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "βρίμικο, είναι γεμάτο βρομιές ___.",
+      "hintSentence": "Μιλήσαμε για ___ στην τάξη.",
       "feedbackRule": "καιαριίτητ- + -α.",
       "audioFile": "audio/kaiariitita.mp3",
       "morphemes": {
@@ -13803,7 +13803,7 @@
       "word": "λερωμένος",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "ρούχα του, ίταν παίζει ποδίσφαιρο ___.",
+      "hintSentence": "Ο φίλος μου είναι ___.",
       "feedbackRule": "λερωμέν- + -ος.",
       "audioFile": "audio/leromenos.mp3",
       "morphemes": {
@@ -13820,7 +13820,7 @@
       "word": "λερώνω",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "∫ώστα;» είπε η κυρία Ώαργαρίτα. ¶ώς ___",
+      "hintSentence": "Στην τάξη, ___ ήρεμα.",
       "feedbackRule": "λερών- + -ω.",
       "audioFile": "audio/lerono.mp3",
       "morphemes": {
@@ -13836,7 +13836,7 @@
       "word": "καιαρίζω",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "∫ώστα;» είπε η κυρία Ώαργαρίτα. ¶ώς ___",
+      "hintSentence": "Χθες ___ στον κήπο.",
       "feedbackRule": "καιαρίζ- + -ω.",
       "audioFile": "audio/kaiarizo.mp3",
       "morphemes": {
@@ -13852,7 +13852,7 @@
       "word": "λερώνομαι",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "βροντές. μροντές είναι ο δυνατοί ___",
+      "hintSentence": "Γράφω τη λέξη ___ στο τετράδιο.",
       "feedbackRule": "λερώνομ- + -αι.",
       "audioFile": "audio/leronomai.mp3",
       "morphemes": {
@@ -13869,7 +13869,7 @@
       "word": "βρίμικος",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "βροντές. μροντές είναι ο δυνατοί ___",
+      "hintSentence": "Μου φάνηκε ___ η ιδέα.",
       "feedbackRule": "βρίμικ- + -ος.",
       "audioFile": "audio/vrimikos.mp3",
       "morphemes": {
@@ -13885,7 +13885,7 @@
       "word": "βρομιά",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "βροντές. μροντές είναι ο δυνατοί ___",
+      "hintSentence": "Μιλήσαμε για ___ στην τάξη.",
       "feedbackRule": "βρομ- + -ιά.",
       "audioFile": "audio/vromia.mp3",
       "morphemes": {
@@ -13901,7 +13901,7 @@
       "word": "κοιτάζω",
       "grade": 4,
       "axis": "K",
-      "hintSentence": "Με αυτό το ρήμα λέμε τι κάνουμε: ___.",
+      "hintSentence": "___ την εικόνα στο βιβλίο.",
       "feedbackRule": "κοιτάζ- + -ω.",
       "audioFile": "audio/koitazo.mp3",
       "morphemes": {
@@ -13917,7 +13917,7 @@
       "word": "λιμενίσκος",
       "grade": 4,
       "axis": "K",
-      "hintSentence": "Στην τάξη, γράφουμε τη λέξη που σημαίνει ___.",
+      "hintSentence": "Το ψαράδικο είναι στον ___.",
       "feedbackRule": "λιμενίσκ- + -ος.",
       "audioFile": "audio/limeniskos.mp3",
       "morphemes": {
@@ -13932,7 +13932,7 @@
       "word": "ελληνιστικό",
       "grade": 4,
       "axis": "K",
-      "hintSentence": "Με αυτή τη λέξη ονομάζουμε κάτι γύρω μας: ___.",
+      "hintSentence": "Μάθαμε για το ___ κείμενο.",
       "feedbackRule": "ελληνιστικ- + -ό.",
       "audioFile": "audio/ellinistiko.mp3",
       "morphemes": {
@@ -13948,7 +13948,7 @@
       "word": "λόγιος",
       "grade": 4,
       "axis": "K",
-      "hintSentence": "Στο σχολείο, μιλάμε για ___.",
+      "hintSentence": "Ο ___ έγραψε πολλά βιβλία.",
       "feedbackRule": "λόγι- + -ος.",
       "audioFile": "audio/logios.mp3",
       "morphemes": {
@@ -13964,7 +13964,7 @@
       "word": "Συντομογραφίες",
       "grade": 4,
       "axis": "K",
-      "hintSentence": "Στην τάξη, γράφουμε τη λέξη που σημαίνει ___.",
+      "hintSentence": "Μάθαμε ___ στο μάθημα των ελληνικών.",
       "feedbackRule": "Συντομογραφί- + -ες.",
       "audioFile": "audio/syntomografies.mp3",
       "morphemes": {
@@ -14032,7 +14032,7 @@
       "word": "ανακοίνωση",
       "grade": 4,
       "axis": "K",
-      "hintSentence": "Με αυτή τη λέξη ονομάζουμε κάτι γύρω μας: ___.",
+      "hintSentence": "Η ___ στην τάξη ήταν για την εκδρομή.",
       "feedbackRule": "ανακοίνωσ- + -η.",
       "audioFile": "audio/anakoinosi.mp3",
       "morphemes": {
@@ -14049,7 +14049,7 @@
       "word": "αγέλη",
       "grade": 4,
       "axis": "K",
-      "hintSentence": "Στο σχολείο, μιλάμε για ___.",
+      "hintSentence": "Μια ___ προβάτων έβοσκε στο βουνό.",
       "feedbackRule": "αγέλ- + -η.",
       "audioFile": "audio/ageli.mp3",
       "morphemes": {
@@ -14135,7 +14135,7 @@
       "word": "ανεπιβεβαίωτος",
       "grade": 4,
       "axis": "K",
-      "hintSentence": "Με αυτή τη λέξη ονομάζουμε κάτι γύρω μας: ___.",
+      "hintSentence": "Η πληροφορία είναι ακόμα ___.",
       "feedbackRule": "ανεπιβεβαίωτ- + -ος.",
       "audioFile": "audio/anepivevaiotos.mp3",
       "morphemes": {
@@ -14167,7 +14167,7 @@
       "word": "αγορά",
       "grade": 4,
       "axis": "K",
-      "hintSentence": "Η ___ των",
+      "hintSentence": "Πήγαμε στην ___ για ψωμί.",
       "feedbackRule": "αγορ- + -ά.",
       "audioFile": "audio/agora.mp3",
       "morphemes": {
@@ -14201,7 +14201,7 @@
       "word": "αγορεύω",
       "grade": 4,
       "axis": "K",
-      "hintSentence": "Ο δικηγόρος αγόρευε ___",
+      "hintSentence": "Ο δικηγόρος ___ στο δικαστήριο.",
       "feedbackRule": "αγορεύ- + -ω.",
       "audioFile": "audio/agoreyo.mp3",
       "morphemes": {
@@ -14219,7 +14219,7 @@
       "word": "αγροίκος",
       "grade": 4,
       "axis": "K",
-      "hintSentence": "Στην πρόταση μπαίνει λέξη που περιγράφει: ___.",
+      "hintSentence": "Ο ήχος του κινητού φάνηκε ___.",
       "feedbackRule": "αγροίκ- + -ος.",
       "audioFile": "audio/agroikos.mp3",
       "morphemes": {
@@ -14251,7 +14251,7 @@
       "word": "αγρός",
       "grade": 4,
       "axis": "K",
-      "hintSentence": "Στο σχολείο, μιλάμε για ___.",
+      "hintSentence": "Ο παππούς δούλεψε στον ___.",
       "feedbackRule": "Προσοχή στον τόνο.",
       "audioFile": "audio/agros.mp3",
       "morphemes": {
@@ -14284,7 +14284,7 @@
       "word": "αγωγή",
       "grade": 4,
       "axis": "K",
-      "hintSentence": "Με αυτή τη λέξη ονομάζουμε κάτι γύρω μας: ___.",
+      "hintSentence": "Έχει καλή ___ και σεβασμό.",
       "feedbackRule": "Προσοχή στον τόνο.",
       "audioFile": "audio/agogi.mp3",
       "morphemes": {
@@ -14318,7 +14318,7 @@
       "word": "υδαταγωγός",
       "grade": 4,
       "axis": "K",
-      "hintSentence": "Στην τάξη, γράφουμε τη λέξη που σημαίνει ___.",
+      "hintSentence": "Το νερό περνά από τον ___.",
       "feedbackRule": "Προσοχή στον τόνο.",
       "audioFile": "audio/ydatagogos.mp3",
       "morphemes": {
@@ -14334,7 +14334,7 @@
       "word": "άδεια",
       "grade": 4,
       "axis": "K",
-      "hintSentence": "Έβγαλε ___",
+      "hintSentence": "Βλέπω ___ στην εικόνα.",
       "feedbackRule": "άδει- + -α.",
       "audioFile": "audio/adeia.mp3",
       "morphemes": {
@@ -14351,7 +14351,7 @@
       "word": "εκπαιδευτική",
       "grade": 4,
       "axis": "K",
-      "hintSentence": "Στο σχολείο, μιλάμε για ___.",
+      "hintSentence": "Πήγαμε σε ___ εκδρομή.",
       "feedbackRule": "Προσοχή στον τόνο.",
       "audioFile": "audio/ekpaideytiki.mp3",
       "morphemes": {
@@ -14367,7 +14367,7 @@
       "word": "αδέξιος",
       "grade": 4,
       "axis": "K",
-      "hintSentence": "Στην πρόταση μπαίνει λέξη που περιγράφει: ___.",
+      "hintSentence": "Ήμουν ___ και έσπασα το ποτήρι.",
       "feedbackRule": "αδέξι- + -ος.",
       "audioFile": "audio/adexios.mp3",
       "morphemes": {
@@ -14382,7 +14382,7 @@
       "word": "χάνοντας",
       "grade": 4,
       "axis": "K",
-      "hintSentence": "Με αυτή τη λέξη ονομάζουμε κάτι γύρω μας: ___.",
+      "hintSentence": "___ χρόνο, δεν προλάβαμε.",
       "feedbackRule": "χάνοντ- + -ας.",
       "audioFile": "audio/chanontas.mp3",
       "morphemes": {
@@ -14432,7 +14432,7 @@
       "word": "αδιάκοπα",
       "grade": 4,
       "axis": "K",
-      "hintSentence": "Με αυτή τη λέξη ονομάζουμε κάτι γύρω μας: ___.",
+      "hintSentence": "Βρέχει ___ από το πρωί.",
       "feedbackRule": "αδιάκοπ- + -α.",
       "audioFile": "audio/adiakopa.mp3",
       "morphemes": {
@@ -14463,7 +14463,7 @@
       "word": "μετριοπάθεια",
       "grade": 4,
       "axis": "K",
-      "hintSentence": "Στην τάξη, γράφουμε τη λέξη που σημαίνει ___.",
+      "hintSentence": "Έδειξε ___ στον αντίπαλο.",
       "feedbackRule": "μετριοπάθει- + -α.",
       "audioFile": "audio/metriopatheia.mp3",
       "morphemes": {
@@ -14514,7 +14514,7 @@
       "word": "αδίστακτα",
       "grade": 4,
       "axis": "K",
-      "hintSentence": "Στην τάξη, γράφουμε τη λέξη που σημαίνει ___.",
+      "hintSentence": "Λειτούργησε ___ για το καλό όλων.",
       "feedbackRule": "αδίστακτ- + -α.",
       "audioFile": "audio/adistakta.mp3",
       "morphemes": {
@@ -14546,7 +14546,7 @@
       "word": "για",
       "grade": 4,
       "axis": "K",
-      "hintSentence": "Στην τάξη, γράφουμε τη λέξη που σημαίνει ___.",
+      "hintSentence": "___ τι έκλεισες το παράθυρο;",
       "feedbackRule": "γι- + -α.",
       "audioFile": "audio/gia.mp3",
       "morphemes": {
@@ -14578,7 +14578,7 @@
       "word": "αεροφωτογραφία",
       "grade": 4,
       "axis": "K",
-      "hintSentence": "Με αυτή τη λέξη ονομάζουμε κάτι γύρω μας: ___.",
+      "hintSentence": "Είδαμε την πόλη από ___.",
       "feedbackRule": "αεροφωτογραφ- + -ία.",
       "audioFile": "audio/aerofotografia.mp3",
       "morphemes": {
@@ -14595,7 +14595,7 @@
       "word": "αδίστακτος",
       "grade": 4,
       "axis": "K",
-      "hintSentence": "Στο σχολείο, μιλάμε για ___.",
+      "hintSentence": "Ήταν ___ στη δουλειά του.",
       "feedbackRule": "αδίστακτ- + -ος.",
       "audioFile": "audio/adistaktos.mp3",
       "morphemes": {
@@ -14627,7 +14627,7 @@
       "word": "αήττητος",
       "grade": 4,
       "axis": "K",
-      "hintSentence": "Για να πούμε πώς φαίνεται κάτι, γράφουμε ___.",
+      "hintSentence": "Η ομάδα μας έμεινε ___.",
       "feedbackRule": "αήττητ- + -ος.",
       "audioFile": "audio/aittitos.mp3",
       "morphemes": {
@@ -14643,7 +14643,7 @@
       "word": "αήττητα",
       "grade": 4,
       "axis": "K",
-      "hintSentence": "Στο σχολείο, μιλάμε για ___.",
+      "hintSentence": "Το ___ ήταν μεγάλη του επιτυχία.",
       "feedbackRule": "αήττητ- + -α.",
       "audioFile": "audio/aittita.mp3",
       "morphemes": {
@@ -14659,7 +14659,7 @@
       "word": "άθλος",
       "grade": 4,
       "axis": "K",
-      "hintSentence": "Στην τάξη, γράφουμε τη λέξη που σημαίνει ___.",
+      "hintSentence": "Ο αρχαίος ___ απαιτούσε δύναμη.",
       "feedbackRule": "άθλ- + -ος.",
       "audioFile": "audio/athlos.mp3",
       "morphemes": {
@@ -14692,7 +14692,7 @@
       "word": "αθώος",
       "grade": 4,
       "axis": "K",
-      "hintSentence": "Στο σχολείο, μιλάμε για ___.",
+      "hintSentence": "Αποδείχθηκε ___ για το λάθος.",
       "feedbackRule": "αθώ- + -ος.",
       "audioFile": "audio/athoos.mp3",
       "morphemes": {
@@ -14727,7 +14727,7 @@
       "word": "αίγλη",
       "grade": 4,
       "axis": "K",
-      "hintSentence": "Με αυτή τη λέξη ονομάζουμε κάτι γύρω μας: ___.",
+      "hintSentence": "Η ___ του ήλιου φώτισε την αυλή.",
       "feedbackRule": "αίγλ- + -η.",
       "audioFile": "audio/aigli.mp3",
       "morphemes": {
@@ -14761,7 +14761,7 @@
       "word": "διφορούμενο",
       "grade": 4,
       "axis": "K",
-      "hintSentence": "Στην τάξη, γράφουμε τη λέξη που σημαίνει ___.",
+      "hintSentence": "Το ___ έχει δύο σημασίες.",
       "feedbackRule": "διφορούμεν- + -ο.",
       "audioFile": "audio/diforoumeno.mp3",
       "morphemes": {
@@ -14777,7 +14777,7 @@
       "word": "αίρεση",
       "grade": 4,
       "axis": "K",
-      "hintSentence": "Με αυτή τη λέξη ονομάζουμε κάτι γύρω μας: ___.",
+      "hintSentence": "Η ___ άλλαξε την άποψη του.",
       "feedbackRule": "αίρεσ- + -η.",
       "audioFile": "audio/airesi.mp3",
       "morphemes": {
@@ -14793,7 +14793,7 @@
       "word": "αφαίρεση",
       "grade": 4,
       "axis": "K",
-      "hintSentence": "Στο σχολείο, μιλάμε για ___.",
+      "hintSentence": "Η ___ είναι αντίθετη της πρόσθεσης.",
       "feedbackRule": "αφαίρεσ- + -η.",
       "audioFile": "audio/afairesi.mp3",
       "morphemes": {
@@ -14843,7 +14843,7 @@
       "word": "αιφνιδιάζω",
       "grade": 4,
       "axis": "K",
-      "hintSentence": "Με αυτό το ρήμα λέμε τι κάνουμε: ___.",
+      "hintSentence": "Η έκπληξη με ___.",
       "feedbackRule": "αιφνιδιάζ- + -ω.",
       "audioFile": "audio/aifnidiazo.mp3",
       "morphemes": {
@@ -14895,7 +14895,7 @@
       "word": "ακούσια",
       "grade": 4,
       "axis": "K",
-      "hintSentence": "Στο σχολείο, μιλάμε για ___.",
+      "hintSentence": "Το έκανε ___ και δεν το ήθελε.",
       "feedbackRule": "ακούσι- + -α.",
       "audioFile": "audio/akousia.mp3",
       "morphemes": {
@@ -14911,7 +14911,7 @@
       "word": "ακράδαντος",
       "grade": 4,
       "axis": "K",
-      "hintSentence": "Στην πρόταση μπαίνει λέξη που περιγράφει: ___.",
+      "hintSentence": "Το δέντρο ήταν ___ και δεν έπεφτε.",
       "feedbackRule": "ακράδαντ- + -ος.",
       "audioFile": "audio/akradantos.mp3",
       "morphemes": {
@@ -14927,7 +14927,7 @@
       "word": "ακριβός",
       "grade": 4,
       "axis": "K",
-      "hintSentence": "ακριβά (επίρρ.) ( = ___",
+      "hintSentence": "Φαίνεται ___ στο μάθημα.",
       "feedbackRule": "Προσοχή στον τόνο.",
       "audioFile": "audio/akrivos.mp3",
       "morphemes": {
@@ -14944,7 +14944,7 @@
       "word": "ακρόαση",
       "grade": 4,
       "axis": "K",
-      "hintSentence": "Η ___ της",
+      "hintSentence": "Μου φάνηκε ___ η ιδέα.",
       "feedbackRule": "ακρόασ- + -η.",
       "audioFile": "audio/akroasi.mp3",
       "morphemes": {
@@ -14980,7 +14980,7 @@
       "word": "ακτινίδιο",
       "grade": 4,
       "axis": "K",
-      "hintSentence": "Με αυτή τη λέξη ονομάζουμε κάτι γύρω μας: ___.",
+      "hintSentence": "Το ___ είναι γεμάτο βιταμίνες.",
       "feedbackRule": "ακτινίδ- + -ιο.",
       "audioFile": "audio/aktinidio.mp3",
       "morphemes": {
@@ -15029,7 +15029,7 @@
       "word": "πραγματικότητα",
       "grade": 4,
       "axis": "K",
-      "hintSentence": "Με αυτή τη λέξη ονομάζουμε κάτι γύρω μας: ___.",
+      "hintSentence": "Ζούμε στην ___ κάθε μέρα.",
       "feedbackRule": "πραγματικότητ- + -α.",
       "audioFile": "audio/pragmatikotita.mp3",
       "morphemes": {
@@ -15063,7 +15063,7 @@
       "word": "αλληλοϋποστήριξη",
       "grade": 4,
       "axis": "K",
-      "hintSentence": "Στην τάξη, γράφουμε τη λέξη που σημαίνει ___.",
+      "hintSentence": "Στην ομάδα χρειαζόμαστε ___.",
       "feedbackRule": "αλληλοϋποστήριξ- + -η.",
       "audioFile": "audio/alliloupostirixi.mp3",
       "morphemes": {
@@ -15147,7 +15147,7 @@
       "word": "αμάθεια",
       "grade": 4,
       "axis": "K",
-      "hintSentence": "Στο σχολείο, μιλάμε για ___.",
+      "hintSentence": "Η ___ δεν βοηθά στη μάθηση.",
       "feedbackRule": "αμάθει- + -α.",
       "audioFile": "audio/amatheia.mp3",
       "morphemes": {
@@ -15197,7 +15197,7 @@
       "word": "αμοιβή",
       "grade": 4,
       "axis": "K",
-      "hintSentence": "Στο σχολείο, μιλάμε για ___.",
+      "hintSentence": "Πήρε ___ για τη δουλειά του.",
       "feedbackRule": "Προσοχή στον τόνο.",
       "audioFile": "audio/amoivi.mp3",
       "morphemes": {
@@ -15249,7 +15249,7 @@
       "word": "ανακριτικός",
       "grade": 5,
       "axis": "K",
-      "hintSentence": "Στην τάξη, γράφουμε τη λέξη που σημαίνει ___.",
+      "hintSentence": "Ο δημοσιογράφος ήταν ___.",
       "feedbackRule": "Προσοχή στον τόνο.",
       "audioFile": "audio/anakritikos.mp3",
       "morphemes": {
@@ -15264,7 +15264,7 @@
       "word": "ανακύκλωση",
       "grade": 5,
       "axis": "K",
-      "hintSentence": "Η ___",
+      "hintSentence": "Φαίνεται ___ στο μάθημα.",
       "feedbackRule": "ανακύκλωσ- + -η.",
       "audioFile": "audio/anakyklosi.mp3",
       "morphemes": {
@@ -15282,7 +15282,7 @@
       "word": "αναλφαβητισμός",
       "grade": 5,
       "axis": "K",
-      "hintSentence": "Ο ___",
+      "hintSentence": "Μου φάνηκε ___ η ιδέα.",
       "feedbackRule": "Προσοχή στον τόνο.",
       "audioFile": "audio/analfavitismos.mp3",
       "morphemes": {
@@ -15352,7 +15352,7 @@
       "word": "αμφίβολος",
       "grade": 5,
       "axis": "K",
-      "hintSentence": "Στην τάξη, γράφουμε τη λέξη που σημαίνει ___.",
+      "hintSentence": "Ήμουν ___ για την απάντηση.",
       "feedbackRule": "αμφίβολ- + -ος.",
       "audioFile": "audio/amfivolos.mp3",
       "morphemes": {
@@ -15404,7 +15404,7 @@
       "word": "αναρρωτήριο",
       "grade": 5,
       "axis": "K",
-      "hintSentence": "Στην τάξη, γράφουμε τη λέξη που σημαίνει ___.",
+      "hintSentence": "Ο παππούς πήγε στο ___.",
       "feedbackRule": "αναρρωτήρ- + -ιο.",
       "audioFile": "audio/anarrotirio.mp3",
       "morphemes": {
@@ -15420,7 +15420,7 @@
       "word": "ανασκαφή",
       "grade": 5,
       "axis": "K",
-      "hintSentence": "Με αυτή τη λέξη ονομάζουμε κάτι γύρω μας: ___.",
+      "hintSentence": "Έγινε ___ στην αρχαία πόλη.",
       "feedbackRule": "Προσοχή στον τόνο.",
       "audioFile": "audio/anaskafi.mp3",
       "morphemes": {
@@ -15437,7 +15437,7 @@
       "word": "ανασκαφικός",
       "grade": 5,
       "axis": "K",
-      "hintSentence": "Στο σχολείο, μιλάμε για ___.",
+      "hintSentence": "Βρήκαν ___ ευρήματα.",
       "feedbackRule": "Προσοχή στον τόνο.",
       "audioFile": "audio/anaskafikos.mp3",
       "morphemes": {
@@ -15469,7 +15469,7 @@
       "word": "αναστάσιμος",
       "grade": 5,
       "axis": "K",
-      "hintSentence": "Με αυτή τη λέξη ονομάζουμε κάτι γύρω μας: ___.",
+      "hintSentence": "Το ___ φως φώτισε την εκκλησία.",
       "feedbackRule": "αναστάσιμ- + -ος.",
       "audioFile": "audio/anastasimos.mp3",
       "morphemes": {
@@ -15520,7 +15520,7 @@
       "word": "άναυδος",
       "grade": 5,
       "axis": "K",
-      "hintSentence": "Το πλήθος παρακολουθούσε άναυδο ___",
+      "hintSentence": "Το πλήθος παρακολουθούσε ___ την ομιλία.",
       "feedbackRule": "άναυδ- + -ος.",
       "audioFile": "audio/anaydos.mp3",
       "morphemes": {
@@ -15572,7 +15572,7 @@
       "word": "ανέκφραστος",
       "grade": 5,
       "axis": "K",
-      "hintSentence": "Για να πούμε πώς φαίνεται κάτι, γράφουμε ___.",
+      "hintSentence": "Ήταν ___ μπροστά στην έκπληξη.",
       "feedbackRule": "ανέκφραστ- + -ος.",
       "audioFile": "audio/anekfrastos.mp3",
       "morphemes": {
@@ -15589,7 +15589,7 @@
       "word": "πτυχιούχοι",
       "grade": 5,
       "axis": "K",
-      "hintSentence": "Στο σχολείο, μιλάμε για ___.",
+      "hintSentence": "Οι ___ πήραν τα πτυχία τους.",
       "feedbackRule": "πτυχιούχο- + -ι.",
       "audioFile": "audio/ptychiouchoi.mp3",
       "morphemes": {
@@ -15674,7 +15674,7 @@
       "word": "ανοικοδόμηση",
       "grade": 5,
       "axis": "K",
-      "hintSentence": "Η ___",
+      "hintSentence": "Η απάντηση ήταν ___.",
       "feedbackRule": "ανοικοδόμησ- + -η.",
       "audioFile": "audio/anoikodomisi.mp3",
       "morphemes": {
@@ -15692,7 +15692,7 @@
       "word": "ανόρθωση",
       "grade": 5,
       "axis": "K",
-      "hintSentence": "Στο σχολείο, μιλάμε για ___.",
+      "hintSentence": "Χρειάζεται ___ του κτιρίου.",
       "feedbackRule": "ανόρθωσ- + -η.",
       "audioFile": "audio/anorthosi.mp3",
       "morphemes": {
@@ -15708,7 +15708,7 @@
       "word": "καλή",
       "grade": 5,
       "axis": "K",
-      "hintSentence": "Στην τάξη, γράφουμε τη λέξη που σημαίνει ___.",
+      "hintSentence": "Έκανε ___ δουλειά στο μάθημα.",
       "feedbackRule": "Προσοχή στον τόνο.",
       "audioFile": "audio/kali.mp3",
       "morphemes": {
@@ -15724,7 +15724,7 @@
       "word": "ανοσία",
       "grade": 5,
       "axis": "K",
-      "hintSentence": "Με αυτή τη λέξη ονομάζουμε κάτι γύρω μας: ___.",
+      "hintSentence": "Η ___ προστατεύει τον οργανισμό.",
       "feedbackRule": "ανοσ- + -ία.",
       "audioFile": "audio/anosia.mp3",
       "morphemes": {
@@ -15739,7 +15739,7 @@
       "word": "ανταμοιβή",
       "grade": 5,
       "axis": "K",
-      "hintSentence": "Στο σχολείο, μιλάμε για ___.",
+      "hintSentence": "Πήρε ___ για την προσπάθειά του.",
       "feedbackRule": "Προσοχή στον τόνο.",
       "audioFile": "audio/antamoivi.mp3",
       "morphemes": {
@@ -15755,7 +15755,7 @@
       "word": "αντανάκλαση",
       "grade": 5,
       "axis": "K",
-      "hintSentence": "Στην τάξη, γράφουμε τη λέξη που σημαίνει ___.",
+      "hintSentence": "Το φως κάνει ___ στο νερό.",
       "feedbackRule": "αντανάκλασ- + -η.",
       "audioFile": "audio/antanaklasi.mp3",
       "morphemes": {
@@ -15788,7 +15788,7 @@
       "word": "απεσταλμένος",
       "grade": 5,
       "axis": "K",
-      "hintSentence": "Στο σχολείο, μιλάμε για ___.",
+      "hintSentence": "Ο ___ έφτασε στο σχολείο.",
       "feedbackRule": "απεσταλμέν- + -ος.",
       "audioFile": "audio/apestalmenos.mp3",
       "morphemes": {
@@ -15804,7 +15804,7 @@
       "word": "αντέχω",
       "grade": 5,
       "axis": "K",
-      "hintSentence": "Αντέχει να αντιμετωπίσει ___",
+      "hintSentence": "Δεν μπορώ να ___ άλλο.",
       "feedbackRule": "αντέχ- + -ω.",
       "audioFile": "audio/antecho.mp3",
       "morphemes": {
@@ -15822,7 +15822,7 @@
       "word": "αντήχηση",
       "grade": 5,
       "axis": "K",
-      "hintSentence": "Με αυτή τη λέξη ονομάζουμε κάτι γύρω μας: ___.",
+      "hintSentence": "Η ___ της φωνής του άκουσε παντού.",
       "feedbackRule": "αντήχησ- + -η.",
       "audioFile": "audio/antichisi.mp3",
       "morphemes": {
@@ -15839,7 +15839,7 @@
       "word": "αντίδραση",
       "grade": 5,
       "axis": "K",
-      "hintSentence": "Η ___",
+      "hintSentence": "Η απάντηση ήταν ___.",
       "feedbackRule": "αντίδρασ- + -η.",
       "audioFile": "audio/antidrasi.mp3",
       "morphemes": {
@@ -15908,7 +15908,7 @@
       "word": "αντωνυμία",
       "grade": 5,
       "axis": "K",
-      "hintSentence": "Τις δεικτικές αντωνυμίες τις χρησιμοποιούμε, ___",
+      "hintSentence": "Η λέξη «εγώ» είναι ___.",
       "feedbackRule": "αντωνυμ- + -ία.",
       "audioFile": "audio/antonymia.mp3",
       "morphemes": {
@@ -15925,7 +15925,7 @@
       "word": "ανύπαρκτος",
       "grade": 5,
       "axis": "K",
-      "hintSentence": "Για να πούμε πώς φαίνεται κάτι, γράφουμε ___.",
+      "hintSentence": "Ο μύθος είναι ___.",
       "feedbackRule": "ανύπαρκτ- + -ος.",
       "audioFile": "audio/anyparktos.mp3",
       "morphemes": {
@@ -15942,7 +15942,7 @@
       "word": "άνωση",
       "grade": 5,
       "axis": "K",
-      "hintSentence": "Στο σχολείο, μιλάμε για ___.",
+      "hintSentence": "Το αερόστατο κάνει ___ στον αέρα.",
       "feedbackRule": "άνωσ- + -η.",
       "audioFile": "audio/anosi.mp3",
       "morphemes": {
@@ -16042,7 +16042,7 @@
       "word": "αβάσιμη",
       "grade": 5,
       "axis": "K",
-      "hintSentence": "Στο σχολείο, μιλάμε για ___.",
+      "hintSentence": "Η κατηγορία είναι ___.",
       "feedbackRule": "αβάσιμ- + -η.",
       "audioFile": "audio/avasimi.mp3",
       "morphemes": {
@@ -16058,7 +16058,7 @@
       "word": "άοκνος",
       "grade": 5,
       "axis": "K",
-      "hintSentence": "Στην πρόταση μπαίνει λέξη που περιγράφει: ___.",
+      "hintSentence": "Εργάστηκε ___ όλη μέρα.",
       "feedbackRule": "άοκν- + -ος.",
       "audioFile": "audio/aoknos.mp3",
       "morphemes": {
@@ -16074,7 +16074,7 @@
       "word": "ασαφής",
       "grade": 5,
       "axis": "K",
-      "hintSentence": "Με αυτή τη λέξη ονομάζουμε κάτι γύρω μας: ___.",
+      "hintSentence": "Η οδηγία ήταν ___.",
       "feedbackRule": "ασαφ- + -ής.",
       "audioFile": "audio/asafis.mp3",
       "morphemes": {
@@ -16107,7 +16107,7 @@
       "word": "αόριστα",
       "grade": 5,
       "axis": "K",
-      "hintSentence": "Στην τάξη, γράφουμε τη λέξη που σημαίνει ___.",
+      "hintSentence": "Μίλησε ___ και δεν κατάλαβα.",
       "feedbackRule": "αόριστ- + -α.",
       "audioFile": "audio/aorista.mp3",
       "morphemes": {
@@ -16122,7 +16122,7 @@
       "word": "υποσχέσεις",
       "grade": 5,
       "axis": "K",
-      "hintSentence": "Όταν κάνουμε κάτι, χρησιμοποιούμε το ρήμα ___.",
+      "hintSentence": "Έδωσε ___ ότι θα επιστρέψει.",
       "feedbackRule": "υποσχέσ- + -εις.",
       "audioFile": "audio/yposcheseis.mp3",
       "morphemes": {
@@ -16138,7 +16138,7 @@
       "word": "απάγγειλαν",
       "grade": 5,
       "axis": "K",
-      "hintSentence": "Στο σχολείο, μιλάμε για ___.",
+      "hintSentence": "Οι μαθητές ___ το ποίημα.",
       "feedbackRule": "Προσοχή σε διπλά γράμματα.",
       "audioFile": "audio/apaggeilan.mp3",
       "morphemes": {
@@ -16155,7 +16155,7 @@
       "word": "απαγγελτικός",
       "grade": 5,
       "axis": "K",
-      "hintSentence": "Στην τάξη, γράφουμε τη λέξη που σημαίνει ___.",
+      "hintSentence": "Ο τόνος ήταν ___.",
       "feedbackRule": "Προσοχή σε διπλά γράμματα.",
       "audioFile": "audio/apaggeltikos.mp3",
       "morphemes": {
@@ -16188,7 +16188,7 @@
       "word": "απαισιοδοξία",
       "grade": 5,
       "axis": "K",
-      "hintSentence": "Στο σχολείο, μιλάμε για ___.",
+      "hintSentence": "Η ___ δεν βοηθά.",
       "feedbackRule": "απαισιοδοξ- + -ία.",
       "audioFile": "audio/apaisiodoxia.mp3",
       "morphemes": {
@@ -16204,7 +16204,7 @@
       "word": "απαισιόδοξος",
       "grade": 5,
       "axis": "K",
-      "hintSentence": "Στην τάξη, γράφουμε τη λέξη που σημαίνει ___.",
+      "hintSentence": "Ήταν ___ για το αποτέλεσμα.",
       "feedbackRule": "απαισιόδοξ- + -ος.",
       "audioFile": "audio/apaisiodoxos.mp3",
       "morphemes": {
@@ -16237,7 +16237,7 @@
       "word": "απαλλάσσω",
       "grade": 5,
       "axis": "K",
-      "hintSentence": "Με αυτό το ρήμα λέμε τι κάνουμε: ___.",
+      "hintSentence": "Ο δάσκαλος ___ από την υποχρέωση.",
       "feedbackRule": "απαλλάσσ- + -ω.",
       "audioFile": "audio/apallasso.mp3",
       "morphemes": {
@@ -16307,7 +16307,7 @@
       "word": "απεικόνιση",
       "grade": 5,
       "axis": "K",
-      "hintSentence": "Στην τάξη, γράφουμε τη λέξη που σημαίνει ___.",
+      "hintSentence": "Η ___ στο χαρτί είναι όμορφη.",
       "feedbackRule": "απεικόνισ- + -η.",
       "audioFile": "audio/apeikonisi.mp3",
       "morphemes": {
@@ -16340,7 +16340,7 @@
       "word": "άπειρος",
       "grade": 5,
       "axis": "K",
-      "hintSentence": "Του χρωστάω άπειρη ευγνωμοσύνη ___",
+      "hintSentence": "Του χρωστάω ___ ευγνωμοσύνη.",
       "feedbackRule": "άπειρ- + -ος.",
       "audioFile": "audio/apeiros.mp3",
       "morphemes": {
@@ -16357,7 +16357,7 @@
       "word": "απειράριθμος",
       "grade": 5,
       "axis": "K",
-      "hintSentence": "Στην τάξη, γράφουμε τη λέξη που σημαίνει ___.",
+      "hintSentence": "Υπάρχουν ___ αστέρια.",
       "feedbackRule": "απειράριθμ- + -ος.",
       "audioFile": "audio/apeirarithmos.mp3",
       "morphemes": {
@@ -16409,7 +16409,7 @@
       "word": "απιστία",
       "grade": 5,
       "axis": "K",
-      "hintSentence": "Στην τάξη, γράφουμε τη λέξη που σημαίνει ___.",
+      "hintSentence": "Η ___ χαλά τη σχέση.",
       "feedbackRule": "απιστ- + -ία.",
       "audioFile": "audio/apistia.mp3",
       "morphemes": {
@@ -16442,7 +16442,7 @@
       "word": "άπνοια",
       "grade": 5,
       "axis": "K",
-      "hintSentence": "Στο σχολείο, μιλάμε για ___.",
+      "hintSentence": "Ο ασθενής ήταν σε ___.",
       "feedbackRule": "άπνοι- + -α.",
       "audioFile": "audio/apnoia.mp3",
       "morphemes": {
@@ -16475,7 +16475,7 @@
       "word": "μπουνάτσα",
       "grade": 5,
       "axis": "K",
-      "hintSentence": "Με αυτή τη λέξη ονομάζουμε κάτι γύρω μας: ___.",
+      "hintSentence": "Βρήκαμε μια ___ στο βουνό.",
       "feedbackRule": "μπουνάτσ- + -α.",
       "audioFile": "audio/mpounatsa.mp3",
       "morphemes": {
@@ -16492,7 +16492,7 @@
       "word": "απογοητεύω",
       "grade": 5,
       "axis": "K",
-      "hintSentence": "Με αυτό το ρήμα λέμε τι κάνουμε: ___.",
+      "hintSentence": "Το αποτέλεσμα με ___.",
       "feedbackRule": "απογοητεύ- + -ω.",
       "audioFile": "audio/apogoiteyo.mp3",
       "morphemes": {
@@ -16509,7 +16509,7 @@
       "word": "απόδειξη",
       "grade": 5,
       "axis": "K",
-      "hintSentence": "Στην τάξη, γράφουμε τη λέξη που σημαίνει ___.",
+      "hintSentence": "Έδωσε ___ για την αλήθεια.",
       "feedbackRule": "απόδειξ- + -η.",
       "audioFile": "audio/apodeixi.mp3",
       "morphemes": {
@@ -16543,7 +16543,7 @@
       "word": "αποδεικτικός",
       "grade": 5,
       "axis": "K",
-      "hintSentence": "Στο σχολείο, μιλάμε για ___.",
+      "hintSentence": "Το στοιχείο είναι ___.",
       "feedbackRule": "Προσοχή στον τόνο.",
       "audioFile": "audio/apodeiktikos.mp3",
       "morphemes": {
@@ -16595,7 +16595,7 @@
       "word": "απολύμανση",
       "grade": 5,
       "axis": "K",
-      "hintSentence": "Στο σχολείο, μιλάμε για ___.",
+      "hintSentence": "Έγινε ___ του χώρου.",
       "feedbackRule": "απολύμανσ- + -η.",
       "audioFile": "audio/apolymansi.mp3",
       "morphemes": {
@@ -16611,7 +16611,7 @@
       "word": "ειδικά",
       "grade": 5,
       "axis": "K",
-      "hintSentence": "Στην τάξη, γράφουμε τη λέξη που σημαίνει ___.",
+      "hintSentence": "___ για αυτό, ήρθα νωρίς.",
       "feedbackRule": "ειδικ- + -ά.",
       "audioFile": "audio/eidika.mp3",
       "morphemes": {
@@ -16628,7 +16628,7 @@
       "word": "απολυμαντικός",
       "grade": 5,
       "axis": "K",
-      "hintSentence": "Με αυτή τη λέξη ονομάζουμε κάτι γύρω μας: ___.",
+      "hintSentence": "Χρησιμοποιήσαμε σπρέι ___.",
       "feedbackRule": "Προσοχή στον τόνο.",
       "audioFile": "audio/apolymantikos.mp3",
       "morphemes": {
@@ -16644,7 +16644,7 @@
       "word": "απομνημόνευση",
       "grade": 5,
       "axis": "K",
-      "hintSentence": "Στο σχολείο, μιλάμε για ___.",
+      "hintSentence": "Η ___ του κειμένου ήταν καλή.",
       "feedbackRule": "απομνημόνευσ- + -η.",
       "audioFile": "audio/apomnimoneysi.mp3",
       "morphemes": {
@@ -16661,7 +16661,7 @@
       "word": "απόρρητος",
       "grade": 5,
       "axis": "K",
-      "hintSentence": "Στην τάξη, γράφουμε τη λέξη που σημαίνει ___.",
+      "hintSentence": "Ο φάκελος ήταν ___.",
       "feedbackRule": "απόρρητ- + -ος.",
       "audioFile": "audio/aporritos.mp3",
       "morphemes": {
@@ -16677,7 +16677,7 @@
       "word": "πρέπει",
       "grade": 5,
       "axis": "K",
-      "hintSentence": "Το έγγραφο που έστειλε ο ___",
+      "hintSentence": "___ να γράψω την άσκηση.",
       "feedbackRule": "πρέπ- + -ει.",
       "audioFile": "audio/prepei.mp3",
       "morphemes": {
@@ -16728,7 +16728,7 @@
       "word": "αποσύνθεση",
       "grade": 5,
       "axis": "K",
-      "hintSentence": "Με αυτή τη λέξη ονομάζουμε κάτι γύρω μας: ___.",
+      "hintSentence": "Η ___ χωρίζει λέξεις.",
       "feedbackRule": "αποσύνθεσ- + -η.",
       "audioFile": "audio/aposynthesi.mp3",
       "morphemes": {
@@ -16762,7 +16762,7 @@
       "word": "απτόητος",
       "grade": 5,
       "axis": "K",
-      "hintSentence": "Στην πρόταση μπαίνει λέξη που περιγράφει: ___.",
+      "hintSentence": "Ήταν ___ μπροστά στον κίνδυνο.",
       "feedbackRule": "απτόητ- + -ος.",
       "audioFile": "audio/aptoitos.mp3",
       "morphemes": {
@@ -16813,7 +16813,7 @@
       "word": "αρμόδιος",
       "grade": 5,
       "axis": "K",
-      "hintSentence": "Στην πρόταση μπαίνει λέξη που περιγράφει: ___.",
+      "hintSentence": "Ο ___ υπεύθυνος απάντησε.",
       "feedbackRule": "αρμόδι- + -ος.",
       "audioFile": "audio/armodios.mp3",
       "morphemes": {
@@ -16829,7 +16829,7 @@
       "word": "αρμονία",
       "grade": 5,
       "axis": "K",
-      "hintSentence": "Με αυτή τη λέξη ονομάζουμε κάτι γύρω μας: ___.",
+      "hintSentence": "Υπάρχει ___ στο σχολείο μας.",
       "feedbackRule": "αρμον- + -ία.",
       "audioFile": "audio/armonia.mp3",
       "morphemes": {
@@ -16845,7 +16845,7 @@
       "word": "συμμετρία",
       "grade": 5,
       "axis": "K",
-      "hintSentence": "Στο σχολείο, μιλάμε για ___.",
+      "hintSentence": "Η ___ στη ζωγραφική είναι σημαντική.",
       "feedbackRule": "συμμετρ- + -ία.",
       "audioFile": "audio/symmetria.mp3",
       "morphemes": {
@@ -16862,7 +16862,7 @@
       "word": "άρτιος",
       "grade": 5,
       "axis": "K",
-      "hintSentence": "Στην πρόταση μπαίνει λέξη που περιγράφει: ___.",
+      "hintSentence": "Ο μηχανισμός είναι ___.",
       "feedbackRule": "άρτι- + -ος.",
       "audioFile": "audio/artios.mp3",
       "morphemes": {
@@ -16896,7 +16896,7 @@
       "word": "αρχαιρεσία",
       "grade": 5,
       "axis": "K",
-      "hintSentence": "Στο σχολείο, μιλάμε για ___.",
+      "hintSentence": "Έγινε ___ στο σχολείο μας.",
       "feedbackRule": "αρχαιρεσ- + -ία.",
       "audioFile": "audio/archairesia.mp3",
       "morphemes": {
@@ -16912,7 +16912,7 @@
       "word": "αρωγή",
       "grade": 6,
       "axis": "K",
-      "hintSentence": "Στο σχολείο, μιλάμε για ___.",
+      "hintSentence": "Χρειαζόμαστε ___ σε δύσκολες στιγμές.",
       "feedbackRule": "Προσοχή στον τόνο.",
       "audioFile": "audio/arogi.mp3",
       "morphemes": {
@@ -16929,7 +16929,7 @@
       "word": "ασθένεια",
       "grade": 6,
       "axis": "K",
-      "hintSentence": "Στην τάξη, γράφουμε τη λέξη που σημαίνει ___.",
+      "hintSentence": "Η ___ τον κράτησε στο σπίτι.",
       "feedbackRule": "ασθένει- + -α.",
       "audioFile": "audio/astheneia.mp3",
       "morphemes": {
@@ -16945,7 +16945,7 @@
       "word": "άγνωστη",
       "grade": 6,
       "axis": "K",
-      "hintSentence": "Με αυτή τη λέξη ονομάζουμε κάτι γύρω μας: ___.",
+      "hintSentence": "Η ___ λέξη ήταν δύσκολη.",
       "feedbackRule": "άγνωστ- + -η.",
       "audioFile": "audio/agnosti.mp3",
       "morphemes": {
@@ -16961,7 +16961,7 @@
       "word": "ανύπαρκτη",
       "grade": 6,
       "axis": "K",
-      "hintSentence": "Στο σχολείο, μιλάμε για ___.",
+      "hintSentence": "Η πόλη είναι ___ στον χάρτη.",
       "feedbackRule": "ανύπαρκτ- + -η.",
       "audioFile": "audio/anyparkti.mp3",
       "morphemes": {
@@ -17012,7 +17012,7 @@
       "word": "άσωτος",
       "grade": 6,
       "axis": "K",
-      "hintSentence": "Στο σχολείο, μιλάμε για ___.",
+      "hintSentence": "Ήταν ___ και ξόδευε πολλά.",
       "feedbackRule": "άσωτ- + -ος.",
       "audioFile": "audio/asotos.mp3",
       "morphemes": {
@@ -17098,7 +17098,7 @@
       "word": "ασωτία",
       "grade": 6,
       "axis": "K",
-      "hintSentence": "Με αυτή τη λέξη ονομάζουμε κάτι γύρω μας: ___.",
+      "hintSentence": "Η ___ δεν είναι καλή συνήθεια.",
       "feedbackRule": "ασωτ- + -ία.",
       "audioFile": "audio/asotia.mp3",
       "morphemes": {
@@ -17131,7 +17131,7 @@
       "word": "άτρωτος",
       "grade": 6,
       "axis": "K",
-      "hintSentence": "Στην πρόταση μπαίνει λέξη που περιγράφει: ___.",
+      "hintSentence": "Ο ήρωας ήταν ___.",
       "feedbackRule": "άτρωτ- + -ος.",
       "audioFile": "audio/atrotos.mp3",
       "morphemes": {
@@ -17196,7 +17196,7 @@
       "word": "αυτοθυσία",
       "grade": 6,
       "axis": "K",
-      "hintSentence": "Με αυτή τη λέξη ονομάζουμε κάτι γύρω μας: ___.",
+      "hintSentence": "Η ___ του συγκίνησε όλους.",
       "feedbackRule": "αυτοθυσ- + -ία.",
       "audioFile": "audio/aytothysia.mp3",
       "morphemes": {
@@ -17230,7 +17230,7 @@
       "word": "βαδίζω",
       "grade": 6,
       "axis": "K",
-      "hintSentence": "Βαδίζει σταθερά ___",
+      "hintSentence": "___ προσεκτικά στο σχολείο.",
       "feedbackRule": "βαδίζ- + -ω.",
       "audioFile": "audio/vadizo.mp3",
       "morphemes": {
@@ -17247,7 +17247,7 @@
       "word": "βηματίζω",
       "grade": 6,
       "axis": "K",
-      "hintSentence": "Με αυτή τη λέξη ονομάζουμε κάτι γύρω μας: ___.",
+      "hintSentence": "___ προσεκτικά στο σκοτεινό δρόμο.",
       "feedbackRule": "βηματίζ- + -ω.",
       "audioFile": "audio/vimatizo.mp3",
       "morphemes": {
@@ -17400,7 +17400,7 @@
       "word": "βιώσιμος",
       "grade": 6,
       "axis": "K",
-      "hintSentence": "Με αυτή τη λέξη ονομάζουμε κάτι γύρω μας: ___.",
+      "hintSentence": "Ο τρόπος ζωής είναι ___.",
       "feedbackRule": "βιώσιμ- + -ος.",
       "audioFile": "audio/viosimos.mp3",
       "morphemes": {
@@ -17416,7 +17416,7 @@
       "word": "βοριάς",
       "grade": 6,
       "axis": "K",
-      "hintSentence": "___ (ο) = ο",
+      "hintSentence": "Έμαθα τη λέξη ___ σήμερα.",
       "feedbackRule": "Προσοχή στον τόνο.",
       "audioFile": "audio/vorias.mp3",
       "morphemes": {
@@ -17450,7 +17450,7 @@
       "word": "βουλευτής",
       "grade": 6,
       "axis": "K",
-      "hintSentence": "Με αυτή τη λέξη ονομάζουμε κάτι γύρω μας: ___.",
+      "hintSentence": "Ο ___ μίλησε στη Βουλή.",
       "feedbackRule": "βουλευτ- + -ής.",
       "audioFile": "audio/vouleytis.mp3",
       "morphemes": {
@@ -17499,7 +17499,7 @@
       "word": "βρόμικος",
       "grade": 6,
       "axis": "K",
-      "hintSentence": "Για να πούμε πώς φαίνεται κάτι, γράφουμε ___.",
+      "hintSentence": "Το ρούχο ήταν ___ από το παιχνίδι.",
       "feedbackRule": "βρόμικ- + -ος.",
       "audioFile": "audio/vromikos.mp3",
       "morphemes": {
@@ -17532,7 +17532,7 @@
       "word": "γαλαξίας",
       "grade": 6,
       "axis": "K",
-      "hintSentence": "Στην τάξη, γράφουμε τη λέξη που σημαίνει ___.",
+      "hintSentence": "Το σύμπαν έχει έναν ___.",
       "feedbackRule": "γαλαξί- + -ας.",
       "audioFile": "audio/galaxias.mp3",
       "morphemes": {
@@ -17583,7 +17583,7 @@
       "word": "γεννώ",
       "grade": 6,
       "axis": "K",
-      "hintSentence": "γέννηση < ___",
+      "hintSentence": "Σήμερα στο σπίτι θα ___.",
       "feedbackRule": "Προσοχή σε διπλά γράμματα.",
       "audioFile": "audio/genno.mp3",
       "morphemes": {
@@ -17601,7 +17601,7 @@
       "word": "γεωργία",
       "grade": 6,
       "axis": "K",
-      "hintSentence": "Με αυτή τη λέξη ονομάζουμε κάτι γύρω μας: ___.",
+      "hintSentence": "Η ___ είναι σημαντική για τη χώρα.",
       "feedbackRule": "γεωργ- + -ία.",
       "audioFile": "audio/georgia.mp3",
       "morphemes": {
@@ -17653,7 +17653,7 @@
       "word": "γράφω",
       "grade": 6,
       "axis": "K",
-      "hintSentence": "Μου γράφει δυο φορές την εβδομάδα ___",
+      "hintSentence": "Στο τετράδιο, ___ μια πρόταση.",
       "feedbackRule": "γράφ- + -ω.",
       "audioFile": "audio/grafo.mp3",
       "morphemes": {
@@ -17689,7 +17689,7 @@
       "word": "δανείζω",
       "grade": 6,
       "axis": "K",
-      "hintSentence": "Στην πρόταση περιγράφουμε μια ενέργεια: ___.",
+      "hintSentence": "___ το βιβλίο μου στον φίλο μου.",
       "feedbackRule": "δανείζ- + -ω.",
       "audioFile": "audio/daneizo.mp3",
       "morphemes": {
@@ -17705,7 +17705,7 @@
       "word": "δέηση",
       "grade": 6,
       "axis": "K",
-      "hintSentence": "Με αυτή τη λέξη ονομάζουμε κάτι γύρω μας: ___.",
+      "hintSentence": "Έκανε ___ για βοήθεια.",
       "feedbackRule": "δέησ- + -η.",
       "audioFile": "audio/deisi.mp3",
       "morphemes": {
@@ -17722,7 +17722,7 @@
       "word": "δέχομαι",
       "grade": 6,
       "axis": "K",
-      "hintSentence": "Με αυτό το ρήμα λέμε τι κάνουμε: ___.",
+      "hintSentence": "___ την πρόσκληση της φίλης μου.",
       "feedbackRule": "δέχομ- + -αι.",
       "audioFile": "audio/dechomai.mp3",
       "morphemes": {
@@ -17754,7 +17754,7 @@
       "word": "δήλωση",
       "grade": 6,
       "axis": "K",
-      "hintSentence": "Με αυτή τη λέξη ονομάζουμε κάτι γύρω μας: ___.",
+      "hintSentence": "Έδωσε ___ στην τάξη.",
       "feedbackRule": "δήλωσ- + -η.",
       "audioFile": "audio/dilosi.mp3",
       "morphemes": {
@@ -17875,7 +17875,7 @@
       "word": "διαλογικός",
       "grade": 6,
       "axis": "K",
-      "hintSentence": "Στο σχολείο, μιλάμε για ___.",
+      "hintSentence": "Ο τρόπος διδασκαλίας είναι ___.",
       "feedbackRule": "Προσοχή στον τόνο.",
       "audioFile": "audio/dialogikos.mp3",
       "morphemes": {
@@ -17906,7 +17906,7 @@
       "word": "διαμαρτύρομαι",
       "grade": 6,
       "axis": "K",
-      "hintSentence": "Όταν κάνουμε κάτι, χρησιμοποιούμε το ρήμα ___.",
+      "hintSentence": "___ για την άδικη απόφαση.",
       "feedbackRule": "διαμαρτύρομ- + -αι.",
       "audioFile": "audio/diamartyromai.mp3",
       "morphemes": {
@@ -17922,7 +17922,7 @@
       "word": "εκφράζω",
       "grade": 6,
       "axis": "K",
-      "hintSentence": "Στο σχολείο, μιλάμε για ___.",
+      "hintSentence": "___ τη γνώμη μου στο μάθημα.",
       "feedbackRule": "εκφράζ- + -ω.",
       "audioFile": "audio/ekfrazo.mp3",
       "morphemes": {
@@ -17938,7 +17938,7 @@
       "word": "διαμονή",
       "grade": 6,
       "axis": "K",
-      "hintSentence": "Στην τάξη, γράφουμε τη λέξη που σημαίνει ___.",
+      "hintSentence": "Η ___ στο ξενοδοχείο ήταν ωραία.",
       "feedbackRule": "Προσοχή στον τόνο.",
       "audioFile": "audio/diamoni.mp3",
       "morphemes": {
@@ -17971,7 +17971,7 @@
       "word": "διαπολιτισμικός",
       "grade": 6,
       "axis": "K",
-      "hintSentence": "Με αυτό περιγράφουμε πώς είναι κάτι: ___.",
+      "hintSentence": "Έχουμε ___ γιορτή στο σχολείο.",
       "feedbackRule": "Προσοχή στον τόνο.",
       "audioFile": "audio/diapolitismikos.mp3",
       "morphemes": {
@@ -18021,7 +18021,7 @@
       "word": "διεύθυνση",
       "grade": 6,
       "axis": "K",
-      "hintSentence": "Στο σχολείο, μιλάμε για ___.",
+      "hintSentence": "Έγραψα τη ___ μου στο τετράδιο.",
       "feedbackRule": "διεύθυνσ- + -η.",
       "audioFile": "audio/dieythynsi.mp3",
       "morphemes": {
@@ -18125,7 +18125,7 @@
       "word": "δόξα",
       "grade": 6,
       "axis": "K",
-      "hintSentence": "Στο σχολείο, μιλάμε για ___.",
+      "hintSentence": "Η ___ του ήρωα έμεινε στην ιστορία.",
       "feedbackRule": "δόξ- + -α.",
       "audioFile": "audio/doxa.mp3",
       "morphemes": {
@@ -18141,7 +18141,7 @@
       "word": "δραχμή",
       "grade": 6,
       "axis": "K",
-      "hintSentence": "Στην τάξη, γράφουμε τη λέξη που σημαίνει ___.",
+      "hintSentence": "Παλιά, μια ___ ήταν το νόμισμα.",
       "feedbackRule": "Προσοχή στον τόνο.",
       "audioFile": "audio/drachmi.mp3",
       "morphemes": {
@@ -18157,7 +18157,7 @@
       "word": "εθνοσυνέλευση",
       "grade": 6,
       "axis": "K",
-      "hintSentence": "Με αυτή τη λέξη ονομάζουμε κάτι γύρω μας: ___.",
+      "hintSentence": "Η ___ συνεδρίασε στην Αθήνα.",
       "feedbackRule": "εθνοσυνέλευσ- + -η.",
       "audioFile": "audio/ethnosyneleysi.mp3",
       "morphemes": {
@@ -18226,7 +18226,7 @@
       "word": "ειρήνη",
       "grade": 6,
       "axis": "K",
-      "hintSentence": "Η ___",
+      "hintSentence": "Μου φάνηκε ___ η ιδέα.",
       "feedbackRule": "ειρήν- + -η.",
       "audioFile": "audio/eirini.mp3",
       "morphemes": {
@@ -18262,7 +18262,7 @@
       "word": "ζωγραφική",
       "grade": 6,
       "axis": "K",
-      "hintSentence": "Με αυτή τη λέξη ονομάζουμε κάτι γύρω μας: ___.",
+      "hintSentence": "Μάθαμε ___ στο μάθημα των καλλιτεχνικών.",
       "feedbackRule": "Προσοχή στον τόνο.",
       "audioFile": "audio/zografiki3.mp3",
       "morphemes": {
@@ -18278,7 +18278,7 @@
       "word": "εκκλησία",
       "grade": 6,
       "axis": "K",
-      "hintSentence": "Στο σχολείο, μιλάμε για ___.",
+      "hintSentence": "Πήγαμε στην ___ του χωριού.",
       "feedbackRule": "εκκλησ- + -ία.",
       "audioFile": "audio/ekklisia.mp3",
       "morphemes": {
@@ -18294,7 +18294,7 @@
       "word": "κάποιον",
       "grade": 6,
       "axis": "K",
-      "hintSentence": "Η εκκλησία της ενορίας ___",
+      "hintSentence": "Έδωσα το μολύβι σε ___ φίλο.",
       "feedbackRule": "Προσοχή στον τόνο.",
       "audioFile": "audio/kapoion.mp3",
       "morphemes": {
@@ -18311,7 +18311,7 @@
       "word": "Ορθόδοξη",
       "grade": 6,
       "axis": "K",
-      "hintSentence": "Με αυτή τη λέξη ονομάζουμε κάτι γύρω μας: ___.",
+      "hintSentence": "Η ___ Εκκλησία γιορτάζει.",
       "feedbackRule": "Ορθόδοξ- + -η.",
       "audioFile": "audio/orthodoxi.mp3",
       "morphemes": {
@@ -18361,7 +18361,7 @@
       "word": "υποχρεωτική",
       "grade": 6,
       "axis": "K",
-      "hintSentence": "Με αυτή τη λέξη ονομάζουμε κάτι γύρω μας: ___.",
+      "hintSentence": "Η εργασία είναι ___.",
       "feedbackRule": "Προσοχή στον τόνο.",
       "audioFile": "audio/ypochreotiki.mp3",
       "morphemes": {
@@ -18377,7 +18377,7 @@
       "word": "έκταση",
       "grade": 6,
       "axis": "K",
-      "hintSentence": "Οι πλημμύρες κατέστρεψαν μεγάλες εκτάσεις ___",
+      "hintSentence": "Οι πλημμύρες κατέστρεψαν μεγάλες ___.",
       "feedbackRule": "έκτασ- + -η.",
       "audioFile": "audio/ektasi.mp3",
       "morphemes": {
@@ -18395,7 +18395,7 @@
       "word": "γεγονός",
       "grade": 6,
       "axis": "K",
-      "hintSentence": "Στην τάξη, γράφουμε τη λέξη που σημαίνει ___.",
+      "hintSentence": "Το ___ έγινε χθες.",
       "feedbackRule": "Προσοχή στον τόνο.",
       "audioFile": "audio/gegonos.mp3",
       "morphemes": {
@@ -18444,7 +18444,7 @@
       "word": "ελαττωματικότητα",
       "grade": 6,
       "axis": "K",
-      "hintSentence": "Στην τάξη, γράφουμε τη λέξη που σημαίνει ___.",
+      "hintSentence": "Η ___ δεν μας εμποδίζει.",
       "feedbackRule": "ελαττωματικότητ- + -α.",
       "audioFile": "audio/elattomatikotita.mp3",
       "morphemes": {
@@ -18478,7 +18478,7 @@
       "word": "έλλειψη",
       "grade": 6,
       "axis": "K",
-      "hintSentence": "Στο σχολείο, μιλάμε για ___.",
+      "hintSentence": "Υπάρχει ___ νερού στο νησί.",
       "feedbackRule": "έλλειψ- + -η.",
       "audioFile": "audio/elleipsi.mp3",
       "morphemes": {
@@ -18513,7 +18513,7 @@
       "word": "κυριολεκτική",
       "grade": 6,
       "axis": "K",
-      "hintSentence": "Με αυτή τη λέξη ονομάζουμε κάτι γύρω μας: ___.",
+      "hintSentence": "Η ___ σημασία της λέξης είναι απλή.",
       "feedbackRule": "Προσοχή στον τόνο.",
       "audioFile": "audio/kyriolektiki.mp3",
       "morphemes": {
@@ -18600,7 +18600,7 @@
       "word": "εξεταστικά",
       "grade": 6,
       "axis": "K",
-      "hintSentence": "Στην τάξη, γράφουμε τη λέξη που σημαίνει ___.",
+      "hintSentence": "Μίλησε ___ για το θέμα.",
       "feedbackRule": "εξεταστικ- + -ά.",
       "audioFile": "audio/exetastika.mp3",
       "morphemes": {
@@ -18615,7 +18615,7 @@
       "word": "έξοδος",
       "grade": 6,
       "axis": "K",
-      "hintSentence": "Η ___ από",
+      "hintSentence": "Η απάντηση ήταν ___.",
       "feedbackRule": "έξοδ- + -ος.",
       "audioFile": "audio/exodos.mp3",
       "morphemes": {
@@ -18667,7 +18667,7 @@
       "word": "εξοφλητικός",
       "grade": 6,
       "axis": "K",
-      "hintSentence": "Με αυτή τη λέξη ονομάζουμε κάτι γύρω μας: ___.",
+      "hintSentence": "Έδωσε ___ απάντηση.",
       "feedbackRule": "Προσοχή στον τόνο.",
       "audioFile": "audio/exoflitikos.mp3",
       "morphemes": {
@@ -18718,7 +18718,7 @@
       "word": "σταθμός",
       "grade": 6,
       "axis": "K",
-      "hintSentence": "Με αυτή τη λέξη ονομάζουμε κάτι γύρω μας: ___.",
+      "hintSentence": "Περιμένουμε στον ___ του μετρό.",
       "feedbackRule": "Προσοχή στον τόνο.",
       "audioFile": "audio/stathmos.mp3",
       "morphemes": {
@@ -18770,7 +18770,7 @@
       "word": "επιβάλλω",
       "grade": 6,
       "axis": "K",
-      "hintSentence": "Μετά από ένα τόσο κοπιαστικό ταξίδι επιβάλλεται να ___",
+      "hintSentence": "Ο δάσκαλος ___ να γράψουμε την άσκηση.",
       "feedbackRule": "επιβάλλ- + -ω.",
       "audioFile": "audio/epivallo.mp3",
       "morphemes": {
@@ -18806,7 +18806,7 @@
       "word": "επιδρομή",
       "grade": 6,
       "axis": "K",
-      "hintSentence": "Στην τάξη, γράφουμε τη λέξη που σημαίνει ___.",
+      "hintSentence": "Η ___ των ληστών τρομάκρισε.",
       "feedbackRule": "Προσοχή στον τόνο.",
       "audioFile": "audio/epidromi.mp3",
       "morphemes": {
@@ -18857,7 +18857,7 @@
       "word": "χτύπημα",
       "grade": 6,
       "axis": "K",
-      "hintSentence": "Στην τάξη, γράφουμε τη λέξη που σημαίνει ___.",
+      "hintSentence": "Το ___ της πόρτας άκουσα.",
       "feedbackRule": "χτύπημ- + -α.",
       "audioFile": "audio/chtypima.mp3",
       "morphemes": {
@@ -18874,7 +18874,7 @@
       "word": "επιθετικότητα",
       "grade": 6,
       "axis": "K",
-      "hintSentence": "Με αυτή τη λέξη ονομάζουμε κάτι γύρω μας: ___.",
+      "hintSentence": "Η ___ δεν επιτρέπεται στην τάξη.",
       "feedbackRule": "επιθετικότητ- + -α.",
       "audioFile": "audio/epithetikotita.mp3",
       "morphemes": {
@@ -18890,7 +18890,7 @@
       "word": "επιθυμώ",
       "grade": 6,
       "axis": "K",
-      "hintSentence": "___ να κάνω",
+      "hintSentence": "Κάθε μέρα ___ στο σχολείο.",
       "feedbackRule": "Προσοχή στον τόνο.",
       "audioFile": "audio/epithymo.mp3",
       "morphemes": {
@@ -18908,7 +18908,7 @@
       "word": "επικοινωνία",
       "grade": 6,
       "axis": "K",
-      "hintSentence": "Στην τάξη, γράφουμε τη λέξη που σημαίνει ___.",
+      "hintSentence": "Η ___ με τους γονείς είναι σημαντική.",
       "feedbackRule": "επικοινων- + -ία.",
       "audioFile": "audio/epikoinonia.mp3",
       "morphemes": {
@@ -18924,7 +18924,7 @@
       "word": "ταχύτερη",
       "grade": 6,
       "axis": "K",
-      "hintSentence": "Με αυτή τη λέξη ονομάζουμε κάτι γύρω μας: ___.",
+      "hintSentence": "Η ___ λύση ήταν η σωστή.",
       "feedbackRule": "ταχύτερ- + -η.",
       "audioFile": "audio/tachyteri.mp3",
       "morphemes": {

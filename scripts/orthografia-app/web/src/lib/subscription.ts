@@ -18,6 +18,7 @@ export interface SubscriptionState {
   maxProfiles: number;
   profiles: ChildProfile[];
   currentPeriodEnd: string | null;
+  isSuperAdmin: boolean;
   loading: boolean;
   error: string | null;
 }
@@ -29,6 +30,7 @@ const FREE_STATE: SubscriptionState = {
   maxProfiles: 1,
   profiles: [],
   currentPeriodEnd: null,
+  isSuperAdmin: false,
   loading: false,
   error: null,
 };
@@ -72,6 +74,7 @@ export function useSubscription(): SubscriptionState & {
         maxProfiles: data.maxProfiles ?? 1,
         profiles: mapProfiles(data.profiles ?? []),
         currentPeriodEnd: data.currentPeriodEnd ?? null,
+        isSuperAdmin: Boolean(data.isSuperAdmin),
         loading: false,
         error: null,
       });

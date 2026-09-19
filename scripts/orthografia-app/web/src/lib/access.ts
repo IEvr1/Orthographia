@@ -1,6 +1,18 @@
 import type { GameMode } from "../types";
+import { isSuperAdmin } from "./superAdmin";
 
 export type PlanTier = "free" | "child" | "family";
+
+export const SUPER_ADMIN_TIER: PlanTier = "family";
+
+/** Full premium access for the configured super admin email. */
+export function resolveTier(tier: PlanTier, email: string | null | undefined): PlanTier {
+  return isSuperAdmin(email) ? SUPER_ADMIN_TIER : tier;
+}
+
+export function hasPremiumAccess(tier: PlanTier, email: string | null | undefined): boolean {
+  return isSuperAdmin(email) || isPaidTier(tier);
+}
 
 export const FREE_GRADES = new Set([1, 2]);
 export const FREE_DAILY_SESSIONS = 1;

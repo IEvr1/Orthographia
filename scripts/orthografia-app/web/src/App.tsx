@@ -1,4 +1,4 @@
-import { useAuth } from "@clerk/clerk-react";
+import { useAuth, useUser } from "@clerk/clerk-react";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 
 import type {
@@ -60,8 +60,10 @@ import {
   FREE_DAILY_SESSIONS,
 
   isPaidTier,
+  SUPER_ADMIN_TIER,
 
 } from "./lib/access";
+import { isSuperAdmin } from "./lib/superAdmin";
 
 import {
 
@@ -128,6 +130,8 @@ const FREE_SUBSCRIPTION: SubscriptionState = {
   profiles: [],
 
   currentPeriodEnd: null,
+
+  isSuperAdmin: false,
 
   loading: false,
 
@@ -709,6 +713,8 @@ function AppShell({
 
           tier={tier}
 
+          isSuperAdmin={subscription.isSuperAdmin}
+
           dailyLimitReached={dailyLimitReached}
 
           familyProfiles={
@@ -833,8 +839,23 @@ function AppShell({
 
 function AuthedApp() {
   const { isSignedIn, getToken, userId } = useAuth();
+  const { user } = useUser();
+  const email = user?.primaryEmailAddress?.emailAddress ?? null;
   const subscription = useSubscription();
   const migratedKeyRef = useRef<string | null>(null);
+
+  const effectiveSubscription = useMemo(() => {
+    const admin = subscription.isSuperAdmin || isSuperAdmin(email);
+    if (!admin) return subscription;
+    return {
+      ...subscription,
+      tier: SUPER_ADMIN_TIER,
+      active: true,
+      planType: SUPER_ADMIN_TIER,
+      maxProfiles: Math.max(subscription.maxProfiles, 3),
+      isSuperAdmin: true,
+    };
+  }, [subscription, email]);
 
   useEffect(() => {
     if (!isSignedIn || !userId) return;
@@ -845,8 +866,8 @@ function AuthedApp() {
     if (!isSignedIn || !userId || subscription.loading) return;
 
     const profileIds =
-      subscription.tier === "family" && subscription.active
-        ? subscription.profiles.map((p) => p.id)
+      effectiveSubscription.tier === "family" && effectiveSubscription.active
+        ? effectiveSubscription.profiles.map((p) => p.id)
         : [];
     const migrationKey = `${userId}:${profileIds.join(",")}`;
     if (migratedKeyRef.current === migrationKey) return;
@@ -857,13 +878,13 @@ function AuthedApp() {
     isSignedIn,
     userId,
     getToken,
-    subscription.loading,
-    subscription.tier,
-    subscription.active,
-    subscription.profiles,
+    effectiveSubscription.loading,
+    effectiveSubscription.tier,
+    effectiveSubscription.active,
+    effectiveSubscription.profiles,
   ]);
 
-  return <AppShell subscription={subscription} getToken={getToken} userId={userId} />;
+  return <AppShell subscription={effectiveSubscription} getToken={getToken} userId={userId} />;
 }
 
 

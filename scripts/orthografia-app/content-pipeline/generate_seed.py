@@ -8,6 +8,7 @@ import shutil
 from pathlib import Path
 
 from extract_textbook import append_textbooks
+from fix_hints import fix_words
 from import_helexkids import INPUTS_DIR, append_helexkids, count_by_grade
 from import_lexika import append_lexika, sync_families_and_rules
 from word_lists import GRADE_2, GRADE_3_EXTRA, GRADE_4
@@ -560,6 +561,7 @@ def main() -> None:
     words, hk_counts, imported = append_helexkids(words, INPUTS_DIR)
     words, lx_counts, lx_imported = append_lexika(words)
     sync_families_and_rules()
+    words, hint_stats = fix_words(words)
     by_grade = count_by_grade(words)
 
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
@@ -578,6 +580,9 @@ def main() -> None:
         extra.append(f"{lx_imported} lexika")
     extra_note = f" + {' + '.join(extra)}" if extra else ""
     print(f"Wrote {len(words)} words to {OUTPUT_FILE} ({seed_count} seed{extra_note})")
+    print(
+        f"Hints: {hint_stats['changed']} fixed, {hint_stats['remaining_issues']} remaining issues"
+    )
     print(f"Synced to {WEB_WORDS}")
     print(
         f"By grade: G1={by_grade[1]}, G2={by_grade[2]}, G3={by_grade[3]}, "

@@ -14,6 +14,10 @@
 | `STRIPE_PRICE_MONTHLY` | Stripe Product price ID (€4,90/μήνα) |
 | `STRIPE_PRICE_YEARLY` | Stripe Product price ID (€39/έτος) |
 | `STRIPE_PRICE_FAMILY_YEARLY` | Stripe Product price ID (€59/έτος) |
+| `SUPER_ADMIN_EMAIL` | Email με πλήρη πρόσβαση (server API) |
+| `VITE_SUPER_ADMIN_EMAIL` | Ίδιο email για client-side badge/έλεγχο |
+
+Ο super admin (`mustrene@gmail.com` by default στο `.env.example`) παίρνει οικογενειακό πλάνο χωρίς Stripe συνδρομή.
 
 ## Stripe Dashboard — checklist
 

@@ -8,7 +8,9 @@ import json
 from pathlib import Path
 from typing import Any
 
-from hint_generator import generate_hint, is_homophone_prone, load_overrides
+from contextual_hint import generate_contextual_hint, is_garbled_hint
+from spelling_fixes import apply_spelling_fix, load_spelling_fixes
+from hint_generator import generate_hint, is_generic_hint, is_homophone_prone, load_overrides
 from import_helexkids import (
     audio_path_for_word,
     count_by_grade,
@@ -31,12 +33,13 @@ CAPS = {1: 90, 2: 90, 3: 90, 4: 80, 5: 100, 6: 120}
 
 def load_lexika_rows(input_dir: Path = LEXIKA_DIR) -> list[dict[str, Any]]:
     rows: list[dict[str, Any]] = []
+    spelling_fixes = load_spelling_fixes()
     if not input_dir.is_dir():
         return rows
     for path in sorted(input_dir.glob("grade*.csv")):
         with path.open(encoding="utf-8-sig", newline="") as f:
             for raw in csv.DictReader(f):
-                word = (raw.get("word") or "").strip()
+                word = apply_spelling_fix((raw.get("word") or "").strip(), spelling_fixes)
                 if not word:
                     continue
                 try:
@@ -104,11 +107,17 @@ def build_lexika_entries(
         for i, row in enumerate(by_grade[grade][:cap]):
             counters[grade] += 1
             morphemes = guess_morphemes(row["word"])
-            hint = row.get("hint") or generate_hint(
-                row["word"], pos=row.get("pos", "noun"), index=i, overrides=overrides
-            )
+            raw_hint = (row.get("hint") or "").strip()
+            if raw_hint and "___" in raw_hint and not is_garbled_hint(raw_hint):
+                hint = raw_hint
+            elif is_generic_hint(raw_hint) or is_garbled_hint(raw_hint):
+                hint = generate_contextual_hint(row["word"], pos=row.get("pos", "noun"), index=i)
+            else:
+                hint = generate_hint(
+                    row["word"], pos=row.get("pos", "noun"), index=i, overrides=overrides
+                )
             if "___" not in hint:
-                hint = generate_hint(row["word"], pos=row.get("pos", "noun"), index=i, overrides=overrides)
+                hint = generate_contextual_hint(row["word"], pos=row.get("pos", "noun"), index=i)
 
             axis = "K" if row.get("family") or infer_rule_id(row["word"], row) else "R"
             entry: dict[str, Any] = {

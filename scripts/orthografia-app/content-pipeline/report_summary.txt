@@ -1,0 +1,10 @@
+﻿python :   File "<string>", line 19
+At C:\Users\User\AppData\Local\Temp\ps-script-7eec2b00-5fa2-4ad6-926d-08a63d2dd427.ps1:88 char:72
++ ... s\Orthographia\scripts\orthografia-app\content-pipeline"; python -c "
++                                                               ~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (  File "<string>", line 19:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+    print(f'  {i[" word\]}
+                 ^
+SyntaxError: unterminated string literal (detected at line 19)

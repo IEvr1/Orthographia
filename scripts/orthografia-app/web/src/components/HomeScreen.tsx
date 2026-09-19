@@ -51,6 +51,7 @@ interface HomeScreenProps {
   onModeChange: (mode: GameMode) => void;
   weeklyRule: RuleDefinition | null;
   tier: PlanTier;
+  isSuperAdmin?: boolean;
   dailyLimitReached: boolean;
   familyProfiles?: {
     profiles: ChildProfile[];
@@ -82,6 +83,7 @@ export function HomeScreen({
   onModeChange,
   weeklyRule,
   tier,
+  isSuperAdmin = false,
   dailyLimitReached,
   familyProfiles,
 }: HomeScreenProps) {
@@ -94,10 +96,13 @@ export function HomeScreen({
   return (
     <main className="screen screen--home fade-in">
       <div className="home-topbar">
-        <button type="button" className="plan-badge" onClick={onOpenPricing}>
-          {tierLabel(tier)}
-          {tier === "free" && " · Αναβάθμιση"}
-        </button>
+        <div className="home-topbar__plans">
+          {isSuperAdmin && <span className="admin-badge">Διαχειριστής</span>}
+          <button type="button" className="plan-badge" onClick={onOpenPricing}>
+            {tierLabel(tier)}
+            {tier === "free" && " · Αναβάθμιση"}
+          </button>
+        </div>
         {isClerkEnabled() && (
           <div className="home-auth">
             <SignedOut>

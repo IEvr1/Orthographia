@@ -828,6 +828,23 @@ body {
   margin: 0 auto 0.5rem;
 }
 
+.home-topbar__plans {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.admin-badge {
+  font-family: var(--font-display);
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.35rem 0.65rem;
+  border-radius: 999px;
+  border: 2px solid var(--coral);
+  background: var(--sand);
+  color: var(--coral-dark);
+}
+
 .plan-badge {
   font-family: var(--font-display);
   font-size: 0.85rem;

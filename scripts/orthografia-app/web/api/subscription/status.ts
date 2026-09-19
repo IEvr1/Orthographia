@@ -1,6 +1,8 @@
 import type { VercelRequest, VercelResponse } from "@vercel/node";
 import { requireAuth } from "../lib/auth";
 import { ensureSchema } from "../lib/db";
+import { isSuperAdmin } from "../lib/superAdmin";
+import { maxProfilesForPlan } from "../lib/stripe";
 import {
   deleteChildProfile,
   effectiveTier,
@@ -37,6 +39,20 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     try {
       await ensureSchema();
       await ensureUser(auth.userId, auth.email);
+
+      if (isSuperAdmin(auth.email)) {
+        const profiles = await listChildProfiles(auth.userId);
+        return res.status(200).json({
+          tier: "family",
+          active: true,
+          planType: "family",
+          maxProfiles: maxProfilesForPlan("family"),
+          profiles,
+          currentPeriodEnd: null,
+          isSuperAdmin: true,
+        });
+      }
+
       const sub = await getSubscription(auth.userId);
       const tier = effectiveTier(sub);
       const profiles = isActiveSubscription(sub) ? await listChildProfiles(auth.userId) : [];
@@ -48,6 +64,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
         maxProfiles: sub?.max_profiles ?? 1,
         profiles,
         currentPeriodEnd: sub?.current_period_end ?? null,
+        isSuperAdmin: false,
       });
     } catch (err) {
       console.error("[subscription/status]", err);
@@ -68,11 +85,13 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     try {
       await ensureSchema();
       const sub = await getSubscription(auth.userId);
-      if (!isActiveSubscription(sub)) {
+      const superAdmin = isSuperAdmin(auth.email);
+      if (!superAdmin && !isActiveSubscription(sub)) {
         return res.status(403).json({ error: "subscription required" });
       }
 
       const profiles = await listChildProfiles(auth.userId);
+      const maxProfiles = superAdmin ? maxProfilesForPlan("family") : (sub?.max_profiles ?? 1);
       const id = typeof req.body?.id === "string" ? req.body.id : undefined;
       const name = String(req.body?.name ?? "").trim();
       const grade = Number(req.body?.grade ?? 3);
@@ -84,7 +103,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       }
 
       const isNew = !id;
-      if (isNew && profiles.length >= (sub?.max_profiles ?? 1)) {
+      if (isNew && profiles.length >= maxProfiles) {
         return res.status(403).json({ error: "profile limit reached" });
       }
 
