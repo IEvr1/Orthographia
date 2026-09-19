@@ -165,32 +165,22 @@ export function HomeScreen({
         </div>
       </div>
 
-      {showFamilyProfiles && !activeChildName ? (
-        <button
-          type="button"
-          className="btn btn-primary btn-xl"
-          onClick={() => onOpenSettings({ addChild: true })}
-        >
-          Ρυθμίσεις → Πρόσθεσε παιδί
-        </button>
-      ) : (
-        canStartFromHome && (
-          <>
-            <button
-              type="button"
-              className="btn btn-primary btn-xl"
-              disabled={dailyLimitReached}
-              onClick={onStart}
-            >
-              {dailyLimitReached ? "Έφτασες το ημερήσιο όριο" : "Ξεκίνα"}
+      {canStartFromHome && (
+        <>
+          <button
+            type="button"
+            className="btn btn-primary btn-xl"
+            disabled={dailyLimitReached}
+            onClick={onStart}
+          >
+            {dailyLimitReached ? "Έφτασες το ημερήσιο όριο" : "Ξεκίνα"}
+          </button>
+          {dailyLimitReached && tier === "free" && (
+            <button type="button" className="btn btn-secondary btn-xl" onClick={onOpenPricing}>
+              Αναβάθμιση
             </button>
-            {dailyLimitReached && tier === "free" && (
-              <button type="button" className="btn btn-secondary btn-xl" onClick={onOpenPricing}>
-                Αναβάθμιση
-              </button>
-            )}
-          </>
-        )
+          )}
+        </>
       )}
 
       {progressStats && (
