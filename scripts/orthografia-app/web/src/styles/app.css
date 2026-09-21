@@ -1348,6 +1348,118 @@ body {
   text-decoration: underline;
 }
 
+.hero-sub {
+  margin: 0.35rem 0 0;
+  font-size: 0.95rem;
+  color: var(--ink-soft);
+  line-height: 1.4;
+}
+
+.reward-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  width: 100%;
+  max-width: 360px;
+  text-align: center;
+}
+
+.reward-score {
+  margin: 0;
+  font-size: 1rem;
+  color: var(--ink);
+}
+
+.reward-score strong {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  color: var(--teal-dark);
+}
+
+.reward-bar {
+  height: 10px;
+  background: var(--white);
+  border-radius: 999px;
+  overflow: hidden;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.reward-bar__fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--coral), #f6bd60);
+  border-radius: 999px;
+  transition: width 0.35s ease;
+}
+
+.settings-panel__actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 0.65rem;
+  flex-wrap: wrap;
+}
+
+.settings-saved {
+  font-size: 0.9rem;
+  color: var(--ok);
+  font-weight: 600;
+}
+
+.celebration-overlay {
+  background: rgba(26, 46, 43, 0.55);
+  z-index: 120;
+}
+
+.celebration-card {
+  width: 100%;
+  max-width: 380px;
+  background: linear-gradient(165deg, #fff9f0 0%, var(--white) 55%, #e8f8f5 100%);
+  border-radius: var(--radius);
+  padding: 1.5rem 1.25rem 1.35rem;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.65rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.celebration-burst {
+  display: flex;
+  gap: 1.25rem;
+  font-size: 1.4rem;
+  color: var(--coral);
+  animation: pulse 1.6s ease-in-out infinite;
+}
+
+.celebration-burst span:nth-child(2) {
+  color: #f6bd60;
+  font-size: 1.7rem;
+}
+
+.celebration-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.6rem, 6vw, 2rem);
+  font-weight: 800;
+  margin: 0;
+  color: var(--teal-dark);
+}
+
+.celebration-message {
+  margin: 0;
+  font-size: 1.05rem;
+  color: var(--ink);
+  line-height: 1.45;
+}
+
+.celebration-sub {
+  margin: 0 0 0.35rem;
+  font-size: 0.95rem;
+  color: var(--ink-soft);
+}
+
 @media (min-width: 600px) {
   .screen {
     padding-inline: 2rem;
