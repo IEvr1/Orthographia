@@ -311,7 +311,11 @@ def discover_input_files(input_dir: Path) -> list[Path]:
         return []
     files: list[Path] = []
     for pattern in ("*.csv", "*.xlsx", "*.xls"):
-        files.extend(sorted(input_dir.glob(pattern)))
+        for path in sorted(input_dir.glob(pattern)):
+            # Skip documentation samples (sample_*.csv)
+            if path.name.lower().startswith("sample_"):
+                continue
+            files.append(path)
     return files
 
 

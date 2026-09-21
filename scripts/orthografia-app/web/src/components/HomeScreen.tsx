@@ -1,10 +1,9 @@
+import { SignInButton, SignedIn, SignedOut, UserButton } from "@clerk/clerk-react";
 import type { GameMode } from "../types";
 import type { PlanTier } from "../lib/access";
 import { canAccessGrade, canAccessMode, tierLabel } from "../lib/access";
-import type { DifficultyMix } from "../lib/difficulty";
-import type { GradeProgressStats } from "../lib/progressStats";
+import { isClerkEnabled } from "../lib/subscription";
 import { SettingsIcon } from "./SettingsScreen";
-import { ProgressSummaryPanel } from "./ProgressSummaryPanel";
 
 const GRADE_LABELS: Record<number, string> = {
   1: "Α΄",
@@ -24,10 +23,7 @@ interface HomeScreenProps {
   onStart: () => void;
   onOpenSettings: (options?: { addChild?: boolean }) => void;
   onOpenPricing: () => void;
-  progressStats: GradeProgressStats;
-  lastSessionDate: string | null;
   activeChildName?: string | null;
-  sessionMix?: DifficultyMix | null;
   selectedGrade: number;
   availableGrades: Set<number>;
   onGradeChange: (grade: number) => void;
@@ -46,10 +42,7 @@ export function HomeScreen({
   onStart,
   onOpenSettings,
   onOpenPricing,
-  progressStats,
-  lastSessionDate,
   activeChildName,
-  sessionMix,
   selectedGrade,
   availableGrades,
   onGradeChange,
@@ -77,6 +70,20 @@ export function HomeScreen({
           </button>
         </div>
         <div className="home-topbar__actions">
+          {isClerkEnabled() && (
+            <div className="home-auth">
+              <SignedOut>
+                <SignInButton mode="modal">
+                  <button type="button" className="btn-text">
+                    Σύνδεση
+                  </button>
+                </SignInButton>
+              </SignedOut>
+              <SignedIn>
+                <UserButton afterSignOutUrl="/" />
+              </SignedIn>
+            </div>
+          )}
           <button
             type="button"
             className="icon-btn"
@@ -92,7 +99,6 @@ export function HomeScreen({
         <p className="brand">Ορθογραφία</p>
         <h1 className="hero-title">Μάθε να γράφεις σωστά!</h1>
         {activeChildName && <p className="hero-child">Παίζει: {activeChildName}</p>}
-        <p className="hero-sub">Δες την πρόταση και γράψε τη λέξη με τον τόνο της.</p>
       </div>
 
       {!showFamilyProfiles && (
@@ -123,16 +129,16 @@ export function HomeScreen({
         </div>
       )}
 
-      <div className="grade-picker">
-        <p className="section-label">Τρόπος εξάσκησης</p>
-        <div className="grade-options">
+      <div className="mode-picker">
+        <p className="section-label section-label--strong">Τρόπος εξάσκησης</p>
+        <div className="mode-options">
           {(Object.keys(MODE_LABELS) as GameMode[]).map((mode) => {
             const allowed = canAccessMode(tier, mode);
             return (
               <button
                 key={mode}
                 type="button"
-                className={`grade-chip${gameMode === mode ? " grade-chip--active" : ""}${!allowed ? " grade-chip--locked" : ""}`}
+                className={`mode-chip${gameMode === mode ? " mode-chip--active" : ""}${!allowed ? " mode-chip--locked" : ""}`}
                 disabled={!allowed || subscriptionLoading}
                 onClick={() => allowed && onModeChange(mode)}
                 title={!allowed ? "Διαθέσιμο με Premium" : undefined}
@@ -146,7 +152,7 @@ export function HomeScreen({
 
       <button
         type="button"
-        className="btn btn-primary btn-xl"
+        className="btn btn-primary btn-start"
         disabled={startBlocked && !needsProfile}
         onClick={() => {
           if (needsProfile) {
@@ -160,16 +166,16 @@ export function HomeScreen({
           ? "Πρόσθεσε προφίλ παιδιού"
           : dailyLimitReached
             ? "Έφτασες το ημερήσιο όριο"
-            : "Σημερινή αποστολή"}
+            : "Ξεκινάμε"}
       </button>
       {dailyLimitReached && tier === "free" && (
-        <button type="button" className="btn btn-secondary btn-xl" onClick={onOpenPricing}>
+        <button type="button" className="btn btn-secondary btn-start" onClick={onOpenPricing}>
           Αναβάθμιση για απεριόριστη εξάσκηση
         </button>
       )}
 
       <div className="reward-panel">
-        <p className="section-label">Επιβράβευση</p>
+        <p className="section-label section-label--strong">Στόχος</p>
         <p className="reward-score">
           {activeChildName ? `${activeChildName}: ` : ""}
           <strong>
@@ -185,14 +191,6 @@ export function HomeScreen({
         </div>
         <p className="progress-detail">Κάθε σωστή απάντηση = 1 αστέρι προς τον στόχο.</p>
       </div>
-
-      <ProgressSummaryPanel
-        stats={progressStats}
-        gradeLabel={GRADE_LABELS[selectedGrade] ?? String(selectedGrade)}
-        activeChildName={activeChildName}
-        lastSessionDate={lastSessionDate}
-        sessionMix={sessionMix}
-      />
 
       <footer className="legal-footer">
         <a href="/privacy">Απορρήτο</a>

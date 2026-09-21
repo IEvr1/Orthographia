@@ -131,7 +131,7 @@ export function SettingsScreen({
       )}
 
       <section className="settings-section">
-        <p className="section-label">Επιβράβευση</p>
+        <p className="section-label section-label--strong">Στόχος</p>
         <label className="form-label" htmlFor="reward-goal-input">
           Στόχος σωστών απαντήσεων ({MIN_REWARD_GOAL}–{MAX_REWARD_GOAL})
           <input

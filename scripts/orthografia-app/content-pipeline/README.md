@@ -2,6 +2,17 @@
 
 Παράγει `words.json` και mp3 ήχο για την PWA.
 
+## Reset περιεχομένου
+
+Αν θέλεις να ξαναχτίσεις λέξεις/προτάσεις/κανόνες από την αρχή:
+
+```powershell
+cd scripts/orthografia-app/content-pipeline
+..\..\..\.venv\Scripts\python.exe reset_content.py
+```
+
+Καθαρίζει `words.json`, `rules.json`, `families.json`, audio, CSV inputs και overrides. Μετά γέμισε `word_lists.py` / inputs και τρέξε `generate_seed.py`.
+
 ## Workflow
 
 ```powershell
@@ -37,7 +48,7 @@ cd scripts/orthografia-app/content-pipeline
 - **Άδεια:** CC BY-NC 4.0 — μη εμπορική χρήση (OK για αυτή την εφαρμογή).
 - **Φίλτρα:** ΚΝΕ, ουσιαστικά/επίθετα/ρήματα, hints με `___` (χωρίς διαρροή ορθογραφίας).
 - **Όριο:** ~90 λέξεις/τάξη (ρυθμιζόμενο με `--cap`).
-- **Δείγμα:** `inputs/helexkids/sample_grade1.csv` για smoke test.
+- **Δείγμα:** `inputs/helexkids/sample_grade1.csv.example` για format reference (δεν εισάγεται αυτόματα).
 
 Αν δεν υπάρχουν CSV, το import τερματίζει με οδηγίες (exit 0).
 

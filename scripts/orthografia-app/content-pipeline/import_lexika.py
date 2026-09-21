@@ -156,32 +156,8 @@ def sync_families_and_rules() -> tuple[int, int]:
         )
         families_count = len(families)
 
-    base_rules = [
-        {
-            "id": "tonos-basic",
-            "title": "Ο τόνος δείχνει ποια συλλαβή τονούμε",
-            "body": "Στην ορθογραφία βάζουμε τόνο πάνω από το φωνήεν της τονισμένης συλλαβής.",
-            "examples": [
-                {"word": "ήλιος", "hint": "Ο ήλιος λάμπει ψηλά."},
-                {"word": "πόρτα", "hint": "Χτύπησε στην πόρτα."},
-            ],
-            "grades": [1, 2, 3, 4],
-        },
-        {
-            "id": "double-consonant",
-            "title": "Διπλά σύμφωνα",
-            "body": "Μερικές λέξεις έχουν διπλό σύμφωνο (π.χ. θάλασσα, γράμμα).",
-            "examples": [{"word": "θάλασσα", "hint": "Η θάλασσα είναι γαλάζια."}],
-            "grades": [2, 3, 4],
-        },
-        {
-            "id": "final-sigma",
-            "title": "Το σ και το ς",
-            "body": "Στο τέλος της λέξης γράφουμε ς, ενώ μέσα στη λέξη γράφουμε σ.",
-            "examples": [{"word": "θάλασσα", "hint": "Η θάλασσα έχει δύο σ."}],
-            "grades": [5, 6],
-        },
-    ]
+    # Start empty after content reset; fill via rules_snippets.json / grammar_rules.json.
+    base_rules: list[dict[str, Any]] = []
     if RULES_SRC.exists():
         snippets = json.loads(RULES_SRC.read_text(encoding="utf-8"))
         base_rules.extend(snippets.get("rules", []))

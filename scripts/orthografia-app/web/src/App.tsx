@@ -31,9 +31,7 @@ import {
 
 } from "./lib/progressSync";
 
-import { buildDailySession, gradesWithWords, previewDailySessionMix } from "./lib/session";
-
-import { computeGradeStats } from "./lib/progressStats";
+import { buildDailySession, gradesWithWords } from "./lib/session";
 
 import { getRewardGoal, setRewardGoal } from "./lib/settings";
 import { getRewardPoints, loadProgress } from "./lib/storage";
@@ -161,7 +159,7 @@ function AppShell({
   const [summary, setSummary] = useState<SessionSummary | null>(null);
 
   const [loadError, setLoadError] = useState<string | null>(null);
-
+  const [contentReady, setContentReady] = useState(false);
   const [selectedGrade, setSelectedGrade] = useState(3);
 
   const [gameMode, setGameMode] = useState<GameMode>("sentence");
@@ -247,9 +245,14 @@ function AppShell({
 
         }
 
+        setContentReady(true);
+
       })
 
-      .catch((err: Error) => setLoadError(err.message));
+      .catch((err: Error) => {
+        setLoadError(err.message);
+        setContentReady(true);
+      });
 
   }, []);
 
@@ -352,19 +355,9 @@ function AppShell({
 
   const rewardPoints = getRewardPoints(progressStore);
 
-  const progressStats = useMemo(
-    () => computeGradeStats(progressStore, words, selectedGrade),
-    [progressStore, words, selectedGrade],
-  );
-
   const handleRewardGoalChange = useCallback((goal: number) => {
     setRewardGoalState(setRewardGoal(goal));
   }, []);
-
-  const sessionMix = useMemo(
-    () => (gradeWords.length > 0 ? previewDailySessionMix(words, progressStore, selectedGrade) : null),
-    [words, progressStore, selectedGrade, gradeWords.length, progressVersion],
-  );
 
 
 
@@ -582,13 +575,29 @@ function AppShell({
 
 
 
-  if (words.length === 0 && !loadError) {
+  if (!contentReady && !loadError) {
 
     return (
 
       <main className="screen screen--home">
 
         <p className="loading">Φόρτωση…</p>
+
+      </main>
+
+    );
+
+  }
+
+
+
+  if (words.length === 0 && !loadError) {
+
+    return (
+
+      <main className="screen screen--home">
+
+        <p className="loading">Δεν υπάρχουν ακόμη λέξεις. Το περιεχόμενο θα ξαναχτιστεί από την αρχή.</p>
 
       </main>
 
@@ -612,13 +621,7 @@ function AppShell({
 
           onOpenPricing={() => setScreen("pricing")}
 
-          progressStats={progressStats}
-
-          lastSessionDate={progressStore.lastSessionDate}
-
           activeChildName={activeProfile?.name ?? null}
-
-          sessionMix={sessionMix}
 
           selectedGrade={selectedGrade}
 
