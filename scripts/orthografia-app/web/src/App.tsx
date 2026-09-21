@@ -35,7 +35,8 @@ import { buildDailySession, gradesWithWords, previewDailySessionMix } from "./li
 
 import { computeGradeStats } from "./lib/progressStats";
 
-import { loadProgress } from "./lib/storage";
+import { getRewardGoal, setRewardGoal } from "./lib/settings";
+import { getRewardPoints, loadProgress } from "./lib/storage";
 
 import { buildWeeklyWordSession, getWeeklyRule } from "./lib/weeklyRule";
 
@@ -176,6 +177,8 @@ function AppShell({
   const [activeProfileId, setActiveProfileIdState] = useState<string | null>(() => getActiveProfileId());
 
   const [progressVersion, setProgressVersion] = useState(0);
+
+  const [rewardGoal, setRewardGoalState] = useState(() => getRewardGoal());
 
   const tier = subscription.tier;
 
@@ -347,10 +350,16 @@ function AppShell({
     [activeProfileId, progressVersion, screen],
   );
 
+  const rewardPoints = getRewardPoints(progressStore);
+
   const progressStats = useMemo(
     () => computeGradeStats(progressStore, words, selectedGrade),
     [progressStore, words, selectedGrade],
   );
+
+  const handleRewardGoalChange = useCallback((goal: number) => {
+    setRewardGoalState(setRewardGoal(goal));
+  }, []);
 
   const sessionMix = useMemo(
     () => (gradeWords.length > 0 ? previewDailySessionMix(words, progressStore, selectedGrade) : null),
@@ -631,6 +640,10 @@ function AppShell({
 
           showFamilyProfiles={showFamilyProfiles}
 
+          rewardPoints={rewardPoints}
+
+          rewardGoal={rewardGoal}
+
         />
 
       )}
@@ -652,6 +665,10 @@ function AppShell({
           isSuperAdmin={subscription.isSuperAdmin}
 
           autoOpenAddChild={settingsAddChild}
+
+          rewardGoal={rewardGoal}
+
+          onRewardGoalChange={handleRewardGoalChange}
 
           familyProfiles={
 

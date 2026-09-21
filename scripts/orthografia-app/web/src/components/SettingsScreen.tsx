@@ -1,6 +1,12 @@
 import { SignInButton, SignedIn, SignedOut, UserButton } from "@clerk/clerk-react";
+import { useEffect, useState } from "react";
 import type { PlanTier } from "../lib/access";
 import { canUseCloudSync, tierLabel } from "../lib/access";
+import {
+  DEFAULT_REWARD_GOAL,
+  MAX_REWARD_GOAL,
+  MIN_REWARD_GOAL,
+} from "../lib/settings";
 import type { ChildProfile } from "../lib/subscription";
 import { isClerkEnabled } from "../lib/subscription";
 import { ChildProfileManager } from "./ChildProfileManager";
@@ -36,6 +42,8 @@ interface SettingsScreenProps {
   tier: PlanTier;
   isSuperAdmin?: boolean;
   autoOpenAddChild?: boolean;
+  rewardGoal: number;
+  onRewardGoalChange: (goal: number) => void;
   familyProfiles?: {
     profiles: ChildProfile[];
     maxProfiles: number;
@@ -54,10 +62,28 @@ export function SettingsScreen({
   tier,
   isSuperAdmin = false,
   autoOpenAddChild = false,
+  rewardGoal,
+  onRewardGoalChange,
   familyProfiles,
 }: SettingsScreenProps) {
   const showCloudSync = syncEnabled && onSyncProgress && canUseCloudSync(tier);
   const showFamilyProfiles = Boolean(familyProfiles);
+  const [goalDraft, setGoalDraft] = useState(String(rewardGoal));
+  const [goalSaved, setGoalSaved] = useState(false);
+
+  useEffect(() => {
+    setGoalDraft(String(rewardGoal));
+  }, [rewardGoal]);
+
+  const saveGoal = () => {
+    const parsed = Number.parseInt(goalDraft, 10);
+    const next = Number.isFinite(parsed) ? parsed : DEFAULT_REWARD_GOAL;
+    const saved = Math.min(MAX_REWARD_GOAL, Math.max(MIN_REWARD_GOAL, next));
+    onRewardGoalChange(saved);
+    setGoalDraft(String(saved));
+    setGoalSaved(true);
+    window.setTimeout(() => setGoalSaved(false), 1600);
+  };
 
   return (
     <main className="screen screen--settings fade-in">
@@ -103,6 +129,30 @@ export function SettingsScreen({
           />
         </section>
       )}
+
+      <section className="settings-section">
+        <p className="section-label">Επιβράβευση</p>
+        <label className="form-label" htmlFor="reward-goal-input">
+          Στόχος σωστών απαντήσεων ({MIN_REWARD_GOAL}–{MAX_REWARD_GOAL})
+          <input
+            id="reward-goal-input"
+            className="form-input"
+            type="number"
+            min={MIN_REWARD_GOAL}
+            max={MAX_REWARD_GOAL}
+            step={1}
+            value={goalDraft}
+            onChange={(e) => setGoalDraft(e.target.value)}
+          />
+        </label>
+        <p className="hint-text">Κάθε σωστή απάντηση δίνει 1 πόντο. Όταν φτάσει τον στόχο, εμφανίζεται γιορτή.</p>
+        <div className="settings-panel__actions">
+          <button type="button" className="btn btn-secondary" onClick={saveGoal}>
+            Αποθήκευση στόχου
+          </button>
+          {goalSaved && <span className="settings-saved">Αποθηκεύτηκε</span>}
+        </div>
+      </section>
 
       <section className="settings-section">
         <p className="section-label">Δεδομένα</p>
