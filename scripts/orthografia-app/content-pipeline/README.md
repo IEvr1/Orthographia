@@ -125,7 +125,41 @@ python generate_audio.py --placeholder
 
 Δημιουργεί σιωπηλά `.wav` placeholders ώστε η εφαρμογή να μην σπάει στο κουμπί «Άκου».
 
-## 4. Τρέξε την εφαρμογή
+## 4. Review λέξεων / προτάσεων / παραδειγμάτων ανά τάξη
+
+Για ανθρώπινο QA ανά τάξη (λέξη + cloze πρόταση + παραδείγματα κανόνων):
+
+```powershell
+cd scripts/orthografia-app/content-pipeline
+..\..\..\.venv\Scripts\python.exe grade_review.py              # σύνοψη Α΄–Στ΄
+..\..\..\.venv\Scripts\python.exe grade_review.py --export-all # packs + HTML reviewer
+```
+
+Έπειτα άνοιξε τον reviewer (το `fetch` χρειάζεται local server):
+
+```powershell
+python -m http.server 8765 --directory review
+# browser: http://localhost:8765/?grade=2
+```
+
+Στο UI μπορείς να φιλτράρεις κατά προτεραιότητα (high/medium/low), να μαρκάρεις OK / χρειάζεται διόρθωση / παράβλεψη / λάθος τάξη, και να εξάγεις `grade_review_status.json`.
+
+Επαναφορά status στο repo και εφαρμογή διορθώσεων:
+
+```powershell
+python grade_review.py --import-status path\to\grade_review_status.json
+python grade_review.py --apply-status   # γράφει inputs/hint_overrides.json
+python fix_hints.py                     # εφαρμόζει overrides στο words.json
+```
+
+Προτεραιότητες:
+- **high** — garbled / leaks word / empty / english
+- **medium** — generic, διπλότυπα hints, κενά rule examples, λείπει ορισμός (Δ΄+)
+- **low** — καθαρά curated entries
+
+Τα παραγόμενα packs είναι στο `review/` (δεν μπαίνουν στο git).
+
+## 5. Τρέξε την εφαρμογή
 
 ```powershell
 cd ../web

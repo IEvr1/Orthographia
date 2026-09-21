@@ -94,7 +94,8 @@ export function SentenceExercise({ words, onComplete, onQuit }: SentenceExercise
           pendingAdvanceRef.current = next;
           setCelebrationGoal(goal);
         } else {
-          window.setTimeout(() => advance(next), 1200);
+          const delayMs = current.definition ? 2300 : 1200;
+          window.setTimeout(() => advance(next), delayMs);
         }
         return next;
       });

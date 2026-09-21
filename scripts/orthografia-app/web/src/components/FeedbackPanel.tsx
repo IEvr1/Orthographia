@@ -32,6 +32,14 @@ export function FeedbackPanel({
         </span>
         <p className="feedback-title">Μπράβο!</p>
         <p>Η λέξη είναι σωστή.</p>
+        {definition && (
+          <p className="lexicon-def">
+            <span className="lexicon-label">Λεξικό:</span> {definition}
+          </p>
+        )}
+        {result.feedbackRule && (
+          <p className="feedback-rule">{result.feedbackRule}</p>
+        )}
       </div>
     );
   }

@@ -134,7 +134,10 @@ export function recordAttempt(
     if (updated.consecutiveCorrect >= MASTER_THRESHOLD && fsrs.stability >= 7) {
       updated.mastered = true;
     }
-    next.rewardPoints = getRewardPoints(next) + 1;
+    // Reward points only for first-attempt correct answers, not rewrite successes.
+    if (!hadRewrite) {
+      next.rewardPoints = getRewardPoints(next) + 1;
+    }
   } else {
     updated.consecutiveCorrect = 0;
     updated.mastered = false;

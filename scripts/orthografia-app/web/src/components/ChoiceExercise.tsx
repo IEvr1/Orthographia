@@ -84,7 +84,8 @@ export function ChoiceExercise({ words, allWords, onComplete, onQuit }: ChoiceEx
         pendingAdvanceRef.current = next;
         setCelebrationGoal(goal);
       } else {
-        window.setTimeout(() => advance(next), isCorrect ? 900 : 1800);
+        const correctDelay = current.definition ? 2300 : 900;
+        window.setTimeout(() => advance(next), isCorrect ? correctDelay : 1800);
       }
       return next;
     });
@@ -131,6 +132,19 @@ export function ChoiceExercise({ words, allWords, onComplete, onQuit }: ChoiceEx
             );
           })}
         </div>
+
+        {picked && picked === current.word && (current.definition || current.feedbackRule) && (
+          <div className="feedback feedback--success bounce-in" role="status">
+            {current.definition && (
+              <p className="lexicon-def">
+                <span className="lexicon-label">Λεξικό:</span> {current.definition}
+              </p>
+            )}
+            {current.feedbackRule && (
+              <p className="feedback-rule">{current.feedbackRule}</p>
+            )}
+          </div>
+        )}
 
         {picked && picked !== current.word && (
           <p className="feedback-correct">

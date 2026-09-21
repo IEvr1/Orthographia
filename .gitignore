@@ -26,6 +26,7 @@ scripts/orthografia-app/content-pipeline/inputs/textbooks/_extract/
 scripts/orthografia-app/content-pipeline/inputs/lexika/*.pdf
 scripts/orthografia-app/content-pipeline/inputs/lexika/_extract/
 scripts/orthografia-app/content-pipeline/_test_abc_decode.py
+scripts/orthografia-app/content-pipeline/review/
 
 # OS
 .DS_Store
