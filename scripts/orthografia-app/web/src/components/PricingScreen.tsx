@@ -2,12 +2,17 @@ import { SignInButton, SignedIn, SignedOut, UserButton } from "@clerk/clerk-reac
 import { useState } from "react";
 import type { PlanTier } from "../lib/access";
 import { tierLabel } from "../lib/access";
-import { isClerkEnabled, useSubscription } from "../lib/subscription";
+import { isClerkEnabled } from "../lib/subscription";
 
 type CheckoutPlan = "monthly" | "yearly" | "family";
 
 interface PricingScreenProps {
   onBack: () => void;
+  tier: PlanTier;
+  active: boolean;
+  currentPeriodEnd: string | null;
+  startCheckout?: (plan: CheckoutPlan) => Promise<string | null>;
+  openPortal?: () => Promise<string | null>;
 }
 
 const PLANS: Array<{
@@ -28,7 +33,7 @@ const PLANS: Array<{
       "Όλες οι τάξεις (Α΄–Στ΄)",
       "Όλοι οι τρόποι εξάσκησης",
       "Απεριόριστη εξάσκηση",
-      "Συγχρονισμός cloud",
+      "Συγχρονισμός με άλλες συσκευές",
     ],
   },
   {
@@ -49,7 +54,7 @@ const PLANS: Array<{
     features: [
       "Έως 3 προφίλ παιδιών",
       "Πλήρης πρόσβαση για κάθε παιδί",
-      "Συγχρονισμός cloud",
+      "Συγχρονισμός με άλλες συσκευές",
     ],
   },
 ];
@@ -59,16 +64,23 @@ function formatPeriodEnd(iso: string | null): string | null {
   return new Date(iso).toLocaleDateString("el-GR");
 }
 
-export function PricingScreen({ onBack }: PricingScreenProps) {
-  const subscription = useSubscription();
+export function PricingScreen({
+  onBack,
+  tier,
+  active,
+  currentPeriodEnd,
+  startCheckout,
+  openPortal,
+}: PricingScreenProps) {
   const [busy, setBusy] = useState<CheckoutPlan | "portal" | null>(null);
   const [message, setMessage] = useState<string | null>(null);
 
   const handleCheckout = async (plan: CheckoutPlan) => {
+    if (!startCheckout) return;
     setMessage(null);
     setBusy(plan);
     try {
-      const url = await subscription.startCheckout(plan);
+      const url = await startCheckout(plan);
       if (url) window.location.href = url;
       else setMessage("Δεν ήταν δυνατή η έναρξη πληρωμής.");
     } catch (err) {
@@ -79,10 +91,11 @@ export function PricingScreen({ onBack }: PricingScreenProps) {
   };
 
   const handlePortal = async () => {
+    if (!openPortal) return;
     setMessage(null);
     setBusy("portal");
     try {
-      const url = await subscription.openPortal();
+      const url = await openPortal();
       if (url) window.location.href = url;
       else setMessage("Δεν βρέθηκε ενεργή συνδρομή.");
     } catch (err) {
@@ -91,8 +104,6 @@ export function PricingScreen({ onBack }: PricingScreenProps) {
       setBusy(null);
     }
   };
-
-  const tier = subscription.tier as PlanTier;
 
   return (
     <main className="screen screen--pricing fade-in">
@@ -127,11 +138,11 @@ export function PricingScreen({ onBack }: PricingScreenProps) {
       <div className="plan-status">
         <p>
           Τρέχον πλάνο: <strong>{tierLabel(tier)}</strong>
-          {subscription.active && subscription.currentPeriodEnd && (
-            <> · έως {formatPeriodEnd(subscription.currentPeriodEnd)}</>
+          {active && currentPeriodEnd && (
+            <> · έως {formatPeriodEnd(currentPeriodEnd)}</>
           )}
         </p>
-        {subscription.active && (
+        {active && openPortal && (
           <button
             type="button"
             className="btn-text"
@@ -174,10 +185,10 @@ export function PricingScreen({ onBack }: PricingScreenProps) {
                   <button
                     type="button"
                     className="btn btn-primary btn-xl"
-                    disabled={busy !== null || (subscription.active && plan.id !== "family")}
+                    disabled={busy !== null || !startCheckout || (active && plan.id !== "family")}
                     onClick={() => void handleCheckout(plan.id)}
                   >
-                    {busy === plan.id ? "Μετάβαση…" : subscription.active ? "Αλλαγή πλάνου" : "Επιλογή"}
+                    {busy === plan.id ? "Μετάβαση…" : active ? "Αλλαγή πλάνου" : "Επιλογή"}
                   </button>
                 </SignedIn>
               </>

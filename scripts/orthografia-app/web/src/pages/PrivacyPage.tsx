@@ -28,7 +28,7 @@ export function PrivacyPage() {
           <ul className="legal-list">
             <li>Πρόοδος εξάσκησης (λέξεις, αποτελέσματα, χρονοδιάγραμμα επανάληψης)</li>
             <li>Τοπική αποθήκευση (localStorage) για offline λειτουργία</li>
-            <li>Αναγνωριστικό συσκευής (UUID) για cloud συγχρονισμό</li>
+            <li>Αναγνωριστικό συσκευής (UUID) για συγχρονισμό με άλλες συσκευές</li>
             <li>Email και αναγνωριστικό λογαριασμού γονέα (Clerk)</li>
             <li>Στοιχεία συνδρομής (Stripe): κατάσταση, πλάνο — όχι στοιχεία κάρτας</li>
             <li>IP κατά την καταγραφή συγκατάθεσης (προαιρετικά, για απόδειξη συμμόρφωσης)</li>
@@ -57,7 +57,7 @@ export function PrivacyPage() {
           <ul className="legal-list">
             <li>Clerk — αυθεντικοποίηση γονέα</li>
             <li>Stripe — πληρωμές συνδρομής</li>
-            <li>Neon Postgres — αποθήκευση cloud προόδου και συνδρομής</li>
+            <li>Neon Postgres — αποθήκευση προόδου και συνδρομής</li>
             <li>Vercel — φιλοξενία εφαρμογής</li>
           </ul>
         </section>
@@ -65,8 +65,8 @@ export function PrivacyPage() {
         <section className="legal-section">
           <h2>7. Δικαιώματα (GDPR)</h2>
           <ul className="legal-list">
-            <li>Πρόσβαση και εξαγωγή δεδομένων (εξαγωγή JSON από την εφαρμογή)</li>
-            <li>Διόρθωση μέσω εισαγωγής προόδου</li>
+            <li>Πρόσβαση και εξαγωγή δεδομένων — επικοινωνία με privacy@orthografia.app</li>
+            <li>Διόρθωση μέσω συγχρονισμού με άλλες συσκευές ή επικοινωνίας μαζί μας</li>
             <li>Διαγραφή: email στο privacy@orthografia.app ή διαγραφή λογαριασμού</li>
             <li>Ανάκληση συγκατάθεσης: διαγραφή λογαριασμού και επικοινωνία μαζί μας</li>
           </ul>

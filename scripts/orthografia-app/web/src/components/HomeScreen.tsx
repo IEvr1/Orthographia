@@ -1,4 +1,5 @@
 import { SignInButton, SignedIn, SignedOut, UserButton } from "@clerk/clerk-react";
+import { useState } from "react";
 import type { GameMode, RuleDefinition } from "../types";
 import type { PlanTier } from "../lib/access";
 import {
@@ -11,6 +12,11 @@ import {
 import type { DifficultyMix } from "../lib/difficulty";
 import { formatDifficultyMix } from "../lib/difficulty";
 import type { GradeProgressStats } from "../lib/progressStats";
+import {
+  DEFAULT_REWARD_GOAL,
+  MAX_REWARD_GOAL,
+  MIN_REWARD_GOAL,
+} from "../lib/settings";
 import type { ChildProfile } from "../lib/subscription";
 import { isClerkEnabled } from "../lib/subscription";
 import { ChildProfileManager } from "./ChildProfileManager";
@@ -51,6 +57,9 @@ interface HomeScreenProps {
   tier: PlanTier;
   isSuperAdmin?: boolean;
   dailyLimitReached: boolean;
+  rewardPoints: number;
+  rewardGoal: number;
+  onRewardGoalChange: (goal: number) => void;
   familyProfiles?: {
     profiles: ChildProfile[];
     maxProfiles: number;
@@ -83,6 +92,9 @@ export function HomeScreen({
   tier,
   isSuperAdmin = false,
   dailyLimitReached,
+  rewardPoints,
+  rewardGoal,
+  onRewardGoalChange,
   familyProfiles,
 }: HomeScreenProps) {
   const showWeekly = weeklyRule && canAccessWeeklyRule(tier);
@@ -90,6 +102,18 @@ export function HomeScreen({
   const showFamilyProfiles = Boolean(familyProfiles);
   const needsProfile = showFamilyProfiles && familyProfiles!.profiles.length === 0;
   const mixLabel = sessionMix ? formatDifficultyMix(sessionMix) : null;
+  const [goalDraft, setGoalDraft] = useState(String(rewardGoal));
+  const [goalSaved, setGoalSaved] = useState(false);
+
+  const saveGoal = () => {
+    const parsed = Number.parseInt(goalDraft, 10);
+    const next = Number.isFinite(parsed) ? parsed : DEFAULT_REWARD_GOAL;
+    const saved = Math.min(MAX_REWARD_GOAL, Math.max(MIN_REWARD_GOAL, next));
+    onRewardGoalChange(saved);
+    setGoalDraft(String(saved));
+    setGoalSaved(true);
+    window.setTimeout(() => setGoalSaved(false), 1600);
+  };
 
   return (
     <main className="screen screen--home fade-in">
@@ -217,6 +241,24 @@ export function HomeScreen({
         </div>
       )}
 
+      <div className="reward-panel">
+        <p className="section-label">Επιβράβευση</p>
+        <p className="reward-score">
+          {activeChildName ? `${activeChildName}: ` : ""}
+          <strong>
+            {rewardPoints}/{rewardGoal}
+          </strong>{" "}
+          σωστές απαντήσεις
+        </p>
+        <div className="reward-bar" aria-hidden="true">
+          <div
+            className="reward-bar__fill"
+            style={{ width: `${Math.min(100, (rewardPoints / Math.max(1, rewardGoal)) * 100)}%` }}
+          />
+        </div>
+        <p className="progress-detail">Κάθε σωστή απάντηση = 1 αστέρι προς τον στόχο.</p>
+      </div>
+
       {totalWords > 0 && (
         <div className="progress-panel">
           {activeChildName ? (
@@ -247,6 +289,29 @@ export function HomeScreen({
           )}
         </div>
       )}
+
+      <div className="settings-panel">
+        <p className="section-label">Ρυθμίσεις γονέα</p>
+        <label className="form-label" htmlFor="reward-goal-input">
+          Στόχος σωστών απαντήσεων ({MIN_REWARD_GOAL}–{MAX_REWARD_GOAL})
+          <input
+            id="reward-goal-input"
+            className="form-input"
+            type="number"
+            min={MIN_REWARD_GOAL}
+            max={MAX_REWARD_GOAL}
+            step={1}
+            value={goalDraft}
+            onChange={(e) => setGoalDraft(e.target.value)}
+          />
+        </label>
+        <div className="settings-panel__actions">
+          <button type="button" className="btn btn-secondary" onClick={saveGoal}>
+            Αποθήκευση στόχου
+          </button>
+          {goalSaved && <span className="settings-saved">Αποθηκεύτηκε</span>}
+        </div>
+      </div>
 
       <div className="progress-sync">
         <button type="button" className="btn-text" onClick={onExportProgress}>

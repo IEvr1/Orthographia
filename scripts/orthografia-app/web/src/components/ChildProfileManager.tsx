@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import { MAX_CHILD_NAME_LENGTH, sanitizeChildName, validateChildName } from "../lib/childName";
 import type { ChildProfile } from "../lib/subscription";
 import { deleteChildProfile, upsertChildProfile } from "../lib/subscription";
 
@@ -18,6 +19,7 @@ interface ChildProfileManagerProps {
   getToken: () => Promise<string | null>;
   onSelectProfile: (id: string) => void;
   onRefresh: () => Promise<void>;
+  autoOpenAdd?: boolean;
 }
 
 interface FormState {
@@ -33,10 +35,12 @@ export function ChildProfileManager({
   getToken,
   onSelectProfile,
   onRefresh,
+  autoOpenAdd = false,
 }: ChildProfileManagerProps) {
   const [editing, setEditing] = useState<FormState | null>(null);
   const [saving, setSaving] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const autoOpenedRef = useRef(false);
 
   const openAdd = () => {
     setError(null);
@@ -55,9 +59,10 @@ export function ChildProfileManager({
 
   const handleSave = async () => {
     if (!editing) return;
-    const name = editing.name.trim();
-    if (!name) {
-      setError("Το όνομα είναι υποχρεωτικό.");
+    const name = sanitizeChildName(editing.name);
+    const validationError = validateChildName(name);
+    if (validationError) {
+      setError(validationError);
       return;
     }
     if (editing.grade < 1 || editing.grade > 6) {
@@ -80,7 +85,8 @@ export function ChildProfileManager({
       onSelectProfile(profile.id);
       closeForm();
     } catch (err) {
-      setError(err instanceof Error ? err.message : "Σφάλμα αποθήκευσης");
+      const message = err instanceof Error ? err.message : "Σφάλμα αποθήκευσης";
+      setError(message.includes("foreign key") ? "Δεν ήταν δυνατή η αποθήκευση. Δοκίμασε ξανά." : message);
     } finally {
       setSaving(false);
     }
@@ -106,13 +112,20 @@ export function ChildProfileManager({
 
   const canAdd = profiles.length < maxProfiles;
 
+  useEffect(() => {
+    if (!autoOpenAdd || autoOpenedRef.current || !canAdd) return;
+    autoOpenedRef.current = true;
+    setError(null);
+    setEditing({ name: "", grade: 3 });
+  }, [autoOpenAdd, canAdd]);
+
   return (
     <div className="profile-manager">
       <p className="section-label">Προφίλ παιδιών</p>
 
       {profiles.length === 0 ? (
         <p className="hint-text profile-empty-hint">
-          Πρόσθεσε έως {maxProfiles} παιδιά για να ξεκινήσει η εξάσκηση.
+          Δημιούργησε προφίλ για κάθε παιδί (έως {maxProfiles}).
         </p>
       ) : (
         <div className="profile-chips">
@@ -145,7 +158,11 @@ export function ChildProfileManager({
       {error && !editing && <p className="error-msg profile-error">{error}</p>}
 
       {canAdd && (
-        <button type="button" className="btn btn-secondary profile-add-btn" onClick={openAdd}>
+        <button
+          type="button"
+          className={`btn profile-add-btn${profiles.length === 0 ? " btn-primary btn-xl" : " btn-secondary"}`}
+          onClick={openAdd}
+        >
           {profiles.length === 0 ? "Πρόσθεσε παιδί" : "Πρόσθεσε ακόμα ένα παιδί"}
         </button>
       )}
@@ -159,7 +176,7 @@ export function ChildProfileManager({
             onClick={(e) => e.stopPropagation()}
           >
             <h2 id="profile-form-title" className="modal-title">
-              {editing.id ? "Επεξεργασία προφίλ" : "Νέο προφίλ παιδιού"}
+              {editing.id ? editing.name : "Νέο παιδί"}
             </h2>
 
             <label className="form-label">
@@ -169,13 +186,15 @@ export function ChildProfileManager({
                 className="form-input"
                 value={editing.name}
                 onChange={(e) => setEditing({ ...editing, name: e.target.value })}
-                placeholder="π.χ. Μαρία"
-                maxLength={40}
+                placeholder="Μαρία, Maria, Marια"
+                maxLength={MAX_CHILD_NAME_LENGTH}
+                inputMode="text"
+                lang="el"
+                autoComplete="name"
                 autoFocus
               />
             </label>
 
-            <p className="section-label">Τάξη</p>
             <div className="grade-options">
               {[1, 2, 3, 4, 5, 6].map((grade) => (
                 <button
@@ -207,7 +226,7 @@ export function ChildProfileManager({
                   Ακύρωση
                 </button>
                 <button type="button" className="btn btn-primary" onClick={handleSave} disabled={saving}>
-                  {saving ? "Αποθήκευση…" : "Αποθήκευση"}
+                  {saving ? "…" : "Αποθήκευση"}
                 </button>
               </div>
             </div>

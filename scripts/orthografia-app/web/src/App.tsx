@@ -21,11 +21,7 @@ import type {
 
 import {
 
-  downloadProgressBackup,
-
   fetchProgressFromServer,
-
-  importProgressFromJson,
 
   isProgressSyncAvailable,
 
@@ -93,6 +89,8 @@ import { HomeScreen } from "./components/HomeScreen";
 
 import { PricingScreen } from "./components/PricingScreen";
 
+import { SettingsScreen } from "./components/SettingsScreen";
+
 import { RuleCard } from "./components/RuleCard";
 
 import { SentenceExercise } from "./components/SentenceExercise";
@@ -140,7 +138,11 @@ function AppShell({
   getToken,
   userId,
 }: {
-  subscription: SubscriptionState & { refresh?: () => Promise<void> };
+  subscription: SubscriptionState & {
+    refresh?: () => Promise<void>;
+    startCheckout?: (plan: "monthly" | "yearly" | "family") => Promise<string | null>;
+    openPortal?: () => Promise<string | null>;
+  };
   getToken?: () => Promise<string | null>;
   userId?: string | null;
 }) {
@@ -169,13 +171,11 @@ function AppShell({
 
   const [paywallMessage, setPaywallMessage] = useState<string | null>(null);
 
+  const [settingsAddChild, setSettingsAddChild] = useState(false);
+
   const [activeProfileId, setActiveProfileIdState] = useState<string | null>(() => getActiveProfileId());
 
   const [progressVersion, setProgressVersion] = useState(0);
-
-  const importRef = useRef<HTMLInputElement>(null);
-
-
 
   const tier = subscription.tier;
 
@@ -257,22 +257,18 @@ function AppShell({
 
 
   useEffect(() => {
+    if (subscription.loading) return;
 
     if (!canAccessGrade(tier, selectedGrade)) {
-
       const fallback = [1, 2].find((g) => availableGrades.has(g)) ?? 1;
-
       setSelectedGrade(fallback);
-
     }
+  }, [subscription.loading, tier, selectedGrade, availableGrades]);
 
-    if (!canAccessMode(tier, gameMode)) {
-
-      setGameMode("sentence");
-
-    }
-
-  }, [tier, selectedGrade, gameMode, availableGrades]);
+  useEffect(() => {
+    if (subscription.loading) return;
+    setGameMode((current) => (canAccessMode(tier, current) ? current : "sentence"));
+  }, [subscription.loading, tier]);
 
 
 
@@ -355,8 +351,6 @@ function AppShell({
     () => computeGradeStats(progressStore, words, selectedGrade),
     [progressStore, words, selectedGrade],
   );
-
-  const masteredCount = progressStats.mastered;
 
   const sessionMix = useMemo(
     () => (gradeWords.length > 0 ? previewDailySessionMix(words, progressStore, selectedGrade) : null),
@@ -471,32 +465,6 @@ function AppShell({
 
 
 
-  const startWeeklySession = useCallback(() => {
-
-    if (!weeklyRule) return;
-
-    if (showFamilyProfiles && !activeProfileId) return;
-
-    if (!canAccessWeeklyRule(tier)) {
-
-      setPaywallMessage("Ο κανόνας της εβδομάδας είναι διαθέσιμος με Premium.");
-
-      setScreen("pricing");
-
-      return;
-
-    }
-
-    setActiveRule(weeklyRule);
-
-    setSessionKind("weekly");
-
-    setScreen("rule");
-
-  }, [weeklyRule, tier, showFamilyProfiles, activeProfileId]);
-
-
-
   const handleRuleContinue = () => {
 
     if (activeRule) {
@@ -533,39 +501,11 @@ function AppShell({
 
 
 
-  const handleImportProgress = () => {
-
-    importRef.current?.click();
-
-  };
-
-
-
-  const onImportFile = async (e: React.ChangeEvent<HTMLInputElement>) => {
-
-    const file = e.target.files?.[0];
-
-    if (!file) return;
-
-    const text = await file.text();
-
-    importProgressFromJson(text, activeProfileId);
-
-    setProgressVersion((v) => v + 1);
-
-    setScreen("home");
-
-    e.target.value = "";
-
-  };
-
-
-
   const handleSync = async () => {
 
     if (!canUseCloudSync(tier)) {
 
-      setPaywallMessage("Ο συγχρονισμός cloud είναι διαθέσιμος με Premium.");
+      setPaywallMessage("Ο συγχρονισμός με άλλες συσκευές είναι διαθέσιμος με Premium.");
 
       setScreen("pricing");
 
@@ -585,9 +525,27 @@ function AppShell({
 
     setProgressVersion((v) => v + 1);
 
+  };
+
+
+
+  const openSettings = useCallback((options?: { addChild?: boolean }) => {
+
+    setSettingsAddChild(Boolean(options?.addChild));
+
+    setScreen("settings");
+
+  }, []);
+
+
+
+  const closeSettings = useCallback(() => {
+
+    setSettingsAddChild(false);
+
     setScreen("home");
 
-  };
+  }, []);
 
 
 
@@ -635,43 +593,19 @@ function AppShell({
 
     <div className="app">
 
-      <input
-
-        ref={importRef}
-
-        type="file"
-
-        accept="application/json,.json"
-
-        hidden
-
-        onChange={onImportFile}
-
-      />
-
       {screen === "home" && (
 
         <HomeScreen
 
           onStart={startSession}
 
-          onWeeklyStart={startWeeklySession}
-
-          onExportProgress={() => downloadProgressBackup(activeProfileId)}
-
-          onImportProgress={handleImportProgress}
-
-          onSyncProgress={handleSync}
+          onOpenSettings={openSettings}
 
           onOpenPricing={() => setScreen("pricing")}
 
-          syncEnabled={SYNC_ENABLED}
-
-          masteredCount={masteredCount}
-
-          totalWords={gradeWords.length}
-
           progressStats={progressStats}
+
+          lastSessionDate={progressStore.lastSessionDate}
 
           activeChildName={activeProfile?.name ?? null}
 
@@ -687,13 +621,37 @@ function AppShell({
 
           onModeChange={setGameMode}
 
-          weeklyRule={weeklyRule}
+          tier={tier}
+
+          subscriptionLoading={subscription.loading}
+
+          isSuperAdmin={subscription.isSuperAdmin}
+
+          dailyLimitReached={dailyLimitReached}
+
+          showFamilyProfiles={showFamilyProfiles}
+
+        />
+
+      )}
+
+      {screen === "settings" && (
+
+        <SettingsScreen
+
+          onBack={closeSettings}
+
+          onOpenPricing={() => setScreen("pricing")}
+
+          onSyncProgress={handleSync}
+
+          syncEnabled={SYNC_ENABLED}
 
           tier={tier}
 
           isSuperAdmin={subscription.isSuperAdmin}
 
-          dailyLimitReached={dailyLimitReached}
+          autoOpenAddChild={settingsAddChild}
 
           familyProfiles={
 
@@ -729,7 +687,14 @@ function AppShell({
 
           {paywallMessage && <p className="pricing-banner">{paywallMessage}</p>}
 
-          <PricingScreen onBack={() => setScreen("home")} />
+          <PricingScreen
+            onBack={() => setScreen("home")}
+            tier={tier}
+            active={subscription.active}
+            currentPeriodEnd={subscription.currentPeriodEnd}
+            startCheckout={subscription.startCheckout}
+            openPortal={subscription.openPortal}
+          />
 
         </>
 

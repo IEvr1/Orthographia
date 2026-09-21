@@ -1,7 +1,16 @@
-import { useCallback, useMemo, useState } from "react";
+import { useCallback, useMemo, useRef, useState } from "react";
 import type { SessionSummary, WordEntry } from "../types";
 import { buildChoiceOptions } from "../lib/choiceOptions";
-import { loadProgress, recordAttempt, saveProgress } from "../lib/storage";
+import { resolveClozeHint } from "../lib/hintMask";
+import { getRewardGoal } from "../lib/settings";
+import {
+  clearRewardPointsAfterCelebration,
+  getRewardPoints,
+  loadProgress,
+  recordAttempt,
+  saveProgress,
+} from "../lib/storage";
+import { CelebrationOverlay } from "./CelebrationOverlay";
 import { DifficultyBadge } from "./DifficultyBadge";
 
 interface ChoiceExerciseProps {
@@ -20,8 +29,15 @@ export function ChoiceExercise({ words, allWords, onComplete, onQuit }: ChoiceEx
     wrong: 0,
     rewrites: 0,
   });
+  const [celebrationGoal, setCelebrationGoal] = useState<number | null>(null);
+  const pendingAdvanceRef = useRef<SessionSummary | null>(null);
 
   const current = words[index];
+  const hintSentence = resolveClozeHint(
+    current.hintSentence,
+    current.word,
+    current.morphemes.root,
+  );
   const options = useMemo(
     () => buildChoiceOptions(current, allWords),
     [current, allWords],
@@ -39,6 +55,16 @@ export function ChoiceExercise({ words, allWords, onComplete, onQuit }: ChoiceEx
     [index, onComplete, words.length],
   );
 
+  const finishCelebration = () => {
+    clearRewardPointsAfterCelebration();
+    setCelebrationGoal(null);
+    const pending = pendingAdvanceRef.current;
+    pendingAdvanceRef.current = null;
+    if (pending) {
+      advance(pending);
+    }
+  };
+
   const handlePick = (option: string) => {
     if (picked) return;
     setPicked(option);
@@ -46,19 +72,29 @@ export function ChoiceExercise({ words, allWords, onComplete, onQuit }: ChoiceEx
     let store = loadProgress();
     store = recordAttempt(store, current.id, isCorrect, false);
     saveProgress(store);
+    const goal = getRewardGoal();
+    const reachedGoal = isCorrect && getRewardPoints(store) >= goal;
     setSummary((s) => {
       const next = {
         ...s,
         correct: s.correct + (isCorrect ? 1 : 0),
         wrong: s.wrong + (isCorrect ? 0 : 1),
       };
-      window.setTimeout(() => advance(next), isCorrect ? 900 : 1800);
+      if (reachedGoal) {
+        pendingAdvanceRef.current = next;
+        setCelebrationGoal(goal);
+      } else {
+        window.setTimeout(() => advance(next), isCorrect ? 900 : 1800);
+      }
       return next;
     });
   };
 
   return (
     <main className="screen screen--exercise fade-in">
+      {celebrationGoal !== null && (
+        <CelebrationOverlay goal={celebrationGoal} onContinue={finishCelebration} />
+      )}
       <header className="exercise-header">
         <button type="button" className="btn-text" onClick={onQuit}>
           ← Πίσω
@@ -72,7 +108,7 @@ export function ChoiceExercise({ words, allWords, onComplete, onQuit }: ChoiceEx
       <section className="exercise-body">
         <p className="hint-sentence">
           <span className="hint-label">Πρόταση βοήθειας</span>
-          {current.hintSentence.replace("___", "_____")}
+          {hintSentence.replace("___", "_____")}
         </p>
 
         <div className="choice-grid">

@@ -109,7 +109,7 @@ export interface SessionSummary {
   rewrites: number;
 }
 
-export type AppScreen = "home" | "rule" | "exercise" | "summary" | "pricing";
+export type AppScreen = "home" | "settings" | "rule" | "exercise" | "summary" | "pricing";
 
 export interface DeclensionTables {
   tables: Record<string, string[]>;

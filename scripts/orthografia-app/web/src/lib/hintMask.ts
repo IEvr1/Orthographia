@@ -53,7 +53,7 @@ function shouldMaskToken(wordPart: string, word: string, root?: string): boolean
   return false;
 }
 
-/** Hide the dictation target word (and same-root inflections) inside the hint sentence. */
+/** Hide the target word (and same-root inflections) inside the hint sentence. */
 export function maskWordInHint(hint: string, word: string, root?: string): string {
   return tokenizeHint(hint)
     .map((part) => {
@@ -66,4 +66,18 @@ export function maskWordInHint(hint: string, word: string, root?: string): strin
       return part.text;
     })
     .join("");
+}
+
+/**
+ * Resolve a cloze hint for sentence/choice exercises.
+ * Prefers an existing `___`, else masks the target word in place (same as former dictation),
+ * else appends a trailing blank as a last resort.
+ */
+export function resolveClozeHint(hint: string, word: string, root?: string): string {
+  if (hint.includes(BLANK)) return hint;
+
+  const masked = maskWordInHint(hint, word, root);
+  if (masked.includes(BLANK)) return masked;
+
+  return `${hint.replace(/\.$/, "")} ${BLANK}.`;
 }
