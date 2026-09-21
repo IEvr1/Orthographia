@@ -1,5 +1,5064 @@
 {
   "version": 2,
   "grade": 0,
-  "words": []
+  "words": [
+    {
+      "id": "tb-g2-0001",
+      "word": "πού",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Στην άσκηση γράφουμε τη λέξη ___.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/pou.mp3",
+      "morphemes": {
+        "root": "πού",
+        "suffix": ""
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0002",
+      "word": "ξεκολλώ",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Προσπαθώ να ___ το αυτοκόλλητο.",
+      "feedbackRule": "Προσοχή σε διπλά γράμματα.",
+      "audioFile": "audio/xekollo.mp3",
+      "morphemes": {
+        "root": "ξεκολλώ",
+        "suffix": ""
+      },
+      "difficulty": 1,
+      "definition": "Βγάζω κάτι που είναι κολλημένο.",
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0003",
+      "word": "κολλώ",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Με την κόλλα ___ τα χαρτιά.",
+      "feedbackRule": "Προσοχή σε διπλά γράμματα.",
+      "audioFile": "audio/kollo.mp3",
+      "morphemes": {
+        "root": "κολλώ",
+        "suffix": ""
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0004",
+      "word": "άγνωστος",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Ένας ___ χτύπησε την πόρτα.",
+      "feedbackRule": "άγνωστ- + -ος.",
+      "audioFile": "audio/agnostos.mp3",
+      "morphemes": {
+        "root": "άγνωστ",
+        "suffix": "ος"
+      },
+      "difficulty": 2,
+      "definition": "Κάποιος που δεν τον ξέρουμε.",
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0005",
+      "word": "ακίνητος",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Ο στρατιώτης έμεινε ___.",
+      "feedbackRule": "ακίνητ- + -ος.",
+      "audioFile": "audio/akinitos.mp3",
+      "morphemes": {
+        "root": "ακίνητ",
+        "suffix": "ος"
+      },
+      "difficulty": 2,
+      "definition": "Κάποιος ή κάτι που δεν κινείται.",
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0006",
+      "word": "ανυπάκουος",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Ο ___ μαθητής δεν κάθεται ήσυχα.",
+      "feedbackRule": "ανυπάκου- + -ος.",
+      "audioFile": "audio/anypakouos.mp3",
+      "morphemes": {
+        "root": "ανυπάκου",
+        "suffix": "ος"
+      },
+      "difficulty": 2,
+      "definition": "Κάποιος που δεν ακούει.",
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0007",
+      "word": "γνωστός",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Αυτός ο δρόμος μου είναι ___.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/gnostos.mp3",
+      "morphemes": {
+        "root": "γνωστός",
+        "suffix": ""
+      },
+      "difficulty": 1,
+      "definition": "Κάποιος ή κάτι που το ξέρουμε.",
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0008",
+      "word": "κινητός",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Ο ___ τροχός γυρίζει.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/kinitos.mp3",
+      "morphemes": {
+        "root": "κινητός",
+        "suffix": ""
+      },
+      "difficulty": 1,
+      "definition": "Κάτι που μπορεί να κινείται.",
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0009",
+      "word": "υπάκουος",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Ο ___ μαθητής ακούει τη δασκάλα.",
+      "feedbackRule": "υπάκου- + -ος.",
+      "audioFile": "audio/ypakouos.mp3",
+      "morphemes": {
+        "root": "υπάκου",
+        "suffix": "ος"
+      },
+      "difficulty": 2,
+      "definition": "Κάποιος που ακούει αυτό που του λένε.",
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0010",
+      "word": "μπερδεύω",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Μην ___ τις λέξεις όταν διαβάζεις.",
+      "feedbackRule": "μπερδεύ- + -ω.",
+      "audioFile": "audio/mperdeyo.mp3",
+      "morphemes": {
+        "root": "μπερδεύ",
+        "suffix": "ω"
+      },
+      "difficulty": 2,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0011",
+      "word": "ξεδιψώ",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Με το νερό ___ αμέσως.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/xedipso.mp3",
+      "morphemes": {
+        "root": "ξεδιψώ",
+        "suffix": ""
+      },
+      "difficulty": 1,
+      "definition": "Πίνω νερό και δεν διψώ πια.",
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0012",
+      "word": "ξεμπερδεύω",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Η δασκάλα με βοηθά να ___ την άσκηση.",
+      "feedbackRule": "ξεμπερδεύ- + -ω.",
+      "audioFile": "audio/xemperdeyo.mp3",
+      "morphemes": {
+        "root": "ξεμπερδεύ",
+        "suffix": "ω"
+      },
+      "difficulty": 2,
+      "definition": "Λύνω κάτι που ήταν μπερδεμένο.",
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0013",
+      "word": "άκακος",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Το αρνάκι είναι ___ και ήσυχο.",
+      "feedbackRule": "άκακ- + -ος.",
+      "audioFile": "audio/akakos.mp3",
+      "morphemes": {
+        "root": "άκακ",
+        "suffix": "ος"
+      },
+      "difficulty": 1,
+      "definition": "Ήσυχος και καλός· δεν κάνει κακό."
+    },
+    {
+      "id": "tb-g2-0014",
+      "word": "κακός",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Ο λύκος στο παραμύθι είναι ___.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/kakos.mp3",
+      "morphemes": {
+        "root": "κακός",
+        "suffix": ""
+      },
+      "difficulty": 1
+    },
+    {
+      "id": "tb-g2-0015",
+      "word": "διψώ",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Όταν τρέχω πολύ, ___.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/dipso.mp3",
+      "morphemes": {
+        "root": "διψώ",
+        "suffix": ""
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0016",
+      "word": "τι",
+      "grade": 2,
+      "axis": "R",
+      "hintSentence": "___ θέλεις να φάμε;",
+      "feedbackRule": "Διάβασε προσεκτικά τη λέξη.",
+      "audioFile": "audio/ti.mp3",
+      "morphemes": {
+        "root": "τι",
+        "suffix": ""
+      },
+      "difficulty": 1
+    },
+    {
+      "id": "tb-g2-0017",
+      "word": "ένα",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Έχω ___ μήλο στο χέρι.",
+      "feedbackRule": "έν- + -α.",
+      "audioFile": "audio/ena.mp3",
+      "morphemes": {
+        "root": "έν",
+        "suffix": "α"
+      },
+      "difficulty": 1
+    },
+    {
+      "id": "tb-g2-0018",
+      "word": "πώς",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "___ σε λένε;",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/pos.mp3",
+      "morphemes": {
+        "root": "πώς",
+        "suffix": ""
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0019",
+      "word": "μία",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Έφαγα ___ τούρτα στη γιορτή.",
+      "feedbackRule": "μί- + -α.",
+      "audioFile": "audio/mia.mp3",
+      "morphemes": {
+        "root": "μί",
+        "suffix": "α"
+      },
+      "difficulty": 1
+    },
+    {
+      "id": "tb-g2-0020",
+      "word": "γιατί",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "___ χαμογελάς;",
+      "feedbackRule": "γιατ- + -ί.",
+      "audioFile": "audio/giati.mp3",
+      "morphemes": {
+        "root": "γιατ",
+        "suffix": "ί"
+      },
+      "difficulty": 1
+    },
+    {
+      "id": "tb-g2-0021",
+      "word": "μπουφάν",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Φόρεσε το ___ γιατί φυσούσε.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/mpoufan.mp3",
+      "morphemes": {
+        "root": "μπουφάν",
+        "suffix": ""
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0022",
+      "word": "ποιος",
+      "grade": 2,
+      "axis": "R",
+      "hintSentence": "___ ήρθε πρώτος στην τάξη;",
+      "feedbackRule": "ποι- + -ος.",
+      "audioFile": "audio/poios.mp3",
+      "morphemes": {
+        "root": "ποι",
+        "suffix": "ος"
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0023",
+      "word": "σαββατοκύριακα",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Τα ___ πάμε βόλτα με την οικογένεια.",
+      "feedbackRule": "σαββατοκύριακ- + -α.",
+      "audioFile": "audio/savvatokyriaka.mp3",
+      "morphemes": {
+        "root": "σαββατοκύριακ",
+        "suffix": "α"
+      },
+      "difficulty": 2,
+      "definition": "Το Σάββατο και την Κυριακή μαζί.",
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0024",
+      "word": "μπαινοβγαίνουν",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Τα παιδιά ___ στην αυλή στο διάλειμμα.",
+      "feedbackRule": "μπαινοβγαίν- + -ουν.",
+      "audioFile": "audio/mpainovgainoun.mp3",
+      "morphemes": {
+        "root": "μπαινοβγαίν",
+        "suffix": "ουν"
+      },
+      "difficulty": 2,
+      "definition": "Μπαίνουν και βγαίνουν συνέχεια.",
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0025",
+      "word": "πότε",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "___ αρχίζει το μάθημα;",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/pote.mp3",
+      "morphemes": {
+        "root": "πότε",
+        "suffix": ""
+      },
+      "difficulty": 1
+    },
+    {
+      "id": "tb-g2-0026",
+      "word": "παπαρούνα",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Η κόκκινη ___ άνοιξε στο χωράφι.",
+      "feedbackRule": "παπαρούν- + -α.",
+      "audioFile": "audio/paparouna.mp3",
+      "morphemes": {
+        "root": "παπαρούν",
+        "suffix": "α"
+      },
+      "difficulty": 2,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0027",
+      "word": "δύο",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Έχω ___ αδέρφια.",
+      "feedbackRule": "δύ- + -ο.",
+      "audioFile": "audio/dyo.mp3",
+      "morphemes": {
+        "root": "δύ",
+        "suffix": "ο"
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0028",
+      "word": "τέσσερις",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Έχουμε ___ εποχές.",
+      "feedbackRule": "Προσοχή σε διπλά γράμματα.",
+      "audioFile": "audio/tesseris.mp3",
+      "morphemes": {
+        "root": "τέσσερις",
+        "suffix": ""
+      },
+      "difficulty": 2
+    },
+    {
+      "id": "tb-g2-0029",
+      "word": "μήπως",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "___ ξέρεις τον δρόμο;",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/mipos.mp3",
+      "morphemes": {
+        "root": "μήπως",
+        "suffix": ""
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0030",
+      "word": "τρεις",
+      "grade": 2,
+      "axis": "R",
+      "hintSentence": "Οι ___ φίλοι παίζουν μαζί.",
+      "feedbackRule": "τρ- + -εις.",
+      "audioFile": "audio/treis.mp3",
+      "morphemes": {
+        "root": "τρ",
+        "suffix": "εις"
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0031",
+      "word": "αστέρι",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Το ___ λάμπει στον ουρανό.",
+      "feedbackRule": "αστέρ- + -ι.",
+      "audioFile": "audio/asteri.mp3",
+      "morphemes": {
+        "root": "αστέρ",
+        "suffix": "ι"
+      },
+      "difficulty": 1
+    },
+    {
+      "id": "tb-g2-0032",
+      "word": "αποστέλλω",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "___ το γράμμα στο ταχυδρομείο.",
+      "feedbackRule": "αποστέλλ- + -ω.",
+      "audioFile": "audio/apostello.mp3",
+      "morphemes": {
+        "root": "αποστέλλ",
+        "suffix": "ω"
+      },
+      "difficulty": 2,
+      "definition": "Στέλνω κάτι με το ταχυδρομείο.",
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0033",
+      "word": "δευτέρα",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Η ___ είναι η πρώτη μέρα της σχολικής εβδομάδας.",
+      "feedbackRule": "δευτέρ- + -α.",
+      "audioFile": "audio/deytera.mp3",
+      "morphemes": {
+        "root": "δευτέρ",
+        "suffix": "α"
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0034",
+      "word": "παραλήπτης",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Ο ___ άνοιξε το γράμμα χαρούμενος.",
+      "feedbackRule": "παραλήπτ- + -ης.",
+      "audioFile": "audio/paraliptis.mp3",
+      "morphemes": {
+        "root": "παραλήπτ",
+        "suffix": "ης"
+      },
+      "difficulty": 2,
+      "definition": "Αυτός που παίρνει το γράμμα ή το δέμα.",
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0035",
+      "word": "επιστολή",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Έστειλα μια ___ στη γιαγιά μου.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/epistoli.mp3",
+      "morphemes": {
+        "root": "επιστολή",
+        "suffix": ""
+      },
+      "difficulty": 2,
+      "definition": "Ένα γράμμα που στέλνουμε σε κάποιον.",
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0036",
+      "word": "πυξίδα",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Ο ναύτης κοιτάζει την ___ για τον δρόμο.",
+      "feedbackRule": "πυξίδ- + -α.",
+      "audioFile": "audio/pyxida.mp3",
+      "morphemes": {
+        "root": "πυξίδ",
+        "suffix": "α"
+      },
+      "difficulty": 1,
+      "definition": "Όργανο που δείχνει τον Βορρά.",
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0037",
+      "word": "κύκλος",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Ο ___ είναι στρογγυλός.",
+      "feedbackRule": "κύκλ- + -ος.",
+      "audioFile": "audio/kyklos.mp3",
+      "morphemes": {
+        "root": "κύκλ",
+        "suffix": "ος"
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0038",
+      "word": "αύγουστος",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Τον ___ πολλές οικογένειες ταξιδεύουν.",
+      "feedbackRule": "αύγουστ- + -ος.",
+      "audioFile": "audio/aygoustos.mp3",
+      "morphemes": {
+        "root": "αύγουστ",
+        "suffix": "ος"
+      },
+      "difficulty": 2,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0039",
+      "word": "κρουασάν",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Έφαγα ένα ___ στο πρωινό.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/krouasan.mp3",
+      "morphemes": {
+        "root": "κρουασάν",
+        "suffix": ""
+      },
+      "difficulty": 2,
+      "definition": "Ψωμάκι σε σχήμα μισοφέγγαρου.",
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0040",
+      "word": "διαμάντι",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Το ___ λάμπει πάνω στο δαχτυλίδι.",
+      "feedbackRule": "διαμάντ- + -ι.",
+      "audioFile": "audio/diamanti.mp3",
+      "morphemes": {
+        "root": "διαμάντ",
+        "suffix": "ι"
+      },
+      "difficulty": 2,
+      "definition": "Πολύτιμη πέτρα που λάμπει."
+    },
+    {
+      "id": "tb-g2-0041",
+      "word": "πράσινος",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Ο ___ βάτραχος κάθεται στο φύλλο.",
+      "feedbackRule": "πράσιν- + -ος.",
+      "audioFile": "audio/prasinos.mp3",
+      "morphemes": {
+        "root": "πράσιν",
+        "suffix": "ος"
+      },
+      "difficulty": 2
+    },
+    {
+      "id": "tb-g2-0042",
+      "word": "πειρατής",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Ο ___ έχει καπέλο και παπαγάλο.",
+      "feedbackRule": "πειρατ- + -ής.",
+      "audioFile": "audio/peiratis.mp3",
+      "morphemes": {
+        "root": "πειρατ",
+        "suffix": "ής"
+      },
+      "difficulty": 2,
+      "definition": "Ήρωας της θάλασσας στα παραμύθια.",
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0043",
+      "word": "αποστολέας",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Ο ___ έγραψε το όνομά του στον φάκελο.",
+      "feedbackRule": "αποστολέ- + -ας.",
+      "audioFile": "audio/apostoleas.mp3",
+      "morphemes": {
+        "root": "αποστολέ",
+        "suffix": "ας"
+      },
+      "difficulty": 2,
+      "definition": "Αυτός που στέλνει το γράμμα ή το δέμα."
+    },
+    {
+      "id": "tb-g2-0044",
+      "word": "ένας",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "___ φίλος με περίμενε.",
+      "feedbackRule": "έν- + -ας.",
+      "audioFile": "audio/enas.mp3",
+      "morphemes": {
+        "root": "έν",
+        "suffix": "ας"
+      },
+      "difficulty": 1
+    },
+    {
+      "id": "tb-g2-0045",
+      "word": "βαρέλι",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Στο ___ βάζουν το κρασί.",
+      "feedbackRule": "βαρέλ- + -ι.",
+      "audioFile": "audio/vareli.mp3",
+      "morphemes": {
+        "root": "βαρέλ",
+        "suffix": "ι"
+      },
+      "difficulty": 1,
+      "definition": "Μεγάλο δοχείο για υγρά."
+    },
+    {
+      "id": "tb-g2-0046",
+      "word": "άμαξα",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Η ___ πέρασε στον χωματόδρομο.",
+      "feedbackRule": "άμαξ- + -α.",
+      "audioFile": "audio/amaxa.mp3",
+      "morphemes": {
+        "root": "άμαξ",
+        "suffix": "α"
+      },
+      "difficulty": 1,
+      "definition": "Όχημα που το τραβούν άλογα."
+    },
+    {
+      "id": "tb-g2-0047",
+      "word": "καλάμι",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Έκοψε ένα μακρύ ___ στην όχθη.",
+      "feedbackRule": "καλάμ- + -ι.",
+      "audioFile": "audio/kalami.mp3",
+      "morphemes": {
+        "root": "καλάμ",
+        "suffix": "ι"
+      },
+      "difficulty": 1,
+      "definition": "Ψηλό λεπτό φυτό κοντά στο νερό."
+    },
+    {
+      "id": "tb-g2-0048",
+      "word": "νησί",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Το καράβι έφτασε στο μικρό ___.",
+      "feedbackRule": "νησ- + -ί.",
+      "audioFile": "audio/nisi.mp3",
+      "morphemes": {
+        "root": "νησ",
+        "suffix": "ί"
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0049",
+      "word": "πατινάζ",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Κάνει ___ στον πάγο τον χειμώνα.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/patinaz.mp3",
+      "morphemes": {
+        "root": "πατινάζ",
+        "suffix": ""
+      },
+      "difficulty": 1,
+      "definition": "Γλιστράω στον πάγο με πατίνια."
+    },
+    {
+      "id": "tb-g2-0050",
+      "word": "κόκκινος",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Ο ___ κύκλος είναι ζωηρός.",
+      "feedbackRule": "κόκκιν- + -ος.",
+      "audioFile": "audio/kokkinos.mp3",
+      "morphemes": {
+        "root": "κόκκιν",
+        "suffix": "ος"
+      },
+      "difficulty": 2
+    },
+    {
+      "id": "tb-g2-0051",
+      "word": "μεγάλη",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Η ___ πόρτα ανοίγει δύσκολα.",
+      "feedbackRule": "μεγάλ- + -η.",
+      "audioFile": "audio/megali.mp3",
+      "morphemes": {
+        "root": "μεγάλ",
+        "suffix": "η"
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0052",
+      "word": "πορτοκαλί",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Το καρότο είναι ___.",
+      "feedbackRule": "πορτοκαλ- + -ί.",
+      "audioFile": "audio/portokali.mp3",
+      "morphemes": {
+        "root": "πορτοκαλ",
+        "suffix": "ί"
+      },
+      "difficulty": 2
+    },
+    {
+      "id": "tb-g2-0053",
+      "word": "ήλιος",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Τη βλέπει ο ___ και γελά.",
+      "feedbackRule": "ήλι- + -ος.",
+      "audioFile": "audio/ilios.mp3",
+      "morphemes": {
+        "root": "ήλι",
+        "suffix": "ος"
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0054",
+      "word": "μικρή",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Η ___ γάτα κοιμάται στο καλάθι.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/mikri.mp3",
+      "morphemes": {
+        "root": "μικρή",
+        "suffix": ""
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0055",
+      "word": "τρίτη",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Την ___ έχουμε γυμναστική.",
+      "feedbackRule": "τρίτ- + -η.",
+      "audioFile": "audio/triti.mp3",
+      "morphemes": {
+        "root": "τρίτ",
+        "suffix": "η"
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0056",
+      "word": "παπαγάλος",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Ο ___ μιλάει δυνατά στο κλουβί.",
+      "feedbackRule": "παπαγάλ- + -ος.",
+      "audioFile": "audio/papagalos.mp3",
+      "morphemes": {
+        "root": "παπαγάλ",
+        "suffix": "ος"
+      },
+      "difficulty": 2
+    },
+    {
+      "id": "tb-g2-0057",
+      "word": "παραλαμβάνω",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "___ το δέμα από τον ταχυδρόμο.",
+      "feedbackRule": "παραλαμβάν- + -ω.",
+      "audioFile": "audio/paralamvano.mp3",
+      "morphemes": {
+        "root": "παραλαμβάν",
+        "suffix": "ω"
+      },
+      "difficulty": 2,
+      "definition": "Παίρνω κάτι που μου έστειλαν.",
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0058",
+      "word": "κόκκινο",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Το μήλο είναι ___.",
+      "feedbackRule": "κόκκιν- + -ο.",
+      "audioFile": "audio/kokkino.mp3",
+      "morphemes": {
+        "root": "κόκκιν",
+        "suffix": "ο"
+      },
+      "difficulty": 1
+    },
+    {
+      "id": "tb-g2-0059",
+      "word": "τέσσερα",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Το τετράγωνο έχει ___ πλευρές.",
+      "feedbackRule": "τέσσερ- + -α.",
+      "audioFile": "audio/tessera.mp3",
+      "morphemes": {
+        "root": "τέσσερ",
+        "suffix": "α"
+      },
+      "difficulty": 1
+    },
+    {
+      "id": "tb-g2-0060",
+      "word": "βιολί",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Παίζει ___ στη γιορτή του σχολείου.",
+      "feedbackRule": "βιολ- + -ί.",
+      "audioFile": "audio/violi.mp3",
+      "morphemes": {
+        "root": "βιολ",
+        "suffix": "ί"
+      },
+      "difficulty": 1,
+      "definition": "Μουσικό όργανο με τόξο και χορδές."
+    },
+    {
+      "id": "tb-g2-0061",
+      "word": "Ελλάδα",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Ζούμε στην ___.",
+      "feedbackRule": "Ελλάδ- + -α.",
+      "audioFile": "audio/ellada.mp3",
+      "morphemes": {
+        "root": "Ελλάδ",
+        "suffix": "α"
+      },
+      "difficulty": 1
+    },
+    {
+      "id": "tb-g2-0062",
+      "word": "καινούριο",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Φόρεσα το ___ παλτό.",
+      "feedbackRule": "καινούρ- + -ιο.",
+      "audioFile": "audio/kainourio.mp3",
+      "morphemes": {
+        "root": "καινούρ",
+        "suffix": "ιο"
+      },
+      "difficulty": 2,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0063",
+      "word": "ωραίο",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Τι ___ σπίτι!",
+      "feedbackRule": "ωραί- + -ο.",
+      "audioFile": "audio/oraio.mp3",
+      "morphemes": {
+        "root": "ωραί",
+        "suffix": "ο"
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0064",
+      "word": "Γαλλία",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Στη ___ είναι το Παρίσι.",
+      "feedbackRule": "Γαλλ- + -ία.",
+      "audioFile": "audio/gallia.mp3",
+      "morphemes": {
+        "root": "Γαλλ",
+        "suffix": "ία"
+      },
+      "difficulty": 1,
+      "definition": "Μεγάλη χώρα στην Ευρώπη· πρωτεύουσα το Παρίσι."
+    },
+    {
+      "id": "tb-g2-0065",
+      "word": "μαύρος",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Ο ___ σκύλος τρέχει στην αυλή.",
+      "feedbackRule": "μαύρ- + -ος.",
+      "audioFile": "audio/mayros.mp3",
+      "morphemes": {
+        "root": "μαύρ",
+        "suffix": "ος"
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0066",
+      "word": "φθινόπωρο",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Το ___ μαζεύουμε φύλλα στην αυλή.",
+      "feedbackRule": "φθινόπωρ- + -ο.",
+      "audioFile": "audio/fthinoporo.mp3",
+      "morphemes": {
+        "root": "φθινόπωρ",
+        "suffix": "ο"
+      },
+      "difficulty": 2,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0067",
+      "word": "πόσο",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "___ κάνει αυτό το βιβλίο;",
+      "feedbackRule": "πόσ- + -ο.",
+      "audioFile": "audio/poso.mp3",
+      "morphemes": {
+        "root": "πόσ",
+        "suffix": "ο"
+      },
+      "difficulty": 1
+    },
+    {
+      "id": "tb-g2-0068",
+      "word": "μπλε",
+      "grade": 2,
+      "axis": "R",
+      "hintSentence": "Ο ουρανός είναι ___.",
+      "feedbackRule": "Διάβασε προσεκτικά τη λέξη.",
+      "audioFile": "audio/mple.mp3",
+      "morphemes": {
+        "root": "μπλε",
+        "suffix": ""
+      },
+      "difficulty": 1
+    },
+    {
+      "id": "tb-g2-0069",
+      "word": "λευκός",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Ο ___ κύκνος κολυμπά στη λίμνη.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/leykos.mp3",
+      "morphemes": {
+        "root": "λευκός",
+        "suffix": ""
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0070",
+      "word": "άσπρο",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Το χιόνι είναι ___.",
+      "feedbackRule": "άσπρ- + -ο.",
+      "audioFile": "audio/aspro.mp3",
+      "morphemes": {
+        "root": "άσπρ",
+        "suffix": "ο"
+      },
+      "difficulty": 1
+    },
+    {
+      "id": "tb-g2-0071",
+      "word": "θαλασσί",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Η θάλασσα έχει χρώμα ___.",
+      "feedbackRule": "θαλασσ- + -ί.",
+      "audioFile": "audio/thalassi.mp3",
+      "morphemes": {
+        "root": "θαλασσ",
+        "suffix": "ί"
+      },
+      "difficulty": 1,
+      "definition": "Το χρώμα της θάλασσας· γαλάζιο."
+    },
+    {
+      "id": "tb-g2-0072",
+      "word": "πέμπτη",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Την ___ γράφουμε ορθογραφία.",
+      "feedbackRule": "πέμπτ- + -η.",
+      "audioFile": "audio/pempti.mp3",
+      "morphemes": {
+        "root": "πέμπτ",
+        "suffix": "η"
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0073",
+      "word": "δώδεκα",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Ο χρόνος έχει ___ μήνες.",
+      "feedbackRule": "δώδεκ- + -α.",
+      "audioFile": "audio/dodeka.mp3",
+      "morphemes": {
+        "root": "δώδεκ",
+        "suffix": "α"
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0074",
+      "word": "εννιά",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Το ___ είναι πριν από το δέκα.",
+      "feedbackRule": "ενν- + -ιά.",
+      "audioFile": "audio/ennia.mp3",
+      "morphemes": {
+        "root": "ενν",
+        "suffix": "ιά"
+      },
+      "difficulty": 1
+    },
+    {
+      "id": "tb-g2-0075",
+      "word": "αδύνατος",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Μετά την αρρώστια ήταν ___.",
+      "feedbackRule": "αδύνατ- + -ος.",
+      "audioFile": "audio/adynatos.mp3",
+      "morphemes": {
+        "root": "αδύνατ",
+        "suffix": "ος"
+      },
+      "difficulty": 2,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0076",
+      "word": "τίνος",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "___ είναι αυτή η τσάντα;",
+      "feedbackRule": "τίν- + -ος.",
+      "audioFile": "audio/tinos.mp3",
+      "morphemes": {
+        "root": "τίν",
+        "suffix": "ος"
+      },
+      "difficulty": 1
+    },
+    {
+      "id": "tb-g2-0077",
+      "word": "Ευρώπη",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Η Ελλάδα ανήκει στην ___.",
+      "feedbackRule": "Ευρώπ- + -η.",
+      "audioFile": "audio/eyropi.mp3",
+      "morphemes": {
+        "root": "Ευρώπ",
+        "suffix": "η"
+      },
+      "difficulty": 1,
+      "definition": "Ήπειρος όπου βρίσκεται η Ελλάδα.",
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0078",
+      "word": "παρασκευή",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Την ___ ανυπομονούμε για το Σαββατοκύριακο.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/paraskeyi.mp3",
+      "morphemes": {
+        "root": "παρασκευή",
+        "suffix": ""
+      },
+      "difficulty": 2,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0079",
+      "word": "καλοκαίρι",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Το ___ κολυμπάμε στη θάλασσα.",
+      "feedbackRule": "καλοκαίρ- + -ι.",
+      "audioFile": "audio/kalokairi.mp3",
+      "morphemes": {
+        "root": "καλοκαίρ",
+        "suffix": "ι"
+      },
+      "difficulty": 2
+    },
+    {
+      "id": "tb-g2-0080",
+      "word": "άνοιξη",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Την ___ ανθίζουν τα δέντρα.",
+      "feedbackRule": "άνοιξ- + -η.",
+      "audioFile": "audio/anoixi.mp3",
+      "morphemes": {
+        "root": "άνοιξ",
+        "suffix": "η"
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0081",
+      "word": "τετάρτη",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Την ___ πάμε στη βιβλιοθήκη.",
+      "feedbackRule": "τετάρτ- + -η.",
+      "audioFile": "audio/tetarti.mp3",
+      "morphemes": {
+        "root": "τετάρτ",
+        "suffix": "η"
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0082",
+      "word": "σάββατο",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Το ___ παίζουμε με τους φίλους μας.",
+      "feedbackRule": "σάββατ- + -ο.",
+      "audioFile": "audio/savvato.mp3",
+      "morphemes": {
+        "root": "σάββατ",
+        "suffix": "ο"
+      },
+      "difficulty": 1
+    },
+    {
+      "id": "tb-g2-0083",
+      "word": "τρίγωνο",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Το ___ έχει τρεις πλευρές.",
+      "feedbackRule": "τρίγων- + -ο.",
+      "audioFile": "audio/trigono.mp3",
+      "morphemes": {
+        "root": "τρίγων",
+        "suffix": "ο"
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0084",
+      "word": "άσχημο",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Το ___ σύννεφο φέρνει βροχή.",
+      "feedbackRule": "άσχημ- + -ο.",
+      "audioFile": "audio/aschimo.mp3",
+      "morphemes": {
+        "root": "άσχημ",
+        "suffix": "ο"
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0085",
+      "word": "μονόχρωμη",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Η ___ ομπρέλα είναι μόνο μπλε.",
+      "feedbackRule": "μονόχρωμ- + -η.",
+      "audioFile": "audio/monochromi.mp3",
+      "morphemes": {
+        "root": "μονόχρωμ",
+        "suffix": "η"
+      },
+      "difficulty": 2,
+      "definition": "Με ένα μόνο χρώμα.",
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0086",
+      "word": "πολύχρωμη",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Η ___ σημαία έχει πολλά χρώματα.",
+      "feedbackRule": "πολύχρωμ- + -η.",
+      "audioFile": "audio/polychromi.mp3",
+      "morphemes": {
+        "root": "πολύχρωμ",
+        "suffix": "η"
+      },
+      "difficulty": 2,
+      "definition": "Με πολλά χρώματα.",
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0087",
+      "word": "χειμώνας",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Τον ___ φοράμε ζεστά ρούχα.",
+      "feedbackRule": "χειμών- + -ας.",
+      "audioFile": "audio/cheimonas.mp3",
+      "morphemes": {
+        "root": "χειμών",
+        "suffix": "ας"
+      },
+      "difficulty": 2,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0088",
+      "word": "είκοσι",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Μετράω μέχρι το ___.",
+      "feedbackRule": "είκοσ- + -ι.",
+      "audioFile": "audio/eikosi.mp3",
+      "morphemes": {
+        "root": "είκοσ",
+        "suffix": "ι"
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0089",
+      "word": "οχτώ",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Το χταπόδι έχει ___ πόδια.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/ochto.mp3",
+      "morphemes": {
+        "root": "οχτώ",
+        "suffix": ""
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0090",
+      "word": "πέντε",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Το χέρι έχει ___ δάχτυλα.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/pente.mp3",
+      "morphemes": {
+        "root": "πέντε",
+        "suffix": ""
+      },
+      "difficulty": 1
+    },
+    {
+      "id": "tb-g2-0091",
+      "word": "είκοσι εννιά",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Το ___ είναι πριν από το τριάντα.",
+      "feedbackRule": "είκοσι ενν- + -ιά.",
+      "audioFile": "audio/eikosiennia.mp3",
+      "morphemes": {
+        "root": "είκοσι ενν",
+        "suffix": "ιά"
+      },
+      "difficulty": 2,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0092",
+      "word": "είκοσι τέσσερα",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Το ___ είναι δύο δωδεκάδες.",
+      "feedbackRule": "είκοσι τέσσερ- + -α.",
+      "audioFile": "audio/eikositessera.mp3",
+      "morphemes": {
+        "root": "είκοσι τέσσερ",
+        "suffix": "α"
+      },
+      "difficulty": 2,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0093",
+      "word": "άσπρος",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Ο ___ τοίχος λάμπει στον ήλιο.",
+      "feedbackRule": "άσπρ- + -ος.",
+      "audioFile": "audio/aspros.mp3",
+      "morphemes": {
+        "root": "άσπρ",
+        "suffix": "ος"
+      },
+      "difficulty": 1
+    },
+    {
+      "id": "tb-g2-0094",
+      "word": "χοντρός",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Το ___ βιβλίο είναι βαρύ.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/chontros.mp3",
+      "morphemes": {
+        "root": "χοντρός",
+        "suffix": ""
+      },
+      "difficulty": 1
+    },
+    {
+      "id": "tb-g2-0095",
+      "word": "σαράντα",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Μέτρησα ___ καραμέλες.",
+      "feedbackRule": "σαράντ- + -α.",
+      "audioFile": "audio/saranta.mp3",
+      "morphemes": {
+        "root": "σαράντ",
+        "suffix": "α"
+      },
+      "difficulty": 1
+    },
+    {
+      "id": "tb-g2-0096",
+      "word": "κυριακή",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Την ___ τρώμε όλοι μαζί.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/kyriaki.mp3",
+      "morphemes": {
+        "root": "κυριακή",
+        "suffix": ""
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0097",
+      "word": "λεπτός",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Ο ___ κύριος περπατά γρήγορα.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/leptos.mp3",
+      "morphemes": {
+        "root": "λεπτός",
+        "suffix": ""
+      },
+      "difficulty": 1
+    },
+    {
+      "id": "tb-g2-0098",
+      "word": "οκτώβριος",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Τον ___ πέφτουν τα φύλλα.",
+      "feedbackRule": "οκτώβρι- + -ος.",
+      "audioFile": "audio/oktovrios.mp3",
+      "morphemes": {
+        "root": "οκτώβρι",
+        "suffix": "ος"
+      },
+      "difficulty": 2,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0099",
+      "word": "φεβρουάριος",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Τον ___ συχνά έχει κρύο.",
+      "feedbackRule": "φεβρουάρι- + -ος.",
+      "audioFile": "audio/fevrouarios.mp3",
+      "morphemes": {
+        "root": "φεβρουάρι",
+        "suffix": "ος"
+      },
+      "difficulty": 2,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0100",
+      "word": "Αμερική",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Η ___ είναι μια μεγάλη ήπειρος και χώρα.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/ameriki.mp3",
+      "morphemes": {
+        "root": "Αμερική",
+        "suffix": ""
+      },
+      "difficulty": 1,
+      "definition": "Μεγάλη ήπειρος και χώρα πέρα από τον ωκεανό.",
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0101",
+      "word": "Αφρική",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Στην ___ ζουν λιοντάρια και ελέφαντες.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/afriki.mp3",
+      "morphemes": {
+        "root": "Αφρική",
+        "suffix": ""
+      },
+      "difficulty": 1,
+      "definition": "Ήπειρος με λιοντάρια και ελέφαντες.",
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0102",
+      "word": "δεκέμβρης",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Τον ___ στολίζουμε το δέντρο.",
+      "feedbackRule": "δεκέμβρ- + -ης.",
+      "audioFile": "audio/dekemvris.mp3",
+      "morphemes": {
+        "root": "δεκέμβρ",
+        "suffix": "ης"
+      },
+      "difficulty": 2,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0103",
+      "word": "ιανουάριος",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Ο ___ είναι ο πρώτος μήνας του χρόνου.",
+      "feedbackRule": "ιανουάρι- + -ος.",
+      "audioFile": "audio/ianouarios.mp3",
+      "morphemes": {
+        "root": "ιανουάρι",
+        "suffix": "ος"
+      },
+      "difficulty": 2,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0104",
+      "word": "νοέμβρης",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Τον ___ φυσάει δυνατά.",
+      "feedbackRule": "νοέμβρ- + -ης.",
+      "audioFile": "audio/noemvris.mp3",
+      "morphemes": {
+        "root": "νοέμβρ",
+        "suffix": "ης"
+      },
+      "difficulty": 2,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0105",
+      "word": "σεπτέμβρης",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Τον ___ ανοίγουν τα σχολεία.",
+      "feedbackRule": "σεπτέμβρ- + -ης.",
+      "audioFile": "audio/septemvris.mp3",
+      "morphemes": {
+        "root": "σεπτέμβρ",
+        "suffix": "ης"
+      },
+      "difficulty": 2,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0106",
+      "word": "τετράγωνο",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Το ___ έχει τέσσερις ίσες πλευρές.",
+      "feedbackRule": "τετράγων- + -ο.",
+      "audioFile": "audio/tetragono.mp3",
+      "morphemes": {
+        "root": "τετράγων",
+        "suffix": "ο"
+      },
+      "difficulty": 2,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0107",
+      "word": "Τουρκία",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Η ___ είναι δίπλα στην Ελλάδα.",
+      "feedbackRule": "Τουρκ- + -ία.",
+      "audioFile": "audio/tourkia.mp3",
+      "morphemes": {
+        "root": "Τουρκ",
+        "suffix": "ία"
+      },
+      "difficulty": 1,
+      "definition": "Χώρα δίπλα στην Ελλάδα.",
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0108",
+      "word": "δεκαεννιά",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Το ___ είναι πριν από το είκοσι.",
+      "feedbackRule": "δεκαενν- + -ιά.",
+      "audioFile": "audio/dekaennia.mp3",
+      "morphemes": {
+        "root": "δεκαενν",
+        "suffix": "ιά"
+      },
+      "difficulty": 2
+    },
+    {
+      "id": "tb-g2-0109",
+      "word": "δεκατέσσερα",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Δύο εβδομάδες έχουν ___ μέρες.",
+      "feedbackRule": "δεκατέσσερ- + -α.",
+      "audioFile": "audio/dekatessera.mp3",
+      "morphemes": {
+        "root": "δεκατέσσερ",
+        "suffix": "α"
+      },
+      "difficulty": 2
+    },
+    {
+      "id": "tb-g2-0110",
+      "word": "είκοσι έξι",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Το ___ έρχεται μετά το είκοσι πέντε.",
+      "feedbackRule": "είκοσι έξ- + -ι.",
+      "audioFile": "audio/eikosiexi.mp3",
+      "morphemes": {
+        "root": "είκοσι έξ",
+        "suffix": "ι"
+      },
+      "difficulty": 2,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0111",
+      "word": "εβδομήντα",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Ο παππούς είναι περίπου ___.",
+      "feedbackRule": "εβδομήντ- + -α.",
+      "audioFile": "audio/evdominta.mp3",
+      "morphemes": {
+        "root": "εβδομήντ",
+        "suffix": "α"
+      },
+      "difficulty": 2,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0112",
+      "word": "ενενήντα",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Το ___ είναι πριν από το εκατό.",
+      "feedbackRule": "ενενήντ- + -α.",
+      "audioFile": "audio/eneninta.mp3",
+      "morphemes": {
+        "root": "ενενήντ",
+        "suffix": "α"
+      },
+      "difficulty": 2,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0113",
+      "word": "εξήντα",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Η ώρα έχει ___ λεπτά.",
+      "feedbackRule": "εξήντ- + -α.",
+      "audioFile": "audio/exinta.mp3",
+      "morphemes": {
+        "root": "εξήντ",
+        "suffix": "α"
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0114",
+      "word": "πενήντα",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Το ___ είναι μισό εκατό.",
+      "feedbackRule": "πενήντ- + -α.",
+      "audioFile": "audio/peninta.mp3",
+      "morphemes": {
+        "root": "πενήντ",
+        "suffix": "α"
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0115",
+      "word": "κίτρινος",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Ο ___ ήλιος λάμπει.",
+      "feedbackRule": "κίτριν- + -ος.",
+      "audioFile": "audio/kitrinos.mp3",
+      "morphemes": {
+        "root": "κίτριν",
+        "suffix": "ος"
+      },
+      "difficulty": 2
+    },
+    {
+      "id": "tb-g2-0116",
+      "word": "παλιό",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Το ___ ποδήλατο σκουριάζει.",
+      "feedbackRule": "παλι- + -ό.",
+      "audioFile": "audio/palio.mp3",
+      "morphemes": {
+        "root": "παλι",
+        "suffix": "ό"
+      },
+      "difficulty": 1
+    },
+    {
+      "id": "tb-g2-0117",
+      "word": "γκρι",
+      "grade": 2,
+      "axis": "R",
+      "hintSentence": "Το σύννεφο είναι ___.",
+      "feedbackRule": "γκρ- + -ι.",
+      "audioFile": "audio/gkri.mp3",
+      "morphemes": {
+        "root": "γκρ",
+        "suffix": "ι"
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0118",
+      "word": "καθιστός",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Η γιαγιά είναι ___ στην καρέκλα.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/kathistos.mp3",
+      "morphemes": {
+        "root": "καθιστός",
+        "suffix": ""
+      },
+      "difficulty": 2
+    },
+    {
+      "id": "tb-g2-0119",
+      "word": "όρθιος",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Ο μαθητής στέκεται ___.",
+      "feedbackRule": "όρθι- + -ος.",
+      "audioFile": "audio/orthios.mp3",
+      "morphemes": {
+        "root": "όρθι",
+        "suffix": "ος"
+      },
+      "difficulty": 1
+    },
+    {
+      "id": "tb-g2-0120",
+      "word": "τρία",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Βλέπω ___ αστέρια.",
+      "feedbackRule": "τρ- + -ία.",
+      "audioFile": "audio/tria.mp3",
+      "morphemes": {
+        "root": "τρ",
+        "suffix": "ία"
+      },
+      "difficulty": 1
+    },
+    {
+      "id": "tb-g2-0121",
+      "word": "έντεκα",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Το ρολόι δείχνει ___.",
+      "feedbackRule": "έντεκ- + -α.",
+      "audioFile": "audio/enteka.mp3",
+      "morphemes": {
+        "root": "έντεκ",
+        "suffix": "α"
+      },
+      "difficulty": 1
+    },
+    {
+      "id": "tb-g2-0122",
+      "word": "δεκαέξι",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Στη γιορτή ήρθαν ___ παιδιά.",
+      "feedbackRule": "δεκαέξ- + -ι.",
+      "audioFile": "audio/dekaexi.mp3",
+      "morphemes": {
+        "root": "δεκαέξ",
+        "suffix": "ι"
+      },
+      "difficulty": 1
+    },
+    {
+      "id": "tb-g2-0123",
+      "word": "είκοσι πέντε",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Το ένα τέταρτο της εκατοντάδας είναι ___.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/eikosipente.mp3",
+      "morphemes": {
+        "root": "είκοσι πέντε",
+        "suffix": ""
+      },
+      "difficulty": 2,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0124",
+      "word": "απρίλιος",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Τον ___ ανοίγουν πολλά λουλούδια.",
+      "feedbackRule": "απρίλι- + -ος.",
+      "audioFile": "audio/aprilios.mp3",
+      "morphemes": {
+        "root": "απρίλι",
+        "suffix": "ος"
+      },
+      "difficulty": 2
+    },
+    {
+      "id": "tb-g2-0125",
+      "word": "καφέ",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Η σοκολάτα είναι ___.",
+      "feedbackRule": "καφ- + -έ.",
+      "audioFile": "audio/kafe.mp3",
+      "morphemes": {
+        "root": "καφ",
+        "suffix": "έ"
+      },
+      "difficulty": 1
+    },
+    {
+      "id": "tb-g2-0126",
+      "word": "δεκαοχτώ",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Στα ___ ψηφίζουμε.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/dekaochto.mp3",
+      "morphemes": {
+        "root": "δεκαοχτώ",
+        "suffix": ""
+      },
+      "difficulty": 2,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0127",
+      "word": "είκοσι ένα",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Μετά το είκοσι έρχεται το ___.",
+      "feedbackRule": "είκοσι έν- + -α.",
+      "audioFile": "audio/eikosiena.mp3",
+      "morphemes": {
+        "root": "είκοσι έν",
+        "suffix": "α"
+      },
+      "difficulty": 2,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0128",
+      "word": "είκοσι δύο",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Μετράω: είκοσι, ___, είκοσι τρία.",
+      "feedbackRule": "είκοσι δύ- + -ο.",
+      "audioFile": "audio/eikosidyo.mp3",
+      "morphemes": {
+        "root": "είκοσι δύ",
+        "suffix": "ο"
+      },
+      "difficulty": 2,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0129",
+      "word": "είκοσι εφτά",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Το ___ είναι πριν από το είκοσι οχτώ.",
+      "feedbackRule": "είκοσι εφτ- + -ά.",
+      "audioFile": "audio/eikosiefta.mp3",
+      "morphemes": {
+        "root": "είκοσι εφτ",
+        "suffix": "ά"
+      },
+      "difficulty": 2,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0130",
+      "word": "είκοσι οχτώ",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Το ___ είναι τέσσερις εβδομάδες.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/eikosiochto.mp3",
+      "morphemes": {
+        "root": "είκοσι οχτώ",
+        "suffix": ""
+      },
+      "difficulty": 2,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0131",
+      "word": "είκοσι τρία",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Το ___ είναι μετά το είκοσι δύο.",
+      "feedbackRule": "είκοσι τρ- + -ία.",
+      "audioFile": "audio/eikositria.mp3",
+      "morphemes": {
+        "root": "είκοσι τρ",
+        "suffix": "ία"
+      },
+      "difficulty": 2,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0132",
+      "word": "μάιος",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Τον ___ γιορτάζουμε την Πρωτομαγιά.",
+      "feedbackRule": "μάι- + -ος.",
+      "audioFile": "audio/maios.mp3",
+      "morphemes": {
+        "root": "μάι",
+        "suffix": "ος"
+      },
+      "difficulty": 1
+    },
+    {
+      "id": "tb-g2-0133",
+      "word": "μοβ",
+      "grade": 2,
+      "axis": "R",
+      "hintSentence": "Το λουλούδι είναι ___.",
+      "feedbackRule": "Διάβασε προσεκτικά τη λέξη.",
+      "audioFile": "audio/mov.mp3",
+      "morphemes": {
+        "root": "μοβ",
+        "suffix": ""
+      },
+      "difficulty": 1
+    },
+    {
+      "id": "tb-g2-0134",
+      "word": "Ιταλία",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Η ___ έχει το σχήμα μπότας.",
+      "feedbackRule": "Ιταλ- + -ία.",
+      "audioFile": "audio/italia.mp3",
+      "morphemes": {
+        "root": "Ιταλ",
+        "suffix": "ία"
+      },
+      "difficulty": 1,
+      "definition": "Χώρα στην Ευρώπη με σχήμα μπότας."
+    },
+    {
+      "id": "tb-g2-0135",
+      "word": "μάρτιος",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Τον ___ αρχίζει η άνοιξη.",
+      "feedbackRule": "μάρτι- + -ος.",
+      "audioFile": "audio/martios.mp3",
+      "morphemes": {
+        "root": "μάρτι",
+        "suffix": "ος"
+      },
+      "difficulty": 1
+    },
+    {
+      "id": "tb-g2-0136",
+      "word": "νοέμβριος",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Τον ___ φυσάει δυνατά.",
+      "feedbackRule": "νοέμβρι- + -ος.",
+      "audioFile": "audio/noemvrios.mp3",
+      "morphemes": {
+        "root": "νοέμβρι",
+        "suffix": "ος"
+      },
+      "difficulty": 2
+    },
+    {
+      "id": "tb-g2-0137",
+      "word": "ροζ",
+      "grade": 2,
+      "axis": "R",
+      "hintSentence": "Το φόρεμα είναι ___.",
+      "feedbackRule": "Διάβασε προσεκτικά τη λέξη.",
+      "audioFile": "audio/roz.mp3",
+      "morphemes": {
+        "root": "ροζ",
+        "suffix": ""
+      },
+      "difficulty": 1
+    },
+    {
+      "id": "tb-g2-0138",
+      "word": "ρόμβος",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Ο ___ μοιάζει με στραβό τετράγωνο.",
+      "feedbackRule": "ρόμβ- + -ος.",
+      "audioFile": "audio/romvos.mp3",
+      "morphemes": {
+        "root": "ρόμβ",
+        "suffix": "ος"
+      },
+      "difficulty": 1,
+      "definition": "Σχήμα σαν στραβό τετράγωνο."
+    },
+    {
+      "id": "tb-g2-0139",
+      "word": "έξι",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Το ζάρι δείχνει ___.",
+      "feedbackRule": "έξ- + -ι.",
+      "audioFile": "audio/exi.mp3",
+      "morphemes": {
+        "root": "έξ",
+        "suffix": "ι"
+      },
+      "difficulty": 1
+    },
+    {
+      "id": "tb-g2-0140",
+      "word": "δεκαπέντε",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Στα γενέθλιά μου έγινα ___.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/dekapente.mp3",
+      "morphemes": {
+        "root": "δεκαπέντε",
+        "suffix": ""
+      },
+      "difficulty": 2
+    },
+    {
+      "id": "tb-g2-0141",
+      "word": "ογδόντα",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Η γιαγιά πλησιάζει τα ___.",
+      "feedbackRule": "ογδόντ- + -α.",
+      "audioFile": "audio/ogdonta.mp3",
+      "morphemes": {
+        "root": "ογδόντ",
+        "suffix": "α"
+      },
+      "difficulty": 1
+    },
+    {
+      "id": "tb-g2-0142",
+      "word": "τριάντα",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Το ___ έρχεται μετά το είκοσι εννιά.",
+      "feedbackRule": "τριάντ- + -α.",
+      "audioFile": "audio/trianta.mp3",
+      "morphemes": {
+        "root": "τριάντ",
+        "suffix": "α"
+      },
+      "difficulty": 1
+    },
+    {
+      "id": "tb-g2-0143",
+      "word": "Ασία",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Η ___ είναι η μεγαλύτερη ήπειρος.",
+      "feedbackRule": "Ασ- + -ία.",
+      "audioFile": "audio/asia.mp3",
+      "morphemes": {
+        "root": "Ασ",
+        "suffix": "ία"
+      },
+      "difficulty": 1,
+      "definition": "Η μεγαλύτερη ήπειρος της Γης."
+    },
+    {
+      "id": "tb-g2-0144",
+      "word": "Κίνα",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Η ___ είναι μια μεγάλη χώρα στην Ασία.",
+      "feedbackRule": "Κίν- + -α.",
+      "audioFile": "audio/kina.mp3",
+      "morphemes": {
+        "root": "Κίν",
+        "suffix": "α"
+      },
+      "difficulty": 1,
+      "definition": "Μεγάλη χώρα στην Ασία."
+    },
+    {
+      "id": "tb-g2-0145",
+      "word": "εφτά",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Η εβδομάδα έχει ___ μέρες.",
+      "feedbackRule": "εφτ- + -ά.",
+      "audioFile": "audio/efta.mp3",
+      "morphemes": {
+        "root": "εφτ",
+        "suffix": "ά"
+      },
+      "difficulty": 1
+    },
+    {
+      "id": "tb-g2-0146",
+      "word": "δεκαεφτά",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Το ___ έρχεται μετά το δεκαέξι.",
+      "feedbackRule": "δεκαεφτ- + -ά.",
+      "audioFile": "audio/dekaefta.mp3",
+      "morphemes": {
+        "root": "δεκαεφτ",
+        "suffix": "ά"
+      },
+      "difficulty": 2
+    },
+    {
+      "id": "tb-g2-0147",
+      "word": "δεκατρία",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Μετά το δώδεκα έρχεται το ___.",
+      "feedbackRule": "δεκατρ- + -ία.",
+      "audioFile": "audio/dekatria.mp3",
+      "morphemes": {
+        "root": "δεκατρ",
+        "suffix": "ία"
+      },
+      "difficulty": 2
+    },
+    {
+      "id": "tb-g2-0148",
+      "word": "εκατό",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Μέτρησα μέχρι το ___.",
+      "feedbackRule": "εκατ- + -ό.",
+      "audioFile": "audio/ekato.mp3",
+      "morphemes": {
+        "root": "εκατ",
+        "suffix": "ό"
+      },
+      "difficulty": 1
+    },
+    {
+      "id": "tb-g2-0149",
+      "word": "δέκα",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Μετράω μέχρι το ___.",
+      "feedbackRule": "δέκ- + -α.",
+      "audioFile": "audio/deka.mp3",
+      "morphemes": {
+        "root": "δέκ",
+        "suffix": "α"
+      },
+      "difficulty": 1
+    },
+    {
+      "id": "tb-g2-0150",
+      "word": "μαίανδρος",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Στο τετράδιο ζωγραφίζουμε έναν ___.",
+      "feedbackRule": "μαίανδρ- + -ος.",
+      "audioFile": "audio/maiandros.mp3",
+      "morphemes": {
+        "root": "μαίανδρ",
+        "suffix": "ος"
+      },
+      "difficulty": 2,
+      "definition": "Σχέδιο με γραμμές που στρίβουν."
+    },
+    {
+      "id": "tb-g2-0151",
+      "word": "παιδιά",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Τα ___ παίζουν στην αυλή.",
+      "feedbackRule": "παιδ- + -ιά.",
+      "audioFile": "audio/paidia.mp3",
+      "morphemes": {
+        "root": "παιδ",
+        "suffix": "ιά"
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0152",
+      "word": "αλεπού",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Η ___ έφαγε τα σταφύλια στο αμπέλι.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/alepou.mp3",
+      "morphemes": {
+        "root": "αλεπού",
+        "suffix": ""
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0153",
+      "word": "παραμύθι",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Η γιαγιά διάβασε ένα ___.",
+      "feedbackRule": "παραμύθ- + -ι.",
+      "audioFile": "audio/paramythi.mp3",
+      "morphemes": {
+        "root": "παραμύθ",
+        "suffix": "ι"
+      },
+      "difficulty": 2,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0154",
+      "word": "ποίημα",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Απαγγείλαμε ένα ___ στην τάξη.",
+      "feedbackRule": "ποίημ- + -α.",
+      "audioFile": "audio/poiima.mp3",
+      "morphemes": {
+        "root": "ποίημ",
+        "suffix": "α"
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0155",
+      "word": "αυλή",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Τα παιδιά παίζουν στην ___.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/ayli.mp3",
+      "morphemes": {
+        "root": "αυλή",
+        "suffix": ""
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0156",
+      "word": "ημερολόγιο",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Γράφω κάθε μέρα στο ___.",
+      "feedbackRule": "ημερολόγ- + -ιο.",
+      "audioFile": "audio/imerologio.mp3",
+      "morphemes": {
+        "root": "ημερολόγ",
+        "suffix": "ιο"
+      },
+      "difficulty": 2,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0157",
+      "word": "κύριος",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Ο ___ μας χαιρέτησε στον δρόμο.",
+      "feedbackRule": "κύρι- + -ος.",
+      "audioFile": "audio/kyrios.mp3",
+      "morphemes": {
+        "root": "κύρι",
+        "suffix": "ος"
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0158",
+      "word": "ρούχα",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Μάζεψε τα ___ στην ντουλάπα.",
+      "feedbackRule": "ρούχ- + -α.",
+      "audioFile": "audio/roucha.mp3",
+      "morphemes": {
+        "root": "ρούχ",
+        "suffix": "α"
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0159",
+      "word": "μήνυμα",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Άφησα ένα ___ στο τηλέφωνο.",
+      "feedbackRule": "μήνυμ- + -α.",
+      "audioFile": "audio/minyma.mp3",
+      "morphemes": {
+        "root": "μήνυμ",
+        "suffix": "α"
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0160",
+      "word": "μουσείο",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Πήγαμε εκδρομή στο ___.",
+      "feedbackRule": "μουσ- + -είο.",
+      "audioFile": "audio/mouseio.mp3",
+      "morphemes": {
+        "root": "μουσ",
+        "suffix": "είο"
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0161",
+      "word": "άντρας",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Ο ___ κουβαλά μια μεγάλη τσάντα.",
+      "feedbackRule": "άντρ- + -ας.",
+      "audioFile": "audio/antras.mp3",
+      "morphemes": {
+        "root": "άντρ",
+        "suffix": "ας"
+      },
+      "difficulty": 1
+    },
+    {
+      "id": "tb-g2-0162",
+      "word": "επίσκεψη",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Κάναμε ___ στο μουσείο της πόλης.",
+      "feedbackRule": "επίσκεψ- + -η.",
+      "audioFile": "audio/episkepsi.mp3",
+      "morphemes": {
+        "root": "επίσκεψ",
+        "suffix": "η"
+      },
+      "difficulty": 2,
+      "definition": "Όταν πάμε να δούμε κάποιον ή ένα μέρος.",
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0163",
+      "word": "δασκάλα",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Η ___ έγραψε στον πίνακα.",
+      "feedbackRule": "δασκάλ- + -α.",
+      "audioFile": "audio/daskala.mp3",
+      "morphemes": {
+        "root": "δασκάλ",
+        "suffix": "α"
+      },
+      "difficulty": 1
+    },
+    {
+      "id": "tb-g2-0164",
+      "word": "γλωσσοδέτες",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Λέμε ___ γρήγορα και γελάμε.",
+      "feedbackRule": "γλωσσοδέτ- + -ες.",
+      "audioFile": "audio/glossodetes.mp3",
+      "morphemes": {
+        "root": "γλωσσοδέτ",
+        "suffix": "ες"
+      },
+      "difficulty": 2,
+      "definition": "Δύσκολες φράσεις που λέμε γρήγορα.",
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0165",
+      "word": "ερωτηματικό",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Η ερώτηση τελειώνει με ___.",
+      "feedbackRule": "ερωτηματικ- + -ό.",
+      "audioFile": "audio/erotimatiko.mp3",
+      "morphemes": {
+        "root": "ερωτηματικ",
+        "suffix": "ό"
+      },
+      "difficulty": 2,
+      "definition": "Το σημάδι ; στο τέλος της ερώτησης.",
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0166",
+      "word": "τελεία",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Κάθε πρόταση τελειώνει με ___.",
+      "feedbackRule": "τελε- + -ία.",
+      "audioFile": "audio/teleia.mp3",
+      "morphemes": {
+        "root": "τελε",
+        "suffix": "ία"
+      },
+      "difficulty": 1,
+      "definition": "Το σημάδι . στο τέλος της πρότασης.",
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0167",
+      "word": "ευχαριστώ",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Λέμε ___ όταν μας βοηθούν.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/eycharisto.mp3",
+      "morphemes": {
+        "root": "ευχαριστώ",
+        "suffix": ""
+      },
+      "difficulty": 2,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0168",
+      "word": "άνθρωπος",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Ο ___ περπατά στον δρόμο.",
+      "feedbackRule": "άνθρωπ- + -ος.",
+      "audioFile": "audio/anthropos.mp3",
+      "morphemes": {
+        "root": "άνθρωπ",
+        "suffix": "ος"
+      },
+      "difficulty": 2,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0169",
+      "word": "κόμμα",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Βάζουμε ___ ανάμεσα στις λέξεις της λίστας.",
+      "feedbackRule": "κόμμ- + -α.",
+      "audioFile": "audio/komma.mp3",
+      "morphemes": {
+        "root": "κόμμ",
+        "suffix": "α"
+      },
+      "difficulty": 1,
+      "definition": "Το σημάδι , μέσα στην πρόταση."
+    },
+    {
+      "id": "tb-g2-0170",
+      "word": "ακορντεόν",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Ο άντρας έπαιξε ___ στην πλατεία.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/akornteon.mp3",
+      "morphemes": {
+        "root": "ακορντεόν",
+        "suffix": ""
+      },
+      "difficulty": 2,
+      "definition": "Μουσικό όργανο που παίζουμε με τα χέρια."
+    },
+    {
+      "id": "tb-g2-0171",
+      "word": "θαυμαστικό",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Στο τέλος της φωναχτής πρότασης μπαίνει ___.",
+      "feedbackRule": "θαυμαστικ- + -ό.",
+      "audioFile": "audio/thaymastiko.mp3",
+      "morphemes": {
+        "root": "θαυμαστικ",
+        "suffix": "ό"
+      },
+      "difficulty": 2,
+      "definition": "Το σημάδι ! όταν φωνάζουμε.",
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0172",
+      "word": "ποιητής",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Ο ___ έγραψε ένα όμορφο ποίημα.",
+      "feedbackRule": "ποιητ- + -ής.",
+      "audioFile": "audio/poiitis.mp3",
+      "morphemes": {
+        "root": "ποιητ",
+        "suffix": "ής"
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0173",
+      "word": "κάλτσες",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Φόρεσα ζεστές ___ το πρωί.",
+      "feedbackRule": "κάλτσ- + -ες.",
+      "audioFile": "audio/kaltses.mp3",
+      "morphemes": {
+        "root": "κάλτσ",
+        "suffix": "ες"
+      },
+      "difficulty": 1
+    },
+    {
+      "id": "tb-g2-0174",
+      "word": "φεγγάρι",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Το ___ φώτισε τη νύχτα.",
+      "feedbackRule": "φεγγ- + -άρι.",
+      "audioFile": "audio/feggari.mp3",
+      "morphemes": {
+        "root": "φεγγ",
+        "suffix": "άρι"
+      },
+      "difficulty": 1
+    },
+    {
+      "id": "tb-g2-0175",
+      "word": "ειρήνη",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Θέλουμε ___ σε όλο τον κόσμο.",
+      "feedbackRule": "ειρήν- + -η.",
+      "audioFile": "audio/eirini.mp3",
+      "morphemes": {
+        "root": "ειρήν",
+        "suffix": "η"
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0176",
+      "word": "αεροπλάνο",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Το ___ πέταξε πάνω από τα σύννεφα.",
+      "feedbackRule": "αεροπλάν- + -ο.",
+      "audioFile": "audio/aeroplano.mp3",
+      "morphemes": {
+        "root": "αεροπλάν",
+        "suffix": "ο"
+      },
+      "difficulty": 2
+    },
+    {
+      "id": "tb-g2-0177",
+      "word": "εσώρουχα",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Έβαλε τα καθαρά ___ στο συρτάρι.",
+      "feedbackRule": "εσώρουχ- + -α.",
+      "audioFile": "audio/esoroucha.mp3",
+      "morphemes": {
+        "root": "εσώρουχ",
+        "suffix": "α"
+      },
+      "difficulty": 2,
+      "definition": "Ρούχα κάτω από τα άλλα ρούχα.",
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0178",
+      "word": "νυχτικιά",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Φόρεσε την ___ πριν κοιμηθεί.",
+      "feedbackRule": "νυχτικ- + -ιά.",
+      "audioFile": "audio/nychtikia.mp3",
+      "morphemes": {
+        "root": "νυχτικ",
+        "suffix": "ιά"
+      },
+      "difficulty": 2,
+      "definition": "Ρούχο για τον ύπνο.",
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0179",
+      "word": "σκουφάκι",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Έβαλε το ___ στο κεφάλι του.",
+      "feedbackRule": "σκουφάκ- + -ι.",
+      "audioFile": "audio/skoufaki.mp3",
+      "morphemes": {
+        "root": "σκουφάκ",
+        "suffix": "ι"
+      },
+      "difficulty": 2,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0180",
+      "word": "φούστα",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Η Μαρία φόρεσε κόκκινη ___.",
+      "feedbackRule": "φούστ- + -α.",
+      "audioFile": "audio/fousta.mp3",
+      "morphemes": {
+        "root": "φούστ",
+        "suffix": "α"
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0181",
+      "word": "αρκούδα",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Η μεγάλη ___ κοιμάται τον χειμώνα.",
+      "feedbackRule": "αρκούδ- + -α.",
+      "audioFile": "audio/arkouda.mp3",
+      "morphemes": {
+        "root": "αρκούδ",
+        "suffix": "α"
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0182",
+      "word": "κροκόδειλος",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Ο ___ κολυμπά στο ποτάμι.",
+      "feedbackRule": "κροκόδειλ- + -ος.",
+      "audioFile": "audio/krokodeilos.mp3",
+      "morphemes": {
+        "root": "κροκόδειλ",
+        "suffix": "ος"
+      },
+      "difficulty": 2,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0183",
+      "word": "οικογένεια",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Η ___ μου μένει στο χωριό.",
+      "feedbackRule": "οικογένει- + -α.",
+      "audioFile": "audio/oikogeneia.mp3",
+      "morphemes": {
+        "root": "οικογένει",
+        "suffix": "α"
+      },
+      "difficulty": 2,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0184",
+      "word": "αλεπούδες",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Οι ___ τρέχουν στο δάσος.",
+      "feedbackRule": "αλεπούδ- + -ες.",
+      "audioFile": "audio/alepoudes.mp3",
+      "morphemes": {
+        "root": "αλεπούδ",
+        "suffix": "ες"
+      },
+      "difficulty": 2,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0185",
+      "word": "εισαγωγικά",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Βάζουμε ___ γύρω από τα λόγια κάποιου.",
+      "feedbackRule": "εισαγωγικ- + -ά.",
+      "audioFile": "audio/eisagogika.mp3",
+      "morphemes": {
+        "root": "εισαγωγικ",
+        "suffix": "ά"
+      },
+      "difficulty": 2,
+      "definition": "Τα σημάδια « » γύρω από τα λόγια.",
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0186",
+      "word": "λαχανόκηπος",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Στον ___ φυτρώνουν ντομάτες.",
+      "feedbackRule": "λαχανόκηπ- + -ος.",
+      "audioFile": "audio/lachanokipos.mp3",
+      "morphemes": {
+        "root": "λαχανόκηπ",
+        "suffix": "ος"
+      },
+      "difficulty": 2,
+      "definition": "Κήπος με λαχανικά.",
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0187",
+      "word": "παύλα",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Η ___ χωρίζει τα λόγια στον διάλογο.",
+      "feedbackRule": "παύλ- + -α.",
+      "audioFile": "audio/payla.mp3",
+      "morphemes": {
+        "root": "παύλ",
+        "suffix": "α"
+      },
+      "difficulty": 1,
+      "definition": "Η γραμμή — στον διάλογο.",
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0188",
+      "word": "σπίτι",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Το ___ μας έχει μεγάλη αυλή.",
+      "feedbackRule": "σπίτ- + -ι.",
+      "audioFile": "audio/spiti.mp3",
+      "morphemes": {
+        "root": "σπίτ",
+        "suffix": "ι"
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0189",
+      "word": "προσοχή",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Περνάμε τον δρόμο με ___.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/prosochi.mp3",
+      "morphemes": {
+        "root": "προσοχή",
+        "suffix": ""
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0190",
+      "word": "γάντια",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Φορώ ___ όταν κάνει κρύο.",
+      "feedbackRule": "γάντι- + -α.",
+      "audioFile": "audio/gantia.mp3",
+      "morphemes": {
+        "root": "γάντι",
+        "suffix": "α"
+      },
+      "difficulty": 1
+    },
+    {
+      "id": "tb-g2-0191",
+      "word": "παντελόνι",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Φόρεσα το μπλε ___.",
+      "feedbackRule": "παντελόν- + -ι.",
+      "audioFile": "audio/panteloni.mp3",
+      "morphemes": {
+        "root": "παντελόν",
+        "suffix": "ι"
+      },
+      "difficulty": 2
+    },
+    {
+      "id": "tb-g2-0192",
+      "word": "μπράβο",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Τα παιδιά φώναξαν ___ στον νικητή.",
+      "feedbackRule": "μπράβ- + -ο.",
+      "audioFile": "audio/mpravo.mp3",
+      "morphemes": {
+        "root": "μπράβ",
+        "suffix": "ο"
+      },
+      "difficulty": 1
+    },
+    {
+      "id": "tb-g2-0193",
+      "word": "ομπρέλα",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Πήρα την ___ γιατί βρέχει.",
+      "feedbackRule": "ομπρέλ- + -α.",
+      "audioFile": "audio/omprela.mp3",
+      "morphemes": {
+        "root": "ομπρέλ",
+        "suffix": "α"
+      },
+      "difficulty": 1
+    },
+    {
+      "id": "tb-g2-0194",
+      "word": "γραμματόσημα",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Κολλάμε ___ στον φάκελο.",
+      "feedbackRule": "γραμματόσημ- + -α.",
+      "audioFile": "audio/grammatosima.mp3",
+      "morphemes": {
+        "root": "γραμματόσημ",
+        "suffix": "α"
+      },
+      "difficulty": 2,
+      "definition": "Χαρτάκια που κολλάμε στον φάκελο.",
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0195",
+      "word": "καράβι",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Το ___ σάλπαρε από το λιμάνι.",
+      "feedbackRule": "καράβ- + -ι.",
+      "audioFile": "audio/karavi.mp3",
+      "morphemes": {
+        "root": "καράβ",
+        "suffix": "ι"
+      },
+      "difficulty": 1
+    },
+    {
+      "id": "tb-g2-0196",
+      "word": "σοκολάτα",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Έφαγε μια γλυκιά ___.",
+      "feedbackRule": "σοκολάτ- + -α.",
+      "audioFile": "audio/sokolata.mp3",
+      "morphemes": {
+        "root": "σοκολάτ",
+        "suffix": "α"
+      },
+      "difficulty": 2
+    },
+    {
+      "id": "tb-g2-0197",
+      "word": "ψώνια",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Κουβαλάμε τα ___ από την αγορά.",
+      "feedbackRule": "ψώνι- + -α.",
+      "audioFile": "audio/psonia.mp3",
+      "morphemes": {
+        "root": "ψώνι",
+        "suffix": "α"
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0198",
+      "word": "άρπα",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Η ___ έχει πολλές χορδές.",
+      "feedbackRule": "άρπ- + -α.",
+      "audioFile": "audio/arpa.mp3",
+      "morphemes": {
+        "root": "άρπ",
+        "suffix": "α"
+      },
+      "difficulty": 1,
+      "definition": "Μουσικό όργανο με πολλές χορδές."
+    },
+    {
+      "id": "tb-g2-0199",
+      "word": "αδιάβροχο",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Πήρε το ___ γιατί έβρεχε.",
+      "feedbackRule": "αδιάβροχ- + -ο.",
+      "audioFile": "audio/adiavrocho.mp3",
+      "morphemes": {
+        "root": "αδιάβροχ",
+        "suffix": "ο"
+      },
+      "difficulty": 2,
+      "definition": "Ρούχο που δεν περνάει η βροχή."
+    },
+    {
+      "id": "tb-g2-0200",
+      "word": "ζακέτα",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Φόρεσε τη ___ στην αυλή.",
+      "feedbackRule": "ζακέτ- + -α.",
+      "audioFile": "audio/zaketa.mp3",
+      "morphemes": {
+        "root": "ζακέτ",
+        "suffix": "α"
+      },
+      "difficulty": 1
+    },
+    {
+      "id": "tb-g2-0201",
+      "word": "βάτραχος",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Ο ___ κάνει πλάτς στο νερό.",
+      "feedbackRule": "βάτραχ- + -ος.",
+      "audioFile": "audio/vatrachos.mp3",
+      "morphemes": {
+        "root": "βάτραχ",
+        "suffix": "ος"
+      },
+      "difficulty": 2
+    },
+    {
+      "id": "tb-g2-0202",
+      "word": "εγγονή",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Η γιαγιά αγκαλιάζει την ___.",
+      "feedbackRule": "Προσοχή σε διπλά γράμματα.",
+      "audioFile": "audio/eggoni.mp3",
+      "morphemes": {
+        "root": "εγγονή",
+        "suffix": ""
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0203",
+      "word": "παππούς",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Ο ___ διαβάζει παραμύθια.",
+      "feedbackRule": "Προσοχή σε διπλά γράμματα.",
+      "audioFile": "audio/pappous.mp3",
+      "morphemes": {
+        "root": "παππούς",
+        "suffix": ""
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0204",
+      "word": "πινέλο",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Ζωγραφίζω με το ___ και μπογιές.",
+      "feedbackRule": "πινέλ- + -ο.",
+      "audioFile": "audio/pinelo.mp3",
+      "morphemes": {
+        "root": "πινέλ",
+        "suffix": "ο"
+      },
+      "difficulty": 1
+    },
+    {
+      "id": "tb-g2-0205",
+      "word": "θάλασσα",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Κολυμπάμε στη ___ το καλοκαίρι.",
+      "feedbackRule": "θάλασσ- + -α.",
+      "audioFile": "audio/thalassa.mp3",
+      "morphemes": {
+        "root": "θάλασσ",
+        "suffix": "α"
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0206",
+      "word": "σαλιγκάρι",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Το ___ περπατά αργά στο φύλλο.",
+      "feedbackRule": "σαλιγκ- + -άρι.",
+      "audioFile": "audio/saligkari.mp3",
+      "morphemes": {
+        "root": "σαλιγκ",
+        "suffix": "άρι"
+      },
+      "difficulty": 2
+    },
+    {
+      "id": "tb-g2-0207",
+      "word": "τάξη",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Στην ___ γράφουμε στον πίνακα.",
+      "feedbackRule": "τάξ- + -η.",
+      "audioFile": "audio/taxi.mp3",
+      "morphemes": {
+        "root": "τάξ",
+        "suffix": "η"
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0208",
+      "word": "σχολείο",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Το πρωί πάμε στο ___.",
+      "feedbackRule": "σχολ- + -είο.",
+      "audioFile": "audio/scholeio.mp3",
+      "morphemes": {
+        "root": "σχολ",
+        "suffix": "είο"
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0209",
+      "word": "μπαίνει",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Ο τόνος ___ στο δεύτερο φωνήεν.",
+      "feedbackRule": "μπαίν- + -ει.",
+      "audioFile": "audio/mpainei.mp3",
+      "morphemes": {
+        "root": "μπαίν",
+        "suffix": "ει"
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0210",
+      "word": "φίλοι",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Οι ___ παίζουν μαζί στην αυλή.",
+      "feedbackRule": "φίλο- + -ι.",
+      "audioFile": "audio/filoi.mp3",
+      "morphemes": {
+        "root": "φίλο",
+        "suffix": "ι"
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0211",
+      "word": "θέλεις",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "___ να παίξουμε ποδόσφαιρο;",
+      "feedbackRule": "θέλ- + -εις.",
+      "audioFile": "audio/theleis.mp3",
+      "morphemes": {
+        "root": "θέλ",
+        "suffix": "εις"
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0212",
+      "word": "νομίζεις",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Τι ___ ότι θα γίνει;",
+      "feedbackRule": "νομίζ- + -εις.",
+      "audioFile": "audio/nomizeis.mp3",
+      "morphemes": {
+        "root": "νομίζ",
+        "suffix": "εις"
+      },
+      "difficulty": 2,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0213",
+      "word": "παραπάνω",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Διάβασε την ___ πρόταση.",
+      "feedbackRule": "παραπάν- + -ω.",
+      "audioFile": "audio/parapano.mp3",
+      "morphemes": {
+        "root": "παραπάν",
+        "suffix": "ω"
+      },
+      "difficulty": 2,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0214",
+      "word": "εικόνες",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Ένωσε τις ___ με τις λέξεις.",
+      "feedbackRule": "εικόν- + -ες.",
+      "audioFile": "audio/eikones.mp3",
+      "morphemes": {
+        "root": "εικόν",
+        "suffix": "ες"
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0215",
+      "word": "κάνουν",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Τα παιδιά ___ κύκλο στην αυλή.",
+      "feedbackRule": "κάν- + -ουν.",
+      "audioFile": "audio/kanoun.mp3",
+      "morphemes": {
+        "root": "κάν",
+        "suffix": "ουν"
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0216",
+      "word": "ψηλά",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Τα δέντρα είναι ___ στον κήπο.",
+      "feedbackRule": "ψηλ- + -ά.",
+      "audioFile": "audio/psila.mp3",
+      "morphemes": {
+        "root": "ψηλ",
+        "suffix": "ά"
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0217",
+      "word": "εικόνα",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Η ___ δείχνει μια γάτα.",
+      "feedbackRule": "εικόν- + -α.",
+      "audioFile": "audio/eikona.mp3",
+      "morphemes": {
+        "root": "εικόν",
+        "suffix": "α"
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0218",
+      "word": "υπάρχουν",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Στο βιβλίο ___ όμορφες εικόνες.",
+      "feedbackRule": "υπάρχ- + -ουν.",
+      "audioFile": "audio/yparchoun.mp3",
+      "morphemes": {
+        "root": "υπάρχ",
+        "suffix": "ουν"
+      },
+      "difficulty": 2,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0219",
+      "word": "άνοιξε",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "___ την πόρτα του σπιτιού.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/anoixe.mp3",
+      "morphemes": {
+        "root": "άνοιξε",
+        "suffix": ""
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0220",
+      "word": "κειμένου",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Διάβασε την πρώτη πρόταση του ___.",
+      "feedbackRule": "κειμέν- + -ου.",
+      "audioFile": "audio/keimenou.mp3",
+      "morphemes": {
+        "root": "κειμέν",
+        "suffix": "ου"
+      },
+      "difficulty": 2,
+      "definition": "Του κειμένου που διαβάζουμε.",
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0221",
+      "word": "ποιες",
+      "grade": 2,
+      "axis": "R",
+      "hintSentence": "___ μέρες έχεις γυμναστική;",
+      "feedbackRule": "ποι- + -ες.",
+      "audioFile": "audio/poies.mp3",
+      "morphemes": {
+        "root": "ποι",
+        "suffix": "ες"
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0222",
+      "word": "μαζί",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Πάμε ___ στη βιβλιοθήκη.",
+      "feedbackRule": "μαζ- + -ί.",
+      "audioFile": "audio/mazi.mp3",
+      "morphemes": {
+        "root": "μαζ",
+        "suffix": "ί"
+      },
+      "difficulty": 1
+    },
+    {
+      "id": "tb-g2-0223",
+      "word": "γράψεις",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Θα ___ το όνομά σου;",
+      "feedbackRule": "γράψ- + -εις.",
+      "audioFile": "audio/grapseis.mp3",
+      "morphemes": {
+        "root": "γράψ",
+        "suffix": "εις"
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0224",
+      "word": "χώρα",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Η Ελλάδα είναι η ___ μας.",
+      "feedbackRule": "χώρ- + -α.",
+      "audioFile": "audio/chora.mp3",
+      "morphemes": {
+        "root": "χώρ",
+        "suffix": "α"
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0225",
+      "word": "κάποια",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Έχεις δει ___ άλλα ζώα;",
+      "feedbackRule": "κάποι- + -α.",
+      "audioFile": "audio/kapoia.mp3",
+      "morphemes": {
+        "root": "κάποι",
+        "suffix": "α"
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0226",
+      "word": "παράδειγμα",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Για ___, η γάτα είναι ζώο.",
+      "feedbackRule": "παράδειγμ- + -α.",
+      "audioFile": "audio/paradeigma.mp3",
+      "morphemes": {
+        "root": "παράδειγμ",
+        "suffix": "α"
+      },
+      "difficulty": 2,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0227",
+      "word": "έγραψε",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Ο μαθητής ___ μια πρόταση.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/egrapse.mp3",
+      "morphemes": {
+        "root": "έγραψε",
+        "suffix": ""
+      },
+      "difficulty": 1
+    },
+    {
+      "id": "tb-g2-0228",
+      "word": "πεις",
+      "grade": 2,
+      "axis": "R",
+      "hintSentence": "Μπορείς να το ___ με δικά σου λόγια;",
+      "feedbackRule": "Διάβασε προσεκτικά τη λέξη.",
+      "audioFile": "audio/peis.mp3",
+      "morphemes": {
+        "root": "πεις",
+        "suffix": ""
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0229",
+      "word": "ακόμη",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "___ δεν τελείωσα την άσκηση.",
+      "feedbackRule": "ακόμ- + -η.",
+      "audioFile": "audio/akomi.mp3",
+      "morphemes": {
+        "root": "ακόμ",
+        "suffix": "η"
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0230",
+      "word": "κάνε",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "___ λίγο χώρο να περάσω.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/kane.mp3",
+      "morphemes": {
+        "root": "κάνε",
+        "suffix": ""
+      },
+      "difficulty": 1
+    },
+    {
+      "id": "tb-g2-0231",
+      "word": "παραμυθιού",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Μάθαμε μια φράση του ___.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/paramythiou.mp3",
+      "morphemes": {
+        "root": "παραμυθιού",
+        "suffix": ""
+      },
+      "difficulty": 2,
+      "definition": "Του παραμυθιού.",
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0232",
+      "word": "κάτι",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Στην εικόνα γίνεται ___ αστείο.",
+      "feedbackRule": "κάτ- + -ι.",
+      "audioFile": "audio/kati.mp3",
+      "morphemes": {
+        "root": "κάτ",
+        "suffix": "ι"
+      },
+      "difficulty": 1
+    },
+    {
+      "id": "tb-g2-0233",
+      "word": "πάντα",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "___ λέμε καλημέρα στη δασκάλα.",
+      "feedbackRule": "πάντ- + -α.",
+      "audioFile": "audio/panta.mp3",
+      "morphemes": {
+        "root": "πάντ",
+        "suffix": "α"
+      },
+      "difficulty": 1
+    },
+    {
+      "id": "tb-g2-0234",
+      "word": "ακούγεται",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Το ευ ___ το ίδιο σε δύο λέξεις;",
+      "feedbackRule": "ακούγετ- + -αι.",
+      "audioFile": "audio/akougetai.mp3",
+      "morphemes": {
+        "root": "ακούγετ",
+        "suffix": "αι"
+      },
+      "difficulty": 2,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0235",
+      "word": "μπαμπάς",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Ο ___ διαβάζει μια ιστορία.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/mpampas.mp3",
+      "morphemes": {
+        "root": "μπαμπάς",
+        "suffix": ""
+      },
+      "difficulty": 1
+    },
+    {
+      "id": "tb-g2-0236",
+      "word": "ήρωες",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Ποιοι είναι οι ___ της ιστορίας;",
+      "feedbackRule": "ήρω- + -ες.",
+      "audioFile": "audio/iroes.mp3",
+      "morphemes": {
+        "root": "ήρω",
+        "suffix": "ες"
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0237",
+      "word": "περιγράψεις",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Μπορείς να ___ το σπίτι σου;",
+      "feedbackRule": "περιγράψ- + -εις.",
+      "audioFile": "audio/perigrapseis.mp3",
+      "morphemes": {
+        "root": "περιγράψ",
+        "suffix": "εις"
+      },
+      "difficulty": 2,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0238",
+      "word": "στροφή",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Μάθαμε την τρίτη ___ του ποιήματος.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/strofi.mp3",
+      "morphemes": {
+        "root": "στροφή",
+        "suffix": ""
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0239",
+      "word": "λέμε",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Πώς τα ___ αυτά τα χρώματα;",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/leme.mp3",
+      "morphemes": {
+        "root": "λέμε",
+        "suffix": ""
+      },
+      "difficulty": 1
+    },
+    {
+      "id": "tb-g2-0240",
+      "word": "παιχνίδι",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Παίζουμε ένα ___ με λέξεις.",
+      "feedbackRule": "παιχνίδ- + -ι.",
+      "audioFile": "audio/paichnidi.mp3",
+      "morphemes": {
+        "root": "παιχνίδ",
+        "suffix": "ι"
+      },
+      "difficulty": 2
+    },
+    {
+      "id": "tb-g2-0241",
+      "word": "σημαίνουν",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Τι ___ οι δύο τελευταίοι στίχοι;",
+      "feedbackRule": "σημαίν- + -ουν.",
+      "audioFile": "audio/simainoun.mp3",
+      "morphemes": {
+        "root": "σημαίν",
+        "suffix": "ουν"
+      },
+      "difficulty": 2,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0242",
+      "word": "σύννεφα",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Τα ___ είναι γκρι στον ουρανό.",
+      "feedbackRule": "σύννεφ- + -α.",
+      "audioFile": "audio/synnefa.mp3",
+      "morphemes": {
+        "root": "σύννεφ",
+        "suffix": "α"
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0243",
+      "word": "μήνες",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Οι ___ του χρόνου είναι δώδεκα.",
+      "feedbackRule": "μήν- + -ες.",
+      "audioFile": "audio/mines.mp3",
+      "morphemes": {
+        "root": "μήν",
+        "suffix": "ες"
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0244",
+      "word": "σημαίνει",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Τι ___ αυτή η λέξη;",
+      "feedbackRule": "σημαίν- + -ει.",
+      "audioFile": "audio/simainei.mp3",
+      "morphemes": {
+        "root": "σημαίν",
+        "suffix": "ει"
+      },
+      "difficulty": 2,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0245",
+      "word": "λένε",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Τα σήματα ___ τι πρέπει να κάνουμε.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/lene.mp3",
+      "morphemes": {
+        "root": "λένε",
+        "suffix": ""
+      },
+      "difficulty": 1
+    },
+    {
+      "id": "tb-g2-0246",
+      "word": "χαράς",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Η καρδιά της ___ χτυπά δυνατά.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/charas.mp3",
+      "morphemes": {
+        "root": "χαράς",
+        "suffix": ""
+      },
+      "difficulty": 1
+    },
+    {
+      "id": "tb-g2-0247",
+      "word": "κάνεις",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Τι ___ το απόγευμα;",
+      "feedbackRule": "κάν- + -εις.",
+      "audioFile": "audio/kaneis.mp3",
+      "morphemes": {
+        "root": "κάν",
+        "suffix": "εις"
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0248",
+      "word": "άκουσε",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Ο δάσκαλος ___ τα παιδιά.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/akouse.mp3",
+      "morphemes": {
+        "root": "άκουσε",
+        "suffix": ""
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0249",
+      "word": "τίτλος",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Ποιος είναι ο ___ του βιβλίου;",
+      "feedbackRule": "τίτλ- + -ος.",
+      "audioFile": "audio/titlos.mp3",
+      "morphemes": {
+        "root": "τίτλ",
+        "suffix": "ος"
+      },
+      "difficulty": 1
+    },
+    {
+      "id": "tb-g2-0250",
+      "word": "πράγματα",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Μέτρησε πόσα ___ βλέπεις.",
+      "feedbackRule": "πράγ- + -ματα.",
+      "audioFile": "audio/pragmata.mp3",
+      "morphemes": {
+        "root": "πράγ",
+        "suffix": "ματα"
+      },
+      "difficulty": 2
+    },
+    {
+      "id": "tb-g2-0251",
+      "word": "γίγαντας",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Ο ___ είναι πολύ ψηλός.",
+      "feedbackRule": "γίγαντ- + -ας.",
+      "audioFile": "audio/gigantas.mp3",
+      "morphemes": {
+        "root": "γίγαντ",
+        "suffix": "ας"
+      },
+      "difficulty": 2
+    },
+    {
+      "id": "tb-g2-0252",
+      "word": "μέρα",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Μια ___ πήγαμε στο πάρκο.",
+      "feedbackRule": "μέρ- + -α.",
+      "audioFile": "audio/mera.mp3",
+      "morphemes": {
+        "root": "μέρ",
+        "suffix": "α"
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0253",
+      "word": "φορές",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Πολλές ___ διαβάζω πριν κοιμηθώ.",
+      "feedbackRule": "φορ- + -ές.",
+      "audioFile": "audio/fores.mp3",
+      "morphemes": {
+        "root": "φορ",
+        "suffix": "ές"
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0254",
+      "word": "δυνατά",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Τα παιδιά διαβάζουν ___ στην τάξη.",
+      "feedbackRule": "δυνατ- + -ά.",
+      "audioFile": "audio/dynata.mp3",
+      "morphemes": {
+        "root": "δυνατ",
+        "suffix": "ά"
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0255",
+      "word": "αιώνα",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Το κτίριο φτιάχτηκε πριν από έναν ___.",
+      "feedbackRule": "αιών- + -α.",
+      "audioFile": "audio/aiona.mp3",
+      "morphemes": {
+        "root": "αιών",
+        "suffix": "α"
+      },
+      "difficulty": 1,
+      "definition": "Εκατό χρόνια.",
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0256",
+      "word": "πάει",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Η Γαλήνη ___ για ύπνο.",
+      "feedbackRule": "πά- + -ει.",
+      "audioFile": "audio/paei.mp3",
+      "morphemes": {
+        "root": "πά",
+        "suffix": "ει"
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0257",
+      "word": "λέγονται",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Αυτά τα φωνήεντα ___ δίφθογγοι.",
+      "feedbackRule": "λέγοντ- + -αι.",
+      "audioFile": "audio/legontai.mp3",
+      "morphemes": {
+        "root": "λέγοντ",
+        "suffix": "αι"
+      },
+      "difficulty": 2
+    },
+    {
+      "id": "tb-g2-0258",
+      "word": "ζωγράφιζαν",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Άλλοτε ___ ιστορίες στους βράχους.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/zografizan.mp3",
+      "morphemes": {
+        "root": "ζωγράφιζαν",
+        "suffix": ""
+      },
+      "difficulty": 2,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0259",
+      "word": "νοικοκύρη",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Καλημέρα, κύριε ___!",
+      "feedbackRule": "νοικοκύρ- + -η.",
+      "audioFile": "audio/noikokyri.mp3",
+      "morphemes": {
+        "root": "νοικοκύρ",
+        "suffix": "η"
+      },
+      "difficulty": 2,
+      "definition": "Τον άντρα του σπιτιού (κλητική).",
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0260",
+      "word": "ανθολόγιο",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Διαβάζουμε ένα ποίημα από το ___.",
+      "feedbackRule": "ανθολόγ- + -ιο.",
+      "audioFile": "audio/anthologio.mp3",
+      "morphemes": {
+        "root": "ανθολόγ",
+        "suffix": "ιο"
+      },
+      "difficulty": 2,
+      "definition": "Βιβλίο με ποιήματα για το σχολείο."
+    },
+    {
+      "id": "tb-g2-0261",
+      "word": "λόγια",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Πες το με δικά σου ___.",
+      "feedbackRule": "λόγι- + -α.",
+      "audioFile": "audio/logia.mp3",
+      "morphemes": {
+        "root": "λόγι",
+        "suffix": "α"
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0262",
+      "word": "μπορούσες",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Τι δεν ___ να κάνεις;",
+      "feedbackRule": "μπορούσ- + -ες.",
+      "audioFile": "audio/mporouses.mp3",
+      "morphemes": {
+        "root": "μπορούσ",
+        "suffix": "ες"
+      },
+      "difficulty": 2,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0263",
+      "word": "πρόσεξε",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "___ τις λέξεις με έντονα γράμματα.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/prosexe.mp3",
+      "morphemes": {
+        "root": "πρόσεξε",
+        "suffix": ""
+      },
+      "difficulty": 1
+    },
+    {
+      "id": "tb-g2-0264",
+      "word": "τέτοιες",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Μπορείς να σκεφτείς άλλες ___ λέξεις;",
+      "feedbackRule": "τέτοι- + -ες.",
+      "audioFile": "audio/tetoies.mp3",
+      "morphemes": {
+        "root": "τέτοι",
+        "suffix": "ες"
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0265",
+      "word": "επίθετα",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Τις λέξεις αυτές τις λέμε ___.",
+      "feedbackRule": "επίθετ- + -α.",
+      "audioFile": "audio/epitheta.mp3",
+      "morphemes": {
+        "root": "επίθετ",
+        "suffix": "α"
+      },
+      "difficulty": 1,
+      "definition": "Λέξεις που δείχνουν πώς είναι κάτι."
+    },
+    {
+      "id": "tb-g2-0266",
+      "word": "γύρω",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Καθίσαμε ___ από το τραπέζι.",
+      "feedbackRule": "γύρ- + -ω.",
+      "audioFile": "audio/gyro.mp3",
+      "morphemes": {
+        "root": "γύρ",
+        "suffix": "ω"
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0267",
+      "word": "γυναίκα",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Η ___ άνοιξε την πόρτα.",
+      "feedbackRule": "γυναίκ- + -α.",
+      "audioFile": "audio/gynaika.mp3",
+      "morphemes": {
+        "root": "γυναίκ",
+        "suffix": "α"
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0268",
+      "word": "ποιοι",
+      "grade": 2,
+      "axis": "R",
+      "hintSentence": "___ είναι οι ήρωες της ιστορίας;",
+      "feedbackRule": "ποιο- + -ι.",
+      "audioFile": "audio/poioi.mp3",
+      "morphemes": {
+        "root": "ποιο",
+        "suffix": "ι"
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0269",
+      "word": "πολυτεχνείο",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Οι φοιτητές πήγαν στο ___.",
+      "feedbackRule": "πολυτεχν- + -είο.",
+      "audioFile": "audio/polytechneio.mp3",
+      "morphemes": {
+        "root": "πολυτεχν",
+        "suffix": "είο"
+      },
+      "difficulty": 2,
+      "definition": "Μεγάλο σχολείο για μηχανικούς.",
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0270",
+      "word": "συζητήστε",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "___ στην τάξη για το φθινόπωρο.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/syzitiste.mp3",
+      "morphemes": {
+        "root": "συζητήστε",
+        "suffix": ""
+      },
+      "difficulty": 2,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0271",
+      "word": "ελληνικά",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Μαθαίνουμε ___ στο σχολείο.",
+      "feedbackRule": "ελληνικ- + -ά.",
+      "audioFile": "audio/ellinika.mp3",
+      "morphemes": {
+        "root": "ελληνικ",
+        "suffix": "ά"
+      },
+      "difficulty": 2,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0272",
+      "word": "βοηθούν",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Οι λέξεις αυτές ___ να ρωτάμε.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/voithoun.mp3",
+      "morphemes": {
+        "root": "βοηθούν",
+        "suffix": ""
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0273",
+      "word": "ήθελες",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Ποιος θα ___ να είσαι;",
+      "feedbackRule": "ήθελ- + -ες.",
+      "audioFile": "audio/itheles.mp3",
+      "morphemes": {
+        "root": "ήθελ",
+        "suffix": "ες"
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0274",
+      "word": "φύλλα",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Τα κίτρινα ___ πέφτουν το φθινόπωρο.",
+      "feedbackRule": "φύλλ- + -α.",
+      "audioFile": "audio/fylla.mp3",
+      "morphemes": {
+        "root": "φύλλ",
+        "suffix": "α"
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0275",
+      "word": "λουκά",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Θα πάρω τηλέφωνο τον ___.",
+      "feedbackRule": "λουκ- + -ά.",
+      "audioFile": "audio/louka.mp3",
+      "morphemes": {
+        "root": "λουκ",
+        "suffix": "ά"
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0276",
+      "word": "ερωτήσεις",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Κάνουμε ___ στην τάξη.",
+      "feedbackRule": "ερωτήσ- + -εις.",
+      "audioFile": "audio/erotiseis.mp3",
+      "morphemes": {
+        "root": "ερωτήσ",
+        "suffix": "εις"
+      },
+      "difficulty": 2,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0277",
+      "word": "προσκλήσεις",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Στείλαμε ___ για τη γιορτή.",
+      "feedbackRule": "προσκλήσ- + -εις.",
+      "audioFile": "audio/proskliseis.mp3",
+      "morphemes": {
+        "root": "προσκλήσ",
+        "suffix": "εις"
+      },
+      "difficulty": 2,
+      "definition": "Χαρτιά που καλούν σε γιορτή.",
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0278",
+      "word": "μαμά",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Η ___ χαμογέλασε χαρούμενη.",
+      "feedbackRule": "μαμ- + -ά.",
+      "audioFile": "audio/mama.mp3",
+      "morphemes": {
+        "root": "μαμ",
+        "suffix": "ά"
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0279",
+      "word": "δρόμο",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Περπατάμε στον ___ για το σχολείο.",
+      "feedbackRule": "δρόμ- + -ο.",
+      "audioFile": "audio/dromo.mp3",
+      "morphemes": {
+        "root": "δρόμ",
+        "suffix": "ο"
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0280",
+      "word": "λεξικού",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Άνοιξα τη σελίδα του ___.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/lexikou.mp3",
+      "morphemes": {
+        "root": "λεξικού",
+        "suffix": ""
+      },
+      "difficulty": 1,
+      "definition": "Του βιβλίου με τις λέξεις.",
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0281",
+      "word": "βάλεις",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Μπορείς να ___ κύκλο στη λέξη;",
+      "feedbackRule": "βάλ- + -εις.",
+      "audioFile": "audio/valeis.mp3",
+      "morphemes": {
+        "root": "βάλ",
+        "suffix": "εις"
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0282",
+      "word": "μπορούν",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Οι ερωτήσεις ___ να μας βοηθήσουν.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/mporoun.mp3",
+      "morphemes": {
+        "root": "μπορούν",
+        "suffix": ""
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0283",
+      "word": "κάρτες",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Οι ___ έχουν όμορφες εικόνες.",
+      "feedbackRule": "κάρτ- + -ες.",
+      "audioFile": "audio/kartes.mp3",
+      "morphemes": {
+        "root": "κάρτ",
+        "suffix": "ες"
+      },
+      "difficulty": 1
+    },
+    {
+      "id": "tb-g2-0284",
+      "word": "αιώνες",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Ο Αίσωπος έζησε πριν από πολλούς ___.",
+      "feedbackRule": "αιών- + -ες.",
+      "audioFile": "audio/aiones.mp3",
+      "morphemes": {
+        "root": "αιών",
+        "suffix": "ες"
+      },
+      "difficulty": 1,
+      "definition": "Πολλά εκατό χρόνια μαζί.",
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0285",
+      "word": "είδε",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Ο κύριος ___ το ρολόι του.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/eide.mp3",
+      "morphemes": {
+        "root": "είδε",
+        "suffix": ""
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0286",
+      "word": "τσίρκο",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Πήγαμε στο ___ το βράδυ.",
+      "feedbackRule": "τσίρκ- + -ο.",
+      "audioFile": "audio/tsirko.mp3",
+      "morphemes": {
+        "root": "τσίρκ",
+        "suffix": "ο"
+      },
+      "difficulty": 1
+    },
+    {
+      "id": "tb-g2-0287",
+      "word": "καιροί",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Πώς αλλάζουν οι ___!",
+      "feedbackRule": "καιρο- + -ί.",
+      "audioFile": "audio/kairoi.mp3",
+      "morphemes": {
+        "root": "καιρο",
+        "suffix": "ί"
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0288",
+      "word": "ίδιο",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Μιλάμε με τον ___ τρόπο σε όλους;",
+      "feedbackRule": "ίδ- + -ιο.",
+      "audioFile": "audio/idio.mp3",
+      "morphemes": {
+        "root": "ίδ",
+        "suffix": "ιο"
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0289",
+      "word": "δείχνει",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Το αηδόνι ___ πώς να τραγουδά.",
+      "feedbackRule": "δείχν- + -ει.",
+      "audioFile": "audio/deichnei.mp3",
+      "morphemes": {
+        "root": "δείχν",
+        "suffix": "ει"
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0290",
+      "word": "αλλάζουν",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Οι λέξεις ___ όταν τις κλίνουμε.",
+      "feedbackRule": "αλλάζ- + -ουν.",
+      "audioFile": "audio/allazoun.mp3",
+      "morphemes": {
+        "root": "αλλάζ",
+        "suffix": "ουν"
+      },
+      "difficulty": 2,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0291",
+      "word": "γεια",
+      "grade": 2,
+      "axis": "R",
+      "hintSentence": "___ σου, γείτονα!",
+      "feedbackRule": "γει- + -α.",
+      "audioFile": "audio/geia.mp3",
+      "morphemes": {
+        "root": "γει",
+        "suffix": "α"
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0292",
+      "word": "δικό",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Στο ___ μας χωριό υπάρχει σχολείο.",
+      "feedbackRule": "δικ- + -ό.",
+      "audioFile": "audio/diko.mp3",
+      "morphemes": {
+        "root": "δικ",
+        "suffix": "ό"
+      },
+      "difficulty": 1
+    },
+    {
+      "id": "tb-g2-0293",
+      "word": "πάλι",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Γέμισαν ___ τα ανθοπωλεία λουλούδια.",
+      "feedbackRule": "πάλ- + -ι.",
+      "audioFile": "audio/pali.mp3",
+      "morphemes": {
+        "root": "πάλ",
+        "suffix": "ι"
+      },
+      "difficulty": 1
+    },
+    {
+      "id": "tb-g2-0294",
+      "word": "γιορτή",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Το σαλιγκάρι πήγε στη ___ των ζώων.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/giorti.mp3",
+      "morphemes": {
+        "root": "γιορτή",
+        "suffix": ""
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0295",
+      "word": "πρωί",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Κάθε ___ πηγαίνω στο σχολείο.",
+      "feedbackRule": "πρω- + -ί.",
+      "audioFile": "audio/proi.mp3",
+      "morphemes": {
+        "root": "πρω",
+        "suffix": "ί"
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0296",
+      "word": "πρόσωπο",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Κοίταξε το ___ στην εικόνα.",
+      "feedbackRule": "πρόσωπ- + -ο.",
+      "audioFile": "audio/prosopo.mp3",
+      "morphemes": {
+        "root": "πρόσωπ",
+        "suffix": "ο"
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0297",
+      "word": "καιρός",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Ο ___ είναι καλός σήμερα.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/kairos.mp3",
+      "morphemes": {
+        "root": "καιρός",
+        "suffix": ""
+      },
+      "difficulty": 1
+    },
+    {
+      "id": "tb-g2-0298",
+      "word": "ήρθε",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "___ η στιγμή να φύγουμε.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/irthe.mp3",
+      "morphemes": {
+        "root": "ήρθε",
+        "suffix": ""
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0299",
+      "word": "κάποιος",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "___ χτύπησε την πόρτα.",
+      "feedbackRule": "κάποι- + -ος.",
+      "audioFile": "audio/kapoios.mp3",
+      "morphemes": {
+        "root": "κάποι",
+        "suffix": "ος"
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0300",
+      "word": "συνέχεια",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Όλοι σκέφτονται ___ το ταξίδι.",
+      "feedbackRule": "συνέχει- + -α.",
+      "audioFile": "audio/synecheia.mp3",
+      "morphemes": {
+        "root": "συνέχει",
+        "suffix": "α"
+      },
+      "difficulty": 2,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0301",
+      "word": "γραμμένο",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Δες τι είναι ___ στη σοκολάτα.",
+      "feedbackRule": "γραμμέν- + -ο.",
+      "audioFile": "audio/grammeno.mp3",
+      "morphemes": {
+        "root": "γραμμέν",
+        "suffix": "ο"
+      },
+      "difficulty": 2
+    },
+    {
+      "id": "tb-g2-0302",
+      "word": "λέξης",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Η εικόνα δείχνει μια ___ του λεξικού.",
+      "feedbackRule": "λέξ- + -ης.",
+      "audioFile": "audio/lexis.mp3",
+      "morphemes": {
+        "root": "λέξ",
+        "suffix": "ης"
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0303",
+      "word": "αρέσει",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Σου ___ η καινούρια τσάντα;",
+      "feedbackRule": "αρέσ- + -ει.",
+      "audioFile": "audio/aresei.mp3",
+      "morphemes": {
+        "root": "αρέσ",
+        "suffix": "ει"
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0304",
+      "word": "βλέπεις",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Πού τον ___ στην εικόνα;",
+      "feedbackRule": "βλέπ- + -εις.",
+      "audioFile": "audio/vlepeis.mp3",
+      "morphemes": {
+        "root": "βλέπ",
+        "suffix": "εις"
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0305",
+      "word": "διαβάζουν",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Τα παιδιά ___ ωραία βιβλία.",
+      "feedbackRule": "διαβάζ- + -ουν.",
+      "audioFile": "audio/diavazoun.mp3",
+      "morphemes": {
+        "root": "διαβάζ",
+        "suffix": "ουν"
+      },
+      "difficulty": 2,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0306",
+      "word": "εκφράσεις",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Υπογράμμισε τις ___ στο ποίημα.",
+      "feedbackRule": "εκφράσ- + -εις.",
+      "audioFile": "audio/ekfraseis.mp3",
+      "morphemes": {
+        "root": "εκφράσ",
+        "suffix": "εις"
+      },
+      "difficulty": 2,
+      "definition": "Τρόποι να λέμε κάτι.",
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0307",
+      "word": "κύριο",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Μίλησε ευγενικά στον ___.",
+      "feedbackRule": "κύρ- + -ιο.",
+      "audioFile": "audio/kyrio.mp3",
+      "morphemes": {
+        "root": "κύρ",
+        "suffix": "ιο"
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0308",
+      "word": "στίχους",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Μάθαμε τους δύο τελευταίους ___.",
+      "feedbackRule": "στίχ- + -ους.",
+      "audioFile": "audio/stichous.mp3",
+      "morphemes": {
+        "root": "στίχ",
+        "suffix": "ους"
+      },
+      "difficulty": 1,
+      "definition": "Οι γραμμές ενός ποιήματος.",
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0309",
+      "word": "έτσι",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "___ παίζουμε στην αυλή.",
+      "feedbackRule": "έτσ- + -ι.",
+      "audioFile": "audio/etsi.mp3",
+      "morphemes": {
+        "root": "έτσ",
+        "suffix": "ι"
+      },
+      "difficulty": 1
+    },
+    {
+      "id": "tb-g2-0310",
+      "word": "διαβάζει",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Κάθεται στην αυλή και ___ παραμύθι.",
+      "feedbackRule": "διαβάζ- + -ει.",
+      "audioFile": "audio/diavazei.mp3",
+      "morphemes": {
+        "root": "διαβάζ",
+        "suffix": "ει"
+      },
+      "difficulty": 2,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0311",
+      "word": "πάρει",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Πριν την ___ ο ύπνος, διάβασε.",
+      "feedbackRule": "πάρ- + -ει.",
+      "audioFile": "audio/parei.mp3",
+      "morphemes": {
+        "root": "πάρ",
+        "suffix": "ει"
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0312",
+      "word": "ποιον",
+      "grade": 2,
+      "axis": "R",
+      "hintSentence": "Σε ___ θα μιλούσες;",
+      "feedbackRule": "Διάβασε προσεκτικά τη λέξη.",
+      "audioFile": "audio/poion.mp3",
+      "morphemes": {
+        "root": "ποιον",
+        "suffix": ""
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0313",
+      "word": "βοηθήσεις",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Μπορείς να ___ τα παιδιά;",
+      "feedbackRule": "βοηθήσ- + -εις.",
+      "audioFile": "audio/voithiseis.mp3",
+      "morphemes": {
+        "root": "βοηθήσ",
+        "suffix": "εις"
+      },
+      "difficulty": 2,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0314",
+      "word": "μοιάζει",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Το βιβλίο ___ με παραμύθι.",
+      "feedbackRule": "μοιάζ- + -ει.",
+      "audioFile": "audio/moiazei.mp3",
+      "morphemes": {
+        "root": "μοιάζ",
+        "suffix": "ει"
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0315",
+      "word": "προσκαλούν",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Με ___ στη γιορτή.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/proskaloun.mp3",
+      "morphemes": {
+        "root": "προσκαλούν",
+        "suffix": ""
+      },
+      "difficulty": 2,
+      "definition": "Καλούν κάποιον να έρθει.",
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0316",
+      "word": "προσκαλώ",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "___ τους φίλους μου στο σπίτι.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/proskalo.mp3",
+      "morphemes": {
+        "root": "προσκαλώ",
+        "suffix": ""
+      },
+      "difficulty": 2,
+      "definition": "Καλώ κάποιον να έρθει.",
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0317",
+      "word": "γράψουμε",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Καλύτερα να τα ___ μαζί.",
+      "feedbackRule": "γράψ- + -ουμε.",
+      "audioFile": "audio/grapsoume.mp3",
+      "morphemes": {
+        "root": "γράψ",
+        "suffix": "ουμε"
+      },
+      "difficulty": 2,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0318",
+      "word": "μπήκε",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Η γυναίκα ___ στη σπηλιά.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/mpike.mp3",
+      "morphemes": {
+        "root": "μπήκε",
+        "suffix": ""
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0319",
+      "word": "πολλούς",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Έζησε πριν από ___ αιώνες.",
+      "feedbackRule": "Προσοχή σε διπλά γράμματα.",
+      "audioFile": "audio/pollous.mp3",
+      "morphemes": {
+        "root": "πολλούς",
+        "suffix": ""
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0320",
+      "word": "συμμαθητές",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συνεννοήσου με τους ___ σου.",
+      "feedbackRule": "συμμαθητ- + -ές.",
+      "audioFile": "audio/symmathites.mp3",
+      "morphemes": {
+        "root": "συμμαθητ",
+        "suffix": "ές"
+      },
+      "difficulty": 2,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0321",
+      "word": "φυλάσσονται",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Εδώ ___ εργαλεία και τρόφιμα.",
+      "feedbackRule": "φυλάσσοντ- + -αι.",
+      "audioFile": "audio/fylassontai.mp3",
+      "morphemes": {
+        "root": "φυλάσσοντ",
+        "suffix": "αι"
+      },
+      "difficulty": 2,
+      "definition": "Κρατιούνται σε ασφαλές μέρος.",
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0322",
+      "word": "είδα",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "___ μια μηχανή με λαμπάκια.",
+      "feedbackRule": "είδ- + -α.",
+      "audioFile": "audio/eida.mp3",
+      "morphemes": {
+        "root": "είδ",
+        "suffix": "α"
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0323",
+      "word": "ιστορίες",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Ζωγράφιζαν ___ πάνω στους βράχους.",
+      "feedbackRule": "ιστορί- + -ες.",
+      "audioFile": "audio/istories.mp3",
+      "morphemes": {
+        "root": "ιστορί",
+        "suffix": "ες"
+      },
+      "difficulty": 2
+    },
+    {
+      "id": "tb-g2-0324",
+      "word": "μερικές",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "___ φορές ονειρεύομαι ταξίδια.",
+      "feedbackRule": "μερικ- + -ές.",
+      "audioFile": "audio/merikes.mp3",
+      "morphemes": {
+        "root": "μερικ",
+        "suffix": "ές"
+      },
+      "difficulty": 1
+    },
+    {
+      "id": "tb-g2-0325",
+      "word": "προσεκτικά",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Θα ανεβείς ___ τις σκάλες.",
+      "feedbackRule": "προσεκτικ- + -ά.",
+      "audioFile": "audio/prosektika.mp3",
+      "morphemes": {
+        "root": "προσεκτικ",
+        "suffix": "ά"
+      },
+      "difficulty": 2
+    },
+    {
+      "id": "tb-g2-0326",
+      "word": "καταλάβεις",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Διάβασε το κείμενο και θα ___.",
+      "feedbackRule": "καταλάβ- + -εις.",
+      "audioFile": "audio/katalaveis.mp3",
+      "morphemes": {
+        "root": "καταλάβ",
+        "suffix": "εις"
+      },
+      "difficulty": 2,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0327",
+      "word": "μοιάζουν",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Αυτά τα ζώα ___ μεταξύ τους.",
+      "feedbackRule": "μοιάζ- + -ουν.",
+      "audioFile": "audio/moiazoun.mp3",
+      "morphemes": {
+        "root": "μοιάζ",
+        "suffix": "ουν"
+      },
+      "difficulty": 2,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0328",
+      "word": "ξεχάσεις",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Μην ___ να βάλεις τελεία.",
+      "feedbackRule": "ξεχάσ- + -εις.",
+      "audioFile": "audio/xechaseis.mp3",
+      "morphemes": {
+        "root": "ξεχάσ",
+        "suffix": "εις"
+      },
+      "difficulty": 2,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0329",
+      "word": "καλλιτέχνης",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Ο ___ ζωγραφίζει έναν πίνακα.",
+      "feedbackRule": "καλλιτέχν- + -ης.",
+      "audioFile": "audio/kallitechnis.mp3",
+      "morphemes": {
+        "root": "καλλιτέχν",
+        "suffix": "ης"
+      },
+      "difficulty": 2,
+      "definition": "Άνθρωπος που κάνει τέχνη.",
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0330",
+      "word": "καλή",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Μια μέρα η ___ πήγε στο βουνό.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/kali.mp3",
+      "morphemes": {
+        "root": "καλή",
+        "suffix": ""
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0331",
+      "word": "σκέφτηκε",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Τι ___ να κάνει η Γαλήνη;",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/skeftike.mp3",
+      "morphemes": {
+        "root": "σκέφτηκε",
+        "suffix": ""
+      },
+      "difficulty": 2,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0332",
+      "word": "πίνακα",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπλήρωσε τον ___ με λέξεις.",
+      "feedbackRule": "πίνακ- + -α.",
+      "audioFile": "audio/pinaka.mp3",
+      "morphemes": {
+        "root": "πίνακ",
+        "suffix": "α"
+      },
+      "difficulty": 1
+    },
+    {
+      "id": "tb-g2-0333",
+      "word": "ρήματα",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Βρες τα ___ στα στιχάκια.",
+      "feedbackRule": "ρή- + -ματα.",
+      "audioFile": "audio/rimata.mp3",
+      "morphemes": {
+        "root": "ρή",
+        "suffix": "ματα"
+      },
+      "difficulty": 1,
+      "definition": "Λέξεις που δείχνουν τι κάνουμε.",
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0334",
+      "word": "λέξεων",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Παίζουμε το παιχνίδι των κομμένων ___.",
+      "feedbackRule": "λέξε- + -ων.",
+      "audioFile": "audio/lexeon.mp3",
+      "morphemes": {
+        "root": "λέξε",
+        "suffix": "ων"
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0335",
+      "word": "μπορείτε",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "___ να μαζέψετε ξερά φύλλα;",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/mporeite.mp3",
+      "morphemes": {
+        "root": "μπορείτε",
+        "suffix": ""
+      },
+      "difficulty": 2,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0336",
+      "word": "αναγγέλλει",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Η αφίσα ___ ένα θέαμα.",
+      "feedbackRule": "αναγγέλλ- + -ει.",
+      "audioFile": "audio/anaggellei.mp3",
+      "morphemes": {
+        "root": "αναγγέλλ",
+        "suffix": "ει"
+      },
+      "difficulty": 2,
+      "definition": "Λέει σε όλους μια είδηση.",
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0337",
+      "word": "κυρία",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Η ___ μας χαμογέλασε.",
+      "feedbackRule": "κυρ- + -ία.",
+      "audioFile": "audio/kyria.mp3",
+      "morphemes": {
+        "root": "κυρ",
+        "suffix": "ία"
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0338",
+      "word": "όπου",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Βρες μια λέξη ___ το αυ ακούγεται αφ.",
+      "feedbackRule": "όπ- + -ου.",
+      "audioFile": "audio/opou.mp3",
+      "morphemes": {
+        "root": "όπ",
+        "suffix": "ου"
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "tb-g2-0339",
+      "word": "αγγελίες",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Διαβάζουμε μικρές ___ στην εφημερίδα.",
+      "feedbackRule": "αγγελί- + -ες.",
+      "audioFile": "audio/aggelies.mp3",
+      "morphemes": {
+        "root": "αγγελί",
+        "suffix": "ες"
+      },
+      "difficulty": 2,
+      "definition": "Μικρά κείμενα με ειδήσεις."
+    },
+    {
+      "id": "tb-g2-0340",
+      "word": "Κύπρος",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Η ___ είναι ένα μεγάλο νησί.",
+      "feedbackRule": "Κύπρ- + -ος.",
+      "audioFile": "audio/kypros.mp3",
+      "morphemes": {
+        "root": "Κύπρ",
+        "suffix": "ος"
+      },
+      "difficulty": 1,
+      "definition": "Νησί-χώρα δίπλα στην Ελλάδα.",
+      "homophone": true
+    }
+  ]
 }
