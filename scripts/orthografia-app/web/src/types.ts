@@ -57,7 +57,7 @@ export interface WordFamily {
 
 export type FamiliesPayload = Record<string, WordFamily>;
 
-export type GameMode = "dictation" | "reverse" | "choice" | "sentence";
+export type GameMode = "sentence" | "choice";
 
 export interface WordsPayload {
   version: number;

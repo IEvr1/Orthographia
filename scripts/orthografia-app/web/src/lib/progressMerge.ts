@@ -1,5 +1,6 @@
 import type { WordProgress } from "../types";
 import type { ProgressStore } from "./storage";
+import { getRewardPoints } from "./storage";
 
 function pickWord(local: WordProgress, remote: WordProgress): WordProgress {
   if (remote.attempts > local.attempts) return remote;
@@ -28,5 +29,6 @@ export function mergeProgressStores(local: ProgressStore, remote: ProgressStore)
     words,
     lastSessionDate,
     deviceId: local.deviceId ?? remote.deviceId,
+    rewardPoints: Math.max(getRewardPoints(local), getRewardPoints(remote)),
   };
 }

@@ -25,10 +25,8 @@ const GRADE_LABELS: Record<number, string> = {
 };
 
 const MODE_LABELS: Record<GameMode, string> = {
-  dictation: "Υπαγόρευση",
-  reverse: "Αναζήτηση",
-  choice: "Διάλεξε σωστά",
   sentence: "Πρόταση",
+  choice: "Διάλεξε σωστά",
 };
 
 interface HomeScreenProps {
@@ -122,7 +120,7 @@ export function HomeScreen({
       <div className="hero">
         <p className="brand">Ορθογραφία</p>
         <h1 className="hero-title">Μάθε να γράφεις σωστά!</h1>
-        <p className="hero-sub">Άκου τη λέξη, δες την πρόταση και γράψε την με τον τόνο της.</p>
+        <p className="hero-sub">Δες την πρόταση και γράψε τη λέξη με τον τόνο της.</p>
       </div>
 
       {showFamilyProfiles && (

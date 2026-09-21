@@ -5,8 +5,6 @@ import type {
 
   AppScreen,
 
-  FamiliesPayload,
-
   GameMode,
 
   RuleDefinition,
@@ -91,13 +89,9 @@ import { ChoiceExercise } from "./components/ChoiceExercise";
 
 import { ConsentScreen } from "./components/ConsentScreen";
 
-import { DictationExercise } from "./components/DictationExercise";
-
 import { HomeScreen } from "./components/HomeScreen";
 
 import { PricingScreen } from "./components/PricingScreen";
-
-import { ReverseExercise } from "./components/ReverseExercise";
 
 import { RuleCard } from "./components/RuleCard";
 
@@ -159,8 +153,6 @@ function AppShell({
 
   const [rules, setRules] = useState<RuleDefinition[]>([]);
 
-  const [families, setFamilies] = useState<FamiliesPayload>({});
-
   const [sessionWords, setSessionWords] = useState<WordEntry[]>([]);
 
   const [summary, setSummary] = useState<SessionSummary | null>(null);
@@ -169,7 +161,7 @@ function AppShell({
 
   const [selectedGrade, setSelectedGrade] = useState(3);
 
-  const [gameMode, setGameMode] = useState<GameMode>("dictation");
+  const [gameMode, setGameMode] = useState<GameMode>("sentence");
 
   const [activeRule, setActiveRule] = useState<RuleDefinition | null>(null);
 
@@ -234,21 +226,13 @@ function AppShell({
 
         .catch(() => ({ rules: [] })),
 
-      fetch("/content/families.json")
-
-        .then((r) => (r.ok ? (r.json() as Promise<FamiliesPayload>) : {}))
-
-        .catch(() => ({})),
-
     ])
 
-      .then(([wordsData, rulesData, familiesData]) => {
+      .then(([wordsData, rulesData]) => {
 
         setWords(wordsData.words);
 
         setRules(rulesData.rules ?? []);
-
-        setFamilies(familiesData);
 
         const grades = gradesWithWords(wordsData.words);
 
@@ -284,7 +268,7 @@ function AppShell({
 
     if (!canAccessMode(tier, gameMode)) {
 
-      setGameMode("dictation");
+      setGameMode("sentence");
 
     }
 
@@ -396,12 +380,6 @@ function AppShell({
           : buildDailySession(words, store, selectedGrade);
 
 
-
-      if (gameMode === "reverse") {
-
-        daily = daily.filter((w) => w.definition || w.feedbackRule);
-
-      }
 
       if (gameMode === "choice") {
 
@@ -763,25 +741,9 @@ function AppShell({
 
       )}
 
-      {screen === "exercise" && sessionWords.length > 0 && gameMode === "dictation" && (
+      {screen === "exercise" && sessionWords.length > 0 && gameMode === "sentence" && (
 
-        <DictationExercise
-
-          words={sessionWords}
-
-          families={families}
-
-          onComplete={handleComplete}
-
-          onQuit={() => setScreen("home")}
-
-        />
-
-      )}
-
-      {screen === "exercise" && sessionWords.length > 0 && gameMode === "reverse" && (
-
-        <ReverseExercise
+        <SentenceExercise
 
           words={sessionWords}
 
@@ -800,20 +762,6 @@ function AppShell({
           words={sessionWords}
 
           allWords={gradeWords}
-
-          onComplete={handleComplete}
-
-          onQuit={() => setScreen("home")}
-
-        />
-
-      )}
-
-      {screen === "exercise" && sessionWords.length > 0 && gameMode === "sentence" && (
-
-        <SentenceExercise
-
-          words={sessionWords}
 
           onComplete={handleComplete}
 

@@ -28,7 +28,7 @@ export function canAccessGrade(tier: PlanTier, grade: number): boolean {
 
 export function canAccessMode(tier: PlanTier, mode: GameMode): boolean {
   if (isPaidTier(tier)) return true;
-  return mode === "dictation";
+  return mode === "sentence";
 }
 
 export function canUseCloudSync(tier: PlanTier): boolean {

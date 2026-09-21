@@ -17,6 +17,8 @@ export interface ProgressStore {
   deviceId?: string;
   /** Child profile this store belongs to (family plan). */
   profileId?: string | null;
+  /** Correct answers toward the current reward goal (per child / owner). */
+  rewardPoints?: number;
 }
 
 export function progressStorageKey(profileId?: string | null): string {
@@ -132,6 +134,7 @@ export function recordAttempt(
     if (updated.consecutiveCorrect >= MASTER_THRESHOLD && fsrs.stability >= 7) {
       updated.mastered = true;
     }
+    next.rewardPoints = getRewardPoints(next) + 1;
   } else {
     updated.consecutiveCorrect = 0;
     updated.mastered = false;
@@ -146,6 +149,21 @@ export function recordAttempt(
   next.words[wordId] = updated;
   next.lastSessionDate = now.toISOString().slice(0, 10);
   return next;
+}
+
+export function getRewardPoints(store: ProgressStore): number {
+  return Math.max(0, store.rewardPoints ?? 0);
+}
+
+export function resetRewardPoints(store: ProgressStore): ProgressStore {
+  return { ...store, rewardPoints: 0 };
+}
+
+/** Persist a reward-goal reset after the celebration UI is dismissed. */
+export function clearRewardPointsAfterCelebration(profileId?: string | null): ProgressStore {
+  const store = resetRewardPoints(loadProgress(profileId));
+  saveProgress(store, profileId);
+  return store;
 }
 
 export function importProgressStore(data: ProgressStore, profileId?: string | null): ProgressStore {
