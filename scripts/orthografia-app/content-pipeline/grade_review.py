@@ -694,7 +694,7 @@ def apply_status_to_overrides() -> int:
     if applied:
         save_json(HINT_OVERRIDES, overrides)
         print(f"Wrote {applied} hint overrides → {HINT_OVERRIDES}")
-        print("Next: run fix_hints.py or content_greek_review.py to apply into words.json")
+        print("Next: run fix_hints.py to apply into words.json")
     else:
         print("No new hint overrides to write (need status with newHint different from current).")
     return applied

@@ -286,7 +286,7 @@ FORCE_INCLUDE_NUMBERS: list[str] = [
     "εκατό",
 ]
 
-# Seed antonym pairs for canvas pairing (lemma surfaces).
+# Seed antonym pairs (prefix morphology) used when ranking extract candidates.
 ANTONYM_PAIRS: list[tuple[str, str, str]] = [
     ("κολλώ", "ξεκολλώ", "ξε-"),
     ("διψώ", "ξεδιψώ", "ξε-"),
@@ -1554,124 +1554,6 @@ def append_textbooks(
     return merged, count_by_grade(imported), len(imported)
 
 
-
-def classify_phenomenon(word: str) -> str:
-    k = strip_accents(word.lower())
-    if re.search(r"(ει|οι|υι)", k):
-        return "ι-ήχος (ει/οι/υι)"
-    if "η" in k:
-        return "η"
-    if "ου" in k:
-        return "ου"
-    if any(c in word for c in "άέήίόύώ"):
-        return "τόνος"
-    if "ω" in k:
-        return "ω"
-    if re.search(r"(.)\1", k):
-        return "διπλά σύμφωνα"
-    if "υ" in k:
-        return "υ"
-    if re.search(r"(μπ|ντ|γκ|τσ|τζ)", k):
-        return "δίψηφα σύμφωνα"
-    if "αι" in k:
-        return "αι"
-    if re.search(r"(αυ|ευ)", k):
-        return "αυ/ευ"
-    if re.search(r"[ξψ]", k):
-        return "ξ/ψ"
-    return "τόνος"
-
-
-def write_analysis(
-    records: list[dict[str, str]],
-    texts: list[str],
-    rows: list[dict[str, Any]],
-    path: Path,
-) -> None:
-    import json
-
-    row_by_key = {normalize_word(r["word"]): r for r in rows}
-    t1 = texts[0] if texts else ""
-    t2 = texts[1] if len(texts) > 1 else ""
-
-    def count_in(text: str, word: str) -> int:
-        return len(re.findall(re.escape(word), text, flags=re.IGNORECASE))
-
-    words_out = []
-    by_ph: Counter[str] = Counter()
-    by_src: Counter[str] = Counter()
-    by_len: Counter[str] = Counter()
-    by_cat: Counter[str] = Counter()
-    explicit = []
-    for rec in records:
-        w = rec["word"]
-        key = normalize_word(w)
-        meta = row_by_key.get(key, {})
-        f1 = count_in(t1, w)
-        f2 = count_in(t2, w)
-        if f1 and f2:
-            src = "Και τα δύο"
-        elif f1:
-            src = "Τεύχος 1"
-        elif f2:
-            src = "Τεύχος 2"
-        else:
-            src = "Και τα δύο"
-        ph = classify_phenomenon(w)
-        ln = len(w)
-        bucket = "4–5" if ln <= 5 else "6–8" if ln <= 8 else "9–11" if ln <= 11 else "12+"
-        cat = ""
-        source_field = rec.get("source") or ""
-        if ":" in source_field:
-            cat = source_field.split(":", 1)[1]
-        elif meta.get("category"):
-            cat = meta["category"]
-        by_ph[ph] += 1
-        by_src[src] += 1
-        by_len[bucket] += 1
-        if cat:
-            by_cat[cat] += 1
-        if meta.get("explicit"):
-            explicit.append(w)
-        words_out.append(
-            {
-                "word": w,
-                "freq": int(float(rec.get("frequency") or 0)),
-                "freq1": f1,
-                "freq2": f2,
-                "source": src,
-                "phenomenon": ph,
-                "phenomena": [ph],
-                "len": ln,
-                "hint": rec.get("hint") or "",
-                "pos": rec.get("pos") or meta.get("pos") or "noun",
-                "category": cat,
-                "explicit": bool(meta.get("explicit")),
-                "glossary": bool(meta.get("glossary")) or cat == "γλωσσάριο",
-            }
-        )
-
-    antonyms = [
-        {"word": a, "antonym": b, "prefix": pfx}
-        for a, b, pfx in ANTONYM_PAIRS
-        if any(normalize_word(x["word"]) in {normalize_word(a), normalize_word(b)} for x in words_out)
-    ]
-    payload = {
-        "analysis": {
-            "total": len(words_out),
-            "by_source": dict(by_src),
-            "by_phenomenon": dict(by_ph),
-            "by_length": dict(by_len),
-            "by_category": dict(by_cat),
-            "explicit_count": len(explicit),
-            "explicit_sample": explicit,
-            "antonym_pairs": antonyms,
-        },
-        "words": words_out,
-    }
-    path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
-
-
 def extract_from_pdfs(pdfs: list[Path], cap: int) -> list[dict[str, str]]:
     EXTRACT_DIR.mkdir(parents=True, exist_ok=True)
     texts: list[str] = []
@@ -1685,10 +1567,7 @@ def extract_from_pdfs(pdfs: list[Path], cap: int) -> list[dict[str, str]]:
     rows = collect_candidates(texts)
     records = rows_to_csv_records(rows, cap=max(cap, 90))
     write_csv(records, OUTPUT_CSV)
-    analysis_path = TEXTBOOK_DIR / "grade2_analysis.json"
-    write_analysis(records, texts, rows, analysis_path)
     print(f"Wrote {len(records)} candidate words -> {OUTPUT_CSV}")
-    print(f"Wrote analysis -> {analysis_path}")
     return records
 
 

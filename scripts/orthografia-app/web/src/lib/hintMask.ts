@@ -70,7 +70,7 @@ export function maskWordInHint(hint: string, word: string, root?: string): strin
 
 /**
  * Resolve a cloze hint for sentence/choice exercises.
- * Prefers an existing `___`, else masks the target word in place (same as former dictation),
+ * Prefers an existing `___`, else masks the target word in place,
  * else appends a trailing blank as a last resort.
  */
 export function resolveClozeHint(hint: string, word: string, root?: string): string {

@@ -56,7 +56,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
 
     return res.status(405).json({ error: "method not allowed" });
   } catch (err) {
-    console.error("[progress-api]", err);
+    console.error("[progress]", err);
     const message = err instanceof Error ? err.message : "internal error";
     const code = message.includes("DATABASE_URL") ? 503 : 500;
     return res.status(code).json({ error: message });

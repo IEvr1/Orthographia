@@ -83,7 +83,7 @@ export async function canAccessOwner(req: VercelRequest, ownerId: string): Promi
 
   const secretKey = process.env.CLERK_SECRET_KEY;
   if (!secretKey) {
-    console.error("[progress-api] CLERK_SECRET_KEY is not configured");
+    console.error("[auth] CLERK_SECRET_KEY is not configured");
     return false;
   }
 

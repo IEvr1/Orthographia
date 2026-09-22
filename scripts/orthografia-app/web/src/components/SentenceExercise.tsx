@@ -39,7 +39,7 @@ export function SentenceExercise({ words, onComplete, onQuit }: SentenceExercise
   const pendingAdvanceRef = useRef<SessionSummary | null>(null);
 
   const current = words[index];
-  // Same cloze resolution as former dictation: mask the target in-place when needed.
+  // Same cloze resolution as hintMask: mask the target in-place when needed.
   const sentence = resolveClozeHint(
     current.hintSentence,
     current.word,
