@@ -130,9 +130,6 @@ export function PricingScreen({
       <div className="hero">
         <p className="brand">Ορθογραφία</p>
         <h1 className="hero-title">Επέλεξε το πλάνο σου</h1>
-        <p className="hero-sub">
-          Δωρεάν δοκιμή με Β΄ τάξη. Premium για πλήρη πρόσβαση χωρίς διαφημίσεις.
-        </p>
       </div>
 
       <div className="plan-status">
@@ -177,7 +174,7 @@ export function PricingScreen({
                 <SignedOut>
                   <SignInButton mode="modal">
                     <button type="button" className="btn btn-secondary btn-xl">
-                      Σύνδεση για αγορά
+                      Σύνδεση για δοκιμή ή αγορά
                     </button>
                   </SignInButton>
                 </SignedOut>

@@ -7,12 +7,20 @@ import { sanitizeChildName, validateChildName } from "../../server/childName.js"
 import {
   deleteChildProfile,
   effectiveTier,
+  ensureTrialStarted,
   ensureUser,
   getSubscription,
   isActiveSubscription,
   listChildProfiles,
   upsertChildProfile,
 } from "../../server/subscriptions.js";
+
+const EMPTY_TRIAL = {
+  trialStartedAt: null as string | null,
+  trialEndsAt: null as string | null,
+  trialActive: false,
+  trialDaysLeft: 0,
+};
 
 function friendlyError(err: unknown): string {
   const message = err instanceof Error ? err.message : "";
@@ -43,12 +51,20 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
         profiles: [],
         currentPeriodEnd: null,
         isSuperAdmin: false,
+        ...EMPTY_TRIAL,
       });
     }
 
     try {
       await ensureSchema();
       await ensureUser(auth.userId, auth.email);
+      const trial = await ensureTrialStarted(auth.userId);
+      const trialPayload = {
+        trialStartedAt: trial.trialStartedAt,
+        trialEndsAt: trial.trialEndsAt,
+        trialActive: trial.trialActive,
+        trialDaysLeft: trial.daysLeft,
+      };
 
       if (isSuperAdmin(auth.email)) {
         const profiles = await listChildProfiles(auth.userId);
@@ -60,6 +76,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
           profiles,
           currentPeriodEnd: null,
           isSuperAdmin: true,
+          ...trialPayload,
         });
       }
 
@@ -75,6 +92,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
         profiles,
         currentPeriodEnd: sub?.current_period_end ?? null,
         isSuperAdmin: false,
+        ...trialPayload,
       });
     } catch (err) {
       console.error("[subscription/status]", err);

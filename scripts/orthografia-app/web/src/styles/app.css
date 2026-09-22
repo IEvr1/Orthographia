@@ -157,6 +157,10 @@ body {
 }
 
 .mode-chip {
+  appearance: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   min-height: 72px;
   padding: 1rem 1.1rem;
   border-radius: 14px;
@@ -167,9 +171,10 @@ body {
   font-size: 1.2rem;
   line-height: 1.25;
   color: var(--ink-soft);
+  -webkit-text-fill-color: var(--ink-soft);
   cursor: default;
   text-align: center;
-  white-space: normal;
+  white-space: nowrap;
 }
 
 .mode-chip:not(:disabled) {
@@ -184,14 +189,25 @@ body {
   border-color: var(--teal);
   background: var(--teal);
   color: var(--white);
+  -webkit-text-fill-color: var(--white);
 }
 
-.mode-chip--locked {
-  opacity: 0.45;
-}
-
+/* Locked and available-unselected share the same look; lock is disabled + title only */
+.mode-chip--locked,
 .mode-chip:disabled {
-  opacity: 0.4;
+  opacity: 1;
+  border-color: var(--sand-deep);
+  background: var(--white);
+  color: var(--ink-soft);
+  -webkit-text-fill-color: var(--ink-soft);
+}
+
+.mode-chip--active:disabled,
+.mode-chip--active.mode-chip--locked {
+  border-color: var(--teal);
+  background: var(--teal);
+  color: var(--white);
+  -webkit-text-fill-color: var(--white);
 }
 
 /* Rule card */
@@ -335,12 +351,6 @@ body {
 
 .progress-bar--home {
   margin: 0.1rem 0 0.15rem;
-}
-
-.progress-detail {
-  color: var(--ink-soft);
-  font-size: 0.85rem;
-  margin: 0;
 }
 
 .progress-review {
@@ -985,6 +995,22 @@ body {
   background: var(--white);
   color: var(--teal-dark);
   cursor: pointer;
+}
+
+.plan-badge--status {
+  cursor: default;
+  border-color: var(--sand-deep);
+  color: var(--ink-soft);
+}
+
+.plan-badge--cta {
+  border-color: var(--coral);
+  color: var(--coral-dark);
+  background: var(--white);
+}
+
+.plan-badge--cta:hover {
+  background: var(--sand);
 }
 
 .home-auth,

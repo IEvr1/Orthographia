@@ -145,7 +145,7 @@ export function SettingsScreen({
             onChange={(e) => setGoalDraft(e.target.value)}
           />
         </label>
-        <p className="hint-text">Κάθε σωστή απάντηση δίνει 1 πόντο. Όταν φτάσει τον στόχο, εμφανίζεται γιορτή.</p>
+        <p className="hint-text">Κάθε σωστή απάντηση δίνει 1 πόντο.</p>
         <div className="settings-panel__actions">
           <button type="button" className="btn btn-secondary" onClick={saveGoal}>
             Αποθήκευση στόχου
@@ -164,7 +164,7 @@ export function SettingsScreen({
           )}
           {syncEnabled && !canUseCloudSync(tier) && (
             <button type="button" className="settings-action" onClick={onOpenPricing}>
-              Συγχρονισμός με άλλες συσκευές (Premium)
+              Συγχρονισμός με άλλες συσκευές
             </button>
           )}
         </div>

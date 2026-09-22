@@ -34,6 +34,10 @@ export async function ensureSchema(): Promise<void> {
       created_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
     )
   `;
+  await sql`
+    ALTER TABLE users
+    ADD COLUMN IF NOT EXISTS trial_started_at TIMESTAMPTZ
+  `;
 
   await sql`
     CREATE TABLE IF NOT EXISTS subscriptions (

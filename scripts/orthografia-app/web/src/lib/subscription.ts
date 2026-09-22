@@ -2,6 +2,13 @@ import { useAuth } from "@clerk/clerk-react";
 import { useCallback, useEffect, useState } from "react";
 import type { PlanTier } from "./access";
 import { SUPER_ADMIN_TIER } from "./access";
+import {
+  cacheTrialStartedAt,
+  computeTrialActive,
+  computeTrialDaysLeft,
+  ensureLocalTrialStarted,
+  getCachedTrialStartedAt,
+} from "./trial";
 
 const API_BASE = import.meta.env.VITE_PROGRESS_API_URL ?? "/api";
 
@@ -20,6 +27,10 @@ export interface SubscriptionState {
   profiles: ChildProfile[];
   currentPeriodEnd: string | null;
   isSuperAdmin: boolean;
+  trialStartedAt: string | null;
+  trialEndsAt: string | null;
+  trialActive: boolean;
+  trialDaysLeft: number;
   loading: boolean;
   error: string | null;
 }
@@ -32,6 +43,10 @@ const FREE_STATE: SubscriptionState = {
   profiles: [],
   currentPeriodEnd: null,
   isSuperAdmin: false,
+  trialStartedAt: null,
+  trialEndsAt: null,
+  trialActive: false,
+  trialDaysLeft: 0,
   loading: false,
   error: null,
 };
@@ -48,27 +63,70 @@ function mapProfiles(raw: unknown[]): ChildProfile[] {
   });
 }
 
+function resolveTrialFromServer(
+  userId: string | null | undefined,
+  data: Record<string, unknown>,
+): Pick<SubscriptionState, "trialStartedAt" | "trialEndsAt" | "trialActive" | "trialDaysLeft"> {
+  const started =
+    typeof data.trialStartedAt === "string" && data.trialStartedAt
+      ? data.trialStartedAt
+      : null;
+
+  if (started && userId) {
+    cacheTrialStartedAt(userId, started);
+    return {
+      trialStartedAt: started,
+      trialEndsAt:
+        typeof data.trialEndsAt === "string" ? data.trialEndsAt : null,
+      trialActive: Boolean(data.trialActive),
+      trialDaysLeft: Number(data.trialDaysLeft ?? 0),
+    };
+  }
+
+  // Signed-in but server omitted trial — use per-user local fallback only.
+  if (userId) {
+    const local = getCachedTrialStartedAt(userId) ?? ensureLocalTrialStarted(userId);
+    return {
+      trialStartedAt: local,
+      trialEndsAt: null,
+      trialActive: computeTrialActive(local),
+      trialDaysLeft: computeTrialDaysLeft(local),
+    };
+  }
+
+  return {
+    trialStartedAt: null,
+    trialEndsAt: null,
+    trialActive: false,
+    trialDaysLeft: 0,
+  };
+}
+
 export function useSubscription(): SubscriptionState & {
   refresh: () => Promise<void>;
   startCheckout: (plan: "monthly" | "yearly" | "family") => Promise<string | null>;
   openPortal: () => Promise<string | null>;
 } {
-  const { getToken, isSignedIn } = useAuth();
+  const { getToken, isSignedIn, userId } = useAuth();
   const [state, setState] = useState<SubscriptionState>({ ...FREE_STATE, loading: true });
 
   const refresh = useCallback(async () => {
     setState((s) => ({ ...s, loading: true, error: null }));
     try {
-      const headers: Record<string, string> = {};
-      if (isSignedIn) {
-        const token = await getToken();
-        if (token) headers.Authorization = `Bearer ${token}`;
+      if (!isSignedIn) {
+        setState({ ...FREE_STATE, loading: false });
+        return;
       }
+
+      const headers: Record<string, string> = {};
+      const token = await getToken();
+      if (token) headers.Authorization = `Bearer ${token}`;
 
       const res = await fetch(`${API_BASE.replace(/\/$/, "")}/subscription/status`, { headers });
       if (!res.ok) throw new Error("Αποτυχία φόρτωσης συνδρομής");
       const data = await res.json();
       const isSuperAdmin = Boolean(data.isSuperAdmin);
+      const trial = resolveTrialFromServer(userId, data);
       setState({
         tier: isSuperAdmin ? SUPER_ADMIN_TIER : (data.tier ?? "free"),
         active: isSuperAdmin ? true : Boolean(data.active),
@@ -77,17 +135,39 @@ export function useSubscription(): SubscriptionState & {
         profiles: mapProfiles(data.profiles ?? []),
         currentPeriodEnd: data.currentPeriodEnd ?? null,
         isSuperAdmin,
+        ...trial,
         loading: false,
         error: null,
       });
     } catch (err) {
-      setState((s) => ({
-        ...s,
-        loading: false,
-        error: err instanceof Error ? err.message : "Σφάλμα",
-      }));
+      // Keep last good state; if signed in with no trial yet, seed per-user local clock.
+      setState((s) => {
+        const fallbackTrial =
+          isSignedIn && userId
+            ? (() => {
+                const local = getCachedTrialStartedAt(userId) ?? ensureLocalTrialStarted(userId);
+                return {
+                  trialStartedAt: local,
+                  trialEndsAt: s.trialEndsAt,
+                  trialActive: computeTrialActive(local),
+                  trialDaysLeft: computeTrialDaysLeft(local),
+                };
+              })()
+            : {
+                trialStartedAt: null,
+                trialEndsAt: null,
+                trialActive: false,
+                trialDaysLeft: 0,
+              };
+        return {
+          ...s,
+          ...fallbackTrial,
+          loading: false,
+          error: err instanceof Error ? err.message : "Σφάλμα",
+        };
+      });
     }
-  }, [getToken, isSignedIn]);
+  }, [getToken, isSignedIn, userId]);
 
   useEffect(() => {
     void refresh();

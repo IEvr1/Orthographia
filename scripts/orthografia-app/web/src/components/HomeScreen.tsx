@@ -1,14 +1,14 @@
 import { SignInButton, SignedIn, SignedOut, UserButton } from "@clerk/clerk-react";
 import type { GameMode } from "../types";
 import type { PlanTier } from "../lib/access";
-import { canAccessGrade, canAccessMode, tierLabel } from "../lib/access";
+import { canAccessGrade, canAccessMode, canStartPractice, isPaidTier } from "../lib/access";
 import { GRADE_LABELS, OFFERED_GRADES } from "../lib/grades";
 import { isClerkEnabled } from "../lib/subscription";
 import { SettingsIcon } from "./SettingsScreen";
 
 const MODE_LABELS: Record<GameMode, string> = {
   sentence: "Πρόταση",
-  choice: "Διάλεξε σωστά",
+  choice: "Διάλεξε",
 };
 
 interface HomeScreenProps {
@@ -26,6 +26,10 @@ interface HomeScreenProps {
   isSuperAdmin?: boolean;
   dailyLimitReached: boolean;
   showFamilyProfiles: boolean;
+  trialActive?: boolean;
+  trialDaysLeft?: number;
+  trialExpired?: boolean;
+  isSignedIn?: boolean;
   rewardPoints: number;
   rewardGoal: number;
 }
@@ -45,21 +49,54 @@ export function HomeScreen({
   isSuperAdmin = false,
   dailyLimitReached,
   showFamilyProfiles,
+  trialActive = false,
+  trialDaysLeft = 0,
+  trialExpired = false,
+  isSignedIn = false,
   rewardPoints,
   rewardGoal,
 }: HomeScreenProps) {
   const needsProfile = showFamilyProfiles && !activeChildName;
-  const startBlocked = dailyLimitReached || needsProfile || subscriptionLoading;
+  const authEnabled = isClerkEnabled();
+  const needsSignIn = !canStartPractice(isSignedIn, authEnabled);
+  const startBlocked = dailyLimitReached || needsProfile || subscriptionLoading || needsSignIn;
+
+  const planStatusLabel = trialActive
+    ? trialDaysLeft === 1
+      ? "Δοκιμή · 1 ημέρα"
+      : `Δοκιμή · ${trialDaysLeft} ημέρες`
+    : trialExpired
+      ? "Δοκιμή έληξε"
+      : "Δωρεάν";
+
+  const gradeHint = (() => {
+    if (needsSignIn) {
+      return "";
+    }
+    if (trialActive) {
+      return "Δωρεάν δοκιμή 5 ημερών: όλες οι τάξεις (Β΄–Στ΄) και τρόποι εξάσκησης.";
+    }
+    if (trialExpired) {
+      return "Η δοκιμή έληξε. Δωρεάν: όλες οι τάξεις (Β΄–Στ΄). Premium: απεριόριστη εξάσκηση και όλοι οι τρόποι.";
+    }
+    return "Δωρεάν: όλες οι τάξεις (Β΄–Στ΄). Δοκιμή ή Premium για όλους τους τρόπους και απεριόριστη εξάσκηση.";
+  })();
 
   return (
     <main className="screen screen--home fade-in">
       <div className="home-topbar">
         <div className="home-topbar__plans">
           {isSuperAdmin && <span className="admin-badge">Διαχειριστής</span>}
-          <button type="button" className="plan-badge" onClick={onOpenPricing}>
-            {tierLabel(tier)}
-            {tier === "free" && " · Αναβάθμιση"}
-          </button>
+          {!isPaidTier(tier) && (
+            <>
+              <span className="plan-badge plan-badge--status">{planStatusLabel}</span>
+              {!needsSignIn && (
+                <button type="button" className="plan-badge plan-badge--cta" onClick={onOpenPricing}>
+                  Πάμε Premium
+                </button>
+              )}
+            </>
+          )}
         </div>
         <div className="home-topbar__actions">
           {isClerkEnabled() && (
@@ -99,14 +136,16 @@ export function HomeScreen({
           <div className="grade-options">
             {OFFERED_GRADES.map((grade) => {
               const hasWords = availableGrades.has(grade);
-              const planAllows = canAccessGrade(tier, grade);
-              const allowed = hasWords && planAllows;
+              const planAllows = canAccessGrade(tier, grade, trialActive);
+              const allowed = hasWords && planAllows && !needsSignIn;
               const selected = selectedGrade === grade;
-              const lockReason = !hasWords
-                ? "Δεν υπάρχουν ακόμη λέξεις"
-                : !planAllows
-                  ? "Διαθέσιμο με Premium"
-                  : undefined;
+              const lockReason = needsSignIn
+                ? "Σύνδεση για εξάσκηση"
+                : !hasWords
+                  ? "Δεν υπάρχουν ακόμη λέξεις"
+                  : !planAllows
+                    ? "Διαθέσιμο με Premium"
+                    : undefined;
               return (
                 <button
                   key={grade}
@@ -122,13 +161,7 @@ export function HomeScreen({
               );
             })}
           </div>
-          {tier === "free" && (
-            <p className="hint-text">
-              {availableGrades.has(2)
-                ? "Δωρεάν τώρα: Β΄. Premium: όλες οι τάξεις (Β΄–Στ΄)."
-                : "Δωρεάν: Β΄ όταν προστεθούν λέξεις. Premium: όλες οι τάξεις (Β΄–Στ΄)."}
-            </p>
-          )}
+          {tier === "free" && gradeHint ? <p className="hint-text">{gradeHint}</p> : null}
         </div>
       )}
 
@@ -136,7 +169,13 @@ export function HomeScreen({
         <p className="section-label section-label--strong">Τρόπος εξάσκησης</p>
         <div className="mode-options">
           {(Object.keys(MODE_LABELS) as GameMode[]).map((mode) => {
-            const allowed = canAccessMode(tier, mode);
+            const modeAllowed = canAccessMode(tier, mode, trialActive);
+            const allowed = modeAllowed && !needsSignIn;
+            const lockReason = needsSignIn
+              ? "Σύνδεση για εξάσκηση"
+              : !modeAllowed
+                ? "Διαθέσιμο με Premium"
+                : undefined;
             return (
               <button
                 key={mode}
@@ -144,35 +183,42 @@ export function HomeScreen({
                 className={`mode-chip${gameMode === mode ? " mode-chip--active" : ""}${!allowed ? " mode-chip--locked" : ""}`}
                 disabled={!allowed || subscriptionLoading}
                 onClick={() => allowed && onModeChange(mode)}
-                title={!allowed ? "Διαθέσιμο με Premium" : undefined}
-                aria-label={!allowed ? `${MODE_LABELS[mode]} — Διαθέσιμο με Premium` : MODE_LABELS[mode]}
+                title={lockReason}
+                aria-label={lockReason ? `${MODE_LABELS[mode]} — ${lockReason}` : MODE_LABELS[mode]}
               >
-                <span className="mode-chip__label">{MODE_LABELS[mode]}</span>
-                {!allowed ? <span className="mode-chip__badge">Premium</span> : null}
+                {MODE_LABELS[mode]}
               </button>
             );
           })}
         </div>
       </div>
 
-      <button
-        type="button"
-        className="btn btn-primary btn-start"
-        disabled={startBlocked && !needsProfile}
-        onClick={() => {
-          if (needsProfile) {
-            onOpenSettings({ addChild: true });
-            return;
-          }
-          onStart();
-        }}
-      >
-        {needsProfile
-          ? "Πρόσθεσε προφίλ παιδιού"
-          : dailyLimitReached
-            ? "Έφτασες το ημερήσιο όριο"
-            : "Ξεκινάμε"}
-      </button>
+      {needsSignIn ? (
+        <SignInButton mode="modal">
+          <button type="button" className="btn btn-primary btn-start">
+            Σύνδεση για να ξεκινήσεις
+          </button>
+        </SignInButton>
+      ) : (
+        <button
+          type="button"
+          className="btn btn-primary btn-start"
+          disabled={startBlocked && !needsProfile}
+          onClick={() => {
+            if (needsProfile) {
+              onOpenSettings({ addChild: true });
+              return;
+            }
+            onStart();
+          }}
+        >
+          {needsProfile
+            ? "Πρόσθεσε προφίλ παιδιού"
+            : dailyLimitReached
+              ? "Έφτασες το ημερήσιο όριο"
+              : "Ξεκινάμε"}
+        </button>
+      )}
       {dailyLimitReached && tier === "free" && (
         <button type="button" className="btn btn-secondary btn-start" onClick={onOpenPricing}>
           Αναβάθμιση για απεριόριστη εξάσκηση
@@ -194,7 +240,6 @@ export function HomeScreen({
             style={{ width: `${Math.min(100, (rewardPoints / Math.max(1, rewardGoal)) * 100)}%` }}
           />
         </div>
-        <p className="progress-detail">Κάθε σωστή απάντηση = 1 αστέρι προς τον στόχο.</p>
       </div>
 
       <footer className="legal-footer">

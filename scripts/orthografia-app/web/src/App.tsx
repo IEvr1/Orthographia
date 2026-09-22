@@ -48,11 +48,16 @@ import {
 
   canAccessWeeklyRule,
 
+  canStartPractice,
+
   canUseCloudSync,
 
   FREE_DAILY_SESSIONS,
 
-  isPaidTier,
+  FREE_GRADES,
+
+  hasFullContentAccess,
+
   SUPER_ADMIN_TIER,
 
 } from "./lib/access";
@@ -124,6 +129,14 @@ const FREE_SUBSCRIPTION: SubscriptionState = {
 
   isSuperAdmin: false,
 
+  trialStartedAt: null,
+
+  trialEndsAt: null,
+
+  trialActive: false,
+
+  trialDaysLeft: 0,
+
   loading: false,
 
   error: null,
@@ -136,6 +149,7 @@ function AppShell({
   subscription,
   getToken,
   userId,
+  isSignedIn = false,
 }: {
   subscription: SubscriptionState & {
     refresh?: () => Promise<void>;
@@ -144,6 +158,7 @@ function AppShell({
   };
   getToken?: () => Promise<string | null>;
   userId?: string | null;
+  isSignedIn?: boolean;
 }) {
 
   const [consentGiven, setConsentGiven] = useState(hasLocalConsent());
@@ -182,14 +197,19 @@ function AppShell({
 
   const showFamilyProfiles = tier === "family" && subscription.active;
 
-  const isPaid = isPaidTier(tier);
+  const trialActive = Boolean(isSignedIn && subscription.trialActive);
+  const trialDaysLeft = isSignedIn ? subscription.trialDaysLeft : 0;
+  const trialExpired = Boolean(
+    isSignedIn && subscription.trialStartedAt && !subscription.trialActive,
+  );
+  const unlimitedSessions = hasFullContentAccess(tier, trialActive);
 
   const activeProfile = useMemo(
     () => subscription.profiles.find((p) => p.id === activeProfileId) ?? null,
     [subscription.profiles, activeProfileId],
   );
 
-  const dailyLimitReached = !canStartDailySession(isPaid, FREE_DAILY_SESSIONS);
+  const dailyLimitReached = !canStartDailySession(unlimitedSessions, FREE_DAILY_SESSIONS);
 
 
 
@@ -265,17 +285,17 @@ function AppShell({
   useEffect(() => {
     if (subscription.loading) return;
 
-    if (!canAccessGrade(tier, selectedGrade)) {
-      const freeFallback = [2].find((g) => availableGrades.has(g));
+    if (!canAccessGrade(tier, selectedGrade, trialActive)) {
+      const freeFallback = [...FREE_GRADES].find((g) => availableGrades.has(g));
       const anyFallback = [...availableGrades].sort((a, b) => a - b)[0];
       setSelectedGrade(freeFallback ?? anyFallback ?? 2);
     }
-  }, [subscription.loading, tier, selectedGrade, availableGrades]);
+  }, [subscription.loading, tier, trialActive, selectedGrade, availableGrades]);
 
   useEffect(() => {
     if (subscription.loading) return;
-    setGameMode((current) => (canAccessMode(tier, current) ? current : "sentence"));
-  }, [subscription.loading, tier]);
+    setGameMode((current) => (canAccessMode(tier, current, trialActive) ? current : "sentence"));
+  }, [subscription.loading, tier, trialActive]);
 
 
 
@@ -410,9 +430,11 @@ function AppShell({
 
     setPaywallMessage(null);
 
+    if (!canStartPractice(isSignedIn, isClerkEnabled())) return;
+
     if (showFamilyProfiles && !activeProfileId) return;
 
-    if (!canAccessGrade(tier, selectedGrade)) {
+    if (!canAccessGrade(tier, selectedGrade, trialActive)) {
 
       setPaywallMessage("Αυτή η τάξη είναι διαθέσιμη με Premium.");
 
@@ -422,7 +444,7 @@ function AppShell({
 
     }
 
-    if (!canAccessMode(tier, gameMode)) {
+    if (!canAccessMode(tier, gameMode, trialActive)) {
 
       setPaywallMessage("Αυτός ο τρόπος εξάσκησης είναι διαθέσιμος με Premium.");
 
@@ -432,7 +454,7 @@ function AppShell({
 
     }
 
-    if (!canStartDailySession(isPaid, FREE_DAILY_SESSIONS)) {
+    if (!canStartDailySession(unlimitedSessions, FREE_DAILY_SESSIONS)) {
 
       setPaywallMessage(`Έφτασες το όριο ${FREE_DAILY_SESSIONS} ημερήσια session στο δωρεάν πλάνο.`);
 
@@ -450,7 +472,7 @@ function AppShell({
 
     const seen = JSON.parse(localStorage.getItem(RULES_SEEN_KEY) || "{}") as Record<string, boolean>;
 
-    if (rule && !seen[rule.id] && canAccessWeeklyRule(tier)) {
+    if (rule && !seen[rule.id] && canAccessWeeklyRule(tier, trialActive)) {
 
       setActiveRule(rule);
 
@@ -464,7 +486,7 @@ function AppShell({
 
     launchSession("daily");
 
-  }, [launchSession, rules, selectedGrade, weeklyRule, tier, gameMode, isPaid, showFamilyProfiles, activeProfileId]);
+  }, [launchSession, rules, selectedGrade, weeklyRule, tier, trialActive, gameMode, unlimitedSessions, showFamilyProfiles, activeProfileId, isSignedIn]);
 
 
 
@@ -644,6 +666,14 @@ function AppShell({
 
           showFamilyProfiles={showFamilyProfiles}
 
+          trialActive={trialActive}
+
+          trialDaysLeft={trialDaysLeft}
+
+          trialExpired={trialExpired}
+
+          isSignedIn={isSignedIn}
+
           rewardPoints={rewardPoints}
 
           rewardGoal={rewardGoal}
@@ -818,7 +848,7 @@ function AuthedApp() {
     effectiveSubscription.profiles,
   ]);
 
-  return <AppShell subscription={effectiveSubscription} getToken={getToken} userId={userId} />;
+  return <AppShell subscription={effectiveSubscription} getToken={getToken} userId={userId} isSignedIn={Boolean(isSignedIn)} />;
 }
 
 

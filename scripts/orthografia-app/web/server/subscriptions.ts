@@ -1,5 +1,6 @@
 import { getSql } from "./db.js";
 import { maxProfilesForPlan, planTypeForPrice } from "./stripe.js";
+import { buildTrialInfo, parseTrialStartedAt, type TrialInfo } from "./trial.js";
 
 export type PlanType = "free" | "child" | "family";
 export type SubscriptionStatus = "inactive" | "active" | "past_due" | "canceled";
@@ -35,6 +36,32 @@ export async function ensureUser(userId: string, email: string | null): Promise<
     VALUES (${userId}, 'inactive', 'free', 1)
     ON CONFLICT (user_id) DO NOTHING
   `;
+}
+
+/**
+ * Start the free trial on first authenticated status hit (idempotent).
+ * Stored on users.trial_started_at so clearing localStorage cannot reset it.
+ */
+export async function ensureTrialStarted(userId: string): Promise<TrialInfo> {
+  const sql = getSql();
+  await sql`
+    UPDATE users
+    SET trial_started_at = COALESCE(trial_started_at, NOW())
+    WHERE user_id = ${userId}
+  `;
+  const rows = await sql`
+    SELECT trial_started_at FROM users WHERE user_id = ${userId}
+  `;
+  const started = parseTrialStartedAt(rows[0]?.trial_started_at);
+  if (!started) {
+    // Extremely unlikely if ensureUser ran; fall back to now so the client still gets a clock.
+    const nowIso = new Date().toISOString();
+    await sql`
+      UPDATE users SET trial_started_at = ${nowIso} WHERE user_id = ${userId}
+    `;
+    return buildTrialInfo(nowIso);
+  }
+  return buildTrialInfo(started);
 }
 
 export async function getSubscription(userId: string): Promise<SubscriptionRow | null> {

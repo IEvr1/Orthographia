@@ -1,4 +1,5 @@
 import type { GameMode } from "../types";
+import { OFFERED_GRADES } from "./grades";
 import { isSuperAdmin } from "./superAdmin";
 
 export type PlanTier = "free" | "child" | "family";
@@ -14,29 +15,40 @@ export function hasPremiumAccess(tier: PlanTier, email: string | null | undefine
   return isSuperAdmin(email) || isPaidTier(tier);
 }
 
-export const FREE_GRADES = new Set([2]);
+/** Signed-in free users can access all offered grades (Β΄–Στ΄). */
+export const FREE_GRADES = new Set<number>(OFFERED_GRADES);
 export const FREE_DAILY_SESSIONS = 1;
 
 export function isPaidTier(tier: PlanTier): boolean {
   return tier === "child" || tier === "family";
 }
 
-export function canAccessGrade(tier: PlanTier, grade: number): boolean {
-  if (isPaidTier(tier)) return true;
+/** Paid plan or active free trial — unlocks all grades/modes. */
+export function hasFullContentAccess(tier: PlanTier, trialActive = false): boolean {
+  return isPaidTier(tier) || trialActive;
+}
+
+export function canAccessGrade(tier: PlanTier, grade: number, trialActive = false): boolean {
+  if (hasFullContentAccess(tier, trialActive)) return true;
   return FREE_GRADES.has(grade);
 }
 
-export function canAccessMode(tier: PlanTier, mode: GameMode): boolean {
-  if (isPaidTier(tier)) return true;
+export function canAccessMode(tier: PlanTier, mode: GameMode, trialActive = false): boolean {
+  if (hasFullContentAccess(tier, trialActive)) return true;
   return mode === "sentence";
+}
+
+/** When auth is enabled, practice requires a signed-in account. */
+export function canStartPractice(isSignedIn: boolean, authEnabled: boolean): boolean {
+  return !authEnabled || isSignedIn;
 }
 
 export function canUseCloudSync(tier: PlanTier): boolean {
   return isPaidTier(tier);
 }
 
-export function canAccessWeeklyRule(tier: PlanTier): boolean {
-  return isPaidTier(tier);
+export function canAccessWeeklyRule(tier: PlanTier, trialActive = false): boolean {
+  return hasFullContentAccess(tier, trialActive);
 }
 
 export function tierLabel(tier: PlanTier): string {
