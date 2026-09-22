@@ -16,6 +16,9 @@
 | `STRIPE_PRICE_FAMILY_YEARLY` | Stripe Product price ID (€59/έτος) |
 | `SUPER_ADMIN_EMAIL` | Email με πλήρη πρόσβαση (server API) |
 | `VITE_SUPER_ADMIN_EMAIL` | Ίδιο email για client-side badge/έλεγχο |
+| `RESEND_API_KEY` | Resend API key για φόρμα επικοινωνίας |
+| `CONTACT_TO` | Παραλήπτης (προεπιλογή `info@nexaipla.com`) |
+| `CONTACT_FROM` | Αποστολέας Resend (προεπιλογή `onboarding@resend.dev`) |
 
 Ο super admin (`mustrene@gmail.com` by default στο `.env.example`) παίρνει οικογενειακό πλάνο χωρίς Stripe συνδρομή.
 
@@ -43,7 +46,7 @@
 
 - Πριν την πρώτη χρήση: οθόνη συγκατάθεσης (localStorage `privacy-v1`).
 - Μετά τη σύνδεση γονέα: καταγραφή στη βάση (`parental_consents`).
-- Σελίδες: `/privacy`, `/terms`.
+- Σελίδες: `/privacy`, `/terms`, `/contact`.
 
 ## Τοπική ανάπτυξη
 
@@ -65,3 +68,4 @@ npm run dev:api   # Terminal 1 — Vercel dev (API + frontend)
 | `POST /api/stripe/portal` | Billing portal |
 | `POST /api/stripe/webhook` | Stripe lifecycle events |
 | `GET/POST /api/consent` | Καταγραφή συγκατάθεσης γονέα |
+| `POST /api/contact` | Φόρμα επικοινωνίας (Resend → CONTACT_TO) |

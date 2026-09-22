@@ -95,6 +95,12 @@ export function PrivacyPage() {
             βελτίωση της υπηρεσίας.
           </p>
         </section>
+
+        <footer className="legal-footer">
+          <a href="/terms">Όροι</a>
+          <span>·</span>
+          <a href="/contact">Επικοινωνία</a>
+        </footer>
       </div>
     </main>
   );

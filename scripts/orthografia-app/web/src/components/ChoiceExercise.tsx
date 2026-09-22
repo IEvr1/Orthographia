@@ -18,9 +18,17 @@ interface ChoiceExerciseProps {
   allWords: WordEntry[];
   onComplete: (summary: SessionSummary) => void;
   onQuit: () => void;
+  /** Optional Greek note (e.g. refresh session when nothing is due). */
+  sessionBanner?: string | null;
 }
 
-export function ChoiceExercise({ words, allWords, onComplete, onQuit }: ChoiceExerciseProps) {
+export function ChoiceExercise({
+  words,
+  allWords,
+  onComplete,
+  onQuit,
+  sessionBanner = null,
+}: ChoiceExerciseProps) {
   const [index, setIndex] = useState(0);
   const [picked, setPicked] = useState<string | null>(null);
   const [, setSummary] = useState<SessionSummary>({
@@ -31,6 +39,14 @@ export function ChoiceExercise({ words, allWords, onComplete, onQuit }: ChoiceEx
   });
   const [celebrationGoal, setCelebrationGoal] = useState<number | null>(null);
   const pendingAdvanceRef = useRef<SessionSummary | null>(null);
+  const advanceTimerRef = useRef<number | null>(null);
+
+  const clearAdvanceTimer = () => {
+    if (advanceTimerRef.current != null) {
+      window.clearTimeout(advanceTimerRef.current);
+      advanceTimerRef.current = null;
+    }
+  };
 
   const current = words[index];
   const hintSentence = resolveClozeHint(
@@ -45,6 +61,7 @@ export function ChoiceExercise({ words, allWords, onComplete, onQuit }: ChoiceEx
 
   const advance = useCallback(
     (nextSummary: SessionSummary) => {
+      clearAdvanceTimer();
       if (index + 1 >= words.length) {
         onComplete(nextSummary);
       } else {
@@ -85,11 +102,43 @@ export function ChoiceExercise({ words, allWords, onComplete, onQuit }: ChoiceEx
         setCelebrationGoal(goal);
       } else {
         const correctDelay = current.definition ? 2300 : 900;
-        window.setTimeout(() => advance(next), isCorrect ? correctDelay : 1800);
+        clearAdvanceTimer();
+        advanceTimerRef.current = window.setTimeout(
+          () => advance(next),
+          isCorrect ? correctDelay : 1800,
+        );
       }
       return next;
     });
   };
+
+  /** Skip unanswered (or hurry past wrong feedback); records as wrong if not yet graded. */
+  const handleSkip = () => {
+    if (celebrationGoal !== null) return;
+    if (picked && picked === current.word) return;
+
+    clearAdvanceTimer();
+
+    if (picked) {
+      // Already recorded as wrong; just advance now.
+      setSummary((s) => {
+        advance(s);
+        return s;
+      });
+      return;
+    }
+
+    let store = loadProgress();
+    store = recordAttempt(store, current.id, false, false);
+    saveProgress(store);
+    setSummary((s) => {
+      const next = { ...s, wrong: s.wrong + 1 };
+      advance(next);
+      return next;
+    });
+  };
+
+  const canSkip = celebrationGoal === null && (!picked || picked !== current.word);
 
   return (
     <main className="screen screen--exercise fade-in">
@@ -104,6 +153,11 @@ export function ChoiceExercise({ words, allWords, onComplete, onQuit }: ChoiceEx
           Επιλογή {index + 1} από {words.length}
           <DifficultyBadge word={current} />
         </p>
+        {sessionBanner && index === 0 && (
+          <p className="session-banner" role="status">
+            {sessionBanner}
+          </p>
+        )}
       </header>
 
       <section className="exercise-body">
@@ -150,6 +204,12 @@ export function ChoiceExercise({ words, allWords, onComplete, onQuit }: ChoiceEx
           <p className="feedback-correct">
             Σωστή λέξη: <strong>{current.word}</strong>
           </p>
+        )}
+
+        {canSkip && (
+          <button type="button" className="btn btn-secondary exercise-skip" onClick={handleSkip}>
+            Παράλειψη
+          </button>
         )}
       </section>
     </main>

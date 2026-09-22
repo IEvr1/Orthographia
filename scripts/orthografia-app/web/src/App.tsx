@@ -31,7 +31,7 @@ import {
 
 } from "./lib/progressSync";
 
-import { buildDailySession, gradesWithWords } from "./lib/session";
+import { gradesWithWords, planDailySession } from "./lib/session";
 
 import { getRewardGoal, setRewardGoal } from "./lib/settings";
 import { getRewardPoints, loadProgress } from "./lib/storage";
@@ -169,6 +169,8 @@ function AppShell({
   const [rules, setRules] = useState<RuleDefinition[]>([]);
 
   const [sessionWords, setSessionWords] = useState<WordEntry[]>([]);
+
+  const [sessionBanner, setSessionBanner] = useState<string | null>(null);
 
   const [summary, setSummary] = useState<SessionSummary | null>(null);
 
@@ -385,19 +387,34 @@ function AppShell({
 
 
 
+  const practiceHomeHint = useMemo(() => {
+    if (screen !== "home") return null;
+    return planDailySession(words, progressStore, selectedGrade).homeHint;
+  }, [screen, words, progressStore, selectedGrade]);
+
   const launchSession = useCallback(
 
     (kind: SessionKind) => {
 
       const store = loadProgress(activeProfileId);
 
-      let daily =
+      let banner: string | null = null;
 
-        kind === "weekly" && weeklyRule
+      let daily: WordEntry[];
 
-          ? buildWeeklyWordSession(words, weeklyRule, selectedGrade, 5)
+      if (kind === "weekly" && weeklyRule) {
 
-          : buildDailySession(words, store, selectedGrade);
+        daily = buildWeeklyWordSession(words, weeklyRule, selectedGrade, 5);
+
+      } else {
+
+        const plan = planDailySession(words, store, selectedGrade);
+
+        daily = plan.words;
+
+        banner = plan.sessionBanner;
+
+      }
 
 
 
@@ -409,13 +426,19 @@ function AppShell({
 
       if (daily.length === 0) {
 
-        daily = buildDailySession(words, store, selectedGrade);
+        const plan = planDailySession(words, store, selectedGrade);
+
+        daily = plan.words;
+
+        banner = plan.sessionBanner;
 
       }
 
       setSessionKind(kind);
 
       setSessionWords(daily);
+
+      setSessionBanner(banner);
 
       setSummary(null);
 
@@ -681,6 +704,8 @@ function AppShell({
 
           rewardGoal={rewardGoal}
 
+          practiceHomeHint={practiceHomeHint}
+
         />
 
       )}
@@ -766,6 +791,8 @@ function AppShell({
 
           words={sessionWords}
 
+          sessionBanner={sessionBanner}
+
           onComplete={handleComplete}
 
           onQuit={() => setScreen("home")}
@@ -781,6 +808,8 @@ function AppShell({
           words={sessionWords}
 
           allWords={gradeWords}
+
+          sessionBanner={sessionBanner}
 
           onComplete={handleComplete}
 

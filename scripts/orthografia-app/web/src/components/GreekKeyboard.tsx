@@ -1,4 +1,4 @@
-import { useCallback, useRef } from "react";
+import { useCallback, useRef, useState } from "react";
 
 interface GreekKeyboardProps {
   value: string;
@@ -21,6 +21,10 @@ const ACCENT_MAP: Record<string, string> = {
   ω: "ώ",
 };
 
+function withCase(ch: string, upper: boolean): string {
+  return upper ? ch.toUpperCase() : ch;
+}
+
 export function GreekKeyboard({
   value,
   onChange,
@@ -28,6 +32,7 @@ export function GreekKeyboard({
   disabled = false,
   checkLabel = "Έλεγξε",
 }: GreekKeyboardProps) {
+  const [caps, setCaps] = useState(false);
   const longPressTimer = useRef<number | null>(null);
   const longPressKey = useRef<string | null>(null);
 
@@ -48,10 +53,11 @@ export function GreekKeyboard({
     if (disabled || !value) return;
     const chars = [...value];
     for (let i = chars.length - 1; i >= 0; i--) {
-      const lower = chars[i].toLowerCase();
+      const ch = chars[i];
+      const lower = ch.toLowerCase();
       const accented = ACCENT_MAP[lower];
       if (accented) {
-        chars[i] = accented;
+        chars[i] = ch === lower ? accented : accented.toUpperCase();
         onChange(chars.join(""));
         return;
       }
@@ -62,7 +68,7 @@ export function GreekKeyboard({
     longPressKey.current = key;
     longPressTimer.current = window.setTimeout(() => {
       const accented = ACCENT_MAP[key];
-      if (accented) append(accented);
+      if (accented) append(withCase(accented, caps));
       longPressKey.current = null;
     }, 450);
   };
@@ -73,7 +79,7 @@ export function GreekKeyboard({
       longPressTimer.current = null;
     }
     if (longPressKey.current === key) {
-      append(key);
+      append(withCase(key, caps));
     }
     longPressKey.current = null;
   };
@@ -116,13 +122,23 @@ export function GreekKeyboard({
                   longPressKey.current = null;
                 }}
               >
-                {key}
+                {withCase(key, caps)}
               </button>
             ))}
           </div>
         ))}
 
         <div className="keyboard-row keyboard-row--actions">
+          <button
+            type="button"
+            className={`key key--action${caps ? " key--caps-on" : ""}`}
+            disabled={disabled}
+            aria-pressed={caps}
+            aria-label="Κεφαλαία"
+            onClick={() => setCaps((v) => !v)}
+          >
+            Αα
+          </button>
           <button type="button" className="key key--action" disabled={disabled} onClick={accentLastVowel}>
             τόνος
           </button>

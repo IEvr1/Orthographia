@@ -20,11 +20,18 @@ interface SentenceExerciseProps {
   words: WordEntry[];
   onComplete: (summary: SessionSummary) => void;
   onQuit: () => void;
+  /** Optional Greek note (e.g. refresh session when nothing is due). */
+  sessionBanner?: string | null;
 }
 
 type Phase = "writing" | "feedback" | "rewrite";
 
-export function SentenceExercise({ words, onComplete, onQuit }: SentenceExerciseProps) {
+export function SentenceExercise({
+  words,
+  onComplete,
+  onQuit,
+  sessionBanner = null,
+}: SentenceExerciseProps) {
   const [index, setIndex] = useState(0);
   const [input, setInput] = useState("");
   const [phase, setPhase] = useState<Phase>("writing");
@@ -110,6 +117,27 @@ export function SentenceExercise({ words, onComplete, onQuit }: SentenceExercise
   };
 
   const needsRewrite = phase === "feedback" && result && !result.isCorrect;
+  const showingCorrectFeedback = phase === "feedback" && result?.isCorrect === true;
+  const canSkip = !showingCorrectFeedback && celebrationGoal === null;
+
+  /** Advance without requiring a correct answer; count as wrong if not already recorded. */
+  const handleSkip = () => {
+    if (!canSkip) return;
+    const alreadyWrong =
+      phase === "rewrite" || (phase === "feedback" && result !== null && !result.isCorrect);
+
+    setSummary((s) => {
+      let next = s;
+      if (!alreadyWrong) {
+        let store = loadProgress();
+        store = recordAttempt(store, current.id, false, false);
+        saveProgress(store);
+        next = { ...s, wrong: s.wrong + 1 };
+      }
+      advance(next);
+      return next;
+    });
+  };
 
   return (
     <main className="screen screen--exercise fade-in">
@@ -124,6 +152,11 @@ export function SentenceExercise({ words, onComplete, onQuit }: SentenceExercise
           Πρόταση {index + 1} από {words.length}
           <DifficultyBadge word={current} />
         </p>
+        {sessionBanner && index === 0 && (
+          <p className="session-banner" role="status">
+            {sessionBanner}
+          </p>
+        )}
       </header>
 
       <section className="exercise-body">
@@ -142,7 +175,7 @@ export function SentenceExercise({ words, onComplete, onQuit }: SentenceExercise
           value={input}
           onChange={setInput}
           onCheck={handleCheck}
-          disabled={phase === "feedback" && result?.isCorrect === true}
+          disabled={showingCorrectFeedback}
           checkLabel={phase === "rewrite" ? "Έλεγξε ξανά" : "Έλεγξε"}
         />
 
@@ -168,6 +201,12 @@ export function SentenceExercise({ words, onComplete, onQuit }: SentenceExercise
               </button>
             )}
           </>
+        )}
+
+        {canSkip && (
+          <button type="button" className="btn btn-secondary exercise-skip" onClick={handleSkip}>
+            Παράλειψη
+          </button>
         )}
       </section>
     </main>

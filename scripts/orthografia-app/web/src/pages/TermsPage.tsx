@@ -67,9 +67,17 @@ export function TermsPage() {
         <section className="legal-section">
           <h2>7. Επικοινωνία</h2>
           <p>
-            Για ερωτήσεις: <a href="mailto:support@orthografia.app">support@orthografia.app</a>
+            Για ερωτήσεις χρησιμοποιήστε τη φόρμα{" "}
+            <a href="/contact">Επικοινωνία</a> ή το email{" "}
+            <a href="mailto:info@nexaipla.com">info@nexaipla.com</a>.
           </p>
         </section>
+
+        <footer className="legal-footer">
+          <a href="/privacy">Απορρήτο</a>
+          <span>·</span>
+          <a href="/contact">Επικοινωνία</a>
+        </footer>
       </div>
     </main>
   );

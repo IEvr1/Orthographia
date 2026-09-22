@@ -17,6 +17,11 @@ const CATEGORY_LABELS: Record<string, string> = {
   other: "Δες προσεκτικά κάθε γράμμα",
 };
 
+/** True for stem+suffix hints like «κυρ- + -ία.»; false for prose tips. */
+function isMorphemeBreakdown(rule: string): boolean {
+  return /\S-\s*\+\s*-/.test(rule);
+}
+
 export function FeedbackPanel({
   result,
   correctWord,
@@ -83,7 +88,9 @@ export function FeedbackPanel({
         </p>
       )}
 
-      <p className="feedback-rule">{result.feedbackRule}</p>
+      {result.feedbackRule && !isMorphemeBreakdown(result.feedbackRule) && (
+        <p className="feedback-rule">{result.feedbackRule}</p>
+      )}
       <p className="feedback-correct">
         Σωστή λέξη: <strong>{correctWord}</strong>
       </p>

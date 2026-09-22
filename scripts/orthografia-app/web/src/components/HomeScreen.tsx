@@ -38,6 +38,8 @@ interface HomeScreenProps {
   isSignedIn?: boolean;
   rewardPoints: number;
   rewardGoal: number;
+  /** Shown when the learner has no due/new words (refresh-only day). */
+  practiceHomeHint?: string | null;
 }
 
 export function HomeScreen({
@@ -61,6 +63,7 @@ export function HomeScreen({
   isSignedIn = false,
   rewardPoints,
   rewardGoal,
+  practiceHomeHint = null,
 }: HomeScreenProps) {
   const needsProfile = showFamilyProfiles && !activeChildName;
   const authEnabled = isClerkEnabled();
@@ -238,6 +241,9 @@ export function HomeScreen({
               : "Ξεκινάμε"}
         </button>
       )}
+      {practiceHomeHint && !needsSignIn && !dailyLimitReached && !needsProfile && (
+        <p className="hint-text practice-home-hint">{practiceHomeHint}</p>
+      )}
       {dailyLimitReached && tier === "free" && (
         <button type="button" className="btn btn-secondary btn-start" onClick={onOpenPricing}>
           Αναβάθμιση για απεριόριστη εξάσκηση
@@ -269,6 +275,8 @@ export function HomeScreen({
         <a href="/privacy">Απορρήτο</a>
         <span>·</span>
         <a href="/terms">Όροι</a>
+        <span>·</span>
+        <a href="/contact">Επικοινωνία</a>
       </footer>
     </main>
   );

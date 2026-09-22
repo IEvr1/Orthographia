@@ -667,6 +667,12 @@ body {
   font-size: 0.9rem;
 }
 
+.key--caps-on {
+  border: 2px solid var(--teal);
+  background: rgba(42, 157, 143, 0.18);
+  box-shadow: 0 2px 0 var(--teal);
+}
+
 .keyboard-row--actions {
   margin-top: 0.25rem;
   gap: 0.5rem;
@@ -786,6 +792,17 @@ body {
   background: var(--surface);
   color: var(--ink);
   border: 2px solid var(--border);
+}
+
+.exercise-skip {
+  margin-top: 0.75rem;
+  min-height: 44px;
+  padding: 0 1.5rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  width: 100%;
+  max-width: 320px;
+  align-self: center;
 }
 
 .auth-bar {
@@ -1150,6 +1167,21 @@ body {
   font-size: 0.85rem;
   color: var(--ink-soft);
   margin: 0.5rem 0 0;
+}
+
+.practice-home-hint {
+  text-align: center;
+  max-width: 22rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.session-banner {
+  margin: 0;
+  text-align: center;
+  font-size: 0.88rem;
+  color: var(--ink-soft);
+  line-height: 1.35;
 }
 
 .grade-chip--locked {
@@ -1524,6 +1556,37 @@ body {
 
 .legal-footer a:hover {
   text-decoration: underline;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  margin-top: 1rem;
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 6rem;
+  line-height: 1.45;
+}
+
+.contact-status {
+  margin: 0.75rem 0 0;
+  padding: 0.65rem 0.85rem;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.contact-status--success {
+  background: rgba(46, 125, 110, 0.12);
+  color: var(--teal-dark);
+}
+
+.contact-status--error {
+  background: rgba(196, 74, 74, 0.12);
+  color: var(--bad);
 }
 
 .hero-sub {
