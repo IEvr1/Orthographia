@@ -30,6 +30,24 @@ function friendlyError(err: unknown): string {
   return "Σφάλμα αποθήκευσης. Δοκίμασε ξανά.";
 }
 
+function parseJsonBody(raw: unknown): Record<string, unknown> {
+  if (!raw) return {};
+  if (typeof raw === "string") {
+    try {
+      const parsed: unknown = JSON.parse(raw);
+      return parsed && typeof parsed === "object" && !Array.isArray(parsed)
+        ? (parsed as Record<string, unknown>)
+        : {};
+    } catch {
+      return {};
+    }
+  }
+  if (typeof raw === "object" && !Array.isArray(raw)) {
+    return raw as Record<string, unknown>;
+  }
+  return {};
+}
+
 function cors(res: VercelResponse): void {
   res.setHeader("Access-Control-Allow-Origin", "*");
   res.setHeader("Access-Control-Allow-Methods", "GET, POST, DELETE, OPTIONS");
@@ -82,7 +100,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
 
       const sub = await getSubscription(auth.userId);
       const tier = effectiveTier(sub);
-      const profiles = isActiveSubscription(sub) ? await listChildProfiles(auth.userId) : [];
+      const profiles = await listChildProfiles(auth.userId);
 
       return res.status(200).json({
         tier,
@@ -103,9 +121,10 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
 
   if (req.method === "POST") {
     const auth = await requireAuth(req);
-    if (!auth) return res.status(401).json({ error: "unauthorized" });
+    if (!auth) return res.status(401).json({ error: "Απαιτείται σύνδεση" });
 
-    const action = req.body?.action as string | undefined;
+    const body = parseJsonBody(req.body);
+    const action = typeof body.action === "string" ? body.action : undefined;
     if (action !== "upsertProfile") {
       return res.status(400).json({ error: "invalid action" });
     }
@@ -116,16 +135,13 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
 
       const sub = await getSubscription(auth.userId);
       const superAdmin = isSuperAdmin(auth.email);
-      if (!superAdmin && !isActiveSubscription(sub)) {
-        return res.status(403).json({ error: "Απαιτείται ενεργή συνδρομή." });
-      }
-
+      // Any signed-in user may keep profiles up to their plan cap (free/child: 1, family: 3).
       const profiles = await listChildProfiles(auth.userId);
       const maxProfiles = superAdmin ? maxProfilesForPlan("family") : (sub?.max_profiles ?? 1);
-      const id = typeof req.body?.id === "string" ? req.body.id : undefined;
-      const name = sanitizeChildName(String(req.body?.name ?? ""));
-      const grade = Number(req.body?.grade ?? 3);
-      const sortOrder = Number(req.body?.sortOrder ?? profiles.length);
+      const id = typeof body.id === "string" ? body.id : undefined;
+      const name = sanitizeChildName(String(body.name ?? ""));
+      const grade = Number(body.grade ?? 3);
+      const sortOrder = Number(body.sortOrder ?? profiles.length);
 
       const nameError = validateChildName(name);
       if (nameError === "name required") {
@@ -162,9 +178,10 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
 
   if (req.method === "DELETE") {
     const auth = await requireAuth(req);
-    if (!auth) return res.status(401).json({ error: "unauthorized" });
+    if (!auth) return res.status(401).json({ error: "Απαιτείται σύνδεση" });
 
-    const profileId = typeof req.body?.id === "string" ? req.body.id : "";
+    const body = parseJsonBody(req.body);
+    const profileId = typeof body.id === "string" ? body.id : "";
     if (!profileId) return res.status(400).json({ error: "id required" });
 
     try {

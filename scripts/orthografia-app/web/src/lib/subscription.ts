@@ -63,6 +63,21 @@ function mapProfiles(raw: unknown[]): ChildProfile[] {
   });
 }
 
+/** Map raw API auth errors to Greek; keep other server messages as-is. */
+function friendlyApiError(error: unknown, status: number): string {
+  const raw = typeof error === "string" ? error.trim() : "";
+  const normalized = raw.toLowerCase();
+  if (
+    status === 401 ||
+    normalized === "unauthorized" ||
+    normalized === "unauthenticated" ||
+    normalized === "unauthorized."
+  ) {
+    return "Απαιτείται σύνδεση";
+  }
+  return raw || "Αποτυχία";
+}
+
 function resolveTrialFromServer(
   userId: string | null | undefined,
   data: Record<string, unknown>,
@@ -186,7 +201,7 @@ export function useSubscription(): SubscriptionState & {
         body: body ? JSON.stringify(body) : undefined,
       });
       const data = await res.json();
-      if (!res.ok) throw new Error(data.error ?? "Αποτυχία");
+      if (!res.ok) throw new Error(friendlyApiError(data.error, res.status));
       return data;
     },
     [getToken],
@@ -234,8 +249,8 @@ async function authedRequest(
     },
     body: JSON.stringify(body),
   });
-  const data = await res.json();
-  if (!res.ok) throw new Error((data.error as string | undefined) ?? "Αποτυχία");
+  const data = (await res.json().catch(() => ({}))) as { error?: unknown };
+  if (!res.ok) throw new Error(friendlyApiError(data.error, res.status));
   return data;
 }
 

@@ -26,8 +26,10 @@ function extractUserIdFromOwner(ownerId: string): string | null {
 }
 
 function getBearerToken(req: VercelRequest): string | null {
-  const header = req.headers.authorization;
-  if (!header?.startsWith("Bearer ")) return null;
+  const raw = req.headers.authorization ?? req.headers.Authorization;
+  const header = Array.isArray(raw) ? raw[0] : raw;
+  if (!header || typeof header !== "string") return null;
+  if (!header.startsWith("Bearer ")) return null;
   return header.slice(7).trim() || null;
 }
 
@@ -71,7 +73,8 @@ export async function requireAuth(req: VercelRequest): Promise<AuthUser | null> 
     }
 
     return { userId, email };
-  } catch {
+  } catch (err) {
+    console.error("[auth] token verification failed", err instanceof Error ? err.message : err);
     return null;
   }
 }

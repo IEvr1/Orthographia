@@ -79,7 +79,12 @@ export function ChildProfileManager({
       closeForm();
     } catch (err) {
       const message = err instanceof Error ? err.message : "Σφάλμα αποθήκευσης";
-      setError(message.includes("foreign key") ? "Δεν ήταν δυνατή η αποθήκευση. Δοκίμασε ξανά." : message);
+      const normalized = message.trim().toLowerCase();
+      if (normalized === "unauthorized" || normalized === "unauthenticated") {
+        setError("Απαιτείται σύνδεση");
+      } else {
+        setError(message.includes("foreign key") ? "Δεν ήταν δυνατή η αποθήκευση. Δοκίμασε ξανά." : message);
+      }
     } finally {
       setSaving(false);
     }

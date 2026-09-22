@@ -174,7 +174,7 @@ export function SettingsScreen({
         <section className="settings-section">
           <p className="section-label">Συνδρομή</p>
           <button type="button" className="btn btn-secondary btn-xl settings-upgrade" onClick={onOpenPricing}>
-            Αναβάθμιση πλάνου
+            Αναβάθμιση
           </button>
         </section>
       )}

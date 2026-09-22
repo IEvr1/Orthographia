@@ -1,4 +1,4 @@
-import { useAuth, useUser } from "@clerk/clerk-react";
+import { useAuth } from "@clerk/clerk-react";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 
 import type {
@@ -61,7 +61,6 @@ import {
   SUPER_ADMIN_TIER,
 
 } from "./lib/access";
-import { isSuperAdmin } from "./lib/superAdmin";
 
 import {
 
@@ -195,7 +194,11 @@ function AppShell({
 
   const tier = subscription.tier;
 
-  const showFamilyProfiles = tier === "family" && subscription.active;
+  // Settings: any signed-in user may manage profiles up to maxProfiles (free/child: 1, family: 3).
+  const canManageProfiles = Boolean(isSignedIn && getToken && subscription.maxProfiles >= 1);
+  // Home/practice: require an active child for multi-profile plans, or once any profile exists.
+  const showFamilyProfiles =
+    canManageProfiles && (subscription.maxProfiles > 1 || subscription.profiles.length > 0);
 
   const trialActive = Boolean(isSignedIn && subscription.trialActive);
   const trialDaysLeft = isSignedIn ? subscription.trialDaysLeft : 0;
@@ -706,7 +709,7 @@ function AppShell({
 
           familyProfiles={
 
-            showFamilyProfiles && getToken
+            canManageProfiles && getToken
 
               ? {
 
@@ -803,14 +806,12 @@ function AppShell({
 
 function AuthedApp() {
   const { isSignedIn, getToken, userId } = useAuth();
-  const { user } = useUser();
-  const email = user?.primaryEmailAddress?.emailAddress ?? null;
   const subscription = useSubscription();
   const migratedKeyRef = useRef<string | null>(null);
 
+  // Only elevate when the API confirmed super-admin (avoids fake family UI when auth fails).
   const effectiveSubscription = useMemo(() => {
-    const admin = subscription.isSuperAdmin || isSuperAdmin(email);
-    if (!admin) return subscription;
+    if (!subscription.isSuperAdmin) return subscription;
     return {
       ...subscription,
       tier: SUPER_ADMIN_TIER,
@@ -819,7 +820,7 @@ function AuthedApp() {
       maxProfiles: Math.max(subscription.maxProfiles, 3),
       isSuperAdmin: true,
     };
-  }, [subscription, email]);
+  }, [subscription]);
 
   useEffect(() => {
     if (!isSignedIn || !userId) return;
@@ -830,7 +831,7 @@ function AuthedApp() {
     if (!isSignedIn || !userId || subscription.loading) return;
 
     const profileIds =
-      effectiveSubscription.tier === "family" && effectiveSubscription.active
+      effectiveSubscription.maxProfiles >= 1
         ? effectiveSubscription.profiles.map((p) => p.id)
         : [];
     const migrationKey = `${userId}:${profileIds.join(",")}`;
@@ -843,8 +844,7 @@ function AuthedApp() {
     userId,
     getToken,
     effectiveSubscription.loading,
-    effectiveSubscription.tier,
-    effectiveSubscription.active,
+    effectiveSubscription.maxProfiles,
     effectiveSubscription.profiles,
   ]);
 

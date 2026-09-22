@@ -11,6 +11,12 @@ const MODE_LABELS: Record<GameMode, string> = {
   choice: "Διάλεξε",
 };
 
+function childAvatarLetter(name?: string | null): string {
+  const trimmed = name?.trim();
+  if (!trimmed) return "Ο";
+  return trimmed.charAt(0).toLocaleUpperCase("el-GR");
+}
+
 interface HomeScreenProps {
   onStart: () => void;
   onOpenSettings: (options?: { addChild?: boolean }) => void;
@@ -60,6 +66,7 @@ export function HomeScreen({
   const authEnabled = isClerkEnabled();
   const needsSignIn = !canStartPractice(isSignedIn, authEnabled);
   const startBlocked = dailyLimitReached || needsProfile || subscriptionLoading || needsSignIn;
+  const rewardPct = Math.min(100, (rewardPoints / Math.max(1, rewardGoal)) * 100);
 
   const planStatusLabel = trialActive
     ? trialDaysLeft === 1
@@ -92,7 +99,7 @@ export function HomeScreen({
               <span className="plan-badge plan-badge--status">{planStatusLabel}</span>
               {!needsSignIn && (
                 <button type="button" className="plan-badge plan-badge--cta" onClick={onOpenPricing}>
-                  Πάμε Premium
+                  Αναβάθμιση
                 </button>
               )}
             </>
@@ -124,10 +131,22 @@ export function HomeScreen({
         </div>
       </div>
 
-      <div className="hero">
+      <div className="hero hero--home">
+        <div
+          className={`hero-avatar${activeChildName ? " hero-avatar--child" : ""}`}
+          aria-hidden="true"
+        >
+          <span className="hero-avatar__letter">{childAvatarLetter(activeChildName)}</span>
+        </div>
         <p className="brand">Ορθογραφία</p>
         <h1 className="hero-title">Μάθε να γράφεις σωστά!</h1>
-        {activeChildName && <p className="hero-child">Παίζει: {activeChildName}</p>}
+        {activeChildName ? (
+          <p className="hero-child">
+            Παίζει <span className="hero-child__name">{activeChildName}</span>
+          </p>
+        ) : (
+          <p className="hero-child hero-child--invite">Έτοιμοι για εξάσκηση;</p>
+        )}
       </div>
 
       {!showFamilyProfiles && (
@@ -195,14 +214,14 @@ export function HomeScreen({
 
       {needsSignIn ? (
         <SignInButton mode="modal">
-          <button type="button" className="btn btn-primary btn-start">
+          <button type="button" className="btn btn-primary btn-start btn-start--pulse">
             Σύνδεση για να ξεκινήσεις
           </button>
         </SignInButton>
       ) : (
         <button
           type="button"
-          className="btn btn-primary btn-start"
+          className="btn btn-primary btn-start btn-start--pulse"
           disabled={startBlocked && !needsProfile}
           onClick={() => {
             if (needsProfile) {
@@ -234,11 +253,15 @@ export function HomeScreen({
           </strong>{" "}
           σωστές απαντήσεις
         </p>
-        <div className="reward-bar" aria-hidden="true">
-          <div
-            className="reward-bar__fill"
-            style={{ width: `${Math.min(100, (rewardPoints / Math.max(1, rewardGoal)) * 100)}%` }}
-          />
+        <div
+          className="reward-bar"
+          role="progressbar"
+          aria-valuenow={rewardPoints}
+          aria-valuemin={0}
+          aria-valuemax={rewardGoal}
+          aria-label="Πρόοδος στόχου"
+        >
+          <div className="reward-bar__fill" style={{ width: `${rewardPct}%` }} />
         </div>
       </div>
 
