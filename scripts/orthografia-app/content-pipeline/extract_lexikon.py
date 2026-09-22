@@ -2,11 +2,11 @@
 """Extract vocabulary from school lexicons (ABC + DEST) into grade CSV files.
 
 Reads:
-  - a_b_c_lexiko.pdf (Α΄–Γ΄) — custom HelBold font, decoded via helfont_decode
+  - a_b_c_lexiko.pdf (Α΄–Γ΄ source PDF; Α΄ entries are redistributed to Β΄–Γ΄)
   - d_e_st_lexiko.pdf (Δ΄–Στ΄) — standard Unicode text
 
 Outputs:
-  inputs/lexika/grade{1-6}.csv
+  inputs/lexika/grade{2-6}.csv
   inputs/lexika/families.json
   inputs/lexika/rules_snippets.json (orthography intro sections)
 
@@ -35,7 +35,7 @@ EXTRACT_DIR = LEXIKA_DIR / "_extract"
 ABC_PDF = "a_b_c_lexiko.pdf"
 DEST_PDF = "d_e_st_lexiko.pdf"
 
-CAPS = {1: 120, 2: 120, 3: 120, 4: 100, 5: 100, 6: 120}
+CAPS = {2: 180, 3: 180, 4: 100, 5: 100, 6: 120}
 
 WORD_RE = re.compile(r"[Α-ΩΆΈΉΊΌΎΏα-ωάέήίόύώϊΐϋΰ]+")
 
@@ -496,14 +496,20 @@ def run_extraction(pdf_dir: Path | None = None) -> dict[str, Any]:
     abc_only = [e for e in all_entries if e.get("source") == "abc_lexiko"]
 
     dest_by_grade = distribute_to_grades(dest_only, (4, 5, 6), {4: CAPS[4], 5: CAPS[5], 6: CAPS[6]})
-    abc_by_grade = distribute_to_grades(abc_only, (1, 2, 3), {1: CAPS[1], 2: CAPS[2], 3: CAPS[3]})
+    abc_by_grade = distribute_to_grades(abc_only, (2, 3), {2: CAPS[2], 3: CAPS[3]})
 
-    for grade in (1, 2, 3, 4, 5, 6):
+    for grade in (2, 3, 4, 5, 6):
         records = abc_by_grade.get(grade, []) + dest_by_grade.get(grade, [])
         path = LEXIKA_DIR / f"grade{grade}.csv"
         write_grade_csv(records, path)
         stats["by_grade"][grade] = len(records)
         print(f"  Wrote grade{grade}.csv: {len(records)} words")
+
+    # Α΄ is no longer offered — remove stale extract if present
+    stale = LEXIKA_DIR / "grade1.csv"
+    if stale.exists():
+        stale.unlink()
+        print("  Removed obsolete grade1.csv")
 
     families = build_families(dest_only)
     families_path = LEXIKA_DIR / "families.json"

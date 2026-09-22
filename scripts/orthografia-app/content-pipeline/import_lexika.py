@@ -28,7 +28,7 @@ WEB_CONTENT = PIPELINE.parent / "web" / "public" / "content"
 FAMILIES_SRC = LEXIKA_DIR / "families.json"
 RULES_SRC = LEXIKA_DIR / "rules_snippets.json"
 
-CAPS = {1: 90, 2: 90, 3: 90, 4: 80, 5: 100, 6: 120}
+CAPS = {2: 90, 3: 90, 4: 80, 5: 100, 6: 120}
 
 
 def load_lexika_rows(input_dir: Path = LEXIKA_DIR) -> list[dict[str, Any]]:
@@ -46,7 +46,7 @@ def load_lexika_rows(input_dir: Path = LEXIKA_DIR) -> list[dict[str, Any]]:
                     grade = int(raw.get("grade") or 0)
                 except ValueError:
                     continue
-                if grade < 1 or grade > 6:
+                if grade < 2 or grade > 6:
                     continue
                 rows.append(
                     {
@@ -90,7 +90,7 @@ def build_lexika_entries(
     }
     overrides = load_overrides()
 
-    by_grade: dict[int, list[dict[str, Any]]] = {g: [] for g in range(1, 7)}
+    by_grade: dict[int, list[dict[str, Any]]] = {g: [] for g in range(2, 7)}
     seen: set[tuple[str, int]] = set()
     for row in rows:
         key = (normalize_word(row["word"]), row["grade"])
@@ -100,9 +100,9 @@ def build_lexika_entries(
         by_grade[row["grade"]].append(row)
 
     entries: list[dict[str, Any]] = []
-    counters: dict[int, int] = {g: 0 for g in range(1, 7)}
+    counters: dict[int, int] = {g: 0 for g in range(2, 7)}
 
-    for grade in range(1, 7):
+    for grade in range(2, 7):
         cap = caps.get(grade, 90)
         for i, row in enumerate(by_grade[grade][:cap]):
             counters[grade] += 1

@@ -1606,7 +1606,7 @@ def main() -> None:
     print(f"HelexKids added: {hk_imported}")
     if audio_fixed:
         print(f"Repaired {audio_fixed} audioFile paths.")
-    print(f"Total by grade: G1={total[1]}, G2={total[2]}, G3={total[3]}, G4={total[4]}")
+    print(f"Total by grade: G2={total[2]}, G3={total[3]}, G4={total[4]}")
     print(f"Wrote {len(merged)} words -> {PIPELINE / 'outputs' / 'words.json'}")
     print(f"Synced to {WEB_WORDS}")
 

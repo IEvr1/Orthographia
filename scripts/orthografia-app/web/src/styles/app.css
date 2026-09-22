@@ -1004,6 +1004,10 @@ body {
   opacity: 0.45;
 }
 
+.grade-chip--empty {
+  border-style: dashed;
+}
+
 /* Child profiles */
 .profile-manager {
   width: 100%;

@@ -2,17 +2,9 @@ import { SignInButton, SignedIn, SignedOut, UserButton } from "@clerk/clerk-reac
 import type { GameMode } from "../types";
 import type { PlanTier } from "../lib/access";
 import { canAccessGrade, canAccessMode, tierLabel } from "../lib/access";
+import { GRADE_LABELS, OFFERED_GRADES } from "../lib/grades";
 import { isClerkEnabled } from "../lib/subscription";
 import { SettingsIcon } from "./SettingsScreen";
-
-const GRADE_LABELS: Record<number, string> = {
-  1: "Α΄",
-  2: "Β΄",
-  3: "Γ΄",
-  4: "Δ΄",
-  5: "Ε΄",
-  6: "Στ΄",
-};
 
 const MODE_LABELS: Record<GameMode, string> = {
   sentence: "Πρόταση",
@@ -105,18 +97,25 @@ export function HomeScreen({
         <div className="grade-picker">
           <p className="section-label">Διάλεξε τάξη</p>
           <div className="grade-options">
-            {[1, 2, 3, 4, 5, 6].map((grade) => {
+            {OFFERED_GRADES.map((grade) => {
               const hasWords = availableGrades.has(grade);
-              const allowed = hasWords && canAccessGrade(tier, grade);
+              const planAllows = canAccessGrade(tier, grade);
+              const allowed = hasWords && planAllows;
               const selected = selectedGrade === grade;
+              const lockReason = !hasWords
+                ? "Δεν υπάρχουν ακόμη λέξεις"
+                : !planAllows
+                  ? "Διαθέσιμο με Premium"
+                  : undefined;
               return (
                 <button
                   key={grade}
                   type="button"
-                  className={`grade-chip${selected ? " grade-chip--active" : ""}${!allowed ? " grade-chip--locked" : ""}`}
+                  className={`grade-chip${selected ? " grade-chip--active" : ""}${!allowed ? " grade-chip--locked" : ""}${!hasWords ? " grade-chip--empty" : ""}`}
                   disabled={!allowed || subscriptionLoading}
                   onClick={() => allowed && onGradeChange(grade)}
-                  title={!allowed && hasWords ? "Διαθέσιμο με Premium" : undefined}
+                  title={lockReason}
+                  aria-label={lockReason ? `${GRADE_LABELS[grade]} — ${lockReason}` : GRADE_LABELS[grade]}
                 >
                   {GRADE_LABELS[grade]}
                 </button>
@@ -124,7 +123,11 @@ export function HomeScreen({
             })}
           </div>
           {tier === "free" && (
-            <p className="hint-text">Δωρεάν: Α΄ και Β΄ τάξη. Premium: όλες οι τάξεις.</p>
+            <p className="hint-text">
+              {availableGrades.has(2)
+                ? "Δωρεάν τώρα: Β΄. Premium: όλες οι τάξεις (Β΄–Στ΄)."
+                : "Δωρεάν: Β΄ όταν προστεθούν λέξεις. Premium: όλες οι τάξεις (Β΄–Στ΄)."}
+            </p>
           )}
         </div>
       )}
@@ -142,8 +145,10 @@ export function HomeScreen({
                 disabled={!allowed || subscriptionLoading}
                 onClick={() => allowed && onModeChange(mode)}
                 title={!allowed ? "Διαθέσιμο με Premium" : undefined}
+                aria-label={!allowed ? `${MODE_LABELS[mode]} — Διαθέσιμο με Premium` : MODE_LABELS[mode]}
               >
-                {MODE_LABELS[mode]}
+                <span className="mode-chip__label">{MODE_LABELS[mode]}</span>
+                {!allowed ? <span className="mode-chip__badge">Premium</span> : null}
               </button>
             );
           })}

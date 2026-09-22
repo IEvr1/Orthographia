@@ -47,6 +47,7 @@ def main() -> None:
     words, lx_counts, lx_imported = append_lexika(words)
     sync_families_and_rules()
     words, hint_stats = fix_words(words)
+    words = [w for w in words if w.get("grade") != 1]
     by_grade = count_by_grade(words)
 
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
@@ -70,19 +71,19 @@ def main() -> None:
     )
     print(f"Synced to {WEB_WORDS}")
     print(
-        f"By grade: G1={by_grade[1]}, G2={by_grade[2]}, G3={by_grade[3]}, "
+        f"By grade: G2={by_grade[2]}, G3={by_grade[3]}, "
         f"G4={by_grade[4]}, G5={by_grade[5]}, G6={by_grade[6]}"
     )
     if tb_imported:
         print(f"Textbooks added: G2={tb_counts[2]}")
     if imported:
         print(
-            f"HelexKids added: G1={hk_counts[1]}, G2={hk_counts[2]}, "
+            f"HelexKids added: G2={hk_counts[2]}, "
             f"G3={hk_counts[3]}, G4={hk_counts[4]}"
         )
     if lx_imported:
         print(
-            f"Lexika added: G1={lx_counts[1]}, G2={lx_counts[2]}, G3={lx_counts[3]}, "
+            f"Lexika added: G2={lx_counts[2]}, G3={lx_counts[3]}, "
             f"G4={lx_counts[4]}, G5={lx_counts[5]}, G6={lx_counts[6]}"
         )
 

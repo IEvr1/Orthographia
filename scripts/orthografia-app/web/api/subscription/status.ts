@@ -119,8 +119,8 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       if (nameError === "invalid name") {
         return res.status(400).json({ error: "Χρησιμοποίησε μόνο γράμματα (ελληνικά ή αγγλικά)." });
       }
-      if (!Number.isInteger(grade) || grade < 1 || grade > 6) {
-        return res.status(400).json({ error: "Επίλεξε τάξη από Α΄ έως Στ΄." });
+      if (!Number.isInteger(grade) || grade < 2 || grade > 6) {
+        return res.status(400).json({ error: "Επίλεξε τάξη από Β΄ έως Στ΄." });
       }
 
       const isNew = !id;

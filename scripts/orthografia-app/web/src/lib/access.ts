@@ -14,7 +14,7 @@ export function hasPremiumAccess(tier: PlanTier, email: string | null | undefine
   return isSuperAdmin(email) || isPaidTier(tier);
 }
 
-export const FREE_GRADES = new Set([1, 2]);
+export const FREE_GRADES = new Set([2]);
 export const FREE_DAILY_SESSIONS = 1;
 
 export function isPaidTier(tier: PlanTier): boolean {

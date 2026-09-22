@@ -1,16 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 import { MAX_CHILD_NAME_LENGTH, sanitizeChildName, validateChildName } from "../lib/childName";
+import { GRADE_LABELS, OFFERED_GRADES, gradeLabel, isOfferedGrade } from "../lib/grades";
 import type { ChildProfile } from "../lib/subscription";
 import { deleteChildProfile, upsertChildProfile } from "../lib/subscription";
-
-const GRADE_LABELS: Record<number, string> = {
-  1: "Α΄",
-  2: "Β΄",
-  3: "Γ΄",
-  4: "Δ΄",
-  5: "Ε΄",
-  6: "Στ΄",
-};
 
 interface ChildProfileManagerProps {
   profiles: ChildProfile[];
@@ -49,7 +41,8 @@ export function ChildProfileManager({
 
   const openEdit = (profile: ChildProfile) => {
     setError(null);
-    setEditing({ id: profile.id, name: profile.name, grade: profile.grade });
+    const grade = isOfferedGrade(profile.grade) ? profile.grade : 2;
+    setEditing({ id: profile.id, name: profile.name, grade });
   };
 
   const closeForm = () => {
@@ -65,8 +58,8 @@ export function ChildProfileManager({
       setError(validationError);
       return;
     }
-    if (editing.grade < 1 || editing.grade > 6) {
-      setError("Επίλεξε τάξη από Α΄ έως Στ΄.");
+    if (!isOfferedGrade(editing.grade)) {
+      setError("Επίλεξε τάξη από Β΄ έως Στ΄.");
       return;
     }
 
@@ -139,7 +132,7 @@ export function ChildProfileManager({
                   onClick={() => onSelectProfile(profile.id)}
                 >
                   <span className="profile-chip-name">{profile.name}</span>
-                  <span className="profile-chip-grade">{GRADE_LABELS[profile.grade]}</span>
+                  <span className="profile-chip-grade">{gradeLabel(profile.grade)}</span>
                 </button>
                 <button
                   type="button"
@@ -196,7 +189,7 @@ export function ChildProfileManager({
             </label>
 
             <div className="grade-options">
-              {[1, 2, 3, 4, 5, 6].map((grade) => (
+              {OFFERED_GRADES.map((grade) => (
                 <button
                   key={grade}
                   type="button"

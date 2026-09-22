@@ -42,13 +42,13 @@ cd scripts/orthografia-app/content-pipeline
 ### HelexKids import
 
 1. Κατέβασε λίστες από [Wordlist Tool](https://gradience.lit.auth.gr/wordlist_tool/) ή HelexKids 2.0 Excel export.
-2. Αποθήκευσε σε `inputs/helexkids/` (π.χ. `grade1.csv`, `grade2.csv`).
+2. Αποθήκευσε σε `inputs/helexkids/` (π.χ. `grade2.csv`, `grade3.csv`).
 3. Τρέξε `import_helexkids.py` ή `generate_seed.py` (κάνει merge αυτόματα).
 
 - **Άδεια:** CC BY-NC 4.0 — μη εμπορική χρήση (OK για αυτή την εφαρμογή).
-- **Φίλτρα:** ΚΝΕ, ουσιαστικά/επίθετα/ρήματα, hints με `___` (χωρίς διαρροή ορθογραφίας).
+- **Φίλτρα:** ΚΝΕ, ουσιαστικά/επίθετα/ρήματα, hints με `___` (χωρίς διαρροή ορθογραφίας). Η Α΄ τάξη αγνοείται.
 - **Όριο:** ~90 λέξεις/τάξη (ρυθμιζόμενο με `--cap`).
-- **Δείγμα:** `inputs/helexkids/sample_grade1.csv.example` για format reference (δεν εισάγεται αυτόματα).
+- **Δείγμα:** `inputs/helexkids/sample_grade2.csv.example` για format reference (δεν εισάγεται αυτόματα).
 
 Αν δεν υπάρχουν CSV, το import τερματίζει με οδηγίες (exit 0).
 
@@ -63,11 +63,11 @@ python generate_seed.py
 
 Γράφει `inputs/textbooks/grade2.csv` (λέξεις + σύντομα cloze με `___`). Τα PDF και το raw κείμενο **δεν** μπαίνουν στο git.
 
-### Σχολικά λεξικά & Γραμματική (Α΄–Στ΄)
+### Σχολικά λεξικά & Γραμματική (Β΄–Στ΄)
 
 Βάλε στο `Downloads` (ή `inputs/lexika/`):
 
-- `a_b_c_lexiko.pdf` — Το Πρώτο μου Λεξικό (Α΄–Γ΄)
+- `a_b_c_lexiko.pdf` — Το Πρώτο μου Λεξικό (πηγή Α΄–Γ΄· η Α΄ ανακατανέμεται σε Β΄–Γ΄)
 - `d_e_st_lexiko.pdf` — Ορθογραφικό–Ερμηνευτικό (Δ΄–Στ΄)
 - `e_st_grammatiki_vivlio_mathiti.pdf` — Γραμματική Ε΄ & Στ΄
 
@@ -77,7 +77,7 @@ python extract_grammar.py
 python generate_seed.py
 ```
 
-Παράγει `inputs/lexika/grade{1-6}.csv`, `families.json`, `rules.json`, `declension_tables.json` και επεκτείνει το `words.json` (τάξεις Ε΄/Στ΄).
+Παράγει `inputs/lexika/grade{2-6}.csv`, `families.json`, `rules.json`, `declension_tables.json` και επεκτείνει το `words.json` (τάξεις Ε΄/Στ΄).
 
 ## 1. Seed λέξεων
 
@@ -85,7 +85,7 @@ python generate_seed.py
 ..\..\..\.venv\Scripts\python.exe generate_seed.py
 ```
 
-Παράγει `words.json` v2 (Α΄/Β΄/Γ΄/Δ΄) και το συγχρονίζει στο `web/public/content/`.
+Παράγει `words.json` v2 (Β΄/Γ΄/Δ΄/…) και το συγχρονίζει στο `web/public/content/`.
 
 Για νέες λέξεις χωρίς mp3, τρέξε αργότερα `generate_audio.py` (χωρίς `--force` δημιουργεί μόνο τα νέα).
 
@@ -142,7 +142,7 @@ python generate_audio.py --placeholder
 
 ```powershell
 cd scripts/orthografia-app/content-pipeline
-..\..\..\.venv\Scripts\python.exe grade_review.py              # σύνοψη Α΄–Στ΄
+..\..\..\.venv\Scripts\python.exe grade_review.py              # σύνοψη Β΄–Στ΄
 ..\..\..\.venv\Scripts\python.exe grade_review.py --export-all # packs + HTML reviewer
 ```
 

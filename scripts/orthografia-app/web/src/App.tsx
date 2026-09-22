@@ -160,7 +160,7 @@ function AppShell({
 
   const [loadError, setLoadError] = useState<string | null>(null);
   const [contentReady, setContentReady] = useState(false);
-  const [selectedGrade, setSelectedGrade] = useState(3);
+  const [selectedGrade, setSelectedGrade] = useState(2);
 
   const [gameMode, setGameMode] = useState<GameMode>("sentence");
 
@@ -266,8 +266,9 @@ function AppShell({
     if (subscription.loading) return;
 
     if (!canAccessGrade(tier, selectedGrade)) {
-      const fallback = [1, 2].find((g) => availableGrades.has(g)) ?? 1;
-      setSelectedGrade(fallback);
+      const freeFallback = [2].find((g) => availableGrades.has(g));
+      const anyFallback = [...availableGrades].sort((a, b) => a - b)[0];
+      setSelectedGrade(freeFallback ?? anyFallback ?? 2);
     }
   }, [subscription.loading, tier, selectedGrade, availableGrades]);
 
@@ -320,7 +321,7 @@ function AppShell({
 
       setActiveProfileId(id);
       setActiveProfileIdState(id);
-      setSelectedGrade(profile.grade);
+      setSelectedGrade(profile.grade >= 2 && profile.grade <= 6 ? profile.grade : 2);
       setProgressVersion((v) => v + 1);
     },
     [subscription.profiles],

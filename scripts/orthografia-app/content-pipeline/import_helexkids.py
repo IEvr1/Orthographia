@@ -154,24 +154,26 @@ def pick_column(row: dict[str, str], aliases: tuple[str, ...]) -> str | None:
 def parse_grade(raw: str | None, filename: str) -> int | None:
     if raw:
         text = raw.strip()
-        greek_map = {"α": 1, "α'": 1, "α΄": 1, "β": 2, "β'": 2, "β΄": 2, "γ": 3, "γ'": 3, "γ΄": 3, "δ": 4, "δ'": 4, "δ΄": 4}
+        greek_map = {"β": 2, "β'": 2, "β΄": 2, "γ": 3, "γ'": 3, "γ΄": 3, "δ": 4, "δ'": 4, "δ΄": 4}
         low = strip_accents(text.lower()).replace(" ", "")
         if low in greek_map:
             return greek_map[low]
         if low.isdigit():
             grade = int(low)
-            if 1 <= grade <= 4:
+            if 2 <= grade <= 4:
                 return grade
         m = re.search(r"grade[_\s-]?(\d)", filename, re.I)
         if m:
-            return int(m.group(1))
+            grade = int(m.group(1))
+            return grade if 2 <= grade <= 4 else None
     m = re.search(r"grade[_\s-]?(\d)", filename, re.I)
     if m:
-        return int(m.group(1))
+        grade = int(m.group(1))
+        return grade if 2 <= grade <= 4 else None
     m = re.search(r"(\d)", Path(filename).stem)
     if m:
         grade = int(m.group(1))
-        if 1 <= grade <= 4:
+        if 2 <= grade <= 4:
             return grade
     return None
 
@@ -370,10 +372,12 @@ def build_helexkids_entries(
     existing_keys = {(normalize_word(w["word"]), w["grade"]) for w in existing_words}
     existing_audio = {normalize_word(w["word"]): w.get("audioFile", "") for w in existing_words if w.get("audioFile")}
 
-    by_grade: dict[int, list[dict[str, Any]]] = {1: [], 2: [], 3: [], 4: []}
+    by_grade: dict[int, list[dict[str, Any]]] = {2: [], 3: [], 4: []}
     seen: set[tuple[str, int]] = set()
 
     for row in sorted(rows, key=lambda r: (-r["frequency"], r["word"])):
+        if row["grade"] not in by_grade:
+            continue
         key = (normalize_word(row["word"]), row["grade"])
         if key in seen or key in existing_keys:
             continue
@@ -381,10 +385,10 @@ def build_helexkids_entries(
         by_grade[row["grade"]].append(row)
 
     entries: list[dict[str, Any]] = []
-    counters: dict[int, int] = {1: 0, 2: 0, 3: 0, 4: 0}
+    counters: dict[int, int] = {2: 0, 3: 0, 4: 0}
     overrides = load_overrides()
 
-    for grade in (1, 2, 3, 4):
+    for grade in (2, 3, 4):
         for i, row in enumerate(by_grade[grade][:cap_per_grade]):
             counters[grade] += 1
             morphemes = guess_morphemes(row["word"])
@@ -418,7 +422,7 @@ def merge_words(base: list[dict[str, Any]], imported: list[dict[str, Any]]) -> l
 
 
 def count_by_grade(words: list[dict[str, Any]]) -> dict[int, int]:
-    counts: dict[int, int] = {1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}
+    counts: dict[int, int] = {2: 0, 3: 0, 4: 0, 5: 0, 6: 0}
     for w in words:
         g = w.get("grade", 0)
         if g in counts:
@@ -454,6 +458,8 @@ def repair_all_audio_paths(words: list[dict[str, Any]]) -> tuple[list[dict[str, 
 
 
 def write_words(words: list[dict[str, Any]], dry_run: bool = False) -> None:
+    # Grade 1 / Α΄ is not offered — never publish those entries.
+    words = [w for w in words if w.get("grade") != 1]
     payload = {"version": 2, "grade": 0, "words": words}
     if dry_run:
         return
@@ -495,10 +501,10 @@ def print_no_input_message() -> None:
     print("To import vocabulary:")
     print("  1. Download from https://gradience.lit.auth.gr/wordlist_tool/")
     print("     (or export from HelexKids 2.0)")
-    print("  2. Save files to inputs/helexkids/ (e.g. grade1.csv, grade2.csv)")
+    print("  2. Save files to inputs/helexkids/ (e.g. grade2.csv, grade3.csv)")
     print("  3. Re-run: python import_helexkids.py")
     print()
-    print("A sample file is at inputs/helexkids/sample_grade1.csv for format reference.")
+    print("A sample file is at inputs/helexkids/sample_grade2.csv.example for format reference.")
     print("License: CC BY-NC 4.0 — non-commercial use only.")
 
 
@@ -520,7 +526,7 @@ def main() -> None:
     if args.repair_audio and WEB_WORDS.exists():
         merged = json.loads(WEB_WORDS.read_text(encoding="utf-8"))["words"]
         imported_count = 0
-        hk_counts = {1: 0, 2: 0, 3: 0, 4: 0}
+        hk_counts = {2: 0, 3: 0, 4: 0}
     elif not files:
         print_no_input_message()
         raise SystemExit(0)
@@ -531,7 +537,7 @@ def main() -> None:
         if imported_count == 0 and not args.repair_audio:
             print("HelexKids files found but no new words passed filters (or all duplicates).")
             total = count_by_grade(merged)
-            print(f"Existing words by grade: G1={total[1]}, G2={total[2]}, G3={total[3]}, G4={total[4]}")
+            print(f"Existing words by grade: G2={total[2]}, G3={total[3]}, G4={total[4]}")
             raise SystemExit(0)
 
     merged, audio_fixed = repair_all_audio_paths(merged)
@@ -542,8 +548,8 @@ def main() -> None:
     total = count_by_grade(merged)
 
     print(f"Imported {imported_count} HelexKids words from {len(files)} file(s).")
-    print(f"HelexKids by grade: G1={hk_counts[1]}, G2={hk_counts[2]}, G3={hk_counts[3]}, G4={hk_counts[4]}")
-    print(f"Total by grade: G1={total[1]}, G2={total[2]}, G3={total[3]}, G4={total[4]}")
+    print(f"HelexKids by grade: G2={hk_counts[2]}, G3={hk_counts[3]}, G4={hk_counts[4]}")
+    print(f"Total by grade: G2={total[2]}, G3={total[3]}, G4={total[4]}")
     if not args.dry_run:
         print(f"Wrote {len(merged)} words -> {OUTPUT}")
         print(f"Synced to {WEB_WORDS}")

@@ -2,12 +2,12 @@
 """Grade-scoped content review: words, cloze sentences, rule examples.
 
 Build review packs + a local HTML reviewer so you can approve/flag/edit
-content per τάξη (1–6).
+content per τάξη (2–6).
 
 Usage:
   python grade_review.py                     # summary for all grades
   python grade_review.py --grade 2           # pack + HTML for Β΄
-  python grade_review.py --export-all        # packs for Α΄–Στ΄ + HTML UI
+  python grade_review.py --export-all        # packs for Β΄–Στ΄ + HTML UI
   python grade_review.py --status            # review progress
   python grade_review.py --apply-status      # write hint overrides from status
 """
@@ -34,7 +34,8 @@ REVIEW_DIR = PIPELINE / "review"
 STATUS_FILE = PIPELINE / "inputs" / "grade_review_status.json"
 HINT_OVERRIDES = PIPELINE / "inputs" / "hint_overrides.json"
 
-GRADE_LABELS = {1: "Α΄", 2: "Β΄", 3: "Γ΄", 4: "Δ΄", 5: "Ε΄", 6: "Στ΄"}
+GRADE_LABELS = {2: "Β΄", 3: "Γ΄", 4: "Δ΄", 5: "Ε΄", 6: "Στ΄"}
+OFFERED_GRADES = (2, 3, 4, 5, 6)
 
 HIGH_FLAGS = {
     "empty",
@@ -451,7 +452,8 @@ REVIEW_HTML = r"""<!DOCTYPE html>
 </main>
 <script>
 const STORAGE_KEY = "orthographia-grade-review-status-v1";
-const GRADE_LABELS = {1:"Α΄",2:"Β΄",3:"Γ΄",4:"Δ΄",5:"Ε΄",6:"Στ΄"};
+const GRADE_LABELS = {2:"Β΄",3:"Γ΄",4:"Δ΄",5:"Ε΄",6:"Στ΄"};
+const OFFERED_GRADES = [2,3,4,5,6];
 
 function loadStatus() {
   try { return JSON.parse(localStorage.getItem(STORAGE_KEY) || "{}"); }
@@ -471,7 +473,7 @@ const searchInput = document.getElementById("search");
 const listEl = document.getElementById("list");
 const statsEl = document.getElementById("stats");
 
-for (let g = 1; g <= 6; g++) {
+for (const g of OFFERED_GRADES) {
   const opt = document.createElement("option");
   opt.value = String(g);
   opt.textContent = GRADE_LABELS[g];
@@ -756,7 +758,7 @@ def show_status() -> None:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Review words/sentences/examples per grade")
-    parser.add_argument("--grade", type=int, choices=range(1, 7), help="Single grade 1–6")
+    parser.add_argument("--grade", type=int, choices=OFFERED_GRADES, help="Single grade 2–6")
     parser.add_argument("--export-all", action="store_true", help="Export packs for all grades")
     parser.add_argument("--open", action="store_true", help="Open HTML reviewer")
     parser.add_argument("--status", action="store_true", help="Show review progress from status file")
@@ -785,7 +787,7 @@ def main() -> None:
         return
 
     if args.export_all:
-        export_packs(list(range(1, 7)), open_browser=args.open)
+        export_packs(list(OFFERED_GRADES), open_browser=args.open)
         return
 
     if args.grade:
@@ -798,7 +800,7 @@ def main() -> None:
     families = load_json(FAMILIES_FILE) if FAMILIES_FILE.exists() else {}
     status_items = load_status().get("items") or {}
     packs = [
-        build_grade_pack(g, words, rules, families, status_items) for g in range(1, 7)
+        build_grade_pack(g, words, rules, families, status_items) for g in OFFERED_GRADES
     ]
     print_summary(packs)
     _safe_print("\nNext: python grade_review.py --export-all")

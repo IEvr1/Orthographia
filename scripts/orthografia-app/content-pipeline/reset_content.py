@@ -51,20 +51,26 @@ def main() -> None:
 
     # Lexika / grammar inputs
     lexika = INPUTS / "lexika"
-    for grade in range(1, 7):
+    for grade in range(2, 7):
         wipe_csv(
             lexika / f"grade{grade}.csv",
             "word,grade,pos,hint,definition,family,synonyms,source,difficulty",
         )
+    stale_g1 = lexika / "grade1.csv"
+    if stale_g1.exists():
+        stale_g1.unlink()
     write_json(lexika / "families.json", EMPTY_FAMILIES)
     write_json(lexika / "rules_snippets.json", EMPTY_RULES)
     write_json(lexika / "grammar_rules.json", EMPTY_RULES)
     write_json(lexika / "word_spelling_fixes.json", {"fixes": {}})
 
-    # HelexKids (keep sample_grade1.csv for docs smoke test)
+    # HelexKids (keep sample_grade2.csv.example for docs smoke test)
     helex = INPUTS / "helexkids"
-    for name in ("grade1.csv", "grade2.csv", "grade3.csv", "grade4.csv"):
+    for name in ("grade2.csv", "grade3.csv", "grade4.csv"):
         wipe_csv(helex / name, "word,grade,pos,frequency")
+    stale_hk1 = helex / "grade1.csv"
+    if stale_hk1.exists():
+        stale_hk1.unlink()
 
     # Textbooks
     wipe_csv(
