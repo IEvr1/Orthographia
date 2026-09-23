@@ -63,6 +63,17 @@ python generate_seed.py
 
 Γράφει `inputs/textbooks/grade2.csv` (λέξεις + σύντομα cloze με `___`). Τα PDF και το raw κείμενο **δεν** μπαίνουν στο git.
 
+### Γλώσσα Γ΄ Δημοτικού
+
+Curated λίστα: `inputs/textbooks/grade3.csv` (+ canvas review). Import στο app:
+
+```powershell
+python generate_seed.py
+python generate_audio.py
+```
+
+Ids: `tb-g3-…`, `grade: 3`.
+
 ### Σχολικά λεξικά & Γραμματική (Β΄–Στ΄)
 
 Βάλε στο `Downloads` (ή `inputs/lexika/`):

@@ -9,7 +9,10 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
+from extract_textbook import OUTPUT_CSV as GRADE2_CSV
 from extract_textbook import append_textbooks
+from extract_textbook_g3 import OUTPUT_CSV as GRADE3_CSV
+from extract_textbook_g3 import append_textbooks_g3
 from fix_hints import fix_words
 from import_helexkids import INPUTS_DIR, append_helexkids, count_by_grade
 from import_lexika import append_lexika, sync_families_and_rules
@@ -42,7 +45,9 @@ def build_words() -> list[dict]:
 def main() -> None:
     words = build_words()
     seed_count = len(words)
-    words, tb_counts, tb_imported = append_textbooks(words)
+    words, tb2_counts, tb2_imported = append_textbooks(words, GRADE2_CSV)
+    words, tb3_counts, tb3_imported = append_textbooks_g3(words, GRADE3_CSV)
+    tb_imported = tb2_imported + tb3_imported
     words, hk_counts, imported = append_helexkids(words, INPUTS_DIR)
     words, lx_counts, lx_imported = append_lexika(words)
     sync_families_and_rules()
@@ -74,8 +79,10 @@ def main() -> None:
         f"By grade: G2={by_grade[2]}, G3={by_grade[3]}, "
         f"G4={by_grade[4]}, G5={by_grade[5]}, G6={by_grade[6]}"
     )
-    if tb_imported:
-        print(f"Textbooks added: G2={tb_counts[2]}")
+    if tb2_imported or tb3_imported:
+        print(
+            f"Textbooks added: G2={tb2_counts.get(2, 0)}, G3={tb3_counts.get(3, 0)}"
+        )
     if imported:
         print(
             f"HelexKids added: G2={hk_counts[2]}, "

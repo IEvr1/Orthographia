@@ -76,29 +76,29 @@ def greek_capitalize(word: str) -> str:
 # (incl. declined), but surface the nominative/lemma for spelling practice.
 CURATED_LEMMA: dict[str, tuple[str, str]] = {
     # months → (surface, category)
-    "ιανουαριος": ("ιανουάριος", "μήνας"),
-    "φεβρουαριος": ("φεβρουάριος", "μήνας"),
-    "μαρτιος": ("μάρτιος", "μήνας"),
-    "απριλιος": ("απρίλιος", "μήνας"),
-    "μαιος": ("μάιος", "μήνας"),
-    "ιουνιος": ("ιούνιος", "μήνας"),
-    "ιουλιος": ("ιούλιος", "μήνας"),
-    "αυγουστος": ("αύγουστος", "μήνας"),
-    "σεπτεμβριος": ("σεπτέμβριος", "μήνας"),
-    "σεπτεμβρης": ("σεπτέμβρης", "μήνας"),
-    "οκτωβριος": ("οκτώβριος", "μήνας"),
-    "νοεμβριος": ("νοέμβριος", "μήνας"),
-    "νοεμβρης": ("νοέμβρης", "μήνας"),
-    "δεκεμβριος": ("δεκέμβριος", "μήνας"),
-    "δεκεμβρης": ("δεκέμβρης", "μήνας"),
+    "ιανουαριος": ("Ιανουάριος", "μήνας"),
+    "φεβρουαριος": ("Φεβρουάριος", "μήνας"),
+    "μαρτιος": ("Μάρτιος", "μήνας"),
+    "απριλιος": ("Απρίλιος", "μήνας"),
+    "μαιος": ("Μάιος", "μήνας"),
+    "ιουνιος": ("Ιούνιος", "μήνας"),
+    "ιουλιος": ("Ιούλιος", "μήνας"),
+    "αυγουστος": ("Αύγουστος", "μήνας"),
+    "σεπτεμβριος": ("Σεπτέμβριος", "μήνας"),
+    "σεπτεμβρης": ("Σεπτέμβρης", "μήνας"),
+    "οκτωβριος": ("Οκτώβριος", "μήνας"),
+    "νοεμβριος": ("Νοέμβριος", "μήνας"),
+    "νοεμβρης": ("Νοέμβρης", "μήνας"),
+    "δεκεμβριος": ("Δεκέμβριος", "μήνας"),
+    "δεκεμβρης": ("Δεκέμβρης", "μήνας"),
     # days
-    "δευτερα": ("δευτέρα", "ημέρα"),
-    "τριτη": ("τρίτη", "ημέρα"),
-    "τεταρτη": ("τετάρτη", "ημέρα"),
-    "πεμπτη": ("πέμπτη", "ημέρα"),
-    "παρασκευη": ("παρασκευή", "ημέρα"),
-    "σαββατο": ("σάββατο", "ημέρα"),
-    "κυριακη": ("κυριακή", "ημέρα"),
+    "δευτερα": ("Δευτέρα", "ημέρα"),
+    "τριτη": ("Τρίτη", "ημέρα"),
+    "τεταρτη": ("Τετάρτη", "ημέρα"),
+    "πεμπτη": ("Πέμπτη", "ημέρα"),
+    "παρασκευη": ("Παρασκευή", "ημέρα"),
+    "σαββατο": ("Σάββατο", "ημέρα"),
+    "κυριακη": ("Κυριακή", "ημέρα"),
     # seasons
     "ανοιξη": ("άνοιξη", "εποχή"),
     "καλοκαιρι": ("καλοκαίρι", "εποχή"),
@@ -1441,7 +1441,10 @@ def write_csv(records: list[dict[str, str]], path: Path) -> None:
         writer.writerows(records)
 
 
-def load_textbook_rows(csv_path: Path = OUTPUT_CSV) -> list[dict[str, Any]]:
+def load_textbook_rows(
+    csv_path: Path = OUTPUT_CSV,
+    grade: int = GRADE,
+) -> list[dict[str, Any]]:
     if not csv_path.exists():
         return []
     rows: list[dict[str, Any]] = []
@@ -1457,7 +1460,7 @@ def load_textbook_rows(csv_path: Path = OUTPUT_CSV) -> list[dict[str, Any]]:
             rows.append(
                 {
                     "word": word,
-                    "grade": GRADE,
+                    "grade": grade,
                     "pos": (raw.get("pos") or "noun").strip() or "noun",
                     "frequency": freq,
                     "hint": (raw.get("hint") or "").strip(),
@@ -1473,8 +1476,12 @@ def build_textbook_entries(
     existing_words: list[dict[str, Any]],
     cap: int = DEFAULT_CAP,
     audio_map: dict[str, str] | None = None,
+    grade: int = GRADE,
 ) -> list[dict[str, Any]]:
-    existing_keys = {normalize_word(w["word"]) for w in existing_words}
+    # Same lemma may exist at another grade — uniqueness is (word, grade).
+    existing_keys = {
+        (normalize_word(w["word"]), int(w.get("grade") or 0)) for w in existing_words
+    }
     existing_audio = {
         normalize_word(w["word"]): w.get("audioFile", "")
         for w in existing_words
@@ -1486,7 +1493,7 @@ def build_textbook_entries(
     entries: list[dict[str, Any]] = []
     n = 0
     for i, row in enumerate(rows):
-        key = normalize_word(row["word"])
+        key = (normalize_word(row["word"]), grade)
         if key in existing_keys:
             continue
         existing_keys.add(key)
@@ -1500,9 +1507,9 @@ def build_textbook_entries(
                 row["word"], pos=row.get("pos", "noun"), index=i, overrides=overrides
             )
         entry: dict[str, Any] = {
-            "id": f"tb-g{GRADE}-{n:04d}",
+            "id": f"tb-g{grade}-{n:04d}",
             "word": row["word"],
-            "grade": GRADE,
+            "grade": grade,
             "axis": "K" if any(c in row["word"] for c in "άέήίόύώ") else "R",
             "hintSentence": hint,
             "feedbackRule": feedback_rule(row["word"], morphemes),
@@ -1525,18 +1532,19 @@ def append_textbooks(
     base_words: list[dict[str, Any]],
     csv_path: Path = OUTPUT_CSV,
     cap: int = DEFAULT_CAP,
+    grade: int = GRADE,
 ) -> tuple[list[dict[str, Any]], dict[int, int], int]:
-    """Replace/merge Γλώσσα Β΄ textbook words into the word list.
+    """Replace/merge Γλώσσα textbook words for one grade into the word list.
 
-    Existing ``tb-g2-…`` entries are removed and rebuilt from the curated CSV so
-    hints/definitions stay in sync. Matching grade-2 words from other sources are
-    dropped in favor of the textbook forms. Other grades are left untouched.
+    Existing ``tb-gN-…`` entries for that grade are removed and rebuilt from the
+    curated CSV so hints/definitions stay in sync. Matching words of the same
+    grade from other sources are dropped in favor of the textbook forms.
     """
-    rows = load_textbook_rows(csv_path)
+    rows = load_textbook_rows(csv_path, grade=grade)
     if not rows:
         return base_words, count_by_grade(base_words), 0
 
-    prefix = f"tb-g{GRADE}-"
+    prefix = f"tb-g{grade}-"
     audio_map = {
         normalize_word(w["word"]): w.get("audioFile", "")
         for w in base_words
@@ -1547,9 +1555,11 @@ def append_textbooks(
         w
         for w in base_words
         if not str(w.get("id", "")).startswith(prefix)
-        and not (w.get("grade") == GRADE and normalize_word(w["word"]) in tb_keys)
+        and not (w.get("grade") == grade and normalize_word(w["word"]) in tb_keys)
     ]
-    imported = build_textbook_entries(rows, kept, cap, audio_map=audio_map)
+    imported = build_textbook_entries(
+        rows, kept, cap, audio_map=audio_map, grade=grade
+    )
     merged = merge_words(kept, imported)
     return merged, count_by_grade(imported), len(imported)
 
