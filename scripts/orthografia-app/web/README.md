@@ -19,8 +19,11 @@
 | `RESEND_API_KEY` | Resend API key για φόρμα επικοινωνίας |
 | `CONTACT_TO` | Παραλήπτης (προεπιλογή `info@nexaipla.com`) |
 | `CONTACT_FROM` | Αποστολέας Resend (προεπιλογή `onboarding@resend.dev`) |
+| `CRON_SECRET` | Vercel Cron auth για `/api/cron/weekly-parent-email` |
 
 Ο super admin (`mustrene@gmail.com` by default στο `.env.example`) παίρνει οικογενειακό πλάνο χωρίς Stripe συνδρομή.
+
+**Vercel Production:** Χρησιμοποίησε Clerk **production** keys (`pk_live_…` / `sk_live_…`), όχι test keys. Τα `pk_test_` keys εμφανίζουν προειδοποίηση στο browser και έχουν αυστηρά rate limits.
 
 ## Stripe Dashboard — checklist
 
