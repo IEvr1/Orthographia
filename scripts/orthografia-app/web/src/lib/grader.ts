@@ -83,16 +83,26 @@ function categorizeError(
   const mismatchIdx = alignments.findIndex((a) => !a.match);
   if (mismatchIdx === -1) return stressWrong ? "stress" : "other";
 
-  const suffixLen = tokenizeGraphemes(entry.morphemes.suffix).length;
+  const suffixLen = Math.max(1, tokenizeGraphemes(entry.morphemes.suffix).length);
   const rootLen = tokenizeGraphemes(entry.morphemes.root).length;
   const total = alignments.length;
+  const matchCount = alignments.filter((a) => a.match).length;
+  // Wholly different answers (e.g. «καλή» vs «ανθρώπινος») are not "ending" mistakes.
+  if (total > 0 && matchCount / total < 0.4) {
+    return mismatchIdx < rootLen ? "root" : "other";
+  }
 
   if (mismatchIdx >= total - suffixLen) return "ending";
   const actualTail = alignments
     .slice(Math.max(0, mismatchIdx))
     .map((a) => a.actual)
     .join("");
-  if (endsWithDeclensionSuffix(actualTail) || endsWithDeclensionSuffix(entry.morphemes.suffix)) {
+  // Only blame the ending when the *typed* tail looks like a wrong declension ending —
+  // never merely because the expected lemma itself ends in -ος/-η/…
+  if (
+    endsWithDeclensionSuffix(actualTail) &&
+    mismatchIdx >= Math.max(0, total - suffixLen - 1)
+  ) {
     return "ending";
   }
   if (mismatchIdx >= rootLen) return "derivation";

@@ -85,7 +85,7 @@
       "word": "ανυπάκουος",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "Ο ___ μαθητής δεν κάθεται ήσυχα.",
+      "hintSentence": "Ο ___ μαθητής δεν καθόταν ήσυχα.",
       "feedbackRule": "ανυπάκου- + -ος.",
       "audioFile": "audio/anypakouos.mp3",
       "morphemes": {
@@ -196,7 +196,7 @@
       "word": "άκακος",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "Το αρνάκι είναι ___ και ήσυχο.",
+      "hintSentence": "Ο σκύλος είναι ___ και ήσυχος.",
       "feedbackRule": "άκακ- + -ος.",
       "audioFile": "audio/akakos.mp3",
       "morphemes": {
@@ -969,7 +969,7 @@
       "word": "μαύρος",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "Ο ___ σκύλος τρέχει στην αυλή.",
+      "hintSentence": "Ο ___ σκύλος σταμάτησε μπροστά.",
       "feedbackRule": "μαύρ- + -ος.",
       "audioFile": "audio/mayros.mp3",
       "morphemes": {
@@ -1384,7 +1384,7 @@
       "word": "άσπρος",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "Ο ___ τοίχος λάμπει στον ήλιο.",
+      "hintSentence": "Ο τοίχος είναι ___.",
       "feedbackRule": "άσπρ- + -ος.",
       "audioFile": "audio/aspros.mp3",
       "morphemes": {
@@ -1398,7 +1398,7 @@
       "word": "χοντρός",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "Το ___ βιβλίο είναι βαρύ.",
+      "hintSentence": "Ο ___ φάκελος είναι βαρύς.",
       "feedbackRule": "Προσοχή στον τόνο.",
       "audioFile": "audio/chontros.mp3",
       "morphemes": {
@@ -1754,7 +1754,7 @@
       "word": "καθιστός",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "Η γιαγιά είναι ___ στην καρέκλα.",
+      "hintSentence": "Ο παππούς είναι ___ στην καρέκλα.",
       "feedbackRule": "Προσοχή στον τόνο.",
       "audioFile": "audio/kathistos.mp3",
       "morphemes": {
@@ -5397,7 +5397,7 @@
       "word": "βρόμικος",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "Ο ___ δρόμος γέμισε λάσπη.",
+      "hintSentence": "Ο δρόμος ήταν ___ από τη λάσπη.",
       "feedbackRule": "βρόμικ- + -ος.",
       "audioFile": "audio/vromikos.mp3",
       "morphemes": {
@@ -6639,7 +6639,7 @@
       "word": "οδός",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "Ο ___ φαίνεται στο κείμενο.",
+      "hintSentence": "Η ___ είναι γεμάτη αυτοκίνητα.",
       "feedbackRule": "Προσοχή στον τόνο.",
       "audioFile": "audio/odos.mp3",
       "morphemes": {
@@ -10426,7 +10426,7 @@
       "word": "υδραυλικός",
       "grade": 4,
       "axis": "K",
-      "hintSentence": "Η απάντηση ήταν ___.",
+      "hintSentence": "Ο ___ τεχνίτης διόρθωσε τη βρύση.",
       "feedbackRule": "Προσοχή στον τόνο.",
       "audioFile": "audio/ydraylikos.mp3",
       "morphemes": {
@@ -10649,7 +10649,7 @@
       "word": "υδρατμός",
       "grade": 4,
       "axis": "K",
-      "hintSentence": "Η απάντηση ήταν ___.",
+      "hintSentence": "Ο ___ ανεβαίνει από την κατσαρόλα.",
       "feedbackRule": "Προσοχή στον τόνο.",
       "audioFile": "audio/ydratmos.mp3",
       "morphemes": {
@@ -16939,7 +16939,7 @@
       "word": "τηλεοπτικός",
       "grade": 5,
       "axis": "K",
-      "hintSentence": "Είδε ένα ___ ντοκιμαντέρ για τη φύση.",
+      "hintSentence": "Είδε έναν ___ διαγωνισμό για τη φύση.",
       "feedbackRule": "Προσοχή στον τόνο.",
       "audioFile": "audio/tileoptikos.mp3",
       "morphemes": {
@@ -21428,7 +21428,7 @@
       "word": "άγευστος",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "Το φαγητό ήταν ___ χωρίς αλάτι.",
+      "hintSentence": "Ο χυμός ήταν ___ χωρίς ζάχαρη.",
       "feedbackRule": "άγευστ- + -ος.",
       "audioFile": "audio/ageystos.mp3",
       "morphemes": {
@@ -21445,7 +21445,7 @@
       "word": "άδικος",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "Η απόφαση ήταν ___ για όλους.",
+      "hintSentence": "Ο κανονισμός ήταν ___ για όλους.",
       "feedbackRule": "άδικ- + -ος.",
       "audioFile": "audio/adikos.mp3",
       "morphemes": {
@@ -21594,7 +21594,7 @@
       "word": "αήττητος",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "Η ομάδα έμεινε ___ όλη τη χρονιά.",
+      "hintSentence": "Ο παίκτης έμεινε ___ όλη τη χρονιά.",
       "feedbackRule": "αήττητ- + -ος.",
       "audioFile": "audio/aittitos.mp3",
       "morphemes": {
@@ -21927,7 +21927,7 @@
       "word": "ακριβός",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "Είναι πολύ ___ σήμερα.",
+      "hintSentence": "Ο πίνακας είναι πολύ ___.",
       "feedbackRule": "Προσοχή στον τόνο.",
       "audioFile": "audio/akrivos.mp3",
       "morphemes": {
@@ -22242,7 +22242,7 @@
       "word": "αναγκαίος",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "Το νερό είναι ___ για τη ζωή.",
+      "hintSentence": "Ο καθαρός αέρας είναι ___ για τη ζωή.",
       "feedbackRule": "αναγκαί- + -ος.",
       "audioFile": "audio/anagkaios.mp3",
       "morphemes": {
@@ -22409,7 +22409,7 @@
       "word": "ανθρώπινος",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "Έδειξε ___ συμπεριφορά.",
+      "hintSentence": "Ο ___ χαρακτήρας φάνηκε καθαρά.",
       "feedbackRule": "ανθρώπιν- + -ος.",
       "audioFile": "audio/anthropinos.mp3",
       "morphemes": {
@@ -22443,7 +22443,7 @@
       "word": "ανοικοκύρευτος",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "Το δωμάτιο ήταν ___.",
+      "hintSentence": "Ο διάδρομος ήταν ___.",
       "feedbackRule": "ανοικοκύρευτ- + -ος.",
       "audioFile": "audio/anoikokyreytos.mp3",
       "morphemes": {
@@ -22613,7 +22613,7 @@
       "word": "απείθαρχος",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "Το ___ παιδί δεν καθόταν ήσυχα.",
+      "hintSentence": "Ο ___ μαθητής δεν καθόταν ήσυχα.",
       "feedbackRule": "απείθαρχ- + -ος.",
       "audioFile": "audio/apeitharchos.mp3",
       "morphemes": {
@@ -22730,7 +22730,7 @@
       "word": "αποφασιστικός",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "Μου φάνηκε ___ η ιδέα.",
+      "hintSentence": "Ήταν ___ στη συνάντηση.",
       "feedbackRule": "Προσοχή στον τόνο.",
       "audioFile": "audio/apofasistikos.mp3",
       "morphemes": {
@@ -22763,7 +22763,7 @@
       "word": "αφόρητος",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "Η ζέστη ήταν ___.",
+      "hintSentence": "Ο καύσωνας ήταν ___.",
       "feedbackRule": "αφόρητ- + -ος.",
       "audioFile": "audio/aforitos.mp3",
       "morphemes": {
@@ -22863,7 +22863,7 @@
       "word": "γεμάτος",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "Το κουτί είναι ___ μολύβια.",
+      "hintSentence": "Ο κουβάς είναι ___.",
       "feedbackRule": "γεμάτ- + -ος.",
       "audioFile": "audio/gematos.mp3",
       "morphemes": {
@@ -23029,7 +23029,7 @@
       "word": "δυνατός",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "Η απάντηση ήταν ___.",
+      "hintSentence": "Ο αθλητής είναι ___ από την προπόνηση.",
       "feedbackRule": "Προσοχή στον τόνο.",
       "audioFile": "audio/dynatos.mp3",
       "morphemes": {
@@ -23616,7 +23616,7 @@
       "word": "ορατός",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "Η απάντηση ήταν ___.",
+      "hintSentence": "Ο φάρος είναι ___ από μακριά.",
       "feedbackRule": "Προσοχή στον τόνο.",
       "audioFile": "audio/oratos.mp3",
       "morphemes": {
@@ -23866,7 +23866,7 @@
       "word": "σκούρος",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "Φόρεσε ένα ___ μπλε πουκάμισο.",
+      "hintSentence": "Φόρεσε έναν ___ μπλε μανδύα.",
       "feedbackRule": "σκούρ- + -ος.",
       "audioFile": "audio/skouros.mp3",
       "morphemes": {
@@ -24034,7 +24034,7 @@
       "word": "ψεύτικος",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "Το ___ διαμάντι έλαμπε σαν αληθινό.",
+      "hintSentence": "Ο ___ λίθος έλαμπε σαν αληθινός.",
       "feedbackRule": "ψεύτικ- + -ος.",
       "audioFile": "audio/pseytikos.mp3",
       "morphemes": {
@@ -25981,7 +25981,7 @@
       "word": "ξινός",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "Το λεμόνι είναι ___.",
+      "hintSentence": "Ο χυμός λεμονιού είναι ___.",
       "feedbackRule": "Προσοχή στον τόνο.",
       "audioFile": "audio/xinos.mp3",
       "morphemes": {
@@ -26421,7 +26421,7 @@
       "word": "πρωινός",
       "grade": 2,
       "axis": "K",
-      "hintSentence": "Το αποτέλεσμα ήταν ___.",
+      "hintSentence": "Ο ___ περίπατος ξεκίνησε νωρίς.",
       "feedbackRule": "Προσοχή στον τόνο.",
       "audioFile": "audio/proinos.mp3",
       "morphemes": {
@@ -27646,7 +27646,7 @@
       "word": "άβολος",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "Η καρέκλα είναι ___ για πολλή ώρα.",
+      "hintSentence": "Ο καναπές είναι ___ για πολλή ώρα.",
       "feedbackRule": "άβολ- + -ος.",
       "audioFile": "audio/avolos.mp3",
       "morphemes": {
@@ -27662,7 +27662,7 @@
       "word": "άγριος",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "Το ___ ζώο ζει στο δάσος.",
+      "hintSentence": "Ο ___ λύκος ζει στο δάσος.",
       "feedbackRule": "άγρι- + -ος.",
       "audioFile": "audio/agrios.mp3",
       "morphemes": {
@@ -27694,7 +27694,7 @@
       "word": "άσπρος",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "Το χιόνι είναι ___.",
+      "hintSentence": "Ο τοίχος είναι ___.",
       "feedbackRule": "άσπρ- + -ος.",
       "audioFile": "audio/aspros.mp3",
       "morphemes": {
@@ -27758,7 +27758,7 @@
       "word": "αναπαυτικός",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "Η απάντηση ήταν ___.",
+      "hintSentence": "Ο ___ καναπές είναι μαλακός.",
       "feedbackRule": "Προσοχή στον τόνο.",
       "audioFile": "audio/anapaytikos.mp3",
       "morphemes": {
@@ -27792,7 +27792,7 @@
       "word": "ανυπάκουος",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "Το ___ παιδί δεν καθόταν ήσυχα.",
+      "hintSentence": "Ο ___ μαθητής δεν καθόταν ήσυχα.",
       "feedbackRule": "ανυπάκου- + -ος.",
       "audioFile": "audio/anypakouos.mp3",
       "morphemes": {
@@ -28011,7 +28011,7 @@
       "word": "αρωματικός",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "Η απάντηση ήταν ___.",
+      "hintSentence": "Ο ___ καφές μύριζε ωραία.",
       "feedbackRule": "Προσοχή στον τόνο.",
       "audioFile": "audio/aromatikos.mp3",
       "morphemes": {
@@ -29229,7 +29229,7 @@
       "word": "δυσάρεστος",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "Ήταν μια ___ έκπληξη.",
+      "hintSentence": "Ήταν ένας ___ θόρυβος.",
       "feedbackRule": "δυσάρεστ- + -ος.",
       "audioFile": "audio/dysarestos.mp3",
       "morphemes": {
@@ -29246,7 +29246,7 @@
       "word": "δύσκολος",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "Η άσκηση είναι ___.",
+      "hintSentence": "Ο γρίφος είναι ___.",
       "feedbackRule": "δύσκολ- + -ος.",
       "audioFile": "audio/dyskolos.mp3",
       "morphemes": {
@@ -29381,7 +29381,7 @@
       "word": "εύκολος",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "Το πρόβλημα ήταν ___.",
+      "hintSentence": "Ο γρίφος ήταν ___.",
       "feedbackRule": "εύκολ- + -ος.",
       "audioFile": "audio/eykolos.mp3",
       "morphemes": {
@@ -29514,7 +29514,7 @@
       "word": "λερωμένος",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "Το πουκάμισο είναι ___.",
+      "hintSentence": "Ο μανδύας είναι ___.",
       "feedbackRule": "λερωμέν- + -ος.",
       "audioFile": "audio/leromenos.mp3",
       "morphemes": {
@@ -29616,7 +29616,7 @@
       "word": "μαύρος",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "Το ___ αυτοκίνητο σταμάτησε μπροστά.",
+      "hintSentence": "Ο ___ σκύλος σταμάτησε μπροστά.",
       "feedbackRule": "μαύρ- + -ος.",
       "audioFile": "audio/mayros.mp3",
       "morphemes": {
@@ -30068,7 +30068,7 @@
       "word": "σπουδαίος",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "Έκανε μια ___ ανακάλυψη.",
+      "hintSentence": "Έκανε έναν ___ άθλο.",
       "feedbackRule": "σπουδαί- + -ος.",
       "audioFile": "audio/spoudaios.mp3",
       "morphemes": {
@@ -30203,7 +30203,7 @@
       "word": "χρήσιμος",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "Αυτό το εργαλείο είναι ___.",
+      "hintSentence": "Ο οδηγός είναι ___.",
       "feedbackRule": "χρήσιμ- + -ος.",
       "audioFile": "audio/chrisimos.mp3",
       "morphemes": {
@@ -30412,7 +30412,7 @@
       "word": "γαλλικός",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "Η απάντηση ήταν ___.",
+      "hintSentence": "Ο ___ πολιτισμός είναι γνωστός.",
       "feedbackRule": "Προσοχή σε διπλά γράμματα.",
       "audioFile": "audio/gallikos.mp3",
       "morphemes": {
@@ -31230,7 +31230,7 @@
       "word": "πέτρινος",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "Το κάστρο είναι ___.",
+      "hintSentence": "Ο πύργος είναι ___.",
       "feedbackRule": "πέτριν- + -ος.",
       "audioFile": "audio/petrinos.mp3",
       "morphemes": {
@@ -31603,7 +31603,7 @@
       "word": "τεράστιος",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "Το αποτέλεσμα ήταν ___.",
+      "hintSentence": "Ο βράχος ήταν ___.",
       "feedbackRule": "τεράστι- + -ος.",
       "audioFile": "audio/terastios.mp3",
       "morphemes": {
@@ -31772,7 +31772,7 @@
       "word": "φωτεινός",
       "grade": 3,
       "axis": "K",
-      "hintSentence": "Το δωμάτιο είναι ___.",
+      "hintSentence": "Ο διάδρομος είναι ___.",
       "feedbackRule": "Προσοχή στον τόνο.",
       "audioFile": "audio/foteinos.mp3",
       "morphemes": {
@@ -31934,7 +31934,7 @@
       "word": "άθλος",
       "grade": 4,
       "axis": "K",
-      "hintSentence": "Η ___ είναι στο κείμενο.",
+      "hintSentence": "Ο ___ του Ηρακλή είναι γνωστός.",
       "feedbackRule": "άθλ- + -ος.",
       "audioFile": "audio/athlos.mp3",
       "morphemes": {
@@ -32016,7 +32016,7 @@
       "word": "αήττητος",
       "grade": 4,
       "axis": "K",
-      "hintSentence": "Φαίνεται ___ στο μάθημα.",
+      "hintSentence": "Ο παίκτης έμεινε ___ όλη τη χρονιά.",
       "feedbackRule": "αήττητ- + -ος.",
       "audioFile": "audio/aittitos.mp3",
       "morphemes": {
@@ -32234,7 +32234,7 @@
       "word": "αγρός",
       "grade": 4,
       "axis": "K",
-      "hintSentence": "Η ___ είναι στο κείμενο.",
+      "hintSentence": "Ο ___ είναι γεμάτος στάχυα.",
       "feedbackRule": "Προσοχή στον τόνο.",
       "audioFile": "audio/agros.mp3",
       "morphemes": {
@@ -32581,7 +32581,7 @@
       "word": "ακράδαντος",
       "grade": 4,
       "axis": "K",
-      "hintSentence": "Η απάντηση ήταν ___.",
+      "hintSentence": "Ο ___ πιστός δεν δίστασε.",
       "feedbackRule": "ακράδαντ- + -ος.",
       "audioFile": "audio/akradantos.mp3",
       "morphemes": {
@@ -32597,7 +32597,7 @@
       "word": "ακριβός",
       "grade": 4,
       "axis": "K",
-      "hintSentence": "Η απάντηση ήταν ___.",
+      "hintSentence": "Ο πίνακας είναι πολύ ___.",
       "feedbackRule": "Προσοχή στον τόνο.",
       "audioFile": "audio/akrivos.mp3",
       "morphemes": {
@@ -33536,7 +33536,7 @@
       "word": "Χριστόφορος",
       "grade": 4,
       "axis": "K",
-      "hintSentence": "Η ___ είναι στο κείμενο.",
+      "hintSentence": "Ο ___ ταξίδεψε σε μακρινούς τόπους.",
       "feedbackRule": "Χριστόφορ- + -ος.",
       "audioFile": "audio/christoforos.mp3",
       "morphemes": {
@@ -34342,7 +34342,7 @@
       "word": "άναυδος",
       "grade": 5,
       "axis": "K",
-      "hintSentence": "Το πλήθος έμεινε ___ από την έκπληξη.",
+      "hintSentence": "Ο κόσμος έμεινε ___ από την έκπληξη.",
       "feedbackRule": "άναυδ- + -ος.",
       "audioFile": "audio/anaydos.mp3",
       "morphemes": {
@@ -34427,7 +34427,7 @@
       "word": "άρτιος",
       "grade": 5,
       "axis": "K",
-      "hintSentence": "Παρουσίασε ένα ___ έργο.",
+      "hintSentence": "Παρουσίασε έναν ___ λόγο.",
       "feedbackRule": "άρτι- + -ος.",
       "audioFile": "audio/artios.mp3",
       "morphemes": {
@@ -34497,7 +34497,7 @@
       "word": "ανέκφραστος",
       "grade": 5,
       "axis": "K",
-      "hintSentence": "Το πρόσωπό του έμεινε ___.",
+      "hintSentence": "Ο ___ ηθοποιός κοίταξε μπροστά.",
       "feedbackRule": "ανέκφραστ- + -ος.",
       "audioFile": "audio/anekfrastos.mp3",
       "morphemes": {
@@ -35548,7 +35548,7 @@
       "word": "απόρρητος",
       "grade": 5,
       "axis": "K",
-      "hintSentence": "Το έγγραφο είναι ___.",
+      "hintSentence": "Ο φάκελος είναι ___.",
       "feedbackRule": "απόρρητ- + -ος.",
       "audioFile": "audio/aporritos.mp3",
       "morphemes": {
@@ -36688,7 +36688,7 @@
       "word": "βιώσιμος",
       "grade": 6,
       "axis": "K",
-      "hintSentence": "Προτείνουν ένα ___ σχέδιο ανάπτυξης.",
+      "hintSentence": "Προτείνουν έναν ___ τρόπο ανάπτυξης.",
       "feedbackRule": "βιώσιμ- + -ος.",
       "audioFile": "audio/viosimos.mp3",
       "morphemes": {
@@ -36755,7 +36755,7 @@
       "word": "βρόμικος",
       "grade": 6,
       "axis": "K",
-      "hintSentence": "Το παπούτσι του ήταν ___ από τη λάσπη.",
+      "hintSentence": "Ο δρόμος ήταν ___ από τη λάσπη.",
       "feedbackRule": "βρόμικ- + -ος.",
       "audioFile": "audio/vromikos.mp3",
       "morphemes": {

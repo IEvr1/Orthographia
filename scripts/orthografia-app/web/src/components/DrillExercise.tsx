@@ -447,7 +447,7 @@ function SingleDrillView({
               onSkip(Boolean(picked));
             }}
           >
-            Παράλειψη
+            {picked ? "Συνέχεια" : "Παράλειψη"}
           </button>
         )}
       </section>
