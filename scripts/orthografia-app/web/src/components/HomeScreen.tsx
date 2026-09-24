@@ -89,7 +89,7 @@ export function HomeScreen({
       : `Δοκιμή · ${trialDaysLeft} ημέρες`
     : trialExpired
       ? "Δοκιμή έληξε"
-      : "Δωρεάν";
+      : null;
 
   return (
     <main className="screen screen--home fade-in">
@@ -98,7 +98,9 @@ export function HomeScreen({
           {isSuperAdmin && <span className="admin-badge">Διαχειριστής</span>}
           {!isPaidTier(tier) && (
             <>
-              <span className="plan-badge plan-badge--status">{planStatusLabel}</span>
+              {planStatusLabel && (
+                <span className="plan-badge plan-badge--status">{planStatusLabel}</span>
+              )}
               {!needsSignIn && (
                 <button type="button" className="plan-badge plan-badge--cta" onClick={onOpenPricing}>
                   Αναβάθμιση

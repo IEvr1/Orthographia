@@ -35,7 +35,12 @@ export function drillsForMode(drills: DrillItem[], mode: GameMode): DrillItem[] 
     case "compound":
       return drills.filter((d) => d.kind === "compound");
     case "classify":
-      return drills.filter((d) => d.kind === "classify");
+      // Keep verb suffix groups + πολύ επίθετο/επίρρημα (not Κύρια/Κοινά).
+      return drills.filter(
+        (d) =>
+          d.kind === "classify" &&
+          (d.ruleId === "verb-suffix-class" || d.ruleId === "polys-adj-adv"),
+      );
     default:
       return [];
   }
