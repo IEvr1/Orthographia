@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useMemo, useState, type ClipboardEvent, type MouseEvent } from "react";
 import type { WordEntry } from "../types";
 import {
   deleteWordList,
@@ -12,6 +12,13 @@ import {
   type WordListsStore,
 } from "../lib/wordLists";
 import { GRADE_LABELS } from "../lib/grades";
+
+/** Block bulk copy of list words; allow clipboard in form fields. */
+function blockWordCopy(e: ClipboardEvent | MouseEvent) {
+  const t = e.target as HTMLElement | null;
+  if (t?.closest("input, textarea, select, [contenteditable='true']")) return;
+  e.preventDefault();
+}
 
 interface WordListsScreenProps {
   words: WordEntry[];
@@ -49,7 +56,12 @@ export function WordListsScreen({
   const active = getActiveList(store);
 
   return (
-    <main className="screen screen--lists fade-in">
+    <main
+      className="screen screen--lists fade-in"
+      onCopy={blockWordCopy}
+      onCut={blockWordCopy}
+      onContextMenu={blockWordCopy}
+    >
       <header className="exercise-header">
         <button type="button" className="btn-text" onClick={onBack}>
           ← Πίσω

@@ -2258,6 +2258,13 @@ body {
   gap: 0.35rem;
   overflow: auto;
   max-height: min(60vh, 520px);
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.lexicon-detail {
+  user-select: none;
+  -webkit-user-select: none;
 }
 
 .lexicon-row {
@@ -2382,6 +2389,8 @@ body {
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
+  user-select: none;
+  -webkit-user-select: none;
 }
 
 .word-list-words li {

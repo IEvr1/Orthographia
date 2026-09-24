@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useMemo, useState, type ClipboardEvent, type MouseEvent } from "react";
 import type { WordEntry } from "../types";
 import {
   addWordToList,
@@ -10,6 +10,13 @@ import {
 } from "../lib/wordLists";
 import { AudioPlayer } from "./AudioPlayer";
 import { GRADE_LABELS } from "../lib/grades";
+
+/** Block bulk copy of lexicon words; allow clipboard in form fields. */
+function blockWordCopy(e: ClipboardEvent | MouseEvent) {
+  const t = e.target as HTMLElement | null;
+  if (t?.closest("input, textarea, select, [contenteditable='true']")) return;
+  e.preventDefault();
+}
 
 interface LexiconScreenProps {
   words: WordEntry[];
@@ -95,7 +102,12 @@ export function LexiconScreen({
   };
 
   return (
-    <main className="screen screen--lexicon fade-in">
+    <main
+      className="screen screen--lexicon fade-in"
+      onCopy={blockWordCopy}
+      onCut={blockWordCopy}
+      onContextMenu={blockWordCopy}
+    >
       <header className="exercise-header">
         <button type="button" className="btn-text" onClick={onBack}>
           ← Πίσω
