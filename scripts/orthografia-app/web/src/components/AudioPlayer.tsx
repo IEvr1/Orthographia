@@ -3,19 +3,35 @@ import { useEffect, useRef } from "react";
 interface AudioPlayerProps {
   src: string;
   autoPlay?: boolean;
+  /** Delay before autoplay (ms). Default 0. */
+  autoPlayDelayMs?: number;
   onPlay?: () => void;
 }
 
-export function AudioPlayer({ src, autoPlay = false, onPlay }: AudioPlayerProps) {
+export function AudioPlayer({
+  src,
+  autoPlay = false,
+  autoPlayDelayMs = 0,
+  onPlay,
+}: AudioPlayerProps) {
   const audioRef = useRef<HTMLAudioElement>(null);
 
   useEffect(() => {
-    if (autoPlay && audioRef.current) {
-      void audioRef.current.play().catch(() => {
+    if (!autoPlay || !audioRef.current) return;
+
+    const el = audioRef.current;
+    const timer = window.setTimeout(() => {
+      void el.play().catch(() => {
         /* autoplay may be blocked until user gesture */
       });
-    }
-  }, [src, autoPlay]);
+    }, Math.max(0, autoPlayDelayMs));
+
+    return () => {
+      window.clearTimeout(timer);
+      el.pause();
+      el.currentTime = 0;
+    };
+  }, [src, autoPlay, autoPlayDelayMs]);
 
   const replay = () => {
     const el = audioRef.current;

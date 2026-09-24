@@ -13,6 +13,8 @@ from extract_textbook import OUTPUT_CSV as GRADE2_CSV
 from extract_textbook import append_textbooks
 from extract_textbook_g3 import OUTPUT_CSV as GRADE3_CSV
 from extract_textbook_g3 import append_textbooks_g3
+from extract_textbook_g4 import OUTPUT_CSV as GRADE4_CSV
+from extract_textbook_g4 import append_textbooks_g4
 from fix_hints import fix_words
 from import_helexkids import INPUTS_DIR, append_helexkids, count_by_grade
 from import_lexika import append_lexika, sync_families_and_rules
@@ -47,7 +49,8 @@ def main() -> None:
     seed_count = len(words)
     words, tb2_counts, tb2_imported = append_textbooks(words, GRADE2_CSV)
     words, tb3_counts, tb3_imported = append_textbooks_g3(words, GRADE3_CSV)
-    tb_imported = tb2_imported + tb3_imported
+    words, tb4_counts, tb4_imported = append_textbooks_g4(words, GRADE4_CSV)
+    tb_imported = tb2_imported + tb3_imported + tb4_imported
     words, hk_counts, imported = append_helexkids(words, INPUTS_DIR)
     words, lx_counts, lx_imported = append_lexika(words)
     sync_families_and_rules()
@@ -79,9 +82,10 @@ def main() -> None:
         f"By grade: G2={by_grade[2]}, G3={by_grade[3]}, "
         f"G4={by_grade[4]}, G5={by_grade[5]}, G6={by_grade[6]}"
     )
-    if tb2_imported or tb3_imported:
+    if tb2_imported or tb3_imported or tb4_imported:
         print(
-            f"Textbooks added: G2={tb2_counts.get(2, 0)}, G3={tb3_counts.get(3, 0)}"
+            f"Textbooks added: G2={tb2_counts.get(2, 0)}, "
+            f"G3={tb3_counts.get(3, 0)}, G4={tb4_counts.get(4, 0)}"
         )
     if imported:
         print(

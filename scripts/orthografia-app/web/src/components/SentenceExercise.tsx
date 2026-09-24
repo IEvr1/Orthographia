@@ -160,7 +160,7 @@ export function SentenceExercise({
       </header>
 
       <section className="exercise-body">
-        <AudioPlayer src={audioSrc} autoPlay key={current.id} />
+        <AudioPlayer src={audioSrc} autoPlay autoPlayDelayMs={3000} key={current.id} />
         <p className="hint-sentence">
           <span className="hint-label">Συμπλήρωσε τη λέξη στην πρόταση</span>
           {sentence.split("___").map((part, i, parts) => (

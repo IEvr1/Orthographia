@@ -74,6 +74,31 @@ python generate_audio.py
 
 Ids: `tb-g3-…`, `grade: 3`.
 
+### Γλώσσα Δ΄ Δημοτικού
+
+Curated λίστα: `inputs/textbooks/grade4.csv` (+ canvas review). Μετά το review:
+
+```powershell
+python apply_canvas_deletions.py --grade 4
+python generate_seed.py
+python generate_audio.py
+```
+
+Ids: `tb-g4-…`, `grade: 4`.
+
+### Canvas review → CSV (διαγραφές)
+
+Η «Διαγραφή επιλεγμένων» στο canvas **δεν** αγγίζει τη βάση ούτε το CSV· αποθηκεύεται μόνο στο `*.canvas.data.json`. Για να μην μπουν οι λέξεις στο `generate_seed.py` / app:
+
+```powershell
+# δες τι θα φύγει
+python apply_canvas_deletions.py --grade 4 --dry-run
+# γράψε στο grade4.csv (+ analysis.json)
+python apply_canvas_deletions.py --grade 4
+# ή όλες οι τάξεις 2–6
+python apply_canvas_deletions.py --grade all
+```
+
 ### Σχολικά λεξικά & Γραμματική (Β΄–Στ΄)
 
 Βάλε στο `Downloads` (ή `inputs/lexika/`):
