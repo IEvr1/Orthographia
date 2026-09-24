@@ -3267,7 +3267,7 @@
         "suffix": "ου"
       },
       "difficulty": 2,
-      "definition": "Του κειμένου που διαβάζουμε.",
+      "definition": "Το γραπτό που διαβάζουμε.",
       "homophone": true
     },
     {
@@ -3430,7 +3430,7 @@
         "suffix": ""
       },
       "difficulty": 2,
-      "definition": "Του παραμυθιού.",
+      "definition": "Ιστορία με φαντασία για παιδιά.",
       "homophone": true
     },
     {
@@ -5220,7 +5220,7 @@
         "suffix": ""
       },
       "difficulty": 1,
-      "definition": "Πονηρός· σκέφτεται κόλπα.",
+      "definition": "Έξυπνος με δόλο· σκέφτεται κόλπα.",
       "homophone": true
     },
     {
@@ -5465,7 +5465,7 @@
         "suffix": "ιά"
       },
       "difficulty": 1,
-      "definition": "Πολύ δυνατή παγωνιά· πολύ κρύο.",
+      "definition": "Πολύ δυνατό κρύο.",
       "homophone": true
     },
     {
@@ -7180,7 +7180,7 @@
         "suffix": "ιά"
       },
       "difficulty": 1,
-      "definition": "Η Βενετία· πόλη στην Ιταλία με κανάλια."
+      "definition": "Πόλη στην Ιταλία με κανάλια."
     },
     {
       "id": "tb-g3-0143",
@@ -9558,7 +9558,7 @@
         "suffix": "αι"
       },
       "difficulty": 1,
-      "definition": "Ρήμα είμαι · α΄ ενικό.",
+      "definition": "Ρήμα ύπαρξης· α΄ ενικό πρόσωπο.",
       "homophone": true
     },
     {
@@ -23288,7 +23288,7 @@
         "suffix": "α"
       },
       "difficulty": 1,
-      "definition": "κλάμα, κλαυθμός",
+      "definition": "Κλαυθμός· ήχος όταν κάποιος κλαίει.",
       "ruleId": "tonos-basic"
     },
     {
@@ -23958,7 +23958,7 @@
         "suffix": ""
       },
       "difficulty": 1,
-      "definition": "κόστος· τιμή/τιμητική αναγνώριση",
+      "definition": "Κόστος· τιμητική αναγνώριση.",
       "ruleId": "tonos-basic",
       "homophone": true
     },
@@ -31974,7 +31974,7 @@
         "suffix": "α"
       },
       "difficulty": 2,
-      "definition": "Η ευγενής άμιλλα",
+      "definition": "Ευγενής συναγωνισμός.",
       "ruleId": "tonos-basic"
     },
     {
@@ -32073,7 +32073,7 @@
         "suffix": "η"
       },
       "difficulty": 1,
-      "definition": "Υπέβαλε αίτηση στο",
+      "definition": "Επίσημο γραπτό αίτημα.",
       "ruleId": "tonos-basic",
       "homophone": true
     },
@@ -32420,7 +32420,7 @@
         "suffix": "ία"
       },
       "difficulty": 3,
-      "definition": "Στις συνομιλίες των δύο πλευρών κυριάρχησαν η αδιαλλαξία και η",
+      "definition": "Άρνηση να συμβιβαστεί κάποιος.",
       "ruleId": "tonos-basic"
     },
     {
@@ -32572,7 +32572,7 @@
         "suffix": "ος"
       },
       "difficulty": 1,
-      "definition": "Υπήρξε ακούσιος μάρτυρας",
+      "definition": "Χωρίς τη θέλησή του.",
       "ruleId": "tonos-basic",
       "homophone": true
     },
@@ -32857,7 +32857,7 @@
         "suffix": "ω"
       },
       "difficulty": 3,
-      "definition": "Αμφιβάλλω για",
+      "definition": "Δεν είμαι βέβαιος.",
       "familyId": "αμφιβάλλω",
       "ruleId": "tonos-basic",
       "homophone": true
@@ -32909,7 +32909,7 @@
         "suffix": "α"
       },
       "difficulty": 1,
-      "definition": "Η αναίδειά του ξεπέρασε",
+      "definition": "Θρασύτητα· έλλειψη σεβασμού.",
       "familyId": "αναίδεια",
       "ruleId": "tonos-basic",
       "homophone": true
@@ -32927,7 +32927,7 @@
         "suffix": ""
       },
       "difficulty": 1,
-      "definition": "Ο διαιτητής αποφάσισε την αναβολή",
+      "definition": "Μετάθεση για αργότερα.",
       "familyId": "αναβολή",
       "ruleId": "tonos-basic",
       "homophone": true
@@ -32994,7 +32994,7 @@
         "suffix": "η"
       },
       "difficulty": 2,
-      "definition": "Η αναζήτηση στέγης απασχολεί κάθε χρόνο",
+      "definition": "Προσπάθεια να βρω κάτι.",
       "familyId": "αναζήτηση",
       "ruleId": "tonos-basic",
       "homophone": true
@@ -33478,7 +33478,6 @@
         "suffix": ""
       },
       "difficulty": 1,
-      "definition": "Του πήρε τον",
       "homophone": true
     },
     {
