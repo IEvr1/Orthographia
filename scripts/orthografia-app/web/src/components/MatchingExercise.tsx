@@ -187,7 +187,7 @@ export function MatchingExercise({
             className="btn btn-secondary exercise-skip"
             onClick={() => onSkip(false)}
           >
-            Παράλειψη γύρου
+            Επόμενη άσκηση
           </button>
         )}
       </section>

@@ -8,8 +8,12 @@ interface GreekKeyboardProps {
   checkLabel?: string;
 }
 
-const ROW1 = ["α", "β", "γ", "δ", "ε", "ζ", "η", "θ", "ι", "κ", "λ", "μ"];
-const ROW2 = ["ν", "ξ", "ο", "π", "ρ", "σ", "ς", "τ", "υ", "φ", "χ", "ψ", "ω"];
+/** Standard Greek QWERTY layout (phone / laptop), not alphabetical. */
+const ROWS = [
+  ["ς", "ε", "ρ", "τ", "υ", "θ", "ι", "ο", "π"],
+  ["α", "σ", "δ", "φ", "γ", "η", "ξ", "κ", "λ"],
+  ["ζ", "χ", "ψ", "ω", "β", "ν", "μ"],
+];
 
 const ACCENT_MAP: Record<string, string> = {
   α: "ά",
@@ -104,7 +108,7 @@ export function GreekKeyboard({
       />
 
       <div className="keyboard-rows">
-        {[ROW1, ROW2].map((row, ri) => (
+        {ROWS.map((row, ri) => (
           <div className="keyboard-row" key={ri}>
             {row.map((key) => (
               <button

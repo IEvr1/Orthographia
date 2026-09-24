@@ -2122,26 +2122,97 @@ body {
   color: var(--ink-soft);
 }
 
+.scramble-prompt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.55rem;
+}
+
+.scramble-clue {
+  margin: 0;
+  font-size: 0.98rem;
+  line-height: 1.45;
+  color: var(--ink);
+  text-align: center;
+}
+
+.scramble-clue--sentence {
+  color: var(--ink-soft);
+}
+
 .scramble-letters {
   display: flex;
   flex-wrap: wrap;
   gap: 0.35rem;
   justify-content: center;
-  margin-top: 0.75rem;
+  margin-top: 0.25rem;
 }
 
 .scramble-tile {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-width: 2rem;
-  height: 2.4rem;
-  padding: 0 0.35rem;
-  border-radius: 8px;
+  min-width: 2.2rem;
+  height: 2.6rem;
+  padding: 0 0.4rem;
+  border-radius: 10px;
   background: var(--sand);
   border: 2px solid var(--sand-deep);
   font-size: 1.25rem;
   font-weight: 700;
+  color: var(--ink);
+  cursor: pointer;
+  font-family: inherit;
+  box-shadow: 0 2px 0 var(--sand-deep);
+  transition: transform 0.12s ease, opacity 0.15s ease, background 0.15s ease;
+}
+
+.scramble-tile:hover:not(:disabled) {
+  transform: translateY(-2px);
+  background: #fff;
+}
+
+.scramble-tile:active:not(:disabled) {
+  transform: translateY(1px);
+  box-shadow: none;
+}
+
+.scramble-tile--used,
+.scramble-tile:disabled {
+  opacity: 0.35;
+  cursor: default;
+  box-shadow: none;
+  transform: none;
+}
+
+.scramble-slots {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  justify-content: center;
+  margin-top: 0.35rem;
+}
+
+.scramble-slot {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 1.7rem;
+  height: 2.1rem;
+  border-bottom: 3px solid var(--teal);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.scramble-slot--filled {
+  border-bottom-color: var(--ink);
+}
+
+.scramble-help-btn {
+  margin-top: 0.15rem;
+  font-size: 0.95rem;
 }
 
 .morpheme-prompt {

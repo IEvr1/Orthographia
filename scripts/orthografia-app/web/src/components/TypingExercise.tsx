@@ -33,6 +33,33 @@ const TITLES: Record<TypingMode, string> = {
   morphemes: "Μορφήματα",
 };
 
+/** Which scramble tiles are already consumed by the current input (greedy left-to-right). */
+function scrambleTileUsed(scrambled: string, input: string): boolean[] {
+  const tiles = [...scrambled.normalize("NFC")];
+  const used = tiles.map(() => false);
+  for (const ch of [...input.normalize("NFC")]) {
+    const idx = tiles.findIndex((tile, i) => !used[i] && tile === ch);
+    if (idx >= 0) used[idx] = true;
+  }
+  return used;
+}
+
+/** Extend the correct prefix by one letter — gentle progressive hint. */
+function nextScrambleHelp(word: string, input: string): string {
+  const target = [...word.normalize("NFC")];
+  const typed = [...input.normalize("NFC")];
+  let prefixLen = 0;
+  while (
+    prefixLen < typed.length &&
+    prefixLen < target.length &&
+    typed[prefixLen] === target[prefixLen]
+  ) {
+    prefixLen += 1;
+  }
+  if (prefixLen >= target.length) return word;
+  return target.slice(0, prefixLen + 1).join("");
+}
+
 export function TypingExercise({
   mode,
   words,
@@ -54,6 +81,7 @@ export function TypingExercise({
   const [input, setInput] = useState("");
   const [phase, setPhase] = useState<Phase>("writing");
   const [result, setResult] = useState<GradeResult | null>(null);
+  const [helpCount, setHelpCount] = useState(0);
 
   const misspelling = useMemo(
     () => (mode === "error-fix" ? pickMisspelling(current.word) : ""),
@@ -64,6 +92,18 @@ export function TypingExercise({
     () => (mode === "scramble" ? scrambleWord(current.word) : ""),
     // eslint-disable-next-line react-hooks/exhaustive-deps
     [mode, current.id],
+  );
+  const scrambleTiles = useMemo(
+    () => (mode === "scramble" ? [...scrambled.normalize("NFC")] : []),
+    [mode, scrambled],
+  );
+  const scrambleUsed = useMemo(
+    () => (mode === "scramble" ? scrambleTileUsed(scrambled, input) : []),
+    [mode, scrambled, input],
+  );
+  const scrambleSlots = useMemo(
+    () => (mode === "scramble" ? [...current.word.normalize("NFC")] : []),
+    [mode, current.word],
   );
 
   const sentence = resolveClozeHint(
@@ -80,6 +120,7 @@ export function TypingExercise({
     setInput("");
     setPhase("writing");
     setResult(null);
+    setHelpCount(0);
   }, [index, current.id]);
 
   const handleCheck = () => {
@@ -106,6 +147,11 @@ export function TypingExercise({
   const needsRewrite = phase === "feedback" && result && !result.isCorrect;
   const showingCorrectFeedback = phase === "feedback" && result?.isCorrect === true;
   const canSkip = !showingCorrectFeedback && celebrationGoal === null;
+  const canUseScrambleHelp =
+    mode === "scramble" &&
+    !showingCorrectFeedback &&
+    celebrationGoal === null &&
+    input.normalize("NFC") !== current.word.normalize("NFC");
 
   return (
     <main className="screen screen--exercise fade-in">
@@ -165,16 +211,79 @@ export function TypingExercise({
         )}
 
         {mode === "scramble" && (
-          <p className="hint-sentence">
-            <span className="hint-label">Βάλε τα γράμματα στη σωστή σειρά</span>
+          <div className="hint-sentence scramble-prompt">
+            <span className="hint-label">Πάτα τα γράμματα στη σωστή σειρά</span>
+            {current.definition?.trim() && (
+              <p className="scramble-clue">
+                <span className="lexicon-label">Ορισμός:</span> {current.definition}
+              </p>
+            )}
+            {sentence.includes("___") && (
+              <p className="scramble-clue scramble-clue--sentence">
+                <span className="lexicon-label">Πρόταση:</span>{" "}
+                {sentence.split("___").map((part, i, parts) => (
+                  <Fragment key={i}>
+                    {part}
+                    {i < parts.length - 1 && <span className="hint-blank">___</span>}
+                  </Fragment>
+                ))}
+              </p>
+            )}
             <span className="scramble-letters" aria-label="Ανακατεμένα γράμματα">
-              {[...scrambled].map((ch, i) => (
-                <span key={`${ch}-${i}`} className="scramble-tile">
-                  {ch}
-                </span>
-              ))}
+              {scrambleTiles.map((ch, i) => {
+                const used = scrambleUsed[i] === true;
+                return (
+                  <button
+                    key={`${ch}-${i}`}
+                    type="button"
+                    className={`scramble-tile${used ? " scramble-tile--used" : ""}`}
+                    disabled={used || showingCorrectFeedback}
+                    aria-label={used ? `Χρησιμοποιήθηκε το ${ch}` : `Πρόσθεσε το ${ch}`}
+                    onClick={() => {
+                      if (used || showingCorrectFeedback) return;
+                      setInput((prev) => prev + ch);
+                      if (phase === "feedback") {
+                        setPhase("writing");
+                        setResult(null);
+                      }
+                    }}
+                  >
+                    {ch}
+                  </button>
+                );
+              })}
             </span>
-          </p>
+            <span className="scramble-slots" aria-label="Η λέξη που σχηματίζεις" aria-live="polite">
+              {scrambleSlots.map((_, i) => {
+                const typed = [...input.normalize("NFC")];
+                const ch = typed[i];
+                return (
+                  <span
+                    key={i}
+                    className={`scramble-slot${ch ? " scramble-slot--filled" : ""}`}
+                  >
+                    {ch ?? ""}
+                  </span>
+                );
+              })}
+            </span>
+            {canUseScrambleHelp && (
+              <button
+                type="button"
+                className="btn-text scramble-help-btn"
+                onClick={() => {
+                  setInput((prev) => nextScrambleHelp(current.word, prev));
+                  setHelpCount((n) => n + 1);
+                  if (phase === "feedback") {
+                    setPhase("writing");
+                    setResult(null);
+                  }
+                }}
+              >
+                {helpCount === 0 ? "Χρειάζομαι βοήθεια" : "Ακόμα μία βοήθεια"}
+              </button>
+            )}
+          </div>
         )}
 
         {mode === "morphemes" && (
@@ -184,7 +293,6 @@ export function TypingExercise({
               <strong>{current.morphemes.root || "…"}</strong>
               <span className="hint-blank">___</span>
             </span>
-            <span className="hint-context">λέξη: {current.word}</span>
           </p>
         )}
 
@@ -229,7 +337,7 @@ export function TypingExercise({
               onSkip(phase === "rewrite" || (phase === "feedback" && result !== null && !result.isCorrect))
             }
           >
-            Παράλειψη
+            Επόμενη άσκηση
           </button>
         )}
       </section>

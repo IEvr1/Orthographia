@@ -1,0 +1,10 @@
+﻿python :   File "<string>", line 29
+At C:\Users\User\AppData\Local\Temp\ps-script-44f49213-8b2b-4e2d-9202-3d28f52eee9a.ps1:89 char:1
++ python -c "
++ ~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (  File "<string>", line 29:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+    print(f'grade4 rows with def: {sum(1 for r in rows if (r.get(" definition\)
+                                                                 ^
+SyntaxError: unterminated string literal (detected at line 29)
