@@ -14,7 +14,6 @@ function childAvatarLetter(name?: string | null): string {
 }
 
 interface HomeScreenProps {
-  onStart: () => void;
   onOpenSettings: (options?: { addChild?: boolean }) => void;
   onOpenPricing: () => void;
   onOpenLexicon: () => void;
@@ -47,7 +46,6 @@ interface HomeScreenProps {
 }
 
 export function HomeScreen({
-  onStart,
   onOpenSettings,
   onOpenPricing,
   onOpenLexicon,
@@ -81,7 +79,6 @@ export function HomeScreen({
   const needsProfile = showFamilyProfiles && !activeChildName;
   const authEnabled = isClerkEnabled();
   const needsSignIn = !canStartPractice(isSignedIn, authEnabled);
-  const startBlocked = needsPurchase || needsProfile || subscriptionLoading || needsSignIn;
 
   const planStatusLabel = trialActive
     ? trialDaysLeft === 1
@@ -236,34 +233,24 @@ export function HomeScreen({
         </div>
       </div>
 
-      {needsSignIn ? (
-        <SignInButton mode="modal">
-          <button type="button" className="btn btn-primary btn-start btn-start--pulse">
-            Σύνδεση για να ξεκινήσεις
-          </button>
-        </SignInButton>
-      ) : needsPurchase ? (
+      {needsPurchase && (
         <button type="button" className="btn btn-primary btn-start btn-start--pulse" onClick={onOpenPricing}>
           {trialExpired ? "Αγόρασε για να συνεχίσεις" : "Αγορά συνδρομής"}
         </button>
-      ) : (
+      )}
+      {needsProfile && (
         <button
           type="button"
           className="btn btn-primary btn-start btn-start--pulse"
-          disabled={startBlocked && !needsProfile}
-          onClick={() => {
-            if (needsProfile) {
-              onOpenSettings({ addChild: true });
-              return;
-            }
-            onStart();
-          }}
+          onClick={() => onOpenSettings({ addChild: true })}
         >
-          {needsProfile ? "Πρόσθεσε προφίλ παιδιού" : "Ξεκινάμε"}
+          Πρόσθεσε προφίλ παιδιού
         </button>
       )}
-      {practiceHomeHint && !needsSignIn && !needsPurchase && !needsProfile && (
-        <p className="hint-text practice-home-hint">{practiceHomeHint}</p>
+      {!needsSignIn && !needsPurchase && !needsProfile && (
+        <p className="hint-text practice-home-hint">
+          {practiceHomeHint ?? "Η εξάσκηση ξεκινά αυτόματα όταν επιλέξεις τάξη και τρόπο."}
+        </p>
       )}
       {needsPurchase && (
         <p className="hint-text">

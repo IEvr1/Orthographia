@@ -61,6 +61,7 @@ import { DrillExercise } from "./components/DrillExercise";
 import { LexiconScreen } from "./components/LexiconScreen";
 import { ParentReportScreen } from "./components/ParentReportScreen";
 import { WordListsScreen } from "./components/WordListsScreen";
+import { RegistrationPromptModal } from "./components/RegistrationPromptModal";
 import {
   getActiveList,
   loadWordLists,
@@ -128,6 +129,8 @@ function AppShell({
   const [progressVersion, setProgressVersion] = useState(0);
   const [listsVersion, setListsVersion] = useState(0);
   const [rewardGoal, setRewardGoalState] = useState(() => getRewardGoal());
+  const [registrationDismissed, setRegistrationDismissed] = useState(false);
+  const lastAutoStartKeyRef = useRef<string | null>(null);
 
   const tier = subscription.tier;
   const canManageProfiles = Boolean(isSignedIn && getToken && subscription.maxProfiles >= 1);
@@ -475,6 +478,48 @@ function AppShell({
     isSignedIn,
   ]);
 
+  const canAutoStartPractice = useMemo(() => {
+    if (screen !== "home") return false;
+    if (!contentReady || subscription.loading) return false;
+    if (!canStartPractice(isSignedIn, isClerkEnabled())) return false;
+    if (showFamilyProfiles && !activeProfileId) return false;
+    if (!canPractice(isSignedIn, isClerkEnabled(), tier, trialActive)) return false;
+    if (!canAccessGrade(tier, selectedGrade, trialActive)) return false;
+    if (!canAccessMode(tier, gameMode, trialActive)) return false;
+    return modeAvailableForGrade(gameMode, gradeWords, families, drills, selectedGrade);
+  }, [
+    screen,
+    contentReady,
+    subscription.loading,
+    isSignedIn,
+    showFamilyProfiles,
+    activeProfileId,
+    tier,
+    trialActive,
+    selectedGrade,
+    gameMode,
+    gradeWords,
+    families,
+    drills,
+  ]);
+
+  useEffect(() => {
+    if (!isSignedIn) {
+      lastAutoStartKeyRef.current = null;
+    }
+  }, [isSignedIn]);
+
+  useEffect(() => {
+    if (!canAutoStartPractice) return;
+    const key = `${activeProfileId ?? "solo"}:${selectedGrade}:${gameMode}`;
+    if (lastAutoStartKeyRef.current === key) return;
+    lastAutoStartKeyRef.current = key;
+    startSession();
+  }, [canAutoStartPractice, activeProfileId, selectedGrade, gameMode, startSession]);
+
+  const showRegistrationModal =
+    isClerkEnabled() && !isSignedIn && !registrationDismissed && consentGiven && contentReady;
+
   const startMistakeSession = useCallback(
     (category: ErrorCategory | null = null) => {
       setPaywallMessage(null);
@@ -599,9 +644,11 @@ function AppShell({
 
   return (
     <div className="app">
+      {showRegistrationModal && (
+        <RegistrationPromptModal onDismiss={() => setRegistrationDismissed(true)} />
+      )}
       {screen === "home" && (
         <HomeScreen
-          onStart={startSession}
           onOpenSettings={openSettings}
           onOpenPricing={() => setScreen("pricing")}
           onOpenLexicon={() => setScreen("lexicon")}

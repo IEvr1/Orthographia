@@ -1660,6 +1660,26 @@ body {
   align-items: center;
 }
 
+.registration-modal__card {
+  text-align: center;
+  gap: 0.85rem;
+}
+
+.registration-modal__text {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: var(--ink-soft);
+}
+
+.registration-modal__cta {
+  width: 100%;
+}
+
+.registration-modal__later {
+  margin: 0 auto;
+}
+
 .btn-text--danger {
   color: var(--coral-dark);
 }
