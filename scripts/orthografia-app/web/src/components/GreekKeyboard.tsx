@@ -6,6 +6,8 @@ interface GreekKeyboardProps {
   onCheck: () => void;
   disabled?: boolean;
   checkLabel?: string;
+  /** Hide letter keys (e.g. after check) while keeping the answer field visible. */
+  collapsed?: boolean;
 }
 
 /** Standard Greek QWERTY layout (phone / laptop), not alphabetical. */
@@ -35,10 +37,17 @@ export function GreekKeyboard({
   onCheck,
   disabled = false,
   checkLabel = "Έλεγξε",
+  collapsed = false,
 }: GreekKeyboardProps) {
   const [caps, setCaps] = useState(false);
+  const inputRef = useRef<HTMLInputElement>(null);
   const longPressTimer = useRef<number | null>(null);
   const longPressKey = useRef<string | null>(null);
+
+  const handleCheck = () => {
+    inputRef.current?.blur();
+    onCheck();
+  };
 
   const append = useCallback(
     (ch: string) => {
@@ -89,17 +98,19 @@ export function GreekKeyboard({
   };
 
   return (
-    <div className="keyboard">
+    <div className={`keyboard${collapsed ? " keyboard--collapsed" : ""}`}>
       <label className="input-label" htmlFor="word-input">
         Γράψε εδώ
       </label>
       <input
+        ref={inputRef}
         id="word-input"
         className="word-input"
         type="text"
         value={value}
         onChange={(e) => onChange(e.target.value)}
         disabled={disabled}
+        readOnly={collapsed}
         autoComplete="off"
         autoCorrect="off"
         spellCheck={false}
@@ -107,6 +118,7 @@ export function GreekKeyboard({
         aria-label="Γράψε τη λέξη"
       />
 
+      {!collapsed && (
       <div className="keyboard-rows">
         {ROWS.map((row, ri) => (
           <div className="keyboard-row" key={ri}>
@@ -153,12 +165,13 @@ export function GreekKeyboard({
             type="button"
             className="key key--check"
             disabled={disabled || !value.trim()}
-            onClick={onCheck}
+            onClick={handleCheck}
           >
             {checkLabel}
           </button>
         </div>
       </div>
+      )}
     </div>
   );
 }
