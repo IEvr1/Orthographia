@@ -1,4 +1,4 @@
-import { Fragment, useEffect, useMemo, useState } from "react";
+import { Fragment, useEffect, useMemo, useRef, useState } from "react";
 import type { FamiliesPayload, GradeResult, SessionSummary, WordEntry } from "../types";
 import { resolveFamily } from "../lib/families";
 import { gradeAnswer } from "../lib/grader";
@@ -82,6 +82,7 @@ export function TypingExercise({
   const [phase, setPhase] = useState<Phase>("writing");
   const [result, setResult] = useState<GradeResult | null>(null);
   const [helpCount, setHelpCount] = useState(0);
+  const feedbackRef = useRef<HTMLDivElement>(null);
 
   const misspelling = useMemo(
     () => (mode === "error-fix" ? pickMisspelling(current.word) : ""),
@@ -123,6 +124,13 @@ export function TypingExercise({
     setResult(null);
     setHelpCount(0);
   }, [index, current.id]);
+
+  useEffect(() => {
+    if (phase !== "feedback" || !result) return;
+    requestAnimationFrame(() => {
+      feedbackRef.current?.scrollIntoView({ behavior: "smooth", block: "nearest" });
+    });
+  }, [phase, result]);
 
   const handleCheck = () => {
     const entryForGrade =
@@ -314,11 +322,12 @@ export function TypingExercise({
           onChange={setInput}
           onCheck={handleCheck}
           disabled={showingCorrectFeedback}
+          collapsed={phase === "feedback"}
           checkLabel={phase === "rewrite" ? "Έλεγξε ξανά" : "Έλεγξε"}
         />
 
         {result && phase === "feedback" && (
-          <>
+          <div ref={feedbackRef} className="exercise-feedback">
             <FeedbackPanel
               result={result}
               correctWord={targetWord}
@@ -339,7 +348,7 @@ export function TypingExercise({
                 Γράψε τη σωστή
               </button>
             )}
-          </>
+          </div>
         )}
 
         {canSkip && (

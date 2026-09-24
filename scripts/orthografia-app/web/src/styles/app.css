@@ -696,6 +696,18 @@ body {
   gap: 0.75rem;
 }
 
+.keyboard--collapsed .word-input {
+  border-color: var(--border);
+  background: var(--sand);
+}
+
+.exercise-feedback {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  scroll-margin-bottom: 1.5rem;
+}
+
 .input-label {
   font-size: 0.9rem;
   color: var(--ink-soft);
