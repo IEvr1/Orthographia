@@ -1,3 +1,5 @@
+import { ConfettiBurst } from "./ConfettiBurst";
+
 interface CelebrationOverlayProps {
   goal: number;
   onContinue: () => void;
@@ -6,6 +8,7 @@ interface CelebrationOverlayProps {
 export function CelebrationOverlay({ goal, onContinue }: CelebrationOverlayProps) {
   return (
     <div className="modal-overlay celebration-overlay" role="dialog" aria-modal="true" aria-labelledby="celebration-title">
+      <ConfettiBurst />
       <div className="celebration-card bounce-in">
         <div className="celebration-burst" aria-hidden="true">
           <span>✦</span>

@@ -1,5 +1,5 @@
 import { SignInButton, SignedIn, SignedOut, UserButton } from "@clerk/clerk-react";
-import type { FamiliesPayload, GameMode, WordEntry } from "../types";
+import type { DrillItem, FamiliesPayload, GameMode, WordEntry } from "../types";
 import type { PlanTier } from "../lib/access";
 import { canAccessGrade, canAccessMode, canStartPractice, isPaidTier } from "../lib/access";
 import { GRADE_LABELS, OFFERED_GRADES } from "../lib/grades";
@@ -19,6 +19,9 @@ interface HomeScreenProps {
   onOpenPricing: () => void;
   onOpenLexicon: () => void;
   onOpenReport: () => void;
+  onOpenLists?: () => void;
+  onPracticeActiveList?: () => void;
+  activeListLabel?: string | null;
   activeChildName?: string | null;
   selectedGrade: number;
   availableGrades: Set<number>;
@@ -26,6 +29,7 @@ interface HomeScreenProps {
   gameMode: GameMode;
   onModeChange: (mode: GameMode) => void;
   gradeWords: WordEntry[];
+  drills?: DrillItem[];
   families: FamiliesPayload;
   tier: PlanTier;
   subscriptionLoading: boolean;
@@ -48,6 +52,9 @@ export function HomeScreen({
   onOpenPricing,
   onOpenLexicon,
   onOpenReport,
+  onOpenLists,
+  onPracticeActiveList,
+  activeListLabel = null,
   activeChildName,
   selectedGrade,
   availableGrades,
@@ -55,6 +62,7 @@ export function HomeScreen({
   gameMode,
   onModeChange,
   gradeWords,
+  drills = [],
   families,
   tier,
   subscriptionLoading,
@@ -194,14 +202,20 @@ export function HomeScreen({
         <div className="mode-options mode-options--many">
           {MODE_ORDER.map((mode) => {
             const modeAllowed = canAccessMode(tier, mode, trialActive);
-            const contentOk = modeAvailableForGrade(mode, gradeWords, families);
+            const contentOk = modeAvailableForGrade(
+              mode,
+              gradeWords,
+              families,
+              drills,
+              selectedGrade,
+            );
             const allowed = modeAllowed && contentOk && !needsSignIn;
             const lockReason = needsSignIn
               ? "Σύνδεση για εξάσκηση"
               : needsPurchase || !modeAllowed
                 ? "Απαιτείται συνδρομή"
                 : !contentOk
-                  ? "Όχι αρκετές λέξεις σε αυτή την τάξη"
+                  ? "Όχι αρκετό υλικό σε αυτή την τάξη"
                   : undefined;
             return (
               <button
@@ -258,17 +272,40 @@ export function HomeScreen({
       )}
 
       {!needsSignIn && !needsPurchase && (
-        <button type="button" className="btn btn-secondary btn-start" onClick={onOpenLexicon}>
-          Λεξικό μαθητή
-        </button>
+        <>
+          {activeListLabel && onPracticeActiveList && (
+            <button
+              type="button"
+              className="btn btn-secondary btn-start"
+              onClick={onPracticeActiveList}
+            >
+              Λίστα: {activeListLabel}
+            </button>
+          )}
+          <button type="button" className="btn btn-secondary btn-start" onClick={onOpenLexicon}>
+            Λεξικό μαθητή
+          </button>
+          {onOpenLists && (
+            <button type="button" className="btn btn-secondary btn-start" onClick={onOpenLists}>
+              Λίστες εξάσκησης
+            </button>
+          )}
+        </>
       )}
 
       <footer className="legal-footer">
-        <a href="/privacy">Απορρήτο</a>
-        <span>·</span>
-        <a href="/terms">Όροι</a>
-        <span>·</span>
-        <a href="/contact">Επικοινωνία</a>
+        <div className="legal-footer__links">
+          <button type="button" className="legal-footer__btn" onClick={onOpenPricing}>
+            Κόστος Πλάνου
+          </button>
+          <span>·</span>
+          <a href="/privacy">Απορρήτο</a>
+          <span>·</span>
+          <a href="/terms">Όροι</a>
+          <span>·</span>
+          <a href="/contact">Επικοινωνία</a>
+        </div>
+        <p className="legal-footer__note">🎁 Οι πρώτες 5 ημέρες δωρεάν</p>
       </footer>
     </main>
   );

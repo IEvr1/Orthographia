@@ -66,7 +66,51 @@ export type GameMode =
   | "family"
   | "morphemes"
   | "scramble"
-  | "matching";
+  | "matching"
+  | "endings"
+  | "compound"
+  | "classify";
+
+/** Drill interaction kinds (workbook-style). */
+export type DrillKind =
+  | "ending"
+  | "binary"
+  | "infix"
+  | "article"
+  | "cloze"
+  | "choice"
+  | "homophone"
+  | "compound"
+  | "classify";
+
+export interface DrillItem {
+  id: string;
+  kind: DrillKind;
+  /** Grades this drill is suitable for (2–6). */
+  grades: number[];
+  ruleId: string;
+  /** Short instruction shown above the prompt. */
+  instruction: string;
+  /**
+   * Prompt with `____` for the gap (ending/infix/cloze),
+   * or full display text for binary/choice.
+   */
+  prompt: string;
+  /** Optional article or left side (e.g. η / πολύ). */
+  prefix?: string;
+  /** Optional right side for compounds (e.g. γωνία). */
+  suffix?: string;
+  options: string[];
+  answer: string;
+  feedback: string;
+  /** Bucket labels for classify drills (same as options). */
+  buckets?: string[];
+}
+
+export interface DrillsPayload {
+  version: number;
+  drills: DrillItem[];
+}
 
 export interface WordsPayload {
   version: number;
@@ -128,7 +172,8 @@ export type AppScreen =
   | "summary"
   | "pricing"
   | "lexicon"
-  | "report";
+  | "report"
+  | "lists";
 
 export interface DeclensionTables {
   tables: Record<string, string[]>;

@@ -278,3 +278,60 @@ export function gradesWithWords(words: WordEntry[]): Set<number> {
   for (const w of words) grades.add(w.grade);
   return grades;
 }
+
+/** Workbook-style pages for tonos (and similar pick modes). */
+export const WORD_BATCH_SIZE = 8;
+export const WORD_BATCHES_PER_SESSION = 2;
+
+export interface WordBatchPlan {
+  words: WordEntry[];
+  batches: WordEntry[][];
+  banner: string | null;
+}
+
+/** Group words into 6–8 item pages (due/unseen first). */
+export function planWordBatches(
+  pool: WordEntry[],
+  store: ProgressStore,
+  batchSize = WORD_BATCH_SIZE,
+  maxBatches = WORD_BATCHES_PER_SESSION,
+): WordBatchPlan {
+  if (pool.length === 0) {
+    return { words: [], batches: [], banner: null };
+  }
+
+  const due = shuffle(pool.filter((w) => isDueReviewWord(store, w.id)));
+  const unseen = shuffle(pool.filter((w) => isUnseenWord(store, w.id)));
+  const rest = shuffle(
+    pool.filter(
+      (w) => !due.some((x) => x.id === w.id) && !unseen.some((x) => x.id === w.id),
+    ),
+  );
+  const ordered = [...due, ...unseen, ...rest];
+
+  const batches: WordEntry[][] = [];
+  let offset = 0;
+  const minBatch = Math.min(6, batchSize);
+  while (batches.length < maxBatches && offset < ordered.length) {
+    const take = ordered.slice(offset, offset + batchSize);
+    if (take.length < minBatch && batches.length > 0) break;
+    if (take.length === 0) break;
+    batches.push(take);
+    offset += take.length;
+  }
+
+  if (batches.length === 0 && ordered.length > 0) {
+    batches.push(ordered.slice(0, Math.min(batchSize, ordered.length)));
+  }
+
+  const banner =
+    due.length === 0 && unseen.length === 0
+      ? "Επανάληψη τονισμού — όλα ενημερωμένα!"
+      : batches.length > 1
+        ? `${batches.length} ομάδες · ${batches[0]?.length ?? 0} λέξεις η καθεμία`
+        : batches[0]
+          ? `Ομάδα · ${batches[0].length} λέξεις`
+          : null;
+
+  return { words: batches.flat(), batches, banner };
+}

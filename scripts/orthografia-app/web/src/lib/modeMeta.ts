@@ -1,6 +1,7 @@
-import type { FamiliesPayload, GameMode, WordEntry } from "../types";
+import type { FamiliesPayload, GameMode, WordEntry, DrillItem } from "../types";
 import { wordsWithFamily } from "./families";
 import { stressIndex } from "./normalize";
+import { drillsForGrade, drillsForMode, modeUsesDrills } from "./drills";
 
 export const MODE_LABELS: Record<GameMode, string> = {
   sentence: "Πρόταση",
@@ -12,11 +13,17 @@ export const MODE_LABELS: Record<GameMode, string> = {
   morphemes: "Μορφήματα",
   scramble: "Ανακάτεμα",
   matching: "Ταίριασμα",
+  endings: "Καταλήξεις",
+  compound: "Σύνθεση",
+  classify: "Ομάδες",
 };
 
 export const MODE_ORDER: GameMode[] = [
   "sentence",
   "choice",
+  "endings",
+  "compound",
+  "classify",
   "dictation",
   "error-fix",
   "tonos",
@@ -34,6 +41,7 @@ export function filterWordsForMode(
   mode: GameMode,
   families: FamiliesPayload | null,
 ): WordEntry[] {
+  if (modeUsesDrills(mode)) return [];
   switch (mode) {
     case "choice":
       return words.filter((w) => w.hintSentence.includes("___"));
@@ -58,7 +66,14 @@ export function modeAvailableForGrade(
   mode: GameMode,
   gradeWords: WordEntry[],
   families: FamiliesPayload | null,
+  drills: DrillItem[] = [],
+  grade?: number,
 ): boolean {
+  if (modeUsesDrills(mode)) {
+    const g = grade ?? gradeWords[0]?.grade;
+    if (g == null) return drillsForMode(drills, mode).length >= 1;
+    return drillsForMode(drillsForGrade(drills, g), mode).length >= 1;
+  }
   const pool = filterWordsForMode(gradeWords, mode, families);
   if (mode === "matching" || mode === "family") return pool.length >= 2;
   return pool.length >= 1;

@@ -32,6 +32,14 @@ await sql`
   ALTER TABLE users
   ADD COLUMN IF NOT EXISTS trial_started_at TIMESTAMPTZ
 `;
+await sql`
+  ALTER TABLE users
+  ADD COLUMN IF NOT EXISTS weekly_email_opt_in BOOLEAN NOT NULL DEFAULT FALSE
+`;
+await sql`
+  ALTER TABLE users
+  ADD COLUMN IF NOT EXISTS weekly_email_last_sent_at TIMESTAMPTZ
+`;
 
 await sql`
   CREATE TABLE IF NOT EXISTS subscriptions (
@@ -68,4 +76,4 @@ await sql`
   )
 `;
 
-console.log("Database schema ready (progress, subscriptions, consents, trial)");
+console.log("Database schema ready (progress, subscriptions, consents, trial, weekly email opt-in)");

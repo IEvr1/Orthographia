@@ -2,6 +2,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import type { FamiliesPayload, SessionSummary, WordEntry } from "../types";
 import { useExerciseFlow } from "../lib/useExerciseFlow";
 import { CelebrationOverlay } from "./CelebrationOverlay";
+import { SessionProgress } from "./SessionProgress";
 
 interface MatchingExerciseProps {
   words: WordEntry[];
@@ -134,9 +135,11 @@ export function MatchingExercise({
         <button type="button" className="btn-text" onClick={onQuit}>
           ← Πίσω
         </button>
-        <p className="progress-bar-label">
-          Ταίριασμα {index + 1} από {flatForFlow.length}
-        </p>
+        <SessionProgress
+          current={index + 1}
+          total={flatForFlow.length}
+          label={`Ταίριασμα ${index + 1} από ${flatForFlow.length}`}
+        />
         {sessionBanner && index === 0 && (
           <p className="session-banner" role="status">
             {sessionBanner}

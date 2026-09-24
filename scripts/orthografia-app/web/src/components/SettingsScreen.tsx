@@ -2,6 +2,7 @@ import { SignInButton, SignedIn, SignedOut, UserButton } from "@clerk/clerk-reac
 import { useEffect, useState } from "react";
 import type { PlanTier } from "../lib/access";
 import { canUseCloudSync, tierLabel } from "../lib/access";
+import { fetchPreferences, setWeeklyEmailOptIn } from "../lib/preferences";
 import {
   DEFAULT_REWARD_GOAL,
   MAX_REWARD_GOAL,
@@ -44,6 +45,8 @@ interface SettingsScreenProps {
   autoOpenAddChild?: boolean;
   rewardGoal: number;
   onRewardGoalChange: (goal: number) => void;
+  getToken?: () => Promise<string | null>;
+  isSignedIn?: boolean;
   familyProfiles?: {
     profiles: ChildProfile[];
     maxProfiles: number;
@@ -64,16 +67,36 @@ export function SettingsScreen({
   autoOpenAddChild = false,
   rewardGoal,
   onRewardGoalChange,
+  getToken,
+  isSignedIn = false,
   familyProfiles,
 }: SettingsScreenProps) {
   const showCloudSync = syncEnabled && onSyncProgress && canUseCloudSync(tier);
   const showFamilyProfiles = Boolean(familyProfiles);
   const [goalDraft, setGoalDraft] = useState(String(rewardGoal));
   const [goalSaved, setGoalSaved] = useState(false);
+  const [weeklyOptIn, setWeeklyOptIn] = useState(false);
+  const [weeklyLoading, setWeeklyLoading] = useState(false);
+  const [weeklyMsg, setWeeklyMsg] = useState<string | null>(null);
 
   useEffect(() => {
     setGoalDraft(String(rewardGoal));
   }, [rewardGoal]);
+
+  useEffect(() => {
+    if (!isSignedIn || !getToken) {
+      setWeeklyOptIn(false);
+      return;
+    }
+    let cancelled = false;
+    void fetchPreferences(getToken).then((prefs) => {
+      if (cancelled || !prefs) return;
+      setWeeklyOptIn(prefs.weeklyEmailOptIn);
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, [isSignedIn, getToken]);
 
   const saveGoal = () => {
     const parsed = Number.parseInt(goalDraft, 10);
@@ -83,6 +106,24 @@ export function SettingsScreen({
     setGoalDraft(String(saved));
     setGoalSaved(true);
     window.setTimeout(() => setGoalSaved(false), 1600);
+  };
+
+  const toggleWeeklyEmail = async (next: boolean) => {
+    if (!getToken) return;
+    setWeeklyLoading(true);
+    setWeeklyMsg(null);
+    const ok = await setWeeklyEmailOptIn(getToken, next);
+    setWeeklyLoading(false);
+    if (ok) {
+      setWeeklyOptIn(next);
+      setWeeklyMsg(
+        next
+          ? "Ενεργό — θα λαμβάνεις σύνοψη περίπου μία φορά την εβδομάδα."
+          : "Απενεργοποιήθηκε — δεν θα στέλνουμε email.",
+      );
+    } else {
+      setWeeklyMsg("Δεν αποθηκεύτηκε. Δοκίμασε ξανά.");
+    }
   };
 
   return (
@@ -154,6 +195,26 @@ export function SettingsScreen({
         </div>
       </section>
 
+      {isSignedIn && getToken && (
+        <section className="settings-section">
+          <p className="section-label section-label--strong">Εβδομαδιαία σύνοψη (email)</p>
+          <p className="hint-text">
+            Προαιρετικό. Από προεπιλογή <strong>κλειστό</strong> — δεν στέλνουμε email αν δεν το
+            ενεργοποιήσεις εσύ.
+          </p>
+          <label className="settings-toggle">
+            <input
+              type="checkbox"
+              checked={weeklyOptIn}
+              disabled={weeklyLoading}
+              onChange={(e) => void toggleWeeklyEmail(e.target.checked)}
+            />
+            <span>Να λαμβάνω εβδομαδιαία σύνοψη προόδου στο email του λογαριασμού</span>
+          </label>
+          {weeklyMsg && <p className="hint-text settings-saved">{weeklyMsg}</p>}
+        </section>
+      )}
+
       <section className="settings-section">
         <p className="section-label">Δεδομένα</p>
         <div className="settings-actions">
@@ -176,7 +237,11 @@ export function SettingsScreen({
           <p className="hint-text">
             Μετά τη δοκιμή 5 ημερών η εξάσκηση συνεχίζεται μόνο με συνδρομή.
           </p>
-          <button type="button" className="btn btn-secondary btn-xl settings-upgrade" onClick={onOpenPricing}>
+          <button
+            type="button"
+            className="btn btn-secondary btn-xl settings-upgrade"
+            onClick={onOpenPricing}
+          >
             Αγορά συνδρομής
           </button>
         </section>

@@ -73,9 +73,11 @@ export function TermsPage() {
         </section>
 
         <footer className="legal-footer">
-          <a href="/privacy">Απορρήτο</a>
-          <span>·</span>
-          <a href="/contact">Επικοινωνία</a>
+          <div className="legal-footer__links">
+            <a href="/privacy">Απορρήτο</a>
+            <span>·</span>
+            <a href="/contact">Επικοινωνία</a>
+          </div>
         </footer>
       </div>
     </main>

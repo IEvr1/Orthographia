@@ -30,7 +30,7 @@ FAMILIES_SRC = LEXIKA_DIR / "families.json"
 RULES_SRC = LEXIKA_DIR / "rules_snippets.json"
 
 # Caps after canvas review (ABC cleaned · DE/ST curated)
-CAPS = {2: 180, 3: 180, 4: 100, 5: 100, 6: 200}
+CAPS = {2: 500, 3: 450, 4: 250, 5: 200, 6: 200}  # raised for mathima-orthografias
 
 
 def load_lexika_rows(input_dir: Path = LEXIKA_DIR) -> list[dict[str, Any]]:
@@ -38,7 +38,8 @@ def load_lexika_rows(input_dir: Path = LEXIKA_DIR) -> list[dict[str, Any]]:
     spelling_fixes = load_spelling_fixes()
     if not input_dir.is_dir():
         return rows
-    for path in sorted(input_dir.glob("grade*.csv")):
+    paths = sorted(input_dir.glob("grade*.csv")) + sorted(input_dir.glob("mathima_g*.csv"))
+    for path in paths:
         with path.open(encoding="utf-8-sig", newline="") as f:
             for raw in csv.DictReader(f):
                 word = apply_spelling_fix((raw.get("word") or "").strip(), spelling_fixes)

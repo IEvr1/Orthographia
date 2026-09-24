@@ -136,9 +136,11 @@ export function ContactPage() {
         </form>
 
         <footer className="legal-footer">
-          <a href="/privacy">Απορρήτο</a>
-          <span>·</span>
-          <a href="/terms">Όροι</a>
+          <div className="legal-footer__links">
+            <a href="/privacy">Απορρήτο</a>
+            <span>·</span>
+            <a href="/terms">Όροι</a>
+          </div>
         </footer>
       </div>
     </main>

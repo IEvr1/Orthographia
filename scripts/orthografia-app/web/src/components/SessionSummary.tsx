@@ -1,4 +1,5 @@
 import type { SessionSummary as Summary } from "../types";
+import { ConfettiBurst } from "./ConfettiBurst";
 
 interface SessionSummaryProps {
   summary: Summary;
@@ -6,8 +7,11 @@ interface SessionSummaryProps {
 }
 
 export function SessionSummary({ summary, onHome }: SessionSummaryProps) {
+  const celebrate = summary.correct >= Math.max(1, summary.total - 2);
+
   return (
     <main className="screen screen--summary fade-in">
+      {celebrate && <ConfettiBurst />}
       <div className="summary-card bounce-in">
         <p className="brand">Ορθογραφία</p>
         <h1 className="summary-title">Τέλος αποστολής!</h1>
@@ -26,7 +30,7 @@ export function SessionSummary({ summary, onHome }: SessionSummaryProps) {
           </li>
         </ul>
         <p className="summary-message">
-          {summary.correct >= summary.total - 2
+          {celebrate
             ? "Πολύ καλά! Συνέχισε έτσι!"
             : "Κάθε προσπάθεια σε κάνει καλύτερο. Ξαναδοκίμασε αύριο!"}
         </p>

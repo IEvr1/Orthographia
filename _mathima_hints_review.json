@@ -1,0 +1,4192 @@
+[
+  {
+    "word": "άγαλμα",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "agalma.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0159"
+  },
+  {
+    "word": "άσχημος",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "aschimos.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0160"
+  },
+  {
+    "word": "έκπληξη",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "ekplixi.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0161"
+  },
+  {
+    "word": "ένατη",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "enati.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0162"
+  },
+  {
+    "word": "έπιπλο",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "epiplo.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0163"
+  },
+  {
+    "word": "έρημο",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "erimo.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0164"
+  },
+  {
+    "word": "έτος",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "etos.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0165"
+  },
+  {
+    "word": "αγάπη",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "agapi.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0166"
+  },
+  {
+    "word": "αγόρι",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "agori.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0167"
+  },
+  {
+    "word": "αλλαγή",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "allagi.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0168"
+  },
+  {
+    "word": "αμβλεία",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "amvleia.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0169"
+  },
+  {
+    "word": "ανθίζω",
+    "grade": 2,
+    "hint": "Στην πρόταση γράφουμε το ρήμα ___.",
+    "generic": true,
+    "audio": "anthizo.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0170"
+  },
+  {
+    "word": "απαντώ",
+    "grade": 2,
+    "hint": "Στην πρόταση γράφουμε το ρήμα ___.",
+    "generic": true,
+    "audio": "apanto.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0171"
+  },
+  {
+    "word": "απλώνω",
+    "grade": 2,
+    "hint": "Στην πρόταση γράφουμε το ρήμα ___.",
+    "generic": true,
+    "audio": "aplono.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0172"
+  },
+  {
+    "word": "αράχνη",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "arachni.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0173"
+  },
+  {
+    "word": "αρχηγός",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "archigos.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0174"
+  },
+  {
+    "word": "αυγό",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "aygo.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0175"
+  },
+  {
+    "word": "βάμμα",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "vamma.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0176"
+  },
+  {
+    "word": "βάφω",
+    "grade": 2,
+    "hint": "Στην πρόταση γράφουμε το ρήμα ___.",
+    "generic": true,
+    "audio": "vafo.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0177"
+  },
+  {
+    "word": "βέργα",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "verga.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0178"
+  },
+  {
+    "word": "βιβλίο",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "vivlio.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0179"
+  },
+  {
+    "word": "βιδώνω",
+    "grade": 2,
+    "hint": "Στην πρόταση γράφουμε το ρήμα ___.",
+    "generic": true,
+    "audio": "vidono.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0180"
+  },
+  {
+    "word": "βλέμμα",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "vlemma.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0181"
+  },
+  {
+    "word": "βοηθώ",
+    "grade": 2,
+    "hint": "Στην πρόταση γράφουμε το ρήμα ___.",
+    "generic": true,
+    "audio": "voitho.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0182"
+  },
+  {
+    "word": "βραδιά",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "vradia.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0183"
+  },
+  {
+    "word": "βροχή",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "vrochi.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0184"
+  },
+  {
+    "word": "γέφυρα",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "gefyra.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0185"
+  },
+  {
+    "word": "γήπεδο",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "gipedo.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0186"
+  },
+  {
+    "word": "γιατρός",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "giatros.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0187"
+  },
+  {
+    "word": "γλυκός",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "glykos.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0188"
+  },
+  {
+    "word": "γυρίζω",
+    "grade": 2,
+    "hint": "Στην πρόταση γράφουμε το ρήμα ___.",
+    "generic": true,
+    "audio": "gyrizo.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0189"
+  },
+  {
+    "word": "δάκρυ",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "dakry.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0190"
+  },
+  {
+    "word": "δέμα",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "dema.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0191"
+  },
+  {
+    "word": "δέντρο",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "dentro.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0192"
+  },
+  {
+    "word": "δίνω",
+    "grade": 2,
+    "hint": "Στην πρόταση γράφουμε το ρήμα ___.",
+    "generic": true,
+    "audio": "dino.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0193"
+  },
+  {
+    "word": "δίσεκτο",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "disekto.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0194"
+  },
+  {
+    "word": "δίστιχο",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "disticho.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0195"
+  },
+  {
+    "word": "δίτροχο",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "ditrocho.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0196"
+  },
+  {
+    "word": "δίψηφο",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "dipsifo.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0197"
+  },
+  {
+    "word": "δαγκώνω",
+    "grade": 2,
+    "hint": "Στην πρόταση γράφουμε το ρήμα ___.",
+    "generic": true,
+    "audio": "dagkono.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0198"
+  },
+  {
+    "word": "δείχνω",
+    "grade": 2,
+    "hint": "Στην πρόταση γράφουμε το ρήμα ___.",
+    "generic": true,
+    "audio": "deichno.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0199"
+  },
+  {
+    "word": "δρόμος",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "dromos.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0200"
+  },
+  {
+    "word": "δόρυ",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "dory.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0201"
+  },
+  {
+    "word": "δύναμη",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "dynami.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0202"
+  },
+  {
+    "word": "δύσβατο",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "dysvato.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0203"
+  },
+  {
+    "word": "δύσκολο",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "dyskolo.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0204"
+  },
+  {
+    "word": "δώρο",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "doro.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0205"
+  },
+  {
+    "word": "εγγόνι",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "eggoni.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0206"
+  },
+  {
+    "word": "εκδρομή",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "ekdromi.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0207"
+  },
+  {
+    "word": "εξοχή",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "exochi.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0208"
+  },
+  {
+    "word": "εποχή",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "epochi.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0209"
+  },
+  {
+    "word": "ευχή",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "eychi.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0210"
+  },
+  {
+    "word": "ζήλια",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "zilia.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0211"
+  },
+  {
+    "word": "ζητάω",
+    "grade": 2,
+    "hint": "Στην πρόταση γράφουμε το ρήμα ___.",
+    "generic": true,
+    "audio": "zitao.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0212"
+  },
+  {
+    "word": "ζητώ",
+    "grade": 2,
+    "hint": "Στην πρόταση γράφουμε το ρήμα ___.",
+    "generic": true,
+    "audio": "zito.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0213"
+  },
+  {
+    "word": "ζυγίζω",
+    "grade": 2,
+    "hint": "Στην πρόταση γράφουμε το ρήμα ___.",
+    "generic": true,
+    "audio": "zygizo.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0214"
+  },
+  {
+    "word": "ζυγώνω",
+    "grade": 2,
+    "hint": "Στην πρόταση γράφουμε το ρήμα ___.",
+    "generic": true,
+    "audio": "zygono.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0215"
+  },
+  {
+    "word": "ζυμώνω",
+    "grade": 2,
+    "hint": "Στην πρόταση γράφουμε το ρήμα ___.",
+    "generic": true,
+    "audio": "zymono.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0216"
+  },
+  {
+    "word": "ζώνη",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "zoni.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0217"
+  },
+  {
+    "word": "ζώο",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "zoo.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0218"
+  },
+  {
+    "word": "θάβω",
+    "grade": 2,
+    "hint": "Στην πρόταση γράφουμε το ρήμα ___.",
+    "generic": true,
+    "audio": "thavo.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0219"
+  },
+  {
+    "word": "θήκη",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "thiki.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0220"
+  },
+  {
+    "word": "θηλιά",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "thilia.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0221"
+  },
+  {
+    "word": "θυμός",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "thymos.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0222"
+  },
+  {
+    "word": "κάλπη",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "kalpi.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0223"
+  },
+  {
+    "word": "κάλτσα",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "kaltsa.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0224"
+  },
+  {
+    "word": "κάμπος",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "kampos.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0225"
+  },
+  {
+    "word": "καρέκλα",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "karekla.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0226"
+  },
+  {
+    "word": "καρδιά",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "kardia.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0227"
+  },
+  {
+    "word": "καρπός",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "karpos.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0228"
+  },
+  {
+    "word": "καρτέλα",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "kartela.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0229"
+  },
+  {
+    "word": "καρφί",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "karfi.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0230"
+  },
+  {
+    "word": "καρότο",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "karoto.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0231"
+  },
+  {
+    "word": "κατσίκα",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "katsika.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0232"
+  },
+  {
+    "word": "κεντώ",
+    "grade": 2,
+    "hint": "Στην πρόταση γράφουμε το ρήμα ___.",
+    "generic": true,
+    "audio": "kento.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0233"
+  },
+  {
+    "word": "κερί",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "keri.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0234"
+  },
+  {
+    "word": "κερδίζω",
+    "grade": 2,
+    "hint": "Στην πρόταση γράφουμε το ρήμα ___.",
+    "generic": true,
+    "audio": "kerdizo.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0235"
+  },
+  {
+    "word": "κεφάλι",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "kefali.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0236"
+  },
+  {
+    "word": "κινητό",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "kinito.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0237"
+  },
+  {
+    "word": "κλέφτης",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "kleftis.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0238"
+  },
+  {
+    "word": "κλειδί",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "kleidi.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0239"
+  },
+  {
+    "word": "κλειστό",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "kleisto.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0240"
+  },
+  {
+    "word": "κλωστή",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "klosti.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0241"
+  },
+  {
+    "word": "κοινός",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "koinos.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0242"
+  },
+  {
+    "word": "κοπέλα",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "kopela.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0243"
+  },
+  {
+    "word": "κορυφή",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "koryfi.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0244"
+  },
+  {
+    "word": "κρήτη",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "kriti.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0245"
+  },
+  {
+    "word": "κυκλώνω",
+    "grade": 2,
+    "hint": "Στην πρόταση γράφουμε το ρήμα ___.",
+    "generic": true,
+    "audio": "kyklono.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0246"
+  },
+  {
+    "word": "κόβω",
+    "grade": 2,
+    "hint": "Στην πρόταση γράφουμε το ρήμα ___.",
+    "generic": true,
+    "audio": "kovo.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0247"
+  },
+  {
+    "word": "κόρη",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "kori.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0248"
+  },
+  {
+    "word": "κύμα",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "kyma.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0249"
+  },
+  {
+    "word": "λάμπα",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "lampa.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0250"
+  },
+  {
+    "word": "λάσπη",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "laspi.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0251"
+  },
+  {
+    "word": "λίμνη",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "limni.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0252"
+  },
+  {
+    "word": "λαγός",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "lagos.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0253"
+  },
+  {
+    "word": "λαμπάδα",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "lampada.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0254"
+  },
+  {
+    "word": "λεκάνη",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "lekani.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0255"
+  },
+  {
+    "word": "λεφτά",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "lefta.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0256"
+  },
+  {
+    "word": "λοχίας",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "lochias.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0257"
+  },
+  {
+    "word": "λούζω",
+    "grade": 2,
+    "hint": "Στην πρόταση γράφουμε το ρήμα ___.",
+    "generic": true,
+    "audio": "louzo.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0258"
+  },
+  {
+    "word": "λύση",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "lysi.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0259"
+  },
+  {
+    "word": "μάγος",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "magos.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0260"
+  },
+  {
+    "word": "μάχη",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "machi.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0261"
+  },
+  {
+    "word": "μέλισσα",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "melissa.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0262"
+  },
+  {
+    "word": "μήλο",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "milo.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0263"
+  },
+  {
+    "word": "μαθητής",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "mathitis.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0264"
+  },
+  {
+    "word": "μανία",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "mania.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0265"
+  },
+  {
+    "word": "ματώνω",
+    "grade": 2,
+    "hint": "Στην πρόταση γράφουμε το ρήμα ___.",
+    "generic": true,
+    "audio": "matono.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0266"
+  },
+  {
+    "word": "μελετώ",
+    "grade": 2,
+    "hint": "Στην πρόταση γράφουμε το ρήμα ___.",
+    "generic": true,
+    "audio": "meleto.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0267"
+  },
+  {
+    "word": "μερίδα",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "merida.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0268"
+  },
+  {
+    "word": "μετρώ",
+    "grade": 2,
+    "hint": "Στην πρόταση γράφουμε το ρήμα ___.",
+    "generic": true,
+    "audio": "metro.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0269"
+  },
+  {
+    "word": "μηχανή",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "michani.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0270"
+  },
+  {
+    "word": "μιλάω",
+    "grade": 2,
+    "hint": "Στην πρόταση γράφουμε το ρήμα ___.",
+    "generic": true,
+    "audio": "milao.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0271"
+  },
+  {
+    "word": "μιλώ",
+    "grade": 2,
+    "hint": "Στην πρόταση γράφουμε το ρήμα ___.",
+    "generic": true,
+    "audio": "milo.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0272"
+  },
+  {
+    "word": "μισθός",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "misthos.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0273"
+  },
+  {
+    "word": "μπαλώνω",
+    "grade": 2,
+    "hint": "Στην πρόταση γράφουμε το ρήμα ___.",
+    "generic": true,
+    "audio": "mpalono.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0274"
+  },
+  {
+    "word": "μπλούζα",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "mplouza.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0275"
+  },
+  {
+    "word": "μπορεί",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "mporei.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0276"
+  },
+  {
+    "word": "μυρίζω",
+    "grade": 2,
+    "hint": "Στην πρόταση γράφουμε το ρήμα ___.",
+    "generic": true,
+    "audio": "myrizo.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0277"
+  },
+  {
+    "word": "μωρό",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "moro.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0278"
+  },
+  {
+    "word": "νικητής",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "nikitis.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0279"
+  },
+  {
+    "word": "ξαπλώνω",
+    "grade": 2,
+    "hint": "Στην πρόταση γράφουμε το ρήμα ___.",
+    "generic": true,
+    "audio": "xaplono.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0280"
+  },
+  {
+    "word": "ξεπλένω",
+    "grade": 2,
+    "hint": "Στην πρόταση γράφουμε το ρήμα ___.",
+    "generic": true,
+    "audio": "xepleno.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0281"
+  },
+  {
+    "word": "ξινός",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "xinos.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0282"
+  },
+  {
+    "word": "ξυρίζω",
+    "grade": 2,
+    "hint": "Στην πρόταση γράφουμε το ρήμα ___.",
+    "generic": true,
+    "audio": "xyrizo.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0283"
+  },
+  {
+    "word": "ξύστρα",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "xystra.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0284"
+  },
+  {
+    "word": "οδηγός",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "odigos.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0285"
+  },
+  {
+    "word": "οξύ",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "oxy.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0286"
+  },
+  {
+    "word": "πάγος",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "pagos.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0287"
+  },
+  {
+    "word": "πάπλωμα",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "paploma.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0288"
+  },
+  {
+    "word": "πέτρα",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "petra.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0289"
+  },
+  {
+    "word": "πίθηκος",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "pithikos.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0290"
+  },
+  {
+    "word": "πίνακας",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "pinakas.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0291"
+  },
+  {
+    "word": "πίνδος",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "pindos.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0292"
+  },
+  {
+    "word": "πίστη",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "pisti.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0293"
+  },
+  {
+    "word": "παίρνω",
+    "grade": 2,
+    "hint": "Στην πρόταση γράφουμε το ρήμα ___.",
+    "generic": true,
+    "audio": "pairno.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0294"
+  },
+  {
+    "word": "παγκάκι",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "pagkaki.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0295"
+  },
+  {
+    "word": "παγωτό",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "pagoto.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0296"
+  },
+  {
+    "word": "παγώνω",
+    "grade": 2,
+    "hint": "Στην πρόταση γράφουμε το ρήμα ___.",
+    "generic": true,
+    "audio": "pagono.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0297"
+  },
+  {
+    "word": "πακέτο",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "paketo.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0298"
+  },
+  {
+    "word": "πατώνω",
+    "grade": 2,
+    "hint": "Στην πρόταση γράφουμε το ρήμα ___.",
+    "generic": true,
+    "audio": "patono.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0299"
+  },
+  {
+    "word": "περνάω",
+    "grade": 2,
+    "hint": "Στην πρόταση γράφουμε το ρήμα ___.",
+    "generic": true,
+    "audio": "pernao.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0300"
+  },
+  {
+    "word": "περνώ",
+    "grade": 2,
+    "hint": "Στην πρόταση γράφουμε το ρήμα ___.",
+    "generic": true,
+    "audio": "perno.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0301"
+  },
+  {
+    "word": "πηδώ",
+    "grade": 2,
+    "hint": "Στην πρόταση γράφουμε το ρήμα ___.",
+    "generic": true,
+    "audio": "pido.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0302"
+  },
+  {
+    "word": "πλάτη",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "plati.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0303"
+  },
+  {
+    "word": "πλακάκι",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "plakaki.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0304"
+  },
+  {
+    "word": "πληγή",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "pligi.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0305"
+  },
+  {
+    "word": "πληρώνω",
+    "grade": 2,
+    "hint": "Στην πρόταση γράφουμε το ρήμα ___.",
+    "generic": true,
+    "audio": "plirono.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0306"
+  },
+  {
+    "word": "πουλί",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "pouli.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0307"
+  },
+  {
+    "word": "πουλώ",
+    "grade": 2,
+    "hint": "Στην πρόταση γράφουμε το ρήμα ___.",
+    "generic": true,
+    "audio": "poulo.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0308"
+  },
+  {
+    "word": "πρήζω",
+    "grade": 2,
+    "hint": "Στην πρόταση γράφουμε το ρήμα ___.",
+    "generic": true,
+    "audio": "prizo.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0309"
+  },
+  {
+    "word": "πρωινός",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "proinos.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0310"
+  },
+  {
+    "word": "πρόβατο",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "provato.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0311"
+  },
+  {
+    "word": "πρόταση",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "protasi.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0312"
+  },
+  {
+    "word": "πτώμα",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "ptoma.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0313"
+  },
+  {
+    "word": "πόρτα",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "porta.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0314"
+  },
+  {
+    "word": "πύργος",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "pyrgos.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0315"
+  },
+  {
+    "word": "ρακέτα",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "raketa.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0316"
+  },
+  {
+    "word": "ρολόι",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "roloi.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0317"
+  },
+  {
+    "word": "ρωτάω",
+    "grade": 2,
+    "hint": "Στην πρόταση γράφουμε το ρήμα ___.",
+    "generic": true,
+    "audio": "rotao.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0318"
+  },
+  {
+    "word": "σαλάτα",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "salata.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0319"
+  },
+  {
+    "word": "σαύρα",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "sayra.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0320"
+  },
+  {
+    "word": "σεισμός",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "seismos.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0321"
+  },
+  {
+    "word": "σκάβω",
+    "grade": 2,
+    "hint": "Στην πρόταση γράφουμε το ρήμα ___.",
+    "generic": true,
+    "audio": "skavo.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0322"
+  },
+  {
+    "word": "σκάλα",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "skala.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0323"
+  },
+  {
+    "word": "σκαλίζω",
+    "grade": 2,
+    "hint": "Στην πρόταση γράφουμε το ρήμα ___.",
+    "generic": true,
+    "audio": "skalizo.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0324"
+  },
+  {
+    "word": "σκηνή",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "skini.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0325"
+  },
+  {
+    "word": "σκοινί",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "skoini.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0326"
+  },
+  {
+    "word": "σκούπα",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "skoupa.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0327"
+  },
+  {
+    "word": "σκυλί",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "skyli.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0328"
+  },
+  {
+    "word": "σκύβω",
+    "grade": 2,
+    "hint": "Στην πρόταση γράφουμε το ρήμα ___.",
+    "generic": true,
+    "audio": "skyvo.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0329"
+  },
+  {
+    "word": "σκύλος",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "skylos.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0330"
+  },
+  {
+    "word": "σπάθι",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "spathi.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0331"
+  },
+  {
+    "word": "σπίρτο",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "spirto.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0332"
+  },
+  {
+    "word": "στάχυ",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "stachy.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0333"
+  },
+  {
+    "word": "στέγη",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "stegi.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0334"
+  },
+  {
+    "word": "σταγόνα",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "stagona.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0335"
+  },
+  {
+    "word": "στεγνώνω",
+    "grade": 2,
+    "hint": "Στην πρόταση γράφουμε το ρήμα ___.",
+    "generic": true,
+    "audio": "stegnono.mp3",
+    "audioOk": true,
+    "difficulty": 2,
+    "id": "lx-g2-0336"
+  },
+  {
+    "word": "στρίβω",
+    "grade": 2,
+    "hint": "Στην πρόταση γράφουμε το ρήμα ___.",
+    "generic": true,
+    "audio": "strivo.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0337"
+  },
+  {
+    "word": "συλλαβή",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "syllavi.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0338"
+  },
+  {
+    "word": "συνοδός",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "synodos.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0339"
+  },
+  {
+    "word": "συνταγή",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "syntagi.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0340"
+  },
+  {
+    "word": "σύνθημα",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "synthima.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0341"
+  },
+  {
+    "word": "σύρμα",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "syrma.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0342"
+  },
+  {
+    "word": "τέλος",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "telos.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0343"
+  },
+  {
+    "word": "τέχνη",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "techni.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0344"
+  },
+  {
+    "word": "ταξίδι",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "taxidi.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0345"
+  },
+  {
+    "word": "ταραχή",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "tarachi.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0346"
+  },
+  {
+    "word": "ταύρος",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "tayros.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0347"
+  },
+  {
+    "word": "τεντώνω",
+    "grade": 2,
+    "hint": "Στην πρόταση γράφουμε το ρήμα ___.",
+    "generic": true,
+    "audio": "tentono.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0348"
+  },
+  {
+    "word": "τζάκι",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "tzaki.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0349"
+  },
+  {
+    "word": "τιμώ",
+    "grade": 2,
+    "hint": "Στην πρόταση γράφουμε το ρήμα ___.",
+    "generic": true,
+    "audio": "timo.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0350"
+  },
+  {
+    "word": "τράπεζα",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "trapeza.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0351"
+  },
+  {
+    "word": "τρένο",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "treno.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0352"
+  },
+  {
+    "word": "τρέχω",
+    "grade": 2,
+    "hint": "Στην πρόταση γράφουμε το ρήμα ___.",
+    "generic": true,
+    "audio": "trecho.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0353"
+  },
+  {
+    "word": "τρίβω",
+    "grade": 2,
+    "hint": "Στην πρόταση γράφουμε το ρήμα ___.",
+    "generic": true,
+    "audio": "trivo.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0354"
+  },
+  {
+    "word": "τρίμμα",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "trimma.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0355"
+  },
+  {
+    "word": "τρώω",
+    "grade": 2,
+    "hint": "Στην πρόταση γράφουμε το ρήμα ___.",
+    "generic": true,
+    "audio": "troo.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0356"
+  },
+  {
+    "word": "τσάι",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "tsai.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0357"
+  },
+  {
+    "word": "τυρί",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "tyri.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0358"
+  },
+  {
+    "word": "τυχερή",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "tycheri.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0359"
+  },
+  {
+    "word": "φάκελος",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "fakelos.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0360"
+  },
+  {
+    "word": "φίλη",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "fili.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0361"
+  },
+  {
+    "word": "φαγητό",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "fagito.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0362"
+  },
+  {
+    "word": "φακή",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "faki.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0363"
+  },
+  {
+    "word": "φανέλα",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "fanela.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0364"
+  },
+  {
+    "word": "φλούδα",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "flouda.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0365"
+  },
+  {
+    "word": "φούσκα",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "fouska.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0366"
+  },
+  {
+    "word": "φτηνές",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "ftines.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0367"
+  },
+  {
+    "word": "φυλακή",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "fylaki.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0368"
+  },
+  {
+    "word": "φυσώ",
+    "grade": 2,
+    "hint": "Στην πρόταση γράφουμε το ρήμα ___.",
+    "generic": true,
+    "audio": "fyso.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0369"
+  },
+  {
+    "word": "φυτό",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "fyto.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0370"
+  },
+  {
+    "word": "φωνήεν",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "fonien.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0371"
+  },
+  {
+    "word": "χάδι",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "chadi.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0372"
+  },
+  {
+    "word": "χέρι",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "cheri.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0373"
+  },
+  {
+    "word": "χαλάω",
+    "grade": 2,
+    "hint": "Στην πρόταση γράφουμε το ρήμα ___.",
+    "generic": true,
+    "audio": "chalao.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0374"
+  },
+  {
+    "word": "χαρά",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "chara.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0375"
+  },
+  {
+    "word": "χαρίζω",
+    "grade": 2,
+    "hint": "Στην πρόταση γράφουμε το ρήμα ___.",
+    "generic": true,
+    "audio": "charizo.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0376"
+  },
+  {
+    "word": "χορός",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "choros.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0377"
+  },
+  {
+    "word": "χρήματα",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "chrimata.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0378"
+  },
+  {
+    "word": "χτενίζω",
+    "grade": 2,
+    "hint": "Στην πρόταση γράφουμε το ρήμα ___.",
+    "generic": true,
+    "audio": "chtenizo.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0379"
+  },
+  {
+    "word": "χτυπώ",
+    "grade": 2,
+    "hint": "Στην πρόταση γράφουμε το ρήμα ___.",
+    "generic": true,
+    "audio": "chtypo.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0380"
+  },
+  {
+    "word": "ψαλίδι",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "psalidi.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0381"
+  },
+  {
+    "word": "ψαρά",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "psara.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0382"
+  },
+  {
+    "word": "ψαρώνω",
+    "grade": 2,
+    "hint": "Στην πρόταση γράφουμε το ρήμα ___.",
+    "generic": true,
+    "audio": "psarono.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0383"
+  },
+  {
+    "word": "ψυχή",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "psychi.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0384"
+  },
+  {
+    "word": "ψωνίζω",
+    "grade": 2,
+    "hint": "Στην πρόταση γράφουμε το ρήμα ___.",
+    "generic": true,
+    "audio": "psonizo.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0385"
+  },
+  {
+    "word": "όλυμπος",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "olympos.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0386"
+  },
+  {
+    "word": "όρος",
+    "grade": 2,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "oros.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g2-0387"
+  },
+  {
+    "word": "αγελάδα",
+    "grade": 3,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "agelada.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g3-0158"
+  },
+  {
+    "word": "αγοράζω",
+    "grade": 3,
+    "hint": "Στην πρόταση γράφουμε το ρήμα ___.",
+    "generic": true,
+    "audio": "agorazo.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g3-0159"
+  },
+  {
+    "word": "αγωνία",
+    "grade": 3,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "agonia.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g3-0160"
+  },
+  {
+    "word": "αναβάτης",
+    "grade": 3,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "anavatis.mp3",
+    "audioOk": true,
+    "difficulty": 2,
+    "id": "lx-g3-0161"
+  },
+  {
+    "word": "αντιδράω",
+    "grade": 3,
+    "hint": "Στην πρόταση γράφουμε το ρήμα ___.",
+    "generic": true,
+    "audio": "antidrao.mp3",
+    "audioOk": true,
+    "difficulty": 2,
+    "id": "lx-g3-0162"
+  },
+  {
+    "word": "βανίλια",
+    "grade": 3,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "vanilia.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g3-0163"
+  },
+  {
+    "word": "βουτιά",
+    "grade": 3,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "voutia.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g3-0164"
+  },
+  {
+    "word": "βραβείο",
+    "grade": 3,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "vraveio.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g3-0165"
+  },
+  {
+    "word": "γίνομαι",
+    "grade": 3,
+    "hint": "Στην πρόταση γράφουμε το ρήμα ___.",
+    "generic": true,
+    "audio": "ginomai.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g3-0166"
+  },
+  {
+    "word": "γαλλικός",
+    "grade": 3,
+    "hint": "Συμπληρώνουμε με το επίθετο ___.",
+    "generic": true,
+    "audio": "gallikos.mp3",
+    "audioOk": true,
+    "difficulty": 2,
+    "id": "lx-g3-0167"
+  },
+  {
+    "word": "γεφυρώνω",
+    "grade": 3,
+    "hint": "Στην πρόταση γράφουμε το ρήμα ___.",
+    "generic": true,
+    "audio": "gefyrono.mp3",
+    "audioOk": true,
+    "difficulty": 2,
+    "id": "lx-g3-0168"
+  },
+  {
+    "word": "γιρλάντα",
+    "grade": 3,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "girlanta.mp3",
+    "audioOk": true,
+    "difficulty": 2,
+    "id": "lx-g3-0169"
+  },
+  {
+    "word": "γκρινιάζω",
+    "grade": 3,
+    "hint": "Στην πρόταση γράφουμε το ρήμα ___.",
+    "generic": true,
+    "audio": "gkriniazo.mp3",
+    "audioOk": true,
+    "difficulty": 2,
+    "id": "lx-g3-0170"
+  },
+  {
+    "word": "γράφομαι",
+    "grade": 3,
+    "hint": "Στην πρόταση γράφουμε το ρήμα ___.",
+    "generic": true,
+    "audio": "grafomai.mp3",
+    "audioOk": true,
+    "difficulty": 2,
+    "id": "lx-g3-0171"
+  },
+  {
+    "word": "γυαλίζω",
+    "grade": 3,
+    "hint": "Στην πρόταση γράφουμε το ρήμα ___.",
+    "generic": true,
+    "audio": "gyalizo.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g3-0172"
+  },
+  {
+    "word": "δένομαι",
+    "grade": 3,
+    "hint": "Στην πρόταση γράφουμε το ρήμα ___.",
+    "generic": true,
+    "audio": "denomai.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g3-0173"
+  },
+  {
+    "word": "διαβάζω",
+    "grade": 3,
+    "hint": "Στην πρόταση γράφουμε το ρήμα ___.",
+    "generic": true,
+    "audio": "diavazo.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g3-0174"
+  },
+  {
+    "word": "διακοπή",
+    "grade": 3,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "diakopi.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g3-0175"
+  },
+  {
+    "word": "δισέλιδο",
+    "grade": 3,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "diselido.mp3",
+    "audioOk": true,
+    "difficulty": 2,
+    "id": "lx-g3-0176"
+  },
+  {
+    "word": "δισύλλαβη",
+    "grade": 3,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "disyllavi.mp3",
+    "audioOk": true,
+    "difficulty": 2,
+    "id": "lx-g3-0177"
+  },
+  {
+    "word": "διώροφο",
+    "grade": 3,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "diorofo.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g3-0178"
+  },
+  {
+    "word": "δούναβης",
+    "grade": 3,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "dounavis.mp3",
+    "audioOk": true,
+    "difficulty": 2,
+    "id": "lx-g3-0179"
+  },
+  {
+    "word": "ελέφαντας",
+    "grade": 3,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "elefantas.mp3",
+    "audioOk": true,
+    "difficulty": 2,
+    "id": "lx-g3-0180"
+  },
+  {
+    "word": "επιβάτης",
+    "grade": 3,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "epivatis.mp3",
+    "audioOk": true,
+    "difficulty": 2,
+    "id": "lx-g3-0181"
+  },
+  {
+    "word": "επιμένω",
+    "grade": 3,
+    "hint": "Στην πρόταση γράφουμε το ρήμα ___.",
+    "generic": true,
+    "audio": "epimeno.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g3-0182"
+  },
+  {
+    "word": "επιστάτης",
+    "grade": 3,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "epistatis.mp3",
+    "audioOk": true,
+    "difficulty": 2,
+    "id": "lx-g3-0183"
+  },
+  {
+    "word": "επιταγή",
+    "grade": 3,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "epitagi.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g3-0184"
+  },
+  {
+    "word": "ζεσταίνω",
+    "grade": 3,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "zestaino.mp3",
+    "audioOk": true,
+    "difficulty": 2,
+    "id": "lx-g3-0185"
+  },
+  {
+    "word": "ζητιάνος",
+    "grade": 3,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "zitianos.mp3",
+    "audioOk": true,
+    "difficulty": 2,
+    "id": "lx-g3-0186"
+  },
+  {
+    "word": "ζωγραφιά",
+    "grade": 3,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "zografia.mp3",
+    "audioOk": true,
+    "difficulty": 2,
+    "id": "lx-g3-0187"
+  },
+  {
+    "word": "θεϊκό",
+    "grade": 3,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "theiko.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g3-0188"
+  },
+  {
+    "word": "θησαυρός",
+    "grade": 3,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "thisayros.mp3",
+    "audioOk": true,
+    "difficulty": 2,
+    "id": "lx-g3-0189"
+  },
+  {
+    "word": "θυμάμαι",
+    "grade": 3,
+    "hint": "Στην πρόταση γράφουμε το ρήμα ___.",
+    "generic": true,
+    "audio": "thymamai.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g3-0190"
+  },
+  {
+    "word": "κάθομαι",
+    "grade": 3,
+    "hint": "Στην πρόταση γράφουμε το ρήμα ___.",
+    "generic": true,
+    "audio": "kathomai.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g3-0191"
+  },
+  {
+    "word": "κάτοικος",
+    "grade": 3,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "katoikos.mp3",
+    "audioOk": true,
+    "difficulty": 2,
+    "id": "lx-g3-0192"
+  },
+  {
+    "word": "καΐκι",
+    "grade": 3,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "kaiki.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g3-0193"
+  },
+  {
+    "word": "καρφίτσα",
+    "grade": 3,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "karfitsa.mp3",
+    "audioOk": true,
+    "difficulty": 2,
+    "id": "lx-g3-0194"
+  },
+  {
+    "word": "κασετίνα",
+    "grade": 3,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "kasetina.mp3",
+    "audioOk": true,
+    "difficulty": 2,
+    "id": "lx-g3-0195"
+  },
+  {
+    "word": "κατάψυξη",
+    "grade": 3,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "katapsyxi.mp3",
+    "audioOk": true,
+    "difficulty": 2,
+    "id": "lx-g3-0196"
+  },
+  {
+    "word": "καταστρέφω",
+    "grade": 3,
+    "hint": "Στην πρόταση γράφουμε το ρήμα ___.",
+    "generic": true,
+    "audio": "katastrefo.mp3",
+    "audioOk": true,
+    "difficulty": 3,
+    "id": "lx-g3-0197"
+  },
+  {
+    "word": "κελαηδώ",
+    "grade": 3,
+    "hint": "Στην πρόταση γράφουμε το ρήμα ___.",
+    "generic": true,
+    "audio": "kelaido.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g3-0198"
+  },
+  {
+    "word": "κιβώτιο",
+    "grade": 3,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "kivotio.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g3-0199"
+  },
+  {
+    "word": "κομπολόι",
+    "grade": 3,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "kompoloi.mp3",
+    "audioOk": true,
+    "difficulty": 2,
+    "id": "lx-g3-0200"
+  },
+  {
+    "word": "κουβαλώ",
+    "grade": 3,
+    "hint": "Στην πρόταση γράφουμε το ρήμα ___.",
+    "generic": true,
+    "audio": "kouvalo.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g3-0201"
+  },
+  {
+    "word": "λαϊκή",
+    "grade": 3,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "laiki.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g3-0202"
+  },
+  {
+    "word": "λυπάμαι",
+    "grade": 3,
+    "hint": "Στην πρόταση γράφουμε το ρήμα ___.",
+    "generic": true,
+    "audio": "lypamai.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g3-0203"
+  },
+  {
+    "word": "μάλλινη",
+    "grade": 3,
+    "hint": "Συμπληρώνουμε με το επίθετο ___.",
+    "generic": true,
+    "audio": "mallini.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g3-0204"
+  },
+  {
+    "word": "μαγεύω",
+    "grade": 3,
+    "hint": "Στην πρόταση γράφουμε το ρήμα ___.",
+    "generic": true,
+    "audio": "mageyo.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g3-0205"
+  },
+  {
+    "word": "μαθαίνω",
+    "grade": 3,
+    "hint": "Στην πρόταση γράφουμε το ρήμα ___.",
+    "generic": true,
+    "audio": "mathaino.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g3-0206"
+  },
+  {
+    "word": "μελανιά",
+    "grade": 3,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "melania.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g3-0207"
+  },
+  {
+    "word": "μηχανάκι",
+    "grade": 3,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "michanaki.mp3",
+    "audioOk": true,
+    "difficulty": 2,
+    "id": "lx-g3-0208"
+  },
+  {
+    "word": "μονοπάτι",
+    "grade": 3,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "monopati.mp3",
+    "audioOk": true,
+    "difficulty": 2,
+    "id": "lx-g3-0209"
+  },
+  {
+    "word": "μπουκιά",
+    "grade": 3,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "mpoukia.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g3-0210"
+  },
+  {
+    "word": "νεράιδα",
+    "grade": 3,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "neraida.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g3-0211"
+  },
+  {
+    "word": "νηστεία",
+    "grade": 3,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "nisteia.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g3-0212"
+  },
+  {
+    "word": "ντουλάπα",
+    "grade": 3,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "ntoulapa.mp3",
+    "audioOk": true,
+    "difficulty": 2,
+    "id": "lx-g3-0213"
+  },
+  {
+    "word": "ντρέπομαι",
+    "grade": 3,
+    "hint": "Στην πρόταση γράφουμε το ρήμα ___.",
+    "generic": true,
+    "audio": "ntrepomai.mp3",
+    "audioOk": true,
+    "difficulty": 2,
+    "id": "lx-g3-0214"
+  },
+  {
+    "word": "ντύνομαι",
+    "grade": 3,
+    "hint": "Στην πρόταση γράφουμε το ρήμα ___.",
+    "generic": true,
+    "audio": "ntynomai.mp3",
+    "audioOk": true,
+    "difficulty": 2,
+    "id": "lx-g3-0215"
+  },
+  {
+    "word": "ξηραίνω",
+    "grade": 3,
+    "hint": "Στην πρόταση γράφουμε το ρήμα ___.",
+    "generic": true,
+    "audio": "xiraino.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g3-0216"
+  },
+  {
+    "word": "ξύλινο",
+    "grade": 3,
+    "hint": "Συμπληρώνουμε με το επίθετο ___.",
+    "generic": true,
+    "audio": "xylino.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g3-0217"
+  },
+  {
+    "word": "οδηγία",
+    "grade": 3,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "odigia.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g3-0218"
+  },
+  {
+    "word": "πέτρινος",
+    "grade": 3,
+    "hint": "Συμπληρώνουμε με το επίθετο ___.",
+    "generic": true,
+    "audio": "petrinos.mp3",
+    "audioOk": true,
+    "difficulty": 2,
+    "id": "lx-g3-0219"
+  },
+  {
+    "word": "παράθυρο",
+    "grade": 3,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "parathyro.mp3",
+    "audioOk": true,
+    "difficulty": 2,
+    "id": "lx-g3-0220"
+  },
+  {
+    "word": "παραλία",
+    "grade": 3,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "paralia.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g3-0221"
+  },
+  {
+    "word": "περίφημος",
+    "grade": 3,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "perifimos.mp3",
+    "audioOk": true,
+    "difficulty": 2,
+    "id": "lx-g3-0222"
+  },
+  {
+    "word": "περιμένω",
+    "grade": 3,
+    "hint": "Στην πρόταση γράφουμε το ρήμα ___.",
+    "generic": true,
+    "audio": "perimeno.mp3",
+    "audioOk": true,
+    "difficulty": 2,
+    "id": "lx-g3-0223"
+  },
+  {
+    "word": "πινακίδα",
+    "grade": 3,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "pinakida.mp3",
+    "audioOk": true,
+    "difficulty": 2,
+    "id": "lx-g3-0224"
+  },
+  {
+    "word": "πλένομαι",
+    "grade": 3,
+    "hint": "Στην πρόταση γράφουμε το ρήμα ___.",
+    "generic": true,
+    "audio": "plenomai.mp3",
+    "audioOk": true,
+    "difficulty": 2,
+    "id": "lx-g3-0225"
+  },
+  {
+    "word": "πλατεία",
+    "grade": 3,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "plateia.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g3-0226"
+  },
+  {
+    "word": "πλούσιος",
+    "grade": 3,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "plousios.mp3",
+    "audioOk": true,
+    "difficulty": 2,
+    "id": "lx-g3-0227"
+  },
+  {
+    "word": "ποδηλάτης",
+    "grade": 3,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "podilatis.mp3",
+    "audioOk": true,
+    "difficulty": 2,
+    "id": "lx-g3-0228"
+  },
+  {
+    "word": "ποντικός",
+    "grade": 3,
+    "hint": "Συμπληρώνουμε με το επίθετο ___.",
+    "generic": true,
+    "audio": "pontikos.mp3",
+    "audioOk": true,
+    "difficulty": 2,
+    "id": "lx-g3-0229"
+  },
+  {
+    "word": "προσευχή",
+    "grade": 3,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "proseychi.mp3",
+    "audioOk": true,
+    "difficulty": 2,
+    "id": "lx-g3-0230"
+  },
+  {
+    "word": "πρόεδρος",
+    "grade": 3,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "proedros.mp3",
+    "audioOk": true,
+    "difficulty": 2,
+    "id": "lx-g3-0231"
+  },
+  {
+    "word": "σάλπιγγα",
+    "grade": 3,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "salpigga.mp3",
+    "audioOk": true,
+    "difficulty": 2,
+    "id": "lx-g3-0232"
+  },
+  {
+    "word": "σαΐτα",
+    "grade": 3,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "saita.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g3-0233"
+  },
+  {
+    "word": "σακούλα",
+    "grade": 3,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "sakoula.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g3-0234"
+  },
+  {
+    "word": "σεΐχης",
+    "grade": 3,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "seichis.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g3-0235"
+  },
+  {
+    "word": "σκέφτομαι",
+    "grade": 3,
+    "hint": "Στην πρόταση γράφουμε το ρήμα ___.",
+    "generic": true,
+    "audio": "skeftomai.mp3",
+    "audioOk": true,
+    "difficulty": 2,
+    "id": "lx-g3-0236"
+  },
+  {
+    "word": "σκιάχτρο",
+    "grade": 3,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "skiachtro.mp3",
+    "audioOk": true,
+    "difficulty": 2,
+    "id": "lx-g3-0237"
+  },
+  {
+    "word": "σκοτεινή",
+    "grade": 3,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "skoteini.mp3",
+    "audioOk": true,
+    "difficulty": 2,
+    "id": "lx-g3-0238"
+  },
+  {
+    "word": "σκοτεινός",
+    "grade": 3,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "skoteinos.mp3",
+    "audioOk": true,
+    "difficulty": 2,
+    "id": "lx-g3-0239"
+  },
+  {
+    "word": "συμβουλή",
+    "grade": 3,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "symvouli.mp3",
+    "audioOk": true,
+    "difficulty": 2,
+    "id": "lx-g3-0240"
+  },
+  {
+    "word": "σωπαίνω",
+    "grade": 3,
+    "hint": "Στην πρόταση γράφουμε το ρήμα ___.",
+    "generic": true,
+    "audio": "sopaino.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g3-0241"
+  },
+  {
+    "word": "ταπεινό",
+    "grade": 3,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "tapeino.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g3-0242"
+  },
+  {
+    "word": "τεράστιος",
+    "grade": 3,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "terastios.mp3",
+    "audioOk": true,
+    "difficulty": 2,
+    "id": "lx-g3-0243"
+  },
+  {
+    "word": "τολμηρός",
+    "grade": 3,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "tolmiros.mp3",
+    "audioOk": true,
+    "difficulty": 2,
+    "id": "lx-g3-0244"
+  },
+  {
+    "word": "τρίβομαι",
+    "grade": 3,
+    "hint": "Στην πρόταση γράφουμε το ρήμα ___.",
+    "generic": true,
+    "audio": "trivomai.mp3",
+    "audioOk": true,
+    "difficulty": 2,
+    "id": "lx-g3-0245"
+  },
+  {
+    "word": "υφαίνω",
+    "grade": 3,
+    "hint": "Στην πρόταση γράφουμε το ρήμα ___.",
+    "generic": true,
+    "audio": "yfaino.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g3-0246"
+  },
+  {
+    "word": "φάλαινα",
+    "grade": 3,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "falaina.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g3-0247"
+  },
+  {
+    "word": "φαΐ",
+    "grade": 3,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "fai.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g3-0248"
+  },
+  {
+    "word": "φασαρία",
+    "grade": 3,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "fasaria.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g3-0249"
+  },
+  {
+    "word": "φορεσιά",
+    "grade": 3,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "foresia.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g3-0250"
+  },
+  {
+    "word": "φουσκώνω",
+    "grade": 3,
+    "hint": "Στην πρόταση γράφουμε το ρήμα ___.",
+    "generic": true,
+    "audio": "fouskono.mp3",
+    "audioOk": true,
+    "difficulty": 2,
+    "id": "lx-g3-0251"
+  },
+  {
+    "word": "φυτεύω",
+    "grade": 3,
+    "hint": "Στην πρόταση γράφουμε το ρήμα ___.",
+    "generic": true,
+    "audio": "fyteyo.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g3-0252"
+  },
+  {
+    "word": "φωτεινό",
+    "grade": 3,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "foteino.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g3-0253"
+  },
+  {
+    "word": "φωτεινός",
+    "grade": 3,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "foteinos.mp3",
+    "audioOk": true,
+    "difficulty": 2,
+    "id": "lx-g3-0254"
+  },
+  {
+    "word": "χάρτινη",
+    "grade": 3,
+    "hint": "Συμπληρώνουμε με το επίθετο ___.",
+    "generic": true,
+    "audio": "chartini.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g3-0255"
+  },
+  {
+    "word": "χάρτινος",
+    "grade": 3,
+    "hint": "Συμπληρώνουμε με το επίθετο ___.",
+    "generic": true,
+    "audio": "chartinos.mp3",
+    "audioOk": true,
+    "difficulty": 2,
+    "id": "lx-g3-0256"
+  },
+  {
+    "word": "χειμώνα",
+    "grade": 3,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "cheimona.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g3-0257"
+  },
+  {
+    "word": "χελιδόνι",
+    "grade": 3,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "chelidoni.mp3",
+    "audioOk": true,
+    "difficulty": 2,
+    "id": "lx-g3-0258"
+  },
+  {
+    "word": "χορηγία",
+    "grade": 3,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "chorigia.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g3-0259"
+  },
+  {
+    "word": "ψησταριά",
+    "grade": 3,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "psistaria.mp3",
+    "audioOk": true,
+    "difficulty": 2,
+    "id": "lx-g3-0260"
+  },
+  {
+    "word": "αδυνατίζω",
+    "grade": 4,
+    "hint": "Στην πρόταση γράφουμε το ρήμα ___.",
+    "generic": true,
+    "audio": "adynatizo.mp3",
+    "audioOk": true,
+    "difficulty": 2,
+    "id": "lx-g4-0101"
+  },
+  {
+    "word": "αμυγδαλιά",
+    "grade": 4,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "amygdalia.mp3",
+    "audioOk": true,
+    "difficulty": 2,
+    "id": "lx-g4-0102"
+  },
+  {
+    "word": "ανεβαίνω",
+    "grade": 4,
+    "hint": "Στην πρόταση γράφουμε το ρήμα ___.",
+    "generic": true,
+    "audio": "anevaino.mp3",
+    "audioOk": true,
+    "difficulty": 2,
+    "id": "lx-g4-0103"
+  },
+  {
+    "word": "ανόγειο",
+    "grade": 4,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "anogeio.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g4-0104"
+  },
+  {
+    "word": "αποτελεί",
+    "grade": 4,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "apotelei.mp3",
+    "audioOk": true,
+    "difficulty": 2,
+    "id": "lx-g4-0105"
+  },
+  {
+    "word": "αποφασίζω",
+    "grade": 4,
+    "hint": "Στην πρόταση γράφουμε το ρήμα ___.",
+    "generic": true,
+    "audio": "apofasizo.mp3",
+    "audioOk": true,
+    "difficulty": 2,
+    "id": "lx-g4-0106"
+  },
+  {
+    "word": "αυστηρός",
+    "grade": 4,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "aystiros.mp3",
+    "audioOk": true,
+    "difficulty": 2,
+    "id": "lx-g4-0107"
+  },
+  {
+    "word": "γαΐδούρι",
+    "grade": 4,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "gaidouri.mp3",
+    "audioOk": true,
+    "difficulty": 2,
+    "id": "lx-g4-0108"
+  },
+  {
+    "word": "γειτόνισσα",
+    "grade": 4,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "geitonissa.mp3",
+    "audioOk": true,
+    "difficulty": 3,
+    "id": "lx-g4-0109"
+  },
+  {
+    "word": "γυμναστική",
+    "grade": 4,
+    "hint": "Συμπληρώνουμε με το επίθετο ___.",
+    "generic": true,
+    "audio": "gymnastiki.mp3",
+    "audioOk": true,
+    "difficulty": 3,
+    "id": "lx-g4-0110"
+  },
+  {
+    "word": "δερμάτινη",
+    "grade": 4,
+    "hint": "Συμπληρώνουμε με το επίθετο ___.",
+    "generic": true,
+    "audio": "dermatini.mp3",
+    "audioOk": true,
+    "difficulty": 2,
+    "id": "lx-g4-0111"
+  },
+  {
+    "word": "διορίζομαι",
+    "grade": 4,
+    "hint": "Στην πρόταση γράφουμε το ρήμα ___.",
+    "generic": true,
+    "audio": "diorizomai.mp3",
+    "audioOk": true,
+    "difficulty": 3,
+    "id": "lx-g4-0112"
+  },
+  {
+    "word": "δουλεύω",
+    "grade": 4,
+    "hint": "Στην πρόταση γράφουμε το ρήμα ___.",
+    "generic": true,
+    "audio": "douleyo.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g4-0113"
+  },
+  {
+    "word": "δυσκίνητος",
+    "grade": 4,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "dyskinitos.mp3",
+    "audioOk": true,
+    "difficulty": 3,
+    "id": "lx-g4-0114"
+  },
+  {
+    "word": "επιθυμία",
+    "grade": 4,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "epithymia.mp3",
+    "audioOk": true,
+    "difficulty": 2,
+    "id": "lx-g4-0115"
+  },
+  {
+    "word": "επικίνδινη",
+    "grade": 4,
+    "hint": "Συμπληρώνουμε με το επίθετο ___.",
+    "generic": true,
+    "audio": "epikindini.mp3",
+    "audioOk": true,
+    "difficulty": 3,
+    "id": "lx-g4-0116"
+  },
+  {
+    "word": "επικίνδυνη",
+    "grade": 4,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "epikindyni.mp3",
+    "audioOk": true,
+    "difficulty": 3,
+    "id": "lx-g4-0117"
+  },
+  {
+    "word": "ευθεία",
+    "grade": 4,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "eytheia.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g4-0118"
+  },
+  {
+    "word": "ευτυχία",
+    "grade": 4,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "eytychia.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g4-0119"
+  },
+  {
+    "word": "ζηλεύω",
+    "grade": 4,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "zileyo.mp3",
+    "audioOk": true,
+    "difficulty": 2,
+    "id": "lx-g4-0120"
+  },
+  {
+    "word": "ιταλικό",
+    "grade": 4,
+    "hint": "Συμπληρώνουμε με το επίθετο ___.",
+    "generic": true,
+    "audio": "italiko.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g4-0121"
+  },
+  {
+    "word": "καταιγίδα",
+    "grade": 4,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "kataigida.mp3",
+    "audioOk": true,
+    "difficulty": 2,
+    "id": "lx-g4-0122"
+  },
+  {
+    "word": "κλείνομαι",
+    "grade": 4,
+    "hint": "Στην πρόταση γράφουμε το ρήμα ___.",
+    "generic": true,
+    "audio": "kleinomai.mp3",
+    "audioOk": true,
+    "difficulty": 2,
+    "id": "lx-g4-0123"
+  },
+  {
+    "word": "κουράζομαι",
+    "grade": 4,
+    "hint": "Στην πρόταση γράφουμε το ρήμα ___.",
+    "generic": true,
+    "audio": "kourazomai.mp3",
+    "audioOk": true,
+    "difficulty": 3,
+    "id": "lx-g4-0124"
+  },
+  {
+    "word": "κρατιέμαι",
+    "grade": 4,
+    "hint": "Στην πρόταση γράφουμε το ρήμα ___.",
+    "generic": true,
+    "audio": "kratiemai.mp3",
+    "audioOk": true,
+    "difficulty": 2,
+    "id": "lx-g4-0125"
+  },
+  {
+    "word": "λαχανικό",
+    "grade": 4,
+    "hint": "Συμπληρώνουμε με το επίθετο ___.",
+    "generic": true,
+    "audio": "lachaniko.mp3",
+    "audioOk": true,
+    "difficulty": 2,
+    "id": "lx-g4-0126"
+  },
+  {
+    "word": "λουκουμάς",
+    "grade": 4,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "loukoumas.mp3",
+    "audioOk": true,
+    "difficulty": 2,
+    "id": "lx-g4-0127"
+  },
+  {
+    "word": "λούζομαι",
+    "grade": 4,
+    "hint": "Στην πρόταση γράφουμε το ρήμα ___.",
+    "generic": true,
+    "audio": "louzomai.mp3",
+    "audioOk": true,
+    "difficulty": 2,
+    "id": "lx-g4-0128"
+  },
+  {
+    "word": "μαρκαδόρος",
+    "grade": 4,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "markadoros.mp3",
+    "audioOk": true,
+    "difficulty": 3,
+    "id": "lx-g4-0129"
+  },
+  {
+    "word": "μαϊμού",
+    "grade": 4,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "maimou.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g4-0130"
+  },
+  {
+    "word": "μαϊντανός",
+    "grade": 4,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "maintanos.mp3",
+    "audioOk": true,
+    "difficulty": 2,
+    "id": "lx-g4-0131"
+  },
+  {
+    "word": "μολύνομαι",
+    "grade": 4,
+    "hint": "Στην πρόταση γράφουμε το ρήμα ___.",
+    "generic": true,
+    "audio": "molynomai.mp3",
+    "audioOk": true,
+    "difficulty": 2,
+    "id": "lx-g4-0132"
+  },
+  {
+    "word": "ξεκουράζομαι",
+    "grade": 4,
+    "hint": "Στην πρόταση γράφουμε το ρήμα ___.",
+    "generic": true,
+    "audio": "xekourazomai.mp3",
+    "audioOk": true,
+    "difficulty": 3,
+    "id": "lx-g4-0133"
+  },
+  {
+    "word": "ξυρίζομαι",
+    "grade": 4,
+    "hint": "Στην πρόταση γράφουμε το ρήμα ___.",
+    "generic": true,
+    "audio": "xyrizomai.mp3",
+    "audioOk": true,
+    "difficulty": 2,
+    "id": "lx-g4-0134"
+  },
+  {
+    "word": "ονειρεύομαι",
+    "grade": 4,
+    "hint": "Στην πρόταση γράφουμε το ρήμα ___.",
+    "generic": true,
+    "audio": "oneireyomai.mp3",
+    "audioOk": true,
+    "difficulty": 3,
+    "id": "lx-g4-0135"
+  },
+  {
+    "word": "πασαλείβω",
+    "grade": 4,
+    "hint": "Στην πρόταση γράφουμε το ρήμα ___.",
+    "generic": true,
+    "audio": "pasaleivo.mp3",
+    "audioOk": true,
+    "difficulty": 2,
+    "id": "lx-g4-0136"
+  },
+  {
+    "word": "περαστικός",
+    "grade": 4,
+    "hint": "Συμπληρώνουμε με το επίθετο ___.",
+    "generic": true,
+    "audio": "perastikos.mp3",
+    "audioOk": true,
+    "difficulty": 3,
+    "id": "lx-g4-0137"
+  },
+  {
+    "word": "προσπάθεια",
+    "grade": 4,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "prospatheia.mp3",
+    "audioOk": true,
+    "difficulty": 3,
+    "id": "lx-g4-0138"
+  },
+  {
+    "word": "προϊόντα",
+    "grade": 4,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "proionta.mp3",
+    "audioOk": true,
+    "difficulty": 2,
+    "id": "lx-g4-0139"
+  },
+  {
+    "word": "σκεπάζομαι",
+    "grade": 4,
+    "hint": "Στην πρόταση γράφουμε το ρήμα ___.",
+    "generic": true,
+    "audio": "skepazomai.mp3",
+    "audioOk": true,
+    "difficulty": 3,
+    "id": "lx-g4-0140"
+  },
+  {
+    "word": "ταξιδεύω",
+    "grade": 4,
+    "hint": "Στην πρόταση γράφουμε το ρήμα ___.",
+    "generic": true,
+    "audio": "taxideyo.mp3",
+    "audioOk": true,
+    "difficulty": 2,
+    "id": "lx-g4-0141"
+  },
+  {
+    "word": "τριαντάφυλλα",
+    "grade": 4,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "triantafylla.mp3",
+    "audioOk": true,
+    "difficulty": 3,
+    "id": "lx-g4-0142"
+  },
+  {
+    "word": "υπολογιστής",
+    "grade": 4,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "ypologistis.mp3",
+    "audioOk": true,
+    "difficulty": 3,
+    "id": "lx-g4-0143"
+  },
+  {
+    "word": "υπόγειο",
+    "grade": 4,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "ypogeio.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g4-0144"
+  },
+  {
+    "word": "φωτογράφος",
+    "grade": 4,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "fotografos.mp3",
+    "audioOk": true,
+    "difficulty": 3,
+    "id": "lx-g4-0145"
+  },
+  {
+    "word": "χαίρομαι",
+    "grade": 4,
+    "hint": "Στην πρόταση γράφουμε το ρήμα ___.",
+    "generic": true,
+    "audio": "chairomai.mp3",
+    "audioOk": true,
+    "difficulty": 2,
+    "id": "lx-g4-0146"
+  },
+  {
+    "word": "χαϊδεύω",
+    "grade": 4,
+    "hint": "Στην πρόταση γράφουμε το ρήμα ___.",
+    "generic": true,
+    "audio": "chaideyo.mp3",
+    "audioOk": true,
+    "difficulty": 1,
+    "id": "lx-g4-0147"
+  },
+  {
+    "word": "χειροκροτώ",
+    "grade": 4,
+    "hint": "Στην πρόταση γράφουμε το ρήμα ___.",
+    "generic": true,
+    "audio": "cheirokroto.mp3",
+    "audioOk": true,
+    "difficulty": 3,
+    "id": "lx-g4-0148"
+  },
+  {
+    "word": "χρειάζομαι",
+    "grade": 4,
+    "hint": "Στην πρόταση γράφουμε το ρήμα ___.",
+    "generic": true,
+    "audio": "chreiazomai.mp3",
+    "audioOk": true,
+    "difficulty": 3,
+    "id": "lx-g4-0149"
+  },
+  {
+    "word": "χτενίζομαι",
+    "grade": 4,
+    "hint": "Στην πρόταση γράφουμε το ρήμα ___.",
+    "generic": true,
+    "audio": "chtenizomai.mp3",
+    "audioOk": true,
+    "difficulty": 3,
+    "id": "lx-g4-0150"
+  },
+  {
+    "word": "αΰπνία",
+    "grade": 5,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "aypnia.mp3",
+    "audioOk": true,
+    "difficulty": 2,
+    "id": "lx-g5-0079"
+  },
+  {
+    "word": "αλλαντοπώλης",
+    "grade": 5,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "allantopolis.mp3",
+    "audioOk": true,
+    "difficulty": 3,
+    "id": "lx-g5-0080"
+  },
+  {
+    "word": "ανθοπώλης",
+    "grade": 5,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "anthopolis.mp3",
+    "audioOk": true,
+    "difficulty": 2,
+    "id": "lx-g5-0081"
+  },
+  {
+    "word": "αρτοπώλης",
+    "grade": 5,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "artopolis.mp3",
+    "audioOk": true,
+    "difficulty": 2,
+    "id": "lx-g5-0082"
+  },
+  {
+    "word": "αρχαιοπώλης",
+    "grade": 5,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "archaiopolis.mp3",
+    "audioOk": true,
+    "difficulty": 3,
+    "id": "lx-g5-0083"
+  },
+  {
+    "word": "αρωματοπώλης",
+    "grade": 5,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "aromatopolis.mp3",
+    "audioOk": true,
+    "difficulty": 3,
+    "id": "lx-g5-0084"
+  },
+  {
+    "word": "βουτυροπώλης",
+    "grade": 5,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "voutyropolis.mp3",
+    "audioOk": true,
+    "difficulty": 3,
+    "id": "lx-g5-0085"
+  },
+  {
+    "word": "γαλακτοπώλης",
+    "grade": 5,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "galaktopolis.mp3",
+    "audioOk": true,
+    "difficulty": 3,
+    "id": "lx-g5-0086"
+  },
+  {
+    "word": "γεωμετρία",
+    "grade": 5,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "geometria.mp3",
+    "audioOk": true,
+    "difficulty": 2,
+    "id": "lx-g5-0087"
+  },
+  {
+    "word": "γεωπόνος",
+    "grade": 5,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "geoponos.mp3",
+    "audioOk": true,
+    "difficulty": 2,
+    "id": "lx-g5-0088"
+  },
+  {
+    "word": "διαγώνισμα",
+    "grade": 5,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "diagonisma.mp3",
+    "audioOk": true,
+    "difficulty": 3,
+    "id": "lx-g5-0089"
+  },
+  {
+    "word": "ελικόπτερο",
+    "grade": 5,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "elikoptero.mp3",
+    "audioOk": true,
+    "difficulty": 3,
+    "id": "lx-g5-0090"
+  },
+  {
+    "word": "ενέργεια",
+    "grade": 5,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "energeia.mp3",
+    "audioOk": true,
+    "difficulty": 2,
+    "id": "lx-g5-0091"
+  },
+  {
+    "word": "ενενηκοστό",
+    "grade": 5,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "enenikosto.mp3",
+    "audioOk": true,
+    "difficulty": 3,
+    "id": "lx-g5-0092"
+  },
+  {
+    "word": "θεραπεία",
+    "grade": 5,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "therapeia.mp3",
+    "audioOk": true,
+    "difficulty": 2,
+    "id": "lx-g5-0093"
+  },
+  {
+    "word": "ιχθυοπώλης",
+    "grade": 5,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "ichthyopolis.mp3",
+    "audioOk": true,
+    "difficulty": 3,
+    "id": "lx-g5-0094"
+  },
+  {
+    "word": "καλοκαιρινός",
+    "grade": 5,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "kalokairinos.mp3",
+    "audioOk": true,
+    "difficulty": 3,
+    "id": "lx-g5-0095"
+  },
+  {
+    "word": "καπνοπώλης",
+    "grade": 5,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "kapnopolis.mp3",
+    "audioOk": true,
+    "difficulty": 3,
+    "id": "lx-g5-0096"
+  },
+  {
+    "word": "κασετόφωνο",
+    "grade": 5,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "kasetofono.mp3",
+    "audioOk": true,
+    "difficulty": 3,
+    "id": "lx-g5-0097"
+  },
+  {
+    "word": "καφεπώλης",
+    "grade": 5,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "kafepolis.mp3",
+    "audioOk": true,
+    "difficulty": 2,
+    "id": "lx-g5-0098"
+  },
+  {
+    "word": "κοσμηματοπώλης",
+    "grade": 5,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "kosmimatopolis.mp3",
+    "audioOk": true,
+    "difficulty": 3,
+    "id": "lx-g5-0099"
+  },
+  {
+    "word": "κρεοπώλης",
+    "grade": 5,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "kreopolis.mp3",
+    "audioOk": true,
+    "difficulty": 2,
+    "id": "lx-g5-0100"
+  },
+  {
+    "word": "κυκλοφορία",
+    "grade": 5,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "kykloforia.mp3",
+    "audioOk": true,
+    "difficulty": 3,
+    "id": "lx-g5-0101"
+  },
+  {
+    "word": "λαχανοπώλης",
+    "grade": 5,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "lachanopolis.mp3",
+    "audioOk": true,
+    "difficulty": 3,
+    "id": "lx-g5-0102"
+  },
+  {
+    "word": "λειτουργία",
+    "grade": 5,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "leitourgia.mp3",
+    "audioOk": true,
+    "difficulty": 3,
+    "id": "lx-g5-0103"
+  },
+  {
+    "word": "νομισματοπώλης",
+    "grade": 5,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "nomismatopolis.mp3",
+    "audioOk": true,
+    "difficulty": 3,
+    "id": "lx-g5-0104"
+  },
+  {
+    "word": "οινοπώλης",
+    "grade": 5,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "oinopolis.mp3",
+    "audioOk": true,
+    "difficulty": 2,
+    "id": "lx-g5-0105"
+  },
+  {
+    "word": "οπωροπώλης",
+    "grade": 5,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "oporopolis.mp3",
+    "audioOk": true,
+    "difficulty": 3,
+    "id": "lx-g5-0106"
+  },
+  {
+    "word": "παγοπώλης",
+    "grade": 5,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "pagopolis.mp3",
+    "audioOk": true,
+    "difficulty": 2,
+    "id": "lx-g5-0107"
+  },
+  {
+    "word": "παλαιοπώλης",
+    "grade": 5,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "palaiopolis.mp3",
+    "audioOk": true,
+    "difficulty": 3,
+    "id": "lx-g5-0108"
+  },
+  {
+    "word": "παντοπώλης",
+    "grade": 5,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "pantopolis.mp3",
+    "audioOk": true,
+    "difficulty": 3,
+    "id": "lx-g5-0109"
+  },
+  {
+    "word": "περιστατικό",
+    "grade": 5,
+    "hint": "Συμπληρώνουμε με το επίθετο ___.",
+    "generic": true,
+    "audio": "peristatiko.mp3",
+    "audioOk": true,
+    "difficulty": 3,
+    "id": "lx-g5-0110"
+  },
+  {
+    "word": "πολυκατοικία",
+    "grade": 5,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "polykatoikia.mp3",
+    "audioOk": true,
+    "difficulty": 3,
+    "id": "lx-g5-0111"
+  },
+  {
+    "word": "σιδηροπώλης",
+    "grade": 5,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "sidiropolis.mp3",
+    "audioOk": true,
+    "difficulty": 3,
+    "id": "lx-g5-0112"
+  },
+  {
+    "word": "τυροπώλης",
+    "grade": 5,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "tyropolis.mp3",
+    "audioOk": true,
+    "difficulty": 2,
+    "id": "lx-g5-0113"
+  },
+  {
+    "word": "υποδηματοπώλης",
+    "grade": 5,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "ypodimatopolis.mp3",
+    "audioOk": true,
+    "difficulty": 3,
+    "id": "lx-g5-0114"
+  },
+  {
+    "word": "χαρτοπώλης",
+    "grade": 5,
+    "hint": "Συμπληρώνουμε με τη λέξη ___.",
+    "generic": true,
+    "audio": "chartopolis.mp3",
+    "audioOk": true,
+    "difficulty": 3,
+    "id": "lx-g5-0115"
+  }
+]

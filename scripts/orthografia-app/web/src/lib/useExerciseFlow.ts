@@ -12,16 +12,24 @@ import {
 import { recordSessionDay, unlockBadgesAfterSession } from "./streakBadges";
 import { recordErrorCategory } from "./weakness";
 
-interface UseExerciseFlowOptions {
-  words: WordEntry[];
+interface UseExerciseFlowOptions<T extends { id: string } = WordEntry> {
+  /** @deprecated Prefer `items` — kept for existing word exercises. */
+  words?: T[];
+  items?: T[];
   onComplete: (summary: SessionSummary) => void;
   profileId?: string | null;
 }
 
-export function useExerciseFlow({ words, onComplete, profileId }: UseExerciseFlowOptions) {
+export function useExerciseFlow<T extends { id: string } = WordEntry>({
+  words,
+  items,
+  onComplete,
+  profileId,
+}: UseExerciseFlowOptions<T>) {
+  const list = items ?? words ?? [];
   const [index, setIndex] = useState(0);
   const [summary, setSummary] = useState<SessionSummary>({
-    total: words.length,
+    total: list.length,
     correct: 0,
     wrong: 0,
     rewrites: 0,
@@ -30,7 +38,7 @@ export function useExerciseFlow({ words, onComplete, profileId }: UseExerciseFlo
   const pendingAdvanceRef = useRef<SessionSummary | null>(null);
   const advanceTimerRef = useRef<number | null>(null);
 
-  const current = words[index]!;
+  const current = list[index]!;
 
   const clearAdvanceTimer = useCallback(() => {
     if (advanceTimerRef.current != null) {
@@ -42,7 +50,7 @@ export function useExerciseFlow({ words, onComplete, profileId }: UseExerciseFlo
   const advance = useCallback(
     (nextSummary: SessionSummary) => {
       clearAdvanceTimer();
-      if (index + 1 >= words.length) {
+      if (index + 1 >= list.length) {
         let store = loadProgress(profileId);
         store = recordSessionDay(store);
         store = unlockBadgesAfterSession(store, nextSummary);
@@ -52,7 +60,7 @@ export function useExerciseFlow({ words, onComplete, profileId }: UseExerciseFlo
         setIndex((i) => i + 1);
       }
     },
-    [clearAdvanceTimer, index, onComplete, profileId, words.length],
+    [clearAdvanceTimer, index, onComplete, profileId, list.length],
   );
 
   const finishCelebration = useCallback(() => {

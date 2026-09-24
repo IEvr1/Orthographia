@@ -1,0 +1,3443 @@
+{
+  "version": 1,
+  "drills": [
+    {
+      "id": "drill-ending-o-omega-001",
+      "kind": "ending",
+      "grades": [
+        2,
+        3
+      ],
+      "ruleId": "ending-o-omega",
+      "instruction": "Συμπλήρωσε -ο ή -ω.",
+      "prompt": "το βουν____",
+      "options": [
+        "ο",
+        "ω"
+      ],
+      "answer": "ο",
+      "feedback": "Ουσιαστικά ουδέτερα σε -ο · ρήματα (εγώ) σε -ω."
+    },
+    {
+      "id": "drill-ending-o-omega-002",
+      "kind": "ending",
+      "grades": [
+        2,
+        3
+      ],
+      "ruleId": "ending-o-omega",
+      "instruction": "Συμπλήρωσε -ο ή -ω.",
+      "prompt": "εγώ ζωγραφίζ____",
+      "options": [
+        "ο",
+        "ω"
+      ],
+      "answer": "ω",
+      "feedback": "Ουσιαστικά ουδέτερα σε -ο · ρήματα (εγώ) σε -ω."
+    },
+    {
+      "id": "drill-ending-o-omega-003",
+      "kind": "ending",
+      "grades": [
+        2,
+        3
+      ],
+      "ruleId": "ending-o-omega",
+      "instruction": "Συμπλήρωσε -ο ή -ω.",
+      "prompt": "το παγωτ____",
+      "options": [
+        "ο",
+        "ω"
+      ],
+      "answer": "ο",
+      "feedback": "Ουσιαστικά ουδέτερα σε -ο · ρήματα (εγώ) σε -ω."
+    },
+    {
+      "id": "drill-ending-o-omega-004",
+      "kind": "ending",
+      "grades": [
+        2,
+        3
+      ],
+      "ruleId": "ending-o-omega",
+      "instruction": "Συμπλήρωσε -ο ή -ω.",
+      "prompt": "εγώ τρώ____",
+      "options": [
+        "ο",
+        "ω"
+      ],
+      "answer": "ω",
+      "feedback": "Ουσιαστικά ουδέτερα σε -ο · ρήματα (εγώ) σε -ω."
+    },
+    {
+      "id": "drill-ending-o-omega-005",
+      "kind": "ending",
+      "grades": [
+        2,
+        3
+      ],
+      "ruleId": "ending-o-omega",
+      "instruction": "Συμπλήρωσε -ο ή -ω.",
+      "prompt": "το ψυγεί____",
+      "options": [
+        "ο",
+        "ω"
+      ],
+      "answer": "ο",
+      "feedback": "Ουσιαστικά ουδέτερα σε -ο · ρήματα (εγώ) σε -ω."
+    },
+    {
+      "id": "drill-ending-o-omega-006",
+      "kind": "ending",
+      "grades": [
+        2,
+        3
+      ],
+      "ruleId": "ending-o-omega",
+      "instruction": "Συμπλήρωσε -ο ή -ω.",
+      "prompt": "εγώ πίν____",
+      "options": [
+        "ο",
+        "ω"
+      ],
+      "answer": "ω",
+      "feedback": "Ουσιαστικά ουδέτερα σε -ο · ρήματα (εγώ) σε -ω."
+    },
+    {
+      "id": "drill-ending-o-omega-007",
+      "kind": "ending",
+      "grades": [
+        2,
+        3
+      ],
+      "ruleId": "ending-o-omega",
+      "instruction": "Συμπλήρωσε -ο ή -ω.",
+      "prompt": "το ποδήλατ____",
+      "options": [
+        "ο",
+        "ω"
+      ],
+      "answer": "ο",
+      "feedback": "Ουσιαστικά ουδέτερα σε -ο · ρήματα (εγώ) σε -ω."
+    },
+    {
+      "id": "drill-ending-o-omega-008",
+      "kind": "ending",
+      "grades": [
+        2,
+        3
+      ],
+      "ruleId": "ending-o-omega",
+      "instruction": "Συμπλήρωσε -ο ή -ω.",
+      "prompt": "εγώ τρέχ____",
+      "options": [
+        "ο",
+        "ω"
+      ],
+      "answer": "ω",
+      "feedback": "Ουσιαστικά ουδέτερα σε -ο · ρήματα (εγώ) σε -ω."
+    },
+    {
+      "id": "drill-ending-o-omega-009",
+      "kind": "ending",
+      "grades": [
+        2,
+        3
+      ],
+      "ruleId": "ending-o-omega",
+      "instruction": "Συμπλήρωσε -ο ή -ω.",
+      "prompt": "το φαγητ____",
+      "options": [
+        "ο",
+        "ω"
+      ],
+      "answer": "ο",
+      "feedback": "Ουσιαστικά ουδέτερα σε -ο · ρήματα (εγώ) σε -ω."
+    },
+    {
+      "id": "drill-ending-o-omega-010",
+      "kind": "ending",
+      "grades": [
+        2,
+        3
+      ],
+      "ruleId": "ending-o-omega",
+      "instruction": "Συμπλήρωσε -ο ή -ω.",
+      "prompt": "εγώ κόβ____",
+      "options": [
+        "ο",
+        "ω"
+      ],
+      "answer": "ω",
+      "feedback": "Ουσιαστικά ουδέτερα σε -ο · ρήματα (εγώ) σε -ω."
+    },
+    {
+      "id": "drill-ending-o-omega-011",
+      "kind": "ending",
+      "grades": [
+        2,
+        3
+      ],
+      "ruleId": "ending-o-omega",
+      "instruction": "Συμπλήρωσε -ο ή -ω.",
+      "prompt": "το μήλ____",
+      "options": [
+        "ο",
+        "ω"
+      ],
+      "answer": "ο",
+      "feedback": "Ουσιαστικά ουδέτερα σε -ο · ρήματα (εγώ) σε -ω."
+    },
+    {
+      "id": "drill-ending-o-omega-012",
+      "kind": "ending",
+      "grades": [
+        2,
+        3
+      ],
+      "ruleId": "ending-o-omega",
+      "instruction": "Συμπλήρωσε -ο ή -ω.",
+      "prompt": "εγώ γράφ____",
+      "options": [
+        "ο",
+        "ω"
+      ],
+      "answer": "ω",
+      "feedback": "Ουσιαστικά ουδέτερα σε -ο · ρήματα (εγώ) σε -ω."
+    },
+    {
+      "id": "drill-ending-o-omega-013",
+      "kind": "ending",
+      "grades": [
+        2,
+        3
+      ],
+      "ruleId": "ending-o-omega",
+      "instruction": "Συμπλήρωσε -ο ή -ω.",
+      "prompt": "το θέατρ____",
+      "options": [
+        "ο",
+        "ω"
+      ],
+      "answer": "ο",
+      "feedback": "Ουσιαστικά ουδέτερα σε -ο · ρήματα (εγώ) σε -ω."
+    },
+    {
+      "id": "drill-ending-o-omega-014",
+      "kind": "ending",
+      "grades": [
+        2,
+        3
+      ],
+      "ruleId": "ending-o-omega",
+      "instruction": "Συμπλήρωσε -ο ή -ω.",
+      "prompt": "εγώ διαβάζ____",
+      "options": [
+        "ο",
+        "ω"
+      ],
+      "answer": "ω",
+      "feedback": "Ουσιαστικά ουδέτερα σε -ο · ρήματα (εγώ) σε -ω."
+    },
+    {
+      "id": "drill-ending-o-omega-015",
+      "kind": "ending",
+      "grades": [
+        2,
+        3
+      ],
+      "ruleId": "ending-o-omega",
+      "instruction": "Συμπλήρωσε -ο ή -ω.",
+      "prompt": "το μωρ____",
+      "options": [
+        "ο",
+        "ω"
+      ],
+      "answer": "ο",
+      "feedback": "Ουσιαστικά ουδέτερα σε -ο · ρήματα (εγώ) σε -ω."
+    },
+    {
+      "id": "drill-ending-o-omega-016",
+      "kind": "ending",
+      "grades": [
+        2,
+        3
+      ],
+      "ruleId": "ending-o-omega",
+      "instruction": "Συμπλήρωσε -ο ή -ω.",
+      "prompt": "εγώ μιλά____",
+      "options": [
+        "ο",
+        "ω"
+      ],
+      "answer": "ω",
+      "feedback": "Ουσιαστικά ουδέτερα σε -ο · ρήματα (εγώ) σε -ω."
+    },
+    {
+      "id": "drill-ending-o-omega-017",
+      "kind": "ending",
+      "grades": [
+        2,
+        3
+      ],
+      "ruleId": "ending-o-omega",
+      "instruction": "Συμπλήρωσε -ο ή -ω.",
+      "prompt": "το σύννεφ____",
+      "options": [
+        "ο",
+        "ω"
+      ],
+      "answer": "ο",
+      "feedback": "Ουσιαστικά ουδέτερα σε -ο · ρήματα (εγώ) σε -ω."
+    },
+    {
+      "id": "drill-ending-o-omega-018",
+      "kind": "ending",
+      "grades": [
+        2,
+        3
+      ],
+      "ruleId": "ending-o-omega",
+      "instruction": "Συμπλήρωσε -ο ή -ω.",
+      "prompt": "εγώ λύν____",
+      "options": [
+        "ο",
+        "ω"
+      ],
+      "answer": "ω",
+      "feedback": "Ουσιαστικά ουδέτερα σε -ο · ρήματα (εγώ) σε -ω."
+    },
+    {
+      "id": "drill-ending-o-omega-019",
+      "kind": "ending",
+      "grades": [
+        2,
+        3
+      ],
+      "ruleId": "ending-o-omega",
+      "instruction": "Συμπλήρωσε -ο ή -ω.",
+      "prompt": "το τρέν____",
+      "options": [
+        "ο",
+        "ω"
+      ],
+      "answer": "ο",
+      "feedback": "Ουσιαστικά ουδέτερα σε -ο · ρήματα (εγώ) σε -ω."
+    },
+    {
+      "id": "drill-ending-o-omega-020",
+      "kind": "ending",
+      "grades": [
+        2,
+        3
+      ],
+      "ruleId": "ending-o-omega",
+      "instruction": "Συμπλήρωσε -ο ή -ω.",
+      "prompt": "εγώ πειν____",
+      "options": [
+        "ο",
+        "ω"
+      ],
+      "answer": "ω",
+      "feedback": "Ουσιαστικά ουδέτερα σε -ο · ρήματα (εγώ) σε -ω."
+    },
+    {
+      "id": "drill-ending-o-omega-021",
+      "kind": "binary",
+      "grades": [
+        2,
+        3,
+        4
+      ],
+      "ruleId": "ending-o-omega",
+      "instruction": "Κύκλωσε τη σωστή λέξη.",
+      "prompt": "το βουνό  /  το βουνώ",
+      "options": [
+        "το βουνό",
+        "το βουνώ"
+      ],
+      "answer": "το βουνό",
+      "feedback": "Ουσιαστικά ουδέτερα σε -ο · ρήματα σε -ω."
+    },
+    {
+      "id": "drill-ending-o-omega-022",
+      "kind": "binary",
+      "grades": [
+        2,
+        3,
+        4
+      ],
+      "ruleId": "ending-o-omega",
+      "instruction": "Κύκλωσε τη σωστή λέξη.",
+      "prompt": "εγώ ζωγραφίζω  /  εγώ ζωγραφίζο",
+      "options": [
+        "εγώ ζωγραφίζω",
+        "εγώ ζωγραφίζο"
+      ],
+      "answer": "εγώ ζωγραφίζω",
+      "feedback": "Ουσιαστικά ουδέτερα σε -ο · ρήματα σε -ω."
+    },
+    {
+      "id": "drill-ending-o-omega-023",
+      "kind": "binary",
+      "grades": [
+        2,
+        3,
+        4
+      ],
+      "ruleId": "ending-o-omega",
+      "instruction": "Κύκλωσε τη σωστή λέξη.",
+      "prompt": "το παγωτό  /  το παγωτώ",
+      "options": [
+        "το παγωτό",
+        "το παγωτώ"
+      ],
+      "answer": "το παγωτό",
+      "feedback": "Ουσιαστικά ουδέτερα σε -ο · ρήματα σε -ω."
+    },
+    {
+      "id": "drill-ending-o-omega-024",
+      "kind": "binary",
+      "grades": [
+        2,
+        3,
+        4
+      ],
+      "ruleId": "ending-o-omega",
+      "instruction": "Κύκλωσε τη σωστή λέξη.",
+      "prompt": "εγώ πίνω  /  εγώ πίνο",
+      "options": [
+        "εγώ πίνω",
+        "εγώ πίνο"
+      ],
+      "answer": "εγώ πίνω",
+      "feedback": "Ουσιαστικά ουδέτερα σε -ο · ρήματα σε -ω."
+    },
+    {
+      "id": "drill-ending-o-omega-025",
+      "kind": "binary",
+      "grades": [
+        2,
+        3,
+        4
+      ],
+      "ruleId": "ending-o-omega",
+      "instruction": "Κύκλωσε τη σωστή λέξη.",
+      "prompt": "το ζώο  /  το ζώω",
+      "options": [
+        "το ζώο",
+        "το ζώω"
+      ],
+      "answer": "το ζώο",
+      "feedback": "Ουσιαστικά ουδέτερα σε -ο · ρήματα σε -ω."
+    },
+    {
+      "id": "drill-ending-o-omega-026",
+      "kind": "binary",
+      "grades": [
+        2,
+        3,
+        4
+      ],
+      "ruleId": "ending-o-omega",
+      "instruction": "Κύκλωσε τη σωστή λέξη.",
+      "prompt": "εγώ τρώω  /  εγώ τρώο",
+      "options": [
+        "εγώ τρώω",
+        "εγώ τρώο"
+      ],
+      "answer": "εγώ τρώω",
+      "feedback": "Ουσιαστικά ουδέτερα σε -ο · ρήματα σε -ω."
+    },
+    {
+      "id": "drill-ending-o-omega-027",
+      "kind": "binary",
+      "grades": [
+        2,
+        3,
+        4
+      ],
+      "ruleId": "ending-o-omega",
+      "instruction": "Κύκλωσε τη σωστή λέξη.",
+      "prompt": "το δώρο  /  το δώρω",
+      "options": [
+        "το δώρο",
+        "το δώρω"
+      ],
+      "answer": "το δώρο",
+      "feedback": "Ουσιαστικά ουδέτερα σε -ο · ρήματα σε -ω."
+    },
+    {
+      "id": "drill-ending-o-omega-028",
+      "kind": "binary",
+      "grades": [
+        2,
+        3,
+        4
+      ],
+      "ruleId": "ending-o-omega",
+      "instruction": "Κύκλωσε τη σωστή λέξη.",
+      "prompt": "εγώ ρωτάω  /  εγώ ροτάο",
+      "options": [
+        "εγώ ρωτάω",
+        "εγώ ροτάο"
+      ],
+      "answer": "εγώ ρωτάω",
+      "feedback": "Ουσιαστικά ουδέτερα σε -ο · ρήματα σε -ω."
+    },
+    {
+      "id": "drill-ending-o-omega-029",
+      "kind": "binary",
+      "grades": [
+        2,
+        3,
+        4
+      ],
+      "ruleId": "ending-o-omega",
+      "instruction": "Κύκλωσε τη σωστή λέξη.",
+      "prompt": "το κινητό  /  το κινητώ",
+      "options": [
+        "το κινητό",
+        "το κινητώ"
+      ],
+      "answer": "το κινητό",
+      "feedback": "Ουσιαστικά ουδέτερα σε -ο · ρήματα σε -ω."
+    },
+    {
+      "id": "drill-ending-o-omega-030",
+      "kind": "binary",
+      "grades": [
+        2,
+        3,
+        4
+      ],
+      "ruleId": "ending-o-omega",
+      "instruction": "Κύκλωσε τη σωστή λέξη.",
+      "prompt": "εγώ περνάω  /  εγώ περνάο",
+      "options": [
+        "εγώ περνάω",
+        "εγώ περνάο"
+      ],
+      "answer": "εγώ περνάω",
+      "feedback": "Ουσιαστικά ουδέτερα σε -ο · ρήματα σε -ω."
+    },
+    {
+      "id": "drill-ending-i-h-001",
+      "kind": "ending",
+      "grades": [
+        2,
+        3
+      ],
+      "ruleId": "ending-i-h",
+      "instruction": "Συμπλήρωσε -η ή -ι.",
+      "prompt": "νίκ____",
+      "options": [
+        "η",
+        "ι"
+      ],
+      "answer": "η",
+      "feedback": "Θηλυκά ουσιαστικά συχνά σε -η · ουδέτερα σε -ι.",
+      "prefix": "η"
+    },
+    {
+      "id": "drill-ending-i-h-002",
+      "kind": "ending",
+      "grades": [
+        2,
+        3
+      ],
+      "ruleId": "ending-i-h",
+      "instruction": "Συμπλήρωσε -η ή -ι.",
+      "prompt": "νησ____",
+      "options": [
+        "η",
+        "ι"
+      ],
+      "answer": "ι",
+      "feedback": "Θηλυκά ουσιαστικά συχνά σε -η · ουδέτερα σε -ι.",
+      "prefix": "το"
+    },
+    {
+      "id": "drill-ending-i-h-003",
+      "kind": "ending",
+      "grades": [
+        2,
+        3
+      ],
+      "ruleId": "ending-i-h",
+      "instruction": "Συμπλήρωσε -η ή -ι.",
+      "prompt": "βροχ____",
+      "options": [
+        "η",
+        "ι"
+      ],
+      "answer": "η",
+      "feedback": "Θηλυκά ουσιαστικά συχνά σε -η · ουδέτερα σε -ι.",
+      "prefix": "η"
+    },
+    {
+      "id": "drill-ending-i-h-004",
+      "kind": "ending",
+      "grades": [
+        2,
+        3
+      ],
+      "ruleId": "ending-i-h",
+      "instruction": "Συμπλήρωσε -η ή -ι.",
+      "prompt": "κερ____",
+      "options": [
+        "η",
+        "ι"
+      ],
+      "answer": "ι",
+      "feedback": "Θηλυκά ουσιαστικά συχνά σε -η · ουδέτερα σε -ι.",
+      "prefix": "το"
+    },
+    {
+      "id": "drill-ending-i-h-005",
+      "kind": "ending",
+      "grades": [
+        2,
+        3
+      ],
+      "ruleId": "ending-i-h",
+      "instruction": "Συμπλήρωσε -η ή -ι.",
+      "prompt": "ψυχ____",
+      "options": [
+        "η",
+        "ι"
+      ],
+      "answer": "η",
+      "feedback": "Θηλυκά ουσιαστικά συχνά σε -η · ουδέτερα σε -ι.",
+      "prefix": "η"
+    },
+    {
+      "id": "drill-ending-i-h-006",
+      "kind": "ending",
+      "grades": [
+        2,
+        3
+      ],
+      "ruleId": "ending-i-h",
+      "instruction": "Συμπλήρωσε -η ή -ι.",
+      "prompt": "χωράφ____",
+      "options": [
+        "η",
+        "ι"
+      ],
+      "answer": "ι",
+      "feedback": "Θηλυκά ουσιαστικά συχνά σε -η · ουδέτερα σε -ι.",
+      "prefix": "το"
+    },
+    {
+      "id": "drill-ending-i-h-007",
+      "kind": "ending",
+      "grades": [
+        2,
+        3
+      ],
+      "ruleId": "ending-i-h",
+      "instruction": "Συμπλήρωσε -η ή -ι.",
+      "prompt": "λέξ____",
+      "options": [
+        "η",
+        "ι"
+      ],
+      "answer": "η",
+      "feedback": "Θηλυκά ουσιαστικά συχνά σε -η · ουδέτερα σε -ι.",
+      "prefix": "η"
+    },
+    {
+      "id": "drill-ending-i-h-008",
+      "kind": "ending",
+      "grades": [
+        2,
+        3
+      ],
+      "ruleId": "ending-i-h",
+      "instruction": "Συμπλήρωσε -η ή -ι.",
+      "prompt": "ελάφ____",
+      "options": [
+        "η",
+        "ι"
+      ],
+      "answer": "ι",
+      "feedback": "Θηλυκά ουσιαστικά συχνά σε -η · ουδέτερα σε -ι.",
+      "prefix": "το"
+    },
+    {
+      "id": "drill-ending-i-h-009",
+      "kind": "ending",
+      "grades": [
+        2,
+        3
+      ],
+      "ruleId": "ending-i-h",
+      "instruction": "Συμπλήρωσε -η ή -ι.",
+      "prompt": "ζω____",
+      "options": [
+        "η",
+        "ι"
+      ],
+      "answer": "η",
+      "feedback": "Θηλυκά ουσιαστικά συχνά σε -η · ουδέτερα σε -ι.",
+      "prefix": "η"
+    },
+    {
+      "id": "drill-ending-i-h-010",
+      "kind": "ending",
+      "grades": [
+        2,
+        3
+      ],
+      "ruleId": "ending-i-h",
+      "instruction": "Συμπλήρωσε -η ή -ι.",
+      "prompt": "λάδ____",
+      "options": [
+        "η",
+        "ι"
+      ],
+      "answer": "ι",
+      "feedback": "Θηλυκά ουσιαστικά συχνά σε -η · ουδέτερα σε -ι.",
+      "prefix": "το"
+    },
+    {
+      "id": "drill-ending-i-h-011",
+      "kind": "ending",
+      "grades": [
+        2,
+        3
+      ],
+      "ruleId": "ending-i-h",
+      "instruction": "Συμπλήρωσε -η ή -ι.",
+      "prompt": "τύχ____",
+      "options": [
+        "η",
+        "ι"
+      ],
+      "answer": "η",
+      "feedback": "Θηλυκά ουσιαστικά συχνά σε -η · ουδέτερα σε -ι.",
+      "prefix": "η"
+    },
+    {
+      "id": "drill-ending-i-h-012",
+      "kind": "ending",
+      "grades": [
+        2,
+        3
+      ],
+      "ruleId": "ending-i-h",
+      "instruction": "Συμπλήρωσε -η ή -ι.",
+      "prompt": "παιχνίδ____",
+      "options": [
+        "η",
+        "ι"
+      ],
+      "answer": "ι",
+      "feedback": "Θηλυκά ουσιαστικά συχνά σε -η · ουδέτερα σε -ι.",
+      "prefix": "το"
+    },
+    {
+      "id": "drill-ending-i-h-013",
+      "kind": "ending",
+      "grades": [
+        2,
+        3
+      ],
+      "ruleId": "ending-i-h",
+      "instruction": "Συμπλήρωσε -η ή -ι.",
+      "prompt": "πληγ____",
+      "options": [
+        "η",
+        "ι"
+      ],
+      "answer": "η",
+      "feedback": "Θηλυκά ουσιαστικά συχνά σε -η · ουδέτερα σε -ι.",
+      "prefix": "η"
+    },
+    {
+      "id": "drill-ending-i-h-014",
+      "kind": "ending",
+      "grades": [
+        2,
+        3
+      ],
+      "ruleId": "ending-i-h",
+      "instruction": "Συμπλήρωσε -η ή -ι.",
+      "prompt": "αγόρ____",
+      "options": [
+        "η",
+        "ι"
+      ],
+      "answer": "ι",
+      "feedback": "Θηλυκά ουσιαστικά συχνά σε -η · ουδέτερα σε -ι.",
+      "prefix": "το"
+    },
+    {
+      "id": "drill-ending-i-h-015",
+      "kind": "ending",
+      "grades": [
+        2,
+        3
+      ],
+      "ruleId": "ending-i-h",
+      "instruction": "Συμπλήρωσε -η ή -ι.",
+      "prompt": "φυλακ____",
+      "options": [
+        "η",
+        "ι"
+      ],
+      "answer": "η",
+      "feedback": "Θηλυκά ουσιαστικά συχνά σε -η · ουδέτερα σε -ι.",
+      "prefix": "η"
+    },
+    {
+      "id": "drill-ending-i-h-016",
+      "kind": "ending",
+      "grades": [
+        2,
+        3
+      ],
+      "ruleId": "ending-i-h",
+      "instruction": "Συμπλήρωσε -η ή -ι.",
+      "prompt": "φεγγάρ____",
+      "options": [
+        "η",
+        "ι"
+      ],
+      "answer": "ι",
+      "feedback": "Θηλυκά ουσιαστικά συχνά σε -η · ουδέτερα σε -ι.",
+      "prefix": "το"
+    },
+    {
+      "id": "drill-ending-ei-i-001",
+      "kind": "ending",
+      "grades": [
+        3,
+        4
+      ],
+      "ruleId": "ending-ei-i",
+      "instruction": "Συμπλήρωσε -ει ή -ι.",
+      "prompt": "αυτός μυρίζ____",
+      "options": [
+        "ει",
+        "ι"
+      ],
+      "answer": "ει",
+      "feedback": "Ρήματα (αυτός/αυτή) σε -ει · ουδέτερα ουσιαστικά σε -ι."
+    },
+    {
+      "id": "drill-ending-ei-i-002",
+      "kind": "ending",
+      "grades": [
+        3,
+        4
+      ],
+      "ruleId": "ending-ei-i",
+      "instruction": "Συμπλήρωσε -ει ή -ι.",
+      "prompt": "το παιχνίδ____",
+      "options": [
+        "ει",
+        "ι"
+      ],
+      "answer": "ι",
+      "feedback": "Ρήματα (αυτός/αυτή) σε -ει · ουδέτερα ουσιαστικά σε -ι."
+    },
+    {
+      "id": "drill-ending-ei-i-003",
+      "kind": "ending",
+      "grades": [
+        3,
+        4
+      ],
+      "ruleId": "ending-ei-i",
+      "instruction": "Συμπλήρωσε -ει ή -ι.",
+      "prompt": "αυτός λύν____",
+      "options": [
+        "ει",
+        "ι"
+      ],
+      "answer": "ει",
+      "feedback": "Ρήματα (αυτός/αυτή) σε -ει · ουδέτερα ουσιαστικά σε -ι."
+    },
+    {
+      "id": "drill-ending-ei-i-004",
+      "kind": "ending",
+      "grades": [
+        3,
+        4
+      ],
+      "ruleId": "ending-ei-i",
+      "instruction": "Συμπλήρωσε -ει ή -ι.",
+      "prompt": "το παραμύθ____",
+      "options": [
+        "ει",
+        "ι"
+      ],
+      "answer": "ι",
+      "feedback": "Ρήματα (αυτός/αυτή) σε -ει · ουδέτερα ουσιαστικά σε -ι."
+    },
+    {
+      "id": "drill-ending-ei-i-005",
+      "kind": "ending",
+      "grades": [
+        3,
+        4
+      ],
+      "ruleId": "ending-ei-i",
+      "instruction": "Συμπλήρωσε -ει ή -ι.",
+      "prompt": "αυτή πιστεύ____",
+      "options": [
+        "ει",
+        "ι"
+      ],
+      "answer": "ει",
+      "feedback": "Ρήματα (αυτός/αυτή) σε -ει · ουδέτερα ουσιαστικά σε -ι."
+    },
+    {
+      "id": "drill-ending-ei-i-006",
+      "kind": "ending",
+      "grades": [
+        3,
+        4
+      ],
+      "ruleId": "ending-ei-i",
+      "instruction": "Συμπλήρωσε -ει ή -ι.",
+      "prompt": "το αλάτ____",
+      "options": [
+        "ει",
+        "ι"
+      ],
+      "answer": "ι",
+      "feedback": "Ρήματα (αυτός/αυτή) σε -ει · ουδέτερα ουσιαστικά σε -ι."
+    },
+    {
+      "id": "drill-ending-ei-i-007",
+      "kind": "ending",
+      "grades": [
+        3,
+        4
+      ],
+      "ruleId": "ending-ei-i",
+      "instruction": "Συμπλήρωσε -ει ή -ι.",
+      "prompt": "αυτός πονά____",
+      "options": [
+        "ει",
+        "ι"
+      ],
+      "answer": "ει",
+      "feedback": "Ρήματα (αυτός/αυτή) σε -ει · ουδέτερα ουσιαστικά σε -ι."
+    },
+    {
+      "id": "drill-ending-ei-i-008",
+      "kind": "ending",
+      "grades": [
+        3,
+        4
+      ],
+      "ruleId": "ending-ei-i",
+      "instruction": "Συμπλήρωσε -ει ή -ι.",
+      "prompt": "το μελάν____",
+      "options": [
+        "ει",
+        "ι"
+      ],
+      "answer": "ι",
+      "feedback": "Ρήματα (αυτός/αυτή) σε -ει · ουδέτερα ουσιαστικά σε -ι."
+    },
+    {
+      "id": "drill-ending-ei-i-009",
+      "kind": "ending",
+      "grades": [
+        3,
+        4
+      ],
+      "ruleId": "ending-ei-i",
+      "instruction": "Συμπλήρωσε -ει ή -ι.",
+      "prompt": "αυτή καθαρίζ____",
+      "options": [
+        "ει",
+        "ι"
+      ],
+      "answer": "ει",
+      "feedback": "Ρήματα (αυτός/αυτή) σε -ει · ουδέτερα ουσιαστικά σε -ι."
+    },
+    {
+      "id": "drill-ending-ei-i-010",
+      "kind": "ending",
+      "grades": [
+        3,
+        4
+      ],
+      "ruleId": "ending-ei-i",
+      "instruction": "Συμπλήρωσε -ει ή -ι.",
+      "prompt": "το πουλ____",
+      "options": [
+        "ει",
+        "ι"
+      ],
+      "answer": "ι",
+      "feedback": "Ρήματα (αυτός/αυτή) σε -ει · ουδέτερα ουσιαστικά σε -ι."
+    },
+    {
+      "id": "drill-ending-ei-i-011",
+      "kind": "ending",
+      "grades": [
+        3,
+        4
+      ],
+      "ruleId": "ending-ei-i",
+      "instruction": "Συμπλήρωσε -ει ή -ι.",
+      "prompt": "αυτός μαγειρεύ____",
+      "options": [
+        "ει",
+        "ι"
+      ],
+      "answer": "ει",
+      "feedback": "Ρήματα (αυτός/αυτή) σε -ει · ουδέτερα ουσιαστικά σε -ι."
+    },
+    {
+      "id": "drill-ending-ei-i-012",
+      "kind": "ending",
+      "grades": [
+        3,
+        4
+      ],
+      "ruleId": "ending-ei-i",
+      "instruction": "Συμπλήρωσε -ει ή -ι.",
+      "prompt": "το κουτ____",
+      "options": [
+        "ει",
+        "ι"
+      ],
+      "answer": "ι",
+      "feedback": "Ρήματα (αυτός/αυτή) σε -ει · ουδέτερα ουσιαστικά σε -ι."
+    },
+    {
+      "id": "drill-ending-oi-ei-001",
+      "kind": "ending",
+      "grades": [
+        3,
+        4
+      ],
+      "ruleId": "ending-oi-ei",
+      "instruction": "Συμπλήρωσε -οι ή -ει.",
+      "prompt": "οι γιατρ____",
+      "options": [
+        "οι",
+        "ει"
+      ],
+      "answer": "οι",
+      "feedback": "Πληθυντικός αρσενικών σε -οι · ρήμα (αυτός) σε -ει."
+    },
+    {
+      "id": "drill-ending-oi-ei-002",
+      "kind": "ending",
+      "grades": [
+        3,
+        4
+      ],
+      "ruleId": "ending-oi-ei",
+      "instruction": "Συμπλήρωσε -οι ή -ει.",
+      "prompt": "αυτός μιλά____",
+      "options": [
+        "οι",
+        "ει"
+      ],
+      "answer": "ει",
+      "feedback": "Πληθυντικός αρσενικών σε -οι · ρήμα (αυτός) σε -ει."
+    },
+    {
+      "id": "drill-ending-oi-ei-003",
+      "kind": "ending",
+      "grades": [
+        3,
+        4
+      ],
+      "ruleId": "ending-oi-ei",
+      "instruction": "Συμπλήρωσε -οι ή -ει.",
+      "prompt": "οι βάτραχ____",
+      "options": [
+        "οι",
+        "ει"
+      ],
+      "answer": "οι",
+      "feedback": "Πληθυντικός αρσενικών σε -οι · ρήμα (αυτός) σε -ει."
+    },
+    {
+      "id": "drill-ending-oi-ei-004",
+      "kind": "ending",
+      "grades": [
+        3,
+        4
+      ],
+      "ruleId": "ending-oi-ei",
+      "instruction": "Συμπλήρωσε -οι ή -ει.",
+      "prompt": "αυτός περνά____",
+      "options": [
+        "οι",
+        "ει"
+      ],
+      "answer": "ει",
+      "feedback": "Πληθυντικός αρσενικών σε -οι · ρήμα (αυτός) σε -ει."
+    },
+    {
+      "id": "drill-ending-oi-ei-005",
+      "kind": "ending",
+      "grades": [
+        3,
+        4
+      ],
+      "ruleId": "ending-oi-ei",
+      "instruction": "Συμπλήρωσε -οι ή -ει.",
+      "prompt": "οι αρχηγ____",
+      "options": [
+        "οι",
+        "ει"
+      ],
+      "answer": "οι",
+      "feedback": "Πληθυντικός αρσενικών σε -οι · ρήμα (αυτός) σε -ει."
+    },
+    {
+      "id": "drill-ending-oi-ei-006",
+      "kind": "ending",
+      "grades": [
+        3,
+        4
+      ],
+      "ruleId": "ending-oi-ei",
+      "instruction": "Συμπλήρωσε -οι ή -ει.",
+      "prompt": "αυτός χωρά____",
+      "options": [
+        "οι",
+        "ει"
+      ],
+      "answer": "ει",
+      "feedback": "Πληθυντικός αρσενικών σε -οι · ρήμα (αυτός) σε -ει."
+    },
+    {
+      "id": "drill-ending-oi-ei-007",
+      "kind": "ending",
+      "grades": [
+        3,
+        4
+      ],
+      "ruleId": "ending-oi-ei",
+      "instruction": "Συμπλήρωσε -οι ή -ει.",
+      "prompt": "οι πιλότ____",
+      "options": [
+        "οι",
+        "ει"
+      ],
+      "answer": "οι",
+      "feedback": "Πληθυντικός αρσενικών σε -οι · ρήμα (αυτός) σε -ει."
+    },
+    {
+      "id": "drill-ending-oi-ei-008",
+      "kind": "ending",
+      "grades": [
+        3,
+        4
+      ],
+      "ruleId": "ending-oi-ei",
+      "instruction": "Συμπλήρωσε -οι ή -ει.",
+      "prompt": "αυτός απαντά____",
+      "options": [
+        "οι",
+        "ει"
+      ],
+      "answer": "ει",
+      "feedback": "Πληθυντικός αρσενικών σε -οι · ρήμα (αυτός) σε -ει."
+    },
+    {
+      "id": "drill-ending-oi-ei-009",
+      "kind": "ending",
+      "grades": [
+        3,
+        4
+      ],
+      "ruleId": "ending-oi-ei",
+      "instruction": "Συμπλήρωσε -οι ή -ει.",
+      "prompt": "οι κάτοικ____",
+      "options": [
+        "οι",
+        "ει"
+      ],
+      "answer": "οι",
+      "feedback": "Πληθυντικός αρσενικών σε -οι · ρήμα (αυτός) σε -ει."
+    },
+    {
+      "id": "drill-ending-oi-ei-010",
+      "kind": "ending",
+      "grades": [
+        3,
+        4
+      ],
+      "ruleId": "ending-oi-ei",
+      "instruction": "Συμπλήρωσε -οι ή -ει.",
+      "prompt": "αυτός κοιτά____",
+      "options": [
+        "οι",
+        "ει"
+      ],
+      "answer": "ει",
+      "feedback": "Πληθυντικός αρσενικών σε -οι · ρήμα (αυτός) σε -ει."
+    },
+    {
+      "id": "drill-verbs-aino-eno-001",
+      "kind": "ending",
+      "grades": [
+        3,
+        4
+      ],
+      "ruleId": "verbs-aino-eno",
+      "instruction": "Συμπλήρωσε -αίνω ή -ένω.",
+      "prompt": "ανεβ________",
+      "options": [
+        "αίνω",
+        "ένω"
+      ],
+      "answer": "αίνω",
+      "feedback": "Τα περισσότερα σε -αίνω· εξαιρέσεις: μένω, δένω, πλένω κ.ά. σε -ένω."
+    },
+    {
+      "id": "drill-verbs-aino-eno-002",
+      "kind": "ending",
+      "grades": [
+        3,
+        4
+      ],
+      "ruleId": "verbs-aino-eno",
+      "instruction": "Συμπλήρωσε -αίνω ή -ένω.",
+      "prompt": "κατεβ________",
+      "options": [
+        "αίνω",
+        "ένω"
+      ],
+      "answer": "αίνω",
+      "feedback": "Τα περισσότερα σε -αίνω· εξαιρέσεις: μένω, δένω, πλένω κ.ά. σε -ένω."
+    },
+    {
+      "id": "drill-verbs-aino-eno-003",
+      "kind": "ending",
+      "grades": [
+        3,
+        4
+      ],
+      "ruleId": "verbs-aino-eno",
+      "instruction": "Συμπλήρωσε -αίνω ή -ένω.",
+      "prompt": "μαθ________",
+      "options": [
+        "αίνω",
+        "ένω"
+      ],
+      "answer": "αίνω",
+      "feedback": "Τα περισσότερα σε -αίνω· εξαιρέσεις: μένω, δένω, πλένω κ.ά. σε -ένω."
+    },
+    {
+      "id": "drill-verbs-aino-eno-004",
+      "kind": "ending",
+      "grades": [
+        3,
+        4
+      ],
+      "ruleId": "verbs-aino-eno",
+      "instruction": "Συμπλήρωσε -αίνω ή -ένω.",
+      "prompt": "περιμ________",
+      "options": [
+        "αίνω",
+        "ένω"
+      ],
+      "answer": "ένω",
+      "feedback": "Τα περισσότερα σε -αίνω· εξαιρέσεις: μένω, δένω, πλένω κ.ά. σε -ένω."
+    },
+    {
+      "id": "drill-verbs-aino-eno-005",
+      "kind": "ending",
+      "grades": [
+        3,
+        4
+      ],
+      "ruleId": "verbs-aino-eno",
+      "instruction": "Συμπλήρωσε -αίνω ή -ένω.",
+      "prompt": "πλ________",
+      "options": [
+        "αίνω",
+        "ένω"
+      ],
+      "answer": "ένω",
+      "feedback": "Τα περισσότερα σε -αίνω· εξαιρέσεις: μένω, δένω, πλένω κ.ά. σε -ένω."
+    },
+    {
+      "id": "drill-verbs-aino-eno-006",
+      "kind": "ending",
+      "grades": [
+        3,
+        4
+      ],
+      "ruleId": "verbs-aino-eno",
+      "instruction": "Συμπλήρωσε -αίνω ή -ένω.",
+      "prompt": "αρρωστ________",
+      "options": [
+        "αίνω",
+        "ένω"
+      ],
+      "answer": "αίνω",
+      "feedback": "Τα περισσότερα σε -αίνω· εξαιρέσεις: μένω, δένω, πλένω κ.ά. σε -ένω."
+    },
+    {
+      "id": "drill-verbs-aino-eno-007",
+      "kind": "ending",
+      "grades": [
+        3,
+        4
+      ],
+      "ruleId": "verbs-aino-eno",
+      "instruction": "Συμπλήρωσε -αίνω ή -ένω.",
+      "prompt": "μ________",
+      "options": [
+        "αίνω",
+        "ένω"
+      ],
+      "answer": "ένω",
+      "feedback": "Τα περισσότερα σε -αίνω· εξαιρέσεις: μένω, δένω, πλένω κ.ά. σε -ένω."
+    },
+    {
+      "id": "drill-verbs-aino-eno-008",
+      "kind": "ending",
+      "grades": [
+        3,
+        4
+      ],
+      "ruleId": "verbs-aino-eno",
+      "instruction": "Συμπλήρωσε -αίνω ή -ένω.",
+      "prompt": "ζεστ________",
+      "options": [
+        "αίνω",
+        "ένω"
+      ],
+      "answer": "αίνω",
+      "feedback": "Τα περισσότερα σε -αίνω· εξαιρέσεις: μένω, δένω, πλένω κ.ά. σε -ένω."
+    },
+    {
+      "id": "drill-verbs-aino-eno-009",
+      "kind": "ending",
+      "grades": [
+        3,
+        4
+      ],
+      "ruleId": "verbs-aino-eno",
+      "instruction": "Συμπλήρωσε -αίνω ή -ένω.",
+      "prompt": "δ________",
+      "options": [
+        "αίνω",
+        "ένω"
+      ],
+      "answer": "ένω",
+      "feedback": "Τα περισσότερα σε -αίνω· εξαιρέσεις: μένω, δένω, πλένω κ.ά. σε -ένω."
+    },
+    {
+      "id": "drill-verbs-aino-eno-010",
+      "kind": "ending",
+      "grades": [
+        3,
+        4
+      ],
+      "ruleId": "verbs-aino-eno",
+      "instruction": "Συμπλήρωσε -αίνω ή -ένω.",
+      "prompt": "βγ________",
+      "options": [
+        "αίνω",
+        "ένω"
+      ],
+      "answer": "αίνω",
+      "feedback": "Τα περισσότερα σε -αίνω· εξαιρέσεις: μένω, δένω, πλένω κ.ά. σε -ένω."
+    },
+    {
+      "id": "drill-verbs-aino-eno-011",
+      "kind": "ending",
+      "grades": [
+        3,
+        4
+      ],
+      "ruleId": "verbs-aino-eno",
+      "instruction": "Συμπλήρωσε -αίνω ή -ένω.",
+      "prompt": "ξεπλ________",
+      "options": [
+        "αίνω",
+        "ένω"
+      ],
+      "answer": "ένω",
+      "feedback": "Τα περισσότερα σε -αίνω· εξαιρέσεις: μένω, δένω, πλένω κ.ά. σε -ένω."
+    },
+    {
+      "id": "drill-verbs-aino-eno-012",
+      "kind": "ending",
+      "grades": [
+        3,
+        4
+      ],
+      "ruleId": "verbs-aino-eno",
+      "instruction": "Συμπλήρωσε -αίνω ή -ένω.",
+      "prompt": "επιμ________",
+      "options": [
+        "αίνω",
+        "ένω"
+      ],
+      "answer": "ένω",
+      "feedback": "Τα περισσότερα σε -αίνω· εξαιρέσεις: μένω, δένω, πλένω κ.ά. σε -ένω."
+    },
+    {
+      "id": "drill-articles-basic-001",
+      "kind": "article",
+      "grades": [
+        2,
+        3
+      ],
+      "ruleId": "articles-basic",
+      "instruction": "Διάλεξε το σωστό άρθρο.",
+      "prompt": "οικογένεια",
+      "options": [
+        "η",
+        "οι"
+      ],
+      "answer": "η",
+      "feedback": "Θηλυκό ενικού → η."
+    },
+    {
+      "id": "drill-articles-basic-002",
+      "kind": "article",
+      "grades": [
+        2,
+        3
+      ],
+      "ruleId": "articles-basic",
+      "instruction": "Διάλεξε το σωστό άρθρο.",
+      "prompt": "φωνές",
+      "options": [
+        "η",
+        "οι"
+      ],
+      "answer": "οι",
+      "feedback": "Πληθυντικός → οι."
+    },
+    {
+      "id": "drill-articles-basic-003",
+      "kind": "article",
+      "grades": [
+        2,
+        3
+      ],
+      "ruleId": "articles-basic",
+      "instruction": "Διάλεξε το σωστό άρθρο.",
+      "prompt": "νύχτα",
+      "options": [
+        "η",
+        "οι"
+      ],
+      "answer": "η",
+      "feedback": "Θηλυκό ενικού → η."
+    },
+    {
+      "id": "drill-articles-basic-004",
+      "kind": "article",
+      "grades": [
+        2,
+        3
+      ],
+      "ruleId": "articles-basic",
+      "instruction": "Διάλεξε το σωστό άρθρο.",
+      "prompt": "τοίχοι",
+      "options": [
+        "η",
+        "οι"
+      ],
+      "answer": "οι",
+      "feedback": "Πληθυντικός → οι."
+    },
+    {
+      "id": "drill-articles-basic-005",
+      "kind": "article",
+      "grades": [
+        2,
+        3
+      ],
+      "ruleId": "articles-basic",
+      "instruction": "Διάλεξε το σωστό άρθρο.",
+      "prompt": "δουλειά",
+      "options": [
+        "η",
+        "οι"
+      ],
+      "answer": "η",
+      "feedback": "Θηλυκό ενικού → η."
+    },
+    {
+      "id": "drill-articles-basic-006",
+      "kind": "article",
+      "grades": [
+        2,
+        3
+      ],
+      "ruleId": "articles-basic",
+      "instruction": "Διάλεξε το σωστό άρθρο.",
+      "prompt": "σεισμοί",
+      "options": [
+        "η",
+        "οι"
+      ],
+      "answer": "οι",
+      "feedback": "Πληθυντικός → οι."
+    },
+    {
+      "id": "drill-articles-basic-007",
+      "kind": "article",
+      "grades": [
+        2,
+        3
+      ],
+      "ruleId": "articles-basic",
+      "instruction": "Διάλεξε το σωστό άρθρο.",
+      "prompt": "θάλασσα",
+      "options": [
+        "η",
+        "οι"
+      ],
+      "answer": "η",
+      "feedback": "Θηλυκό ενικού → η."
+    },
+    {
+      "id": "drill-articles-basic-008",
+      "kind": "article",
+      "grades": [
+        2,
+        3
+      ],
+      "ruleId": "articles-basic",
+      "instruction": "Διάλεξε το σωστό άρθρο.",
+      "prompt": "βοσκοί",
+      "options": [
+        "η",
+        "οι"
+      ],
+      "answer": "οι",
+      "feedback": "Πληθυντικός → οι."
+    },
+    {
+      "id": "drill-articles-tis-001",
+      "kind": "article",
+      "grades": [
+        3,
+        4
+      ],
+      "ruleId": "articles-tis",
+      "instruction": "Διάλεξε της ή τις.",
+      "prompt": "κουρτίνες",
+      "options": [
+        "της",
+        "τις"
+      ],
+      "answer": "τις",
+      "feedback": "Αιτιατική πληθυντικού → τις."
+    },
+    {
+      "id": "drill-articles-tis-002",
+      "kind": "article",
+      "grades": [
+        3,
+        4
+      ],
+      "ruleId": "articles-tis",
+      "instruction": "Διάλεξε της ή τις.",
+      "prompt": "Μαίρης",
+      "options": [
+        "της",
+        "τις"
+      ],
+      "answer": "της",
+      "feedback": "Γενική ενικού → της."
+    },
+    {
+      "id": "drill-articles-tis-003",
+      "kind": "article",
+      "grades": [
+        3,
+        4
+      ],
+      "ruleId": "articles-tis",
+      "instruction": "Διάλεξε της ή τις.",
+      "prompt": "κάλτσες",
+      "options": [
+        "της",
+        "τις"
+      ],
+      "answer": "τις",
+      "feedback": "Αιτιατική πληθυντικού → τις."
+    },
+    {
+      "id": "drill-articles-tis-004",
+      "kind": "article",
+      "grades": [
+        3,
+        4
+      ],
+      "ruleId": "articles-tis",
+      "instruction": "Διάλεξε της ή τις.",
+      "prompt": "βροχής",
+      "options": [
+        "της",
+        "τις"
+      ],
+      "answer": "της",
+      "feedback": "Γενική ενικού → της."
+    },
+    {
+      "id": "drill-articles-tis-005",
+      "kind": "article",
+      "grades": [
+        3,
+        4
+      ],
+      "ruleId": "articles-tis",
+      "instruction": "Διάλεξε της ή τις.",
+      "prompt": "προτάσεις",
+      "options": [
+        "της",
+        "τις"
+      ],
+      "answer": "τις",
+      "feedback": "Αιτιατική πληθυντικού → τις."
+    },
+    {
+      "id": "drill-articles-tis-006",
+      "kind": "article",
+      "grades": [
+        3,
+        4
+      ],
+      "ruleId": "articles-tis",
+      "instruction": "Διάλεξε της ή τις.",
+      "prompt": "φωνής",
+      "options": [
+        "της",
+        "τις"
+      ],
+      "answer": "της",
+      "feedback": "Γενική ενικού → της."
+    },
+    {
+      "id": "drill-articles-tis-007",
+      "kind": "article",
+      "grades": [
+        3,
+        4
+      ],
+      "ruleId": "articles-tis",
+      "instruction": "Διάλεξε της ή τις.",
+      "prompt": "αυλές",
+      "options": [
+        "της",
+        "τις"
+      ],
+      "answer": "τις",
+      "feedback": "Αιτιατική πληθυντικού → τις."
+    },
+    {
+      "id": "drill-articles-tis-008",
+      "kind": "article",
+      "grades": [
+        3,
+        4
+      ],
+      "ruleId": "articles-tis",
+      "instruction": "Διάλεξε της ή τις.",
+      "prompt": "σκηνής",
+      "options": [
+        "της",
+        "τις"
+      ],
+      "answer": "της",
+      "feedback": "Γενική ενικού → της."
+    },
+    {
+      "id": "drill-adj-aios-eos-001",
+      "kind": "infix",
+      "grades": [
+        4,
+        5
+      ],
+      "ruleId": "adj-aios-eos",
+      "instruction": "Συμπλήρωσε -αι- ή -ε-.",
+      "prompt": "αρχ____ος",
+      "options": [
+        "αι",
+        "ε"
+      ],
+      "answer": "αι",
+      "feedback": "Πολλά επίθετα σε -αίος· κάποια σε -έος (π.χ. νέος, θαρραλέος)."
+    },
+    {
+      "id": "drill-adj-aios-eos-002",
+      "kind": "infix",
+      "grades": [
+        4,
+        5
+      ],
+      "ruleId": "adj-aios-eos",
+      "instruction": "Συμπλήρωσε -αι- ή -ε-.",
+      "prompt": "γενν____ος",
+      "options": [
+        "αι",
+        "ε"
+      ],
+      "answer": "αι",
+      "feedback": "Πολλά επίθετα σε -αίος· κάποια σε -έος (π.χ. νέος, θαρραλέος)."
+    },
+    {
+      "id": "drill-adj-aios-eos-003",
+      "kind": "infix",
+      "grades": [
+        4,
+        5
+      ],
+      "ruleId": "adj-aios-eos",
+      "instruction": "Συμπλήρωσε -αι- ή -ε-.",
+      "prompt": "θαρραλ____ος",
+      "options": [
+        "αι",
+        "ε"
+      ],
+      "answer": "ε",
+      "feedback": "Πολλά επίθετα σε -αίος· κάποια σε -έος (π.χ. νέος, θαρραλέος)."
+    },
+    {
+      "id": "drill-adj-aios-eos-004",
+      "kind": "infix",
+      "grades": [
+        4,
+        5
+      ],
+      "ruleId": "adj-aios-eos",
+      "instruction": "Συμπλήρωσε -αι- ή -ε-.",
+      "prompt": "ωρ____ος",
+      "options": [
+        "αι",
+        "ε"
+      ],
+      "answer": "αι",
+      "feedback": "Πολλά επίθετα σε -αίος· κάποια σε -έος (π.χ. νέος, θαρραλέος)."
+    },
+    {
+      "id": "drill-adj-aios-eos-005",
+      "kind": "infix",
+      "grades": [
+        4,
+        5
+      ],
+      "ruleId": "adj-aios-eos",
+      "instruction": "Συμπλήρωσε -αι- ή -ε-.",
+      "prompt": "τελευτ____ος",
+      "options": [
+        "αι",
+        "ε"
+      ],
+      "answer": "αι",
+      "feedback": "Πολλά επίθετα σε -αίος· κάποια σε -έος (π.χ. νέος, θαρραλέος)."
+    },
+    {
+      "id": "drill-adj-aios-eos-006",
+      "kind": "infix",
+      "grades": [
+        4,
+        5
+      ],
+      "ruleId": "adj-aios-eos",
+      "instruction": "Συμπλήρωσε -αι- ή -ε-.",
+      "prompt": "ακέρ____ος",
+      "options": [
+        "αι",
+        "ε"
+      ],
+      "answer": "αι",
+      "feedback": "Πολλά επίθετα σε -αίος· κάποια σε -έος (π.χ. νέος, θαρραλέος)."
+    },
+    {
+      "id": "drill-adj-aios-eos-007",
+      "kind": "infix",
+      "grades": [
+        4,
+        5
+      ],
+      "ruleId": "adj-aios-eos",
+      "instruction": "Συμπλήρωσε -αι- ή -ε-.",
+      "prompt": "ν____ος",
+      "options": [
+        "αι",
+        "ε"
+      ],
+      "answer": "ε",
+      "feedback": "Πολλά επίθετα σε -αίος· κάποια σε -έος (π.χ. νέος, θαρραλέος)."
+    },
+    {
+      "id": "drill-adj-aios-eos-008",
+      "kind": "infix",
+      "grades": [
+        4,
+        5
+      ],
+      "ruleId": "adj-aios-eos",
+      "instruction": "Συμπλήρωσε -αι- ή -ε-.",
+      "prompt": "δίκ____ος",
+      "options": [
+        "αι",
+        "ε"
+      ],
+      "answer": "αι",
+      "feedback": "Πολλά επίθετα σε -αίος· κάποια σε -έος (π.χ. νέος, θαρραλέος)."
+    },
+    {
+      "id": "drill-adj-aios-eos-009",
+      "kind": "infix",
+      "grades": [
+        4,
+        5
+      ],
+      "ruleId": "adj-aios-eos",
+      "instruction": "Συμπλήρωσε -αι- ή -ε-.",
+      "prompt": "βεβ____ος",
+      "options": [
+        "αι",
+        "ε"
+      ],
+      "answer": "αι",
+      "feedback": "Πολλά επίθετα σε -αίος· κάποια σε -έος (π.χ. νέος, θαρραλέος)."
+    },
+    {
+      "id": "drill-adj-aios-eos-010",
+      "kind": "infix",
+      "grades": [
+        4,
+        5
+      ],
+      "ruleId": "adj-aios-eos",
+      "instruction": "Συμπλήρωσε -αι- ή -ε-.",
+      "prompt": "σπουδ____ος",
+      "options": [
+        "αι",
+        "ε"
+      ],
+      "answer": "αι",
+      "feedback": "Πολλά επίθετα σε -αίος· κάποια σε -έος (π.χ. νέος, θαρραλέος)."
+    },
+    {
+      "id": "drill-adj-aios-eos-011",
+      "kind": "infix",
+      "grades": [
+        4,
+        5
+      ],
+      "ruleId": "adj-aios-eos",
+      "instruction": "Συμπλήρωσε -αι- ή -ε-.",
+      "prompt": "επιπόλ____ος",
+      "options": [
+        "αι",
+        "ε"
+      ],
+      "answer": "αι",
+      "feedback": "Πολλά επίθετα σε -αίος· κάποια σε -έος (π.χ. νέος, θαρραλέος)."
+    },
+    {
+      "id": "drill-adj-aios-eos-012",
+      "kind": "infix",
+      "grades": [
+        4,
+        5
+      ],
+      "ruleId": "adj-aios-eos",
+      "instruction": "Συμπλήρωσε -αι- ή -ε-.",
+      "prompt": "μοιρ____ος",
+      "options": [
+        "αι",
+        "ε"
+      ],
+      "answer": "αι",
+      "feedback": "Πολλά επίθετα σε -αίος· κάποια σε -έος (π.χ. νέος, θαρραλέος)."
+    },
+    {
+      "id": "drill-verbs-tai-te-001",
+      "kind": "ending",
+      "grades": [
+        3,
+        4,
+        5
+      ],
+      "ruleId": "verbs-tai-te",
+      "instruction": "Συμπλήρωσε -ται/-εται ή -τε/-ετε.",
+      "prompt": "Το σχολείο βρίσκ____ κοντά στην πλατεία.",
+      "options": [
+        "εται",
+        "ετε"
+      ],
+      "answer": "εται",
+      "feedback": "Ρήμα αυτός/αυτή (μέση/παθητική) → -ται/-εται · εσείς → -τε/-ετε."
+    },
+    {
+      "id": "drill-verbs-tai-te-002",
+      "kind": "ending",
+      "grades": [
+        3,
+        4,
+        5
+      ],
+      "ruleId": "verbs-tai-te",
+      "instruction": "Συμπλήρωσε -ται/-εται ή -τε/-ετε.",
+      "prompt": "Γιατί φεύγ____ τόσο γρήγορα;",
+      "options": [
+        "ετε",
+        "εται"
+      ],
+      "answer": "ετε",
+      "feedback": "Ρήμα αυτός/αυτή (μέση/παθητική) → -ται/-εται · εσείς → -τε/-ετε."
+    },
+    {
+      "id": "drill-verbs-tai-te-003",
+      "kind": "ending",
+      "grades": [
+        3,
+        4,
+        5
+      ],
+      "ruleId": "verbs-tai-te",
+      "instruction": "Συμπλήρωσε -ται/-εται ή -τε/-ετε.",
+      "prompt": "Ο μπέμπης κοιμά____ στην κούνια.",
+      "options": [
+        "ται",
+        "τε"
+      ],
+      "answer": "ται",
+      "feedback": "Ρήμα αυτός/αυτή (μέση/παθητική) → -ται/-εται · εσείς → -τε/-ετε."
+    },
+    {
+      "id": "drill-verbs-tai-te-004",
+      "kind": "ending",
+      "grades": [
+        3,
+        4,
+        5
+      ],
+      "ruleId": "verbs-tai-te",
+      "instruction": "Συμπλήρωσε -ται/-εται ή -τε/-ετε.",
+      "prompt": "Να προσέχ____ μην κάνετε λάθος.",
+      "options": [
+        "ετε",
+        "εται"
+      ],
+      "answer": "ετε",
+      "feedback": "Ρήμα αυτός/αυτή (μέση/παθητική) → -ται/-εται · εσείς → -τε/-ετε."
+    },
+    {
+      "id": "drill-verbs-tai-te-005",
+      "kind": "ending",
+      "grades": [
+        3,
+        4,
+        5
+      ],
+      "ruleId": "verbs-tai-te",
+      "instruction": "Συμπλήρωσε -ται/-εται ή -τε/-ετε.",
+      "prompt": "Από δω φαίν____ η θάλασσα.",
+      "options": [
+        "εται",
+        "ετε"
+      ],
+      "answer": "εται",
+      "feedback": "Ρήμα αυτός/αυτή (μέση/παθητική) → -ται/-εται · εσείς → -τε/-ετε."
+    },
+    {
+      "id": "drill-verbs-tai-te-006",
+      "kind": "ending",
+      "grades": [
+        3,
+        4,
+        5
+      ],
+      "ruleId": "verbs-tai-te",
+      "instruction": "Συμπλήρωσε -ται/-εται ή -τε/-ετε.",
+      "prompt": "Εσείς δουλεύ____ πολύ.",
+      "options": [
+        "ετε",
+        "εται"
+      ],
+      "answer": "ετε",
+      "feedback": "Ρήμα αυτός/αυτή (μέση/παθητική) → -ται/-εται · εσείς → -τε/-ετε."
+    },
+    {
+      "id": "drill-sentence-cloze-001",
+      "kind": "cloze",
+      "grades": [
+        2,
+        3,
+        4
+      ],
+      "ruleId": "sentence-cloze",
+      "instruction": "Συμπλήρωσε το κενό στην πρόταση.",
+      "prompt": "Κάθε πρωί πίν____ το γάλα μου.",
+      "options": [
+        "ω",
+        "ο"
+      ],
+      "answer": "ω",
+      "feedback": "Ρήμα εγώ → -ω."
+    },
+    {
+      "id": "drill-sentence-cloze-002",
+      "kind": "cloze",
+      "grades": [
+        2,
+        3,
+        4
+      ],
+      "ruleId": "sentence-cloze",
+      "instruction": "Συμπλήρωσε το κενό στην πρόταση.",
+      "prompt": "Άφησα το βιβλί____ στο τραπέζι.",
+      "options": [
+        "ο",
+        "ω"
+      ],
+      "answer": "ο",
+      "feedback": "Ουδέτερο ουσιαστικό → -ο."
+    },
+    {
+      "id": "drill-sentence-cloze-003",
+      "kind": "cloze",
+      "grades": [
+        2,
+        3,
+        4
+      ],
+      "ruleId": "sentence-cloze",
+      "instruction": "Συμπλήρωσε το κενό στην πρόταση.",
+      "prompt": "Η μαμά μαγειρεύ____ σούπα.",
+      "options": [
+        "ει",
+        "ι"
+      ],
+      "answer": "ει",
+      "feedback": "Ρήμα αυτή → -ει."
+    },
+    {
+      "id": "drill-sentence-cloze-004",
+      "kind": "cloze",
+      "grades": [
+        2,
+        3,
+        4
+      ],
+      "ruleId": "sentence-cloze",
+      "instruction": "Συμπλήρωσε το κενό στην πρόταση.",
+      "prompt": "Έβαλα αλάτ____ στο φαγητό.",
+      "options": [
+        "ι",
+        "ει"
+      ],
+      "answer": "ι",
+      "feedback": "Ουδέτερο ουσιαστικό → -ι."
+    },
+    {
+      "id": "drill-sentence-cloze-005",
+      "kind": "cloze",
+      "grades": [
+        2,
+        3,
+        4
+      ],
+      "ruleId": "sentence-cloze",
+      "instruction": "Συμπλήρωσε το κενό στην πρόταση.",
+      "prompt": "Οι γιατρ____ ήρθαν γρήγορα.",
+      "options": [
+        "οι",
+        "ει"
+      ],
+      "answer": "οι",
+      "feedback": "Πληθυντικός → -οι."
+    },
+    {
+      "id": "drill-sentence-cloze-006",
+      "kind": "cloze",
+      "grades": [
+        2,
+        3,
+        4
+      ],
+      "ruleId": "sentence-cloze",
+      "instruction": "Συμπλήρωσε το κενό στην πρόταση.",
+      "prompt": "Το παιδί περνά____ τον δρόμο.",
+      "options": [
+        "ει",
+        "οι"
+      ],
+      "answer": "ει",
+      "feedback": "Ρήμα αυτό → -ει."
+    },
+    {
+      "id": "drill-sentence-cloze-007",
+      "kind": "cloze",
+      "grades": [
+        2,
+        3,
+        4
+      ],
+      "ruleId": "sentence-cloze",
+      "instruction": "Συμπλήρωσε το κενό στην πρόταση.",
+      "prompt": "Θα περιμέν____ λίγο ακόμα.",
+      "options": [
+        "ω",
+        "ο"
+      ],
+      "answer": "ω",
+      "feedback": "Ρήμα εγώ → -ω (περιμένω)."
+    },
+    {
+      "id": "drill-sentence-cloze-008",
+      "kind": "cloze",
+      "grades": [
+        2,
+        3,
+        4
+      ],
+      "ruleId": "sentence-cloze",
+      "instruction": "Συμπλήρωσε το κενό στην πρόταση.",
+      "prompt": "Άνοιξε ____ κουρτίνες.",
+      "options": [
+        "τις",
+        "της"
+      ],
+      "answer": "τις",
+      "feedback": "Αιτιατική πληθυντικού → τις."
+    },
+    {
+      "id": "drill-homophones-001",
+      "kind": "homophone",
+      "grades": [
+        4,
+        5,
+        6
+      ],
+      "ruleId": "homophones",
+      "instruction": "Διάλεξε τη σωστή λέξη.",
+      "prompt": "Αυτό το ________ έπεσε από το δέντρο.",
+      "options": [
+        "φύλλο",
+        "φύλο"
+      ],
+      "answer": "φύλλο",
+      "feedback": "φύλλο = leaf · φύλο = gender."
+    },
+    {
+      "id": "drill-homophones-002",
+      "kind": "homophone",
+      "grades": [
+        4,
+        5,
+        6
+      ],
+      "ruleId": "homophones",
+      "instruction": "Διάλεξε τη σωστή λέξη.",
+      "prompt": "Δεν ξέρουν ακόμη το ________ του παιδιού.",
+      "options": [
+        "φύλλο",
+        "φύλο"
+      ],
+      "answer": "φύλο",
+      "feedback": "φύλλο = leaf · φύλο = gender."
+    },
+    {
+      "id": "drill-homophones-003",
+      "kind": "homophone",
+      "grades": [
+        4,
+        5,
+        6
+      ],
+      "ruleId": "homophones",
+      "instruction": "Διάλεξε τη σωστή λέξη.",
+      "prompt": "________ μένεις;",
+      "options": [
+        "Πού",
+        "Που"
+      ],
+      "answer": "Πού",
+      "feedback": "Πού (ερώτηση) με τόνο · που (αναφορικό) χωρίς."
+    },
+    {
+      "id": "drill-homophones-004",
+      "kind": "homophone",
+      "grades": [
+        4,
+        5,
+        6
+      ],
+      "ruleId": "homophones",
+      "instruction": "Διάλεξε τη σωστή λέξη.",
+      "prompt": "Το βιβλίο ________ μου έδωσες είναι ωραίο.",
+      "options": [
+        "που",
+        "πού"
+      ],
+      "answer": "που",
+      "feedback": "που αναφορικό χωρίς τόνο."
+    },
+    {
+      "id": "drill-homophones-005",
+      "kind": "homophone",
+      "grades": [
+        4,
+        5,
+        6
+      ],
+      "ruleId": "homophones",
+      "instruction": "Διάλεξε τη σωστή λέξη.",
+      "prompt": "________ έλυσες την άσκηση;",
+      "options": [
+        "Πώς",
+        "Πως"
+      ],
+      "answer": "Πώς",
+      "feedback": "Πώς (ερώτηση) με τόνο."
+    },
+    {
+      "id": "drill-homophones-006",
+      "kind": "homophone",
+      "grades": [
+        4,
+        5,
+        6
+      ],
+      "ruleId": "homophones",
+      "instruction": "Διάλεξε τη σωστή λέξη.",
+      "prompt": "Άκουσα ________ θα βρέξει.",
+      "options": [
+        "πως",
+        "πώς"
+      ],
+      "answer": "πως",
+      "feedback": "πως ειδικό χωρίς τόνο."
+    },
+    {
+      "id": "drill-homophones-007",
+      "kind": "homophone",
+      "grades": [
+        4,
+        5,
+        6
+      ],
+      "ruleId": "homophones",
+      "instruction": "Διάλεξε τη σωστή λέξη.",
+      "prompt": "________ πάντα τα σκουπίδια όταν φεύγω.",
+      "options": [
+        "Παίρνω",
+        "Περνώ"
+      ],
+      "answer": "Παίρνω",
+      "feedback": "παίρνω = take · περνώ = pass."
+    },
+    {
+      "id": "drill-homophones-008",
+      "kind": "homophone",
+      "grades": [
+        4,
+        5,
+        6
+      ],
+      "ruleId": "homophones",
+      "instruction": "Διάλεξε τη σωστή λέξη.",
+      "prompt": "________ με προσοχή τον δρόμο.",
+      "options": [
+        "Περνάμε",
+        "Παίρνουμε"
+      ],
+      "answer": "Περνάμε",
+      "feedback": "περνώ = pass."
+    },
+    {
+      "id": "drill-homophones-009",
+      "kind": "homophone",
+      "grades": [
+        4,
+        5,
+        6
+      ],
+      "ruleId": "homophones",
+      "instruction": "Διάλεξε τη σωστή λέξη.",
+      "prompt": "Πιστεύω ________ λέει αλήθεια.",
+      "options": [
+        "ότι",
+        "ό,τι"
+      ],
+      "answer": "ότι",
+      "feedback": "ότι = that · ό,τι = whatever."
+    },
+    {
+      "id": "drill-homophones-010",
+      "kind": "homophone",
+      "grades": [
+        4,
+        5,
+        6
+      ],
+      "ruleId": "homophones",
+      "instruction": "Διάλεξε τη σωστή λέξη.",
+      "prompt": "Πάρε ________ σου αρέσει.",
+      "options": [
+        "ό,τι",
+        "ότι"
+      ],
+      "answer": "ό,τι",
+      "feedback": "ό,τι = whatever."
+    },
+    {
+      "id": "drill-compounds-poly-001",
+      "kind": "compound",
+      "grades": [
+        4,
+        5
+      ],
+      "ruleId": "compounds-poly",
+      "instruction": "Σχημάτισε τη σύνθετη λέξη.",
+      "prompt": "πολύ + γωνία = ;",
+      "options": [
+        "πολύγωνο",
+        "πολυγωνία",
+        "πολύγωνη",
+        "πολυγώνιο"
+      ],
+      "answer": "πολύγωνο",
+      "feedback": "Στα σύνθετα αλλάζει συχνά το πρώτο στοιχείο (ν→μ πριν από π/β/φ).",
+      "prefix": "πολύ",
+      "suffix": "γωνία"
+    },
+    {
+      "id": "drill-compounds-poly-002",
+      "kind": "compound",
+      "grades": [
+        4,
+        5
+      ],
+      "ruleId": "compounds-poly",
+      "instruction": "Σχημάτισε τη σύνθετη λέξη.",
+      "prompt": "πολύ + χρώμα = ;",
+      "options": [
+        "πολύχρωμος",
+        "πολυχρωμία",
+        "πολλύχρωμος",
+        "πολύχρωμη"
+      ],
+      "answer": "πολύχρωμος",
+      "feedback": "Στα σύνθετα αλλάζει συχνά το πρώτο στοιχείο (ν→μ πριν από π/β/φ).",
+      "prefix": "πολύ",
+      "suffix": "χρώμα"
+    },
+    {
+      "id": "drill-compounds-poly-003",
+      "kind": "compound",
+      "grades": [
+        4,
+        5
+      ],
+      "ruleId": "compounds-poly",
+      "instruction": "Σχημάτισε τη σύνθετη λέξη.",
+      "prompt": "πολύ + χρόνος = ;",
+      "options": [
+        "πολύχρονος",
+        "πολυχρόνιος",
+        "πολλύχρονος",
+        "πολυχρόνος"
+      ],
+      "answer": "πολύχρονος",
+      "feedback": "Στα σύνθετα αλλάζει συχνά το πρώτο στοιχείο (ν→μ πριν από π/β/φ).",
+      "prefix": "πολύ",
+      "suffix": "χρόνος"
+    },
+    {
+      "id": "drill-compounds-poly-004",
+      "kind": "compound",
+      "grades": [
+        4,
+        5
+      ],
+      "ruleId": "compounds-poly",
+      "instruction": "Σχημάτισε τη σύνθετη λέξη.",
+      "prompt": "πολύ + πλευρά = ;",
+      "options": [
+        "πολύπλευρος",
+        "πολυπλέυρος",
+        "πολλύπλευρος",
+        "πολυπλευρός"
+      ],
+      "answer": "πολύπλευρος",
+      "feedback": "Στα σύνθετα αλλάζει συχνά το πρώτο στοιχείο (ν→μ πριν από π/β/φ).",
+      "prefix": "πολύ",
+      "suffix": "πλευρά"
+    },
+    {
+      "id": "drill-compounds-poly-005",
+      "kind": "compound",
+      "grades": [
+        4,
+        5
+      ],
+      "ruleId": "compounds-poly",
+      "instruction": "Σχημάτισε τη σύνθετη λέξη.",
+      "prompt": "πολύ + τέκνο = ;",
+      "options": [
+        "πολύτεκνος",
+        "πολυτέκνος",
+        "πολλύτεκνος",
+        "πολίτεκνος"
+      ],
+      "answer": "πολύτεκνος",
+      "feedback": "Στα σύνθετα αλλάζει συχνά το πρώτο στοιχείο (ν→μ πριν από π/β/φ).",
+      "prefix": "πολύ",
+      "suffix": "τέκνο"
+    },
+    {
+      "id": "drill-compounds-poly-006",
+      "kind": "compound",
+      "grades": [
+        4,
+        5
+      ],
+      "ruleId": "compounds-poly",
+      "instruction": "Σχημάτισε τη σύνθετη λέξη.",
+      "prompt": "πολύ + φώτα = ;",
+      "options": [
+        "πολύφωτος",
+        "πολυφώτος",
+        "πολλύφωτος",
+        "πολύφοτος"
+      ],
+      "answer": "πολύφωτος",
+      "feedback": "Στα σύνθετα αλλάζει συχνά το πρώτο στοιχείο (ν→μ πριν από π/β/φ).",
+      "prefix": "πολύ",
+      "suffix": "φώτα"
+    },
+    {
+      "id": "drill-compounds-poly-007",
+      "kind": "compound",
+      "grades": [
+        5,
+        6
+      ],
+      "ruleId": "compounds-poly",
+      "instruction": "Σχημάτισε τη σύνθετη λέξη.",
+      "prompt": "συν + μαθητής = ;",
+      "options": [
+        "συμμαθητής",
+        "συνμαθητής",
+        "συμαθητής",
+        "συμμαθητίς"
+      ],
+      "answer": "συμμαθητής",
+      "feedback": "Στα σύνθετα αλλάζει συχνά το πρώτο στοιχείο (ν→μ πριν από π/β/φ).",
+      "prefix": "συν",
+      "suffix": "μαθητής"
+    },
+    {
+      "id": "drill-compounds-poly-008",
+      "kind": "compound",
+      "grades": [
+        5,
+        6
+      ],
+      "ruleId": "compounds-poly",
+      "instruction": "Σχημάτισε τη σύνθετη λέξη.",
+      "prompt": "συν + παίχτης = ;",
+      "options": [
+        "συμπαίχτης",
+        "συνπαίχτης",
+        "συμπέχτης",
+        "συμπαίχτις"
+      ],
+      "answer": "συμπαίχτης",
+      "feedback": "Στα σύνθετα αλλάζει συχνά το πρώτο στοιχείο (ν→μ πριν από π/β/φ).",
+      "prefix": "συν",
+      "suffix": "παίχτης"
+    },
+    {
+      "id": "drill-compounds-poly-009",
+      "kind": "compound",
+      "grades": [
+        5,
+        6
+      ],
+      "ruleId": "compounds-poly",
+      "instruction": "Σχημάτισε τη σύνθετη λέξη.",
+      "prompt": "συν + πολίτης = ;",
+      "options": [
+        "συμπολίτης",
+        "συνπολίτης",
+        "συπολίτης",
+        "συμπολήτης"
+      ],
+      "answer": "συμπολίτης",
+      "feedback": "Στα σύνθετα αλλάζει συχνά το πρώτο στοιχείο (ν→μ πριν από π/β/φ).",
+      "prefix": "συν",
+      "suffix": "πολίτης"
+    },
+    {
+      "id": "drill-compounds-poly-010",
+      "kind": "compound",
+      "grades": [
+        5,
+        6
+      ],
+      "ruleId": "compounds-poly",
+      "instruction": "Σχημάτισε τη σύνθετη λέξη.",
+      "prompt": "εν + πιστός = ;",
+      "options": [
+        "έμπιστος",
+        "ένπιστος",
+        "έμπηστος",
+        "έμπυστος"
+      ],
+      "answer": "έμπιστος",
+      "feedback": "Στα σύνθετα αλλάζει συχνά το πρώτο στοιχείο (ν→μ πριν από π/β/φ).",
+      "prefix": "εν",
+      "suffix": "πιστός"
+    },
+    {
+      "id": "drill-compounds-poly-011",
+      "kind": "compound",
+      "grades": [
+        5,
+        6
+      ],
+      "ruleId": "compounds-poly",
+      "instruction": "Σχημάτισε τη σύνθετη λέξη.",
+      "prompt": "προ + γράμμα = ;",
+      "options": [
+        "πρόγραμμα",
+        "πρόγραμα",
+        "πρόγγραμα",
+        "πρόγραμμμα"
+      ],
+      "answer": "πρόγραμμα",
+      "feedback": "Στα σύνθετα αλλάζει συχνά το πρώτο στοιχείο (ν→μ πριν από π/β/φ).",
+      "prefix": "προ",
+      "suffix": "γράμμα"
+    },
+    {
+      "id": "drill-compounds-poly-012",
+      "kind": "compound",
+      "grades": [
+        5,
+        6
+      ],
+      "ruleId": "compounds-poly",
+      "instruction": "Σχημάτισε τη σύνθετη λέξη.",
+      "prompt": "κατά + λόγος = ;",
+      "options": [
+        "κατάλογος",
+        "κατάλογγος",
+        "κάταλογος",
+        "κατάλοκος"
+      ],
+      "answer": "κατάλογος",
+      "feedback": "Στα σύνθετα αλλάζει συχνά το πρώτο στοιχείο (ν→μ πριν από π/β/φ).",
+      "prefix": "κατά",
+      "suffix": "λόγος"
+    },
+    {
+      "id": "drill-proper-common-001",
+      "kind": "classify",
+      "grades": [
+        2,
+        3,
+        4
+      ],
+      "ruleId": "proper-common",
+      "instruction": "Βάλε τη λέξη στη σωστή στήλη.",
+      "prompt": "Ελλάδα",
+      "options": [
+        "Κύρια",
+        "Κοινά"
+      ],
+      "answer": "Κύρια",
+      "feedback": "Κύρια ουσιαστικά με κεφαλαίο · κοινά με μικρό.",
+      "buckets": [
+        "Κύρια",
+        "Κοινά"
+      ]
+    },
+    {
+      "id": "drill-proper-common-002",
+      "kind": "classify",
+      "grades": [
+        2,
+        3,
+        4
+      ],
+      "ruleId": "proper-common",
+      "instruction": "Βάλε τη λέξη στη σωστή στήλη.",
+      "prompt": "κήπος",
+      "options": [
+        "Κύρια",
+        "Κοινά"
+      ],
+      "answer": "Κοινά",
+      "feedback": "Κύρια ουσιαστικά με κεφαλαίο · κοινά με μικρό.",
+      "buckets": [
+        "Κύρια",
+        "Κοινά"
+      ]
+    },
+    {
+      "id": "drill-proper-common-003",
+      "kind": "classify",
+      "grades": [
+        2,
+        3,
+        4
+      ],
+      "ruleId": "proper-common",
+      "instruction": "Βάλε τη λέξη στη σωστή στήλη.",
+      "prompt": "Γιάννης",
+      "options": [
+        "Κύρια",
+        "Κοινά"
+      ],
+      "answer": "Κύρια",
+      "feedback": "Κύρια ουσιαστικά με κεφαλαίο · κοινά με μικρό.",
+      "buckets": [
+        "Κύρια",
+        "Κοινά"
+      ]
+    },
+    {
+      "id": "drill-proper-common-004",
+      "kind": "classify",
+      "grades": [
+        2,
+        3,
+        4
+      ],
+      "ruleId": "proper-common",
+      "instruction": "Βάλε τη λέξη στη σωστή στήλη.",
+      "prompt": "βιβλίο",
+      "options": [
+        "Κύρια",
+        "Κοινά"
+      ],
+      "answer": "Κοινά",
+      "feedback": "Κύρια ουσιαστικά με κεφαλαίο · κοινά με μικρό.",
+      "buckets": [
+        "Κύρια",
+        "Κοινά"
+      ]
+    },
+    {
+      "id": "drill-proper-common-005",
+      "kind": "classify",
+      "grades": [
+        2,
+        3,
+        4
+      ],
+      "ruleId": "proper-common",
+      "instruction": "Βάλε τη λέξη στη σωστή στήλη.",
+      "prompt": "Αθήνα",
+      "options": [
+        "Κύρια",
+        "Κοινά"
+      ],
+      "answer": "Κύρια",
+      "feedback": "Κύρια ουσιαστικά με κεφαλαίο · κοινά με μικρό.",
+      "buckets": [
+        "Κύρια",
+        "Κοινά"
+      ]
+    },
+    {
+      "id": "drill-proper-common-006",
+      "kind": "classify",
+      "grades": [
+        2,
+        3,
+        4
+      ],
+      "ruleId": "proper-common",
+      "instruction": "Βάλε τη λέξη στη σωστή στήλη.",
+      "prompt": "τραπέζι",
+      "options": [
+        "Κύρια",
+        "Κοινά"
+      ],
+      "answer": "Κοινά",
+      "feedback": "Κύρια ουσιαστικά με κεφαλαίο · κοινά με μικρό.",
+      "buckets": [
+        "Κύρια",
+        "Κοινά"
+      ]
+    },
+    {
+      "id": "drill-proper-common-007",
+      "kind": "classify",
+      "grades": [
+        2,
+        3,
+        4
+      ],
+      "ruleId": "proper-common",
+      "instruction": "Βάλε τη λέξη στη σωστή στήλη.",
+      "prompt": "Πάσχα",
+      "options": [
+        "Κύρια",
+        "Κοινά"
+      ],
+      "answer": "Κύρια",
+      "feedback": "Κύρια ουσιαστικά με κεφαλαίο · κοινά με μικρό.",
+      "buckets": [
+        "Κύρια",
+        "Κοινά"
+      ]
+    },
+    {
+      "id": "drill-proper-common-008",
+      "kind": "classify",
+      "grades": [
+        2,
+        3,
+        4
+      ],
+      "ruleId": "proper-common",
+      "instruction": "Βάλε τη λέξη στη σωστή στήλη.",
+      "prompt": "σκύλος",
+      "options": [
+        "Κύρια",
+        "Κοινά"
+      ],
+      "answer": "Κοινά",
+      "feedback": "Κύρια ουσιαστικά με κεφαλαίο · κοινά με μικρό.",
+      "buckets": [
+        "Κύρια",
+        "Κοινά"
+      ]
+    },
+    {
+      "id": "drill-proper-common-009",
+      "kind": "classify",
+      "grades": [
+        2,
+        3,
+        4
+      ],
+      "ruleId": "proper-common",
+      "instruction": "Βάλε τη λέξη στη σωστή στήλη.",
+      "prompt": "Όλυμπος",
+      "options": [
+        "Κύρια",
+        "Κοινά"
+      ],
+      "answer": "Κύρια",
+      "feedback": "Κύρια ουσιαστικά με κεφαλαίο · κοινά με μικρό.",
+      "buckets": [
+        "Κύρια",
+        "Κοινά"
+      ]
+    },
+    {
+      "id": "drill-proper-common-010",
+      "kind": "classify",
+      "grades": [
+        2,
+        3,
+        4
+      ],
+      "ruleId": "proper-common",
+      "instruction": "Βάλε τη λέξη στη σωστή στήλη.",
+      "prompt": "δρόμος",
+      "options": [
+        "Κύρια",
+        "Κοινά"
+      ],
+      "answer": "Κοινά",
+      "feedback": "Κύρια ουσιαστικά με κεφαλαίο · κοινά με μικρό.",
+      "buckets": [
+        "Κύρια",
+        "Κοινά"
+      ]
+    },
+    {
+      "id": "drill-proper-common-011",
+      "kind": "classify",
+      "grades": [
+        2,
+        3,
+        4
+      ],
+      "ruleId": "proper-common",
+      "instruction": "Βάλε τη λέξη στη σωστή στήλη.",
+      "prompt": "Ιταλία",
+      "options": [
+        "Κύρια",
+        "Κοινά"
+      ],
+      "answer": "Κύρια",
+      "feedback": "Κύρια ουσιαστικά με κεφαλαίο · κοινά με μικρό.",
+      "buckets": [
+        "Κύρια",
+        "Κοινά"
+      ]
+    },
+    {
+      "id": "drill-proper-common-012",
+      "kind": "classify",
+      "grades": [
+        2,
+        3,
+        4
+      ],
+      "ruleId": "proper-common",
+      "instruction": "Βάλε τη λέξη στη σωστή στήλη.",
+      "prompt": "μήλο",
+      "options": [
+        "Κύρια",
+        "Κοινά"
+      ],
+      "answer": "Κοινά",
+      "feedback": "Κύρια ουσιαστικά με κεφαλαίο · κοινά με μικρό.",
+      "buckets": [
+        "Κύρια",
+        "Κοινά"
+      ]
+    },
+    {
+      "id": "drill-verb-suffix-class-001",
+      "kind": "classify",
+      "grades": [
+        3,
+        4,
+        5
+      ],
+      "ruleId": "verb-suffix-class",
+      "instruction": "Σε ποια ομάδα ανήκει το ρήμα;",
+      "prompt": "μαθαίνω",
+      "options": [
+        "-ίζω",
+        "-ώνω",
+        "-αίνω/-ένω",
+        "-εύω"
+      ],
+      "answer": "-αίνω/-ένω",
+      "feedback": "Ομαδοποίησε τα ρήματα κατά κατάληξη.",
+      "buckets": [
+        "-ίζω",
+        "-ώνω",
+        "-αίνω/-ένω",
+        "-εύω"
+      ]
+    },
+    {
+      "id": "drill-verb-suffix-class-002",
+      "kind": "classify",
+      "grades": [
+        3,
+        4,
+        5
+      ],
+      "ruleId": "verb-suffix-class",
+      "instruction": "Σε ποια ομάδα ανήκει το ρήμα;",
+      "prompt": "καθαρίζω",
+      "options": [
+        "-ίζω",
+        "-ώνω",
+        "-αίνω/-ένω",
+        "-εύω"
+      ],
+      "answer": "-ίζω",
+      "feedback": "Ομαδοποίησε τα ρήματα κατά κατάληξη.",
+      "buckets": [
+        "-ίζω",
+        "-ώνω",
+        "-αίνω/-ένω",
+        "-εύω"
+      ]
+    },
+    {
+      "id": "drill-verb-suffix-class-003",
+      "kind": "classify",
+      "grades": [
+        3,
+        4,
+        5
+      ],
+      "ruleId": "verb-suffix-class",
+      "instruction": "Σε ποια ομάδα ανήκει το ρήμα;",
+      "prompt": "θυμώνω",
+      "options": [
+        "-ίζω",
+        "-ώνω",
+        "-αίνω/-ένω",
+        "-εύω"
+      ],
+      "answer": "-ώνω",
+      "feedback": "Ομαδοποίησε τα ρήματα κατά κατάληξη.",
+      "buckets": [
+        "-ίζω",
+        "-ώνω",
+        "-αίνω/-ένω",
+        "-εύω"
+      ]
+    },
+    {
+      "id": "drill-verb-suffix-class-004",
+      "kind": "classify",
+      "grades": [
+        3,
+        4,
+        5
+      ],
+      "ruleId": "verb-suffix-class",
+      "instruction": "Σε ποια ομάδα ανήκει το ρήμα;",
+      "prompt": "χορεύω",
+      "options": [
+        "-ίζω",
+        "-ώνω",
+        "-αίνω/-ένω",
+        "-εύω"
+      ],
+      "answer": "-εύω",
+      "feedback": "Ομαδοποίησε τα ρήματα κατά κατάληξη.",
+      "buckets": [
+        "-ίζω",
+        "-ώνω",
+        "-αίνω/-ένω",
+        "-εύω"
+      ]
+    },
+    {
+      "id": "drill-verb-suffix-class-005",
+      "kind": "classify",
+      "grades": [
+        3,
+        4,
+        5
+      ],
+      "ruleId": "verb-suffix-class",
+      "instruction": "Σε ποια ομάδα ανήκει το ρήμα;",
+      "prompt": "περιμένω",
+      "options": [
+        "-ίζω",
+        "-ώνω",
+        "-αίνω/-ένω",
+        "-εύω"
+      ],
+      "answer": "-αίνω/-ένω",
+      "feedback": "Ομαδοποίησε τα ρήματα κατά κατάληξη.",
+      "buckets": [
+        "-ίζω",
+        "-ώνω",
+        "-αίνω/-ένω",
+        "-εύω"
+      ]
+    },
+    {
+      "id": "drill-verb-suffix-class-006",
+      "kind": "classify",
+      "grades": [
+        3,
+        4,
+        5
+      ],
+      "ruleId": "verb-suffix-class",
+      "instruction": "Σε ποια ομάδα ανήκει το ρήμα;",
+      "prompt": "σκουπίζω",
+      "options": [
+        "-ίζω",
+        "-ώνω",
+        "-αίνω/-ένω",
+        "-εύω"
+      ],
+      "answer": "-ίζω",
+      "feedback": "Ομαδοποίησε τα ρήματα κατά κατάληξη.",
+      "buckets": [
+        "-ίζω",
+        "-ώνω",
+        "-αίνω/-ένω",
+        "-εύω"
+      ]
+    },
+    {
+      "id": "drill-verb-suffix-class-007",
+      "kind": "classify",
+      "grades": [
+        3,
+        4,
+        5
+      ],
+      "ruleId": "verb-suffix-class",
+      "instruction": "Σε ποια ομάδα ανήκει το ρήμα;",
+      "prompt": "πληρώνω",
+      "options": [
+        "-ίζω",
+        "-ώνω",
+        "-αίνω/-ένω",
+        "-εύω"
+      ],
+      "answer": "-ώνω",
+      "feedback": "Ομαδοποίησε τα ρήματα κατά κατάληξη.",
+      "buckets": [
+        "-ίζω",
+        "-ώνω",
+        "-αίνω/-ένω",
+        "-εύω"
+      ]
+    },
+    {
+      "id": "drill-verb-suffix-class-008",
+      "kind": "classify",
+      "grades": [
+        3,
+        4,
+        5
+      ],
+      "ruleId": "verb-suffix-class",
+      "instruction": "Σε ποια ομάδα ανήκει το ρήμα;",
+      "prompt": "ταξιδεύω",
+      "options": [
+        "-ίζω",
+        "-ώνω",
+        "-αίνω/-ένω",
+        "-εύω"
+      ],
+      "answer": "-εύω",
+      "feedback": "Ομαδοποίησε τα ρήματα κατά κατάληξη.",
+      "buckets": [
+        "-ίζω",
+        "-ώνω",
+        "-αίνω/-ένω",
+        "-εύω"
+      ]
+    },
+    {
+      "id": "drill-verb-suffix-class-009",
+      "kind": "classify",
+      "grades": [
+        3,
+        4,
+        5
+      ],
+      "ruleId": "verb-suffix-class",
+      "instruction": "Σε ποια ομάδα ανήκει το ρήμα;",
+      "prompt": "αρρωσταίνω",
+      "options": [
+        "-ίζω",
+        "-ώνω",
+        "-αίνω/-ένω",
+        "-εύω"
+      ],
+      "answer": "-αίνω/-ένω",
+      "feedback": "Ομαδοποίησε τα ρήματα κατά κατάληξη.",
+      "buckets": [
+        "-ίζω",
+        "-ώνω",
+        "-αίνω/-ένω",
+        "-εύω"
+      ]
+    },
+    {
+      "id": "drill-verb-suffix-class-010",
+      "kind": "classify",
+      "grades": [
+        3,
+        4,
+        5
+      ],
+      "ruleId": "verb-suffix-class",
+      "instruction": "Σε ποια ομάδα ανήκει το ρήμα;",
+      "prompt": "κερδίζω",
+      "options": [
+        "-ίζω",
+        "-ώνω",
+        "-αίνω/-ένω",
+        "-εύω"
+      ],
+      "answer": "-ίζω",
+      "feedback": "Ομαδοποίησε τα ρήματα κατά κατάληξη.",
+      "buckets": [
+        "-ίζω",
+        "-ώνω",
+        "-αίνω/-ένω",
+        "-εύω"
+      ]
+    },
+    {
+      "id": "drill-verb-suffix-class-011",
+      "kind": "classify",
+      "grades": [
+        3,
+        4,
+        5
+      ],
+      "ruleId": "verb-suffix-class",
+      "instruction": "Σε ποια ομάδα ανήκει το ρήμα;",
+      "prompt": "σημειώνω",
+      "options": [
+        "-ίζω",
+        "-ώνω",
+        "-αίνω/-ένω",
+        "-εύω"
+      ],
+      "answer": "-ώνω",
+      "feedback": "Ομαδοποίησε τα ρήματα κατά κατάληξη.",
+      "buckets": [
+        "-ίζω",
+        "-ώνω",
+        "-αίνω/-ένω",
+        "-εύω"
+      ]
+    },
+    {
+      "id": "drill-verb-suffix-class-012",
+      "kind": "classify",
+      "grades": [
+        3,
+        4,
+        5
+      ],
+      "ruleId": "verb-suffix-class",
+      "instruction": "Σε ποια ομάδα ανήκει το ρήμα;",
+      "prompt": "δουλεύω",
+      "options": [
+        "-ίζω",
+        "-ώνω",
+        "-αίνω/-ένω",
+        "-εύω"
+      ],
+      "answer": "-εύω",
+      "feedback": "Ομαδοποίησε τα ρήματα κατά κατάληξη.",
+      "buckets": [
+        "-ίζω",
+        "-ώνω",
+        "-αίνω/-ένω",
+        "-εύω"
+      ]
+    },
+    {
+      "id": "drill-polys-adj-adv-001",
+      "kind": "classify",
+      "grades": [
+        3,
+        4
+      ],
+      "ruleId": "polys-adj-adv",
+      "instruction": "Το «πολύ» είναι επίθετο ή επίρρημα;",
+      "prompt": "πολύ κρύο",
+      "options": [
+        "Επίθετο",
+        "Επίρρημα"
+      ],
+      "answer": "Επίρρημα",
+      "feedback": "Επίθετο συμφωνεί με ουσιαστικό (πολύς/πολλή/πολύ) · επίρρημα δεν κλίνεται.",
+      "buckets": [
+        "Επίθετο",
+        "Επίρρημα"
+      ]
+    },
+    {
+      "id": "drill-polys-adj-adv-002",
+      "kind": "classify",
+      "grades": [
+        3,
+        4
+      ],
+      "ruleId": "polys-adj-adv",
+      "instruction": "Το «πολύ» είναι επίθετο ή επίρρημα;",
+      "prompt": "πολλή αγάπη",
+      "options": [
+        "Επίθετο",
+        "Επίρρημα"
+      ],
+      "answer": "Επίθετο",
+      "feedback": "Επίθετο συμφωνεί με ουσιαστικό (πολύς/πολλή/πολύ) · επίρρημα δεν κλίνεται.",
+      "buckets": [
+        "Επίθετο",
+        "Επίρρημα"
+      ]
+    },
+    {
+      "id": "drill-polys-adj-adv-003",
+      "kind": "classify",
+      "grades": [
+        3,
+        4
+      ],
+      "ruleId": "polys-adj-adv",
+      "instruction": "Το «πολύ» είναι επίθετο ή επίρρημα;",
+      "prompt": "πολλοί μαθητές",
+      "options": [
+        "Επίθετο",
+        "Επίρρημα"
+      ],
+      "answer": "Επίθετο",
+      "feedback": "Επίθετο συμφωνεί με ουσιαστικό (πολύς/πολλή/πολύ) · επίρρημα δεν κλίνεται.",
+      "buckets": [
+        "Επίθετο",
+        "Επίρρημα"
+      ]
+    },
+    {
+      "id": "drill-polys-adj-adv-004",
+      "kind": "classify",
+      "grades": [
+        3,
+        4
+      ],
+      "ruleId": "polys-adj-adv",
+      "instruction": "Το «πολύ» είναι επίθετο ή επίρρημα;",
+      "prompt": "πολύ καλά",
+      "options": [
+        "Επίθετο",
+        "Επίρρημα"
+      ],
+      "answer": "Επίρρημα",
+      "feedback": "Επίθετο συμφωνεί με ουσιαστικό (πολύς/πολλή/πολύ) · επίρρημα δεν κλίνεται.",
+      "buckets": [
+        "Επίθετο",
+        "Επίρρημα"
+      ]
+    },
+    {
+      "id": "drill-polys-adj-adv-005",
+      "kind": "classify",
+      "grades": [
+        3,
+        4
+      ],
+      "ruleId": "polys-adj-adv",
+      "instruction": "Το «πολύ» είναι επίθετο ή επίρρημα;",
+      "prompt": "πολύ φαγητό",
+      "options": [
+        "Επίθετο",
+        "Επίρρημα"
+      ],
+      "answer": "Επίθετο",
+      "feedback": "Επίθετο συμφωνεί με ουσιαστικό (πολύς/πολλή/πολύ) · επίρρημα δεν κλίνεται.",
+      "buckets": [
+        "Επίθετο",
+        "Επίρρημα"
+      ]
+    },
+    {
+      "id": "drill-polys-adj-adv-006",
+      "kind": "classify",
+      "grades": [
+        3,
+        4
+      ],
+      "ruleId": "polys-adj-adv",
+      "instruction": "Το «πολύ» είναι επίθετο ή επίρρημα;",
+      "prompt": "Δούλεψα πολύ.",
+      "options": [
+        "Επίθετο",
+        "Επίρρημα"
+      ],
+      "answer": "Επίρρημα",
+      "feedback": "Επίθετο συμφωνεί με ουσιαστικό (πολύς/πολλή/πολύ) · επίρρημα δεν κλίνεται.",
+      "buckets": [
+        "Επίθετο",
+        "Επίρρημα"
+      ]
+    },
+    {
+      "id": "drill-adj-spelling-001",
+      "kind": "choice",
+      "grades": [
+        4,
+        5
+      ],
+      "ruleId": "adj-spelling",
+      "instruction": "Διάλεξε τη σωστή ορθογραφία.",
+      "prompt": "χάρτινη",
+      "options": [
+        "χάρτινη",
+        "χάρτεινη",
+        "χάρτηνη",
+        "χάρτυνη"
+      ],
+      "answer": "χάρτινη",
+      "feedback": "Πολλά επίθετα υλικού σε -ινος/-ινη."
+    },
+    {
+      "id": "drill-adj-spelling-002",
+      "kind": "choice",
+      "grades": [
+        4,
+        5
+      ],
+      "ruleId": "adj-spelling",
+      "instruction": "Διάλεξε τη σωστή ορθογραφία.",
+      "prompt": "φτηνές",
+      "options": [
+        "φτηνές",
+        "φτεινές",
+        "φτίνες",
+        "φτυνές"
+      ],
+      "answer": "φτηνές",
+      "feedback": "φτηνός γράφεται με η."
+    },
+    {
+      "id": "drill-adj-spelling-003",
+      "kind": "choice",
+      "grades": [
+        4,
+        5
+      ],
+      "ruleId": "adj-spelling",
+      "instruction": "Διάλεξε τη σωστή ορθογραφία.",
+      "prompt": "σκοτεινή",
+      "options": [
+        "σκοτεινή",
+        "σκοτινή",
+        "σκοτηνή",
+        "σκοτυνή"
+      ],
+      "answer": "σκοτεινή",
+      "feedback": "σκοτεινός γράφεται με ει."
+    },
+    {
+      "id": "drill-adj-spelling-004",
+      "kind": "choice",
+      "grades": [
+        4,
+        5
+      ],
+      "ruleId": "adj-spelling",
+      "instruction": "Διάλεξε τη σωστή ορθογραφία.",
+      "prompt": "ξύλινο",
+      "options": [
+        "ξύλινο",
+        "ξύλεινο",
+        "ξύληνο",
+        "ξύλυνο"
+      ],
+      "answer": "ξύλινο",
+      "feedback": "ξύλινος γράφεται με ι."
+    },
+    {
+      "id": "drill-adj-spelling-005",
+      "kind": "choice",
+      "grades": [
+        4,
+        5
+      ],
+      "ruleId": "adj-spelling",
+      "instruction": "Διάλεξε τη σωστή ορθογραφία.",
+      "prompt": "μάλλινη",
+      "options": [
+        "μάλλινη",
+        "μάλλεινη",
+        "μάλληνη",
+        "μάλλυνη"
+      ],
+      "answer": "μάλλινη",
+      "feedback": "μάλλινος γράφεται με ι."
+    },
+    {
+      "id": "drill-adj-spelling-006",
+      "kind": "choice",
+      "grades": [
+        4,
+        5
+      ],
+      "ruleId": "adj-spelling",
+      "instruction": "Διάλεξε τη σωστή ορθογραφία.",
+      "prompt": "κλειστό",
+      "options": [
+        "κλειστό",
+        "κλιστό",
+        "κληστό",
+        "κλυστό"
+      ],
+      "answer": "κλειστό",
+      "feedback": "κλειστός γράφεται με ει."
+    },
+    {
+      "id": "drill-adj-spelling-007",
+      "kind": "choice",
+      "grades": [
+        4,
+        5
+      ],
+      "ruleId": "adj-spelling",
+      "instruction": "Διάλεξε τη σωστή ορθογραφία.",
+      "prompt": "επικίνδυνη",
+      "options": [
+        "επικίνδυνη",
+        "επικίνδεινη",
+        "επικίνδηνη",
+        "επικίνδινη"
+      ],
+      "answer": "επικίνδυνη",
+      "feedback": "επικίνδυνος γράφεται με υ."
+    },
+    {
+      "id": "drill-adj-spelling-008",
+      "kind": "choice",
+      "grades": [
+        4,
+        5
+      ],
+      "ruleId": "adj-spelling",
+      "instruction": "Διάλεξε τη σωστή ορθογραφία.",
+      "prompt": "έρημο",
+      "options": [
+        "έρημο",
+        "έριμο",
+        "έρειμο",
+        "έρυμο"
+      ],
+      "answer": "έρημο",
+      "feedback": "έρημος γράφεται με η."
+    },
+    {
+      "id": "drill-adj-spelling-009",
+      "kind": "choice",
+      "grades": [
+        4,
+        5
+      ],
+      "ruleId": "adj-spelling",
+      "instruction": "Διάλεξε τη σωστή ορθογραφία.",
+      "prompt": "ταπεινό",
+      "options": [
+        "ταπεινό",
+        "ταπινό",
+        "ταπηνό",
+        "ταπυνό"
+      ],
+      "answer": "ταπεινό",
+      "feedback": "ταπεινός γράφεται με ει."
+    },
+    {
+      "id": "drill-adj-spelling-010",
+      "kind": "choice",
+      "grades": [
+        4,
+        5
+      ],
+      "ruleId": "adj-spelling",
+      "instruction": "Διάλεξε τη σωστή ορθογραφία.",
+      "prompt": "φωτεινό",
+      "options": [
+        "φωτεινό",
+        "φωτινό",
+        "φωτηνό",
+        "φωτυνό"
+      ],
+      "answer": "φωτεινό",
+      "feedback": "φωτεινός γράφεται με ει."
+    }
+  ]
+}

@@ -24047,6 +24047,3601 @@
       "homophone": true
     },
     {
+      "id": "lx-g2-0159",
+      "word": "άγαλμα",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "άγαλμ- + -α.",
+      "audioFile": "audio/agalma.mp3",
+      "morphemes": {
+        "root": "άγαλμ",
+        "suffix": "α"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g2-0160",
+      "word": "άσχημος",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "άσχημ- + -ος.",
+      "audioFile": "audio/aschimos.mp3",
+      "morphemes": {
+        "root": "άσχημ",
+        "suffix": "ος"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0161",
+      "word": "έκπληξη",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "έκπληξ- + -η.",
+      "audioFile": "audio/ekplixi.mp3",
+      "morphemes": {
+        "root": "έκπληξ",
+        "suffix": "η"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0162",
+      "word": "ένατη",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "ένατ- + -η.",
+      "audioFile": "audio/enati.mp3",
+      "morphemes": {
+        "root": "ένατ",
+        "suffix": "η"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0163",
+      "word": "έπιπλο",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "έπιπλ- + -ο.",
+      "audioFile": "audio/epiplo.mp3",
+      "morphemes": {
+        "root": "έπιπλ",
+        "suffix": "ο"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g2-0164",
+      "word": "έρημο",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "έρημ- + -ο.",
+      "audioFile": "audio/erimo.mp3",
+      "morphemes": {
+        "root": "έρημ",
+        "suffix": "ο"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0165",
+      "word": "έτος",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "έτ- + -ος.",
+      "audioFile": "audio/etos.mp3",
+      "morphemes": {
+        "root": "έτ",
+        "suffix": "ος"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g2-0166",
+      "word": "αγάπη",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "αγάπ- + -η.",
+      "audioFile": "audio/agapi.mp3",
+      "morphemes": {
+        "root": "αγάπ",
+        "suffix": "η"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0167",
+      "word": "αγόρι",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "αγόρ- + -ι.",
+      "audioFile": "audio/agori.mp3",
+      "morphemes": {
+        "root": "αγόρ",
+        "suffix": "ι"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g2-0168",
+      "word": "αλλαγή",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "Προσοχή σε διπλά γράμματα.",
+      "audioFile": "audio/allagi.mp3",
+      "morphemes": {
+        "root": "αλλαγή",
+        "suffix": ""
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0169",
+      "word": "αμβλεία",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "αμβλε- + -ία.",
+      "audioFile": "audio/amvleia.mp3",
+      "morphemes": {
+        "root": "αμβλε",
+        "suffix": "ία"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0170",
+      "word": "ανθίζω",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Στην πρόταση γράφουμε το ρήμα ___.",
+      "feedbackRule": "ανθίζ- + -ω.",
+      "audioFile": "audio/anthizo.mp3",
+      "morphemes": {
+        "root": "ανθίζ",
+        "suffix": "ω"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0171",
+      "word": "απαντώ",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Στην πρόταση γράφουμε το ρήμα ___.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/apanto.mp3",
+      "morphemes": {
+        "root": "απαντώ",
+        "suffix": ""
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0172",
+      "word": "απλώνω",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Στην πρόταση γράφουμε το ρήμα ___.",
+      "feedbackRule": "απλών- + -ω.",
+      "audioFile": "audio/aplono.mp3",
+      "morphemes": {
+        "root": "απλών",
+        "suffix": "ω"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0173",
+      "word": "αράχνη",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "αράχν- + -η.",
+      "audioFile": "audio/arachni.mp3",
+      "morphemes": {
+        "root": "αράχν",
+        "suffix": "η"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0174",
+      "word": "αρχηγός",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/archigos.mp3",
+      "morphemes": {
+        "root": "αρχηγός",
+        "suffix": ""
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0175",
+      "word": "αυγό",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "αυγ- + -ό.",
+      "audioFile": "audio/aygo.mp3",
+      "morphemes": {
+        "root": "αυγ",
+        "suffix": "ό"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0176",
+      "word": "βάμμα",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "βάμμ- + -α.",
+      "audioFile": "audio/vamma.mp3",
+      "morphemes": {
+        "root": "βάμμ",
+        "suffix": "α"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g2-0177",
+      "word": "βάφω",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Στην πρόταση γράφουμε το ρήμα ___.",
+      "feedbackRule": "βάφ- + -ω.",
+      "audioFile": "audio/vafo.mp3",
+      "morphemes": {
+        "root": "βάφ",
+        "suffix": "ω"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0178",
+      "word": "βέργα",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "βέργ- + -α.",
+      "audioFile": "audio/verga.mp3",
+      "morphemes": {
+        "root": "βέργ",
+        "suffix": "α"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g2-0179",
+      "word": "βιβλίο",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "βιβλί- + -ο.",
+      "audioFile": "audio/vivlio.mp3",
+      "morphemes": {
+        "root": "βιβλί",
+        "suffix": "ο"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0180",
+      "word": "βιδώνω",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Στην πρόταση γράφουμε το ρήμα ___.",
+      "feedbackRule": "βιδών- + -ω.",
+      "audioFile": "audio/vidono.mp3",
+      "morphemes": {
+        "root": "βιδών",
+        "suffix": "ω"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0181",
+      "word": "βλέμμα",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "βλέμμ- + -α.",
+      "audioFile": "audio/vlemma.mp3",
+      "morphemes": {
+        "root": "βλέμμ",
+        "suffix": "α"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g2-0182",
+      "word": "βοηθώ",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Στην πρόταση γράφουμε το ρήμα ___.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/voitho.mp3",
+      "morphemes": {
+        "root": "βοηθώ",
+        "suffix": ""
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0183",
+      "word": "βραδιά",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "βραδ- + -ιά.",
+      "audioFile": "audio/vradia.mp3",
+      "morphemes": {
+        "root": "βραδ",
+        "suffix": "ιά"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g2-0184",
+      "word": "βροχή",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/vrochi.mp3",
+      "morphemes": {
+        "root": "βροχή",
+        "suffix": ""
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0185",
+      "word": "γέφυρα",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "γέφυρ- + -α.",
+      "audioFile": "audio/gefyra.mp3",
+      "morphemes": {
+        "root": "γέφυρ",
+        "suffix": "α"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0186",
+      "word": "γήπεδο",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "γήπεδ- + -ο.",
+      "audioFile": "audio/gipedo.mp3",
+      "morphemes": {
+        "root": "γήπεδ",
+        "suffix": "ο"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0187",
+      "word": "γιατρός",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/giatros.mp3",
+      "morphemes": {
+        "root": "γιατρός",
+        "suffix": ""
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g2-0188",
+      "word": "γλυκός",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/glykos.mp3",
+      "morphemes": {
+        "root": "γλυκός",
+        "suffix": ""
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0189",
+      "word": "γυρίζω",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Στην πρόταση γράφουμε το ρήμα ___.",
+      "feedbackRule": "γυρίζ- + -ω.",
+      "audioFile": "audio/gyrizo.mp3",
+      "morphemes": {
+        "root": "γυρίζ",
+        "suffix": "ω"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0190",
+      "word": "δάκρυ",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/dakry.mp3",
+      "morphemes": {
+        "root": "δάκρυ",
+        "suffix": ""
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0191",
+      "word": "δέμα",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "δέμ- + -α.",
+      "audioFile": "audio/dema.mp3",
+      "morphemes": {
+        "root": "δέμ",
+        "suffix": "α"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g2-0192",
+      "word": "δέντρο",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "δέντρ- + -ο.",
+      "audioFile": "audio/dentro.mp3",
+      "morphemes": {
+        "root": "δέντρ",
+        "suffix": "ο"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g2-0193",
+      "word": "δίνω",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Στην πρόταση γράφουμε το ρήμα ___.",
+      "feedbackRule": "δίν- + -ω.",
+      "audioFile": "audio/dino.mp3",
+      "morphemes": {
+        "root": "δίν",
+        "suffix": "ω"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0194",
+      "word": "δίσεκτο",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "δίσεκτ- + -ο.",
+      "audioFile": "audio/disekto.mp3",
+      "morphemes": {
+        "root": "δίσεκτ",
+        "suffix": "ο"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g2-0195",
+      "word": "δίστιχο",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "δίστιχ- + -ο.",
+      "audioFile": "audio/disticho.mp3",
+      "morphemes": {
+        "root": "δίστιχ",
+        "suffix": "ο"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g2-0196",
+      "word": "δίτροχο",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "δίτροχ- + -ο.",
+      "audioFile": "audio/ditrocho.mp3",
+      "morphemes": {
+        "root": "δίτροχ",
+        "suffix": "ο"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g2-0197",
+      "word": "δίψηφο",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "δίψηφ- + -ο.",
+      "audioFile": "audio/dipsifo.mp3",
+      "morphemes": {
+        "root": "δίψηφ",
+        "suffix": "ο"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0198",
+      "word": "δαγκώνω",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Στην πρόταση γράφουμε το ρήμα ___.",
+      "feedbackRule": "δαγκών- + -ω.",
+      "audioFile": "audio/dagkono.mp3",
+      "morphemes": {
+        "root": "δαγκών",
+        "suffix": "ω"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0199",
+      "word": "δείχνω",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Στην πρόταση γράφουμε το ρήμα ___.",
+      "feedbackRule": "δείχν- + -ω.",
+      "audioFile": "audio/deichno.mp3",
+      "morphemes": {
+        "root": "δείχν",
+        "suffix": "ω"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0200",
+      "word": "δρόμος",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "δρόμ- + -ος.",
+      "audioFile": "audio/dromos.mp3",
+      "morphemes": {
+        "root": "δρόμ",
+        "suffix": "ος"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g2-0201",
+      "word": "δόρυ",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/dory.mp3",
+      "morphemes": {
+        "root": "δόρυ",
+        "suffix": ""
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0202",
+      "word": "δύναμη",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "δύναμ- + -η.",
+      "audioFile": "audio/dynami.mp3",
+      "morphemes": {
+        "root": "δύναμ",
+        "suffix": "η"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0203",
+      "word": "δύσβατο",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "δύσβατ- + -ο.",
+      "audioFile": "audio/dysvato.mp3",
+      "morphemes": {
+        "root": "δύσβατ",
+        "suffix": "ο"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0204",
+      "word": "δύσκολο",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "δύσκολ- + -ο.",
+      "audioFile": "audio/dyskolo.mp3",
+      "morphemes": {
+        "root": "δύσκολ",
+        "suffix": "ο"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0205",
+      "word": "δώρο",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "δώρ- + -ο.",
+      "audioFile": "audio/doro.mp3",
+      "morphemes": {
+        "root": "δώρ",
+        "suffix": "ο"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0206",
+      "word": "εγγόνι",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "εγγόν- + -ι.",
+      "audioFile": "audio/eggoni.mp3",
+      "morphemes": {
+        "root": "εγγόν",
+        "suffix": "ι"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g2-0207",
+      "word": "εκδρομή",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/ekdromi.mp3",
+      "morphemes": {
+        "root": "εκδρομή",
+        "suffix": ""
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0208",
+      "word": "εξοχή",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/exochi.mp3",
+      "morphemes": {
+        "root": "εξοχή",
+        "suffix": ""
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0209",
+      "word": "εποχή",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/epochi.mp3",
+      "morphemes": {
+        "root": "εποχή",
+        "suffix": ""
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0210",
+      "word": "ευχή",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/eychi.mp3",
+      "morphemes": {
+        "root": "ευχή",
+        "suffix": ""
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0211",
+      "word": "ζήλια",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "ζήλι- + -α.",
+      "audioFile": "audio/zilia.mp3",
+      "morphemes": {
+        "root": "ζήλι",
+        "suffix": "α"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0212",
+      "word": "ζητάω",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Στην πρόταση γράφουμε το ρήμα ___.",
+      "feedbackRule": "ζητά- + -ω.",
+      "audioFile": "audio/zitao.mp3",
+      "morphemes": {
+        "root": "ζητά",
+        "suffix": "ω"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0213",
+      "word": "ζητώ",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Στην πρόταση γράφουμε το ρήμα ___.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/zito.mp3",
+      "morphemes": {
+        "root": "ζητώ",
+        "suffix": ""
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0214",
+      "word": "ζυγίζω",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Στην πρόταση γράφουμε το ρήμα ___.",
+      "feedbackRule": "ζυγίζ- + -ω.",
+      "audioFile": "audio/zygizo.mp3",
+      "morphemes": {
+        "root": "ζυγίζ",
+        "suffix": "ω"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0215",
+      "word": "ζυγώνω",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Στην πρόταση γράφουμε το ρήμα ___.",
+      "feedbackRule": "ζυγών- + -ω.",
+      "audioFile": "audio/zygono.mp3",
+      "morphemes": {
+        "root": "ζυγών",
+        "suffix": "ω"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0216",
+      "word": "ζυμώνω",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Στην πρόταση γράφουμε το ρήμα ___.",
+      "feedbackRule": "ζυμών- + -ω.",
+      "audioFile": "audio/zymono.mp3",
+      "morphemes": {
+        "root": "ζυμών",
+        "suffix": "ω"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0217",
+      "word": "ζώνη",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "ζών- + -η.",
+      "audioFile": "audio/zoni.mp3",
+      "morphemes": {
+        "root": "ζών",
+        "suffix": "η"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0218",
+      "word": "ζώο",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "ζώ- + -ο.",
+      "audioFile": "audio/zoo.mp3",
+      "morphemes": {
+        "root": "ζώ",
+        "suffix": "ο"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0219",
+      "word": "θάβω",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Στην πρόταση γράφουμε το ρήμα ___.",
+      "feedbackRule": "θάβ- + -ω.",
+      "audioFile": "audio/thavo.mp3",
+      "morphemes": {
+        "root": "θάβ",
+        "suffix": "ω"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0220",
+      "word": "θήκη",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "θήκ- + -η.",
+      "audioFile": "audio/thiki.mp3",
+      "morphemes": {
+        "root": "θήκ",
+        "suffix": "η"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0221",
+      "word": "θηλιά",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "θηλ- + -ιά.",
+      "audioFile": "audio/thilia.mp3",
+      "morphemes": {
+        "root": "θηλ",
+        "suffix": "ιά"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0222",
+      "word": "θυμός",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/thymos.mp3",
+      "morphemes": {
+        "root": "θυμός",
+        "suffix": ""
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0223",
+      "word": "κάλπη",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "κάλπ- + -η.",
+      "audioFile": "audio/kalpi.mp3",
+      "morphemes": {
+        "root": "κάλπ",
+        "suffix": "η"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0224",
+      "word": "κάλτσα",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "κάλτσ- + -α.",
+      "audioFile": "audio/kaltsa.mp3",
+      "morphemes": {
+        "root": "κάλτσ",
+        "suffix": "α"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g2-0225",
+      "word": "κάμπος",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "κάμπ- + -ος.",
+      "audioFile": "audio/kampos.mp3",
+      "morphemes": {
+        "root": "κάμπ",
+        "suffix": "ος"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g2-0226",
+      "word": "καρέκλα",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "καρέκλ- + -α.",
+      "audioFile": "audio/karekla.mp3",
+      "morphemes": {
+        "root": "καρέκλ",
+        "suffix": "α"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g2-0227",
+      "word": "καρδιά",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "καρδ- + -ιά.",
+      "audioFile": "audio/kardia.mp3",
+      "morphemes": {
+        "root": "καρδ",
+        "suffix": "ιά"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g2-0228",
+      "word": "καρπός",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/karpos.mp3",
+      "morphemes": {
+        "root": "καρπός",
+        "suffix": ""
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g2-0229",
+      "word": "καρτέλα",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "καρτέλ- + -α.",
+      "audioFile": "audio/kartela.mp3",
+      "morphemes": {
+        "root": "καρτέλ",
+        "suffix": "α"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g2-0230",
+      "word": "καρφί",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "καρφ- + -ί.",
+      "audioFile": "audio/karfi.mp3",
+      "morphemes": {
+        "root": "καρφ",
+        "suffix": "ί"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g2-0231",
+      "word": "καρότο",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "καρότ- + -ο.",
+      "audioFile": "audio/karoto.mp3",
+      "morphemes": {
+        "root": "καρότ",
+        "suffix": "ο"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g2-0232",
+      "word": "κατσίκα",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "κατσίκ- + -α.",
+      "audioFile": "audio/katsika.mp3",
+      "morphemes": {
+        "root": "κατσίκ",
+        "suffix": "α"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g2-0233",
+      "word": "κεντώ",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Στην πρόταση γράφουμε το ρήμα ___.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/kento.mp3",
+      "morphemes": {
+        "root": "κεντώ",
+        "suffix": ""
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0234",
+      "word": "κερί",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "κερ- + -ί.",
+      "audioFile": "audio/keri.mp3",
+      "morphemes": {
+        "root": "κερ",
+        "suffix": "ί"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g2-0235",
+      "word": "κερδίζω",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Στην πρόταση γράφουμε το ρήμα ___.",
+      "feedbackRule": "κερδίζ- + -ω.",
+      "audioFile": "audio/kerdizo.mp3",
+      "morphemes": {
+        "root": "κερδίζ",
+        "suffix": "ω"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0236",
+      "word": "κεφάλι",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "κεφάλ- + -ι.",
+      "audioFile": "audio/kefali.mp3",
+      "morphemes": {
+        "root": "κεφάλ",
+        "suffix": "ι"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g2-0237",
+      "word": "κινητό",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "κινητ- + -ό.",
+      "audioFile": "audio/kinito.mp3",
+      "morphemes": {
+        "root": "κινητ",
+        "suffix": "ό"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0238",
+      "word": "κλέφτης",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "κλέφτ- + -ης.",
+      "audioFile": "audio/kleftis.mp3",
+      "morphemes": {
+        "root": "κλέφτ",
+        "suffix": "ης"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0239",
+      "word": "κλειδί",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "κλειδ- + -ί.",
+      "audioFile": "audio/kleidi.mp3",
+      "morphemes": {
+        "root": "κλειδ",
+        "suffix": "ί"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0240",
+      "word": "κλειστό",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "κλειστ- + -ό.",
+      "audioFile": "audio/kleisto.mp3",
+      "morphemes": {
+        "root": "κλειστ",
+        "suffix": "ό"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0241",
+      "word": "κλωστή",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/klosti.mp3",
+      "morphemes": {
+        "root": "κλωστή",
+        "suffix": ""
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0242",
+      "word": "κοινός",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/koinos.mp3",
+      "morphemes": {
+        "root": "κοινός",
+        "suffix": ""
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0243",
+      "word": "κοπέλα",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "κοπέλ- + -α.",
+      "audioFile": "audio/kopela.mp3",
+      "morphemes": {
+        "root": "κοπέλ",
+        "suffix": "α"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g2-0244",
+      "word": "κορυφή",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/koryfi.mp3",
+      "morphemes": {
+        "root": "κορυφή",
+        "suffix": ""
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0245",
+      "word": "κρήτη",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "κρήτ- + -η.",
+      "audioFile": "audio/kriti.mp3",
+      "morphemes": {
+        "root": "κρήτ",
+        "suffix": "η"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0246",
+      "word": "κυκλώνω",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Στην πρόταση γράφουμε το ρήμα ___.",
+      "feedbackRule": "κυκλών- + -ω.",
+      "audioFile": "audio/kyklono.mp3",
+      "morphemes": {
+        "root": "κυκλών",
+        "suffix": "ω"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0247",
+      "word": "κόβω",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Στην πρόταση γράφουμε το ρήμα ___.",
+      "feedbackRule": "κόβ- + -ω.",
+      "audioFile": "audio/kovo.mp3",
+      "morphemes": {
+        "root": "κόβ",
+        "suffix": "ω"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0248",
+      "word": "κόρη",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "κόρ- + -η.",
+      "audioFile": "audio/kori.mp3",
+      "morphemes": {
+        "root": "κόρ",
+        "suffix": "η"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0249",
+      "word": "κύμα",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "κύμ- + -α.",
+      "audioFile": "audio/kyma.mp3",
+      "morphemes": {
+        "root": "κύμ",
+        "suffix": "α"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0250",
+      "word": "λάμπα",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "λάμπ- + -α.",
+      "audioFile": "audio/lampa.mp3",
+      "morphemes": {
+        "root": "λάμπ",
+        "suffix": "α"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g2-0251",
+      "word": "λάσπη",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "λάσπ- + -η.",
+      "audioFile": "audio/laspi.mp3",
+      "morphemes": {
+        "root": "λάσπ",
+        "suffix": "η"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0252",
+      "word": "λίμνη",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "λίμν- + -η.",
+      "audioFile": "audio/limni.mp3",
+      "morphemes": {
+        "root": "λίμν",
+        "suffix": "η"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0253",
+      "word": "λαγός",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/lagos.mp3",
+      "morphemes": {
+        "root": "λαγός",
+        "suffix": ""
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g2-0254",
+      "word": "λαμπάδα",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "λαμπάδ- + -α.",
+      "audioFile": "audio/lampada.mp3",
+      "morphemes": {
+        "root": "λαμπάδ",
+        "suffix": "α"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g2-0255",
+      "word": "λεκάνη",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "λεκάν- + -η.",
+      "audioFile": "audio/lekani.mp3",
+      "morphemes": {
+        "root": "λεκάν",
+        "suffix": "η"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0256",
+      "word": "λεφτά",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "λεφτ- + -ά.",
+      "audioFile": "audio/lefta.mp3",
+      "morphemes": {
+        "root": "λεφτ",
+        "suffix": "ά"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g2-0257",
+      "word": "λοχίας",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "λοχί- + -ας.",
+      "audioFile": "audio/lochias.mp3",
+      "morphemes": {
+        "root": "λοχί",
+        "suffix": "ας"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g2-0258",
+      "word": "λούζω",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Στην πρόταση γράφουμε το ρήμα ___.",
+      "feedbackRule": "λούζ- + -ω.",
+      "audioFile": "audio/louzo.mp3",
+      "morphemes": {
+        "root": "λούζ",
+        "suffix": "ω"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0259",
+      "word": "λύση",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "λύσ- + -η.",
+      "audioFile": "audio/lysi.mp3",
+      "morphemes": {
+        "root": "λύσ",
+        "suffix": "η"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0260",
+      "word": "μάγος",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "μάγ- + -ος.",
+      "audioFile": "audio/magos.mp3",
+      "morphemes": {
+        "root": "μάγ",
+        "suffix": "ος"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g2-0261",
+      "word": "μάχη",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "μάχ- + -η.",
+      "audioFile": "audio/machi.mp3",
+      "morphemes": {
+        "root": "μάχ",
+        "suffix": "η"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0262",
+      "word": "μέλισσα",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "μέλισσ- + -α.",
+      "audioFile": "audio/melissa.mp3",
+      "morphemes": {
+        "root": "μέλισσ",
+        "suffix": "α"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g2-0263",
+      "word": "μήλο",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "μήλ- + -ο.",
+      "audioFile": "audio/milo.mp3",
+      "morphemes": {
+        "root": "μήλ",
+        "suffix": "ο"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0264",
+      "word": "μαθητής",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "μαθητ- + -ής.",
+      "audioFile": "audio/mathitis.mp3",
+      "morphemes": {
+        "root": "μαθητ",
+        "suffix": "ής"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0265",
+      "word": "μανία",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "μαν- + -ία.",
+      "audioFile": "audio/mania.mp3",
+      "morphemes": {
+        "root": "μαν",
+        "suffix": "ία"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g2-0266",
+      "word": "ματώνω",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Στην πρόταση γράφουμε το ρήμα ___.",
+      "feedbackRule": "ματών- + -ω.",
+      "audioFile": "audio/matono.mp3",
+      "morphemes": {
+        "root": "ματών",
+        "suffix": "ω"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0267",
+      "word": "μελετώ",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Στην πρόταση γράφουμε το ρήμα ___.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/meleto.mp3",
+      "morphemes": {
+        "root": "μελετώ",
+        "suffix": ""
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0268",
+      "word": "μερίδα",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "μερίδ- + -α.",
+      "audioFile": "audio/merida.mp3",
+      "morphemes": {
+        "root": "μερίδ",
+        "suffix": "α"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g2-0269",
+      "word": "μετρώ",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Στην πρόταση γράφουμε το ρήμα ___.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/metro.mp3",
+      "morphemes": {
+        "root": "μετρώ",
+        "suffix": ""
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0270",
+      "word": "μηχανή",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/michani.mp3",
+      "morphemes": {
+        "root": "μηχανή",
+        "suffix": ""
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0271",
+      "word": "μιλάω",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Στην πρόταση γράφουμε το ρήμα ___.",
+      "feedbackRule": "μιλά- + -ω.",
+      "audioFile": "audio/milao.mp3",
+      "morphemes": {
+        "root": "μιλά",
+        "suffix": "ω"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0272",
+      "word": "μιλώ",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Στην πρόταση γράφουμε το ρήμα ___.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/milo.mp3",
+      "morphemes": {
+        "root": "μιλώ",
+        "suffix": ""
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0273",
+      "word": "μισθός",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/misthos.mp3",
+      "morphemes": {
+        "root": "μισθός",
+        "suffix": ""
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g2-0274",
+      "word": "μπαλώνω",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Στην πρόταση γράφουμε το ρήμα ___.",
+      "feedbackRule": "μπαλών- + -ω.",
+      "audioFile": "audio/mpalono.mp3",
+      "morphemes": {
+        "root": "μπαλών",
+        "suffix": "ω"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0275",
+      "word": "μπλούζα",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "μπλούζ- + -α.",
+      "audioFile": "audio/mplouza.mp3",
+      "morphemes": {
+        "root": "μπλούζ",
+        "suffix": "α"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0276",
+      "word": "μπορεί",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "μπορε- + -ί.",
+      "audioFile": "audio/mporei.mp3",
+      "morphemes": {
+        "root": "μπορε",
+        "suffix": "ί"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0277",
+      "word": "μυρίζω",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Στην πρόταση γράφουμε το ρήμα ___.",
+      "feedbackRule": "μυρίζ- + -ω.",
+      "audioFile": "audio/myrizo.mp3",
+      "morphemes": {
+        "root": "μυρίζ",
+        "suffix": "ω"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0278",
+      "word": "μωρό",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "μωρ- + -ό.",
+      "audioFile": "audio/moro.mp3",
+      "morphemes": {
+        "root": "μωρ",
+        "suffix": "ό"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0279",
+      "word": "νικητής",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "νικητ- + -ής.",
+      "audioFile": "audio/nikitis.mp3",
+      "morphemes": {
+        "root": "νικητ",
+        "suffix": "ής"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0280",
+      "word": "ξαπλώνω",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Στην πρόταση γράφουμε το ρήμα ___.",
+      "feedbackRule": "ξαπλών- + -ω.",
+      "audioFile": "audio/xaplono.mp3",
+      "morphemes": {
+        "root": "ξαπλών",
+        "suffix": "ω"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0281",
+      "word": "ξεπλένω",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Στην πρόταση γράφουμε το ρήμα ___.",
+      "feedbackRule": "ξεπλέν- + -ω.",
+      "audioFile": "audio/xepleno.mp3",
+      "morphemes": {
+        "root": "ξεπλέν",
+        "suffix": "ω"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0282",
+      "word": "ξινός",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/xinos.mp3",
+      "morphemes": {
+        "root": "ξινός",
+        "suffix": ""
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g2-0283",
+      "word": "ξυρίζω",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Στην πρόταση γράφουμε το ρήμα ___.",
+      "feedbackRule": "ξυρίζ- + -ω.",
+      "audioFile": "audio/xyrizo.mp3",
+      "morphemes": {
+        "root": "ξυρίζ",
+        "suffix": "ω"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0284",
+      "word": "ξύστρα",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "ξύστρ- + -α.",
+      "audioFile": "audio/xystra.mp3",
+      "morphemes": {
+        "root": "ξύστρ",
+        "suffix": "α"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0285",
+      "word": "οδηγός",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/odigos.mp3",
+      "morphemes": {
+        "root": "οδηγός",
+        "suffix": ""
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0286",
+      "word": "οξύ",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/oxy.mp3",
+      "morphemes": {
+        "root": "οξύ",
+        "suffix": ""
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0287",
+      "word": "πάγος",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "πάγ- + -ος.",
+      "audioFile": "audio/pagos.mp3",
+      "morphemes": {
+        "root": "πάγ",
+        "suffix": "ος"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g2-0288",
+      "word": "πάπλωμα",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "πάπλωμ- + -α.",
+      "audioFile": "audio/paploma.mp3",
+      "morphemes": {
+        "root": "πάπλωμ",
+        "suffix": "α"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0289",
+      "word": "πέτρα",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "πέτρ- + -α.",
+      "audioFile": "audio/petra.mp3",
+      "morphemes": {
+        "root": "πέτρ",
+        "suffix": "α"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g2-0290",
+      "word": "πίθηκος",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "πίθηκ- + -ος.",
+      "audioFile": "audio/pithikos.mp3",
+      "morphemes": {
+        "root": "πίθηκ",
+        "suffix": "ος"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0291",
+      "word": "πίνακας",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "πίνακ- + -ας.",
+      "audioFile": "audio/pinakas.mp3",
+      "morphemes": {
+        "root": "πίνακ",
+        "suffix": "ας"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g2-0292",
+      "word": "πίνδος",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "πίνδ- + -ος.",
+      "audioFile": "audio/pindos.mp3",
+      "morphemes": {
+        "root": "πίνδ",
+        "suffix": "ος"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g2-0293",
+      "word": "πίστη",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "πίστ- + -η.",
+      "audioFile": "audio/pisti.mp3",
+      "morphemes": {
+        "root": "πίστ",
+        "suffix": "η"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0294",
+      "word": "παίρνω",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Στην πρόταση γράφουμε το ρήμα ___.",
+      "feedbackRule": "παίρν- + -ω.",
+      "audioFile": "audio/pairno.mp3",
+      "morphemes": {
+        "root": "παίρν",
+        "suffix": "ω"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0295",
+      "word": "παγκάκι",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "παγκάκ- + -ι.",
+      "audioFile": "audio/pagkaki.mp3",
+      "morphemes": {
+        "root": "παγκάκ",
+        "suffix": "ι"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g2-0296",
+      "word": "παγωτό",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "παγωτ- + -ό.",
+      "audioFile": "audio/pagoto.mp3",
+      "morphemes": {
+        "root": "παγωτ",
+        "suffix": "ό"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0297",
+      "word": "παγώνω",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Στην πρόταση γράφουμε το ρήμα ___.",
+      "feedbackRule": "παγών- + -ω.",
+      "audioFile": "audio/pagono.mp3",
+      "morphemes": {
+        "root": "παγών",
+        "suffix": "ω"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0298",
+      "word": "πακέτο",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "πακέτ- + -ο.",
+      "audioFile": "audio/paketo.mp3",
+      "morphemes": {
+        "root": "πακέτ",
+        "suffix": "ο"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g2-0299",
+      "word": "πατώνω",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Στην πρόταση γράφουμε το ρήμα ___.",
+      "feedbackRule": "πατών- + -ω.",
+      "audioFile": "audio/patono.mp3",
+      "morphemes": {
+        "root": "πατών",
+        "suffix": "ω"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0300",
+      "word": "περνάω",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Στην πρόταση γράφουμε το ρήμα ___.",
+      "feedbackRule": "περνά- + -ω.",
+      "audioFile": "audio/pernao.mp3",
+      "morphemes": {
+        "root": "περνά",
+        "suffix": "ω"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0301",
+      "word": "περνώ",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Στην πρόταση γράφουμε το ρήμα ___.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/perno.mp3",
+      "morphemes": {
+        "root": "περνώ",
+        "suffix": ""
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0302",
+      "word": "πηδώ",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Στην πρόταση γράφουμε το ρήμα ___.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/pido.mp3",
+      "morphemes": {
+        "root": "πηδώ",
+        "suffix": ""
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0303",
+      "word": "πλάτη",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "πλάτ- + -η.",
+      "audioFile": "audio/plati.mp3",
+      "morphemes": {
+        "root": "πλάτ",
+        "suffix": "η"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0304",
+      "word": "πλακάκι",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "πλακάκ- + -ι.",
+      "audioFile": "audio/plakaki.mp3",
+      "morphemes": {
+        "root": "πλακάκ",
+        "suffix": "ι"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g2-0305",
+      "word": "πληγή",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/pligi.mp3",
+      "morphemes": {
+        "root": "πληγή",
+        "suffix": ""
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0306",
+      "word": "πληρώνω",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Στην πρόταση γράφουμε το ρήμα ___.",
+      "feedbackRule": "πληρών- + -ω.",
+      "audioFile": "audio/plirono.mp3",
+      "morphemes": {
+        "root": "πληρών",
+        "suffix": "ω"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0307",
+      "word": "πουλί",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "πουλ- + -ί.",
+      "audioFile": "audio/pouli.mp3",
+      "morphemes": {
+        "root": "πουλ",
+        "suffix": "ί"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0308",
+      "word": "πουλώ",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Στην πρόταση γράφουμε το ρήμα ___.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/poulo.mp3",
+      "morphemes": {
+        "root": "πουλώ",
+        "suffix": ""
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0309",
+      "word": "πρήζω",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Στην πρόταση γράφουμε το ρήμα ___.",
+      "feedbackRule": "πρήζ- + -ω.",
+      "audioFile": "audio/prizo.mp3",
+      "morphemes": {
+        "root": "πρήζ",
+        "suffix": "ω"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0310",
+      "word": "πρωινός",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/proinos.mp3",
+      "morphemes": {
+        "root": "πρωινός",
+        "suffix": ""
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0311",
+      "word": "πρόβατο",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "πρόβατ- + -ο.",
+      "audioFile": "audio/provato.mp3",
+      "morphemes": {
+        "root": "πρόβατ",
+        "suffix": "ο"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g2-0312",
+      "word": "πρόταση",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "πρότασ- + -η.",
+      "audioFile": "audio/protasi.mp3",
+      "morphemes": {
+        "root": "πρότασ",
+        "suffix": "η"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0313",
+      "word": "πτώμα",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "πτώμ- + -α.",
+      "audioFile": "audio/ptoma.mp3",
+      "morphemes": {
+        "root": "πτώμ",
+        "suffix": "α"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0314",
+      "word": "πόρτα",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "πόρτ- + -α.",
+      "audioFile": "audio/porta.mp3",
+      "morphemes": {
+        "root": "πόρτ",
+        "suffix": "α"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g2-0315",
+      "word": "πύργος",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "πύργ- + -ος.",
+      "audioFile": "audio/pyrgos.mp3",
+      "morphemes": {
+        "root": "πύργ",
+        "suffix": "ος"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0316",
+      "word": "ρακέτα",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "ρακέτ- + -α.",
+      "audioFile": "audio/raketa.mp3",
+      "morphemes": {
+        "root": "ρακέτ",
+        "suffix": "α"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g2-0317",
+      "word": "ρολόι",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "ρολό- + -ι.",
+      "audioFile": "audio/roloi.mp3",
+      "morphemes": {
+        "root": "ρολό",
+        "suffix": "ι"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0318",
+      "word": "ρωτάω",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Στην πρόταση γράφουμε το ρήμα ___.",
+      "feedbackRule": "ρωτά- + -ω.",
+      "audioFile": "audio/rotao.mp3",
+      "morphemes": {
+        "root": "ρωτά",
+        "suffix": "ω"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0319",
+      "word": "σαλάτα",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "σαλάτ- + -α.",
+      "audioFile": "audio/salata.mp3",
+      "morphemes": {
+        "root": "σαλάτ",
+        "suffix": "α"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g2-0320",
+      "word": "σαύρα",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "σαύρ- + -α.",
+      "audioFile": "audio/sayra.mp3",
+      "morphemes": {
+        "root": "σαύρ",
+        "suffix": "α"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0321",
+      "word": "σεισμός",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/seismos.mp3",
+      "morphemes": {
+        "root": "σεισμός",
+        "suffix": ""
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0322",
+      "word": "σκάβω",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Στην πρόταση γράφουμε το ρήμα ___.",
+      "feedbackRule": "σκάβ- + -ω.",
+      "audioFile": "audio/skavo.mp3",
+      "morphemes": {
+        "root": "σκάβ",
+        "suffix": "ω"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0323",
+      "word": "σκάλα",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "σκάλ- + -α.",
+      "audioFile": "audio/skala.mp3",
+      "morphemes": {
+        "root": "σκάλ",
+        "suffix": "α"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g2-0324",
+      "word": "σκαλίζω",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Στην πρόταση γράφουμε το ρήμα ___.",
+      "feedbackRule": "σκαλίζ- + -ω.",
+      "audioFile": "audio/skalizo.mp3",
+      "morphemes": {
+        "root": "σκαλίζ",
+        "suffix": "ω"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0325",
+      "word": "σκηνή",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/skini.mp3",
+      "morphemes": {
+        "root": "σκηνή",
+        "suffix": ""
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0326",
+      "word": "σκοινί",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "σκοιν- + -ί.",
+      "audioFile": "audio/skoini.mp3",
+      "morphemes": {
+        "root": "σκοιν",
+        "suffix": "ί"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0327",
+      "word": "σκούπα",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "σκούπ- + -α.",
+      "audioFile": "audio/skoupa.mp3",
+      "morphemes": {
+        "root": "σκούπ",
+        "suffix": "α"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0328",
+      "word": "σκυλί",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "σκυλ- + -ί.",
+      "audioFile": "audio/skyli.mp3",
+      "morphemes": {
+        "root": "σκυλ",
+        "suffix": "ί"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0329",
+      "word": "σκύβω",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Στην πρόταση γράφουμε το ρήμα ___.",
+      "feedbackRule": "σκύβ- + -ω.",
+      "audioFile": "audio/skyvo.mp3",
+      "morphemes": {
+        "root": "σκύβ",
+        "suffix": "ω"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0330",
+      "word": "σκύλος",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "σκύλ- + -ος.",
+      "audioFile": "audio/skylos.mp3",
+      "morphemes": {
+        "root": "σκύλ",
+        "suffix": "ος"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0331",
+      "word": "σπάθι",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "σπάθ- + -ι.",
+      "audioFile": "audio/spathi.mp3",
+      "morphemes": {
+        "root": "σπάθ",
+        "suffix": "ι"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g2-0332",
+      "word": "σπίρτο",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "σπίρτ- + -ο.",
+      "audioFile": "audio/spirto.mp3",
+      "morphemes": {
+        "root": "σπίρτ",
+        "suffix": "ο"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g2-0333",
+      "word": "στάχυ",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/stachy.mp3",
+      "morphemes": {
+        "root": "στάχυ",
+        "suffix": ""
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0334",
+      "word": "στέγη",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "στέγ- + -η.",
+      "audioFile": "audio/stegi.mp3",
+      "morphemes": {
+        "root": "στέγ",
+        "suffix": "η"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0335",
+      "word": "σταγόνα",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "σταγόν- + -α.",
+      "audioFile": "audio/stagona.mp3",
+      "morphemes": {
+        "root": "σταγόν",
+        "suffix": "α"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g2-0336",
+      "word": "στεγνώνω",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Στην πρόταση γράφουμε το ρήμα ___.",
+      "feedbackRule": "στεγνών- + -ω.",
+      "audioFile": "audio/stegnono.mp3",
+      "morphemes": {
+        "root": "στεγνών",
+        "suffix": "ω"
+      },
+      "difficulty": 2,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0337",
+      "word": "στρίβω",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Στην πρόταση γράφουμε το ρήμα ___.",
+      "feedbackRule": "στρίβ- + -ω.",
+      "audioFile": "audio/strivo.mp3",
+      "morphemes": {
+        "root": "στρίβ",
+        "suffix": "ω"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0338",
+      "word": "συλλαβή",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "Προσοχή σε διπλά γράμματα.",
+      "audioFile": "audio/syllavi.mp3",
+      "morphemes": {
+        "root": "συλλαβή",
+        "suffix": ""
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0339",
+      "word": "συνοδός",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/synodos.mp3",
+      "morphemes": {
+        "root": "συνοδός",
+        "suffix": ""
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0340",
+      "word": "συνταγή",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/syntagi.mp3",
+      "morphemes": {
+        "root": "συνταγή",
+        "suffix": ""
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0341",
+      "word": "σύνθημα",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "σύνθημ- + -α.",
+      "audioFile": "audio/synthima.mp3",
+      "morphemes": {
+        "root": "σύνθημ",
+        "suffix": "α"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0342",
+      "word": "σύρμα",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "σύρμ- + -α.",
+      "audioFile": "audio/syrma.mp3",
+      "morphemes": {
+        "root": "σύρμ",
+        "suffix": "α"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0343",
+      "word": "τέλος",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "τέλ- + -ος.",
+      "audioFile": "audio/telos.mp3",
+      "morphemes": {
+        "root": "τέλ",
+        "suffix": "ος"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g2-0344",
+      "word": "τέχνη",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "τέχν- + -η.",
+      "audioFile": "audio/techni.mp3",
+      "morphemes": {
+        "root": "τέχν",
+        "suffix": "η"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0345",
+      "word": "ταξίδι",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "ταξίδ- + -ι.",
+      "audioFile": "audio/taxidi.mp3",
+      "morphemes": {
+        "root": "ταξίδ",
+        "suffix": "ι"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g2-0346",
+      "word": "ταραχή",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/tarachi.mp3",
+      "morphemes": {
+        "root": "ταραχή",
+        "suffix": ""
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0347",
+      "word": "ταύρος",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "ταύρ- + -ος.",
+      "audioFile": "audio/tayros.mp3",
+      "morphemes": {
+        "root": "ταύρ",
+        "suffix": "ος"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0348",
+      "word": "τεντώνω",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Στην πρόταση γράφουμε το ρήμα ___.",
+      "feedbackRule": "τεντών- + -ω.",
+      "audioFile": "audio/tentono.mp3",
+      "morphemes": {
+        "root": "τεντών",
+        "suffix": "ω"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0349",
+      "word": "τζάκι",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "τζάκ- + -ι.",
+      "audioFile": "audio/tzaki.mp3",
+      "morphemes": {
+        "root": "τζάκ",
+        "suffix": "ι"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g2-0350",
+      "word": "τιμώ",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Στην πρόταση γράφουμε το ρήμα ___.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/timo.mp3",
+      "morphemes": {
+        "root": "τιμώ",
+        "suffix": ""
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0351",
+      "word": "τράπεζα",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "τράπεζ- + -α.",
+      "audioFile": "audio/trapeza.mp3",
+      "morphemes": {
+        "root": "τράπεζ",
+        "suffix": "α"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g2-0352",
+      "word": "τρένο",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "τρέν- + -ο.",
+      "audioFile": "audio/treno.mp3",
+      "morphemes": {
+        "root": "τρέν",
+        "suffix": "ο"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g2-0353",
+      "word": "τρέχω",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Στην πρόταση γράφουμε το ρήμα ___.",
+      "feedbackRule": "τρέχ- + -ω.",
+      "audioFile": "audio/trecho.mp3",
+      "morphemes": {
+        "root": "τρέχ",
+        "suffix": "ω"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0354",
+      "word": "τρίβω",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Στην πρόταση γράφουμε το ρήμα ___.",
+      "feedbackRule": "τρίβ- + -ω.",
+      "audioFile": "audio/trivo.mp3",
+      "morphemes": {
+        "root": "τρίβ",
+        "suffix": "ω"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0355",
+      "word": "τρίμμα",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "τρίμμ- + -α.",
+      "audioFile": "audio/trimma.mp3",
+      "morphemes": {
+        "root": "τρίμμ",
+        "suffix": "α"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g2-0356",
+      "word": "τρώω",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Στην πρόταση γράφουμε το ρήμα ___.",
+      "feedbackRule": "τρώ- + -ω.",
+      "audioFile": "audio/troo.mp3",
+      "morphemes": {
+        "root": "τρώ",
+        "suffix": "ω"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0357",
+      "word": "τσάι",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "τσά- + -ι.",
+      "audioFile": "audio/tsai.mp3",
+      "morphemes": {
+        "root": "τσά",
+        "suffix": "ι"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g2-0358",
+      "word": "τυρί",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "τυρ- + -ί.",
+      "audioFile": "audio/tyri.mp3",
+      "morphemes": {
+        "root": "τυρ",
+        "suffix": "ί"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0359",
+      "word": "τυχερή",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/tycheri.mp3",
+      "morphemes": {
+        "root": "τυχερή",
+        "suffix": ""
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0360",
+      "word": "φάκελος",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "φάκελ- + -ος.",
+      "audioFile": "audio/fakelos.mp3",
+      "morphemes": {
+        "root": "φάκελ",
+        "suffix": "ος"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g2-0361",
+      "word": "φίλη",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "φίλ- + -η.",
+      "audioFile": "audio/fili.mp3",
+      "morphemes": {
+        "root": "φίλ",
+        "suffix": "η"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0362",
+      "word": "φαγητό",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "φαγητ- + -ό.",
+      "audioFile": "audio/fagito.mp3",
+      "morphemes": {
+        "root": "φαγητ",
+        "suffix": "ό"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0363",
+      "word": "φακή",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/faki.mp3",
+      "morphemes": {
+        "root": "φακή",
+        "suffix": ""
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0364",
+      "word": "φανέλα",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "φανέλ- + -α.",
+      "audioFile": "audio/fanela.mp3",
+      "morphemes": {
+        "root": "φανέλ",
+        "suffix": "α"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g2-0365",
+      "word": "φλούδα",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "φλούδ- + -α.",
+      "audioFile": "audio/flouda.mp3",
+      "morphemes": {
+        "root": "φλούδ",
+        "suffix": "α"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0366",
+      "word": "φούσκα",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "φούσκ- + -α.",
+      "audioFile": "audio/fouska.mp3",
+      "morphemes": {
+        "root": "φούσκ",
+        "suffix": "α"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0367",
+      "word": "φτηνές",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "φτην- + -ές.",
+      "audioFile": "audio/ftines.mp3",
+      "morphemes": {
+        "root": "φτην",
+        "suffix": "ές"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0368",
+      "word": "φυλακή",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/fylaki.mp3",
+      "morphemes": {
+        "root": "φυλακή",
+        "suffix": ""
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0369",
+      "word": "φυσώ",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Στην πρόταση γράφουμε το ρήμα ___.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/fyso.mp3",
+      "morphemes": {
+        "root": "φυσώ",
+        "suffix": ""
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0370",
+      "word": "φυτό",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "φυτ- + -ό.",
+      "audioFile": "audio/fyto.mp3",
+      "morphemes": {
+        "root": "φυτ",
+        "suffix": "ό"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0371",
+      "word": "φωνήεν",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/fonien.mp3",
+      "morphemes": {
+        "root": "φωνήεν",
+        "suffix": ""
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0372",
+      "word": "χάδι",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "χάδ- + -ι.",
+      "audioFile": "audio/chadi.mp3",
+      "morphemes": {
+        "root": "χάδ",
+        "suffix": "ι"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g2-0373",
+      "word": "χέρι",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "χέρ- + -ι.",
+      "audioFile": "audio/cheri.mp3",
+      "morphemes": {
+        "root": "χέρ",
+        "suffix": "ι"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0374",
+      "word": "χαλάω",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Στην πρόταση γράφουμε το ρήμα ___.",
+      "feedbackRule": "χαλά- + -ω.",
+      "audioFile": "audio/chalao.mp3",
+      "morphemes": {
+        "root": "χαλά",
+        "suffix": "ω"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0375",
+      "word": "χαρά",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "χαρ- + -ά.",
+      "audioFile": "audio/chara.mp3",
+      "morphemes": {
+        "root": "χαρ",
+        "suffix": "ά"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g2-0376",
+      "word": "χαρίζω",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Στην πρόταση γράφουμε το ρήμα ___.",
+      "feedbackRule": "χαρίζ- + -ω.",
+      "audioFile": "audio/charizo.mp3",
+      "morphemes": {
+        "root": "χαρίζ",
+        "suffix": "ω"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0377",
+      "word": "χορός",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/choros.mp3",
+      "morphemes": {
+        "root": "χορός",
+        "suffix": ""
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g2-0378",
+      "word": "χρήματα",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "χρή- + -ματα.",
+      "audioFile": "audio/chrimata.mp3",
+      "morphemes": {
+        "root": "χρή",
+        "suffix": "ματα"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0379",
+      "word": "χτενίζω",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Στην πρόταση γράφουμε το ρήμα ___.",
+      "feedbackRule": "χτενίζ- + -ω.",
+      "audioFile": "audio/chtenizo.mp3",
+      "morphemes": {
+        "root": "χτενίζ",
+        "suffix": "ω"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0380",
+      "word": "χτυπώ",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Στην πρόταση γράφουμε το ρήμα ___.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/chtypo.mp3",
+      "morphemes": {
+        "root": "χτυπώ",
+        "suffix": ""
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0381",
+      "word": "ψαλίδι",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "ψαλίδ- + -ι.",
+      "audioFile": "audio/psalidi.mp3",
+      "morphemes": {
+        "root": "ψαλίδ",
+        "suffix": "ι"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g2-0382",
+      "word": "ψαρά",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "ψαρ- + -ά.",
+      "audioFile": "audio/psara.mp3",
+      "morphemes": {
+        "root": "ψαρ",
+        "suffix": "ά"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g2-0383",
+      "word": "ψαρώνω",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Στην πρόταση γράφουμε το ρήμα ___.",
+      "feedbackRule": "ψαρών- + -ω.",
+      "audioFile": "audio/psarono.mp3",
+      "morphemes": {
+        "root": "ψαρών",
+        "suffix": "ω"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0384",
+      "word": "ψυχή",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/psychi.mp3",
+      "morphemes": {
+        "root": "ψυχή",
+        "suffix": ""
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0385",
+      "word": "ψωνίζω",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Στην πρόταση γράφουμε το ρήμα ___.",
+      "feedbackRule": "ψωνίζ- + -ω.",
+      "audioFile": "audio/psonizo.mp3",
+      "morphemes": {
+        "root": "ψωνίζ",
+        "suffix": "ω"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0386",
+      "word": "όλυμπος",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "όλυμπ- + -ος.",
+      "audioFile": "audio/olympos.mp3",
+      "morphemes": {
+        "root": "όλυμπ",
+        "suffix": "ος"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g2-0387",
+      "word": "όρος",
+      "grade": 2,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "όρ- + -ος.",
+      "audioFile": "audio/oros.mp3",
+      "morphemes": {
+        "root": "όρ",
+        "suffix": "ος"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic"
+    },
+    {
       "id": "lx-g3-0001",
       "word": "άβολος",
       "grade": 3,
@@ -26672,6 +30267,1617 @@
       "homophone": true
     },
     {
+      "id": "lx-g3-0158",
+      "word": "αγελάδα",
+      "grade": 3,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "αγελάδ- + -α.",
+      "audioFile": "audio/agelada.mp3",
+      "morphemes": {
+        "root": "αγελάδ",
+        "suffix": "α"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g3-0159",
+      "word": "αγοράζω",
+      "grade": 3,
+      "axis": "K",
+      "hintSentence": "Στην πρόταση γράφουμε το ρήμα ___.",
+      "feedbackRule": "αγοράζ- + -ω.",
+      "audioFile": "audio/agorazo.mp3",
+      "morphemes": {
+        "root": "αγοράζ",
+        "suffix": "ω"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g3-0160",
+      "word": "αγωνία",
+      "grade": 3,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "αγων- + -ία.",
+      "audioFile": "audio/agonia.mp3",
+      "morphemes": {
+        "root": "αγων",
+        "suffix": "ία"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g3-0161",
+      "word": "αναβάτης",
+      "grade": 3,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "αναβάτ- + -ης.",
+      "audioFile": "audio/anavatis.mp3",
+      "morphemes": {
+        "root": "αναβάτ",
+        "suffix": "ης"
+      },
+      "difficulty": 2,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g3-0162",
+      "word": "αντιδράω",
+      "grade": 3,
+      "axis": "K",
+      "hintSentence": "Στην πρόταση γράφουμε το ρήμα ___.",
+      "feedbackRule": "αντιδρά- + -ω.",
+      "audioFile": "audio/antidrao.mp3",
+      "morphemes": {
+        "root": "αντιδρά",
+        "suffix": "ω"
+      },
+      "difficulty": 2,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g3-0163",
+      "word": "βανίλια",
+      "grade": 3,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "βανίλι- + -α.",
+      "audioFile": "audio/vanilia.mp3",
+      "morphemes": {
+        "root": "βανίλι",
+        "suffix": "α"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g3-0164",
+      "word": "βουτιά",
+      "grade": 3,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "βουτ- + -ιά.",
+      "audioFile": "audio/voutia.mp3",
+      "morphemes": {
+        "root": "βουτ",
+        "suffix": "ιά"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g3-0165",
+      "word": "βραβείο",
+      "grade": 3,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "βραβ- + -είο.",
+      "audioFile": "audio/vraveio.mp3",
+      "morphemes": {
+        "root": "βραβ",
+        "suffix": "είο"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g3-0166",
+      "word": "γίνομαι",
+      "grade": 3,
+      "axis": "K",
+      "hintSentence": "Στην πρόταση γράφουμε το ρήμα ___.",
+      "feedbackRule": "γίνομ- + -αι.",
+      "audioFile": "audio/ginomai.mp3",
+      "morphemes": {
+        "root": "γίνομ",
+        "suffix": "αι"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g3-0167",
+      "word": "γαλλικός",
+      "grade": 3,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με το επίθετο ___.",
+      "feedbackRule": "Προσοχή σε διπλά γράμματα.",
+      "audioFile": "audio/gallikos.mp3",
+      "morphemes": {
+        "root": "γαλλικός",
+        "suffix": ""
+      },
+      "difficulty": 2,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g3-0168",
+      "word": "γεφυρώνω",
+      "grade": 3,
+      "axis": "K",
+      "hintSentence": "Στην πρόταση γράφουμε το ρήμα ___.",
+      "feedbackRule": "γεφυρών- + -ω.",
+      "audioFile": "audio/gefyrono.mp3",
+      "morphemes": {
+        "root": "γεφυρών",
+        "suffix": "ω"
+      },
+      "difficulty": 2,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g3-0169",
+      "word": "γιρλάντα",
+      "grade": 3,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "γιρλάντ- + -α.",
+      "audioFile": "audio/girlanta.mp3",
+      "morphemes": {
+        "root": "γιρλάντ",
+        "suffix": "α"
+      },
+      "difficulty": 2,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g3-0170",
+      "word": "γκρινιάζω",
+      "grade": 3,
+      "axis": "K",
+      "hintSentence": "Στην πρόταση γράφουμε το ρήμα ___.",
+      "feedbackRule": "γκρινιάζ- + -ω.",
+      "audioFile": "audio/gkriniazo.mp3",
+      "morphemes": {
+        "root": "γκρινιάζ",
+        "suffix": "ω"
+      },
+      "difficulty": 2,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g3-0171",
+      "word": "γράφομαι",
+      "grade": 3,
+      "axis": "K",
+      "hintSentence": "Στην πρόταση γράφουμε το ρήμα ___.",
+      "feedbackRule": "γράφομ- + -αι.",
+      "audioFile": "audio/grafomai.mp3",
+      "morphemes": {
+        "root": "γράφομ",
+        "suffix": "αι"
+      },
+      "difficulty": 2,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g3-0172",
+      "word": "γυαλίζω",
+      "grade": 3,
+      "axis": "K",
+      "hintSentence": "Στην πρόταση γράφουμε το ρήμα ___.",
+      "feedbackRule": "γυαλίζ- + -ω.",
+      "audioFile": "audio/gyalizo.mp3",
+      "morphemes": {
+        "root": "γυαλίζ",
+        "suffix": "ω"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g3-0173",
+      "word": "δένομαι",
+      "grade": 3,
+      "axis": "K",
+      "hintSentence": "Στην πρόταση γράφουμε το ρήμα ___.",
+      "feedbackRule": "δένομ- + -αι.",
+      "audioFile": "audio/denomai.mp3",
+      "morphemes": {
+        "root": "δένομ",
+        "suffix": "αι"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g3-0174",
+      "word": "διαβάζω",
+      "grade": 3,
+      "axis": "K",
+      "hintSentence": "Στην πρόταση γράφουμε το ρήμα ___.",
+      "feedbackRule": "διαβάζ- + -ω.",
+      "audioFile": "audio/diavazo.mp3",
+      "morphemes": {
+        "root": "διαβάζ",
+        "suffix": "ω"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g3-0175",
+      "word": "διακοπή",
+      "grade": 3,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/diakopi.mp3",
+      "morphemes": {
+        "root": "διακοπή",
+        "suffix": ""
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g3-0176",
+      "word": "δισέλιδο",
+      "grade": 3,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "δισέλιδ- + -ο.",
+      "audioFile": "audio/diselido.mp3",
+      "morphemes": {
+        "root": "δισέλιδ",
+        "suffix": "ο"
+      },
+      "difficulty": 2,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g3-0177",
+      "word": "δισύλλαβη",
+      "grade": 3,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "δισύλλαβ- + -η.",
+      "audioFile": "audio/disyllavi.mp3",
+      "morphemes": {
+        "root": "δισύλλαβ",
+        "suffix": "η"
+      },
+      "difficulty": 2,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g3-0178",
+      "word": "διώροφο",
+      "grade": 3,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "διώροφ- + -ο.",
+      "audioFile": "audio/diorofo.mp3",
+      "morphemes": {
+        "root": "διώροφ",
+        "suffix": "ο"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g3-0179",
+      "word": "δούναβης",
+      "grade": 3,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "δούναβ- + -ης.",
+      "audioFile": "audio/dounavis.mp3",
+      "morphemes": {
+        "root": "δούναβ",
+        "suffix": "ης"
+      },
+      "difficulty": 2,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g3-0180",
+      "word": "ελέφαντας",
+      "grade": 3,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "ελέφαντ- + -ας.",
+      "audioFile": "audio/elefantas.mp3",
+      "morphemes": {
+        "root": "ελέφαντ",
+        "suffix": "ας"
+      },
+      "difficulty": 2,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g3-0181",
+      "word": "επιβάτης",
+      "grade": 3,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "επιβάτ- + -ης.",
+      "audioFile": "audio/epivatis.mp3",
+      "morphemes": {
+        "root": "επιβάτ",
+        "suffix": "ης"
+      },
+      "difficulty": 2,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g3-0182",
+      "word": "επιμένω",
+      "grade": 3,
+      "axis": "K",
+      "hintSentence": "Στην πρόταση γράφουμε το ρήμα ___.",
+      "feedbackRule": "επιμέν- + -ω.",
+      "audioFile": "audio/epimeno.mp3",
+      "morphemes": {
+        "root": "επιμέν",
+        "suffix": "ω"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g3-0183",
+      "word": "επιστάτης",
+      "grade": 3,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "επιστάτ- + -ης.",
+      "audioFile": "audio/epistatis.mp3",
+      "morphemes": {
+        "root": "επιστάτ",
+        "suffix": "ης"
+      },
+      "difficulty": 2,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g3-0184",
+      "word": "επιταγή",
+      "grade": 3,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/epitagi.mp3",
+      "morphemes": {
+        "root": "επιταγή",
+        "suffix": ""
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g3-0185",
+      "word": "ζεσταίνω",
+      "grade": 3,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "ζεσταίν- + -ω.",
+      "audioFile": "audio/zestaino.mp3",
+      "morphemes": {
+        "root": "ζεσταίν",
+        "suffix": "ω"
+      },
+      "difficulty": 2,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g3-0186",
+      "word": "ζητιάνος",
+      "grade": 3,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "ζητιάν- + -ος.",
+      "audioFile": "audio/zitianos.mp3",
+      "morphemes": {
+        "root": "ζητιάν",
+        "suffix": "ος"
+      },
+      "difficulty": 2,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g3-0187",
+      "word": "ζωγραφιά",
+      "grade": 3,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "ζωγραφ- + -ιά.",
+      "audioFile": "audio/zografia.mp3",
+      "morphemes": {
+        "root": "ζωγραφ",
+        "suffix": "ιά"
+      },
+      "difficulty": 2,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g3-0188",
+      "word": "θεϊκό",
+      "grade": 3,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "θεϊκ- + -ό.",
+      "audioFile": "audio/theiko.mp3",
+      "morphemes": {
+        "root": "θεϊκ",
+        "suffix": "ό"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g3-0189",
+      "word": "θησαυρός",
+      "grade": 3,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/thisayros.mp3",
+      "morphemes": {
+        "root": "θησαυρός",
+        "suffix": ""
+      },
+      "difficulty": 2,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g3-0190",
+      "word": "θυμάμαι",
+      "grade": 3,
+      "axis": "K",
+      "hintSentence": "Στην πρόταση γράφουμε το ρήμα ___.",
+      "feedbackRule": "θυμάμ- + -αι.",
+      "audioFile": "audio/thymamai.mp3",
+      "morphemes": {
+        "root": "θυμάμ",
+        "suffix": "αι"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g3-0191",
+      "word": "κάθομαι",
+      "grade": 3,
+      "axis": "K",
+      "hintSentence": "Στην πρόταση γράφουμε το ρήμα ___.",
+      "feedbackRule": "κάθομ- + -αι.",
+      "audioFile": "audio/kathomai.mp3",
+      "morphemes": {
+        "root": "κάθομ",
+        "suffix": "αι"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g3-0192",
+      "word": "κάτοικος",
+      "grade": 3,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "κάτοικ- + -ος.",
+      "audioFile": "audio/katoikos.mp3",
+      "morphemes": {
+        "root": "κάτοικ",
+        "suffix": "ος"
+      },
+      "difficulty": 2,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g3-0193",
+      "word": "καΐκι",
+      "grade": 3,
+      "axis": "R",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "καΐκ- + -ι.",
+      "audioFile": "audio/kaiki.mp3",
+      "morphemes": {
+        "root": "καΐκ",
+        "suffix": "ι"
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "lx-g3-0194",
+      "word": "καρφίτσα",
+      "grade": 3,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "καρφίτσ- + -α.",
+      "audioFile": "audio/karfitsa.mp3",
+      "morphemes": {
+        "root": "καρφίτσ",
+        "suffix": "α"
+      },
+      "difficulty": 2,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g3-0195",
+      "word": "κασετίνα",
+      "grade": 3,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "κασετίν- + -α.",
+      "audioFile": "audio/kasetina.mp3",
+      "morphemes": {
+        "root": "κασετίν",
+        "suffix": "α"
+      },
+      "difficulty": 2,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g3-0196",
+      "word": "κατάψυξη",
+      "grade": 3,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "κατάψυξ- + -η.",
+      "audioFile": "audio/katapsyxi.mp3",
+      "morphemes": {
+        "root": "κατάψυξ",
+        "suffix": "η"
+      },
+      "difficulty": 2,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g3-0197",
+      "word": "καταστρέφω",
+      "grade": 3,
+      "axis": "K",
+      "hintSentence": "Στην πρόταση γράφουμε το ρήμα ___.",
+      "feedbackRule": "καταστρέφ- + -ω.",
+      "audioFile": "audio/katastrefo.mp3",
+      "morphemes": {
+        "root": "καταστρέφ",
+        "suffix": "ω"
+      },
+      "difficulty": 3,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g3-0198",
+      "word": "κελαηδώ",
+      "grade": 3,
+      "axis": "K",
+      "hintSentence": "Στην πρόταση γράφουμε το ρήμα ___.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/kelaido.mp3",
+      "morphemes": {
+        "root": "κελαηδώ",
+        "suffix": ""
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g3-0199",
+      "word": "κιβώτιο",
+      "grade": 3,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "κιβώτ- + -ιο.",
+      "audioFile": "audio/kivotio.mp3",
+      "morphemes": {
+        "root": "κιβώτ",
+        "suffix": "ιο"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g3-0200",
+      "word": "κομπολόι",
+      "grade": 3,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "κομπολό- + -ι.",
+      "audioFile": "audio/kompoloi.mp3",
+      "morphemes": {
+        "root": "κομπολό",
+        "suffix": "ι"
+      },
+      "difficulty": 2,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g3-0201",
+      "word": "κουβαλώ",
+      "grade": 3,
+      "axis": "K",
+      "hintSentence": "Στην πρόταση γράφουμε το ρήμα ___.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/kouvalo.mp3",
+      "morphemes": {
+        "root": "κουβαλώ",
+        "suffix": ""
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g3-0202",
+      "word": "λαϊκή",
+      "grade": 3,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/laiki.mp3",
+      "morphemes": {
+        "root": "λαϊκή",
+        "suffix": ""
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g3-0203",
+      "word": "λυπάμαι",
+      "grade": 3,
+      "axis": "K",
+      "hintSentence": "Στην πρόταση γράφουμε το ρήμα ___.",
+      "feedbackRule": "λυπάμ- + -αι.",
+      "audioFile": "audio/lypamai.mp3",
+      "morphemes": {
+        "root": "λυπάμ",
+        "suffix": "αι"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g3-0204",
+      "word": "μάλλινη",
+      "grade": 3,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με το επίθετο ___.",
+      "feedbackRule": "μάλλιν- + -η.",
+      "audioFile": "audio/mallini.mp3",
+      "morphemes": {
+        "root": "μάλλιν",
+        "suffix": "η"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g3-0205",
+      "word": "μαγεύω",
+      "grade": 3,
+      "axis": "K",
+      "hintSentence": "Στην πρόταση γράφουμε το ρήμα ___.",
+      "feedbackRule": "μαγεύ- + -ω.",
+      "audioFile": "audio/mageyo.mp3",
+      "morphemes": {
+        "root": "μαγεύ",
+        "suffix": "ω"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g3-0206",
+      "word": "μαθαίνω",
+      "grade": 3,
+      "axis": "K",
+      "hintSentence": "Στην πρόταση γράφουμε το ρήμα ___.",
+      "feedbackRule": "μαθαίν- + -ω.",
+      "audioFile": "audio/mathaino.mp3",
+      "morphemes": {
+        "root": "μαθαίν",
+        "suffix": "ω"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g3-0207",
+      "word": "μελανιά",
+      "grade": 3,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "μελαν- + -ιά.",
+      "audioFile": "audio/melania.mp3",
+      "morphemes": {
+        "root": "μελαν",
+        "suffix": "ιά"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g3-0208",
+      "word": "μηχανάκι",
+      "grade": 3,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "μηχανάκ- + -ι.",
+      "audioFile": "audio/michanaki.mp3",
+      "morphemes": {
+        "root": "μηχανάκ",
+        "suffix": "ι"
+      },
+      "difficulty": 2,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g3-0209",
+      "word": "μονοπάτι",
+      "grade": 3,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "μονοπάτ- + -ι.",
+      "audioFile": "audio/monopati.mp3",
+      "morphemes": {
+        "root": "μονοπάτ",
+        "suffix": "ι"
+      },
+      "difficulty": 2,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g3-0210",
+      "word": "μπουκιά",
+      "grade": 3,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "μπουκ- + -ιά.",
+      "audioFile": "audio/mpoukia.mp3",
+      "morphemes": {
+        "root": "μπουκ",
+        "suffix": "ιά"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g3-0211",
+      "word": "νεράιδα",
+      "grade": 3,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "νεράιδ- + -α.",
+      "audioFile": "audio/neraida.mp3",
+      "morphemes": {
+        "root": "νεράιδ",
+        "suffix": "α"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g3-0212",
+      "word": "νηστεία",
+      "grade": 3,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "νηστε- + -ία.",
+      "audioFile": "audio/nisteia.mp3",
+      "morphemes": {
+        "root": "νηστε",
+        "suffix": "ία"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g3-0213",
+      "word": "ντουλάπα",
+      "grade": 3,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "ντουλάπ- + -α.",
+      "audioFile": "audio/ntoulapa.mp3",
+      "morphemes": {
+        "root": "ντουλάπ",
+        "suffix": "α"
+      },
+      "difficulty": 2,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g3-0214",
+      "word": "ντρέπομαι",
+      "grade": 3,
+      "axis": "K",
+      "hintSentence": "Στην πρόταση γράφουμε το ρήμα ___.",
+      "feedbackRule": "ντρέπομ- + -αι.",
+      "audioFile": "audio/ntrepomai.mp3",
+      "morphemes": {
+        "root": "ντρέπομ",
+        "suffix": "αι"
+      },
+      "difficulty": 2,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g3-0215",
+      "word": "ντύνομαι",
+      "grade": 3,
+      "axis": "K",
+      "hintSentence": "Στην πρόταση γράφουμε το ρήμα ___.",
+      "feedbackRule": "ντύνομ- + -αι.",
+      "audioFile": "audio/ntynomai.mp3",
+      "morphemes": {
+        "root": "ντύνομ",
+        "suffix": "αι"
+      },
+      "difficulty": 2,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g3-0216",
+      "word": "ξηραίνω",
+      "grade": 3,
+      "axis": "K",
+      "hintSentence": "Στην πρόταση γράφουμε το ρήμα ___.",
+      "feedbackRule": "ξηραίν- + -ω.",
+      "audioFile": "audio/xiraino.mp3",
+      "morphemes": {
+        "root": "ξηραίν",
+        "suffix": "ω"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g3-0217",
+      "word": "ξύλινο",
+      "grade": 3,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με το επίθετο ___.",
+      "feedbackRule": "ξύλιν- + -ο.",
+      "audioFile": "audio/xylino.mp3",
+      "morphemes": {
+        "root": "ξύλιν",
+        "suffix": "ο"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g3-0218",
+      "word": "οδηγία",
+      "grade": 3,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "οδηγ- + -ία.",
+      "audioFile": "audio/odigia.mp3",
+      "morphemes": {
+        "root": "οδηγ",
+        "suffix": "ία"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g3-0219",
+      "word": "πέτρινος",
+      "grade": 3,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με το επίθετο ___.",
+      "feedbackRule": "πέτριν- + -ος.",
+      "audioFile": "audio/petrinos.mp3",
+      "morphemes": {
+        "root": "πέτριν",
+        "suffix": "ος"
+      },
+      "difficulty": 2,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g3-0220",
+      "word": "παράθυρο",
+      "grade": 3,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "παράθυρ- + -ο.",
+      "audioFile": "audio/parathyro.mp3",
+      "morphemes": {
+        "root": "παράθυρ",
+        "suffix": "ο"
+      },
+      "difficulty": 2,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g3-0221",
+      "word": "παραλία",
+      "grade": 3,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "παραλ- + -ία.",
+      "audioFile": "audio/paralia.mp3",
+      "morphemes": {
+        "root": "παραλ",
+        "suffix": "ία"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g3-0222",
+      "word": "περίφημος",
+      "grade": 3,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "περίφημ- + -ος.",
+      "audioFile": "audio/perifimos.mp3",
+      "morphemes": {
+        "root": "περίφημ",
+        "suffix": "ος"
+      },
+      "difficulty": 2,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g3-0223",
+      "word": "περιμένω",
+      "grade": 3,
+      "axis": "K",
+      "hintSentence": "Στην πρόταση γράφουμε το ρήμα ___.",
+      "feedbackRule": "περιμέν- + -ω.",
+      "audioFile": "audio/perimeno.mp3",
+      "morphemes": {
+        "root": "περιμέν",
+        "suffix": "ω"
+      },
+      "difficulty": 2,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g3-0224",
+      "word": "πινακίδα",
+      "grade": 3,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "πινακίδ- + -α.",
+      "audioFile": "audio/pinakida.mp3",
+      "morphemes": {
+        "root": "πινακίδ",
+        "suffix": "α"
+      },
+      "difficulty": 2,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g3-0225",
+      "word": "πλένομαι",
+      "grade": 3,
+      "axis": "K",
+      "hintSentence": "Στην πρόταση γράφουμε το ρήμα ___.",
+      "feedbackRule": "πλένομ- + -αι.",
+      "audioFile": "audio/plenomai.mp3",
+      "morphemes": {
+        "root": "πλένομ",
+        "suffix": "αι"
+      },
+      "difficulty": 2,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g3-0226",
+      "word": "πλατεία",
+      "grade": 3,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "πλατε- + -ία.",
+      "audioFile": "audio/plateia.mp3",
+      "morphemes": {
+        "root": "πλατε",
+        "suffix": "ία"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g3-0227",
+      "word": "πλούσιος",
+      "grade": 3,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "πλούσι- + -ος.",
+      "audioFile": "audio/plousios.mp3",
+      "morphemes": {
+        "root": "πλούσι",
+        "suffix": "ος"
+      },
+      "difficulty": 2,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g3-0228",
+      "word": "ποδηλάτης",
+      "grade": 3,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "ποδηλάτ- + -ης.",
+      "audioFile": "audio/podilatis.mp3",
+      "morphemes": {
+        "root": "ποδηλάτ",
+        "suffix": "ης"
+      },
+      "difficulty": 2,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g3-0229",
+      "word": "ποντικός",
+      "grade": 3,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με το επίθετο ___.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/pontikos.mp3",
+      "morphemes": {
+        "root": "ποντικός",
+        "suffix": ""
+      },
+      "difficulty": 2,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g3-0230",
+      "word": "προσευχή",
+      "grade": 3,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/proseychi.mp3",
+      "morphemes": {
+        "root": "προσευχή",
+        "suffix": ""
+      },
+      "difficulty": 2,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g3-0231",
+      "word": "πρόεδρος",
+      "grade": 3,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "πρόεδρ- + -ος.",
+      "audioFile": "audio/proedros.mp3",
+      "morphemes": {
+        "root": "πρόεδρ",
+        "suffix": "ος"
+      },
+      "difficulty": 2,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g3-0232",
+      "word": "σάλπιγγα",
+      "grade": 3,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "σάλπιγγ- + -α.",
+      "audioFile": "audio/salpigga.mp3",
+      "morphemes": {
+        "root": "σάλπιγγ",
+        "suffix": "α"
+      },
+      "difficulty": 2,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g3-0233",
+      "word": "σαΐτα",
+      "grade": 3,
+      "axis": "R",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "σαΐτ- + -α.",
+      "audioFile": "audio/saita.mp3",
+      "morphemes": {
+        "root": "σαΐτ",
+        "suffix": "α"
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "lx-g3-0234",
+      "word": "σακούλα",
+      "grade": 3,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "σακούλ- + -α.",
+      "audioFile": "audio/sakoula.mp3",
+      "morphemes": {
+        "root": "σακούλ",
+        "suffix": "α"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g3-0235",
+      "word": "σεΐχης",
+      "grade": 3,
+      "axis": "R",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "σεΐχ- + -ης.",
+      "audioFile": "audio/seichis.mp3",
+      "morphemes": {
+        "root": "σεΐχ",
+        "suffix": "ης"
+      },
+      "difficulty": 1,
+      "homophone": true
+    },
+    {
+      "id": "lx-g3-0236",
+      "word": "σκέφτομαι",
+      "grade": 3,
+      "axis": "K",
+      "hintSentence": "Στην πρόταση γράφουμε το ρήμα ___.",
+      "feedbackRule": "σκέφτομ- + -αι.",
+      "audioFile": "audio/skeftomai.mp3",
+      "morphemes": {
+        "root": "σκέφτομ",
+        "suffix": "αι"
+      },
+      "difficulty": 2,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g3-0237",
+      "word": "σκιάχτρο",
+      "grade": 3,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "σκιάχτρ- + -ο.",
+      "audioFile": "audio/skiachtro.mp3",
+      "morphemes": {
+        "root": "σκιάχτρ",
+        "suffix": "ο"
+      },
+      "difficulty": 2,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g3-0238",
+      "word": "σκοτεινή",
+      "grade": 3,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/skoteini.mp3",
+      "morphemes": {
+        "root": "σκοτεινή",
+        "suffix": ""
+      },
+      "difficulty": 2,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g3-0239",
+      "word": "σκοτεινός",
+      "grade": 3,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/skoteinos.mp3",
+      "morphemes": {
+        "root": "σκοτεινός",
+        "suffix": ""
+      },
+      "difficulty": 2,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g3-0240",
+      "word": "συμβουλή",
+      "grade": 3,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/symvouli.mp3",
+      "morphemes": {
+        "root": "συμβουλή",
+        "suffix": ""
+      },
+      "difficulty": 2,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g3-0241",
+      "word": "σωπαίνω",
+      "grade": 3,
+      "axis": "K",
+      "hintSentence": "Στην πρόταση γράφουμε το ρήμα ___.",
+      "feedbackRule": "σωπαίν- + -ω.",
+      "audioFile": "audio/sopaino.mp3",
+      "morphemes": {
+        "root": "σωπαίν",
+        "suffix": "ω"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g3-0242",
+      "word": "ταπεινό",
+      "grade": 3,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "ταπειν- + -ό.",
+      "audioFile": "audio/tapeino.mp3",
+      "morphemes": {
+        "root": "ταπειν",
+        "suffix": "ό"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g3-0243",
+      "word": "τεράστιος",
+      "grade": 3,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "τεράστι- + -ος.",
+      "audioFile": "audio/terastios.mp3",
+      "morphemes": {
+        "root": "τεράστι",
+        "suffix": "ος"
+      },
+      "difficulty": 2,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g3-0244",
+      "word": "τολμηρός",
+      "grade": 3,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/tolmiros.mp3",
+      "morphemes": {
+        "root": "τολμηρός",
+        "suffix": ""
+      },
+      "difficulty": 2,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g3-0245",
+      "word": "τρίβομαι",
+      "grade": 3,
+      "axis": "K",
+      "hintSentence": "Στην πρόταση γράφουμε το ρήμα ___.",
+      "feedbackRule": "τρίβομ- + -αι.",
+      "audioFile": "audio/trivomai.mp3",
+      "morphemes": {
+        "root": "τρίβομ",
+        "suffix": "αι"
+      },
+      "difficulty": 2,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g3-0246",
+      "word": "υφαίνω",
+      "grade": 3,
+      "axis": "K",
+      "hintSentence": "Στην πρόταση γράφουμε το ρήμα ___.",
+      "feedbackRule": "υφαίν- + -ω.",
+      "audioFile": "audio/yfaino.mp3",
+      "morphemes": {
+        "root": "υφαίν",
+        "suffix": "ω"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g3-0247",
+      "word": "φάλαινα",
+      "grade": 3,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "φάλαιν- + -α.",
+      "audioFile": "audio/falaina.mp3",
+      "morphemes": {
+        "root": "φάλαιν",
+        "suffix": "α"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g3-0248",
+      "word": "φαΐ",
+      "grade": 3,
+      "axis": "R",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "Διάβασε προσεκτικά τη λέξη.",
+      "audioFile": "audio/fai.mp3",
+      "morphemes": {
+        "root": "φαΐ",
+        "suffix": ""
+      },
+      "difficulty": 1
+    },
+    {
+      "id": "lx-g3-0249",
+      "word": "φασαρία",
+      "grade": 3,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "φασαρ- + -ία.",
+      "audioFile": "audio/fasaria.mp3",
+      "morphemes": {
+        "root": "φασαρ",
+        "suffix": "ία"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g3-0250",
+      "word": "φορεσιά",
+      "grade": 3,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "φορεσ- + -ιά.",
+      "audioFile": "audio/foresia.mp3",
+      "morphemes": {
+        "root": "φορεσ",
+        "suffix": "ιά"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g3-0251",
+      "word": "φουσκώνω",
+      "grade": 3,
+      "axis": "K",
+      "hintSentence": "Στην πρόταση γράφουμε το ρήμα ___.",
+      "feedbackRule": "φουσκών- + -ω.",
+      "audioFile": "audio/fouskono.mp3",
+      "morphemes": {
+        "root": "φουσκών",
+        "suffix": "ω"
+      },
+      "difficulty": 2,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g3-0252",
+      "word": "φυτεύω",
+      "grade": 3,
+      "axis": "K",
+      "hintSentence": "Στην πρόταση γράφουμε το ρήμα ___.",
+      "feedbackRule": "φυτεύ- + -ω.",
+      "audioFile": "audio/fyteyo.mp3",
+      "morphemes": {
+        "root": "φυτεύ",
+        "suffix": "ω"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g3-0253",
+      "word": "φωτεινό",
+      "grade": 3,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "φωτειν- + -ό.",
+      "audioFile": "audio/foteino.mp3",
+      "morphemes": {
+        "root": "φωτειν",
+        "suffix": "ό"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g3-0254",
+      "word": "φωτεινός",
+      "grade": 3,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/foteinos.mp3",
+      "morphemes": {
+        "root": "φωτεινός",
+        "suffix": ""
+      },
+      "difficulty": 2,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g3-0255",
+      "word": "χάρτινη",
+      "grade": 3,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με το επίθετο ___.",
+      "feedbackRule": "χάρτιν- + -η.",
+      "audioFile": "audio/chartini.mp3",
+      "morphemes": {
+        "root": "χάρτιν",
+        "suffix": "η"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g3-0256",
+      "word": "χάρτινος",
+      "grade": 3,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με το επίθετο ___.",
+      "feedbackRule": "χάρτιν- + -ος.",
+      "audioFile": "audio/chartinos.mp3",
+      "morphemes": {
+        "root": "χάρτιν",
+        "suffix": "ος"
+      },
+      "difficulty": 2,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g3-0257",
+      "word": "χειμώνα",
+      "grade": 3,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "χειμών- + -α.",
+      "audioFile": "audio/cheimona.mp3",
+      "morphemes": {
+        "root": "χειμών",
+        "suffix": "α"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g3-0258",
+      "word": "χελιδόνι",
+      "grade": 3,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "χελιδόν- + -ι.",
+      "audioFile": "audio/chelidoni.mp3",
+      "morphemes": {
+        "root": "χελιδόν",
+        "suffix": "ι"
+      },
+      "difficulty": 2,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g3-0259",
+      "word": "χορηγία",
+      "grade": 3,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "χορηγ- + -ία.",
+      "audioFile": "audio/chorigia.mp3",
+      "morphemes": {
+        "root": "χορηγ",
+        "suffix": "ία"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g3-0260",
+      "word": "ψησταριά",
+      "grade": 3,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "ψησταρ- + -ιά.",
+      "audioFile": "audio/psistaria.mp3",
+      "morphemes": {
+        "root": "ψησταρ",
+        "suffix": "ιά"
+      },
+      "difficulty": 2,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
       "id": "lx-g4-0001",
       "word": "άβουλος",
       "grade": 4,
@@ -27391,7 +32597,7 @@
       "word": "ακριβός",
       "grade": 4,
       "axis": "K",
-      "hintSentence": "Ο φίλος μου είναι ___.",
+      "hintSentence": "Η απάντηση ήταν ___.",
       "feedbackRule": "Προσοχή στον τόνο.",
       "audioFile": "audio/akrivos.mp3",
       "morphemes": {
@@ -28340,6 +33546,795 @@
       "difficulty": 2,
       "definition": "(μτβ.) φανερώνω, αποκαλύπτω",
       "familyId": "Χριστόφορος",
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g4-0101",
+      "word": "αδυνατίζω",
+      "grade": 4,
+      "axis": "K",
+      "hintSentence": "Στην πρόταση γράφουμε το ρήμα ___.",
+      "feedbackRule": "αδυνατίζ- + -ω.",
+      "audioFile": "audio/adynatizo.mp3",
+      "morphemes": {
+        "root": "αδυνατίζ",
+        "suffix": "ω"
+      },
+      "difficulty": 2,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g4-0102",
+      "word": "αμυγδαλιά",
+      "grade": 4,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "αμυγδαλ- + -ιά.",
+      "audioFile": "audio/amygdalia.mp3",
+      "morphemes": {
+        "root": "αμυγδαλ",
+        "suffix": "ιά"
+      },
+      "difficulty": 2,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g4-0103",
+      "word": "ανεβαίνω",
+      "grade": 4,
+      "axis": "K",
+      "hintSentence": "Στην πρόταση γράφουμε το ρήμα ___.",
+      "feedbackRule": "ανεβαίν- + -ω.",
+      "audioFile": "audio/anevaino.mp3",
+      "morphemes": {
+        "root": "ανεβαίν",
+        "suffix": "ω"
+      },
+      "difficulty": 2,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g4-0104",
+      "word": "ανόγειο",
+      "grade": 4,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "ανόγε- + -ιο.",
+      "audioFile": "audio/anogeio.mp3",
+      "morphemes": {
+        "root": "ανόγε",
+        "suffix": "ιο"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g4-0105",
+      "word": "αποτελεί",
+      "grade": 4,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "αποτελε- + -ί.",
+      "audioFile": "audio/apotelei.mp3",
+      "morphemes": {
+        "root": "αποτελε",
+        "suffix": "ί"
+      },
+      "difficulty": 2,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g4-0106",
+      "word": "αποφασίζω",
+      "grade": 4,
+      "axis": "K",
+      "hintSentence": "Στην πρόταση γράφουμε το ρήμα ___.",
+      "feedbackRule": "αποφασίζ- + -ω.",
+      "audioFile": "audio/apofasizo.mp3",
+      "morphemes": {
+        "root": "αποφασίζ",
+        "suffix": "ω"
+      },
+      "difficulty": 2,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g4-0107",
+      "word": "αυστηρός",
+      "grade": 4,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/aystiros.mp3",
+      "morphemes": {
+        "root": "αυστηρός",
+        "suffix": ""
+      },
+      "difficulty": 2,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g4-0108",
+      "word": "γαΐδούρι",
+      "grade": 4,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "γαΐδούρ- + -ι.",
+      "audioFile": "audio/gaidouri.mp3",
+      "morphemes": {
+        "root": "γαΐδούρ",
+        "suffix": "ι"
+      },
+      "difficulty": 2,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g4-0109",
+      "word": "γειτόνισσα",
+      "grade": 4,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "γειτόνισσ- + -α.",
+      "audioFile": "audio/geitonissa.mp3",
+      "morphemes": {
+        "root": "γειτόνισσ",
+        "suffix": "α"
+      },
+      "difficulty": 3,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g4-0110",
+      "word": "γυμναστική",
+      "grade": 4,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με το επίθετο ___.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/gymnastiki.mp3",
+      "morphemes": {
+        "root": "γυμναστική",
+        "suffix": ""
+      },
+      "difficulty": 3,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g4-0111",
+      "word": "δερμάτινη",
+      "grade": 4,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με το επίθετο ___.",
+      "feedbackRule": "δερμάτιν- + -η.",
+      "audioFile": "audio/dermatini.mp3",
+      "morphemes": {
+        "root": "δερμάτιν",
+        "suffix": "η"
+      },
+      "difficulty": 2,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g4-0112",
+      "word": "διορίζομαι",
+      "grade": 4,
+      "axis": "K",
+      "hintSentence": "Στην πρόταση γράφουμε το ρήμα ___.",
+      "feedbackRule": "διορίζομ- + -αι.",
+      "audioFile": "audio/diorizomai.mp3",
+      "morphemes": {
+        "root": "διορίζομ",
+        "suffix": "αι"
+      },
+      "difficulty": 3,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g4-0113",
+      "word": "δουλεύω",
+      "grade": 4,
+      "axis": "K",
+      "hintSentence": "Στην πρόταση γράφουμε το ρήμα ___.",
+      "feedbackRule": "δουλεύ- + -ω.",
+      "audioFile": "audio/douleyo.mp3",
+      "morphemes": {
+        "root": "δουλεύ",
+        "suffix": "ω"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g4-0114",
+      "word": "δυσκίνητος",
+      "grade": 4,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "δυσκίνητ- + -ος.",
+      "audioFile": "audio/dyskinitos.mp3",
+      "morphemes": {
+        "root": "δυσκίνητ",
+        "suffix": "ος"
+      },
+      "difficulty": 3,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g4-0115",
+      "word": "επιθυμία",
+      "grade": 4,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "επιθυμ- + -ία.",
+      "audioFile": "audio/epithymia.mp3",
+      "morphemes": {
+        "root": "επιθυμ",
+        "suffix": "ία"
+      },
+      "difficulty": 2,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g4-0116",
+      "word": "επικίνδινη",
+      "grade": 4,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με το επίθετο ___.",
+      "feedbackRule": "επικίνδιν- + -η.",
+      "audioFile": "audio/epikindini.mp3",
+      "morphemes": {
+        "root": "επικίνδιν",
+        "suffix": "η"
+      },
+      "difficulty": 3,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g4-0117",
+      "word": "επικίνδυνη",
+      "grade": 4,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "επικίνδυν- + -η.",
+      "audioFile": "audio/epikindyni.mp3",
+      "morphemes": {
+        "root": "επικίνδυν",
+        "suffix": "η"
+      },
+      "difficulty": 3,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g4-0118",
+      "word": "ευθεία",
+      "grade": 4,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "ευθε- + -ία.",
+      "audioFile": "audio/eytheia.mp3",
+      "morphemes": {
+        "root": "ευθε",
+        "suffix": "ία"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g4-0119",
+      "word": "ευτυχία",
+      "grade": 4,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "ευτυχ- + -ία.",
+      "audioFile": "audio/eytychia.mp3",
+      "morphemes": {
+        "root": "ευτυχ",
+        "suffix": "ία"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g4-0120",
+      "word": "ζηλεύω",
+      "grade": 4,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "ζηλεύ- + -ω.",
+      "audioFile": "audio/zileyo.mp3",
+      "morphemes": {
+        "root": "ζηλεύ",
+        "suffix": "ω"
+      },
+      "difficulty": 2,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g4-0121",
+      "word": "ιταλικό",
+      "grade": 4,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με το επίθετο ___.",
+      "feedbackRule": "ιταλικ- + -ό.",
+      "audioFile": "audio/italiko.mp3",
+      "morphemes": {
+        "root": "ιταλικ",
+        "suffix": "ό"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g4-0122",
+      "word": "καταιγίδα",
+      "grade": 4,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "καταιγίδ- + -α.",
+      "audioFile": "audio/kataigida.mp3",
+      "morphemes": {
+        "root": "καταιγίδ",
+        "suffix": "α"
+      },
+      "difficulty": 2,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g4-0123",
+      "word": "κλείνομαι",
+      "grade": 4,
+      "axis": "K",
+      "hintSentence": "Στην πρόταση γράφουμε το ρήμα ___.",
+      "feedbackRule": "κλείνομ- + -αι.",
+      "audioFile": "audio/kleinomai.mp3",
+      "morphemes": {
+        "root": "κλείνομ",
+        "suffix": "αι"
+      },
+      "difficulty": 2,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g4-0124",
+      "word": "κουράζομαι",
+      "grade": 4,
+      "axis": "K",
+      "hintSentence": "Στην πρόταση γράφουμε το ρήμα ___.",
+      "feedbackRule": "κουράζομ- + -αι.",
+      "audioFile": "audio/kourazomai.mp3",
+      "morphemes": {
+        "root": "κουράζομ",
+        "suffix": "αι"
+      },
+      "difficulty": 3,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g4-0125",
+      "word": "κρατιέμαι",
+      "grade": 4,
+      "axis": "K",
+      "hintSentence": "Στην πρόταση γράφουμε το ρήμα ___.",
+      "feedbackRule": "κρατιέμ- + -αι.",
+      "audioFile": "audio/kratiemai.mp3",
+      "morphemes": {
+        "root": "κρατιέμ",
+        "suffix": "αι"
+      },
+      "difficulty": 2,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g4-0126",
+      "word": "λαχανικό",
+      "grade": 4,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με το επίθετο ___.",
+      "feedbackRule": "λαχανικ- + -ό.",
+      "audioFile": "audio/lachaniko.mp3",
+      "morphemes": {
+        "root": "λαχανικ",
+        "suffix": "ό"
+      },
+      "difficulty": 2,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g4-0127",
+      "word": "λουκουμάς",
+      "grade": 4,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/loukoumas.mp3",
+      "morphemes": {
+        "root": "λουκουμάς",
+        "suffix": ""
+      },
+      "difficulty": 2,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g4-0128",
+      "word": "λούζομαι",
+      "grade": 4,
+      "axis": "K",
+      "hintSentence": "Στην πρόταση γράφουμε το ρήμα ___.",
+      "feedbackRule": "λούζομ- + -αι.",
+      "audioFile": "audio/louzomai.mp3",
+      "morphemes": {
+        "root": "λούζομ",
+        "suffix": "αι"
+      },
+      "difficulty": 2,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g4-0129",
+      "word": "μαρκαδόρος",
+      "grade": 4,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "μαρκαδόρ- + -ος.",
+      "audioFile": "audio/markadoros.mp3",
+      "morphemes": {
+        "root": "μαρκαδόρ",
+        "suffix": "ος"
+      },
+      "difficulty": 3,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g4-0130",
+      "word": "μαϊμού",
+      "grade": 4,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/maimou.mp3",
+      "morphemes": {
+        "root": "μαϊμού",
+        "suffix": ""
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g4-0131",
+      "word": "μαϊντανός",
+      "grade": 4,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/maintanos.mp3",
+      "morphemes": {
+        "root": "μαϊντανός",
+        "suffix": ""
+      },
+      "difficulty": 2,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g4-0132",
+      "word": "μολύνομαι",
+      "grade": 4,
+      "axis": "K",
+      "hintSentence": "Στην πρόταση γράφουμε το ρήμα ___.",
+      "feedbackRule": "μολύνομ- + -αι.",
+      "audioFile": "audio/molynomai.mp3",
+      "morphemes": {
+        "root": "μολύνομ",
+        "suffix": "αι"
+      },
+      "difficulty": 2,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g4-0133",
+      "word": "ξεκουράζομαι",
+      "grade": 4,
+      "axis": "K",
+      "hintSentence": "Στην πρόταση γράφουμε το ρήμα ___.",
+      "feedbackRule": "ξεκουράζομ- + -αι.",
+      "audioFile": "audio/xekourazomai.mp3",
+      "morphemes": {
+        "root": "ξεκουράζομ",
+        "suffix": "αι"
+      },
+      "difficulty": 3,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g4-0134",
+      "word": "ξυρίζομαι",
+      "grade": 4,
+      "axis": "K",
+      "hintSentence": "Στην πρόταση γράφουμε το ρήμα ___.",
+      "feedbackRule": "ξυρίζομ- + -αι.",
+      "audioFile": "audio/xyrizomai.mp3",
+      "morphemes": {
+        "root": "ξυρίζομ",
+        "suffix": "αι"
+      },
+      "difficulty": 2,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g4-0135",
+      "word": "ονειρεύομαι",
+      "grade": 4,
+      "axis": "K",
+      "hintSentence": "Στην πρόταση γράφουμε το ρήμα ___.",
+      "feedbackRule": "ονειρεύομ- + -αι.",
+      "audioFile": "audio/oneireyomai.mp3",
+      "morphemes": {
+        "root": "ονειρεύομ",
+        "suffix": "αι"
+      },
+      "difficulty": 3,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g4-0136",
+      "word": "πασαλείβω",
+      "grade": 4,
+      "axis": "K",
+      "hintSentence": "Στην πρόταση γράφουμε το ρήμα ___.",
+      "feedbackRule": "πασαλείβ- + -ω.",
+      "audioFile": "audio/pasaleivo.mp3",
+      "morphemes": {
+        "root": "πασαλείβ",
+        "suffix": "ω"
+      },
+      "difficulty": 2,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g4-0137",
+      "word": "περαστικός",
+      "grade": 4,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με το επίθετο ___.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/perastikos.mp3",
+      "morphemes": {
+        "root": "περαστικός",
+        "suffix": ""
+      },
+      "difficulty": 3,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g4-0138",
+      "word": "προσπάθεια",
+      "grade": 4,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "προσπάθει- + -α.",
+      "audioFile": "audio/prospatheia.mp3",
+      "morphemes": {
+        "root": "προσπάθει",
+        "suffix": "α"
+      },
+      "difficulty": 3,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g4-0139",
+      "word": "προϊόντα",
+      "grade": 4,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "προϊόντ- + -α.",
+      "audioFile": "audio/proionta.mp3",
+      "morphemes": {
+        "root": "προϊόντ",
+        "suffix": "α"
+      },
+      "difficulty": 2,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g4-0140",
+      "word": "σκεπάζομαι",
+      "grade": 4,
+      "axis": "K",
+      "hintSentence": "Στην πρόταση γράφουμε το ρήμα ___.",
+      "feedbackRule": "σκεπάζομ- + -αι.",
+      "audioFile": "audio/skepazomai.mp3",
+      "morphemes": {
+        "root": "σκεπάζομ",
+        "suffix": "αι"
+      },
+      "difficulty": 3,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g4-0141",
+      "word": "ταξιδεύω",
+      "grade": 4,
+      "axis": "K",
+      "hintSentence": "Στην πρόταση γράφουμε το ρήμα ___.",
+      "feedbackRule": "ταξιδεύ- + -ω.",
+      "audioFile": "audio/taxideyo.mp3",
+      "morphemes": {
+        "root": "ταξιδεύ",
+        "suffix": "ω"
+      },
+      "difficulty": 2,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g4-0142",
+      "word": "τριαντάφυλλα",
+      "grade": 4,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "τριαντάφυλλ- + -α.",
+      "audioFile": "audio/triantafylla.mp3",
+      "morphemes": {
+        "root": "τριαντάφυλλ",
+        "suffix": "α"
+      },
+      "difficulty": 3,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g4-0143",
+      "word": "υπολογιστής",
+      "grade": 4,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "υπολογιστ- + -ής.",
+      "audioFile": "audio/ypologistis.mp3",
+      "morphemes": {
+        "root": "υπολογιστ",
+        "suffix": "ής"
+      },
+      "difficulty": 3,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g4-0144",
+      "word": "υπόγειο",
+      "grade": 4,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "υπόγε- + -ιο.",
+      "audioFile": "audio/ypogeio.mp3",
+      "morphemes": {
+        "root": "υπόγε",
+        "suffix": "ιο"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g4-0145",
+      "word": "φωτογράφος",
+      "grade": 4,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "φωτογράφ- + -ος.",
+      "audioFile": "audio/fotografos.mp3",
+      "morphemes": {
+        "root": "φωτογράφ",
+        "suffix": "ος"
+      },
+      "difficulty": 3,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g4-0146",
+      "word": "χαίρομαι",
+      "grade": 4,
+      "axis": "K",
+      "hintSentence": "Στην πρόταση γράφουμε το ρήμα ___.",
+      "feedbackRule": "χαίρομ- + -αι.",
+      "audioFile": "audio/chairomai.mp3",
+      "morphemes": {
+        "root": "χαίρομ",
+        "suffix": "αι"
+      },
+      "difficulty": 2,
+      "ruleId": "tonos-basic"
+    },
+    {
+      "id": "lx-g4-0147",
+      "word": "χαϊδεύω",
+      "grade": 4,
+      "axis": "K",
+      "hintSentence": "Στην πρόταση γράφουμε το ρήμα ___.",
+      "feedbackRule": "χαϊδεύ- + -ω.",
+      "audioFile": "audio/chaideyo.mp3",
+      "morphemes": {
+        "root": "χαϊδεύ",
+        "suffix": "ω"
+      },
+      "difficulty": 1,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g4-0148",
+      "word": "χειροκροτώ",
+      "grade": 4,
+      "axis": "K",
+      "hintSentence": "Στην πρόταση γράφουμε το ρήμα ___.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/cheirokroto.mp3",
+      "morphemes": {
+        "root": "χειροκροτώ",
+        "suffix": ""
+      },
+      "difficulty": 3,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g4-0149",
+      "word": "χρειάζομαι",
+      "grade": 4,
+      "axis": "K",
+      "hintSentence": "Στην πρόταση γράφουμε το ρήμα ___.",
+      "feedbackRule": "χρειάζομ- + -αι.",
+      "audioFile": "audio/chreiazomai.mp3",
+      "morphemes": {
+        "root": "χρειάζομ",
+        "suffix": "αι"
+      },
+      "difficulty": 3,
+      "ruleId": "tonos-basic",
+      "homophone": true
+    },
+    {
+      "id": "lx-g4-0150",
+      "word": "χτενίζομαι",
+      "grade": 4,
+      "axis": "K",
+      "hintSentence": "Στην πρόταση γράφουμε το ρήμα ___.",
+      "feedbackRule": "χτενίζομ- + -αι.",
+      "audioFile": "audio/chtenizomai.mp3",
+      "morphemes": {
+        "root": "χτενίζομ",
+        "suffix": "αι"
+      },
+      "difficulty": 3,
       "ruleId": "tonos-basic"
     },
     {
@@ -29681,6 +35676,595 @@
       "difficulty": 3,
       "definition": "γραμματικός χρόνος· ασαφής",
       "ruleId": "tonos-advanced"
+    },
+    {
+      "id": "lx-g5-0079",
+      "word": "αΰπνία",
+      "grade": 5,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "αΰπν- + -ία.",
+      "audioFile": "audio/aypnia.mp3",
+      "morphemes": {
+        "root": "αΰπν",
+        "suffix": "ία"
+      },
+      "difficulty": 2,
+      "ruleId": "tonos-advanced",
+      "homophone": true
+    },
+    {
+      "id": "lx-g5-0080",
+      "word": "αλλαντοπώλης",
+      "grade": 5,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "αλλαντοπώλ- + -ης.",
+      "audioFile": "audio/allantopolis.mp3",
+      "morphemes": {
+        "root": "αλλαντοπώλ",
+        "suffix": "ης"
+      },
+      "difficulty": 3,
+      "ruleId": "tonos-advanced",
+      "homophone": true
+    },
+    {
+      "id": "lx-g5-0081",
+      "word": "ανθοπώλης",
+      "grade": 5,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "ανθοπώλ- + -ης.",
+      "audioFile": "audio/anthopolis.mp3",
+      "morphemes": {
+        "root": "ανθοπώλ",
+        "suffix": "ης"
+      },
+      "difficulty": 2,
+      "ruleId": "tonos-advanced",
+      "homophone": true
+    },
+    {
+      "id": "lx-g5-0082",
+      "word": "αρτοπώλης",
+      "grade": 5,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "αρτοπώλ- + -ης.",
+      "audioFile": "audio/artopolis.mp3",
+      "morphemes": {
+        "root": "αρτοπώλ",
+        "suffix": "ης"
+      },
+      "difficulty": 2,
+      "ruleId": "tonos-advanced",
+      "homophone": true
+    },
+    {
+      "id": "lx-g5-0083",
+      "word": "αρχαιοπώλης",
+      "grade": 5,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "αρχαιοπώλ- + -ης.",
+      "audioFile": "audio/archaiopolis.mp3",
+      "morphemes": {
+        "root": "αρχαιοπώλ",
+        "suffix": "ης"
+      },
+      "difficulty": 3,
+      "ruleId": "tonos-advanced",
+      "homophone": true
+    },
+    {
+      "id": "lx-g5-0084",
+      "word": "αρωματοπώλης",
+      "grade": 5,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "αρωματοπώλ- + -ης.",
+      "audioFile": "audio/aromatopolis.mp3",
+      "morphemes": {
+        "root": "αρωματοπώλ",
+        "suffix": "ης"
+      },
+      "difficulty": 3,
+      "ruleId": "tonos-advanced",
+      "homophone": true
+    },
+    {
+      "id": "lx-g5-0085",
+      "word": "βουτυροπώλης",
+      "grade": 5,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "βουτυροπώλ- + -ης.",
+      "audioFile": "audio/voutyropolis.mp3",
+      "morphemes": {
+        "root": "βουτυροπώλ",
+        "suffix": "ης"
+      },
+      "difficulty": 3,
+      "ruleId": "tonos-advanced",
+      "homophone": true
+    },
+    {
+      "id": "lx-g5-0086",
+      "word": "γαλακτοπώλης",
+      "grade": 5,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "γαλακτοπώλ- + -ης.",
+      "audioFile": "audio/galaktopolis.mp3",
+      "morphemes": {
+        "root": "γαλακτοπώλ",
+        "suffix": "ης"
+      },
+      "difficulty": 3,
+      "ruleId": "tonos-advanced",
+      "homophone": true
+    },
+    {
+      "id": "lx-g5-0087",
+      "word": "γεωμετρία",
+      "grade": 5,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "γεωμετρ- + -ία.",
+      "audioFile": "audio/geometria.mp3",
+      "morphemes": {
+        "root": "γεωμετρ",
+        "suffix": "ία"
+      },
+      "difficulty": 2,
+      "ruleId": "tonos-advanced",
+      "homophone": true
+    },
+    {
+      "id": "lx-g5-0088",
+      "word": "γεωπόνος",
+      "grade": 5,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "γεωπόν- + -ος.",
+      "audioFile": "audio/geoponos.mp3",
+      "morphemes": {
+        "root": "γεωπόν",
+        "suffix": "ος"
+      },
+      "difficulty": 2,
+      "ruleId": "tonos-advanced",
+      "homophone": true
+    },
+    {
+      "id": "lx-g5-0089",
+      "word": "διαγώνισμα",
+      "grade": 5,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "διαγώνισμ- + -α.",
+      "audioFile": "audio/diagonisma.mp3",
+      "morphemes": {
+        "root": "διαγώνισμ",
+        "suffix": "α"
+      },
+      "difficulty": 3,
+      "ruleId": "tonos-advanced",
+      "homophone": true
+    },
+    {
+      "id": "lx-g5-0090",
+      "word": "ελικόπτερο",
+      "grade": 5,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "ελικόπτερ- + -ο.",
+      "audioFile": "audio/elikoptero.mp3",
+      "morphemes": {
+        "root": "ελικόπτερ",
+        "suffix": "ο"
+      },
+      "difficulty": 3,
+      "ruleId": "tonos-advanced"
+    },
+    {
+      "id": "lx-g5-0091",
+      "word": "ενέργεια",
+      "grade": 5,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "ενέργει- + -α.",
+      "audioFile": "audio/energeia.mp3",
+      "morphemes": {
+        "root": "ενέργει",
+        "suffix": "α"
+      },
+      "difficulty": 2,
+      "ruleId": "tonos-advanced",
+      "homophone": true
+    },
+    {
+      "id": "lx-g5-0092",
+      "word": "ενενηκοστό",
+      "grade": 5,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "ενενηκοστ- + -ό.",
+      "audioFile": "audio/enenikosto.mp3",
+      "morphemes": {
+        "root": "ενενηκοστ",
+        "suffix": "ό"
+      },
+      "difficulty": 3,
+      "ruleId": "tonos-advanced",
+      "homophone": true
+    },
+    {
+      "id": "lx-g5-0093",
+      "word": "θεραπεία",
+      "grade": 5,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "θεραπε- + -ία.",
+      "audioFile": "audio/therapeia.mp3",
+      "morphemes": {
+        "root": "θεραπε",
+        "suffix": "ία"
+      },
+      "difficulty": 2,
+      "ruleId": "tonos-advanced",
+      "homophone": true
+    },
+    {
+      "id": "lx-g5-0094",
+      "word": "ιχθυοπώλης",
+      "grade": 5,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "ιχθυοπώλ- + -ης.",
+      "audioFile": "audio/ichthyopolis.mp3",
+      "morphemes": {
+        "root": "ιχθυοπώλ",
+        "suffix": "ης"
+      },
+      "difficulty": 3,
+      "ruleId": "tonos-advanced",
+      "homophone": true
+    },
+    {
+      "id": "lx-g5-0095",
+      "word": "καλοκαιρινός",
+      "grade": 5,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "Προσοχή στον τόνο.",
+      "audioFile": "audio/kalokairinos.mp3",
+      "morphemes": {
+        "root": "καλοκαιρινός",
+        "suffix": ""
+      },
+      "difficulty": 3,
+      "ruleId": "tonos-advanced"
+    },
+    {
+      "id": "lx-g5-0096",
+      "word": "καπνοπώλης",
+      "grade": 5,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "καπνοπώλ- + -ης.",
+      "audioFile": "audio/kapnopolis.mp3",
+      "morphemes": {
+        "root": "καπνοπώλ",
+        "suffix": "ης"
+      },
+      "difficulty": 3,
+      "ruleId": "tonos-advanced",
+      "homophone": true
+    },
+    {
+      "id": "lx-g5-0097",
+      "word": "κασετόφωνο",
+      "grade": 5,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "κασετόφων- + -ο.",
+      "audioFile": "audio/kasetofono.mp3",
+      "morphemes": {
+        "root": "κασετόφων",
+        "suffix": "ο"
+      },
+      "difficulty": 3,
+      "ruleId": "tonos-advanced",
+      "homophone": true
+    },
+    {
+      "id": "lx-g5-0098",
+      "word": "καφεπώλης",
+      "grade": 5,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "καφεπώλ- + -ης.",
+      "audioFile": "audio/kafepolis.mp3",
+      "morphemes": {
+        "root": "καφεπώλ",
+        "suffix": "ης"
+      },
+      "difficulty": 2,
+      "ruleId": "tonos-advanced",
+      "homophone": true
+    },
+    {
+      "id": "lx-g5-0099",
+      "word": "κοσμηματοπώλης",
+      "grade": 5,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "κοσμηματοπώλ- + -ης.",
+      "audioFile": "audio/kosmimatopolis.mp3",
+      "morphemes": {
+        "root": "κοσμηματοπώλ",
+        "suffix": "ης"
+      },
+      "difficulty": 3,
+      "ruleId": "tonos-advanced",
+      "homophone": true
+    },
+    {
+      "id": "lx-g5-0100",
+      "word": "κρεοπώλης",
+      "grade": 5,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "κρεοπώλ- + -ης.",
+      "audioFile": "audio/kreopolis.mp3",
+      "morphemes": {
+        "root": "κρεοπώλ",
+        "suffix": "ης"
+      },
+      "difficulty": 2,
+      "ruleId": "tonos-advanced",
+      "homophone": true
+    },
+    {
+      "id": "lx-g5-0101",
+      "word": "κυκλοφορία",
+      "grade": 5,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "κυκλοφορ- + -ία.",
+      "audioFile": "audio/kykloforia.mp3",
+      "morphemes": {
+        "root": "κυκλοφορ",
+        "suffix": "ία"
+      },
+      "difficulty": 3,
+      "ruleId": "tonos-advanced",
+      "homophone": true
+    },
+    {
+      "id": "lx-g5-0102",
+      "word": "λαχανοπώλης",
+      "grade": 5,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "λαχανοπώλ- + -ης.",
+      "audioFile": "audio/lachanopolis.mp3",
+      "morphemes": {
+        "root": "λαχανοπώλ",
+        "suffix": "ης"
+      },
+      "difficulty": 3,
+      "ruleId": "tonos-advanced",
+      "homophone": true
+    },
+    {
+      "id": "lx-g5-0103",
+      "word": "λειτουργία",
+      "grade": 5,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "λειτουργ- + -ία.",
+      "audioFile": "audio/leitourgia.mp3",
+      "morphemes": {
+        "root": "λειτουργ",
+        "suffix": "ία"
+      },
+      "difficulty": 3,
+      "ruleId": "tonos-advanced",
+      "homophone": true
+    },
+    {
+      "id": "lx-g5-0104",
+      "word": "νομισματοπώλης",
+      "grade": 5,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "νομισματοπώλ- + -ης.",
+      "audioFile": "audio/nomismatopolis.mp3",
+      "morphemes": {
+        "root": "νομισματοπώλ",
+        "suffix": "ης"
+      },
+      "difficulty": 3,
+      "ruleId": "tonos-advanced",
+      "homophone": true
+    },
+    {
+      "id": "lx-g5-0105",
+      "word": "οινοπώλης",
+      "grade": 5,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "οινοπώλ- + -ης.",
+      "audioFile": "audio/oinopolis.mp3",
+      "morphemes": {
+        "root": "οινοπώλ",
+        "suffix": "ης"
+      },
+      "difficulty": 2,
+      "ruleId": "tonos-advanced",
+      "homophone": true
+    },
+    {
+      "id": "lx-g5-0106",
+      "word": "οπωροπώλης",
+      "grade": 5,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "οπωροπώλ- + -ης.",
+      "audioFile": "audio/oporopolis.mp3",
+      "morphemes": {
+        "root": "οπωροπώλ",
+        "suffix": "ης"
+      },
+      "difficulty": 3,
+      "ruleId": "tonos-advanced",
+      "homophone": true
+    },
+    {
+      "id": "lx-g5-0107",
+      "word": "παγοπώλης",
+      "grade": 5,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "παγοπώλ- + -ης.",
+      "audioFile": "audio/pagopolis.mp3",
+      "morphemes": {
+        "root": "παγοπώλ",
+        "suffix": "ης"
+      },
+      "difficulty": 2,
+      "ruleId": "tonos-advanced",
+      "homophone": true
+    },
+    {
+      "id": "lx-g5-0108",
+      "word": "παλαιοπώλης",
+      "grade": 5,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "παλαιοπώλ- + -ης.",
+      "audioFile": "audio/palaiopolis.mp3",
+      "morphemes": {
+        "root": "παλαιοπώλ",
+        "suffix": "ης"
+      },
+      "difficulty": 3,
+      "ruleId": "tonos-advanced",
+      "homophone": true
+    },
+    {
+      "id": "lx-g5-0109",
+      "word": "παντοπώλης",
+      "grade": 5,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "παντοπώλ- + -ης.",
+      "audioFile": "audio/pantopolis.mp3",
+      "morphemes": {
+        "root": "παντοπώλ",
+        "suffix": "ης"
+      },
+      "difficulty": 3,
+      "ruleId": "tonos-advanced",
+      "homophone": true
+    },
+    {
+      "id": "lx-g5-0110",
+      "word": "περιστατικό",
+      "grade": 5,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με το επίθετο ___.",
+      "feedbackRule": "περιστατικ- + -ό.",
+      "audioFile": "audio/peristatiko.mp3",
+      "morphemes": {
+        "root": "περιστατικ",
+        "suffix": "ό"
+      },
+      "difficulty": 3,
+      "ruleId": "tonos-advanced"
+    },
+    {
+      "id": "lx-g5-0111",
+      "word": "πολυκατοικία",
+      "grade": 5,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "πολυκατοικ- + -ία.",
+      "audioFile": "audio/polykatoikia.mp3",
+      "morphemes": {
+        "root": "πολυκατοικ",
+        "suffix": "ία"
+      },
+      "difficulty": 3,
+      "ruleId": "tonos-advanced",
+      "homophone": true
+    },
+    {
+      "id": "lx-g5-0112",
+      "word": "σιδηροπώλης",
+      "grade": 5,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "σιδηροπώλ- + -ης.",
+      "audioFile": "audio/sidiropolis.mp3",
+      "morphemes": {
+        "root": "σιδηροπώλ",
+        "suffix": "ης"
+      },
+      "difficulty": 3,
+      "ruleId": "tonos-advanced",
+      "homophone": true
+    },
+    {
+      "id": "lx-g5-0113",
+      "word": "τυροπώλης",
+      "grade": 5,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "τυροπώλ- + -ης.",
+      "audioFile": "audio/tyropolis.mp3",
+      "morphemes": {
+        "root": "τυροπώλ",
+        "suffix": "ης"
+      },
+      "difficulty": 2,
+      "ruleId": "tonos-advanced",
+      "homophone": true
+    },
+    {
+      "id": "lx-g5-0114",
+      "word": "υποδηματοπώλης",
+      "grade": 5,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "υποδηματοπώλ- + -ης.",
+      "audioFile": "audio/ypodimatopolis.mp3",
+      "morphemes": {
+        "root": "υποδηματοπώλ",
+        "suffix": "ης"
+      },
+      "difficulty": 3,
+      "ruleId": "tonos-advanced",
+      "homophone": true
+    },
+    {
+      "id": "lx-g5-0115",
+      "word": "χαρτοπώλης",
+      "grade": 5,
+      "axis": "K",
+      "hintSentence": "Συμπληρώνουμε με τη λέξη ___.",
+      "feedbackRule": "χαρτοπώλ- + -ης.",
+      "audioFile": "audio/chartopolis.mp3",
+      "morphemes": {
+        "root": "χαρτοπώλ",
+        "suffix": "ης"
+      },
+      "difficulty": 3,
+      "ruleId": "tonos-advanced",
+      "homophone": true
     },
     {
       "id": "lx-g6-0001",

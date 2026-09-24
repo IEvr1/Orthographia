@@ -3,6 +3,8 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 
 import type {
   AppScreen,
+  DrillItem,
+  DrillsPayload,
   ErrorCategory,
   FamiliesPayload,
   GameMode,
@@ -18,7 +20,7 @@ import {
   migrateAllProfilesOnSignIn,
   syncProgressToServer,
 } from "./lib/progressSync";
-import { gradesWithWords, planDailySession } from "./lib/session";
+import { gradesWithWords, planDailySession, planWordBatches } from "./lib/session";
 import { getRewardGoal, setRewardGoal } from "./lib/settings";
 import { loadProgress } from "./lib/storage";
 import { buildWeeklyWordSession, getWeeklyRule } from "./lib/weeklyRule";
@@ -42,7 +44,8 @@ import {
   useSubscription,
   type SubscriptionState,
 } from "./lib/subscription";
-import { filterWordsForMode, modeAvailableForGrade } from "./lib/modeMeta";
+import { filterWordsForMode, modeAvailableForGrade, MODE_LABELS } from "./lib/modeMeta";
+import { modeUsesDrills, planDrillSession } from "./lib/drills";
 import { getStreak, getUnlockedBadges } from "./lib/streakBadges";
 import { buildMistakeSession } from "./lib/weakness";
 import { ConsentScreen } from "./components/ConsentScreen";
@@ -54,8 +57,16 @@ import { SessionSummary as SummaryScreen } from "./components/SessionSummary";
 import { TypingExercise } from "./components/TypingExercise";
 import { PickExercise } from "./components/PickExercise";
 import { MatchingExercise } from "./components/MatchingExercise";
+import { DrillExercise } from "./components/DrillExercise";
 import { LexiconScreen } from "./components/LexiconScreen";
 import { ParentReportScreen } from "./components/ParentReportScreen";
+import { WordListsScreen } from "./components/WordListsScreen";
+import {
+  getActiveList,
+  loadWordLists,
+  setActiveWordList,
+  type WordList,
+} from "./lib/wordLists";
 
 const RULES_SEEN_KEY = "orthografia-seen-rules";
 const SYNC_ENABLED = isProgressSyncAvailable();
@@ -96,9 +107,13 @@ function AppShell({
   const [consentGiven, setConsentGiven] = useState(hasLocalConsent());
   const [screen, setScreen] = useState<AppScreen>("home");
   const [words, setWords] = useState<WordEntry[]>([]);
+  const [drills, setDrills] = useState<DrillItem[]>([]);
   const [rules, setRules] = useState<RuleDefinition[]>([]);
   const [families, setFamilies] = useState<FamiliesPayload>({});
   const [sessionWords, setSessionWords] = useState<WordEntry[]>([]);
+  const [sessionWordBatches, setSessionWordBatches] = useState<WordEntry[][] | null>(null);
+  const [sessionDrills, setSessionDrills] = useState<DrillItem[]>([]);
+  const [sessionBatches, setSessionBatches] = useState<DrillItem[][] | null>(null);
   const [sessionBanner, setSessionBanner] = useState<string | null>(null);
   const [summary, setSummary] = useState<SessionSummary | null>(null);
   const [loadError, setLoadError] = useState<string | null>(null);
@@ -111,6 +126,7 @@ function AppShell({
   const [settingsAddChild, setSettingsAddChild] = useState(false);
   const [activeProfileId, setActiveProfileIdState] = useState<string | null>(() => getActiveProfileId());
   const [progressVersion, setProgressVersion] = useState(0);
+  const [listsVersion, setListsVersion] = useState(0);
   const [rewardGoal, setRewardGoalState] = useState(() => getRewardGoal());
 
   const tier = subscription.tier;
@@ -150,11 +166,15 @@ function AppShell({
       fetch("/content/families.json")
         .then((r) => (r.ok ? (r.json() as Promise<FamiliesPayload>) : {}))
         .catch(() => ({})),
+      fetch("/content/drills.json")
+        .then((r) => (r.ok ? (r.json() as Promise<DrillsPayload>) : { version: 1, drills: [] }))
+        .catch(() => ({ version: 1, drills: [] })),
     ])
-      .then(([wordsData, rulesData, familiesData]) => {
+      .then(([wordsData, rulesData, familiesData, drillsData]) => {
         setWords(wordsData.words);
         setRules(rulesData.rules ?? []);
         setFamilies(familiesData ?? {});
+        setDrills(drillsData.drills ?? []);
         const grades = gradesWithWords(wordsData.words);
         if (!grades.has(selectedGrade)) {
           const defaultGrade = grades.has(3) ? 3 : [...grades].sort()[0];
@@ -233,10 +253,12 @@ function AppShell({
     if (subscription.loading) return;
     setGameMode((current) => {
       if (!canAccessMode(tier, current, trialActive)) return "sentence";
-      if (!modeAvailableForGrade(current, gradeWords, families)) return "sentence";
+      if (!modeAvailableForGrade(current, gradeWords, families, drills, selectedGrade)) {
+        return "sentence";
+      }
       return current;
     });
-  }, [subscription.loading, tier, trialActive, gradeWords, families]);
+  }, [subscription.loading, tier, trialActive, gradeWords, families, drills, selectedGrade]);
 
   const weeklyRule = useMemo(() => getWeeklyRule(rules, selectedGrade), [rules, selectedGrade]);
 
@@ -257,11 +279,101 @@ function AppShell({
     return planDailySession(words, progressStore, selectedGrade).homeHint;
   }, [screen, words, progressStore, selectedGrade]);
 
+  const wordListsStore = useMemo(
+    () => loadWordLists(activeProfileId),
+    [activeProfileId, listsVersion, screen],
+  );
+  const activeWordList = getActiveList(wordListsStore);
+  const activeListLabel =
+    activeWordList && activeWordList.wordIds.length > 0
+      ? `${activeWordList.name} (${activeWordList.wordIds.length})`
+      : null;
+
+  const bumpLists = useCallback(() => setListsVersion((v) => v + 1), []);
+
+  const startListSession = useCallback(
+    (list: WordList) => {
+      setPaywallMessage(null);
+      if (!canStartPractice(isSignedIn, isClerkEnabled())) return;
+      if (showFamilyProfiles && !activeProfileId) return;
+      if (!canPractice(isSignedIn, isClerkEnabled(), tier, trialActive)) {
+        setPaywallMessage(
+          trialExpired
+            ? "Η δωρεάν δοκιμή έληξε. Αγόρασε συνδρομή για να συνεχίσεις την εξάσκηση."
+            : "Η εξάσκηση απαιτεί ενεργή συνδρομή ή δοκιμή.",
+        );
+        setScreen("pricing");
+        return;
+      }
+
+      const byId = new Map(words.map((w) => [w.id, w]));
+      let session = list.wordIds
+        .map((id) => byId.get(id))
+        .filter((w): w is WordEntry => Boolean(w));
+      if (modeUsesDrills(gameMode)) {
+        setSessionBanner("Οι λίστες λέξεων δεν υποστηρίζουν ακόμη αυτόν τον τρόπο. Διάλεξε Πρόταση ή Διάλεξε.");
+        return;
+      }
+      session = filterWordsForMode(session, gameMode, families);
+      if (session.length === 0) {
+        setSessionBanner("Η λίστα δεν έχει αρκετές λέξεις για αυτόν τον τρόπο εξάσκησης.");
+        return;
+      }
+
+      setActiveWordList(loadWordLists(activeProfileId), list.id, activeProfileId);
+      bumpLists();
+      setSessionKind("daily");
+      setSessionWords(session);
+      setSessionWordBatches(null);
+      setSessionDrills([]);
+      setSessionBatches(null);
+      setSessionBanner(`Λίστα: ${list.name}`);
+      setSummary(null);
+      setScreen("exercise");
+    },
+    [
+      words,
+      gameMode,
+      families,
+      activeProfileId,
+      tier,
+      trialActive,
+      trialExpired,
+      showFamilyProfiles,
+      isSignedIn,
+      bumpLists,
+    ],
+  );
+
   const launchSession = useCallback(
     (kind: SessionKind) => {
       const store = loadProgress(activeProfileId);
+
+      if (modeUsesDrills(gameMode)) {
+        const plan = planDrillSession(drills, store, selectedGrade, gameMode);
+        if (plan.items.length === 0) {
+          setSessionBanner("Δεν υπάρχουν αρκετές ασκήσεις για αυτόν τον τρόπο στην επιλεγμένη τάξη.");
+          setSessionWords([]);
+          setSessionWordBatches(null);
+          setSessionDrills([]);
+          setSessionBatches(null);
+          setScreen("home");
+          return;
+        }
+        setSessionKind(kind);
+        setSessionWords([]);
+        setSessionWordBatches(null);
+        setSessionDrills(plan.items);
+        setSessionBatches(plan.batches);
+        setSessionBanner(plan.banner);
+        setSummary(null);
+        setScreen("exercise");
+        return;
+      }
+
       let banner: string | null = null;
       let daily: WordEntry[];
+      let wordBatches: WordEntry[][] | null = null;
 
       if (kind === "weekly" && weeklyRule) {
         daily = buildWeeklyWordSession(words, weeklyRule, selectedGrade, 5);
@@ -274,7 +386,21 @@ function AppShell({
       const modePool = filterWordsForMode(gradeWords, gameMode, families);
       daily = filterWordsForMode(daily, gameMode, families);
 
-      if (gameMode === "matching") {
+      if (gameMode === "tonos") {
+        const seen = new Set<string>();
+        const tonosPool: WordEntry[] = [];
+        for (const w of [...modePool, ...daily]) {
+          if (seen.has(w.id)) continue;
+          seen.add(w.id);
+          tonosPool.push(w);
+        }
+        const tonosPlan = planWordBatches(tonosPool, store);
+        if (tonosPlan.batches.length > 0) {
+          daily = tonosPlan.words;
+          wordBatches = tonosPlan.batches;
+          banner = tonosPlan.banner ?? banner;
+        }
+      } else if (gameMode === "matching") {
         daily = modePool.slice(0, Math.min(12, modePool.length));
       } else if (daily.length < 2) {
         daily = modePool.slice(0, Math.min(10, modePool.length));
@@ -283,17 +409,23 @@ function AppShell({
       if (daily.length === 0) {
         setSessionBanner("Δεν υπάρχουν αρκετές λέξεις για αυτόν τον τρόπο στην επιλεγμένη τάξη.");
         setSessionWords([]);
+        setSessionWordBatches(null);
+        setSessionDrills([]);
+        setSessionBatches(null);
         setScreen("home");
         return;
       }
 
       setSessionKind(kind);
       setSessionWords(daily);
+      setSessionWordBatches(wordBatches);
+      setSessionDrills([]);
+      setSessionBatches(null);
       setSessionBanner(banner);
       setSummary(null);
       setScreen("exercise");
     },
-    [words, selectedGrade, gameMode, weeklyRule, activeProfileId, families, gradeWords],
+    [words, drills, selectedGrade, gameMode, weeklyRule, activeProfileId, families, gradeWords],
   );
 
   const startSession = useCallback(() => {
@@ -463,6 +595,7 @@ function AppShell({
 
   const typingModes = new Set(["sentence", "dictation", "error-fix", "scramble", "morphemes"]);
   const pickModes = new Set(["choice", "tonos", "family"]);
+  const drillModes = new Set(["endings", "compound", "classify"]);
 
   return (
     <div className="app">
@@ -473,6 +606,11 @@ function AppShell({
           onOpenPricing={() => setScreen("pricing")}
           onOpenLexicon={() => setScreen("lexicon")}
           onOpenReport={() => setScreen("report")}
+          onOpenLists={() => setScreen("lists")}
+          onPracticeActiveList={() => {
+            if (activeWordList) startListSession(activeWordList);
+          }}
+          activeListLabel={activeListLabel}
           activeChildName={activeProfile?.name ?? null}
           selectedGrade={selectedGrade}
           availableGrades={availableGrades}
@@ -480,6 +618,7 @@ function AppShell({
           gameMode={gameMode}
           onModeChange={setGameMode}
           gradeWords={gradeWords}
+          drills={drills}
           families={families}
           tier={tier}
           subscriptionLoading={subscription.loading}
@@ -504,6 +643,20 @@ function AppShell({
           availableGrades={availableGrades}
           onGradeChange={setSelectedGrade}
           onBack={() => setScreen("home")}
+          profileId={activeProfileId}
+          onOpenLists={() => setScreen("lists")}
+          onListsChanged={bumpLists}
+        />
+      )}
+
+      {screen === "lists" && (
+        <WordListsScreen
+          words={words}
+          profileId={activeProfileId}
+          onBack={() => setScreen("home")}
+          onOpenLexicon={() => setScreen("lexicon")}
+          onPracticeList={startListSession}
+          onChanged={bumpLists}
         />
       )}
 
@@ -529,6 +682,8 @@ function AppShell({
           autoOpenAddChild={settingsAddChild}
           rewardGoal={rewardGoal}
           onRewardGoalChange={handleRewardGoalChange}
+          getToken={getToken}
+          isSignedIn={isSignedIn}
           familyProfiles={
             canManageProfiles && getToken
               ? {
@@ -579,7 +734,9 @@ function AppShell({
           words={sessionWords}
           allWords={gradeWords}
           families={families}
+          batches={gameMode === "tonos" ? sessionWordBatches : null}
           sessionBanner={sessionBanner}
+          profileId={activeProfileId}
           onComplete={handleComplete}
           onQuit={() => setScreen("home")}
         />
@@ -590,6 +747,18 @@ function AppShell({
           words={sessionWords}
           families={families}
           sessionBanner={sessionBanner}
+          onComplete={handleComplete}
+          onQuit={() => setScreen("home")}
+        />
+      )}
+
+      {screen === "exercise" && sessionDrills.length > 0 && drillModes.has(gameMode) && (
+        <DrillExercise
+          title={MODE_LABELS[gameMode]}
+          drills={sessionDrills}
+          batches={sessionBatches}
+          sessionBanner={sessionBanner}
+          profileId={activeProfileId}
           onComplete={handleComplete}
           onQuit={() => setScreen("home")}
         />

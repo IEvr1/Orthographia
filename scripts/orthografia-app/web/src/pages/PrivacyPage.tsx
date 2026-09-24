@@ -33,6 +33,10 @@ export function PrivacyPage() {
             <li>Ονόματα προφίλ παιδιών (όπως τα δηλώνει ο γονέας)</li>
             <li>Στοιχεία συνδρομής (Stripe): κατάσταση, πλάνο — όχι στοιχεία κάρτας</li>
             <li>IP κατά την καταγραφή συγκατάθεσης (προαιρετικά, για απόδειξη συμμόρφωσης)</li>
+            <li>
+              Προαιρετικό email εβδομαδιαίας σύνοψης (μόνο αν ο γονέας το ενεργοποιήσει στις
+              Ρυθμίσεις — από προεπιλογή ανενεργό)
+            </li>
           </ul>
         </section>
 
@@ -97,9 +101,11 @@ export function PrivacyPage() {
         </section>
 
         <footer className="legal-footer">
-          <a href="/terms">Όροι</a>
-          <span>·</span>
-          <a href="/contact">Επικοινωνία</a>
+          <div className="legal-footer__links">
+            <a href="/terms">Όροι</a>
+            <span>·</span>
+            <a href="/contact">Επικοινωνία</a>
+          </div>
         </footer>
       </div>
     </main>

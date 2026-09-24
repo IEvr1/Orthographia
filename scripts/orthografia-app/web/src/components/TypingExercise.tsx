@@ -10,6 +10,7 @@ import { CelebrationOverlay } from "./CelebrationOverlay";
 import { DifficultyBadge } from "./DifficultyBadge";
 import { FeedbackPanel } from "./FeedbackPanel";
 import { GreekKeyboard } from "./GreekKeyboard";
+import { SessionProgress } from "./SessionProgress";
 
 export type TypingMode = "sentence" | "dictation" | "error-fix" | "scramble" | "morphemes";
 
@@ -115,10 +116,13 @@ export function TypingExercise({
         <button type="button" className="btn-text" onClick={onQuit}>
           ← Πίσω
         </button>
-        <p className="progress-bar-label">
-          {TITLES[mode]} {index + 1} από {words.length}
+        <SessionProgress
+          current={index + 1}
+          total={words.length}
+          label={`${TITLES[mode]} ${index + 1} από ${words.length}`}
+        >
           <DifficultyBadge word={current} />
-        </p>
+        </SessionProgress>
         {sessionBanner && index === 0 && (
           <p className="session-banner" role="status">
             {sessionBanner}
