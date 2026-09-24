@@ -707,21 +707,24 @@ body {
 
 .keyboard-row {
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.35rem;
+  flex-wrap: nowrap;
+  gap: 0.25rem;
   justify-content: center;
+  width: 100%;
 }
 
 .key {
-  min-width: 44px;
+  flex: 1 1 0;
+  min-width: 0;
+  max-width: 48px;
   min-height: 48px;
-  padding: 0 0.5rem;
+  padding: 0 0.15rem;
   border: none;
   border-radius: 10px;
   background: var(--white);
   box-shadow: 0 2px 0 var(--sand-deep);
   font-family: var(--font-body);
-  font-size: 1.1rem;
+  font-size: clamp(0.95rem, 3.6vw, 1.1rem);
   font-weight: 500;
   color: var(--ink);
   cursor: pointer;
@@ -735,6 +738,9 @@ body {
 }
 
 .key--action {
+  flex: 0 1 auto;
+  max-width: none;
+  min-width: 3.25rem;
   background: var(--sand-deep);
   font-size: 0.9rem;
 }
@@ -748,6 +754,7 @@ body {
 .keyboard-row--actions {
   margin-top: 0.25rem;
   gap: 0.5rem;
+  flex-wrap: wrap;
 }
 
 .key--check {
@@ -756,8 +763,8 @@ body {
   font-family: var(--font-display);
   font-weight: 700;
   min-width: 120px;
-  flex: 1;
   max-width: 200px;
+  flex: 1 1 auto;
 }
 
 .key:disabled,

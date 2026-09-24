@@ -2,29 +2,12 @@
 from __future__ import annotations
 
 import json
-import re
-import unicodedata
 from pathlib import Path
+
+from hint_generator import definition_leaks_word
 
 ROOT = Path(__file__).resolve().parent
 WORDS_JSON = ROOT.parent / "web" / "public" / "content" / "words.json"
-
-
-def normalize(s: str) -> str:
-    s = s.casefold()
-    return "".join(
-        c for c in unicodedata.normalize("NFD", s) if unicodedata.category(c) != "Mn"
-    )
-
-
-def definition_leaks_word(definition: str, word: str) -> bool:
-    w = normalize(word.strip())
-    t = normalize(definition.strip())
-    if len(w) < 2 or not t:
-        return False
-    # Whole-token match (Greek letters)
-    pattern = rf"(?<![a-zα-ω]){re.escape(w)}(?![a-zα-ω])"
-    return bool(re.search(pattern, t))
 
 
 def main() -> None:
@@ -46,7 +29,7 @@ def main() -> None:
     for i, w, d in leaks:
         lines.append(f"{i}\t{w}\t{d}")
     out.write_text("\n".join(lines) + "\n", encoding="utf-8")
-    print(f"wrote {out} ({len(leaks)} leaks)")
+    print(f"wrote {out} ({len(leaks)} leaks / {with_def} defs)")
 
 
 if __name__ == "__main__":

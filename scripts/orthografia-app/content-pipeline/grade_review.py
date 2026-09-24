@@ -24,6 +24,7 @@ from pathlib import Path
 from typing import Any
 
 from validate_hints import classify_hint
+from hint_generator import definition_leaks_word
 
 PIPELINE = Path(__file__).resolve().parent
 WEB = PIPELINE.parent / "web" / "public" / "content"
@@ -41,6 +42,7 @@ HIGH_FLAGS = {
     "empty",
     "garbled",
     "leaks_word",
+    "definition_leaks_word",
     "english",
     "known_bad",
     "placeholder_count",
@@ -143,6 +145,9 @@ def build_word_items(
             flags.append(f"duplicate_hint={dup}")
         if entry.get("grade", 0) >= 4 and not (entry.get("definition") or "").strip():
             flags.append("missing_definition")
+        definition = (entry.get("definition") or "").strip()
+        if definition and definition_leaks_word(definition, word):
+            flags.append("definition_leaks_word")
 
         family = None
         family_id = entry.get("familyId")

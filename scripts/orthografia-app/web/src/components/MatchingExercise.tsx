@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import type { FamiliesPayload, SessionSummary, WordEntry } from "../types";
+import { isUsableMatchingDefinition } from "../lib/definitionLeak";
 import { useExerciseFlow } from "../lib/useExerciseFlow";
 import { CelebrationOverlay } from "./CelebrationOverlay";
 import { SessionProgress } from "./SessionProgress";
@@ -28,7 +29,9 @@ export function MatchingExercise({
   sessionBanner = null,
 }: MatchingExerciseProps) {
   const rounds = useMemo(() => {
-    const withDef = words.filter((w) => w.definition?.trim());
+    const withDef = words.filter((w) =>
+      isUsableMatchingDefinition(w.definition, w.word),
+    );
     const chunks: WordEntry[][] = [];
     for (let i = 0; i < withDef.length; i += 4) {
       const chunk = withDef.slice(i, i + 4);

@@ -9,6 +9,7 @@ import {
   saveProgress,
   type ProgressStore,
 } from "./storage";
+import { playSuccessSound } from "./sfx";
 import { recordSessionDay, unlockBadgesAfterSession } from "./streakBadges";
 import { recordErrorCategory } from "./weakness";
 
@@ -103,6 +104,7 @@ export function useExerciseFlow<T extends { id: string } = WordEntry>({
 
   const onCorrect = useCallback(
     (opts?: { hadRewrite?: boolean; delayMs?: number }) => {
+      playSuccessSound();
       const hadRewrite = opts?.hadRewrite ?? false;
       const store = persistAttempt(true, hadRewrite);
       const goal = getRewardGoal();

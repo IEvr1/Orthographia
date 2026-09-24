@@ -357,6 +357,24 @@ def hint_leaks_word(hint: str, word: str, root: str | None = None) -> bool:
     return False
 
 
+def definition_leaks_word(definition: str, word: str) -> bool:
+    """True if the headword appears as a token in its own definition (gives away matching)."""
+    w = normalize_for_match(word.strip())
+    t = normalize_for_match(definition.strip())
+    if len(w) < 2 or not t:
+        return False
+    pattern = rf"(?<![a-zα-ω]){re.escape(w)}(?![a-zα-ω])"
+    return bool(re.search(pattern, t))
+
+
+def usable_matching_definition(definition: str | None, word: str) -> str | None:
+    """Return a trimmed definition safe for matching, or None if empty/leaking."""
+    d = (definition or "").strip()
+    if not d or definition_leaks_word(d, word):
+        return None
+    return d
+
+
 def ensure_placeholder(hint: str) -> str:
     if "___" in hint:
         return hint

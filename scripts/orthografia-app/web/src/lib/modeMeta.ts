@@ -1,5 +1,6 @@
 import type { FamiliesPayload, GameMode, WordEntry, DrillItem } from "../types";
 import { wordsWithFamily } from "./families";
+import { isUsableMatchingDefinition } from "./definitionLeak";
 import { stressIndex } from "./normalize";
 import { drillsForGrade, drillsForMode, modeUsesDrills } from "./drills";
 
@@ -48,7 +49,7 @@ export function filterWordsForMode(
     case "family":
       return families ? wordsWithFamily(words, families) : [];
     case "matching":
-      return words.filter((w) => Boolean(w.definition?.trim()));
+      return words.filter((w) => isUsableMatchingDefinition(w.definition, w.word));
     case "morphemes":
       return words.filter((w) => (w.morphemes?.suffix?.length ?? 0) >= 1);
     case "tonos":

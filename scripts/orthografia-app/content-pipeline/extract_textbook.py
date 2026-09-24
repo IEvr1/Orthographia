@@ -21,7 +21,13 @@ from collections import Counter, defaultdict
 from pathlib import Path
 from typing import Any
 
-from hint_generator import generate_hint, is_generic_hint, is_homophone_prone, load_overrides
+from hint_generator import (
+    generate_hint,
+    is_generic_hint,
+    is_homophone_prone,
+    load_overrides,
+    usable_matching_definition,
+)
 from import_helexkids import (
     WEB_WORDS,
     audio_path_for_word,
@@ -1518,8 +1524,9 @@ def build_textbook_entries(
             "difficulty": 2 if len(row["word"]) >= 8 else 1,
         }
         explanation = (row.get("explanation") or "").strip()
-        if explanation:
-            entry["definition"] = explanation
+        usable = usable_matching_definition(explanation, row["word"])
+        if usable:
+            entry["definition"] = usable
         if is_homophone_prone(row["word"]):
             entry["homophone"] = True
         entries.append(entry)

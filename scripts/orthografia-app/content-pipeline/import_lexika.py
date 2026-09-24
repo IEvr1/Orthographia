@@ -11,7 +11,7 @@ from typing import Any
 from contextual_hint import GARBLED_MARKERS, generate_contextual_hint, is_garbled_hint
 from fix_hints import mask_word_in_hint
 from spelling_fixes import apply_spelling_fix, load_spelling_fixes
-from hint_generator import generate_hint, is_generic_hint, is_homophone_prone, load_overrides
+from hint_generator import generate_hint, is_generic_hint, is_homophone_prone, load_overrides, usable_matching_definition
 from import_helexkids import (
     audio_path_for_word,
     count_by_grade,
@@ -152,7 +152,9 @@ def build_lexika_entries(
                 "difficulty": min(3, max(1, int(row.get("difficulty") or 1))),
             }
             if row.get("definition"):
-                entry["definition"] = row["definition"][:200]
+                usable = usable_matching_definition(row["definition"][:200], row["word"])
+                if usable:
+                    entry["definition"] = usable
             if row.get("family"):
                 entry["familyId"] = row["word"]
             rule_id = infer_rule_id(row["word"], row)
