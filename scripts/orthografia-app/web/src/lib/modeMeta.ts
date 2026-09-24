@@ -1,6 +1,7 @@
 import type { FamiliesPayload, GameMode, WordEntry, DrillItem } from "../types";
 import { wordsWithFamily } from "./families";
 import { isUsableMatchingDefinition } from "./definitionLeak";
+import { CLOZE_MARKER } from "./hintMask";
 import { stressIndex } from "./normalize";
 import { drillsForGrade, drillsForMode, modeUsesDrills } from "./drills";
 
@@ -45,7 +46,7 @@ export function filterWordsForMode(
   if (modeUsesDrills(mode)) return [];
   switch (mode) {
     case "choice":
-      return words.filter((w) => w.hintSentence.includes("___"));
+      return words.filter((w) => w.hintSentence.includes(CLOZE_MARKER));
     case "family":
       return families ? wordsWithFamily(words, families) : [];
     case "matching":

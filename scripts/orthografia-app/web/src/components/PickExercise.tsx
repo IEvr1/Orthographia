@@ -2,7 +2,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import type { FamiliesPayload, SessionSummary, WordEntry } from "../types";
 import { buildChoiceOptions, buildTonosOptions } from "../lib/choiceOptions";
 import { resolveFamily } from "../lib/families";
-import { resolveClozeHint } from "../lib/hintMask";
+import { resolveClozeHint, CLOZE_MARKER, letterBlank } from "../lib/hintMask";
 import { stripStress } from "../lib/normalize";
 import { getRewardGoal } from "../lib/settings";
 import {
@@ -366,7 +366,18 @@ function SinglePickView({
         {mode === "choice" && (
           <p className="hint-sentence">
             <span className="hint-label">Πρόταση βοήθειας</span>
-            {hintSentence.replace("___", "_____")}
+            {hintSentence.split(CLOZE_MARKER).map((part, i, parts) =>
+              i < parts.length - 1 ? (
+                <span key={i}>
+                  {part}
+                  <span className="hint-blank hint-blank--sized" aria-hidden="true">
+                    {letterBlank(current.word)}
+                  </span>
+                </span>
+              ) : (
+                <span key={i}>{part}</span>
+              ),
+            )}
           </p>
         )}
 

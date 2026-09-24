@@ -1,6 +1,24 @@
 import { stripStress } from "./normalize";
 
-const BLANK = "___";
+/** Canonical cloze marker in word hint sentences (data + resolveClozeHint). */
+export const CLOZE_MARKER = "___";
+
+/** Underscores matching the number of letters to type/select (NFC code points). */
+export function letterBlank(text: string, minLength = 1): string {
+  const n = [...text.normalize("NFC")].length;
+  return "_".repeat(Math.max(minLength, n));
+}
+
+/** Replace cloze markers with a blank sized to `answer`. */
+export function sizeClozeBlank(hint: string, answer: string): string {
+  if (!hint.includes(CLOZE_MARKER)) return hint;
+  return hint.split(CLOZE_MARKER).join(letterBlank(answer));
+}
+
+/** Replace any underscore run in a prompt with a blank sized to `answer`. */
+export function sizePromptGaps(prompt: string, answer: string): string {
+  return prompt.replace(/_+/g, letterBlank(answer));
+}
 
 function normalizeForMatch(text: string): string {
   return stripStress(text.toLowerCase().normalize("NFC")).replace(/ς/g, "σ");
@@ -61,7 +79,7 @@ export function maskWordInHint(hint: string, word: string, root?: string): strin
 
       const { word: wordPart, punct } = splitTokenPunctuation(part.text);
       if (shouldMaskToken(wordPart, word, root)) {
-        return BLANK + punct;
+        return CLOZE_MARKER + punct;
       }
       return part.text;
     })
@@ -72,12 +90,13 @@ export function maskWordInHint(hint: string, word: string, root?: string): strin
  * Resolve a cloze hint for sentence/choice exercises.
  * Prefers an existing `___`, else masks the target word in place,
  * else appends a trailing blank as a last resort.
+ * The marker stays `___`; size it for display with `letterBlank` / `sizeClozeBlank`.
  */
 export function resolveClozeHint(hint: string, word: string, root?: string): string {
-  if (hint.includes(BLANK)) return hint;
+  if (hint.includes(CLOZE_MARKER)) return hint;
 
   const masked = maskWordInHint(hint, word, root);
-  if (masked.includes(BLANK)) return masked;
+  if (masked.includes(CLOZE_MARKER)) return masked;
 
-  return `${hint.replace(/\.$/, "")} ${BLANK}.`;
+  return `${hint.replace(/\.$/, "")} ${CLOZE_MARKER}.`;
 }

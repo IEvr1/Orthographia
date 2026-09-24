@@ -670,6 +670,13 @@ body {
   letter-spacing: 0.05em;
 }
 
+/* Morpheme suffix gap: width follows letter count (not a fixed 3-char slot). */
+.hint-blank--sized {
+  min-width: 0;
+  letter-spacing: 0.12em;
+  font-variant-numeric: tabular-nums;
+}
+
 /* Keyboard */
 .keyboard {
   display: flex;
@@ -936,16 +943,17 @@ body {
 
 .drill-gap {
   display: inline-block;
-  min-width: 2.75rem;
-  padding: 0 0.2rem;
+  min-width: 0;
+  padding: 0 0.15rem;
   border-bottom: 3px solid var(--teal);
   color: var(--teal);
   font-weight: 700;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.12em;
+  white-space: pre;
 }
 
 .drill-gap--wide {
-  min-width: 6rem;
+  min-width: 0;
   text-align: center;
 }
 

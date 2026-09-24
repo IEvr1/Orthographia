@@ -2,7 +2,7 @@ import { Fragment, useEffect, useMemo, useState } from "react";
 import type { FamiliesPayload, GradeResult, SessionSummary, WordEntry } from "../types";
 import { resolveFamily } from "../lib/families";
 import { gradeAnswer } from "../lib/grader";
-import { resolveClozeHint } from "../lib/hintMask";
+import { resolveClozeHint, CLOZE_MARKER, letterBlank } from "../lib/hintMask";
 import { pickMisspelling, scrambleWord } from "../lib/spellingVariants";
 import { useExerciseFlow } from "../lib/useExerciseFlow";
 import { AudioPlayer } from "./AudioPlayer";
@@ -115,6 +115,7 @@ export function TypingExercise({
   const audioSrc = `/content/${current.audioFile}`;
   const targetWord =
     mode === "morphemes" ? current.morphemes.suffix.replace(/^-/, "") : current.word;
+  const wordBlank = letterBlank(targetWord);
 
   useEffect(() => {
     setInput("");
@@ -184,10 +185,14 @@ export function TypingExercise({
         {mode === "sentence" && (
           <p className="hint-sentence">
             <span className="hint-label">Συμπλήρωσε τη λέξη στην πρόταση</span>
-            {sentence.split("___").map((part, i, parts) => (
+            {sentence.split(CLOZE_MARKER).map((part, i, parts) => (
               <Fragment key={i}>
                 {part}
-                {i < parts.length - 1 && <span className="hint-blank">___</span>}
+                {i < parts.length - 1 && (
+                  <span className="hint-blank hint-blank--sized" aria-hidden="true">
+                    {wordBlank}
+                  </span>
+                )}
               </Fragment>
             ))}
           </p>
@@ -196,7 +201,9 @@ export function TypingExercise({
         {mode === "dictation" && (
           <p className="hint-sentence">
             <span className="hint-label">Άκου και γράψε τη λέξη</span>
-            <span className="hint-blank">___</span>
+            <span className="hint-blank hint-blank--sized" aria-hidden="true">
+              {wordBlank}
+            </span>
           </p>
         )}
 
@@ -204,8 +211,8 @@ export function TypingExercise({
           <p className="hint-sentence">
             <span className="hint-label">Διόρθωσε τη λέξη</span>
             <span className="misspelled-word">{misspelling}</span>
-            {current.hintSentence.includes("___") && (
-              <span className="hint-context">{sentence.replace("___", "…")}</span>
+            {current.hintSentence.includes(CLOZE_MARKER) && (
+              <span className="hint-context">{sentence.replace(CLOZE_MARKER, "…")}</span>
             )}
           </p>
         )}
@@ -218,13 +225,17 @@ export function TypingExercise({
                 <span className="lexicon-label">Ορισμός:</span> {current.definition}
               </p>
             )}
-            {sentence.includes("___") && (
+            {sentence.includes(CLOZE_MARKER) && (
               <p className="scramble-clue scramble-clue--sentence">
                 <span className="lexicon-label">Πρόταση:</span>{" "}
-                {sentence.split("___").map((part, i, parts) => (
+                {sentence.split(CLOZE_MARKER).map((part, i, parts) => (
                   <Fragment key={i}>
                     {part}
-                    {i < parts.length - 1 && <span className="hint-blank">___</span>}
+                    {i < parts.length - 1 && (
+                      <span className="hint-blank hint-blank--sized" aria-hidden="true">
+                        {wordBlank}
+                      </span>
+                    )}
                   </Fragment>
                 ))}
               </p>
@@ -291,7 +302,9 @@ export function TypingExercise({
             <span className="hint-label">Συμπλήρωσε την κατάληξη</span>
             <span className="morpheme-prompt">
               <strong>{current.morphemes.root || "…"}</strong>
-              <span className="hint-blank">___</span>
+              <span className="hint-blank hint-blank--sized" aria-hidden="true">
+                {wordBlank}
+              </span>
             </span>
           </p>
         )}

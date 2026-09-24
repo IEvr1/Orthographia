@@ -92,8 +92,8 @@ export interface DrillItem {
   /** Short instruction shown above the prompt. */
   instruction: string;
   /**
-   * Prompt with `____` for the gap (ending/infix/cloze),
-   * or full display text for binary/choice.
+   * Prompt with underscore run(s) for the gap (ending/infix/cloze/homophone).
+   * Display length is derived from `answer`, not from how many `_` are stored.
    */
   prompt: string;
   /** Optional article or left side (e.g. η / πολύ). */

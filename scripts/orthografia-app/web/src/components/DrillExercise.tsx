@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import type { DrillItem, SessionSummary } from "../types";
+import { letterBlank } from "../lib/hintMask";
 import { getRewardGoal } from "../lib/settings";
 import {
   clearRewardPointsAfterCelebration,
@@ -34,18 +35,24 @@ function shuffle<T>(items: T[]): T[] {
   return arr;
 }
 
-function renderPromptWithGap(prompt: string, filled: string | null): ReactNode {
-  if (!prompt.includes("____")) {
+/** Split prompt on underscore runs; show answer-sized blanks (or filled text). */
+function renderPromptWithGap(
+  prompt: string,
+  answer: string,
+  filled: string | null,
+): ReactNode {
+  if (!/_/.test(prompt)) {
     return prompt;
   }
-  const parts = prompt.split("____");
+  const parts = prompt.split(/_+/);
+  const gap = letterBlank(answer);
   const nodes: ReactNode[] = [];
   parts.forEach((part, i) => {
     nodes.push(<span key={`t-${i}`}>{part}</span>);
     if (i < parts.length - 1) {
       nodes.push(
         <span key={`g-${i}`} className={`drill-gap${filled ? " drill-gap--answered" : ""}`}>
-          {filled ?? "____"}
+          {filled ?? gap}
         </span>,
       );
     }
@@ -53,14 +60,22 @@ function renderPromptWithGap(prompt: string, filled: string | null): ReactNode {
   return nodes;
 }
 
+function GapSlot({ answer, filled, wide = false }: { answer: string; filled: string | null; wide?: boolean }) {
+  const gap = letterBlank(answer);
+  return (
+    <span
+      className={`drill-gap${wide ? " drill-gap--wide" : ""}${filled ? " drill-gap--answered" : ""}`}
+    >
+      {filled ?? gap}
+    </span>
+  );
+}
+
 function RowPrompt({ item, filled }: { item: DrillItem; filled: string | null }) {
   if (item.kind === "article") {
     return (
       <span className="batch-row__prompt">
-        <span className={`drill-gap${filled ? " drill-gap--answered" : ""}`}>
-          {filled ?? "____"}
-        </span>{" "}
-        {item.prompt}
+        <GapSlot answer={item.answer} filled={filled} /> {item.prompt}
       </span>
     );
   }
@@ -71,12 +86,16 @@ function RowPrompt({ item, filled }: { item: DrillItem; filled: string | null })
     return <span className="batch-row__prompt batch-row__prompt--muted">Σωστή ορθογραφία</span>;
   }
   if (item.kind === "homophone") {
-    return <span className="batch-row__prompt">{item.prompt}</span>;
+    return (
+      <span className="batch-row__prompt">
+        {renderPromptWithGap(item.prompt, item.answer, filled)}
+      </span>
+    );
   }
   return (
     <span className="batch-row__prompt">
       {item.prefix ? <span className="drill-prefix">{item.prefix} </span> : null}
-      {renderPromptWithGap(item.prompt, filled)}
+      {renderPromptWithGap(item.prompt, item.answer, filled)}
     </span>
   );
 }
@@ -359,7 +378,7 @@ function SingleDrillView({
             <span className="drill-compound-plus">+</span>
             <span className="drill-compound-part">{current.suffix ?? ""}</span>
             <span className="drill-compound-eq">=</span>
-            <span className="drill-gap drill-gap--wide">{gapFilled ?? "____"}</span>
+            <GapSlot answer={current.answer} filled={gapFilled} wide />
           </p>
         )}
 
@@ -369,9 +388,7 @@ function SingleDrillView({
 
         {current.kind === "article" && (
           <p className="drill-prompt">
-            <span className={`drill-gap${gapFilled ? " drill-gap--answered" : ""}`}>
-              {gapFilled ?? "____"}
-            </span>{" "}
+            <GapSlot answer={current.answer} filled={gapFilled} />{" "}
             <span>{current.prompt}</span>
           </p>
         )}
@@ -379,7 +396,7 @@ function SingleDrillView({
         {(current.kind === "ending" || current.kind === "infix" || current.kind === "cloze") && (
           <p className="drill-prompt">
             {current.prefix ? <span className="drill-prefix">{current.prefix} </span> : null}
-            {renderPromptWithGap(current.prompt, gapFilled)}
+            {renderPromptWithGap(current.prompt, current.answer, gapFilled)}
           </p>
         )}
 
@@ -394,7 +411,9 @@ function SingleDrillView({
         )}
 
         {current.kind === "homophone" && (
-          <p className="drill-prompt">{current.prompt}</p>
+          <p className="drill-prompt">
+            {renderPromptWithGap(current.prompt, current.answer, gapFilled)}
+          </p>
         )}
 
         <div
