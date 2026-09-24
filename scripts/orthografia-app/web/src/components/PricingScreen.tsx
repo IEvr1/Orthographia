@@ -1,8 +1,9 @@
-import { SignInButton, SignedIn, SignedOut, UserButton } from "@clerk/clerk-react";
+import { SignedIn, SignedOut, UserButton } from "@clerk/clerk-react";
 import { useState } from "react";
 import type { PlanTier } from "../lib/access";
 import { tierLabel } from "../lib/access";
 import { isClerkEnabled } from "../lib/subscription";
+import { SignInWithConsent } from "./SignInWithConsent";
 
 type CheckoutPlan = "monthly" | "yearly" | "family";
 
@@ -13,6 +14,7 @@ interface PricingScreenProps {
   currentPeriodEnd: string | null;
   startCheckout?: (plan: CheckoutPlan) => Promise<string | null>;
   openPortal?: () => Promise<string | null>;
+  onConsentAccepted?: () => void;
 }
 
 const PLANS: Array<{
@@ -71,6 +73,7 @@ export function PricingScreen({
   currentPeriodEnd,
   startCheckout,
   openPortal,
+  onConsentAccepted,
 }: PricingScreenProps) {
   const [busy, setBusy] = useState<CheckoutPlan | "portal" | null>(null);
   const [message, setMessage] = useState<string | null>(null);
@@ -114,11 +117,11 @@ export function PricingScreen({
         {isClerkEnabled() && (
           <div className="pricing-auth">
             <SignedOut>
-              <SignInButton mode="modal">
+              <SignInWithConsent onConsentAccepted={onConsentAccepted}>
                 <button type="button" className="btn-text">
                   Σύνδεση
                 </button>
-              </SignInButton>
+              </SignInWithConsent>
             </SignedOut>
             <SignedIn>
               <UserButton afterSignOutUrl="/" />
@@ -172,11 +175,11 @@ export function PricingScreen({
             {isClerkEnabled() ? (
               <>
                 <SignedOut>
-                  <SignInButton mode="modal">
+                  <SignInWithConsent onConsentAccepted={onConsentAccepted}>
                     <button type="button" className="btn btn-secondary btn-xl">
                       Σύνδεση
                     </button>
-                  </SignInButton>
+                  </SignInWithConsent>
                 </SignedOut>
                 <SignedIn>
                   <button

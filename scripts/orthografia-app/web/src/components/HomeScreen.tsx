@@ -1,4 +1,4 @@
-import { SignInButton, SignedIn, SignedOut, UserButton } from "@clerk/clerk-react";
+import { SignedIn, SignedOut, UserButton } from "@clerk/clerk-react";
 import type { DrillItem, FamiliesPayload, GameMode, WordEntry } from "../types";
 import type { PlanTier } from "../lib/access";
 import { canAccessGrade, canAccessMode, canStartPractice, isPaidTier } from "../lib/access";
@@ -6,6 +6,7 @@ import { GRADE_LABELS, OFFERED_GRADES } from "../lib/grades";
 import { MODE_LABELS, MODE_ORDER, modeAvailableForGrade } from "../lib/modeMeta";
 import { isClerkEnabled } from "../lib/subscription";
 import { SettingsIcon } from "./SettingsScreen";
+import { SignInWithConsent } from "./SignInWithConsent";
 
 function childAvatarLetter(name?: string | null): string {
   const trimmed = name?.trim();
@@ -44,6 +45,7 @@ interface HomeScreenProps {
   streakBest: number;
   badgeCount: number;
   practiceHomeHint?: string | null;
+  onConsentAccepted?: () => void;
 }
 
 export function HomeScreen({
@@ -77,6 +79,7 @@ export function HomeScreen({
   streakBest,
   badgeCount,
   practiceHomeHint = null,
+  onConsentAccepted,
 }: HomeScreenProps) {
   const needsProfile = showFamilyProfiles && !activeChildName;
   const authEnabled = isClerkEnabled();
@@ -113,11 +116,11 @@ export function HomeScreen({
           {isClerkEnabled() && (
             <div className="home-auth">
               <SignedOut>
-                <SignInButton mode="modal">
+                <SignInWithConsent onConsentAccepted={onConsentAccepted}>
                   <button type="button" className="btn-text">
                     Σύνδεση
                   </button>
-                </SignInButton>
+                </SignInWithConsent>
               </SignedOut>
               <SignedIn>
                 <UserButton afterSignOutUrl="/" />
@@ -237,11 +240,11 @@ export function HomeScreen({
       </div>
 
       {needsSignIn ? (
-        <SignInButton mode="modal">
+        <SignInWithConsent onConsentAccepted={onConsentAccepted}>
           <button type="button" className="btn btn-primary btn-start btn-start--pulse">
             Σύνδεση για να ξεκινήσεις
           </button>
-        </SignInButton>
+        </SignInWithConsent>
       ) : needsPurchase ? (
         <button type="button" className="btn btn-primary btn-start btn-start--pulse" onClick={onOpenPricing}>
           {trialExpired ? "Αγόρασε για να συνεχίσεις" : "Αγορά συνδρομής"}

@@ -1821,6 +1821,26 @@ body {
 }
 
 /* Legal & consent */
+.consent-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 1rem;
+  overflow-y: auto;
+  background: rgba(18, 52, 64, 0.55);
+  backdrop-filter: blur(4px);
+}
+
+.consent-overlay .screen--legal {
+  margin: auto;
+  max-width: 560px;
+  width: 100%;
+  min-height: auto;
+}
+
 .screen--legal {
   justify-content: flex-start;
   gap: 1rem;

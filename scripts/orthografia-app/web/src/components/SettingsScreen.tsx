@@ -1,4 +1,4 @@
-import { SignInButton, SignedIn, SignedOut, UserButton } from "@clerk/clerk-react";
+import { SignedIn, SignedOut, UserButton } from "@clerk/clerk-react";
 import { useEffect, useState } from "react";
 import type { PlanTier } from "../lib/access";
 import { canUseCloudSync, tierLabel } from "../lib/access";
@@ -11,6 +11,7 @@ import {
 import type { ChildProfile } from "../lib/subscription";
 import { isClerkEnabled } from "../lib/subscription";
 import { ChildProfileManager } from "./ChildProfileManager";
+import { SignInWithConsent } from "./SignInWithConsent";
 
 function SettingsIcon() {
   return (
@@ -47,6 +48,7 @@ interface SettingsScreenProps {
   onRewardGoalChange: (goal: number) => void;
   getToken?: () => Promise<string | null>;
   isSignedIn?: boolean;
+  onConsentAccepted?: () => void;
   familyProfiles?: {
     profiles: ChildProfile[];
     maxProfiles: number;
@@ -69,6 +71,7 @@ export function SettingsScreen({
   onRewardGoalChange,
   getToken,
   isSignedIn = false,
+  onConsentAccepted,
   familyProfiles,
 }: SettingsScreenProps) {
   const showCloudSync = syncEnabled && onSyncProgress && canUseCloudSync(tier);
@@ -136,11 +139,11 @@ export function SettingsScreen({
           {isClerkEnabled() && (
             <div className="home-auth">
               <SignedOut>
-                <SignInButton mode="modal">
+                <SignInWithConsent onConsentAccepted={onConsentAccepted}>
                   <button type="button" className="btn-text">
                     Σύνδεση
                   </button>
-                </SignInButton>
+                </SignInWithConsent>
               </SignedOut>
               <SignedIn>
                 <UserButton afterSignOutUrl="/" />

@@ -104,7 +104,9 @@ function AppShell({
   userId?: string | null;
   isSignedIn?: boolean;
 }) {
-  const [consentGiven, setConsentGiven] = useState(hasLocalConsent());
+  const [consentGiven, setConsentGiven] = useState(() => hasLocalConsent());
+  const [consentPromptForPractice, setConsentPromptForPractice] = useState(false);
+  const handleConsentAccepted = useCallback(() => setConsentGiven(true), []);
   const [screen, setScreen] = useState<AppScreen>("home");
   const [words, setWords] = useState<WordEntry[]>([]);
   const [drills, setDrills] = useState<DrillItem[]>([]);
@@ -291,9 +293,16 @@ function AppShell({
 
   const bumpLists = useCallback(() => setListsVersion((v) => v + 1), []);
 
+  const requireConsentForPractice = useCallback(() => {
+    if (isClerkEnabled() || hasLocalConsent()) return true;
+    setConsentPromptForPractice(true);
+    return false;
+  }, []);
+
   const startListSession = useCallback(
     (list: WordList) => {
       setPaywallMessage(null);
+      if (!requireConsentForPractice()) return;
       if (!canStartPractice(isSignedIn, isClerkEnabled())) return;
       if (showFamilyProfiles && !activeProfileId) return;
       if (!canPractice(isSignedIn, isClerkEnabled(), tier, trialActive)) {
@@ -342,6 +351,7 @@ function AppShell({
       showFamilyProfiles,
       isSignedIn,
       bumpLists,
+      requireConsentForPractice,
     ],
   );
 
@@ -430,6 +440,7 @@ function AppShell({
 
   const startSession = useCallback(() => {
     setPaywallMessage(null);
+    if (!requireConsentForPractice()) return;
     if (!canStartPractice(isSignedIn, isClerkEnabled())) return;
     if (showFamilyProfiles && !activeProfileId) return;
     if (!canPractice(isSignedIn, isClerkEnabled(), tier, trialActive)) {
@@ -473,11 +484,13 @@ function AppShell({
     showFamilyProfiles,
     activeProfileId,
     isSignedIn,
+    requireConsentForPractice,
   ]);
 
   const startMistakeSession = useCallback(
     (category: ErrorCategory | null = null) => {
       setPaywallMessage(null);
+      if (!requireConsentForPractice()) return;
       if (!canStartPractice(isSignedIn, isClerkEnabled())) return;
       if (showFamilyProfiles && !activeProfileId) return;
       if (!canPractice(isSignedIn, isClerkEnabled(), tier, trialActive)) {
@@ -523,6 +536,7 @@ function AppShell({
       trialExpired,
       showFamilyProfiles,
       isSignedIn,
+      requireConsentForPractice,
     ],
   );
 
@@ -565,8 +579,19 @@ function AppShell({
     setScreen("home");
   }, []);
 
-  if (!consentGiven) {
-    return <ConsentScreen onAccepted={() => setConsentGiven(true)} />;
+  if (isSignedIn && !consentGiven) {
+    return <ConsentScreen onAccepted={handleConsentAccepted} />;
+  }
+
+  if (consentPromptForPractice && !consentGiven) {
+    return (
+      <ConsentScreen
+        onAccepted={() => {
+          handleConsentAccepted();
+          setConsentPromptForPractice(false);
+        }}
+      />
+    );
   }
 
   if (loadError) {
@@ -633,6 +658,7 @@ function AppShell({
           streakBest={streak.best}
           badgeCount={badgeCount}
           practiceHomeHint={practiceHomeHint}
+          onConsentAccepted={handleConsentAccepted}
         />
       )}
 
@@ -684,6 +710,7 @@ function AppShell({
           onRewardGoalChange={handleRewardGoalChange}
           getToken={getToken}
           isSignedIn={isSignedIn}
+          onConsentAccepted={handleConsentAccepted}
           familyProfiles={
             canManageProfiles && getToken
               ? {
@@ -709,6 +736,7 @@ function AppShell({
             currentPeriodEnd={subscription.currentPeriodEnd}
             startCheckout={subscription.startCheckout}
             openPortal={subscription.openPortal}
+            onConsentAccepted={handleConsentAccepted}
           />
         </>
       )}

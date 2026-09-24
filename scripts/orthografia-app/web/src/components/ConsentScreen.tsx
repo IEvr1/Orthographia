@@ -3,9 +3,10 @@ import { saveLocalConsent } from "../lib/consent";
 
 interface ConsentScreenProps {
   onAccepted: () => void;
+  continueLabel?: string;
 }
 
-export function ConsentScreen({ onAccepted }: ConsentScreenProps) {
+export function ConsentScreen({ onAccepted, continueLabel = "Συνέχεια" }: ConsentScreenProps) {
   const [isAdult, setIsAdult] = useState(false);
   const [acceptedPolicy, setAcceptedPolicy] = useState(false);
 
@@ -24,7 +25,7 @@ export function ConsentScreen({ onAccepted }: ConsentScreenProps) {
         <h1 className="legal-title">Συγκατάθεση γονέα / κηδεμόνα</h1>
         <p className="legal-lead">
           Η εφαρμογή απευθύνεται σε παιδιά Δημοτικού. Σύμφωνα με τον GDPR, απαιτείται η
-          συγκατάθεση γονέα ή νόμιμου κηδεμόνα πριν από τη χρήση.
+          συγκατάθεση γονέα ή νόμιμου κηδεμόνα πριν τη δημιουργία λογαριασμού και τη χρήση.
         </p>
 
         <section className="legal-section">
@@ -89,7 +90,7 @@ export function ConsentScreen({ onAccepted }: ConsentScreenProps) {
           disabled={!canProceed}
           onClick={handleAccept}
         >
-          Συνέχεια
+          {continueLabel}
         </button>
       </div>
     </main>
