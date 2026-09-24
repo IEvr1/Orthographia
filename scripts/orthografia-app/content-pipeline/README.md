@@ -86,6 +86,19 @@ python generate_audio.py
 
 Ids: `tb-g4-…`, `grade: 4`.
 
+### Γλώσσα Ε΄ & Στ΄ Δημοτικού
+
+Curated λίστες: `inputs/textbooks/grade5.csv`, `grade6.csv` (+ canvas review). Μετά το review:
+
+```powershell
+python apply_canvas_deletions.py --grade 5
+python apply_canvas_deletions.py --grade 6
+python generate_seed.py
+python generate_audio.py
+```
+
+Ids: `tb-g5-…` / `tb-g6-…`.
+
 ### Canvas review → CSV (διαγραφές)
 
 Η «Διαγραφή επιλεγμένων» στο canvas **δεν** αγγίζει τη βάση ούτε το CSV· αποθηκεύεται μόνο στο `*.canvas.data.json`. Για να μην μπουν οι λέξεις στο `generate_seed.py` / app:

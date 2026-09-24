@@ -20,8 +20,8 @@ export default defineConfig({
         name: "Ορθογραφία",
         short_name: "Ορθογραφία",
         description: "Εκμάθηση ελληνικής ορθογραφίας",
-        theme_color: "#2a9d8f",
-        background_color: "#f7f3ea",
+        theme_color: "#1B4F72",
+        background_color: "#F3F6FA",
         display: "standalone",
         lang: "el",
         icons: [

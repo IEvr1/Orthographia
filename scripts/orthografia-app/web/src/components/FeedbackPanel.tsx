@@ -22,6 +22,16 @@ function isMorphemeBreakdown(rule: string): boolean {
   return /\S-\s*\+\s*-/.test(rule);
 }
 
+function FamilyBlock({ family }: { family: WordFamily }) {
+  return (
+    <p className="family-hint">
+      <span className="lexicon-label">Οικογένεια λέξεων:</span>{" "}
+      {family.members.join(", ")}
+      {family.rule ? ` — ${family.rule}` : ""}
+    </p>
+  );
+}
+
 export function FeedbackPanel({
   result,
   correctWord,
@@ -42,6 +52,7 @@ export function FeedbackPanel({
             <span className="lexicon-label">Λεξικό:</span> {definition}
           </p>
         )}
+        {family && family.members.length > 0 && <FamilyBlock family={family} />}
         {result.feedbackRule && (
           <p className="feedback-rule">{result.feedbackRule}</p>
         )}
@@ -81,12 +92,7 @@ export function FeedbackPanel({
         </p>
       )}
 
-      {family && family.members.length > 0 && (
-        <p className="family-hint">
-          <span className="lexicon-label">Οικογένεια λέξεων:</span>{" "}
-          {family.members.join(", ")} — {family.rule}
-        </p>
-      )}
+      {family && family.members.length > 0 && <FamilyBlock family={family} />}
 
       {result.feedbackRule && !isMorphemeBreakdown(result.feedbackRule) && (
         <p className="feedback-rule">{result.feedbackRule}</p>

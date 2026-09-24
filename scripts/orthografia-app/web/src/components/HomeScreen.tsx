@@ -1,15 +1,11 @@
 import { SignInButton, SignedIn, SignedOut, UserButton } from "@clerk/clerk-react";
-import type { GameMode } from "../types";
+import type { FamiliesPayload, GameMode, WordEntry } from "../types";
 import type { PlanTier } from "../lib/access";
 import { canAccessGrade, canAccessMode, canStartPractice, isPaidTier } from "../lib/access";
 import { GRADE_LABELS, OFFERED_GRADES } from "../lib/grades";
+import { MODE_LABELS, MODE_ORDER, modeAvailableForGrade } from "../lib/modeMeta";
 import { isClerkEnabled } from "../lib/subscription";
 import { SettingsIcon } from "./SettingsScreen";
-
-const MODE_LABELS: Record<GameMode, string> = {
-  sentence: "Πρόταση",
-  choice: "Διάλεξε",
-};
 
 function childAvatarLetter(name?: string | null): string {
   const trimmed = name?.trim();
@@ -21,24 +17,28 @@ interface HomeScreenProps {
   onStart: () => void;
   onOpenSettings: (options?: { addChild?: boolean }) => void;
   onOpenPricing: () => void;
+  onOpenLexicon: () => void;
+  onOpenReport: () => void;
   activeChildName?: string | null;
   selectedGrade: number;
   availableGrades: Set<number>;
   onGradeChange: (grade: number) => void;
   gameMode: GameMode;
   onModeChange: (mode: GameMode) => void;
+  gradeWords: WordEntry[];
+  families: FamiliesPayload;
   tier: PlanTier;
   subscriptionLoading: boolean;
   isSuperAdmin?: boolean;
-  dailyLimitReached: boolean;
+  needsPurchase: boolean;
   showFamilyProfiles: boolean;
   trialActive?: boolean;
   trialDaysLeft?: number;
   trialExpired?: boolean;
   isSignedIn?: boolean;
-  rewardPoints: number;
-  rewardGoal: number;
-  /** Shown when the learner has no due/new words (refresh-only day). */
+  streakCurrent: number;
+  streakBest: number;
+  badgeCount: number;
   practiceHomeHint?: string | null;
 }
 
@@ -46,30 +46,34 @@ export function HomeScreen({
   onStart,
   onOpenSettings,
   onOpenPricing,
+  onOpenLexicon,
+  onOpenReport,
   activeChildName,
   selectedGrade,
   availableGrades,
   onGradeChange,
   gameMode,
   onModeChange,
+  gradeWords,
+  families,
   tier,
   subscriptionLoading,
   isSuperAdmin = false,
-  dailyLimitReached,
+  needsPurchase = false,
   showFamilyProfiles,
   trialActive = false,
   trialDaysLeft = 0,
   trialExpired = false,
   isSignedIn = false,
-  rewardPoints,
-  rewardGoal,
+  streakCurrent,
+  streakBest,
+  badgeCount,
   practiceHomeHint = null,
 }: HomeScreenProps) {
   const needsProfile = showFamilyProfiles && !activeChildName;
   const authEnabled = isClerkEnabled();
   const needsSignIn = !canStartPractice(isSignedIn, authEnabled);
-  const startBlocked = dailyLimitReached || needsProfile || subscriptionLoading || needsSignIn;
-  const rewardPct = Math.min(100, (rewardPoints / Math.max(1, rewardGoal)) * 100);
+  const startBlocked = needsPurchase || needsProfile || subscriptionLoading || needsSignIn;
 
   const planStatusLabel = trialActive
     ? trialDaysLeft === 1
@@ -78,19 +82,6 @@ export function HomeScreen({
     : trialExpired
       ? "Δοκιμή έληξε"
       : "Δωρεάν";
-
-  const gradeHint = (() => {
-    if (needsSignIn) {
-      return "";
-    }
-    if (trialActive) {
-      return "Δωρεάν δοκιμή 5 ημερών: όλες οι τάξεις (Β΄–Στ΄) και τρόποι εξάσκησης.";
-    }
-    if (trialExpired) {
-      return "Η δοκιμή έληξε. Δωρεάν: όλες οι τάξεις (Β΄–Στ΄). Premium: απεριόριστη εξάσκηση και όλοι οι τρόποι.";
-    }
-    return "Δωρεάν: όλες οι τάξεις (Β΄–Στ΄). Δοκιμή ή Premium για όλους τους τρόπους και απεριόριστη εξάσκηση.";
-  })();
 
   return (
     <main className="screen screen--home fade-in">
@@ -152,6 +143,18 @@ export function HomeScreen({
         )}
       </div>
 
+      {!needsSignIn && (
+        <div className="streak-strip" aria-label="Σερί και διακρίσεις">
+          <span className="streak-pill">
+            Σερί <strong>{streakCurrent}</strong>
+            {streakBest > 0 ? ` · ρεκόρ ${streakBest}` : ""}
+          </span>
+          <button type="button" className="streak-pill streak-pill--btn" onClick={onOpenReport}>
+            Αναφορά προόδου{badgeCount > 0 ? ` (${badgeCount})` : ""}
+          </button>
+        </div>
+      )}
+
       {!showFamilyProfiles && (
         <div className="grade-picker">
           <p className="section-label">Διάλεξε τάξη</p>
@@ -163,10 +166,10 @@ export function HomeScreen({
               const selected = selectedGrade === grade;
               const lockReason = needsSignIn
                 ? "Σύνδεση για εξάσκηση"
-                : !hasWords
-                  ? "Δεν υπάρχουν ακόμη λέξεις"
-                  : !planAllows
-                    ? "Διαθέσιμο με Premium"
+                : needsPurchase || !planAllows
+                  ? "Απαιτείται συνδρομή"
+                  : !hasWords
+                    ? "Δεν υπάρχουν ακόμη λέξεις"
                     : undefined;
               return (
                 <button
@@ -183,26 +186,28 @@ export function HomeScreen({
               );
             })}
           </div>
-          {tier === "free" && gradeHint ? <p className="hint-text">{gradeHint}</p> : null}
         </div>
       )}
 
       <div className="mode-picker">
         <p className="section-label section-label--strong">Τρόπος εξάσκησης</p>
-        <div className="mode-options">
-          {(Object.keys(MODE_LABELS) as GameMode[]).map((mode) => {
+        <div className="mode-options mode-options--many">
+          {MODE_ORDER.map((mode) => {
             const modeAllowed = canAccessMode(tier, mode, trialActive);
-            const allowed = modeAllowed && !needsSignIn;
+            const contentOk = modeAvailableForGrade(mode, gradeWords, families);
+            const allowed = modeAllowed && contentOk && !needsSignIn;
             const lockReason = needsSignIn
               ? "Σύνδεση για εξάσκηση"
-              : !modeAllowed
-                ? "Διαθέσιμο με Premium"
-                : undefined;
+              : needsPurchase || !modeAllowed
+                ? "Απαιτείται συνδρομή"
+                : !contentOk
+                  ? "Όχι αρκετές λέξεις σε αυτή την τάξη"
+                  : undefined;
             return (
               <button
                 key={mode}
                 type="button"
-                className={`mode-chip${gameMode === mode ? " mode-chip--active" : ""}${!allowed ? " mode-chip--locked" : ""}`}
+                className={`mode-chip mode-chip--compact${gameMode === mode ? " mode-chip--active" : ""}${!allowed ? " mode-chip--locked" : ""}`}
                 disabled={!allowed || subscriptionLoading}
                 onClick={() => allowed && onModeChange(mode)}
                 title={lockReason}
@@ -221,6 +226,10 @@ export function HomeScreen({
             Σύνδεση για να ξεκινήσεις
           </button>
         </SignInButton>
+      ) : needsPurchase ? (
+        <button type="button" className="btn btn-primary btn-start btn-start--pulse" onClick={onOpenPricing}>
+          {trialExpired ? "Αγόρασε για να συνεχίσεις" : "Αγορά συνδρομής"}
+        </button>
       ) : (
         <button
           type="button"
@@ -234,42 +243,25 @@ export function HomeScreen({
             onStart();
           }}
         >
-          {needsProfile
-            ? "Πρόσθεσε προφίλ παιδιού"
-            : dailyLimitReached
-              ? "Έφτασες το ημερήσιο όριο"
-              : "Ξεκινάμε"}
+          {needsProfile ? "Πρόσθεσε προφίλ παιδιού" : "Ξεκινάμε"}
         </button>
       )}
-      {practiceHomeHint && !needsSignIn && !dailyLimitReached && !needsProfile && (
+      {practiceHomeHint && !needsSignIn && !needsPurchase && !needsProfile && (
         <p className="hint-text practice-home-hint">{practiceHomeHint}</p>
       )}
-      {dailyLimitReached && tier === "free" && (
-        <button type="button" className="btn btn-secondary btn-start" onClick={onOpenPricing}>
-          Αναβάθμιση για απεριόριστη εξάσκηση
-        </button>
+      {needsPurchase && (
+        <p className="hint-text">
+          {trialExpired
+            ? "Η δωρεάν δοκιμή 5 ημερών έληξε. Η εξάσκηση συνεχίζεται μόνο με συνδρομή."
+            : "Η εξάσκηση είναι διαθέσιμη με δοκιμή ή συνδρομή."}
+        </p>
       )}
 
-      <div className="reward-panel">
-        <p className="section-label section-label--strong">Στόχος</p>
-        <p className="reward-score">
-          {activeChildName ? `${activeChildName}: ` : ""}
-          <strong>
-            {rewardPoints}/{rewardGoal}
-          </strong>{" "}
-          σωστές απαντήσεις
-        </p>
-        <div
-          className="reward-bar"
-          role="progressbar"
-          aria-valuenow={rewardPoints}
-          aria-valuemin={0}
-          aria-valuemax={rewardGoal}
-          aria-label="Πρόοδος στόχου"
-        >
-          <div className="reward-bar__fill" style={{ width: `${rewardPct}%` }} />
-        </div>
-      </div>
+      {!needsSignIn && !needsPurchase && (
+        <button type="button" className="btn btn-secondary btn-start" onClick={onOpenLexicon}>
+          Λεξικό μαθητή
+        </button>
+      )}
 
       <footer className="legal-footer">
         <a href="/privacy">Απορρήτο</a>

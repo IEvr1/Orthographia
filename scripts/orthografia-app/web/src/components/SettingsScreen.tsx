@@ -173,8 +173,11 @@ export function SettingsScreen({
       {tier === "free" && (
         <section className="settings-section">
           <p className="section-label">Συνδρομή</p>
+          <p className="hint-text">
+            Μετά τη δοκιμή 5 ημερών η εξάσκηση συνεχίζεται μόνο με συνδρομή.
+          </p>
           <button type="button" className="btn btn-secondary btn-xl settings-upgrade" onClick={onOpenPricing}>
-            Αναβάθμιση
+            Αγορά συνδρομής
           </button>
         </section>
       )}

@@ -57,7 +57,16 @@ export interface WordFamily {
 
 export type FamiliesPayload = Record<string, WordFamily>;
 
-export type GameMode = "sentence" | "choice";
+export type GameMode =
+  | "sentence"
+  | "choice"
+  | "dictation"
+  | "error-fix"
+  | "tonos"
+  | "family"
+  | "morphemes"
+  | "scramble"
+  | "matching";
 
 export interface WordsPayload {
   version: number;
@@ -100,6 +109,8 @@ export interface WordProgress {
   rewrites: number;
   /** FSRS scheduling snapshot */
   fsrs?: FsrsProgress;
+  /** Last error category when the learner got this word wrong. */
+  lastErrorCategory?: ErrorCategory;
 }
 
 export interface SessionSummary {
@@ -109,7 +120,15 @@ export interface SessionSummary {
   rewrites: number;
 }
 
-export type AppScreen = "home" | "settings" | "rule" | "exercise" | "summary" | "pricing";
+export type AppScreen =
+  | "home"
+  | "settings"
+  | "rule"
+  | "exercise"
+  | "summary"
+  | "pricing"
+  | "lexicon"
+  | "report";
 
 export interface DeclensionTables {
   tables: Record<string, string[]>;

@@ -15,6 +15,10 @@ from extract_textbook_g3 import OUTPUT_CSV as GRADE3_CSV
 from extract_textbook_g3 import append_textbooks_g3
 from extract_textbook_g4 import OUTPUT_CSV as GRADE4_CSV
 from extract_textbook_g4 import append_textbooks_g4
+from extract_textbook_g5 import OUTPUT_CSV as GRADE5_CSV
+from extract_textbook_g5 import append_textbooks_g5
+from extract_textbook_g6 import OUTPUT_CSV as GRADE6_CSV
+from extract_textbook_g6 import append_textbooks_g6
 from fix_hints import fix_words
 from import_helexkids import INPUTS_DIR, append_helexkids, count_by_grade
 from import_lexika import append_lexika, sync_families_and_rules
@@ -50,7 +54,11 @@ def main() -> None:
     words, tb2_counts, tb2_imported = append_textbooks(words, GRADE2_CSV)
     words, tb3_counts, tb3_imported = append_textbooks_g3(words, GRADE3_CSV)
     words, tb4_counts, tb4_imported = append_textbooks_g4(words, GRADE4_CSV)
-    tb_imported = tb2_imported + tb3_imported + tb4_imported
+    words, tb5_counts, tb5_imported = append_textbooks_g5(words, GRADE5_CSV)
+    words, tb6_counts, tb6_imported = append_textbooks_g6(words, GRADE6_CSV)
+    tb_imported = (
+        tb2_imported + tb3_imported + tb4_imported + tb5_imported + tb6_imported
+    )
     words, hk_counts, imported = append_helexkids(words, INPUTS_DIR)
     words, lx_counts, lx_imported = append_lexika(words)
     sync_families_and_rules()
@@ -82,10 +90,11 @@ def main() -> None:
         f"By grade: G2={by_grade[2]}, G3={by_grade[3]}, "
         f"G4={by_grade[4]}, G5={by_grade[5]}, G6={by_grade[6]}"
     )
-    if tb2_imported or tb3_imported or tb4_imported:
+    if tb_imported:
         print(
             f"Textbooks added: G2={tb2_counts.get(2, 0)}, "
-            f"G3={tb3_counts.get(3, 0)}, G4={tb4_counts.get(4, 0)}"
+            f"G3={tb3_counts.get(3, 0)}, G4={tb4_counts.get(4, 0)}, "
+            f"G5={tb5_counts.get(5, 0)}, G6={tb6_counts.get(6, 0)}"
         )
     if imported:
         print(

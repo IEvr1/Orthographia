@@ -1,4 +1,4 @@
-import type { WordProgress } from "../types";
+import type { ErrorCategory, WordProgress } from "../types";
 import {
   daysUntilDue,
   emptyFsrsSnapshot,
@@ -19,6 +19,12 @@ export interface ProgressStore {
   profileId?: string | null;
   /** Correct answers toward the current reward goal (per child / owner). */
   rewardPoints?: number;
+  /** Daily practice streak. */
+  streak?: { current: number; best: number; lastDate: string | null };
+  /** Unlocked badge ids. */
+  badges?: string[];
+  /** Counts of error categories for parent report. */
+  errorStats?: Partial<Record<ErrorCategory, number>>;
 }
 
 export function progressStorageKey(profileId?: string | null): string {
@@ -113,6 +119,7 @@ export function recordAttempt(
   wordId: string,
   correct: boolean,
   hadRewrite: boolean,
+  errorCategory?: ErrorCategory | null,
 ): ProgressStore {
   const next = { ...store, words: { ...store.words } };
   const prev = getWordProgress(next, wordId);
@@ -143,6 +150,9 @@ export function recordAttempt(
     updated.mastered = false;
     updated.needsReview = true;
     updated.intervalDays = 1;
+    if (errorCategory) {
+      updated.lastErrorCategory = errorCategory;
+    }
   }
 
   if (hadRewrite) {

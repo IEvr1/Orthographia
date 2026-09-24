@@ -235,6 +235,11 @@ def main() -> None:
         wav_out = AUDIO_DIR / f"{stem}.wav"
 
         if not args.force and audio_exists(stem):
+            # Keep web/ in sync when the file only lives under outputs/audio.
+            if (AUDIO_DIR / f"{stem}.mp3").exists() and not (WEB_AUDIO / f"{stem}.mp3").exists():
+                copy_audio_to_web(stem, ".mp3")
+            elif (AUDIO_DIR / f"{stem}.wav").exists() and not (WEB_AUDIO / f"{stem}.wav").exists():
+                copy_audio_to_web(stem, ".wav")
             ok_count += 1
             continue
 

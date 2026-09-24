@@ -174,7 +174,7 @@ export function PricingScreen({
                 <SignedOut>
                   <SignInButton mode="modal">
                     <button type="button" className="btn btn-secondary btn-xl">
-                      Σύνδεση για δοκιμή ή αγορά
+                      Σύνδεση
                     </button>
                   </SignInButton>
                 </SignedOut>

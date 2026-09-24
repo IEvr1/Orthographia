@@ -8,7 +8,8 @@ import json
 from pathlib import Path
 from typing import Any
 
-from contextual_hint import generate_contextual_hint, is_garbled_hint
+from contextual_hint import GARBLED_MARKERS, generate_contextual_hint, is_garbled_hint
+from fix_hints import mask_word_in_hint
 from spelling_fixes import apply_spelling_fix, load_spelling_fixes
 from hint_generator import generate_hint, is_generic_hint, is_homophone_prone, load_overrides
 from import_helexkids import (
@@ -28,7 +29,8 @@ WEB_CONTENT = PIPELINE.parent / "web" / "public" / "content"
 FAMILIES_SRC = LEXIKA_DIR / "families.json"
 RULES_SRC = LEXIKA_DIR / "rules_snippets.json"
 
-CAPS = {2: 90, 3: 90, 4: 80, 5: 100, 6: 120}
+# Caps after canvas review (ABC cleaned · DE/ST curated)
+CAPS = {2: 180, 3: 180, 4: 100, 5: 100, 6: 200}
 
 
 def load_lexika_rows(input_dir: Path = LEXIKA_DIR) -> list[dict[str, Any]]:
@@ -108,8 +110,25 @@ def build_lexika_entries(
             counters[grade] += 1
             morphemes = guess_morphemes(row["word"])
             raw_hint = (row.get("hint") or "").strip()
+            root = morphemes.get("root")
+            # Full curated sentences lack ___; is_garbled_hint treats those as bad.
+            # Mask the headword first, then fall back to generators.
             if raw_hint and "___" in raw_hint and not is_garbled_hint(raw_hint):
                 hint = raw_hint
+            elif (
+                raw_hint
+                and not is_generic_hint(raw_hint)
+                and not GARBLED_MARKERS.search(raw_hint)
+                and len(raw_hint.strip()) >= 12
+            ):
+                masked = mask_word_in_hint(raw_hint, row["word"], root)
+                hint = (
+                    masked
+                    if "___" in masked
+                    else generate_contextual_hint(
+                        row["word"], pos=row.get("pos", "noun"), index=i
+                    )
+                )
             elif is_generic_hint(raw_hint) or is_garbled_hint(raw_hint):
                 hint = generate_contextual_hint(row["word"], pos=row.get("pos", "noun"), index=i)
             else:

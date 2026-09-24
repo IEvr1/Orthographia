@@ -21,6 +21,7 @@ export function incrementDailySessionCount(): void {
 }
 
 export function canStartDailySession(isPaid: boolean, limit = 1): boolean {
+  if (import.meta.env.DEV) return true;
   if (isPaid) return true;
   return getDailySessionCount() < limit;
 }
