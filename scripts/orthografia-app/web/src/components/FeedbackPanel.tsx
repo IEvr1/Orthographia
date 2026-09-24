@@ -62,9 +62,6 @@ export function FeedbackPanel({
 
   return (
     <div className="feedback feedback--error shake-in" role="alert">
-      <span className="feedback-icon" aria-hidden="true">
-        !
-      </span>
       <p className="feedback-title">
         {mode === "rewrite" ? "Γράψε τη σωστή λέξη" : "Όχι ακριβώς…"}
       </p>
