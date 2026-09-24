@@ -1,5 +1,6 @@
 import type { VercelRequest, VercelResponse } from "@vercel/node";
 import { requireAuth } from "../../server/auth.js";
+import { cors } from "../../server/cors.js";
 import { ensureSchema } from "../../server/db.js";
 import { isSuperAdmin } from "../../server/superAdmin.js";
 import { maxProfilesForPlan } from "../../server/stripe.js";
@@ -46,12 +47,6 @@ function parseJsonBody(raw: unknown): Record<string, unknown> {
     return raw as Record<string, unknown>;
   }
   return {};
-}
-
-function cors(res: VercelResponse): void {
-  res.setHeader("Access-Control-Allow-Origin", "*");
-  res.setHeader("Access-Control-Allow-Methods", "GET, POST, DELETE, OPTIONS");
-  res.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization");
 }
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
@@ -157,14 +152,16 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
         return res.status(400).json({ error: "Επίλεξε τάξη από Β΄ έως Στ΄." });
       }
 
-      const isNew = !id;
-      if (isNew && profiles.length >= maxProfiles) {
+      // Treat as update only when the id already belongs to this user.
+      // Client-supplied unknown UUIDs must not bypass the profile cap.
+      const existing = id ? profiles.find((p) => p.id === id) : undefined;
+      if (!existing && profiles.length >= maxProfiles) {
         return res.status(403).json({ error: "Έφτασες το όριο προφίλ." });
       }
 
       const profile = await upsertChildProfile({
         userId: auth.userId,
-        id,
+        id: existing?.id,
         name,
         grade,
         sortOrder,

@@ -11,9 +11,9 @@
 | `VITE_CLERK_PUBLISHABLE_KEY` | Clerk Dashboard → API Keys |
 | `STRIPE_SECRET_KEY` | Stripe Dashboard → Developers → API keys |
 | `STRIPE_WEBHOOK_SECRET` | Stripe → Webhooks (μετά τη δημιουργία endpoint) |
-| `STRIPE_PRICE_MONTHLY` | Stripe Product price ID (€4,90/μήνα) |
-| `STRIPE_PRICE_YEARLY` | Stripe Product price ID (€39/έτος) |
-| `STRIPE_PRICE_FAMILY_YEARLY` | Stripe Product price ID (€59/έτος) |
+| `STRIPE_PRICE_MONTHLY` | Stripe Product price ID (€5,90/μήνα) |
+| `STRIPE_PRICE_YEARLY` | Stripe Product price ID (€49/έτος) |
+| `STRIPE_PRICE_FAMILY_YEARLY` | Stripe Product price ID (€69/έτος) |
 | `SUPER_ADMIN_EMAIL` | Email με πλήρη πρόσβαση (server API) |
 | `VITE_SUPER_ADMIN_EMAIL` | Ίδιο email για client-side badge/έλεγχο |
 | `RESEND_API_KEY` | Resend API key για φόρμα επικοινωνίας |
@@ -25,9 +25,9 @@
 ## Stripe Dashboard — checklist
 
 1. **Products & Prices** (λειτουργία Subscriptions):
-   - «Premium Child Monthly» — €4,90 / month recurring
-   - «Premium Child Yearly» — €39 / year recurring
-   - «Family Yearly» — €59 / year recurring
+   - «Premium Child Monthly» — €5,90 / month recurring
+   - «Premium Child Yearly» — €49 / year recurring
+   - «Family Yearly» — €69 / year recurring
 2. Αντιγράψε τα `price_…` IDs στα env vars παραπάνω.
 3. **Webhooks** → Add endpoint:
    - URL: `https://<your-vercel-domain>/api/stripe/webhook`

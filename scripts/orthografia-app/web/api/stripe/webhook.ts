@@ -1,6 +1,6 @@
 import type { VercelRequest, VercelResponse } from "@vercel/node";
 import Stripe from "stripe";
-import { ensureSchema } from "../../server/db.js";
+import { ensureSchema, getSql } from "../../server/db.js";
 import {
   cancelSubscription,
   ensureUser,
@@ -36,9 +36,47 @@ function clerkUserIdFromCustomer(
   return customer.metadata?.clerkUserId ?? null;
 }
 
+function stripeCustomerId(
+  customer: string | Stripe.Customer | Stripe.DeletedCustomer | null
+): string | null {
+  if (!customer) return null;
+  if (typeof customer === "string") return customer;
+  if (customer.deleted) return customer.id;
+  return customer.id;
+}
+
+async function userIdFromCustomerId(customerId: string): Promise<string | null> {
+  const sql = getSql();
+  const rows = await sql`
+    SELECT user_id FROM users WHERE stripe_customer_id = ${customerId}
+  `;
+  return (rows[0]?.user_id as string | undefined) ?? null;
+}
+
+async function resolveClerkUserId(subscription: Stripe.Subscription): Promise<string | null> {
+  if (subscription.metadata.clerkUserId) return subscription.metadata.clerkUserId;
+
+  const fromExpanded = clerkUserIdFromCustomer(subscription.customer);
+  if (fromExpanded) return fromExpanded;
+
+  const customerId = stripeCustomerId(subscription.customer);
+  if (customerId) return userIdFromCustomerId(customerId);
+
+  return null;
+}
+
+function subscriptionPeriodEnd(subscription: Stripe.Subscription): number | null {
+  const item = subscription.items.data[0] as
+    | (Stripe.SubscriptionItem & { current_period_end?: number })
+    | undefined;
+  if (typeof item?.current_period_end === "number") return item.current_period_end;
+  const subEnd = (subscription as Stripe.Subscription & { current_period_end?: number })
+    .current_period_end;
+  return typeof subEnd === "number" ? subEnd : null;
+}
+
 async function syncSubscription(subscription: Stripe.Subscription): Promise<void> {
-  const userId =
-    subscription.metadata.clerkUserId ?? clerkUserIdFromCustomer(subscription.customer);
+  const userId = await resolveClerkUserId(subscription);
 
   if (!userId) {
     console.warn("[stripe/webhook] missing clerkUserId on subscription", subscription.id);
@@ -49,7 +87,7 @@ async function syncSubscription(subscription: Stripe.Subscription): Promise<void
   const priceId = item?.price.id;
   if (!priceId) return;
 
-  const periodEnd = item?.current_period_end;
+  const periodEnd = subscriptionPeriodEnd(subscription);
   await ensureUser(userId, null);
   await upsertSubscriptionFromStripe({
     userId,
@@ -100,8 +138,14 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       }
       case "customer.subscription.deleted": {
         const subscription = event.data.object as Stripe.Subscription;
-        const userId = subscription.metadata.clerkUserId;
+        const userId = await resolveClerkUserId(subscription);
         if (userId) await cancelSubscription(userId);
+        else {
+          console.warn(
+            "[stripe/webhook] missing clerkUserId on deleted subscription",
+            subscription.id,
+          );
+        }
         break;
       }
       default:

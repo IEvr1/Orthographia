@@ -2,15 +2,7 @@ import type { VercelRequest, VercelResponse } from "@vercel/node";
 import { ensureSchema, getSql } from "../../server/db.js";
 import { sendResendEmail } from "../../server/email.js";
 import { listChildProfiles } from "../../server/subscriptions.js";
-import { buildWeeklyEmail } from "../../server/weeklySummary.js";
-
-type ProgressBlob = {
-  words?: Record<string, unknown>;
-  streak?: { current?: number; best?: number };
-  errorStats?: Record<string, number>;
-  lastSessionDate?: string | null;
-  badges?: string[];
-};
+import { buildWeeklyEmail, type ProgressBlob } from "../../server/weeklySummary.js";
 
 function authorizeCron(req: VercelRequest): boolean {
   const secret = process.env.CRON_SECRET?.trim();

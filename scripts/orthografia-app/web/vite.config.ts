@@ -37,11 +37,12 @@ export default defineConfig({
         globPatterns: ["**/*.{js,css,html,json,mp3,wav,png,svg}"],
         runtimeCaching: [
           {
+            // Prefer network so content deploys (words.json / audio) aren't stuck for a year.
             urlPattern: /\/content\/.*/i,
-            handler: "CacheFirst",
+            handler: "StaleWhileRevalidate",
             options: {
               cacheName: "orthografia-content",
-              expiration: { maxEntries: 200, maxAgeSeconds: 60 * 60 * 24 * 365 },
+              expiration: { maxEntries: 500, maxAgeSeconds: 60 * 60 * 24 * 7 },
             },
           },
         ],

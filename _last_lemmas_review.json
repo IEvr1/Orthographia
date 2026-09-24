@@ -1,0 +1,67 @@
+{
+  "added": [
+    {
+      "word": "απόστολος",
+      "grade": 4,
+      "hint": "Ο ___ ταξίδεψε σε πολλές χώρες.",
+      "pos": "noun",
+      "id": "lx-g4-0170",
+      "audio": "apostolos.mp3",
+      "audioOk": true
+    },
+    {
+      "word": "Γιάννης",
+      "grade": 2,
+      "hint": "Ο ___ είναι ο καλύτερός μου φίλος.",
+      "pos": "noun",
+      "id": "lx-g2-0419",
+      "audio": "giannis.mp3",
+      "audioOk": true
+    },
+    {
+      "word": "θεός",
+      "grade": 3,
+      "hint": "Στην αρχαία Ελλάδα πίστευαν σε κάθε ___.",
+      "pos": "noun",
+      "id": "lx-g3-0286",
+      "audio": "theos.mp3",
+      "audioOk": true
+    },
+    {
+      "word": "ουσιαστικό",
+      "grade": 4,
+      "hint": "Η λέξη «τραπέζι» είναι ___.",
+      "pos": "noun",
+      "id": "lx-g4-0171",
+      "audio": "ousiastiko.mp3",
+      "audioOk": true
+    },
+    {
+      "word": "παγώνι",
+      "grade": 3,
+      "hint": "Το ___ άνοιξε την ουρά του.",
+      "pos": "noun",
+      "id": "lx-g3-0287",
+      "audio": "pagoni.mp3",
+      "audioOk": true
+    },
+    {
+      "word": "πεπόνι",
+      "grade": 2,
+      "hint": "Το καλοκαίρι τρώω γλυκό ___.",
+      "pos": "noun",
+      "id": "lx-g2-0420",
+      "audio": "peponi.mp3",
+      "audioOk": true
+    },
+    {
+      "word": "πρωινό",
+      "grade": 2,
+      "hint": "Το ___ μου είναι γάλα και ψωμί.",
+      "pos": "noun",
+      "id": "lx-g2-0421",
+      "audio": "proino.mp3",
+      "audioOk": true
+    }
+  ]
+}

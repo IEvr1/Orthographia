@@ -1,38 +1,49 @@
-﻿word,grade,pos,hint,definition,family,synonyms,source,difficulty
-αΰπνία,5,noun,Συμπληρώνουμε με τη λέξη ___.,,,,mathima-orthografias,2
-αλλαντοπώλης,5,noun,Συμπληρώνουμε με τη λέξη ___.,,,,mathima-orthografias,3
-ανθοπώλης,5,noun,Συμπληρώνουμε με τη λέξη ___.,,,,mathima-orthografias,2
-αρτοπώλης,5,noun,Συμπληρώνουμε με τη λέξη ___.,,,,mathima-orthografias,2
-αρχαιοπώλης,5,noun,Συμπληρώνουμε με τη λέξη ___.,,,,mathima-orthografias,3
-αρωματοπώλης,5,noun,Συμπληρώνουμε με τη λέξη ___.,,,,mathima-orthografias,3
-βουτυροπώλης,5,noun,Συμπληρώνουμε με τη λέξη ___.,,,,mathima-orthografias,3
-γαλακτοπώλης,5,noun,Συμπληρώνουμε με τη λέξη ___.,,,,mathima-orthografias,3
-γεωμετρία,5,noun,Συμπληρώνουμε με τη λέξη ___.,,,,mathima-orthografias,2
-γεωπόνος,5,noun,Συμπληρώνουμε με τη λέξη ___.,,,,mathima-orthografias,2
-διαγώνισμα,5,noun,Συμπληρώνουμε με τη λέξη ___.,,,,mathima-orthografias,3
-ελικόπτερο,5,noun,Συμπληρώνουμε με τη λέξη ___.,,,,mathima-orthografias,3
-ενέργεια,5,noun,Συμπληρώνουμε με τη λέξη ___.,,,,mathima-orthografias,2
-ενενηκοστό,5,noun,Συμπληρώνουμε με τη λέξη ___.,,,,mathima-orthografias,3
-θεραπεία,5,noun,Συμπληρώνουμε με τη λέξη ___.,,,,mathima-orthografias,2
-ιχθυοπώλης,5,noun,Συμπληρώνουμε με τη λέξη ___.,,,,mathima-orthografias,3
-καλοκαιρινός,5,noun,Συμπληρώνουμε με τη λέξη ___.,,,,mathima-orthografias,3
-καπνοπώλης,5,noun,Συμπληρώνουμε με τη λέξη ___.,,,,mathima-orthografias,3
-κασετόφωνο,5,noun,Συμπληρώνουμε με τη λέξη ___.,,,,mathima-orthografias,3
-καφεπώλης,5,noun,Συμπληρώνουμε με τη λέξη ___.,,,,mathima-orthografias,2
-κοσμηματοπώλης,5,noun,Συμπληρώνουμε με τη λέξη ___.,,,,mathima-orthografias,3
-κρεοπώλης,5,noun,Συμπληρώνουμε με τη λέξη ___.,,,,mathima-orthografias,2
-κυκλοφορία,5,noun,Συμπληρώνουμε με τη λέξη ___.,,,,mathima-orthografias,3
-λαχανοπώλης,5,noun,Συμπληρώνουμε με τη λέξη ___.,,,,mathima-orthografias,3
-λειτουργία,5,noun,Συμπληρώνουμε με τη λέξη ___.,,,,mathima-orthografias,3
-νομισματοπώλης,5,noun,Συμπληρώνουμε με τη λέξη ___.,,,,mathima-orthografias,3
-οινοπώλης,5,noun,Συμπληρώνουμε με τη λέξη ___.,,,,mathima-orthografias,2
-οπωροπώλης,5,noun,Συμπληρώνουμε με τη λέξη ___.,,,,mathima-orthografias,3
-παγοπώλης,5,noun,Συμπληρώνουμε με τη λέξη ___.,,,,mathima-orthografias,2
-παλαιοπώλης,5,noun,Συμπληρώνουμε με τη λέξη ___.,,,,mathima-orthografias,3
-παντοπώλης,5,noun,Συμπληρώνουμε με τη λέξη ___.,,,,mathima-orthografias,3
-περιστατικό,5,adj,Συμπληρώνουμε με το επίθετο ___.,,,,mathima-orthografias,3
-πολυκατοικία,5,noun,Συμπληρώνουμε με τη λέξη ___.,,,,mathima-orthografias,3
-σιδηροπώλης,5,noun,Συμπληρώνουμε με τη λέξη ___.,,,,mathima-orthografias,3
-τυροπώλης,5,noun,Συμπληρώνουμε με τη λέξη ___.,,,,mathima-orthografias,2
-υποδηματοπώλης,5,noun,Συμπληρώνουμε με τη λέξη ___.,,,,mathima-orthografias,3
-χαρτοπώλης,5,noun,Συμπληρώνουμε με τη λέξη ___.,,,,mathima-orthografias,3
+word,grade,pos,hint,definition,family,synonyms,source,difficulty
+αΰπνία,5,noun,Η ___ τον κρατά ξύπνιο τη νύχτα.,,,,mathima-orthografias,2
+αλλαντοπώλης,5,noun,Ο ___ πουλάει αλλαντικά.,,,,mathima-orthografias,3
+ανθοπώλης,5,noun,Ο ___ στόλισε με λουλούδια.,,,,mathima-orthografias,2
+αρτοπώλης,5,noun,Ο ___ πουλάει φρέσκο ψωμί.,,,,mathima-orthografias,2
+αρχαιοπώλης,5,noun,Χωρίς τον ___ δεν ολοκληρώνεται η πρόταση.,,,,mathima-orthografias,3
+αρωματοπώλης,5,noun,Περιγράψαμε τον ___ στην έκθεση.,,,,mathima-orthografias,3
+βουτυροπώλης,5,noun,Στην εικόνα βλέπω έναν ___.,,,,mathima-orthografias,3
+γαλακτοπώλης,5,noun,Στο μάθημα μιλήσαμε για τον ___.,,,,mathima-orthografias,3
+γεωμετρία,5,noun,Στη ___ μαθαίνουμε σχήματα.,,,,mathima-orthografias,2
+γεωπόνος,5,noun,Ο ___ συμβουλεύει τους αγρότες.,,,,mathima-orthografias,2
+διαγώνισμα,5,noun,Αύριο έχουμε ___ μαθηματικών.,,,,mathima-orthografias,3
+ελικόπτερο,5,noun,Το ___ προσγειώθηκε στο γήπεδο.,,,,mathima-orthografias,3
+ενέργεια,5,noun,Χρειαζόμαστε ___ για να τρέξουμε.,,,,mathima-orthografias,2
+ενενηκοστό,5,noun,Στο μάθημα μιλήσαμε για το ___.,,,,mathima-orthografias,3
+θεραπεία,5,noun,Ακολούθησε τη ___ του γιατρού.,,,,mathima-orthografias,2
+ιχθυοπώλης,5,noun,Έμαθα τι σημαίνει η λέξη ___.,,,,mathima-orthografias,3
+καλοκαιρινός,5,adj,Νιώθω ___ όταν το σκέφτομαι.,,,,mathima-orthografias,3
+καπνοπώλης,5,noun,Περιγράψαμε τον ___ στην έκθεση.,,,,mathima-orthografias,3
+κασετόφωνο,5,noun,Άκουσα μουσική από το ___.,,,,mathima-orthografias,3
+καφεπώλης,5,noun,Στο μάθημα μιλήσαμε για τον ___.,,,,mathima-orthografias,2
+κοσμηματοπώλης,5,noun,Ο ___ παίζει σημαντικό ρόλο στην ιστορία.,,,,mathima-orthografias,3
+κρεοπώλης,5,noun,Έμαθα τι σημαίνει η λέξη ___.,,,,mathima-orthografias,2
+κυκλοφορία,5,noun,Η ___ στον δρόμο είναι πυκνή.,,,,mathima-orthografias,3
+λαχανοπώλης,5,noun,Περιγράψαμε τον ___ στην έκθεση.,,,,mathima-orthografias,3
+λειτουργία,5,noun,Η ___ της μηχανής είναι απλή.,,,,mathima-orthografias,3
+νομισματοπώλης,5,noun,Στο μάθημα μιλήσαμε για τον ___.,,,,mathima-orthografias,3
+οινοπώλης,5,noun,Ο ___ παίζει σημαντικό ρόλο στην ιστορία.,,,,mathima-orthografias,2
+οπωροπώλης,5,noun,Έμαθα τι σημαίνει η λέξη ___.,,,,mathima-orthografias,3
+παγοπώλης,5,noun,Χωρίς τον ___ δεν ολοκληρώνεται η πρόταση.,,,,mathima-orthografias,2
+παλαιοπώλης,5,noun,Περιγράψαμε τον ___ στην έκθεση.,,,,mathima-orthografias,3
+παντοπώλης,5,noun,Στην εικόνα βλέπω έναν ___.,,,,mathima-orthografias,3
+περιστατικό,5,adj,Το αποτέλεσμα ήταν ___.,,,,mathima-orthografias,3
+πολυκατοικία,5,noun,Μένουμε σε μεγάλη ___.,,,,mathima-orthografias,3
+σιδηροπώλης,5,noun,Έμαθα τι σημαίνει η λέξη ___.,,,,mathima-orthografias,3
+τυροπώλης,5,noun,Χωρίς τον ___ δεν ολοκληρώνεται η πρόταση.,,,,mathima-orthografias,2
+υποδηματοπώλης,5,noun,Περιγράψαμε τον ___ στην έκθεση.,,,,mathima-orthografias,3
+χαρτοπώλης,5,noun,Στην εικόνα βλέπω έναν ___.,,,,mathima-orthografias,3
+γελοιοποιώ,5,verb,Δεν πρέπει να ___ τους συμμαθητές μας.,,,,mathima-orthografias-verbs,3
+διαφοροποιώ,5,verb,___ τη λύση μου από τις άλλες.,,,,mathima-orthografias-verbs,3
+ικανοποιώ,5,verb,Θέλω να ___ τους γονείς μου με τους βαθμούς.,,,,mathima-orthografias-verbs,2
+κακοποιώ,5,verb,Είναι λάθος να ___ τα ζώα.,,,,mathima-orthografias-verbs,3
+μεγαλοποιώ,5,verb,Μην ___ το πρόβλημα χωρίς λόγο.,,,,mathima-orthografias-verbs,3
+πολτοποιώ,5,verb,___ τις ντομάτες για τη σάλτσα.,,,,mathima-orthografias-verbs,3
+προσποιούμαι,5,verb,Μην ___ ότι δεν άκουσες.,,,,mathima-orthografias-verbs,3
+προσωποποιώ,5,verb,Στο ποίημα ___ τον άνεμο.,,,,mathima-orthografias-verbs,3
+συνειδητοποιώ,5,verb,___ πόσο σημαντικό είναι να διαβάζω.,,,,mathima-orthografias-verbs,3
+τελειοποιώ,5,verb,Προσπαθώ να ___ την τεχνική μου.,,,,mathima-orthografias-verbs,3
+περιποιούμαι,5,verb,___ τον κήπο κάθε Σάββατο.,,,,mathima-orthografias-verbs,2

@@ -16,8 +16,8 @@ export function verifyUnsubscribeToken(userId: string, token: string): boolean {
   if (!userId || !token || token.length < 16) return false;
   const expected = makeUnsubscribeToken(userId);
   try {
-    const a = Buffer.from(expected);
-    const b = Buffer.from(token);
+    const a = new Uint8Array(Buffer.from(expected));
+    const b = new Uint8Array(Buffer.from(token));
     if (a.length !== b.length) return false;
     return timingSafeEqual(a, b);
   } catch {
@@ -38,7 +38,7 @@ export function unsubscribeUrl(userId: string): string {
   return `${appBaseUrl()}/api/preferences/unsubscribe?u=${encodeURIComponent(userId)}&t=${encodeURIComponent(t)}`;
 }
 
-type ProgressBlob = {
+export type ProgressBlob = {
   words?: Record<
     string,
     {

@@ -122,7 +122,7 @@ npm run dev
 
 ### Συνδρομές (Stripe)
 
-Πλάνα: **€39/έτος** ή **€4,90/μήνα** ανά παιδί, **€59/έτος** οικογενειακό (2–3 παιδιά).
+Πλάνα: **€49/έτος** ή **€5,90/μήνα** ανά παιδί, **€69/έτος** οικογενειακό (2–3 παιδιά).
 
 **1. Stripe Dashboard**
 
@@ -137,9 +137,9 @@ npm run dev
 |-----------|-----------|
 | `STRIPE_SECRET_KEY` | Secret key |
 | `STRIPE_WEBHOOK_SECRET` | Webhook signing secret |
-| `STRIPE_PRICE_MONTHLY` | €4,90/μήνα |
-| `STRIPE_PRICE_YEARLY` | €39/έτος |
-| `STRIPE_PRICE_FAMILY_YEARLY` | €59/έτος |
+| `STRIPE_PRICE_MONTHLY` | €5,90/μήνα |
+| `STRIPE_PRICE_YEARLY` | €49/έτος |
+| `STRIPE_PRICE_FAMILY_YEARLY` | €69/έτος |
 
 **3. Schema βάσης**
 

@@ -1,12 +1,7 @@
 import type { VercelRequest, VercelResponse } from "@vercel/node";
 import { canAccessOwner, isValidOwnerId } from "../../server/auth.js";
+import { cors } from "../../server/cors.js";
 import { ensureSchema, getSql } from "../../server/db.js";
-
-function cors(res: VercelResponse): void {
-  res.setHeader("Access-Control-Allow-Origin", "*");
-  res.setHeader("Access-Control-Allow-Methods", "GET, PUT, OPTIONS");
-  res.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization");
-}
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
   cors(res);

@@ -52,10 +52,12 @@ function mergeErrorStats(
   a?: ProgressStore["errorStats"],
   b?: ProgressStore["errorStats"],
 ): ProgressStore["errorStats"] {
+  // Take the max per category — summing would double-count on repeated sign-in merges
+  // when local and remote already reflect the same practice history.
   const out: ProgressStore["errorStats"] = { ...(a ?? {}) };
   for (const [k, v] of Object.entries(b ?? {})) {
     const key = k as keyof NonNullable<ProgressStore["errorStats"]>;
-    out[key] = (out[key] ?? 0) + (v ?? 0);
+    out[key] = Math.max(out[key] ?? 0, v ?? 0);
   }
   return out;
 }

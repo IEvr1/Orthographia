@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "vite",
     "dev:api": "vercel dev",
-    "build": "tsc --noEmit && vite build",
+    "build": "tsc --noEmit && tsc --noEmit -p tsconfig.server.json && vite build",
+    "typecheck": "tsc --noEmit && tsc --noEmit -p tsconfig.server.json",
+    "verify": "node scripts/verify-access.mjs && node scripts/verify-modes.mjs && node scripts/verify-merge.mjs",
     "preview": "vite preview",
     "db:init": "node scripts/init-db.mjs"
   },

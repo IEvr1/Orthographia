@@ -26,7 +26,7 @@ const PLANS: Array<{
   {
     id: "yearly",
     title: "Premium — 1 παιδί",
-    price: "€39",
+    price: "€49",
     period: "/ έτος",
     highlight: true,
     features: [
@@ -39,7 +39,7 @@ const PLANS: Array<{
   {
     id: "monthly",
     title: "Premium — μηνιαία",
-    price: "€4,90",
+    price: "€5,90",
     period: "/ μήνα",
     features: [
       "Ίδια δυνατότητες με το ετήσιο",
@@ -49,7 +49,7 @@ const PLANS: Array<{
   {
     id: "family",
     title: "Οικογενειακό (2–3 παιδιά)",
-    price: "€59",
+    price: "€69",
     period: "/ έτος",
     features: [
       "Έως 3 προφίλ παιδιών",

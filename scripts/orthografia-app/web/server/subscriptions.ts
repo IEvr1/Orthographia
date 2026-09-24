@@ -1,3 +1,4 @@
+import { randomUUID } from "node:crypto";
 import { getSql } from "./db.js";
 import { maxProfilesForPlan, planTypeForPrice } from "./stripe.js";
 import { buildTrialInfo, parseTrialStartedAt, type TrialInfo } from "./trial.js";
@@ -159,14 +160,27 @@ export async function upsertChildProfile(params: {
   sortOrder: number;
 }): Promise<ChildProfileRow> {
   const sql = getSql();
-  const id = params.id ?? crypto.randomUUID();
+
+  // Update existing profile — only if it belongs to this user (prevents IDOR).
+  if (params.id) {
+    const updated = await sql`
+      UPDATE child_profiles SET
+        name = ${params.name},
+        grade = ${params.grade},
+        sort_order = ${params.sortOrder}
+      WHERE id = ${params.id} AND user_id = ${params.userId}
+      RETURNING id, user_id, name, grade, sort_order
+    `;
+    if (updated.length > 0) {
+      return updated[0] as ChildProfileRow;
+    }
+    // Unknown or foreign id — fall through to create with a fresh id (never reuse foreign PK).
+  }
+
+  const id = randomUUID();
   await sql`
     INSERT INTO child_profiles (id, user_id, name, grade, sort_order)
     VALUES (${id}, ${params.userId}, ${params.name}, ${params.grade}, ${params.sortOrder})
-    ON CONFLICT (id) DO UPDATE SET
-      name = EXCLUDED.name,
-      grade = EXCLUDED.grade,
-      sort_order = EXCLUDED.sort_order
   `;
   const rows = await sql`
     SELECT id, user_id, name, grade, sort_order

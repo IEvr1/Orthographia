@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "drills": [
     {
       "id": "drill-ending-o-omega-001",
@@ -3438,6 +3438,3033 @@
       ],
       "answer": "φωτεινό",
       "feedback": "φωτεινός γράφεται με ει."
+    },
+    {
+      "id": "drill-ending-i-y-001",
+      "kind": "ending",
+      "grades": [
+        2,
+        3,
+        4
+      ],
+      "ruleId": "ending-i-y",
+      "instruction": "Συμπλήρωσε -ι ή -υ.",
+      "prompt": "δάκρ____",
+      "options": [
+        "ι",
+        "υ"
+      ],
+      "answer": "υ",
+      "feedback": "Ουδέτερα σε -ι (χέρι, αγόρι) · λίγα ουδέτερα σε -υ (δάκρυ, δόρυ, δίχτυ, στάχυ, οξύ, βράδυ).",
+      "prefix": "το"
+    },
+    {
+      "id": "drill-ending-i-y-002",
+      "kind": "ending",
+      "grades": [
+        2,
+        3,
+        4
+      ],
+      "ruleId": "ending-i-y",
+      "instruction": "Συμπλήρωσε -ι ή -υ.",
+      "prompt": "αγόρ____",
+      "options": [
+        "ι",
+        "υ"
+      ],
+      "answer": "ι",
+      "feedback": "Ουδέτερα σε -ι (χέρι, αγόρι) · λίγα ουδέτερα σε -υ (δάκρυ, δόρυ, δίχτυ, στάχυ, οξύ, βράδυ).",
+      "prefix": "το"
+    },
+    {
+      "id": "drill-ending-i-y-003",
+      "kind": "ending",
+      "grades": [
+        2,
+        3,
+        4
+      ],
+      "ruleId": "ending-i-y",
+      "instruction": "Συμπλήρωσε -ι ή -υ.",
+      "prompt": "δόρ____",
+      "options": [
+        "ι",
+        "υ"
+      ],
+      "answer": "υ",
+      "feedback": "Ουδέτερα σε -ι (χέρι, αγόρι) · λίγα ουδέτερα σε -υ (δάκρυ, δόρυ, δίχτυ, στάχυ, οξύ, βράδυ).",
+      "prefix": "το"
+    },
+    {
+      "id": "drill-ending-i-y-004",
+      "kind": "ending",
+      "grades": [
+        2,
+        3,
+        4
+      ],
+      "ruleId": "ending-i-y",
+      "instruction": "Συμπλήρωσε -ι ή -υ.",
+      "prompt": "χέρ____",
+      "options": [
+        "ι",
+        "υ"
+      ],
+      "answer": "ι",
+      "feedback": "Ουδέτερα σε -ι (χέρι, αγόρι) · λίγα ουδέτερα σε -υ (δάκρυ, δόρυ, δίχτυ, στάχυ, οξύ, βράδυ).",
+      "prefix": "το"
+    },
+    {
+      "id": "drill-ending-i-y-005",
+      "kind": "ending",
+      "grades": [
+        2,
+        3,
+        4
+      ],
+      "ruleId": "ending-i-y",
+      "instruction": "Συμπλήρωσε -ι ή -υ.",
+      "prompt": "δίχτ____",
+      "options": [
+        "ι",
+        "υ"
+      ],
+      "answer": "υ",
+      "feedback": "Ουδέτερα σε -ι (χέρι, αγόρι) · λίγα ουδέτερα σε -υ (δάκρυ, δόρυ, δίχτυ, στάχυ, οξύ, βράδυ).",
+      "prefix": "το"
+    },
+    {
+      "id": "drill-ending-i-y-006",
+      "kind": "ending",
+      "grades": [
+        2,
+        3,
+        4
+      ],
+      "ruleId": "ending-i-y",
+      "instruction": "Συμπλήρωσε -ι ή -υ.",
+      "prompt": "μολύβ____",
+      "options": [
+        "ι",
+        "υ"
+      ],
+      "answer": "ι",
+      "feedback": "Ουδέτερα σε -ι (χέρι, αγόρι) · λίγα ουδέτερα σε -υ (δάκρυ, δόρυ, δίχτυ, στάχυ, οξύ, βράδυ).",
+      "prefix": "το"
+    },
+    {
+      "id": "drill-ending-i-y-007",
+      "kind": "ending",
+      "grades": [
+        2,
+        3,
+        4
+      ],
+      "ruleId": "ending-i-y",
+      "instruction": "Συμπλήρωσε -ι ή -υ.",
+      "prompt": "στάχ____",
+      "options": [
+        "ι",
+        "υ"
+      ],
+      "answer": "υ",
+      "feedback": "Ουδέτερα σε -ι (χέρι, αγόρι) · λίγα ουδέτερα σε -υ (δάκρυ, δόρυ, δίχτυ, στάχυ, οξύ, βράδυ).",
+      "prefix": "το"
+    },
+    {
+      "id": "drill-ending-i-y-008",
+      "kind": "ending",
+      "grades": [
+        2,
+        3,
+        4
+      ],
+      "ruleId": "ending-i-y",
+      "instruction": "Συμπλήρωσε -ι ή -υ.",
+      "prompt": "ψάρ____",
+      "options": [
+        "ι",
+        "υ"
+      ],
+      "answer": "ι",
+      "feedback": "Ουδέτερα σε -ι (χέρι, αγόρι) · λίγα ουδέτερα σε -υ (δάκρυ, δόρυ, δίχτυ, στάχυ, οξύ, βράδυ).",
+      "prefix": "το"
+    },
+    {
+      "id": "drill-ending-i-y-009",
+      "kind": "ending",
+      "grades": [
+        2,
+        3,
+        4
+      ],
+      "ruleId": "ending-i-y",
+      "instruction": "Συμπλήρωσε -ι ή -υ.",
+      "prompt": "οξ____",
+      "options": [
+        "ι",
+        "υ"
+      ],
+      "answer": "υ",
+      "feedback": "Ουδέτερα σε -ι (χέρι, αγόρι) · λίγα ουδέτερα σε -υ (δάκρυ, δόρυ, δίχτυ, στάχυ, οξύ, βράδυ).",
+      "prefix": "το"
+    },
+    {
+      "id": "drill-ending-i-y-010",
+      "kind": "ending",
+      "grades": [
+        2,
+        3,
+        4
+      ],
+      "ruleId": "ending-i-y",
+      "instruction": "Συμπλήρωσε -ι ή -υ.",
+      "prompt": "αλεύρ____",
+      "options": [
+        "ι",
+        "υ"
+      ],
+      "answer": "ι",
+      "feedback": "Ουδέτερα σε -ι (χέρι, αγόρι) · λίγα ουδέτερα σε -υ (δάκρυ, δόρυ, δίχτυ, στάχυ, οξύ, βράδυ).",
+      "prefix": "το"
+    },
+    {
+      "id": "drill-ending-i-y-011",
+      "kind": "ending",
+      "grades": [
+        2,
+        3,
+        4
+      ],
+      "ruleId": "ending-i-y",
+      "instruction": "Συμπλήρωσε -ι ή -υ.",
+      "prompt": "βράδ____",
+      "options": [
+        "ι",
+        "υ"
+      ],
+      "answer": "υ",
+      "feedback": "Ουδέτερα σε -ι (χέρι, αγόρι) · λίγα ουδέτερα σε -υ (δάκρυ, δόρυ, δίχτυ, στάχυ, οξύ, βράδυ).",
+      "prefix": "το"
+    },
+    {
+      "id": "drill-ending-i-y-012",
+      "kind": "ending",
+      "grades": [
+        2,
+        3,
+        4
+      ],
+      "ruleId": "ending-i-y",
+      "instruction": "Συμπλήρωσε -ι ή -υ.",
+      "prompt": "λάδ____",
+      "options": [
+        "ι",
+        "υ"
+      ],
+      "answer": "ι",
+      "feedback": "Ουδέτερα σε -ι (χέρι, αγόρι) · λίγα ουδέτερα σε -υ (δάκρυ, δόρυ, δίχτυ, στάχυ, οξύ, βράδυ).",
+      "prefix": "το"
+    },
+    {
+      "id": "drill-ending-oi-eis-001",
+      "kind": "ending",
+      "grades": [
+        3,
+        4,
+        5
+      ],
+      "ruleId": "ending-oi-eis",
+      "instruction": "Συμπλήρωσε -οι ή -εις.",
+      "prompt": "δυνάμ____",
+      "options": [
+        "οι",
+        "εις"
+      ],
+      "answer": "εις",
+      "feedback": "Αρσενικά σε -ος → πληθυντικός -οι · θηλυκά τύπου δύναμη/πόλη/τάξη → πληθυντικός -εις.",
+      "prefix": "οι"
+    },
+    {
+      "id": "drill-ending-oi-eis-002",
+      "kind": "ending",
+      "grades": [
+        3,
+        4,
+        5
+      ],
+      "ruleId": "ending-oi-eis",
+      "instruction": "Συμπλήρωσε -οι ή -εις.",
+      "prompt": "καρπ____",
+      "options": [
+        "οι",
+        "εις"
+      ],
+      "answer": "οι",
+      "feedback": "Αρσενικά σε -ος → πληθυντικός -οι · θηλυκά τύπου δύναμη/πόλη/τάξη → πληθυντικός -εις.",
+      "prefix": "οι"
+    },
+    {
+      "id": "drill-ending-oi-eis-003",
+      "kind": "ending",
+      "grades": [
+        3,
+        4,
+        5
+      ],
+      "ruleId": "ending-oi-eis",
+      "instruction": "Συμπλήρωσε -οι ή -εις.",
+      "prompt": "λύσ____",
+      "options": [
+        "οι",
+        "εις"
+      ],
+      "answer": "εις",
+      "feedback": "Αρσενικά σε -ος → πληθυντικός -οι · θηλυκά τύπου δύναμη/πόλη/τάξη → πληθυντικός -εις.",
+      "prefix": "οι"
+    },
+    {
+      "id": "drill-ending-oi-eis-004",
+      "kind": "ending",
+      "grades": [
+        3,
+        4,
+        5
+      ],
+      "ruleId": "ending-oi-eis",
+      "instruction": "Συμπλήρωσε -οι ή -εις.",
+      "prompt": "κύκλ____",
+      "options": [
+        "οι",
+        "εις"
+      ],
+      "answer": "οι",
+      "feedback": "Αρσενικά σε -ος → πληθυντικός -οι · θηλυκά τύπου δύναμη/πόλη/τάξη → πληθυντικός -εις.",
+      "prefix": "οι"
+    },
+    {
+      "id": "drill-ending-oi-eis-005",
+      "kind": "ending",
+      "grades": [
+        3,
+        4,
+        5
+      ],
+      "ruleId": "ending-oi-eis",
+      "instruction": "Συμπλήρωσε -οι ή -εις.",
+      "prompt": "πράξ____",
+      "options": [
+        "οι",
+        "εις"
+      ],
+      "answer": "εις",
+      "feedback": "Αρσενικά σε -ος → πληθυντικός -οι · θηλυκά τύπου δύναμη/πόλη/τάξη → πληθυντικός -εις.",
+      "prefix": "οι"
+    },
+    {
+      "id": "drill-ending-oi-eis-006",
+      "kind": "ending",
+      "grades": [
+        3,
+        4,
+        5
+      ],
+      "ruleId": "ending-oi-eis",
+      "instruction": "Συμπλήρωσε -οι ή -εις.",
+      "prompt": "δρόμ____",
+      "options": [
+        "οι",
+        "εις"
+      ],
+      "answer": "οι",
+      "feedback": "Αρσενικά σε -ος → πληθυντικός -οι · θηλυκά τύπου δύναμη/πόλη/τάξη → πληθυντικός -εις.",
+      "prefix": "οι"
+    },
+    {
+      "id": "drill-ending-oi-eis-007",
+      "kind": "ending",
+      "grades": [
+        3,
+        4,
+        5
+      ],
+      "ruleId": "ending-oi-eis",
+      "instruction": "Συμπλήρωσε -οι ή -εις.",
+      "prompt": "τάξ____",
+      "options": [
+        "οι",
+        "εις"
+      ],
+      "answer": "εις",
+      "feedback": "Αρσενικά σε -ος → πληθυντικός -οι · θηλυκά τύπου δύναμη/πόλη/τάξη → πληθυντικός -εις.",
+      "prefix": "οι"
+    },
+    {
+      "id": "drill-ending-oi-eis-008",
+      "kind": "ending",
+      "grades": [
+        3,
+        4,
+        5
+      ],
+      "ruleId": "ending-oi-eis",
+      "instruction": "Συμπλήρωσε -οι ή -εις.",
+      "prompt": "πιλότ____",
+      "options": [
+        "οι",
+        "εις"
+      ],
+      "answer": "οι",
+      "feedback": "Αρσενικά σε -ος → πληθυντικός -οι · θηλυκά τύπου δύναμη/πόλη/τάξη → πληθυντικός -εις.",
+      "prefix": "οι"
+    },
+    {
+      "id": "drill-ending-oi-eis-009",
+      "kind": "ending",
+      "grades": [
+        3,
+        4,
+        5
+      ],
+      "ruleId": "ending-oi-eis",
+      "instruction": "Συμπλήρωσε -οι ή -εις.",
+      "prompt": "λέξ____",
+      "options": [
+        "οι",
+        "εις"
+      ],
+      "answer": "εις",
+      "feedback": "Αρσενικά σε -ος → πληθυντικός -οι · θηλυκά τύπου δύναμη/πόλη/τάξη → πληθυντικός -εις.",
+      "prefix": "οι"
+    },
+    {
+      "id": "drill-ending-oi-eis-010",
+      "kind": "ending",
+      "grades": [
+        3,
+        4,
+        5
+      ],
+      "ruleId": "ending-oi-eis",
+      "instruction": "Συμπλήρωσε -οι ή -εις.",
+      "prompt": "στόχ____",
+      "options": [
+        "οι",
+        "εις"
+      ],
+      "answer": "οι",
+      "feedback": "Αρσενικά σε -ος → πληθυντικός -οι · θηλυκά τύπου δύναμη/πόλη/τάξη → πληθυντικός -εις.",
+      "prefix": "οι"
+    },
+    {
+      "id": "drill-ending-oi-eis-011",
+      "kind": "ending",
+      "grades": [
+        3,
+        4,
+        5
+      ],
+      "ruleId": "ending-oi-eis",
+      "instruction": "Συμπλήρωσε -οι ή -εις.",
+      "prompt": "πόλ____",
+      "options": [
+        "οι",
+        "εις"
+      ],
+      "answer": "εις",
+      "feedback": "Αρσενικά σε -ος → πληθυντικός -οι · θηλυκά τύπου δύναμη/πόλη/τάξη → πληθυντικός -εις.",
+      "prefix": "οι"
+    },
+    {
+      "id": "drill-ending-oi-eis-012",
+      "kind": "ending",
+      "grades": [
+        3,
+        4,
+        5
+      ],
+      "ruleId": "ending-oi-eis",
+      "instruction": "Συμπλήρωσε -οι ή -εις.",
+      "prompt": "δάσκαλ____",
+      "options": [
+        "οι",
+        "εις"
+      ],
+      "answer": "οι",
+      "feedback": "Αρσενικά σε -ος → πληθυντικός -οι · θηλυκά τύπου δύναμη/πόλη/τάξη → πληθυντικός -εις.",
+      "prefix": "οι"
+    },
+    {
+      "id": "drill-ending-oi-eis-013",
+      "kind": "ending",
+      "grades": [
+        3,
+        4,
+        5
+      ],
+      "ruleId": "ending-oi-eis",
+      "instruction": "Συμπλήρωσε -οι ή -εις.",
+      "prompt": "γνώσ____",
+      "options": [
+        "οι",
+        "εις"
+      ],
+      "answer": "εις",
+      "feedback": "Αρσενικά σε -ος → πληθυντικός -οι · θηλυκά τύπου δύναμη/πόλη/τάξη → πληθυντικός -εις.",
+      "prefix": "οι"
+    },
+    {
+      "id": "drill-ending-oi-eis-014",
+      "kind": "ending",
+      "grades": [
+        3,
+        4,
+        5
+      ],
+      "ruleId": "ending-oi-eis",
+      "instruction": "Συμπλήρωσε -οι ή -εις.",
+      "prompt": "νόμ____",
+      "options": [
+        "οι",
+        "εις"
+      ],
+      "answer": "οι",
+      "feedback": "Αρσενικά σε -ος → πληθυντικός -οι · θηλυκά τύπου δύναμη/πόλη/τάξη → πληθυντικός -εις.",
+      "prefix": "οι"
+    },
+    {
+      "id": "drill-ending-oi-eis-015",
+      "kind": "ending",
+      "grades": [
+        3,
+        4,
+        5
+      ],
+      "ruleId": "ending-oi-eis",
+      "instruction": "Συμπλήρωσε -οι ή -εις.",
+      "prompt": "χρήσ____",
+      "options": [
+        "οι",
+        "εις"
+      ],
+      "answer": "εις",
+      "feedback": "Αρσενικά σε -ος → πληθυντικός -οι · θηλυκά τύπου δύναμη/πόλη/τάξη → πληθυντικός -εις.",
+      "prefix": "οι"
+    },
+    {
+      "id": "drill-ending-oi-eis-016",
+      "kind": "ending",
+      "grades": [
+        3,
+        4,
+        5
+      ],
+      "ruleId": "ending-oi-eis",
+      "instruction": "Συμπλήρωσε -οι ή -εις.",
+      "prompt": "αριθμ____",
+      "options": [
+        "οι",
+        "εις"
+      ],
+      "answer": "οι",
+      "feedback": "Αρσενικά σε -ος → πληθυντικός -οι · θηλυκά τύπου δύναμη/πόλη/τάξη → πληθυντικός -εις.",
+      "prefix": "οι"
+    },
+    {
+      "id": "drill-ending-a-es-001",
+      "kind": "ending",
+      "grades": [
+        2,
+        3,
+        4
+      ],
+      "ruleId": "ending-a-es",
+      "instruction": "Συμπλήρωσε -α ή -ες.",
+      "prompt": "πίτ____",
+      "options": [
+        "α",
+        "ες"
+      ],
+      "answer": "ες",
+      "feedback": "Θηλυκά ενικού συχνά σε -α · πληθυντικός σε -ες.",
+      "prefix": "οι"
+    },
+    {
+      "id": "drill-ending-a-es-002",
+      "kind": "ending",
+      "grades": [
+        2,
+        3,
+        4
+      ],
+      "ruleId": "ending-a-es",
+      "instruction": "Συμπλήρωσε -α ή -ες.",
+      "prompt": "μάγισσ____",
+      "options": [
+        "α",
+        "ες"
+      ],
+      "answer": "α",
+      "feedback": "Θηλυκά ενικού συχνά σε -α · πληθυντικός σε -ες.",
+      "prefix": "η"
+    },
+    {
+      "id": "drill-ending-a-es-003",
+      "kind": "ending",
+      "grades": [
+        2,
+        3,
+        4
+      ],
+      "ruleId": "ending-a-es",
+      "instruction": "Συμπλήρωσε -α ή -ες.",
+      "prompt": "ημέρ____",
+      "options": [
+        "α",
+        "ες"
+      ],
+      "answer": "ες",
+      "feedback": "Θηλυκά ενικού συχνά σε -α · πληθυντικός σε -ες.",
+      "prefix": "οι"
+    },
+    {
+      "id": "drill-ending-a-es-004",
+      "kind": "ending",
+      "grades": [
+        2,
+        3,
+        4
+      ],
+      "ruleId": "ending-a-es",
+      "instruction": "Συμπλήρωσε -α ή -ες.",
+      "prompt": "γλώσσ____",
+      "options": [
+        "α",
+        "ες"
+      ],
+      "answer": "α",
+      "feedback": "Θηλυκά ενικού συχνά σε -α · πληθυντικός σε -ες.",
+      "prefix": "η"
+    },
+    {
+      "id": "drill-ending-a-es-005",
+      "kind": "ending",
+      "grades": [
+        2,
+        3,
+        4
+      ],
+      "ruleId": "ending-a-es",
+      "instruction": "Συμπλήρωσε -α ή -ες.",
+      "prompt": "αίθουσ____",
+      "options": [
+        "α",
+        "ες"
+      ],
+      "answer": "ες",
+      "feedback": "Θηλυκά ενικού συχνά σε -α · πληθυντικός σε -ες.",
+      "prefix": "οι"
+    },
+    {
+      "id": "drill-ending-a-es-006",
+      "kind": "ending",
+      "grades": [
+        2,
+        3,
+        4
+      ],
+      "ruleId": "ending-a-es",
+      "instruction": "Συμπλήρωσε -α ή -ες.",
+      "prompt": "αγορ____",
+      "options": [
+        "α",
+        "ες"
+      ],
+      "answer": "α",
+      "feedback": "Θηλυκά ενικού συχνά σε -α · πληθυντικός σε -ες.",
+      "prefix": "η"
+    },
+    {
+      "id": "drill-ending-a-es-007",
+      "kind": "ending",
+      "grades": [
+        2,
+        3,
+        4
+      ],
+      "ruleId": "ending-a-es",
+      "instruction": "Συμπλήρωσε -α ή -ες.",
+      "prompt": "γέφυρ____",
+      "options": [
+        "α",
+        "ες"
+      ],
+      "answer": "ες",
+      "feedback": "Θηλυκά ενικού συχνά σε -α · πληθυντικός σε -ες.",
+      "prefix": "οι"
+    },
+    {
+      "id": "drill-ending-a-es-008",
+      "kind": "ending",
+      "grades": [
+        2,
+        3,
+        4
+      ],
+      "ruleId": "ending-a-es",
+      "instruction": "Συμπλήρωσε -α ή -ες.",
+      "prompt": "ελπίδ____",
+      "options": [
+        "α",
+        "ες"
+      ],
+      "answer": "α",
+      "feedback": "Θηλυκά ενικού συχνά σε -α · πληθυντικός σε -ες.",
+      "prefix": "η"
+    },
+    {
+      "id": "drill-ending-a-es-009",
+      "kind": "ending",
+      "grades": [
+        2,
+        3,
+        4
+      ],
+      "ruleId": "ending-a-es",
+      "instruction": "Συμπλήρωσε -α ή -ες.",
+      "prompt": "μητέρ____",
+      "options": [
+        "α",
+        "ες"
+      ],
+      "answer": "ες",
+      "feedback": "Θηλυκά ενικού συχνά σε -α · πληθυντικός σε -ες.",
+      "prefix": "οι"
+    },
+    {
+      "id": "drill-ending-a-es-010",
+      "kind": "ending",
+      "grades": [
+        2,
+        3,
+        4
+      ],
+      "ruleId": "ending-a-es",
+      "instruction": "Συμπλήρωσε -α ή -ες.",
+      "prompt": "αρκούδ____",
+      "options": [
+        "α",
+        "ες"
+      ],
+      "answer": "α",
+      "feedback": "Θηλυκά ενικού συχνά σε -α · πληθυντικός σε -ες.",
+      "prefix": "η"
+    },
+    {
+      "id": "drill-ending-a-es-011",
+      "kind": "ending",
+      "grades": [
+        2,
+        3,
+        4
+      ],
+      "ruleId": "ending-a-es",
+      "instruction": "Συμπλήρωσε -α ή -ες.",
+      "prompt": "θάλασσ____",
+      "options": [
+        "α",
+        "ες"
+      ],
+      "answer": "ες",
+      "feedback": "Θηλυκά ενικού συχνά σε -α · πληθυντικός σε -ες.",
+      "prefix": "οι"
+    },
+    {
+      "id": "drill-ending-a-es-012",
+      "kind": "ending",
+      "grades": [
+        2,
+        3,
+        4
+      ],
+      "ruleId": "ending-a-es",
+      "instruction": "Συμπλήρωσε -α ή -ες.",
+      "prompt": "πατρίδ____",
+      "options": [
+        "α",
+        "ες"
+      ],
+      "answer": "α",
+      "feedback": "Θηλυκά ενικού συχνά σε -α · πληθυντικός σε -ες.",
+      "prefix": "η"
+    },
+    {
+      "id": "drill-ending-a-es-013",
+      "kind": "ending",
+      "grades": [
+        2,
+        3,
+        4
+      ],
+      "ruleId": "ending-a-es",
+      "instruction": "Συμπλήρωσε -α ή -ες.",
+      "prompt": "λάμπ____",
+      "options": [
+        "α",
+        "ες"
+      ],
+      "answer": "ες",
+      "feedback": "Θηλυκά ενικού συχνά σε -α · πληθυντικός σε -ες.",
+      "prefix": "οι"
+    },
+    {
+      "id": "drill-ending-a-es-014",
+      "kind": "ending",
+      "grades": [
+        2,
+        3,
+        4
+      ],
+      "ruleId": "ending-a-es",
+      "instruction": "Συμπλήρωσε -α ή -ες.",
+      "prompt": "μπάλ____",
+      "options": [
+        "α",
+        "ες"
+      ],
+      "answer": "α",
+      "feedback": "Θηλυκά ενικού συχνά σε -α · πληθυντικός σε -ες.",
+      "prefix": "η"
+    },
+    {
+      "id": "drill-ending-a-es-015",
+      "kind": "ending",
+      "grades": [
+        2,
+        3,
+        4
+      ],
+      "ruleId": "ending-a-es",
+      "instruction": "Συμπλήρωσε -α ή -ες.",
+      "prompt": "χελών____",
+      "options": [
+        "α",
+        "ες"
+      ],
+      "answer": "ες",
+      "feedback": "Θηλυκά ενικού συχνά σε -α · πληθυντικός σε -ες.",
+      "prefix": "οι"
+    },
+    {
+      "id": "drill-ending-a-es-016",
+      "kind": "ending",
+      "grades": [
+        2,
+        3,
+        4
+      ],
+      "ruleId": "ending-a-es",
+      "instruction": "Συμπλήρωσε -α ή -ες.",
+      "prompt": "φούσκ____",
+      "options": [
+        "α",
+        "ες"
+      ],
+      "answer": "α",
+      "feedback": "Θηλυκά ενικού συχνά σε -α · πληθυντικός σε -ες.",
+      "prefix": "η"
+    },
+    {
+      "id": "drill-verbs-se-sai-001",
+      "kind": "ending",
+      "grades": [
+        3,
+        4,
+        5
+      ],
+      "ruleId": "verbs-se-sai",
+      "instruction": "Συμπλήρωσε -σε ή -σαι.",
+      "prompt": "Εσύ κρατιέ____",
+      "options": [
+        "σε",
+        "σαι"
+      ],
+      "answer": "σαι",
+      "feedback": "Αόριστος (αυτός/αυτή) συχνά σε -σε · εσύ (μέση φωνή) σε -σαι."
+    },
+    {
+      "id": "drill-verbs-se-sai-002",
+      "kind": "ending",
+      "grades": [
+        3,
+        4,
+        5
+      ],
+      "ruleId": "verbs-se-sai",
+      "instruction": "Συμπλήρωσε -σε ή -σαι.",
+      "prompt": "Από πού κατάγε____;",
+      "options": [
+        "σε",
+        "σαι"
+      ],
+      "answer": "σαι",
+      "feedback": "Αόριστος (αυτός/αυτή) συχνά σε -σε · εσύ (μέση φωνή) σε -σαι."
+    },
+    {
+      "id": "drill-verbs-se-sai-003",
+      "kind": "ending",
+      "grades": [
+        3,
+        4,
+        5
+      ],
+      "ruleId": "verbs-se-sai",
+      "instruction": "Συμπλήρωσε -σε ή -σαι.",
+      "prompt": "Η Αλίκη χτένι____ την Κατερίνα.",
+      "options": [
+        "σε",
+        "σαι"
+      ],
+      "answer": "σε",
+      "feedback": "Αόριστος (αυτός/αυτή) συχνά σε -σε · εσύ (μέση φωνή) σε -σαι."
+    },
+    {
+      "id": "drill-verbs-se-sai-004",
+      "kind": "ending",
+      "grades": [
+        3,
+        4,
+        5
+      ],
+      "ruleId": "verbs-se-sai",
+      "instruction": "Συμπλήρωσε -σε ή -σαι.",
+      "prompt": "Το βάζο έπε____ κάτω.",
+      "options": [
+        "σε",
+        "σαι"
+      ],
+      "answer": "σε",
+      "feedback": "Αόριστος (αυτός/αυτή) συχνά σε -σε · εσύ (μέση φωνή) σε -σαι."
+    },
+    {
+      "id": "drill-verbs-se-sai-005",
+      "kind": "ending",
+      "grades": [
+        3,
+        4,
+        5
+      ],
+      "ruleId": "verbs-se-sai",
+      "instruction": "Συμπλήρωσε -σε ή -σαι.",
+      "prompt": "Εσύ ντύνε____ μόνος σου;",
+      "options": [
+        "σε",
+        "σαι"
+      ],
+      "answer": "σαι",
+      "feedback": "Αόριστος (αυτός/αυτή) συχνά σε -σε · εσύ (μέση φωνή) σε -σαι."
+    },
+    {
+      "id": "drill-verbs-se-sai-006",
+      "kind": "ending",
+      "grades": [
+        3,
+        4,
+        5
+      ],
+      "ruleId": "verbs-se-sai",
+      "instruction": "Συμπλήρωσε -σε ή -σαι.",
+      "prompt": "Τι ώρα σηκώνε____ το πρωί;",
+      "options": [
+        "σε",
+        "σαι"
+      ],
+      "answer": "σαι",
+      "feedback": "Αόριστος (αυτός/αυτή) συχνά σε -σε · εσύ (μέση φωνή) σε -σαι."
+    },
+    {
+      "id": "drill-verbs-se-sai-007",
+      "kind": "ending",
+      "grades": [
+        3,
+        4,
+        5
+      ],
+      "ruleId": "verbs-se-sai",
+      "instruction": "Συμπλήρωσε -σε ή -σαι.",
+      "prompt": "Το βράδυ κοιμά____ νωρίς.",
+      "options": [
+        "σε",
+        "σαι"
+      ],
+      "answer": "σαι",
+      "feedback": "Αόριστος (αυτός/αυτή) συχνά σε -σε · εσύ (μέση φωνή) σε -σαι."
+    },
+    {
+      "id": "drill-verbs-se-sai-008",
+      "kind": "ending",
+      "grades": [
+        3,
+        4,
+        5
+      ],
+      "ruleId": "verbs-se-sai",
+      "instruction": "Συμπλήρωσε -σε ή -σαι.",
+      "prompt": "Ο Σωκράτης έλυ____ όλες τις ασκήσεις.",
+      "options": [
+        "σε",
+        "σαι"
+      ],
+      "answer": "σε",
+      "feedback": "Αόριστος (αυτός/αυτή) συχνά σε -σε · εσύ (μέση φωνή) σε -σαι."
+    },
+    {
+      "id": "drill-verbs-se-sai-009",
+      "kind": "ending",
+      "grades": [
+        3,
+        4,
+        5
+      ],
+      "ruleId": "verbs-se-sai",
+      "instruction": "Συμπλήρωσε -σε ή -σαι.",
+      "prompt": "Η καθαρίστρια καθάρι____ το πάτωμα.",
+      "options": [
+        "σε",
+        "σαι"
+      ],
+      "answer": "σε",
+      "feedback": "Αόριστος (αυτός/αυτή) συχνά σε -σε · εσύ (μέση φωνή) σε -σαι."
+    },
+    {
+      "id": "drill-verbs-se-sai-010",
+      "kind": "ending",
+      "grades": [
+        3,
+        4,
+        5
+      ],
+      "ruleId": "verbs-se-sai",
+      "instruction": "Συμπλήρωσε -σε ή -σαι.",
+      "prompt": "Εσύ ξεκουράζε____ το Σαββατοκύριακο;",
+      "options": [
+        "σε",
+        "σαι"
+      ],
+      "answer": "σαι",
+      "feedback": "Αόριστος (αυτός/αυτή) συχνά σε -σε · εσύ (μέση φωνή) σε -σαι."
+    },
+    {
+      "id": "drill-verbs-se-sai-011",
+      "kind": "ending",
+      "grades": [
+        3,
+        4,
+        5
+      ],
+      "ruleId": "verbs-se-sai",
+      "instruction": "Συμπλήρωσε -σε ή -σαι.",
+      "prompt": "Εσύ του χρόνου γίνε____ δέκα χρονών;",
+      "options": [
+        "σε",
+        "σαι"
+      ],
+      "answer": "σαι",
+      "feedback": "Αόριστος (αυτός/αυτή) συχνά σε -σε · εσύ (μέση φωνή) σε -σαι."
+    },
+    {
+      "id": "drill-verbs-se-sai-012",
+      "kind": "ending",
+      "grades": [
+        3,
+        4,
+        5
+      ],
+      "ruleId": "verbs-se-sai",
+      "instruction": "Συμπλήρωσε -σε ή -σαι.",
+      "prompt": "Ευτυχώς δεν χτύπη____ κανένας.",
+      "options": [
+        "σε",
+        "σαι"
+      ],
+      "answer": "σε",
+      "feedback": "Αόριστος (αυτός/αυτή) συχνά σε -σε · εσύ (μέση φωνή) σε -σαι."
+    },
+    {
+      "id": "drill-verbs-iste-001",
+      "kind": "ending",
+      "grades": [
+        4,
+        5,
+        6
+      ],
+      "ruleId": "verbs-iste",
+      "instruction": "Συμπλήρωσε -ήστε, -ίστε ή -είστε.",
+      "prompt": "εσείς χαιρετ______",
+      "options": [
+        "ήστε",
+        "ίστε",
+        "είστε"
+      ],
+      "answer": "ήστε",
+      "feedback": "Προστακτική/εσείς: ρήματα σε -ώ → -ήστε · σε -ίζω → -ίστε · τύπου ασχολούμαι/δανείζω → -είστε."
+    },
+    {
+      "id": "drill-verbs-iste-002",
+      "kind": "ending",
+      "grades": [
+        4,
+        5,
+        6
+      ],
+      "ruleId": "verbs-iste",
+      "instruction": "Συμπλήρωσε -ήστε, -ίστε ή -είστε.",
+      "prompt": "εσείς αρχ______",
+      "options": [
+        "ήστε",
+        "ίστε",
+        "είστε"
+      ],
+      "answer": "ίστε",
+      "feedback": "Προστακτική/εσείς: ρήματα σε -ώ → -ήστε · σε -ίζω → -ίστε · τύπου ασχολούμαι/δανείζω → -είστε."
+    },
+    {
+      "id": "drill-verbs-iste-003",
+      "kind": "ending",
+      "grades": [
+        4,
+        5,
+        6
+      ],
+      "ruleId": "verbs-iste",
+      "instruction": "Συμπλήρωσε -ήστε, -ίστε ή -είστε.",
+      "prompt": "εσείς ασχολ______",
+      "options": [
+        "ήστε",
+        "ίστε",
+        "είστε"
+      ],
+      "answer": "είστε",
+      "feedback": "Προστακτική/εσείς: ρήματα σε -ώ → -ήστε · σε -ίζω → -ίστε · τύπου ασχολούμαι/δανείζω → -είστε."
+    },
+    {
+      "id": "drill-verbs-iste-004",
+      "kind": "ending",
+      "grades": [
+        4,
+        5,
+        6
+      ],
+      "ruleId": "verbs-iste",
+      "instruction": "Συμπλήρωσε -ήστε, -ίστε ή -είστε.",
+      "prompt": "εσείς φροντ______",
+      "options": [
+        "ήστε",
+        "ίστε",
+        "είστε"
+      ],
+      "answer": "ίστε",
+      "feedback": "Προστακτική/εσείς: ρήματα σε -ώ → -ήστε · σε -ίζω → -ίστε · τύπου ασχολούμαι/δανείζω → -είστε."
+    },
+    {
+      "id": "drill-verbs-iste-005",
+      "kind": "ending",
+      "grades": [
+        4,
+        5,
+        6
+      ],
+      "ruleId": "verbs-iste",
+      "instruction": "Συμπλήρωσε -ήστε, -ίστε ή -είστε.",
+      "prompt": "εσείς σταματ______",
+      "options": [
+        "ήστε",
+        "ίστε",
+        "είστε"
+      ],
+      "answer": "ήστε",
+      "feedback": "Προστακτική/εσείς: ρήματα σε -ώ → -ήστε · σε -ίζω → -ίστε · τύπου ασχολούμαι/δανείζω → -είστε."
+    },
+    {
+      "id": "drill-verbs-iste-006",
+      "kind": "ending",
+      "grades": [
+        4,
+        5,
+        6
+      ],
+      "ruleId": "verbs-iste",
+      "instruction": "Συμπλήρωσε -ήστε, -ίστε ή -είστε.",
+      "prompt": "εσείς κερδ______",
+      "options": [
+        "ήστε",
+        "ίστε",
+        "είστε"
+      ],
+      "answer": "ίστε",
+      "feedback": "Προστακτική/εσείς: ρήματα σε -ώ → -ήστε · σε -ίζω → -ίστε · τύπου ασχολούμαι/δανείζω → -είστε."
+    },
+    {
+      "id": "drill-verbs-iste-007",
+      "kind": "ending",
+      "grades": [
+        4,
+        5,
+        6
+      ],
+      "ruleId": "verbs-iste",
+      "instruction": "Συμπλήρωσε -ήστε, -ίστε ή -είστε.",
+      "prompt": "εσείς θεωρ______",
+      "options": [
+        "ήστε",
+        "ίστε",
+        "είστε"
+      ],
+      "answer": "ήστε",
+      "feedback": "Προστακτική/εσείς: ρήματα σε -ώ → -ήστε · σε -ίζω → -ίστε · τύπου ασχολούμαι/δανείζω → -είστε."
+    },
+    {
+      "id": "drill-verbs-iste-008",
+      "kind": "ending",
+      "grades": [
+        4,
+        5,
+        6
+      ],
+      "ruleId": "verbs-iste",
+      "instruction": "Συμπλήρωσε -ήστε, -ίστε ή -είστε.",
+      "prompt": "εσείς δαν______",
+      "options": [
+        "ήστε",
+        "ίστε",
+        "είστε"
+      ],
+      "answer": "είστε",
+      "feedback": "Προστακτική/εσείς: ρήματα σε -ώ → -ήστε · σε -ίζω → -ίστε · τύπου ασχολούμαι/δανείζω → -είστε."
+    },
+    {
+      "id": "drill-verbs-iste-009",
+      "kind": "ending",
+      "grades": [
+        4,
+        5,
+        6
+      ],
+      "ruleId": "verbs-iste",
+      "instruction": "Συμπλήρωσε -ήστε, -ίστε ή -είστε.",
+      "prompt": "εσείς κατηγορ______",
+      "options": [
+        "ήστε",
+        "ίστε",
+        "είστε"
+      ],
+      "answer": "ήστε",
+      "feedback": "Προστακτική/εσείς: ρήματα σε -ώ → -ήστε · σε -ίζω → -ίστε · τύπου ασχολούμαι/δανείζω → -είστε."
+    },
+    {
+      "id": "drill-verbs-iste-010",
+      "kind": "ending",
+      "grades": [
+        4,
+        5,
+        6
+      ],
+      "ruleId": "verbs-iste",
+      "instruction": "Συμπλήρωσε -ήστε, -ίστε ή -είστε.",
+      "prompt": "εσείς χτεν______",
+      "options": [
+        "ήστε",
+        "ίστε",
+        "είστε"
+      ],
+      "answer": "ίστε",
+      "feedback": "Προστακτική/εσείς: ρήματα σε -ώ → -ήστε · σε -ίζω → -ίστε · τύπου ασχολούμαι/δανείζω → -είστε."
+    },
+    {
+      "id": "drill-verbs-iste-011",
+      "kind": "ending",
+      "grades": [
+        4,
+        5,
+        6
+      ],
+      "ruleId": "verbs-iste",
+      "instruction": "Συμπλήρωσε -ήστε, -ίστε ή -είστε.",
+      "prompt": "εσείς τολμ______",
+      "options": [
+        "ήστε",
+        "ίστε",
+        "είστε"
+      ],
+      "answer": "ήστε",
+      "feedback": "Προστακτική/εσείς: ρήματα σε -ώ → -ήστε · σε -ίζω → -ίστε · τύπου ασχολούμαι/δανείζω → -είστε."
+    },
+    {
+      "id": "drill-verbs-iste-012",
+      "kind": "ending",
+      "grades": [
+        4,
+        5,
+        6
+      ],
+      "ruleId": "verbs-iste",
+      "instruction": "Συμπλήρωσε -ήστε, -ίστε ή -είστε.",
+      "prompt": "εσείς σκουπ______",
+      "options": [
+        "ήστε",
+        "ίστε",
+        "είστε"
+      ],
+      "answer": "ίστε",
+      "feedback": "Προστακτική/εσείς: ρήματα σε -ώ → -ήστε · σε -ίζω → -ίστε · τύπου ασχολούμαι/δανείζω → -είστε."
+    },
+    {
+      "id": "drill-verbs-iste-013",
+      "kind": "ending",
+      "grades": [
+        4,
+        5,
+        6
+      ],
+      "ruleId": "verbs-iste",
+      "instruction": "Συμπλήρωσε -ήστε, -ίστε ή -είστε.",
+      "prompt": "εσείς μιλ______",
+      "options": [
+        "ήστε",
+        "ίστε",
+        "είστε"
+      ],
+      "answer": "ήστε",
+      "feedback": "Προστακτική/εσείς: ρήματα σε -ώ → -ήστε · σε -ίζω → -ίστε · τύπου ασχολούμαι/δανείζω → -είστε."
+    },
+    {
+      "id": "drill-verbs-iste-014",
+      "kind": "ending",
+      "grades": [
+        4,
+        5,
+        6
+      ],
+      "ruleId": "verbs-iste",
+      "instruction": "Συμπλήρωσε -ήστε, -ίστε ή -είστε.",
+      "prompt": "εσείς ψηφ______",
+      "options": [
+        "ήστε",
+        "ίστε",
+        "είστε"
+      ],
+      "answer": "ίστε",
+      "feedback": "Προστακτική/εσείς: ρήματα σε -ώ → -ήστε · σε -ίζω → -ίστε · τύπου ασχολούμαι/δανείζω → -είστε."
+    },
+    {
+      "id": "drill-verbs-iste-015",
+      "kind": "ending",
+      "grades": [
+        4,
+        5,
+        6
+      ],
+      "ruleId": "verbs-iste",
+      "instruction": "Συμπλήρωσε -ήστε, -ίστε ή -είστε.",
+      "prompt": "εσείς προτιμ______",
+      "options": [
+        "ήστε",
+        "ίστε",
+        "είστε"
+      ],
+      "answer": "ήστε",
+      "feedback": "Προστακτική/εσείς: ρήματα σε -ώ → -ήστε · σε -ίζω → -ίστε · τύπου ασχολούμαι/δανείζω → -είστε."
+    },
+    {
+      "id": "drill-verbs-iste-016",
+      "kind": "ending",
+      "grades": [
+        4,
+        5,
+        6
+      ],
+      "ruleId": "verbs-iste",
+      "instruction": "Συμπλήρωσε -ήστε, -ίστε ή -είστε.",
+      "prompt": "εσείς διηγ______",
+      "options": [
+        "ήστε",
+        "ίστε",
+        "είστε"
+      ],
+      "answer": "είστε",
+      "feedback": "Προστακτική/εσείς: ρήματα σε -ώ → -ήστε · σε -ίζω → -ίστε · τύπου ασχολούμαι/δανείζω → -είστε."
+    },
+    {
+      "id": "drill-ending-issa-isa-001",
+      "kind": "ending",
+      "grades": [
+        4,
+        5,
+        6
+      ],
+      "ruleId": "ending-issa-isa",
+      "instruction": "Συμπλήρωσε -ισσα, -ησα ή -ισα.",
+      "prompt": "μάγ______",
+      "options": [
+        "ισσα",
+        "ησα",
+        "ισα"
+      ],
+      "answer": "ισσα",
+      "feedback": "Θηλυκά ουσιαστικά συχνά σε -ισσα · αόριστος σε -ώ → -ησα · σε -ίζω → -ισα.",
+      "prefix": "η"
+    },
+    {
+      "id": "drill-ending-issa-isa-002",
+      "kind": "ending",
+      "grades": [
+        4,
+        5,
+        6
+      ],
+      "ruleId": "ending-issa-isa",
+      "instruction": "Συμπλήρωσε -ισσα, -ησα ή -ισα.",
+      "prompt": "αγάπ______",
+      "options": [
+        "ισσα",
+        "ησα",
+        "ισα"
+      ],
+      "answer": "ησα",
+      "feedback": "Θηλυκά ουσιαστικά συχνά σε -ισσα · αόριστος σε -ώ → -ησα · σε -ίζω → -ισα.",
+      "prefix": "εγώ"
+    },
+    {
+      "id": "drill-ending-issa-isa-003",
+      "kind": "ending",
+      "grades": [
+        4,
+        5,
+        6
+      ],
+      "ruleId": "ending-issa-isa",
+      "instruction": "Συμπλήρωσε -ισσα, -ησα ή -ισα.",
+      "prompt": "καθάρ______",
+      "options": [
+        "ισσα",
+        "ησα",
+        "ισα"
+      ],
+      "answer": "ισα",
+      "feedback": "Θηλυκά ουσιαστικά συχνά σε -ισσα · αόριστος σε -ώ → -ησα · σε -ίζω → -ισα.",
+      "prefix": "εγώ"
+    },
+    {
+      "id": "drill-ending-issa-isa-004",
+      "kind": "ending",
+      "grades": [
+        4,
+        5,
+        6
+      ],
+      "ruleId": "ending-issa-isa",
+      "instruction": "Συμπλήρωσε -ισσα, -ησα ή -ισα.",
+      "prompt": "μέλ______",
+      "options": [
+        "ισσα",
+        "ησα",
+        "ισα"
+      ],
+      "answer": "ισσα",
+      "feedback": "Θηλυκά ουσιαστικά συχνά σε -ισσα · αόριστος σε -ώ → -ησα · σε -ίζω → -ισα.",
+      "prefix": "η"
+    },
+    {
+      "id": "drill-ending-issa-isa-005",
+      "kind": "ending",
+      "grades": [
+        4,
+        5,
+        6
+      ],
+      "ruleId": "ending-issa-isa",
+      "instruction": "Συμπλήρωσε -ισσα, -ησα ή -ισα.",
+      "prompt": "μίλ______",
+      "options": [
+        "ισσα",
+        "ησα",
+        "ισα"
+      ],
+      "answer": "ησα",
+      "feedback": "Θηλυκά ουσιαστικά συχνά σε -ισσα · αόριστος σε -ώ → -ησα · σε -ίζω → -ισα.",
+      "prefix": "εγώ"
+    },
+    {
+      "id": "drill-ending-issa-isa-006",
+      "kind": "ending",
+      "grades": [
+        4,
+        5,
+        6
+      ],
+      "ruleId": "ending-issa-isa",
+      "instruction": "Συμπλήρωσε -ισσα, -ησα ή -ισα.",
+      "prompt": "γειτόν______",
+      "options": [
+        "ισσα",
+        "ησα",
+        "ισα"
+      ],
+      "answer": "ισσα",
+      "feedback": "Θηλυκά ουσιαστικά συχνά σε -ισσα · αόριστος σε -ώ → -ησα · σε -ίζω → -ισα.",
+      "prefix": "η"
+    },
+    {
+      "id": "drill-ending-issa-isa-007",
+      "kind": "ending",
+      "grades": [
+        4,
+        5,
+        6
+      ],
+      "ruleId": "ending-issa-isa",
+      "instruction": "Συμπλήρωσε -ισσα, -ησα ή -ισα.",
+      "prompt": "δώρ______",
+      "options": [
+        "ισσα",
+        "ησα",
+        "ισα"
+      ],
+      "answer": "ισα",
+      "feedback": "Θηλυκά ουσιαστικά συχνά σε -ισσα · αόριστος σε -ώ → -ησα · σε -ίζω → -ισα.",
+      "prefix": "εγώ"
+    },
+    {
+      "id": "drill-ending-issa-isa-008",
+      "kind": "ending",
+      "grades": [
+        4,
+        5,
+        6
+      ],
+      "ruleId": "ending-issa-isa",
+      "instruction": "Συμπλήρωσε -ισσα, -ησα ή -ισα.",
+      "prompt": "βασίλ______",
+      "options": [
+        "ισσα",
+        "ησα",
+        "ισα"
+      ],
+      "answer": "ισσα",
+      "feedback": "Θηλυκά ουσιαστικά συχνά σε -ισσα · αόριστος σε -ώ → -ησα · σε -ίζω → -ισα.",
+      "prefix": "η"
+    },
+    {
+      "id": "drill-ending-issa-isa-009",
+      "kind": "ending",
+      "grades": [
+        4,
+        5,
+        6
+      ],
+      "ruleId": "ending-issa-isa",
+      "instruction": "Συμπλήρωσε -ισσα, -ησα ή -ισα.",
+      "prompt": "ζήτ______",
+      "options": [
+        "ισσα",
+        "ησα",
+        "ισα"
+      ],
+      "answer": "ησα",
+      "feedback": "Θηλυκά ουσιαστικά συχνά σε -ισσα · αόριστος σε -ώ → -ησα · σε -ίζω → -ισα.",
+      "prefix": "εγώ"
+    },
+    {
+      "id": "drill-ending-issa-isa-010",
+      "kind": "ending",
+      "grades": [
+        4,
+        5,
+        6
+      ],
+      "ruleId": "ending-issa-isa",
+      "instruction": "Συμπλήρωσε -ισσα, -ησα ή -ισα.",
+      "prompt": "αγρότ______",
+      "options": [
+        "ισσα",
+        "ησα",
+        "ισα"
+      ],
+      "answer": "ισσα",
+      "feedback": "Θηλυκά ουσιαστικά συχνά σε -ισσα · αόριστος σε -ώ → -ησα · σε -ίζω → -ισα.",
+      "prefix": "η"
+    },
+    {
+      "id": "drill-ending-issa-isa-011",
+      "kind": "ending",
+      "grades": [
+        4,
+        5,
+        6
+      ],
+      "ruleId": "ending-issa-isa",
+      "instruction": "Συμπλήρωσε -ισσα, -ησα ή -ισα.",
+      "prompt": "άρχ______",
+      "options": [
+        "ισσα",
+        "ησα",
+        "ισα"
+      ],
+      "answer": "ισα",
+      "feedback": "Θηλυκά ουσιαστικά συχνά σε -ισσα · αόριστος σε -ώ → -ησα · σε -ίζω → -ισα.",
+      "prefix": "εγώ"
+    },
+    {
+      "id": "drill-ending-issa-isa-012",
+      "kind": "ending",
+      "grades": [
+        4,
+        5,
+        6
+      ],
+      "ruleId": "ending-issa-isa",
+      "instruction": "Συμπλήρωσε -ισσα, -ησα ή -ισα.",
+      "prompt": "πριγκίπ______",
+      "options": [
+        "ισσα",
+        "ησα",
+        "ισα"
+      ],
+      "answer": "ισσα",
+      "feedback": "Θηλυκά ουσιαστικά συχνά σε -ισσα · αόριστος σε -ώ → -ησα · σε -ίζω → -ισα.",
+      "prefix": "η"
+    },
+    {
+      "id": "drill-ending-issa-isa-013",
+      "kind": "ending",
+      "grades": [
+        4,
+        5,
+        6
+      ],
+      "ruleId": "ending-issa-isa",
+      "instruction": "Συμπλήρωσε -ισσα, -ησα ή -ισα.",
+      "prompt": "Λάρ______",
+      "options": [
+        "ισσα",
+        "ησα",
+        "ισα"
+      ],
+      "answer": "ισα",
+      "feedback": "Θηλυκά ουσιαστικά συχνά σε -ισσα · αόριστος σε -ώ → -ησα · σε -ίζω → -ισα."
+    },
+    {
+      "id": "drill-ending-issa-isa-014",
+      "kind": "ending",
+      "grades": [
+        4,
+        5,
+        6
+      ],
+      "ruleId": "ending-issa-isa",
+      "instruction": "Συμπλήρωσε -ισσα, -ησα ή -ισα.",
+      "prompt": "γύφτ______",
+      "options": [
+        "ισσα",
+        "ησα",
+        "ισα"
+      ],
+      "answer": "ισσα",
+      "feedback": "Θηλυκά ουσιαστικά συχνά σε -ισσα · αόριστος σε -ώ → -ησα · σε -ίζω → -ισα.",
+      "prefix": "η"
+    },
+    {
+      "id": "drill-ending-issa-isa-015",
+      "kind": "ending",
+      "grades": [
+        4,
+        5,
+        6
+      ],
+      "ruleId": "ending-issa-isa",
+      "instruction": "Συμπλήρωσε -ισσα, -ησα ή -ισα.",
+      "prompt": "θεώρ______",
+      "options": [
+        "ισσα",
+        "ησα",
+        "ισα"
+      ],
+      "answer": "ησα",
+      "feedback": "Θηλυκά ουσιαστικά συχνά σε -ισσα · αόριστος σε -ώ → -ησα · σε -ίζω → -ισα.",
+      "prefix": "εγώ"
+    },
+    {
+      "id": "drill-ending-issa-isa-016",
+      "kind": "ending",
+      "grades": [
+        4,
+        5,
+        6
+      ],
+      "ruleId": "ending-issa-isa",
+      "instruction": "Συμπλήρωσε -ισσα, -ησα ή -ισα.",
+      "prompt": "γνώρ______",
+      "options": [
+        "ισσα",
+        "ησα",
+        "ισα"
+      ],
+      "answer": "ισα",
+      "feedback": "Θηλυκά ουσιαστικά συχνά σε -ισσα · αόριστος σε -ώ → -ησα · σε -ίζω → -ισα.",
+      "prefix": "εγώ"
+    },
+    {
+      "id": "drill-ending-eio-io-001",
+      "kind": "ending",
+      "grades": [
+        4,
+        5,
+        6
+      ],
+      "ruleId": "ending-eio-io",
+      "instruction": "Συμπλήρωσε -ειο ή -ιο.",
+      "prompt": "μουσ______",
+      "options": [
+        "ειο",
+        "ιο"
+      ],
+      "answer": "ειο",
+      "feedback": "Χώροι/ιδρύματα συχνά σε -είο (μουσείο, φαρμακείο) · άλλα ουδέτερα σε -ιο (ημερολόγιο, τηλεσκόπιο).",
+      "prefix": "το"
+    },
+    {
+      "id": "drill-ending-eio-io-002",
+      "kind": "ending",
+      "grades": [
+        4,
+        5,
+        6
+      ],
+      "ruleId": "ending-eio-io",
+      "instruction": "Συμπλήρωσε -ειο ή -ιο.",
+      "prompt": "ημερολόγ______",
+      "options": [
+        "ειο",
+        "ιο"
+      ],
+      "answer": "ιο",
+      "feedback": "Χώροι/ιδρύματα συχνά σε -είο (μουσείο, φαρμακείο) · άλλα ουδέτερα σε -ιο (ημερολόγιο, τηλεσκόπιο).",
+      "prefix": "το"
+    },
+    {
+      "id": "drill-ending-eio-io-003",
+      "kind": "ending",
+      "grades": [
+        4,
+        5,
+        6
+      ],
+      "ruleId": "ending-eio-io",
+      "instruction": "Συμπλήρωσε -ειο ή -ιο.",
+      "prompt": "φαρμακ______",
+      "options": [
+        "ειο",
+        "ιο"
+      ],
+      "answer": "ειο",
+      "feedback": "Χώροι/ιδρύματα συχνά σε -είο (μουσείο, φαρμακείο) · άλλα ουδέτερα σε -ιο (ημερολόγιο, τηλεσκόπιο).",
+      "prefix": "το"
+    },
+    {
+      "id": "drill-ending-eio-io-004",
+      "kind": "ending",
+      "grades": [
+        4,
+        5,
+        6
+      ],
+      "ruleId": "ending-eio-io",
+      "instruction": "Συμπλήρωσε -ειο ή -ιο.",
+      "prompt": "τηλεσκόπ______",
+      "options": [
+        "ειο",
+        "ιο"
+      ],
+      "answer": "ιο",
+      "feedback": "Χώροι/ιδρύματα συχνά σε -είο (μουσείο, φαρμακείο) · άλλα ουδέτερα σε -ιο (ημερολόγιο, τηλεσκόπιο).",
+      "prefix": "το"
+    },
+    {
+      "id": "drill-ending-eio-io-005",
+      "kind": "ending",
+      "grades": [
+        4,
+        5,
+        6
+      ],
+      "ruleId": "ending-eio-io",
+      "instruction": "Συμπλήρωσε -ειο ή -ιο.",
+      "prompt": "νοσοκομ______",
+      "options": [
+        "ειο",
+        "ιο"
+      ],
+      "answer": "ειο",
+      "feedback": "Χώροι/ιδρύματα συχνά σε -είο (μουσείο, φαρμακείο) · άλλα ουδέτερα σε -ιο (ημερολόγιο, τηλεσκόπιο).",
+      "prefix": "το"
+    },
+    {
+      "id": "drill-ending-eio-io-006",
+      "kind": "ending",
+      "grades": [
+        4,
+        5,
+        6
+      ],
+      "ruleId": "ending-eio-io",
+      "instruction": "Συμπλήρωσε -ειο ή -ιο.",
+      "prompt": "ανθολόγ______",
+      "options": [
+        "ειο",
+        "ιο"
+      ],
+      "answer": "ιο",
+      "feedback": "Χώροι/ιδρύματα συχνά σε -είο (μουσείο, φαρμακείο) · άλλα ουδέτερα σε -ιο (ημερολόγιο, τηλεσκόπιο).",
+      "prefix": "το"
+    },
+    {
+      "id": "drill-ending-eio-io-007",
+      "kind": "ending",
+      "grades": [
+        4,
+        5,
+        6
+      ],
+      "ruleId": "ending-eio-io",
+      "instruction": "Συμπλήρωσε -ειο ή -ιο.",
+      "prompt": "ξενοδοχ______",
+      "options": [
+        "ειο",
+        "ιο"
+      ],
+      "answer": "ειο",
+      "feedback": "Χώροι/ιδρύματα συχνά σε -είο (μουσείο, φαρμακείο) · άλλα ουδέτερα σε -ιο (ημερολόγιο, τηλεσκόπιο).",
+      "prefix": "το"
+    },
+    {
+      "id": "drill-ending-eio-io-008",
+      "kind": "ending",
+      "grades": [
+        4,
+        5,
+        6
+      ],
+      "ruleId": "ending-eio-io",
+      "instruction": "Συμπλήρωσε -ειο ή -ιο.",
+      "prompt": "ευχολόγ______",
+      "options": [
+        "ειο",
+        "ιο"
+      ],
+      "answer": "ιο",
+      "feedback": "Χώροι/ιδρύματα συχνά σε -είο (μουσείο, φαρμακείο) · άλλα ουδέτερα σε -ιο (ημερολόγιο, τηλεσκόπιο).",
+      "prefix": "το"
+    },
+    {
+      "id": "drill-ending-eio-io-009",
+      "kind": "ending",
+      "grades": [
+        4,
+        5,
+        6
+      ],
+      "ruleId": "ending-eio-io",
+      "instruction": "Συμπλήρωσε -ειο ή -ιο.",
+      "prompt": "υπουργ______",
+      "options": [
+        "ειο",
+        "ιο"
+      ],
+      "answer": "ειο",
+      "feedback": "Χώροι/ιδρύματα συχνά σε -είο (μουσείο, φαρμακείο) · άλλα ουδέτερα σε -ιο (ημερολόγιο, τηλεσκόπιο).",
+      "prefix": "το"
+    },
+    {
+      "id": "drill-ending-eio-io-010",
+      "kind": "ending",
+      "grades": [
+        4,
+        5,
+        6
+      ],
+      "ruleId": "ending-eio-io",
+      "instruction": "Συμπλήρωσε -ειο ή -ιο.",
+      "prompt": "εργαλ______",
+      "options": [
+        "ειο",
+        "ιο"
+      ],
+      "answer": "ειο",
+      "feedback": "Χώροι/ιδρύματα συχνά σε -είο (μουσείο, φαρμακείο) · άλλα ουδέτερα σε -ιο (ημερολόγιο, τηλεσκόπιο).",
+      "prefix": "το"
+    },
+    {
+      "id": "drill-ending-eio-io-011",
+      "kind": "ending",
+      "grades": [
+        4,
+        5,
+        6
+      ],
+      "ruleId": "ending-eio-io",
+      "instruction": "Συμπλήρωσε -ειο ή -ιο.",
+      "prompt": "ιατρ______",
+      "options": [
+        "ειο",
+        "ιο"
+      ],
+      "answer": "ειο",
+      "feedback": "Χώροι/ιδρύματα συχνά σε -είο (μουσείο, φαρμακείο) · άλλα ουδέτερα σε -ιο (ημερολόγιο, τηλεσκόπιο).",
+      "prefix": "το"
+    },
+    {
+      "id": "drill-ending-eio-io-012",
+      "kind": "ending",
+      "grades": [
+        4,
+        5,
+        6
+      ],
+      "ruleId": "ending-eio-io",
+      "instruction": "Συμπλήρωσε -ειο ή -ιο.",
+      "prompt": "συνεργ______",
+      "options": [
+        "ειο",
+        "ιο"
+      ],
+      "answer": "ειο",
+      "feedback": "Χώροι/ιδρύματα συχνά σε -είο (μουσείο, φαρμακείο) · άλλα ουδέτερα σε -ιο (ημερολόγιο, τηλεσκόπιο).",
+      "prefix": "το"
+    },
+    {
+      "id": "drill-ending-eio-io-013",
+      "kind": "ending",
+      "grades": [
+        4,
+        5,
+        6
+      ],
+      "ruleId": "ending-eio-io",
+      "instruction": "Συμπλήρωσε -ειο ή -ιο.",
+      "prompt": "νηπιαγωγ______",
+      "options": [
+        "ειο",
+        "ιο"
+      ],
+      "answer": "ειο",
+      "feedback": "Χώροι/ιδρύματα συχνά σε -είο (μουσείο, φαρμακείο) · άλλα ουδέτερα σε -ιο (ημερολόγιο, τηλεσκόπιο).",
+      "prefix": "το"
+    },
+    {
+      "id": "drill-ending-eio-io-014",
+      "kind": "ending",
+      "grades": [
+        4,
+        5,
+        6
+      ],
+      "ruleId": "ending-eio-io",
+      "instruction": "Συμπλήρωσε -ειο ή -ιο.",
+      "prompt": "μικροσκόπ______",
+      "options": [
+        "ειο",
+        "ιο"
+      ],
+      "answer": "ιο",
+      "feedback": "Χώροι/ιδρύματα συχνά σε -είο (μουσείο, φαρμακείο) · άλλα ουδέτερα σε -ιο (ημερολόγιο, τηλεσκόπιο).",
+      "prefix": "το"
+    },
+    {
+      "id": "drill-ending-eio-io-015",
+      "kind": "ending",
+      "grades": [
+        4,
+        5,
+        6
+      ],
+      "ruleId": "ending-eio-io",
+      "instruction": "Συμπλήρωσε -ειο ή -ιο.",
+      "prompt": "κουρ______",
+      "options": [
+        "ειο",
+        "ιο"
+      ],
+      "answer": "ειο",
+      "feedback": "Χώροι/ιδρύματα συχνά σε -είο (μουσείο, φαρμακείο) · άλλα ουδέτερα σε -ιο (ημερολόγιο, τηλεσκόπιο).",
+      "prefix": "το"
+    },
+    {
+      "id": "drill-ending-eio-io-016",
+      "kind": "ending",
+      "grades": [
+        4,
+        5,
+        6
+      ],
+      "ruleId": "ending-eio-io",
+      "instruction": "Συμπλήρωσε -ειο ή -ιο.",
+      "prompt": "προαύλ______",
+      "options": [
+        "ειο",
+        "ιο"
+      ],
+      "answer": "ιο",
+      "feedback": "Χώροι/ιδρύματα συχνά σε -είο (μουσείο, φαρμακείο) · άλλα ουδέτερα σε -ιο (ημερολόγιο, τηλεσκόπιο).",
+      "prefix": "το"
+    },
+    {
+      "id": "drill-ending-poios-001",
+      "kind": "ending",
+      "grades": [
+        5,
+        6
+      ],
+      "ruleId": "ending-poios",
+      "instruction": "Συμπλήρωσε -ποιός, -ποιώ, -ποιείο ή -ποίηση.",
+      "prompt": "ηθο________",
+      "options": [
+        "ποιός",
+        "ποιώ",
+        "ποιείο",
+        "ποίηση"
+      ],
+      "answer": "ποιός",
+      "feedback": "Χτίσε τη λέξη: -ποιός (επάγγελμα), -ποιώ (ρήμα), -ποιείο (τόπος), -ποίηση (ουσιαστικό ενέργειας)."
+    },
+    {
+      "id": "drill-ending-poios-002",
+      "kind": "ending",
+      "grades": [
+        5,
+        6
+      ],
+      "ruleId": "ending-poios",
+      "instruction": "Συμπλήρωσε -ποιός, -ποιώ, -ποιείο ή -ποίηση.",
+      "prompt": "χρησιμο________",
+      "options": [
+        "ποιός",
+        "ποιώ",
+        "ποιείο",
+        "ποίηση"
+      ],
+      "answer": "ποιώ",
+      "feedback": "Χτίσε τη λέξη: -ποιός (επάγγελμα), -ποιώ (ρήμα), -ποιείο (τόπος), -ποίηση (ουσιαστικό ενέργειας)."
+    },
+    {
+      "id": "drill-ending-poios-003",
+      "kind": "ending",
+      "grades": [
+        5,
+        6
+      ],
+      "ruleId": "ending-poios",
+      "instruction": "Συμπλήρωσε -ποιός, -ποιώ, -ποιείο ή -ποίηση.",
+      "prompt": "αρτο________",
+      "options": [
+        "ποιός",
+        "ποιώ",
+        "ποιείο",
+        "ποίηση"
+      ],
+      "answer": "ποιείο",
+      "feedback": "Χτίσε τη λέξη: -ποιός (επάγγελμα), -ποιώ (ρήμα), -ποιείο (τόπος), -ποίηση (ουσιαστικό ενέργειας)."
+    },
+    {
+      "id": "drill-ending-poios-004",
+      "kind": "ending",
+      "grades": [
+        5,
+        6
+      ],
+      "ruleId": "ending-poios",
+      "instruction": "Συμπλήρωσε -ποιός, -ποιώ, -ποιείο ή -ποίηση.",
+      "prompt": "πραγματο________",
+      "options": [
+        "ποιός",
+        "ποιώ",
+        "ποιείο",
+        "ποίηση"
+      ],
+      "answer": "ποίηση",
+      "feedback": "Χτίσε τη λέξη: -ποιός (επάγγελμα), -ποιώ (ρήμα), -ποιείο (τόπος), -ποίηση (ουσιαστικό ενέργειας)."
+    },
+    {
+      "id": "drill-ending-poios-005",
+      "kind": "ending",
+      "grades": [
+        5,
+        6
+      ],
+      "ruleId": "ending-poios",
+      "instruction": "Συμπλήρωσε -ποιός, -ποιώ, -ποιείο ή -ποίηση.",
+      "prompt": "οινο________",
+      "options": [
+        "ποιός",
+        "ποιώ",
+        "ποιείο",
+        "ποίηση"
+      ],
+      "answer": "ποιός",
+      "feedback": "Χτίσε τη λέξη: -ποιός (επάγγελμα), -ποιώ (ρήμα), -ποιείο (τόπος), -ποίηση (ουσιαστικό ενέργειας)."
+    },
+    {
+      "id": "drill-ending-poios-006",
+      "kind": "ending",
+      "grades": [
+        5,
+        6
+      ],
+      "ruleId": "ending-poios",
+      "instruction": "Συμπλήρωσε -ποιός, -ποιώ, -ποιείο ή -ποίηση.",
+      "prompt": "ικανο________",
+      "options": [
+        "ποιός",
+        "ποιώ",
+        "ποιείο",
+        "ποίηση"
+      ],
+      "answer": "ποιώ",
+      "feedback": "Χτίσε τη λέξη: -ποιός (επάγγελμα), -ποιώ (ρήμα), -ποιείο (τόπος), -ποίηση (ουσιαστικό ενέργειας)."
+    },
+    {
+      "id": "drill-ending-poios-007",
+      "kind": "ending",
+      "grades": [
+        5,
+        6
+      ],
+      "ruleId": "ending-poios",
+      "instruction": "Συμπλήρωσε -ποιός, -ποιώ, -ποιείο ή -ποίηση.",
+      "prompt": "φαρμακο________",
+      "options": [
+        "ποιός",
+        "ποιώ",
+        "ποιείο",
+        "ποίηση"
+      ],
+      "answer": "ποιός",
+      "feedback": "Χτίσε τη λέξη: -ποιός (επάγγελμα), -ποιώ (ρήμα), -ποιείο (τόπος), -ποίηση (ουσιαστικό ενέργειας)."
+    },
+    {
+      "id": "drill-ending-poios-008",
+      "kind": "ending",
+      "grades": [
+        5,
+        6
+      ],
+      "ruleId": "ending-poios",
+      "instruction": "Συμπλήρωσε -ποιός, -ποιώ, -ποιείο ή -ποίηση.",
+      "prompt": "αξιο________",
+      "options": [
+        "ποιός",
+        "ποιώ",
+        "ποιείο",
+        "ποίηση"
+      ],
+      "answer": "ποίηση",
+      "feedback": "Χτίσε τη λέξη: -ποιός (επάγγελμα), -ποιώ (ρήμα), -ποιείο (τόπος), -ποίηση (ουσιαστικό ενέργειας)."
+    },
+    {
+      "id": "drill-ending-poios-009",
+      "kind": "ending",
+      "grades": [
+        5,
+        6
+      ],
+      "ruleId": "ending-poios",
+      "instruction": "Συμπλήρωσε -ποιός, -ποιώ, -ποιείο ή -ποίηση.",
+      "prompt": "υποδηματο________",
+      "options": [
+        "ποιός",
+        "ποιώ",
+        "ποιείο",
+        "ποίηση"
+      ],
+      "answer": "ποιός",
+      "feedback": "Χτίσε τη λέξη: -ποιός (επάγγελμα), -ποιώ (ρήμα), -ποιείο (τόπος), -ποίηση (ουσιαστικό ενέργειας)."
+    },
+    {
+      "id": "drill-ending-poios-010",
+      "kind": "ending",
+      "grades": [
+        5,
+        6
+      ],
+      "ruleId": "ending-poios",
+      "instruction": "Συμπλήρωσε -ποιός, -ποιώ, -ποιείο ή -ποίηση.",
+      "prompt": "διαφορο________",
+      "options": [
+        "ποιός",
+        "ποιώ",
+        "ποιείο",
+        "ποίηση"
+      ],
+      "answer": "ποιώ",
+      "feedback": "Χτίσε τη λέξη: -ποιός (επάγγελμα), -ποιώ (ρήμα), -ποιείο (τόπος), -ποίηση (ουσιαστικό ενέργειας)."
+    },
+    {
+      "id": "drill-ending-poios-011",
+      "kind": "ending",
+      "grades": [
+        5,
+        6
+      ],
+      "ruleId": "ending-poios",
+      "instruction": "Συμπλήρωσε -ποιός, -ποιώ, -ποιείο ή -ποίηση.",
+      "prompt": "ωρολογο________",
+      "options": [
+        "ποιός",
+        "ποιώ",
+        "ποιείο",
+        "ποίηση"
+      ],
+      "answer": "ποιείο",
+      "feedback": "Χτίσε τη λέξη: -ποιός (επάγγελμα), -ποιώ (ρήμα), -ποιείο (τόπος), -ποίηση (ουσιαστικό ενέργειας)."
+    },
+    {
+      "id": "drill-ending-poios-012",
+      "kind": "ending",
+      "grades": [
+        5,
+        6
+      ],
+      "ruleId": "ending-poios",
+      "instruction": "Συμπλήρωσε -ποιός, -ποιώ, -ποιείο ή -ποίηση.",
+      "prompt": "προειδο________",
+      "options": [
+        "ποιός",
+        "ποιώ",
+        "ποιείο",
+        "ποίηση"
+      ],
+      "answer": "ποίηση",
+      "feedback": "Χτίσε τη λέξη: -ποιός (επάγγελμα), -ποιώ (ρήμα), -ποιείο (τόπος), -ποίηση (ουσιαστικό ενέργειας)."
+    },
+    {
+      "id": "drill-ending-poios-013",
+      "kind": "ending",
+      "grades": [
+        5,
+        6
+      ],
+      "ruleId": "ending-poios",
+      "instruction": "Συμπλήρωσε -ποιός, -ποιώ, -ποιείο ή -ποίηση.",
+      "prompt": "επιπλο________",
+      "options": [
+        "ποιός",
+        "ποιώ",
+        "ποιείο",
+        "ποίηση"
+      ],
+      "answer": "ποιός",
+      "feedback": "Χτίσε τη λέξη: -ποιός (επάγγελμα), -ποιώ (ρήμα), -ποιείο (τόπος), -ποίηση (ουσιαστικό ενέργειας)."
+    },
+    {
+      "id": "drill-ending-poios-014",
+      "kind": "ending",
+      "grades": [
+        5,
+        6
+      ],
+      "ruleId": "ending-poios",
+      "instruction": "Συμπλήρωσε -ποιός, -ποιώ, -ποιείο ή -ποίηση.",
+      "prompt": "τελειο________",
+      "options": [
+        "ποιός",
+        "ποιώ",
+        "ποιείο",
+        "ποίηση"
+      ],
+      "answer": "ποιώ",
+      "feedback": "Χτίσε τη λέξη: -ποιός (επάγγελμα), -ποιώ (ρήμα), -ποιείο (τόπος), -ποίηση (ουσιαστικό ενέργειας)."
+    },
+    {
+      "id": "drill-ending-poios-015",
+      "kind": "ending",
+      "grades": [
+        5,
+        6
+      ],
+      "ruleId": "ending-poios",
+      "instruction": "Συμπλήρωσε -ποιός, -ποιώ, -ποιείο ή -ποίηση.",
+      "prompt": "ταραχο________",
+      "options": [
+        "ποιός",
+        "ποιώ",
+        "ποιείο",
+        "ποίηση"
+      ],
+      "answer": "ποιός",
+      "feedback": "Χτίσε τη λέξη: -ποιός (επάγγελμα), -ποιώ (ρήμα), -ποιείο (τόπος), -ποίηση (ουσιαστικό ενέργειας)."
+    },
+    {
+      "id": "drill-ending-poios-016",
+      "kind": "ending",
+      "grades": [
+        5,
+        6
+      ],
+      "ruleId": "ending-poios",
+      "instruction": "Συμπλήρωσε -ποιός, -ποιώ, -ποιείο ή -ποίηση.",
+      "prompt": "προσωπο________",
+      "options": [
+        "ποιός",
+        "ποιώ",
+        "ποιείο",
+        "ποίηση"
+      ],
+      "answer": "ποίηση",
+      "feedback": "Χτίσε τη λέξη: -ποιός (επάγγελμα), -ποιώ (ρήμα), -ποιείο (τόπος), -ποίηση (ουσιαστικό ενέργειας)."
+    },
+    {
+      "id": "drill-ending-ai-ei-o-001",
+      "kind": "ending",
+      "grades": [
+        3,
+        4,
+        5
+      ],
+      "ruleId": "ending-ai-ei-o",
+      "instruction": "Συμπλήρωσε -αι, -ει ή -ω.",
+      "prompt": "εγώ ρωτά____",
+      "options": [
+        "αι",
+        "ει",
+        "ω"
+      ],
+      "answer": "ω",
+      "feedback": "Εγώ (ενεργητική) → -ω · αυτός/αυτή → -ει · εγώ σε -μαι (μέση) → -αι."
+    },
+    {
+      "id": "drill-ending-ai-ei-o-002",
+      "kind": "ending",
+      "grades": [
+        3,
+        4,
+        5
+      ],
+      "ruleId": "ending-ai-ei-o",
+      "instruction": "Συμπλήρωσε -αι, -ει ή -ω.",
+      "prompt": "αυτός ανοίγ____",
+      "options": [
+        "αι",
+        "ει",
+        "ω"
+      ],
+      "answer": "ει",
+      "feedback": "Εγώ (ενεργητική) → -ω · αυτός/αυτή → -ει · εγώ σε -μαι (μέση) → -αι."
+    },
+    {
+      "id": "drill-ending-ai-ei-o-003",
+      "kind": "ending",
+      "grades": [
+        3,
+        4,
+        5
+      ],
+      "ruleId": "ending-ai-ei-o",
+      "instruction": "Συμπλήρωσε -αι, -ει ή -ω.",
+      "prompt": "εγώ κουράζομ____",
+      "options": [
+        "αι",
+        "ει",
+        "ω"
+      ],
+      "answer": "αι",
+      "feedback": "Εγώ (ενεργητική) → -ω · αυτός/αυτή → -ει · εγώ σε -μαι (μέση) → -αι."
+    },
+    {
+      "id": "drill-ending-ai-ei-o-004",
+      "kind": "ending",
+      "grades": [
+        3,
+        4,
+        5
+      ],
+      "ruleId": "ending-ai-ei-o",
+      "instruction": "Συμπλήρωσε -αι, -ει ή -ω.",
+      "prompt": "εγώ πεινά____",
+      "options": [
+        "αι",
+        "ει",
+        "ω"
+      ],
+      "answer": "ω",
+      "feedback": "Εγώ (ενεργητική) → -ω · αυτός/αυτή → -ει · εγώ σε -μαι (μέση) → -αι."
+    },
+    {
+      "id": "drill-ending-ai-ei-o-005",
+      "kind": "ending",
+      "grades": [
+        3,
+        4,
+        5
+      ],
+      "ruleId": "ending-ai-ei-o",
+      "instruction": "Συμπλήρωσε -αι, -ει ή -ω.",
+      "prompt": "αυτός παίζ____",
+      "options": [
+        "αι",
+        "ει",
+        "ω"
+      ],
+      "answer": "ει",
+      "feedback": "Εγώ (ενεργητική) → -ω · αυτός/αυτή → -ει · εγώ σε -μαι (μέση) → -αι."
+    },
+    {
+      "id": "drill-ending-ai-ei-o-006",
+      "kind": "ending",
+      "grades": [
+        3,
+        4,
+        5
+      ],
+      "ruleId": "ending-ai-ei-o",
+      "instruction": "Συμπλήρωσε -αι, -ει ή -ω.",
+      "prompt": "εγώ χτενίζομ____",
+      "options": [
+        "αι",
+        "ει",
+        "ω"
+      ],
+      "answer": "αι",
+      "feedback": "Εγώ (ενεργητική) → -ω · αυτός/αυτή → -ει · εγώ σε -μαι (μέση) → -αι."
+    },
+    {
+      "id": "drill-ending-ai-ei-o-007",
+      "kind": "ending",
+      "grades": [
+        3,
+        4,
+        5
+      ],
+      "ruleId": "ending-ai-ei-o",
+      "instruction": "Συμπλήρωσε -αι, -ει ή -ω.",
+      "prompt": "εγώ κλαί____",
+      "options": [
+        "αι",
+        "ει",
+        "ω"
+      ],
+      "answer": "ω",
+      "feedback": "Εγώ (ενεργητική) → -ω · αυτός/αυτή → -ει · εγώ σε -μαι (μέση) → -αι."
+    },
+    {
+      "id": "drill-ending-ai-ei-o-008",
+      "kind": "ending",
+      "grades": [
+        3,
+        4,
+        5
+      ],
+      "ruleId": "ending-ai-ei-o",
+      "instruction": "Συμπλήρωσε -αι, -ει ή -ω.",
+      "prompt": "αυτή τρέχ____",
+      "options": [
+        "αι",
+        "ει",
+        "ω"
+      ],
+      "answer": "ει",
+      "feedback": "Εγώ (ενεργητική) → -ω · αυτός/αυτή → -ει · εγώ σε -μαι (μέση) → -αι."
+    },
+    {
+      "id": "drill-ending-ai-ei-o-009",
+      "kind": "ending",
+      "grades": [
+        3,
+        4,
+        5
+      ],
+      "ruleId": "ending-ai-ei-o",
+      "instruction": "Συμπλήρωσε -αι, -ει ή -ω.",
+      "prompt": "εγώ σηκώνομ____",
+      "options": [
+        "αι",
+        "ει",
+        "ω"
+      ],
+      "answer": "αι",
+      "feedback": "Εγώ (ενεργητική) → -ω · αυτός/αυτή → -ει · εγώ σε -μαι (μέση) → -αι."
+    },
+    {
+      "id": "drill-ending-ai-ei-o-010",
+      "kind": "ending",
+      "grades": [
+        3,
+        4,
+        5
+      ],
+      "ruleId": "ending-ai-ei-o",
+      "instruction": "Συμπλήρωσε -αι, -ει ή -ω.",
+      "prompt": "εγώ διψά____",
+      "options": [
+        "αι",
+        "ει",
+        "ω"
+      ],
+      "answer": "ω",
+      "feedback": "Εγώ (ενεργητική) → -ω · αυτός/αυτή → -ει · εγώ σε -μαι (μέση) → -αι."
+    },
+    {
+      "id": "drill-ending-ai-ei-o-011",
+      "kind": "ending",
+      "grades": [
+        3,
+        4,
+        5
+      ],
+      "ruleId": "ending-ai-ei-o",
+      "instruction": "Συμπλήρωσε -αι, -ει ή -ω.",
+      "prompt": "αυτός γράφ____",
+      "options": [
+        "αι",
+        "ει",
+        "ω"
+      ],
+      "answer": "ει",
+      "feedback": "Εγώ (ενεργητική) → -ω · αυτός/αυτή → -ει · εγώ σε -μαι (μέση) → -αι."
+    },
+    {
+      "id": "drill-ending-ai-ei-o-012",
+      "kind": "ending",
+      "grades": [
+        3,
+        4,
+        5
+      ],
+      "ruleId": "ending-ai-ei-o",
+      "instruction": "Συμπλήρωσε -αι, -ει ή -ω.",
+      "prompt": "εγώ σκέφτομ____",
+      "options": [
+        "αι",
+        "ει",
+        "ω"
+      ],
+      "answer": "αι",
+      "feedback": "Εγώ (ενεργητική) → -ω · αυτός/αυτή → -ει · εγώ σε -μαι (μέση) → -αι."
+    },
+    {
+      "id": "drill-ending-ai-ei-o-013",
+      "kind": "ending",
+      "grades": [
+        3,
+        4,
+        5
+      ],
+      "ruleId": "ending-ai-ei-o",
+      "instruction": "Συμπλήρωσε -αι, -ει ή -ω.",
+      "prompt": "εγώ τραγουδά____",
+      "options": [
+        "αι",
+        "ει",
+        "ω"
+      ],
+      "answer": "ω",
+      "feedback": "Εγώ (ενεργητική) → -ω · αυτός/αυτή → -ει · εγώ σε -μαι (μέση) → -αι."
+    },
+    {
+      "id": "drill-ending-ai-ei-o-014",
+      "kind": "ending",
+      "grades": [
+        3,
+        4,
+        5
+      ],
+      "ruleId": "ending-ai-ei-o",
+      "instruction": "Συμπλήρωσε -αι, -ει ή -ω.",
+      "prompt": "αυτή ρίχν____",
+      "options": [
+        "αι",
+        "ει",
+        "ω"
+      ],
+      "answer": "ει",
+      "feedback": "Εγώ (ενεργητική) → -ω · αυτός/αυτή → -ει · εγώ σε -μαι (μέση) → -αι."
+    },
+    {
+      "id": "drill-ending-ai-ei-o-015",
+      "kind": "ending",
+      "grades": [
+        3,
+        4,
+        5
+      ],
+      "ruleId": "ending-ai-ei-o",
+      "instruction": "Συμπλήρωσε -αι, -ει ή -ω.",
+      "prompt": "εγώ θυμάμ____",
+      "options": [
+        "αι",
+        "ει",
+        "ω"
+      ],
+      "answer": "αι",
+      "feedback": "Εγώ (ενεργητική) → -ω · αυτός/αυτή → -ει · εγώ σε -μαι (μέση) → -αι."
+    },
+    {
+      "id": "drill-ending-ai-ei-o-016",
+      "kind": "ending",
+      "grades": [
+        3,
+        4,
+        5
+      ],
+      "ruleId": "ending-ai-ei-o",
+      "instruction": "Συμπλήρωσε -αι, -ει ή -ω.",
+      "prompt": "αυτός κόβ____",
+      "options": [
+        "αι",
+        "ει",
+        "ω"
+      ],
+      "answer": "ει",
+      "feedback": "Εγώ (ενεργητική) → -ω · αυτός/αυτή → -ει · εγώ σε -μαι (μέση) → -αι."
+    },
+    {
+      "id": "drill-ending-os-001",
+      "kind": "ending",
+      "grades": [
+        2,
+        3
+      ],
+      "ruleId": "ending-os",
+      "instruction": "Συμπλήρωσε -ος ή -ο.",
+      "prompt": "κήπ____",
+      "options": [
+        "ος",
+        "ο"
+      ],
+      "answer": "ος",
+      "feedback": "Αρσενικά ουσιαστικά ενικού συχνά σε -ος · ουδέτερα σε -ο.",
+      "prefix": "ο"
+    },
+    {
+      "id": "drill-ending-os-002",
+      "kind": "ending",
+      "grades": [
+        2,
+        3
+      ],
+      "ruleId": "ending-os",
+      "instruction": "Συμπλήρωσε -ος ή -ο.",
+      "prompt": "βουν____",
+      "options": [
+        "ος",
+        "ο"
+      ],
+      "answer": "ο",
+      "feedback": "Αρσενικά ουσιαστικά ενικού συχνά σε -ος · ουδέτερα σε -ο.",
+      "prefix": "το"
+    },
+    {
+      "id": "drill-ending-os-003",
+      "kind": "ending",
+      "grades": [
+        2,
+        3
+      ],
+      "ruleId": "ending-os",
+      "instruction": "Συμπλήρωσε -ος ή -ο.",
+      "prompt": "σκύλ____",
+      "options": [
+        "ος",
+        "ο"
+      ],
+      "answer": "ος",
+      "feedback": "Αρσενικά ουσιαστικά ενικού συχνά σε -ος · ουδέτερα σε -ο.",
+      "prefix": "ο"
+    },
+    {
+      "id": "drill-ending-os-004",
+      "kind": "ending",
+      "grades": [
+        2,
+        3
+      ],
+      "ruleId": "ending-os",
+      "instruction": "Συμπλήρωσε -ος ή -ο.",
+      "prompt": "δέντρ____",
+      "options": [
+        "ος",
+        "ο"
+      ],
+      "answer": "ο",
+      "feedback": "Αρσενικά ουσιαστικά ενικού συχνά σε -ος · ουδέτερα σε -ο.",
+      "prefix": "το"
+    },
+    {
+      "id": "drill-ending-os-005",
+      "kind": "ending",
+      "grades": [
+        2,
+        3
+      ],
+      "ruleId": "ending-os",
+      "instruction": "Συμπλήρωσε -ος ή -ο.",
+      "prompt": "άνθρωπ____",
+      "options": [
+        "ος",
+        "ο"
+      ],
+      "answer": "ος",
+      "feedback": "Αρσενικά ουσιαστικά ενικού συχνά σε -ος · ουδέτερα σε -ο.",
+      "prefix": "ο"
+    },
+    {
+      "id": "drill-ending-os-006",
+      "kind": "ending",
+      "grades": [
+        2,
+        3
+      ],
+      "ruleId": "ending-os",
+      "instruction": "Συμπλήρωσε -ος ή -ο.",
+      "prompt": "παγωτ____",
+      "options": [
+        "ος",
+        "ο"
+      ],
+      "answer": "ο",
+      "feedback": "Αρσενικά ουσιαστικά ενικού συχνά σε -ος · ουδέτερα σε -ο.",
+      "prefix": "το"
+    },
+    {
+      "id": "drill-ending-os-007",
+      "kind": "ending",
+      "grades": [
+        2,
+        3
+      ],
+      "ruleId": "ending-os",
+      "instruction": "Συμπλήρωσε -ος ή -ο.",
+      "prompt": "δάσκαλ____",
+      "options": [
+        "ος",
+        "ο"
+      ],
+      "answer": "ος",
+      "feedback": "Αρσενικά ουσιαστικά ενικού συχνά σε -ος · ουδέτερα σε -ο.",
+      "prefix": "ο"
+    },
+    {
+      "id": "drill-ending-os-008",
+      "kind": "ending",
+      "grades": [
+        2,
+        3
+      ],
+      "ruleId": "ending-os",
+      "instruction": "Συμπλήρωσε -ος ή -ο.",
+      "prompt": "δώρ____",
+      "options": [
+        "ος",
+        "ο"
+      ],
+      "answer": "ο",
+      "feedback": "Αρσενικά ουσιαστικά ενικού συχνά σε -ος · ουδέτερα σε -ο.",
+      "prefix": "το"
+    },
+    {
+      "id": "drill-ending-os-009",
+      "kind": "ending",
+      "grades": [
+        2,
+        3
+      ],
+      "ruleId": "ending-os",
+      "instruction": "Συμπλήρωσε -ος ή -ο.",
+      "prompt": "γιατρ____",
+      "options": [
+        "ος",
+        "ο"
+      ],
+      "answer": "ος",
+      "feedback": "Αρσενικά ουσιαστικά ενικού συχνά σε -ος · ουδέτερα σε -ο.",
+      "prefix": "ο"
+    },
+    {
+      "id": "drill-ending-os-010",
+      "kind": "ending",
+      "grades": [
+        2,
+        3
+      ],
+      "ruleId": "ending-os",
+      "instruction": "Συμπλήρωσε -ος ή -ο.",
+      "prompt": "μήλ____",
+      "options": [
+        "ος",
+        "ο"
+      ],
+      "answer": "ο",
+      "feedback": "Αρσενικά ουσιαστικά ενικού συχνά σε -ος · ουδέτερα σε -ο.",
+      "prefix": "το"
+    },
+    {
+      "id": "drill-ending-os-011",
+      "kind": "ending",
+      "grades": [
+        2,
+        3
+      ],
+      "ruleId": "ending-os",
+      "instruction": "Συμπλήρωσε -ος ή -ο.",
+      "prompt": "δρόμ____",
+      "options": [
+        "ος",
+        "ο"
+      ],
+      "answer": "ος",
+      "feedback": "Αρσενικά ουσιαστικά ενικού συχνά σε -ος · ουδέτερα σε -ο.",
+      "prefix": "ο"
+    },
+    {
+      "id": "drill-ending-os-012",
+      "kind": "ending",
+      "grades": [
+        2,
+        3
+      ],
+      "ruleId": "ending-os",
+      "instruction": "Συμπλήρωσε -ος ή -ο.",
+      "prompt": "τραπέζ____",
+      "options": [
+        "ος",
+        "ο"
+      ],
+      "answer": "ο",
+      "feedback": "Αρσενικά ουσιαστικά ενικού συχνά σε -ος · ουδέτερα σε -ο.",
+      "prefix": "το"
+    },
+    {
+      "id": "drill-ending-h-i-ei-001",
+      "kind": "ending",
+      "grades": [
+        3,
+        4
+      ],
+      "ruleId": "ending-h-i-ei",
+      "instruction": "Συμπλήρωσε -η, -ι ή -ει.",
+      "prompt": "πληγ____",
+      "options": [
+        "η",
+        "ι",
+        "ει"
+      ],
+      "answer": "η",
+      "feedback": "Θηλυκά συχνά σε -η · ουδέτερα σε -ι · ρήμα (αυτός/αυτή) σε -ει.",
+      "prefix": "η"
+    },
+    {
+      "id": "drill-ending-h-i-ei-002",
+      "kind": "ending",
+      "grades": [
+        3,
+        4
+      ],
+      "ruleId": "ending-h-i-ei",
+      "instruction": "Συμπλήρωσε -η, -ι ή -ει.",
+      "prompt": "αγόρ____",
+      "options": [
+        "η",
+        "ι",
+        "ει"
+      ],
+      "answer": "ι",
+      "feedback": "Θηλυκά συχνά σε -η · ουδέτερα σε -ι · ρήμα (αυτός/αυτή) σε -ει.",
+      "prefix": "το"
+    },
+    {
+      "id": "drill-ending-h-i-ei-003",
+      "kind": "ending",
+      "grades": [
+        3,
+        4
+      ],
+      "ruleId": "ending-h-i-ei",
+      "instruction": "Συμπλήρωσε -η, -ι ή -ει.",
+      "prompt": "αυτός διαβάζ____",
+      "options": [
+        "η",
+        "ι",
+        "ει"
+      ],
+      "answer": "ει",
+      "feedback": "Θηλυκά συχνά σε -η · ουδέτερα σε -ι · ρήμα (αυτός/αυτή) σε -ει."
+    },
+    {
+      "id": "drill-ending-h-i-ei-004",
+      "kind": "ending",
+      "grades": [
+        3,
+        4
+      ],
+      "ruleId": "ending-h-i-ei",
+      "instruction": "Συμπλήρωσε -η, -ι ή -ει.",
+      "prompt": "αγάπ____",
+      "options": [
+        "η",
+        "ι",
+        "ει"
+      ],
+      "answer": "η",
+      "feedback": "Θηλυκά συχνά σε -η · ουδέτερα σε -ι · ρήμα (αυτός/αυτή) σε -ει.",
+      "prefix": "η"
+    },
+    {
+      "id": "drill-ending-h-i-ei-005",
+      "kind": "ending",
+      "grades": [
+        3,
+        4
+      ],
+      "ruleId": "ending-h-i-ei",
+      "instruction": "Συμπλήρωσε -η, -ι ή -ει.",
+      "prompt": "ποτήρ____",
+      "options": [
+        "η",
+        "ι",
+        "ει"
+      ],
+      "answer": "ι",
+      "feedback": "Θηλυκά συχνά σε -η · ουδέτερα σε -ι · ρήμα (αυτός/αυτή) σε -ει.",
+      "prefix": "το"
+    },
+    {
+      "id": "drill-ending-h-i-ei-006",
+      "kind": "ending",
+      "grades": [
+        3,
+        4
+      ],
+      "ruleId": "ending-h-i-ei",
+      "instruction": "Συμπλήρωσε -η, -ι ή -ει.",
+      "prompt": "αυτή κλειδών____",
+      "options": [
+        "η",
+        "ι",
+        "ει"
+      ],
+      "answer": "ει",
+      "feedback": "Θηλυκά συχνά σε -η · ουδέτερα σε -ι · ρήμα (αυτός/αυτή) σε -ει."
+    },
+    {
+      "id": "drill-ending-h-i-ei-007",
+      "kind": "ending",
+      "grades": [
+        3,
+        4
+      ],
+      "ruleId": "ending-h-i-ei",
+      "instruction": "Συμπλήρωσε -η, -ι ή -ει.",
+      "prompt": "μηχαν____",
+      "options": [
+        "η",
+        "ι",
+        "ει"
+      ],
+      "answer": "η",
+      "feedback": "Θηλυκά συχνά σε -η · ουδέτερα σε -ι · ρήμα (αυτός/αυτή) σε -ει.",
+      "prefix": "η"
+    },
+    {
+      "id": "drill-ending-h-i-ei-008",
+      "kind": "ending",
+      "grades": [
+        3,
+        4
+      ],
+      "ruleId": "ending-h-i-ei",
+      "instruction": "Συμπλήρωσε -η, -ι ή -ει.",
+      "prompt": "καλάθ____",
+      "options": [
+        "η",
+        "ι",
+        "ει"
+      ],
+      "answer": "ι",
+      "feedback": "Θηλυκά συχνά σε -η · ουδέτερα σε -ι · ρήμα (αυτός/αυτή) σε -ει.",
+      "prefix": "το"
+    },
+    {
+      "id": "drill-ending-h-i-ei-009",
+      "kind": "ending",
+      "grades": [
+        3,
+        4
+      ],
+      "ruleId": "ending-h-i-ei",
+      "instruction": "Συμπλήρωσε -η, -ι ή -ει.",
+      "prompt": "αυτός γράφ____",
+      "options": [
+        "η",
+        "ι",
+        "ει"
+      ],
+      "answer": "ει",
+      "feedback": "Θηλυκά συχνά σε -η · ουδέτερα σε -ι · ρήμα (αυτός/αυτή) σε -ει."
+    },
+    {
+      "id": "drill-ending-h-i-ei-010",
+      "kind": "ending",
+      "grades": [
+        3,
+        4
+      ],
+      "ruleId": "ending-h-i-ei",
+      "instruction": "Συμπλήρωσε -η, -ι ή -ει.",
+      "prompt": "βροχ____",
+      "options": [
+        "η",
+        "ι",
+        "ει"
+      ],
+      "answer": "η",
+      "feedback": "Θηλυκά συχνά σε -η · ουδέτερα σε -ι · ρήμα (αυτός/αυτή) σε -ει.",
+      "prefix": "η"
+    },
+    {
+      "id": "drill-ending-h-i-ei-011",
+      "kind": "ending",
+      "grades": [
+        3,
+        4
+      ],
+      "ruleId": "ending-h-i-ei",
+      "instruction": "Συμπλήρωσε -η, -ι ή -ει.",
+      "prompt": "μανιτάρ____",
+      "options": [
+        "η",
+        "ι",
+        "ει"
+      ],
+      "answer": "ι",
+      "feedback": "Θηλυκά συχνά σε -η · ουδέτερα σε -ι · ρήμα (αυτός/αυτή) σε -ει.",
+      "prefix": "το"
+    },
+    {
+      "id": "drill-ending-h-i-ei-012",
+      "kind": "ending",
+      "grades": [
+        3,
+        4
+      ],
+      "ruleId": "ending-h-i-ei",
+      "instruction": "Συμπλήρωσε -η, -ι ή -ει.",
+      "prompt": "αυτή καθαρίζ____",
+      "options": [
+        "η",
+        "ι",
+        "ει"
+      ],
+      "answer": "ει",
+      "feedback": "Θηλυκά συχνά σε -η · ουδέτερα σε -ι · ρήμα (αυτός/αυτή) σε -ει."
     }
   ]
 }
