@@ -15,7 +15,6 @@ function childAvatarLetter(name?: string | null): string {
 }
 
 interface HomeScreenProps {
-  onStart: () => void;
   onOpenSettings: (options?: { addChild?: boolean }) => void;
   onOpenPricing: () => void;
   onOpenLexicon: () => void;
@@ -49,7 +48,6 @@ interface HomeScreenProps {
 }
 
 export function HomeScreen({
-  onStart,
   onOpenSettings,
   onOpenPricing,
   onOpenLexicon,
@@ -84,7 +82,6 @@ export function HomeScreen({
   const needsProfile = showFamilyProfiles && !activeChildName;
   const authEnabled = isClerkEnabled();
   const needsSignIn = !canStartPractice(isSignedIn, authEnabled);
-  const startBlocked = needsPurchase || needsProfile || subscriptionLoading || needsSignIn;
 
   const planStatusLabel = trialActive
     ? trialDaysLeft === 1
@@ -239,31 +236,44 @@ export function HomeScreen({
         </div>
       </div>
 
-      {needsSignIn ? (
-        <SignInWithConsent onConsentAccepted={onConsentAccepted}>
-          <button type="button" className="btn btn-primary btn-start btn-start--pulse">
-            Σύνδεση για να ξεκινήσεις
-          </button>
-        </SignInWithConsent>
-      ) : needsPurchase ? (
+      {needsSignIn && (
+        <div className="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="register-prompt-title">
+          <div className="modal-card">
+            <h2 id="register-prompt-title" className="modal-title">
+              Εγγραφή για να ξεκινήσεις
+            </h2>
+            <p className="hint-text register-prompt-text">
+              Δημιούργησε λογαριασμό γονέα για να ξεκινήσει η εξάσκηση και η δωρεάν δοκιμή 5 ημερών.
+            </p>
+            <div className="modal-actions modal-actions--center">
+              <SignInWithConsent onConsentAccepted={onConsentAccepted}>
+                <button type="button" className="btn btn-primary btn-start btn-start--pulse">
+                  Σύνδεση / Εγγραφή
+                </button>
+              </SignInWithConsent>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {needsPurchase ? (
         <button type="button" className="btn btn-primary btn-start btn-start--pulse" onClick={onOpenPricing}>
           {trialExpired ? "Αγόρασε για να συνεχίσεις" : "Αγορά συνδρομής"}
         </button>
-      ) : (
+      ) : needsProfile ? (
         <button
           type="button"
           className="btn btn-primary btn-start btn-start--pulse"
-          disabled={startBlocked && !needsProfile}
-          onClick={() => {
-            if (needsProfile) {
-              onOpenSettings({ addChild: true });
-              return;
-            }
-            onStart();
-          }}
+          onClick={() => onOpenSettings({ addChild: true })}
         >
-          {needsProfile ? "Πρόσθεσε προφίλ παιδιού" : "Ξεκινάμε"}
+          Πρόσθεσε προφίλ παιδιού
         </button>
+      ) : null}
+
+      {!needsSignIn && !needsPurchase && !needsProfile && !subscriptionLoading && (
+        <p className="hint-text practice-home-hint">
+          Πάτα έναν τρόπο εξάσκησης για να ξεκινήσει η άσκηση.
+        </p>
       )}
       {practiceHomeHint && !needsSignIn && !needsPurchase && !needsProfile && (
         <p className="hint-text practice-home-hint">{practiceHomeHint}</p>

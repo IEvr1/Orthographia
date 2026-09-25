@@ -356,11 +356,11 @@ function AppShell({
   );
 
   const launchSession = useCallback(
-    (kind: SessionKind) => {
+    (kind: SessionKind, mode: GameMode = gameMode) => {
       const store = loadProgress(activeProfileId);
 
-      if (modeUsesDrills(gameMode)) {
-        const plan = planDrillSession(drills, store, selectedGrade, gameMode);
+      if (modeUsesDrills(mode)) {
+        const plan = planDrillSession(drills, store, selectedGrade, mode);
         if (plan.items.length === 0) {
           setSessionBanner("Δεν υπάρχουν αρκετές ασκήσεις για αυτόν τον τρόπο στην επιλεγμένη τάξη.");
           setSessionWords([]);
@@ -393,10 +393,10 @@ function AppShell({
         banner = plan.sessionBanner;
       }
 
-      const modePool = filterWordsForMode(gradeWords, gameMode, families);
-      daily = filterWordsForMode(daily, gameMode, families);
+      const modePool = filterWordsForMode(gradeWords, mode, families);
+      daily = filterWordsForMode(daily, mode, families);
 
-      if (gameMode === "tonos") {
+      if (mode === "tonos") {
         const seen = new Set<string>();
         const tonosPool: WordEntry[] = [];
         for (const w of [...modePool, ...daily]) {
@@ -410,7 +410,7 @@ function AppShell({
           wordBatches = tonosPlan.batches;
           banner = tonosPlan.banner ?? banner;
         }
-      } else if (gameMode === "matching") {
+      } else if (mode === "matching") {
         daily = modePool.slice(0, Math.min(12, modePool.length));
       } else if (daily.length < 2) {
         daily = modePool.slice(0, Math.min(10, modePool.length));
@@ -438,54 +438,59 @@ function AppShell({
     [words, drills, selectedGrade, gameMode, weeklyRule, activeProfileId, families, gradeWords],
   );
 
-  const startSession = useCallback(() => {
-    setPaywallMessage(null);
-    if (!requireConsentForPractice()) return;
-    if (!canStartPractice(isSignedIn, isClerkEnabled())) return;
-    if (showFamilyProfiles && !activeProfileId) return;
-    if (!canPractice(isSignedIn, isClerkEnabled(), tier, trialActive)) {
-      setPaywallMessage(
-        trialExpired
-          ? "Η δωρεάν δοκιμή έληξε. Αγόρασε συνδρομή για να συνεχίσεις την εξάσκηση."
-          : "Η εξάσκηση απαιτεί ενεργή συνδρομή ή δοκιμή.",
-      );
-      setScreen("pricing");
-      return;
-    }
-    if (!canAccessGrade(tier, selectedGrade, trialActive)) {
-      setPaywallMessage("Αυτή η τάξη είναι διαθέσιμη με Premium.");
-      setScreen("pricing");
-      return;
-    }
-    if (!canAccessMode(tier, gameMode, trialActive)) {
-      setPaywallMessage("Αυτός ο τρόπος εξάσκησης είναι διαθέσιμος με Premium.");
-      setScreen("pricing");
-      return;
-    }
+  const startSession = useCallback(
+    (modeOverride?: GameMode) => {
+      const mode = modeOverride ?? gameMode;
+      setPaywallMessage(null);
+      if (!requireConsentForPractice()) return;
+      if (!canStartPractice(isSignedIn, isClerkEnabled())) return;
+      if (showFamilyProfiles && !activeProfileId) return;
+      if (!canPractice(isSignedIn, isClerkEnabled(), tier, trialActive)) {
+        setPaywallMessage(
+          trialExpired
+            ? "Η δωρεάν δοκιμή έληξε. Αγόρασε συνδρομή για να συνεχίσεις την εξάσκηση."
+            : "Η εξάσκηση απαιτεί ενεργή συνδρομή ή δοκιμή.",
+        );
+        setScreen("pricing");
+        return;
+      }
+      if (!canAccessGrade(tier, selectedGrade, trialActive)) {
+        setPaywallMessage("Αυτή η τάξη είναι διαθέσιμη με Premium.");
+        setScreen("pricing");
+        return;
+      }
+      if (!canAccessMode(tier, mode, trialActive)) {
+        setPaywallMessage("Αυτός ο τρόπος εξάσκησης είναι διαθέσιμος με Premium.");
+        setScreen("pricing");
+        return;
+      }
 
-    setSessionKind("daily");
-    const rule = weeklyRule ?? rules.find((r) => r.grades.includes(selectedGrade)) ?? null;
-    const seen = JSON.parse(localStorage.getItem(RULES_SEEN_KEY) || "{}") as Record<string, boolean>;
-    if (rule && !seen[rule.id] && canAccessWeeklyRule(tier, trialActive)) {
-      setActiveRule(rule);
-      setScreen("rule");
-      return;
-    }
-    launchSession("daily");
-  }, [
-    launchSession,
-    rules,
-    selectedGrade,
-    weeklyRule,
-    tier,
-    trialActive,
-    trialExpired,
-    gameMode,
-    showFamilyProfiles,
-    activeProfileId,
-    isSignedIn,
-    requireConsentForPractice,
-  ]);
+      if (modeOverride) setGameMode(modeOverride);
+      setSessionKind("daily");
+      const rule = weeklyRule ?? rules.find((r) => r.grades.includes(selectedGrade)) ?? null;
+      const seen = JSON.parse(localStorage.getItem(RULES_SEEN_KEY) || "{}") as Record<string, boolean>;
+      if (rule && !seen[rule.id] && canAccessWeeklyRule(tier, trialActive)) {
+        setActiveRule(rule);
+        setScreen("rule");
+        return;
+      }
+      launchSession("daily", mode);
+    },
+    [
+      launchSession,
+      rules,
+      selectedGrade,
+      weeklyRule,
+      tier,
+      trialActive,
+      trialExpired,
+      gameMode,
+      showFamilyProfiles,
+      activeProfileId,
+      isSignedIn,
+      requireConsentForPractice,
+    ],
+  );
 
   const startMistakeSession = useCallback(
     (category: ErrorCategory | null = null) => {
@@ -574,10 +579,23 @@ function AppShell({
     setScreen("settings");
   }, []);
 
+  const goHomeQuiet = useCallback(() => {
+    setSettingsAddChild(false);
+    setScreen("home");
+  }, []);
+
   const closeSettings = useCallback(() => {
     setSettingsAddChild(false);
     setScreen("home");
   }, []);
+
+  /** Selecting a practice mode selects it and starts the exercise. */
+  const handleModeChange = useCallback(
+    (mode: GameMode) => {
+      startSession(mode);
+    },
+    [startSession],
+  );
 
   if (isSignedIn && !consentGiven) {
     return <ConsentScreen onAccepted={handleConsentAccepted} />;
@@ -626,7 +644,6 @@ function AppShell({
     <div className="app">
       {screen === "home" && (
         <HomeScreen
-          onStart={startSession}
           onOpenSettings={openSettings}
           onOpenPricing={() => setScreen("pricing")}
           onOpenLexicon={() => setScreen("lexicon")}
@@ -641,7 +658,7 @@ function AppShell({
           availableGrades={availableGrades}
           onGradeChange={setSelectedGrade}
           gameMode={gameMode}
-          onModeChange={setGameMode}
+          onModeChange={handleModeChange}
           gradeWords={gradeWords}
           drills={drills}
           families={families}
@@ -668,7 +685,7 @@ function AppShell({
           grade={selectedGrade}
           availableGrades={availableGrades}
           onGradeChange={setSelectedGrade}
-          onBack={() => setScreen("home")}
+          onBack={goHomeQuiet}
           profileId={activeProfileId}
           onOpenLists={() => setScreen("lists")}
           onListsChanged={bumpLists}
@@ -679,7 +696,7 @@ function AppShell({
         <WordListsScreen
           words={words}
           profileId={activeProfileId}
-          onBack={() => setScreen("home")}
+          onBack={goHomeQuiet}
           onOpenLexicon={() => setScreen("lexicon")}
           onPracticeList={startListSession}
           onChanged={bumpLists}
@@ -692,7 +709,7 @@ function AppShell({
           childName={activeProfile?.name ?? null}
           grade={selectedGrade}
           words={words}
-          onBack={() => setScreen("home")}
+          onBack={goHomeQuiet}
           onPracticeMistakes={(category) => startMistakeSession(category ?? null)}
         />
       )}
@@ -730,7 +747,7 @@ function AppShell({
         <>
           {paywallMessage && <p className="pricing-banner">{paywallMessage}</p>}
           <PricingScreen
-            onBack={() => setScreen("home")}
+            onBack={goHomeQuiet}
             tier={tier}
             active={subscription.active}
             currentPeriodEnd={subscription.currentPeriodEnd}
@@ -752,7 +769,7 @@ function AppShell({
           families={families}
           sessionBanner={sessionBanner}
           onComplete={handleComplete}
-          onQuit={() => setScreen("home")}
+          onQuit={goHomeQuiet}
         />
       )}
 
@@ -766,7 +783,7 @@ function AppShell({
           sessionBanner={sessionBanner}
           profileId={activeProfileId}
           onComplete={handleComplete}
-          onQuit={() => setScreen("home")}
+          onQuit={goHomeQuiet}
         />
       )}
 
@@ -776,7 +793,7 @@ function AppShell({
           families={families}
           sessionBanner={sessionBanner}
           onComplete={handleComplete}
-          onQuit={() => setScreen("home")}
+          onQuit={goHomeQuiet}
         />
       )}
 
@@ -788,12 +805,12 @@ function AppShell({
           sessionBanner={sessionBanner}
           profileId={activeProfileId}
           onComplete={handleComplete}
-          onQuit={() => setScreen("home")}
+          onQuit={goHomeQuiet}
         />
       )}
 
       {screen === "summary" && summary && (
-        <SummaryScreen summary={summary} onHome={() => setScreen("home")} />
+        <SummaryScreen summary={summary} onHome={goHomeQuiet} />
       )}
     </div>
   );

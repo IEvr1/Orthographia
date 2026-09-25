@@ -696,6 +696,17 @@ body {
   gap: 0.75rem;
 }
 
+.keyboard--compact {
+  gap: 0.4rem;
+}
+
+.feedback-anchor {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  scroll-margin-top: 1rem;
+}
+
 .input-label {
   font-size: 0.9rem;
   color: var(--ink-soft);
@@ -1652,6 +1663,15 @@ body {
   justify-content: space-between;
   align-items: center;
   margin-top: 0.5rem;
+}
+
+.modal-actions--center {
+  justify-content: center;
+}
+
+.register-prompt-text {
+  text-align: center;
+  margin: 0;
 }
 
 .modal-actions-right {

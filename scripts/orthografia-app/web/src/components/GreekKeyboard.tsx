@@ -5,6 +5,8 @@ interface GreekKeyboardProps {
   onChange: (value: string) => void;
   onCheck: () => void;
   disabled?: boolean;
+  /** Hide letter keys after check so feedback is visible without scrolling. */
+  hideKeys?: boolean;
   checkLabel?: string;
 }
 
@@ -34,9 +36,11 @@ export function GreekKeyboard({
   onChange,
   onCheck,
   disabled = false,
+  hideKeys = false,
   checkLabel = "Έλεγξε",
 }: GreekKeyboardProps) {
   const [caps, setCaps] = useState(false);
+  const inputRef = useRef<HTMLInputElement>(null);
   const longPressTimer = useRef<number | null>(null);
   const longPressKey = useRef<string | null>(null);
 
@@ -88,18 +92,25 @@ export function GreekKeyboard({
     longPressKey.current = null;
   };
 
+  const handleCheckClick = () => {
+    inputRef.current?.blur();
+    onCheck();
+  };
+
   return (
-    <div className="keyboard">
+    <div className={`keyboard${hideKeys ? " keyboard--compact" : ""}`}>
       <label className="input-label" htmlFor="word-input">
-        Γράψε εδώ
+        {hideKeys ? "Η απάντησή σου" : "Γράψε εδώ"}
       </label>
       <input
+        ref={inputRef}
         id="word-input"
         className="word-input"
         type="text"
         value={value}
         onChange={(e) => onChange(e.target.value)}
-        disabled={disabled}
+        disabled={disabled || hideKeys}
+        readOnly={hideKeys}
         autoComplete="off"
         autoCorrect="off"
         spellCheck={false}
@@ -107,58 +118,60 @@ export function GreekKeyboard({
         aria-label="Γράψε τη λέξη"
       />
 
-      <div className="keyboard-rows">
-        {ROWS.map((row, ri) => (
-          <div className="keyboard-row" key={ri}>
-            {row.map((key) => (
-              <button
-                key={key}
-                type="button"
-                className="key"
-                disabled={disabled}
-                onPointerDown={() => handlePointerDown(key)}
-                onPointerUp={() => handlePointerUp(key)}
-                onPointerLeave={() => {
-                  if (longPressTimer.current) {
-                    window.clearTimeout(longPressTimer.current);
-                    longPressTimer.current = null;
-                  }
-                  longPressKey.current = null;
-                }}
-              >
-                {withCase(key, caps)}
-              </button>
-            ))}
-          </div>
-        ))}
+      {!hideKeys && (
+        <div className="keyboard-rows">
+          {ROWS.map((row, ri) => (
+            <div className="keyboard-row" key={ri}>
+              {row.map((key) => (
+                <button
+                  key={key}
+                  type="button"
+                  className="key"
+                  disabled={disabled}
+                  onPointerDown={() => handlePointerDown(key)}
+                  onPointerUp={() => handlePointerUp(key)}
+                  onPointerLeave={() => {
+                    if (longPressTimer.current) {
+                      window.clearTimeout(longPressTimer.current);
+                      longPressTimer.current = null;
+                    }
+                    longPressKey.current = null;
+                  }}
+                >
+                  {withCase(key, caps)}
+                </button>
+              ))}
+            </div>
+          ))}
 
-        <div className="keyboard-row keyboard-row--actions">
-          <button
-            type="button"
-            className={`key key--action${caps ? " key--caps-on" : ""}`}
-            disabled={disabled}
-            aria-pressed={caps}
-            aria-label="Κεφαλαία"
-            onClick={() => setCaps((v) => !v)}
-          >
-            Αα
-          </button>
-          <button type="button" className="key key--action" disabled={disabled} onClick={accentLastVowel}>
-            τόνος
-          </button>
-          <button type="button" className="key key--action" disabled={disabled} onClick={backspace}>
-            ⌫
-          </button>
-          <button
-            type="button"
-            className="key key--check"
-            disabled={disabled || !value.trim()}
-            onClick={onCheck}
-          >
-            {checkLabel}
-          </button>
+          <div className="keyboard-row keyboard-row--actions">
+            <button
+              type="button"
+              className={`key key--action${caps ? " key--caps-on" : ""}`}
+              disabled={disabled}
+              aria-pressed={caps}
+              aria-label="Κεφαλαία"
+              onClick={() => setCaps((v) => !v)}
+            >
+              Αα
+            </button>
+            <button type="button" className="key key--action" disabled={disabled} onClick={accentLastVowel}>
+              τόνος
+            </button>
+            <button type="button" className="key key--action" disabled={disabled} onClick={backspace}>
+              ⌫
+            </button>
+            <button
+              type="button"
+              className="key key--check"
+              disabled={disabled || !value.trim()}
+              onClick={handleCheckClick}
+            >
+              {checkLabel}
+            </button>
+          </div>
         </div>
-      </div>
+      )}
     </div>
   );
 }

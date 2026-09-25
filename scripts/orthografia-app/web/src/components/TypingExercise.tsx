@@ -1,4 +1,4 @@
-import { Fragment, useEffect, useMemo, useState } from "react";
+import { Fragment, useEffect, useMemo, useRef, useState } from "react";
 import type { FamiliesPayload, GradeResult, SessionSummary, WordEntry } from "../types";
 import { resolveFamily } from "../lib/families";
 import { gradeAnswer } from "../lib/grader";
@@ -82,6 +82,7 @@ export function TypingExercise({
   const [phase, setPhase] = useState<Phase>("writing");
   const [result, setResult] = useState<GradeResult | null>(null);
   const [helpCount, setHelpCount] = useState(0);
+  const feedbackRef = useRef<HTMLDivElement>(null);
 
   const misspelling = useMemo(
     () => (mode === "error-fix" ? pickMisspelling(current.word) : ""),
@@ -124,6 +125,11 @@ export function TypingExercise({
     setHelpCount(0);
   }, [index, current.id]);
 
+  useEffect(() => {
+    if (phase !== "feedback" || !result) return;
+    feedbackRef.current?.scrollIntoView({ behavior: "smooth", block: "nearest" });
+  }, [phase, result]);
+
   const handleCheck = () => {
     const entryForGrade =
       mode === "morphemes"
@@ -144,6 +150,8 @@ export function TypingExercise({
       setPhase("feedback");
     }
   };
+
+  const showingFeedback = phase === "feedback" && result !== null;
 
   const needsRewrite = phase === "feedback" && result && !result.isCorrect;
   const showingCorrectFeedback = phase === "feedback" && result?.isCorrect === true;
@@ -314,11 +322,12 @@ export function TypingExercise({
           onChange={setInput}
           onCheck={handleCheck}
           disabled={showingCorrectFeedback}
+          hideKeys={showingFeedback}
           checkLabel={phase === "rewrite" ? "Έλεγξε ξανά" : "Έλεγξε"}
         />
 
-        {result && phase === "feedback" && (
-          <>
+        {showingFeedback && (
+          <div ref={feedbackRef} className="feedback-anchor">
             <FeedbackPanel
               result={result}
               correctWord={targetWord}
@@ -339,7 +348,7 @@ export function TypingExercise({
                 Γράψε τη σωστή
               </button>
             )}
-          </>
+          </div>
         )}
 
         {canSkip && (
