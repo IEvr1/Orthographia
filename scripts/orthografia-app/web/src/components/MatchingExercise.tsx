@@ -3,6 +3,7 @@ import type { FamiliesPayload, SessionSummary, WordEntry } from "../types";
 import { isUsableMatchingDefinition } from "../lib/definitionLeak";
 import { useExerciseFlow } from "../lib/useExerciseFlow";
 import { CelebrationOverlay } from "./CelebrationOverlay";
+import { ExerciseHeader } from "./ExerciseHeader";
 import { SessionProgress } from "./SessionProgress";
 
 interface MatchingExerciseProps {
@@ -116,11 +117,7 @@ export function MatchingExercise({
   if (rounds.length === 0) {
     return (
       <main className="screen screen--exercise fade-in">
-        <header className="exercise-header">
-          <button type="button" className="btn-text" onClick={onQuit}>
-            ← Πίσω
-          </button>
-        </header>
+        <ExerciseHeader onBack={onQuit} />
         <p className="hint-text">Δεν υπάρχουν αρκετοί ορισμοί για ταίριασμα σε αυτή την τάξη.</p>
         <button type="button" className="btn btn-primary" onClick={onQuit}>
           Αρχική
@@ -134,10 +131,11 @@ export function MatchingExercise({
       {celebrationGoal !== null && (
         <CelebrationOverlay goal={celebrationGoal} onContinue={finishCelebration} />
       )}
-      <header className="exercise-header">
-        <button type="button" className="btn-text" onClick={onQuit}>
-          ← Πίσω
-        </button>
+      <ExerciseHeader
+        onBack={onQuit}
+        showNext={celebrationGoal === null && !allMatched}
+        onNext={() => onSkip(false)}
+      >
         <SessionProgress
           current={index + 1}
           total={flatForFlow.length}
@@ -148,7 +146,7 @@ export function MatchingExercise({
             {sessionBanner}
           </p>
         )}
-      </header>
+      </ExerciseHeader>
 
       <section className="exercise-body">
         <p className="hint-sentence">
@@ -183,16 +181,6 @@ export function MatchingExercise({
             ))}
           </div>
         </div>
-
-        {celebrationGoal === null && !allMatched && (
-          <button
-            type="button"
-            className="btn btn-secondary exercise-skip"
-            onClick={() => onSkip(false)}
-          >
-            Επόμενη άσκηση
-          </button>
-        )}
       </section>
     </main>
   );

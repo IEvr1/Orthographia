@@ -19,6 +19,7 @@ import { AnswerExtras } from "./AnswerExtras";
 import { AudioPlayer } from "./AudioPlayer";
 import { CelebrationOverlay } from "./CelebrationOverlay";
 import { DifficultyBadge } from "./DifficultyBadge";
+import { ExerciseHeader } from "./ExerciseHeader";
 import { SessionProgress } from "./SessionProgress";
 
 export type PickMode = "choice" | "tonos" | "family";
@@ -175,10 +176,7 @@ function BatchTonosView({
       {celebrationGoal !== null && (
         <CelebrationOverlay goal={celebrationGoal} onContinue={finishCelebration} />
       )}
-      <header className="exercise-header">
-        <button type="button" className="btn-text" onClick={onQuit}>
-          ← Πίσω
-        </button>
+      <ExerciseHeader onBack={onQuit}>
         <SessionProgress
           current={batchIndex + 1}
           total={batches.length}
@@ -189,7 +187,7 @@ function BatchTonosView({
             {sessionBanner}
           </p>
         )}
-      </header>
+      </ExerciseHeader>
 
       <section className="exercise-body">
         <p className="hint-sentence">
@@ -335,10 +333,18 @@ function SinglePickView({
       {celebrationGoal !== null && (
         <CelebrationOverlay goal={celebrationGoal} onContinue={finishCelebration} />
       )}
-      <header className="exercise-header">
-        <button type="button" className="btn-text" onClick={onQuit}>
-          ← Πίσω
-        </button>
+      <ExerciseHeader
+        onBack={onQuit}
+        showNext={canSkip}
+        onNext={() => {
+          clearAdvanceTimer();
+          if (wrongTimerRef.current != null) {
+            window.clearTimeout(wrongTimerRef.current);
+            wrongTimerRef.current = null;
+          }
+          onSkip(Boolean(picked));
+        }}
+      >
         <SessionProgress
           current={index + 1}
           total={words.length}
@@ -351,7 +357,7 @@ function SinglePickView({
             {sessionBanner}
           </p>
         )}
-      </header>
+      </ExerciseHeader>
 
       <section className="exercise-body">
         {withAudio && (mode === "choice" || mode === "tonos") && (
@@ -423,23 +429,6 @@ function SinglePickView({
           <p className="feedback-correct">
             Σωστή λέξη: <strong>{current.word}</strong>
           </p>
-        )}
-
-        {canSkip && (
-          <button
-            type="button"
-            className="btn btn-secondary exercise-skip"
-            onClick={() => {
-              clearAdvanceTimer();
-              if (wrongTimerRef.current != null) {
-                window.clearTimeout(wrongTimerRef.current);
-                wrongTimerRef.current = null;
-              }
-              onSkip(Boolean(picked));
-            }}
-          >
-            {picked ? "Συνέχεια" : "Επόμενη άσκηση"}
-          </button>
         )}
       </section>
     </main>

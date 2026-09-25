@@ -8,6 +8,7 @@ import { useExerciseFlow } from "../lib/useExerciseFlow";
 import { AudioPlayer } from "./AudioPlayer";
 import { CelebrationOverlay } from "./CelebrationOverlay";
 import { DifficultyBadge } from "./DifficultyBadge";
+import { ExerciseHeader } from "./ExerciseHeader";
 import { FeedbackPanel } from "./FeedbackPanel";
 import { GreekKeyboard } from "./GreekKeyboard";
 import { SessionProgress } from "./SessionProgress";
@@ -167,10 +168,13 @@ export function TypingExercise({
       {celebrationGoal !== null && (
         <CelebrationOverlay goal={celebrationGoal} onContinue={finishCelebration} />
       )}
-      <header className="exercise-header">
-        <button type="button" className="btn-text" onClick={onQuit}>
-          ← Πίσω
-        </button>
+      <ExerciseHeader
+        onBack={onQuit}
+        showNext={canSkip}
+        onNext={() =>
+          onSkip(phase === "rewrite" || (phase === "feedback" && result !== null && !result.isCorrect))
+        }
+      >
         <SessionProgress
           current={index + 1}
           total={words.length}
@@ -183,7 +187,7 @@ export function TypingExercise({
             {sessionBanner}
           </p>
         )}
-      </header>
+      </ExerciseHeader>
 
       <section className="exercise-body">
         {(mode === "sentence" || mode === "dictation") && (
@@ -349,18 +353,6 @@ export function TypingExercise({
               </button>
             )}
           </div>
-        )}
-
-        {canSkip && (
-          <button
-            type="button"
-            className="btn btn-secondary exercise-skip"
-            onClick={() =>
-              onSkip(phase === "rewrite" || (phase === "feedback" && result !== null && !result.isCorrect))
-            }
-          >
-            Επόμενη άσκηση
-          </button>
         )}
       </section>
     </main>

@@ -621,6 +621,41 @@ body {
   gap: 0.5rem;
 }
 
+.exercise-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 44px;
+}
+
+.exercise-nav-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: none;
+  border-radius: 12px;
+  background: transparent;
+  color: var(--teal-dark);
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+.exercise-nav-btn:active {
+  background: rgba(27, 79, 114, 0.1);
+}
+
+.exercise-nav-btn--ghost {
+  visibility: hidden;
+  pointer-events: none;
+}
+
 .progress-bar-label {
   margin: 0;
   text-align: center;

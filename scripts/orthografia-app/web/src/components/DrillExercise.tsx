@@ -13,6 +13,7 @@ import { recordSessionDay, unlockBadgesAfterSession } from "../lib/streakBadges"
 import { recordErrorCategory } from "../lib/weakness";
 import { useExerciseFlow } from "../lib/useExerciseFlow";
 import { CelebrationOverlay } from "./CelebrationOverlay";
+import { ExerciseHeader } from "./ExerciseHeader";
 import { SessionProgress } from "./SessionProgress";
 
 interface DrillExerciseProps {
@@ -212,10 +213,7 @@ function BatchDrillView({
       {celebrationGoal !== null && (
         <CelebrationOverlay goal={celebrationGoal} onContinue={finishCelebration} />
       )}
-      <header className="exercise-header">
-        <button type="button" className="btn-text" onClick={onQuit}>
-          ← Πίσω
-        </button>
+      <ExerciseHeader onBack={onQuit}>
         <SessionProgress
           current={batchIndex + 1}
           total={batches.length}
@@ -226,7 +224,7 @@ function BatchDrillView({
             {sessionBanner}
           </p>
         )}
-      </header>
+      </ExerciseHeader>
 
       <section className="exercise-body">
         <p className="hint-sentence">
@@ -351,10 +349,18 @@ function SingleDrillView({
       {celebrationGoal !== null && (
         <CelebrationOverlay goal={celebrationGoal} onContinue={finishCelebration} />
       )}
-      <header className="exercise-header">
-        <button type="button" className="btn-text" onClick={onQuit}>
-          ← Πίσω
-        </button>
+      <ExerciseHeader
+        onBack={onQuit}
+        showNext={canSkip}
+        onNext={() => {
+          clearAdvanceTimer();
+          if (wrongTimerRef.current != null) {
+            window.clearTimeout(wrongTimerRef.current);
+            wrongTimerRef.current = null;
+          }
+          onSkip(Boolean(picked));
+        }}
+      >
         <SessionProgress
           current={index + 1}
           total={drills.length}
@@ -365,7 +371,7 @@ function SingleDrillView({
             {sessionBanner}
           </p>
         )}
-      </header>
+      </ExerciseHeader>
 
       <section className="exercise-body">
         <p className="hint-sentence">
@@ -451,23 +457,6 @@ function SingleDrillView({
             Σωστό: <strong>{current.answer}</strong>
             <span className="drill-feedback-detail">{current.feedback}</span>
           </p>
-        )}
-
-        {canSkip && (
-          <button
-            type="button"
-            className="btn btn-secondary exercise-skip"
-            onClick={() => {
-              clearAdvanceTimer();
-              if (wrongTimerRef.current != null) {
-                window.clearTimeout(wrongTimerRef.current);
-                wrongTimerRef.current = null;
-              }
-              onSkip(Boolean(picked));
-            }}
-          >
-            {picked ? "Συνέχεια" : "Επόμενη άσκηση"}
-          </button>
         )}
       </section>
     </main>
