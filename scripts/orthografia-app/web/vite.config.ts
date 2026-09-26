@@ -2,6 +2,14 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import { VitePWA } from "vite-plugin-pwa";
 
+const clerkKey = process.env.VITE_CLERK_PUBLISHABLE_KEY ?? "";
+if (process.env.VERCEL_ENV === "production" && clerkKey.startsWith("pk_test_")) {
+  console.warn(
+    "[build] VITE_CLERK_PUBLISHABLE_KEY is a Clerk *test* key in production. " +
+      "Replace with pk_live_… in Vercel → Settings → Environment Variables.",
+  );
+}
+
 export default defineConfig({
   server: {
     proxy: {
@@ -15,7 +23,7 @@ export default defineConfig({
     react(),
     VitePWA({
       registerType: "autoUpdate",
-      includeAssets: ["content/**/*"],
+      includeAssets: ["icon.svg"],
       manifest: {
         name: "Ορθογραφία",
         short_name: "Ορθογραφία",
@@ -34,10 +42,12 @@ export default defineConfig({
         ],
       },
       workbox: {
-        globPatterns: ["**/*.{js,css,html,json,mp3,wav,png,svg}"],
+        // Keep the app shell small — content (JSON + audio) is fetched on demand.
+        globPatterns: ["**/*.{js,css,html,ico,svg,webmanifest}"],
+        globIgnores: ["**/content/**"],
         runtimeCaching: [
           {
-            // Prefer network so content deploys (words.json / audio) aren't stuck for a year.
+            // StaleWhileRevalidate so new Vercel deploys reach users without a full precache refresh.
             urlPattern: /\/content\/.*/i,
             handler: "StaleWhileRevalidate",
             options: {

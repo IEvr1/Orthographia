@@ -42,3 +42,4 @@ desktop.ini
 scripts/orthografia-app/progress-api/data/
 scripts/orthografia-app/web/.env.local
 .env*
+!scripts/orthografia-app/web/.env.example
