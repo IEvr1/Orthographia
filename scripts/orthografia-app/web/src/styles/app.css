@@ -63,7 +63,8 @@ body {
   align-items: center;
   text-align: center;
   gap: 1.35rem;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
   background:
     linear-gradient(180deg, rgba(27, 79, 114, 0.04) 0%, transparent 28%),
     repeating-linear-gradient(
@@ -157,6 +158,15 @@ body {
 
 .app-brand--sm .app-brand__logo {
   width: min(4.2em, 68vw);
+}
+
+.app-brand--xs {
+  --brand-text: 2.5rem;
+  width: auto;
+}
+
+.app-brand--xs .app-brand__logo {
+  width: 2.5rem;
 }
 
 @container (max-width: 360px) {
@@ -1467,6 +1477,11 @@ body {
   gap: 0.5rem;
 }
 
+.home-topbar__logo {
+  display: none;
+  flex-shrink: 0;
+}
+
 .home-topbar__plans {
   display: flex;
   align-items: center;
@@ -2218,6 +2233,73 @@ body {
   font-size: 0.92rem;
   white-space: normal;
   line-height: 1.15;
+}
+
+@media (max-width: 520px) {
+  .screen--home {
+    justify-content: flex-start;
+    gap: 0.7rem;
+    padding-top: max(0.75rem, env(safe-area-inset-top));
+  }
+
+  .screen--home .home-topbar {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas: "logo plans actions";
+    align-items: center;
+    column-gap: 0.5rem;
+    row-gap: 0.35rem;
+    margin-bottom: 0;
+  }
+
+  .home-topbar__logo {
+    display: flex;
+    grid-area: logo;
+  }
+
+  .home-topbar__plans {
+    grid-area: plans;
+    justify-content: flex-start;
+    min-width: 0;
+  }
+
+  .home-topbar__actions {
+    grid-area: actions;
+  }
+
+  .hero--home .hero-avatar,
+  .hero--home .app-brand {
+    display: none;
+  }
+
+  .hero--home {
+    gap: 0;
+    margin: -0.15rem 0 0;
+    animation: none;
+  }
+
+  .hero-child {
+    margin: 0;
+    font-size: 0.95rem;
+  }
+
+  .streak-strip {
+    margin: 0;
+  }
+
+  .mode-chip--compact {
+    min-height: 46px;
+    padding: 0.45rem 0.25rem;
+    font-size: 0.84rem;
+  }
+
+  .mode-options--many {
+    gap: 0.4rem;
+  }
+
+  .section-label {
+    margin-bottom: 0.35rem;
+  }
 }
 
 .streak-strip {

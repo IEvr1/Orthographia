@@ -95,6 +95,7 @@ export function HomeScreen({
   return (
     <main className="screen screen--home fade-in">
       <div className="home-topbar">
+        <AppBrand size="xs" className="home-topbar__logo" />
         <div className="home-topbar__plans">
           {isSuperAdmin && <span className="admin-badge">Διαχειριστής</span>}
           {!isPaidTier(tier) && (

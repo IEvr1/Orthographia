@@ -1,12 +1,17 @@
 import { APP_NAME, APP_TAGLINE } from "../lib/appMeta";
 
 interface AppBrandProps {
-  size?: "default" | "sm";
+  size?: "default" | "sm" | "xs";
   className?: string;
 }
 
 export function AppBrand({ size = "default", className = "" }: AppBrandProps) {
-  const classes = ["app-brand", size === "sm" ? "app-brand--sm" : "", className]
+  const classes = [
+    "app-brand",
+    size === "sm" ? "app-brand--sm" : "",
+    size === "xs" ? "app-brand--xs" : "",
+    className,
+  ]
     .filter(Boolean)
     .join(" ");
 
