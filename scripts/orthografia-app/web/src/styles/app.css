@@ -169,6 +169,64 @@ body {
   width: 3.25rem;
 }
 
+.brand-watermark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  margin: 0.35rem 0 0;
+  padding-top: 0.35rem;
+  opacity: 0.5;
+}
+
+.brand-watermark__logo {
+  width: 1.35rem;
+  height: 1.35rem;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.brand-watermark__text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.05rem;
+  line-height: 1.15;
+  text-align: left;
+}
+
+.brand-watermark__name {
+  font-family: var(--font-display);
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--ink-muted);
+  letter-spacing: -0.01em;
+}
+
+.brand-watermark__tagline {
+  font-size: 0.65rem;
+  color: var(--ink-muted);
+  opacity: 0.9;
+}
+
+.brand-watermark--share {
+  opacity: 0.62;
+  margin-top: 0.15rem;
+}
+
+.brand-watermark--share .brand-watermark__logo {
+  width: 1.65rem;
+  height: 1.65rem;
+}
+
+.brand-watermark--share .brand-watermark__name {
+  font-size: 0.85rem;
+}
+
+.brand-watermark--share .brand-watermark__tagline {
+  font-size: 0.68rem;
+}
+
 @container (max-width: 360px) {
   .app-brand--sm {
     --brand-text: clamp(1.05rem, 3vw, 1.4rem);
@@ -2513,6 +2571,12 @@ body {
 .screen--lexicon,
 .screen--report {
   align-items: stretch;
+}
+
+.screen--report .brand-watermark {
+  margin-top: auto;
+  padding-top: 1rem;
+  padding-bottom: 0.25rem;
 }
 
 .lexicon-title {

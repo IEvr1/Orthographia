@@ -1,5 +1,5 @@
 import type { SessionSummary as Summary } from "../types";
-import { AppBrand } from "./AppBrand";
+import { BrandWatermark } from "./BrandWatermark";
 import { ConfettiBurst } from "./ConfettiBurst";
 
 interface SessionSummaryProps {
@@ -14,8 +14,7 @@ export function SessionSummary({ summary, onHome }: SessionSummaryProps) {
     <main className="screen screen--summary fade-in">
       {celebrate && <ConfettiBurst />}
       <div className="summary-card bounce-in">
-        <AppBrand size="sm" />
-        <h1 className="summary-title">Τέλος αποστολής!</h1>
+        <h1 className="summary-title">Τέλος εξάσκησης!</h1>
         <ul className="summary-stats">
           <li>
             <span className="stat-value stat-value--ok">{summary.correct}</span>
@@ -38,6 +37,7 @@ export function SessionSummary({ summary, onHome }: SessionSummaryProps) {
         <button type="button" className="btn btn-primary btn-xl" onClick={onHome}>
           Αρχική
         </button>
+        <BrandWatermark tone="share" />
       </div>
     </main>
   );

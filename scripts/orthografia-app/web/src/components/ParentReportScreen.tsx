@@ -12,6 +12,7 @@ import {
   masteryStats,
 } from "../lib/weakness";
 import { GRADE_LABELS } from "../lib/grades";
+import { BrandWatermark } from "./BrandWatermark";
 
 interface ParentReportScreenProps {
   store: ProgressStore;
@@ -139,6 +140,8 @@ export function ParentReportScreen({
           <p className="hint-text">Ολοκλήρωσε μια εξάσκηση για την πρώτη διάκριση.</p>
         )}
       </section>
+
+      <BrandWatermark />
     </main>
   );
 }
