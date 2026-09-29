@@ -20,7 +20,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
 <style>body{font-family:system-ui,sans-serif;max-width:28rem;margin:3rem auto;padding:0 1rem;line-height:1.5;color:#1a1a1a}
 a{color:#2a9d8f}</style></head>
 <body><h1>${title}</h1><p>${body}</p>
-<p><a href="/">Επιστροφή στην Ορθογραφία</a></p></body></html>`;
+<p><a href="/">Επιστροφή στο Ορθόλεξο</a></p></body></html>`;
 
   if (!u || !verifyUnsubscribeToken(u, t)) {
     res.setHeader("Content-Type", "text/html; charset=utf-8");

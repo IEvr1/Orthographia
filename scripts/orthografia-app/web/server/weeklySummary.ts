@@ -94,12 +94,12 @@ export function buildWeeklyEmail(opts: {
   children: { name: string; progress: ProgressBlob }[];
 }): { subject: string; text: string; html: string } {
   const unsub = unsubscribeUrl(opts.userId);
-  const subject = "Ορθογραφία — εβδομαδιαία σύνοψη προόδου";
+  const subject = "Ορθόλεξο — εβδομαδιαία σύνοψη προόδου";
 
   const bodyLines: string[] = [
     "Γεια σου,",
     "",
-    "Αυτή είναι η προαιρετική εβδομαδιαία σύνοψη από την Ορθογραφία.",
+    "Αυτή είναι η προαιρετική εβδομαδιαία σύνοψη από το Ορθόλεξο.",
     "",
   ];
 
@@ -121,13 +121,13 @@ export function buildWeeklyEmail(opts: {
     "Ή από την εφαρμογή: Ρυθμίσεις → Εβδομαδιαία σύνοψη (απενεργοποίηση).",
     "",
     "Καλή συνέχεια,",
-    "Ομάδα Ορθογραφίας",
+    "Ομάδα Ορθόλεξο",
   );
 
   const text = bodyLines.join("\n");
   const htmlParts = [
     "<p>Γεια σου,</p>",
-    "<p>Αυτή είναι η <strong>προαιρετική</strong> εβδομαδιαία σύνοψη από την Ορθογραφία.</p>",
+    "<p>Αυτή είναι η <strong>προαιρετική</strong> εβδομαδιαία σύνοψη από το Ορθόλεξο.</p>",
   ];
   if (opts.children.length === 0) {
     htmlParts.push("<p>Δεν υπάρχει ακόμη αποθηκευμένη πρόοδος για αυτή την εβδομάδα.</p>");
@@ -145,7 +145,7 @@ export function buildWeeklyEmail(opts: {
     "<p>Συμβουλή: άνοιξε την εφαρμογή → Αναφορά προόδου → «Εξάσκησε τα λάθη μου».</p>",
     `<p><a href="${unsub}">Διακοπή εβδομαδιαίων email με ένα κλικ</a></p>`,
     "<p>Ή από την εφαρμογή: Ρυθμίσεις → Εβδομαδιαία σύνοψη (απενεργοποίηση).</p>",
-    "<p>Καλή συνέχεια,<br/>Ομάδα Ορθογραφίας</p>",
+    "<p>Καλή συνέχεια,<br/>Ομάδα Ορθόλεξο</p>",
   );
 
   return { subject, text, html: htmlParts.join("\n") };

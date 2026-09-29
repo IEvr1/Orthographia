@@ -107,7 +107,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
         from,
         to: [to],
         reply_to: email,
-        subject: `[Ορθογραφία] ${subject}`,
+        subject: `[Ορθόλεξο] ${subject}`,
         text: textLines.join("\n"),
       }),
     });

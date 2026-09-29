@@ -1,4 +1,4 @@
-# Ορθογραφία Web — Stripe, Clerk, GDPR
+# Ορθόλεξο Web — Stripe, Clerk, GDPR
 
 ## Περιβάλλον (.env.local)
 

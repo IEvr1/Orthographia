@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { saveLocalConsent } from "../lib/consent";
+import { AppBrand } from "./AppBrand";
 
 interface ConsentScreenProps {
   onAccepted: () => void;
@@ -21,7 +22,7 @@ export function ConsentScreen({ onAccepted, continueLabel = "Συνέχεια" }
   return (
     <main className="screen screen--legal fade-in">
       <div className="legal-card">
-        <p className="brand">Ορθογραφία</p>
+        <AppBrand size="sm" />
         <h1 className="legal-title">Συγκατάθεση γονέα / κηδεμόνα</h1>
         <p className="legal-lead">
           Η εφαρμογή απευθύνεται σε παιδιά Δημοτικού. Σύμφωνα με τον GDPR, απαιτείται η

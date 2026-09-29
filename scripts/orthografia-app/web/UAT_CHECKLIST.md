@@ -1,42 +1,86 @@
-# UAT Checklist — Ορθογραφία
+# UAT Checklist — Ορθόλεξο
 
 **Account:** `taxidioereunites@gmail.com`  
-**Clerk user id:** `user_3JmpdAdZHObFtUkmWQW7TlesCGn`  
-**Password (ενεργό):** `OrthografiaUAT2026!`  
-> Το `renos123` απορρίφθηκε από Clerk (password found in breach).
+**Access:** Family plan (DB grant, χωρίς Stripe / χωρίς κάρτα) — έως 3 προφίλ παιδιών, όλες οι τάξεις & modes.  
+**Clerk user id:** `user_3JmpdAdZHObFtUkmWQW7TlesCGn`
 
-**Access:** Family (Neon DB grant) — χωρίς κάρτα.  
-**UAT run:** 2026-09-24 · `https://orthographia.vercel.app/`
+> Password: το συμφωνημένο UAT password (μην το commit-άρεις σε docs).
 
 ---
 
-## Αποτελέσματα (agent)
+## A. Login & onboarding
 
-### Login / settings
-- Login OK (Clerk). Προφίλ παιδιού «UAT» δημιουργήθηκε.
-- Ρυθμίσεις: Οικογενειακό, στόχος 40, weekly email ON, cloud sync διαθέσιμο.
+- [ ] Άνοιγμα app (production ή local)
+- [ ] Σύνδεση με το UAT email/password
+- [ ] Οθόνη συγκατάθεσης GDPR (αν πρώτη φορά στη συσκευή)
+- [ ] Home δείχνει **Οικογενειακό / Premium** — όχι paywall για εξάσκηση
+- [ ] Δεν εμφανίζεται «Δοκιμή έληξε»
 
-### Modes ανά τάξη (κουμπί enabled = ok / locked = όχι αρκετό υλικό)
+## B. Ρυθμίσεις
+
+- [ ] Άνοιγμα Ρυθμίσεων
+- [ ] Δημιουργία έως **3** προφίλ παιδιών (διαφορετικές τάξεις)
+- [ ] Εναλλαγή ενεργού προφίλ
+- [ ] Στόχος ανταμοιβής (αλλαγή + αποθήκευση)
+- [ ] Weekly email opt-in on/off
+- [ ] Cloud sync (αν εμφανίζεται για paid)
+- [ ] Διαγραφή ενός προφίλ (και επιβεβαίωση ότι μπορείς να ξαναπροσθέσεις)
+
+## C. Τάξεις (Β΄–Στ΄)
+
+Για κάθε τάξη: Β΄ / Γ΄ / Δ΄ / Ε΄ / Στ΄
+
+- [ ] Επιλογή τάξης στο home
+- [ ] Εμφάνιση διαθέσιμων modes (κλειδωμένα μόνο αν δεν υπάρχει περιεχόμενο)
+
+### Modes (δειγματοληψία ≥5 λέξεις / session όπου υπάρχει περιεχόμενο)
 
 | Mode | Β΄ | Γ΄ | Δ΄ | Ε΄ | Στ΄ |
 |------|----|----|----|----|-----|
-| Πρόταση | ok | ok | ok | ok | ok |
-| Διάλεξε | ok | ok | ok | ok | ok |
-| Καταλήξεις | ok | ok | ok | ok | ok |
-| Σύνθεση | locked | locked | ok | ok | ok |
-| Ομάδες | locked | ok | ok | ok | locked |
-| Υπαγόρευση | ok | ok | ok | ok | ok |
-| Διόρθωση | ok | ok | ok | ok | ok |
-| Τονισμός | ok | ok | ok | ok | ok |
-| Οικογένεια | locked | locked | ok | ok | ok |
-| Μορφήματα | ok | ok | ok | ok | ok |
-| Ανακάτεμα | ok | ok | ok | ok | ok |
-| Ταίριασμα | ok | ok | ok | ok | ok |
+| Πρόταση | ☐ | ☐ | ☐ | ☐ | ☐ |
+| Διάλεξε | ☐ | ☐ | ☐ | ☐ | ☐ |
+| Καταλήξεις | ☐ | ☐ | ☐ | ☐ | ☐ |
+| Σύνθεση | ☐ | ☐ | ☐ | ☐ | ☐ |
+| Ομάδες | ☐ | ☐ | ☐ | ☐ | ☐ |
+| Υπαγόρευση | ☐ | ☐ | ☐ | ☐ | ☐ |
+| Διόρθωση | ☐ | ☐ | ☐ | ☐ | ☐ |
+| Τονισμός | ☐ | ☐ | ☐ | ☐ | ☐ |
+| Οικογένεια | ☐ | ☐ | ☐ | ☐ | ☐ |
+| Μορφήματα | ☐ | ☐ | ☐ | ☐ | ☐ |
+| Ανακάτεμα | ☐ | ☐ | ☐ | ☐ | ☐ |
+| Ταίριασμα | ☐ | ☐ | ☐ | ☐ | ☐ |
 
-Smoke-open όλων των διαθέσιμων modes: **PASS** (φορτώνει άσκηση / feedback).
+**Σημείωση λέξεων:** πλήρες «όλες οι λέξεις» χειροκίνητα δεν είναι πρακτικό. Ανά τάξη/mode: 5–10 items + 1 πλήρες session μέχρι reward. Για κάλυψη λεξικού: άνοιξε Λεξικό και σκόναρε λίστα / αναζήτηση.
 
-### Πληρωμές — BLOCKED
-Κλικ στα 3 «Επιλογή» εμφάνισε: **`STRIPE_SECRET_KEY is not configured`**  
-→ Checkout δεν ανοίγει στο production. Χρειάζεται να μπει το Stripe secret στο Vercel env + redeploy.
+## D. Λεξικό / πρόοδος / λίστες
 
-Μετά το UAT, το Family access επανήλθε στο Neon.
+- [ ] Λεξικό ανοίγει και εμφανίζει λέξεις της τάξης
+- [ ] Αναφορά προόδου / badges / streak
+- [ ] Λίστες (αν ενεργές): δημιουργία, εξάσκηση active list
+
+## E. Πληρωμές — και τα 3 plans, **χωρίς κάρτα**
+
+Άνοιξε Τιμολόγηση. Για κάθε plan πάτα αγορά → Stripe Checkout → **Cancel / πίσω** (μην συμπληρώσεις κάρτα).
+
+| Plan | Τιμή | Checkout ανοίγει | Σωστό ποσό | Cancel → επιστροφή app |
+|------|------|------------------|------------|-------------------------|
+| Premium ετήσιο (`yearly`) | €49 / έτος | ☐ | ☐ | ☐ |
+| Premium μηνιαίο (`monthly`) | €5,90 / μήνα | ☐ | ☐ | ☐ |
+| Οικογενειακό (`family`) | €69 / έτος | ☐ | ☐ | ☐ |
+
+- [ ] Μετά το cancel, η συνδρομή Family παραμένει ενεργή (χωρίς χρέωση)
+- [ ] Δεν δημιουργήθηκε πραγματική πληρωμή στο Stripe Live (χρησιμοποίησε test mode αν το app είναι σε test keys)
+
+## F. Αρνητικά / edge
+
+- [ ] Αποσύνδεση → home ζητά σύνδεση για εξάσκηση
+- [ ] Επανασύνδεση → πρόοδος / προφίλ επανέρχονται
+- [ ] Privacy / Terms / Contact σελίδες ανοίγουν
+
+---
+
+## Setup που έγινε (για agents)
+
+1. Clerk user δημιουργήθηκε με verified email.
+2. Neon `orthographia-db`: `users` + `subscriptions` → `status=active`, `plan_type=family`, `max_profiles=3`.
+3. Δεν αλλάχθηκε `SUPER_ADMIN_EMAIL` (παραμένει ο υπάρχων admin).

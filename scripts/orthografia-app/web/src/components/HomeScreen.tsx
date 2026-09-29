@@ -5,6 +5,7 @@ import { canAccessGrade, canAccessMode, canStartPractice, isPaidTier } from "../
 import { GRADE_LABELS, OFFERED_GRADES } from "../lib/grades";
 import { MODE_LABELS, MODE_ORDER, modeAvailableForGrade } from "../lib/modeMeta";
 import { isClerkEnabled } from "../lib/subscription";
+import { AppBrand } from "./AppBrand";
 import { SettingsIcon } from "./SettingsScreen";
 import { SignInWithConsent } from "./SignInWithConsent";
 
@@ -142,8 +143,7 @@ export function HomeScreen({
         >
           <span className="hero-avatar__letter">{childAvatarLetter(activeChildName)}</span>
         </div>
-        <p className="brand">Ορθογραφία</p>
-        <h1 className="hero-title">Μάθε να γράφεις σωστά!</h1>
+        <AppBrand />
         {activeChildName ? (
           <p className="hero-child">
             Παίζει <span className="hero-child__name">{activeChildName}</span>

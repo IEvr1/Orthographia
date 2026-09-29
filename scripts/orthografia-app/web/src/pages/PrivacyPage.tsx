@@ -9,7 +9,7 @@ export function PrivacyPage() {
         <section className="legal-section">
           <h2>1. Υπεύθυνος επεξεργασίας</h2>
           <p>
-            Η εφαρμογή «Ορθογραφία» παρέχεται για εκπαιδευτική χρήση. Για ερωτήσεις απορρήτου:
+            Η εφαρμογή «Ορθόλεξο» παρέχεται για εκπαιδευτική χρήση. Για ερωτήσεις απορρήτου:
             <a href="mailto:privacy@orthografia.app"> privacy@orthografia.app</a>.
           </p>
         </section>

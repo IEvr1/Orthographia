@@ -17,8 +17,8 @@ export default defineConfig({
       registerType: "autoUpdate",
       includeAssets: ["content/**/*"],
       manifest: {
-        name: "Ορθογραφία",
-        short_name: "Ορθογραφία",
+        name: "Ορθόλεξο",
+        short_name: "Ορθόλεξο",
         description: "Εκμάθηση ελληνικής ορθογραφίας",
         theme_color: "#1B4F72",
         background_color: "#F3F6FA",
@@ -26,9 +26,9 @@ export default defineConfig({
         lang: "el",
         icons: [
           {
-            src: "icon.svg",
+            src: "logo.png",
             sizes: "512x512",
-            type: "image/svg+xml",
+            type: "image/png",
             purpose: "any",
           },
         ],

@@ -1,4 +1,5 @@
 import type { SessionSummary as Summary } from "../types";
+import { AppBrand } from "./AppBrand";
 import { ConfettiBurst } from "./ConfettiBurst";
 
 interface SessionSummaryProps {
@@ -13,7 +14,7 @@ export function SessionSummary({ summary, onHome }: SessionSummaryProps) {
     <main className="screen screen--summary fade-in">
       {celebrate && <ConfettiBurst />}
       <div className="summary-card bounce-in">
-        <p className="brand">Ορθογραφία</p>
+        <AppBrand size="sm" />
         <h1 className="summary-title">Τέλος αποστολής!</h1>
         <ul className="summary-stats">
           <li>

@@ -3,6 +3,7 @@ import { useState } from "react";
 import type { PlanTier } from "../lib/access";
 import { tierLabel } from "../lib/access";
 import { isClerkEnabled } from "../lib/subscription";
+import { AppBrand } from "./AppBrand";
 import { SignInWithConsent } from "./SignInWithConsent";
 
 type CheckoutPlan = "monthly" | "yearly" | "family";
@@ -131,7 +132,7 @@ export function PricingScreen({
       </div>
 
       <div className="hero">
-        <p className="brand">Ορθογραφία</p>
+        <AppBrand size="sm" />
         <h1 className="hero-title">Επέλεξε το πλάνο σου</h1>
       </div>
 

@@ -132,6 +132,43 @@ body {
   user-select: none;
 }
 
+.app-brand {
+  --brand-text: clamp(2.15rem, 7.5vw, 3.15rem);
+  font-size: var(--brand-text);
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  width: 100%;
+  line-height: 0;
+}
+
+.app-brand__logo {
+  width: min(4.6em, 78vw);
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 1;
+  display: block;
+  object-fit: contain;
+}
+
+.app-brand--sm {
+  --brand-text: clamp(1.2rem, 3.4vw, 1.6rem);
+}
+
+.app-brand--sm .app-brand__logo {
+  width: min(4.2em, 68vw);
+}
+
+@container (max-width: 360px) {
+  .app-brand--sm {
+    --brand-text: clamp(1.05rem, 3vw, 1.4rem);
+  }
+
+  .app-brand--sm .app-brand__logo {
+    width: min(3.85em, 90%);
+  }
+}
+
 .brand {
   position: relative;
   display: inline-block;
@@ -1218,6 +1255,7 @@ body {
   align-items: center;
   position: relative;
   z-index: 1;
+  container-type: inline-size;
 }
 
 .summary-title {
@@ -1905,6 +1943,7 @@ body {
   background: var(--white);
   border-radius: var(--radius);
   padding: 1.5rem;
+  container-type: inline-size;
   box-shadow: var(--shadow);
   text-align: left;
   width: 100%;
@@ -2081,6 +2120,7 @@ body {
   position: relative;
   overflow: hidden;
   z-index: 1;
+  container-type: inline-size;
 }
 
 .celebration-burst {

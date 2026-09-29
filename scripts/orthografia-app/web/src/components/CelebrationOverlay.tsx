@@ -1,3 +1,4 @@
+import { AppBrand } from "./AppBrand";
 import { ConfettiBurst } from "./ConfettiBurst";
 
 interface CelebrationOverlayProps {
@@ -15,7 +16,7 @@ export function CelebrationOverlay({ goal, onContinue }: CelebrationOverlayProps
           <span>★</span>
           <span>✦</span>
         </div>
-        <p className="brand">Ορθογραφία</p>
+        <AppBrand size="sm" />
         <h2 id="celebration-title" className="celebration-title">
           Μπράβο!
         </h2>
