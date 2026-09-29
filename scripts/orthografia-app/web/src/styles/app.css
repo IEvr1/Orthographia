@@ -1870,6 +1870,18 @@ body {
   color: var(--ink-muted);
 }
 
+.settings-plan-status {
+  margin: 0.45rem 0 0;
+  font-family: var(--font-display);
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--teal-dark);
+}
+
+.settings-plan-status--warn {
+  color: var(--coral-dark);
+}
+
 .settings-section {
   width: 100%;
   max-width: 360px;

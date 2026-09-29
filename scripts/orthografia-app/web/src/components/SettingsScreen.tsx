@@ -1,7 +1,8 @@
 import { SignedIn, SignedOut, UserButton } from "@clerk/clerk-react";
 import { useEffect, useState } from "react";
 import type { PlanTier } from "../lib/access";
-import { canUseCloudSync, tierLabel } from "../lib/access";
+import { canUseCloudSync, isPaidTier, tierLabel } from "../lib/access";
+import { trialStatusLabel } from "../lib/trial";
 import { fetchPreferences, setWeeklyEmailOptIn } from "../lib/preferences";
 import {
   DEFAULT_REWARD_GOAL,
@@ -43,6 +44,9 @@ interface SettingsScreenProps {
   syncEnabled: boolean;
   tier: PlanTier;
   isSuperAdmin?: boolean;
+  trialActive?: boolean;
+  trialDaysLeft?: number;
+  trialExpired?: boolean;
   autoOpenAddChild?: boolean;
   rewardGoal: number;
   onRewardGoalChange: (goal: number) => void;
@@ -66,6 +70,9 @@ export function SettingsScreen({
   syncEnabled,
   tier,
   isSuperAdmin = false,
+  trialActive = false,
+  trialDaysLeft = 0,
+  trialExpired = false,
   autoOpenAddChild = false,
   rewardGoal,
   onRewardGoalChange,
@@ -74,6 +81,7 @@ export function SettingsScreen({
   onConsentAccepted,
   familyProfiles,
 }: SettingsScreenProps) {
+  const planStatus = trialStatusLabel({ trialActive, trialDaysLeft, trialExpired });
   const showCloudSync = syncEnabled && onSyncProgress && canUseCloudSync(tier);
   const showFamilyProfiles = Boolean(familyProfiles);
   const [goalDraft, setGoalDraft] = useState(String(rewardGoal));
@@ -158,6 +166,11 @@ export function SettingsScreen({
         <p className="settings-subtitle">
           {isSuperAdmin ? "Διαχειριστής" : tierLabel(tier)}
         </p>
+        {planStatus && !isPaidTier(tier) && (
+          <p className={`settings-plan-status${trialExpired ? " settings-plan-status--warn" : ""}`}>
+            {planStatus}
+          </p>
+        )}
       </div>
 
       {showFamilyProfiles && (
@@ -238,7 +251,11 @@ export function SettingsScreen({
         <section className="settings-section">
           <p className="section-label">Συνδρομή</p>
           <p className="hint-text">
-            Μετά τη δοκιμή 5 ημερών η εξάσκηση συνεχίζεται μόνο με συνδρομή.
+            {trialActive
+              ? "Η δωρεάν δοκιμή σου δίνει πλήρη πρόσβαση σε όλες τις τάξεις και τους τρόπους εξάσκησης."
+              : trialExpired
+                ? "Η δωρεάν δοκιμή 5 ημερών έληξε. Η εξάσκηση συνεχίζεται μόνο με συνδρομή."
+                : "Μετά τη δοκιμή 5 ημερών η εξάσκηση συνεχίζεται μόνο με συνδρομή."}
           </p>
           <button
             type="button"

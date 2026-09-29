@@ -34,11 +34,9 @@ interface HomeScreenProps {
   families: FamiliesPayload;
   tier: PlanTier;
   subscriptionLoading: boolean;
-  isSuperAdmin?: boolean;
   needsPurchase: boolean;
   showFamilyProfiles: boolean;
   trialActive?: boolean;
-  trialDaysLeft?: number;
   trialExpired?: boolean;
   isSignedIn?: boolean;
   streakCurrent: number;
@@ -67,11 +65,9 @@ export function HomeScreen({
   families,
   tier,
   subscriptionLoading,
-  isSuperAdmin = false,
   needsPurchase = false,
   showFamilyProfiles,
   trialActive = false,
-  trialDaysLeft = 0,
   trialExpired = false,
   isSignedIn = false,
   streakCurrent,
@@ -84,31 +80,15 @@ export function HomeScreen({
   const authEnabled = isClerkEnabled();
   const needsSignIn = !canStartPractice(isSignedIn, authEnabled);
 
-  const planStatusLabel = trialActive
-    ? trialDaysLeft === 1
-      ? "Δοκιμή · 1 ημέρα"
-      : `Δοκιμή · ${trialDaysLeft} ημέρες`
-    : trialExpired
-      ? "Δοκιμή έληξε"
-      : null;
-
   return (
     <main className="screen screen--home fade-in">
       <div className="home-topbar">
         <AppBrand size="xs" className="home-topbar__logo" />
         <div className="home-topbar__plans">
-          {isSuperAdmin && <span className="admin-badge">Διαχειριστής</span>}
-          {!isPaidTier(tier) && (
-            <>
-              {planStatusLabel && (
-                <span className="plan-badge plan-badge--status">{planStatusLabel}</span>
-              )}
-              {!needsSignIn && (
-                <button type="button" className="plan-badge plan-badge--cta" onClick={onOpenPricing}>
-                  Αναβάθμιση
-                </button>
-              )}
-            </>
+          {!isPaidTier(tier) && !needsSignIn && (
+            <button type="button" className="plan-badge plan-badge--cta" onClick={onOpenPricing}>
+              Αναβάθμιση
+            </button>
           )}
         </div>
         <div className="home-topbar__actions">

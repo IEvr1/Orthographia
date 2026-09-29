@@ -48,6 +48,20 @@ export function getCachedTrialStartedAt(userId: string | null | undefined): stri
  * Offline / API-error fallback for a signed-in user only.
  * Different accounts do not share the same trial clock.
  */
+export function trialStatusLabel(opts: {
+  trialActive: boolean;
+  trialDaysLeft: number;
+  trialExpired: boolean;
+}): string | null {
+  if (opts.trialActive) {
+    return opts.trialDaysLeft === 1
+      ? "Δοκιμή · απομένει 1 ημέρα"
+      : `Δοκιμή · απομένουν ${opts.trialDaysLeft} ημέρες`;
+  }
+  if (opts.trialExpired) return "Η δοκιμή έληξε";
+  return null;
+}
+
 export function ensureLocalTrialStarted(userId: string, now = new Date()): string {
   const existing = getCachedTrialStartedAt(userId);
   if (existing) return existing;

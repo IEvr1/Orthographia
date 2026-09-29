@@ -664,11 +664,9 @@ function AppShell({
           families={families}
           tier={tier}
           subscriptionLoading={subscription.loading}
-          isSuperAdmin={subscription.isSuperAdmin}
           needsPurchase={needsPurchase}
           showFamilyProfiles={showFamilyProfiles}
           trialActive={trialActive}
-          trialDaysLeft={trialDaysLeft}
           trialExpired={trialExpired}
           isSignedIn={isSignedIn}
           streakCurrent={streak.current}
@@ -722,6 +720,9 @@ function AppShell({
           syncEnabled={SYNC_ENABLED}
           tier={tier}
           isSuperAdmin={subscription.isSuperAdmin}
+          trialActive={trialActive}
+          trialDaysLeft={trialDaysLeft}
+          trialExpired={trialExpired}
           autoOpenAddChild={settingsAddChild}
           rewardGoal={rewardGoal}
           onRewardGoalChange={handleRewardGoalChange}
