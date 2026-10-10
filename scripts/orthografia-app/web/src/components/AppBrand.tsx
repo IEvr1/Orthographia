@@ -1,4 +1,4 @@
-import { APP_NAME, APP_TAGLINE } from "../lib/appMeta";
+import { APP_NAME, APP_ROMAN_NAME, APP_TAGLINE } from "../lib/appMeta";
 
 interface AppBrandProps {
   size?: "default" | "sm" | "xs";
@@ -19,7 +19,7 @@ export function AppBrand({ size = "default", className = "" }: AppBrandProps) {
     <div className={classes}>
       <img
         src="/logo.png"
-        alt={`${APP_NAME} — ${APP_TAGLINE}`}
+        alt={`${APP_NAME} (${APP_ROMAN_NAME}) — ${APP_TAGLINE}`}
         className="app-brand__logo"
         decoding="async"
       />

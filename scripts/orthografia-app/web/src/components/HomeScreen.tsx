@@ -5,6 +5,7 @@ import { canAccessGrade, canAccessMode, canStartPractice, isPaidTier } from "../
 import { GRADE_LABELS, OFFERED_GRADES } from "../lib/grades";
 import { MODE_LABELS, MODE_ORDER, modeAvailableForGrade } from "../lib/modeMeta";
 import { isClerkEnabled } from "../lib/subscription";
+import { APP_ROMAN_NAME, SITE_HOST } from "../lib/appMeta";
 import { AppBrand } from "./AppBrand";
 import { SettingsIcon } from "./SettingsScreen";
 import { SignInWithConsent } from "./SignInWithConsent";
@@ -302,6 +303,12 @@ export function HomeScreen({
           <a href="/contact">Επικοινωνία</a>
         </div>
         <p className="legal-footer__note">🎁 Οι πρώτες 5 ημέρες δωρεάν</p>
+        <p className="legal-footer__note">
+          {APP_ROMAN_NAME} —{" "}
+          <a href={`https://${SITE_HOST}/`} rel="home">
+            {SITE_HOST}
+          </a>
+        </p>
       </footer>
     </main>
   );
