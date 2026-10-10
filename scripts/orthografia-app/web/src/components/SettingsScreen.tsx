@@ -61,6 +61,14 @@ interface SettingsScreenProps {
     onSelectProfile: (id: string) => void;
     onRefreshProfiles: () => Promise<void>;
   };
+  subscriptionActive?: boolean;
+  currentPeriodEnd?: string | null;
+  openPortal?: () => Promise<string | null>;
+}
+
+function formatPeriodEnd(iso: string | null | undefined): string | null {
+  if (!iso) return null;
+  return new Date(iso).toLocaleDateString("el-GR");
 }
 
 export function SettingsScreen({
@@ -80,15 +88,22 @@ export function SettingsScreen({
   isSignedIn = false,
   onConsentAccepted,
   familyProfiles,
+  subscriptionActive = false,
+  currentPeriodEnd = null,
+  openPortal,
 }: SettingsScreenProps) {
   const planStatus = trialStatusLabel({ trialActive, trialDaysLeft, trialExpired });
   const showCloudSync = syncEnabled && onSyncProgress && canUseCloudSync(tier);
   const showFamilyProfiles = Boolean(familyProfiles);
+  const showManageSubscription = subscriptionActive && Boolean(openPortal);
+  const periodEndLabel = formatPeriodEnd(currentPeriodEnd);
   const [goalDraft, setGoalDraft] = useState(String(rewardGoal));
   const [goalSaved, setGoalSaved] = useState(false);
   const [weeklyOptIn, setWeeklyOptIn] = useState(false);
   const [weeklyLoading, setWeeklyLoading] = useState(false);
   const [weeklyMsg, setWeeklyMsg] = useState<string | null>(null);
+  const [portalBusy, setPortalBusy] = useState(false);
+  const [portalMsg, setPortalMsg] = useState<string | null>(null);
 
   useEffect(() => {
     setGoalDraft(String(rewardGoal));
@@ -117,6 +132,21 @@ export function SettingsScreen({
     setGoalDraft(String(saved));
     setGoalSaved(true);
     window.setTimeout(() => setGoalSaved(false), 1600);
+  };
+
+  const handleManageSubscription = async () => {
+    if (!openPortal) return;
+    setPortalMsg(null);
+    setPortalBusy(true);
+    try {
+      const url = await openPortal();
+      if (url) window.location.href = url;
+      else setPortalMsg("Δεν βρέθηκε ενεργή συνδρομή.");
+    } catch (err) {
+      setPortalMsg(err instanceof Error ? err.message : "Σφάλμα");
+    } finally {
+      setPortalBusy(false);
+    }
   };
 
   const toggleWeeklyEmail = async (next: boolean) => {
@@ -247,7 +277,32 @@ export function SettingsScreen({
         </div>
       </section>
 
-      {tier === "free" && (
+      {showManageSubscription && (
+        <section className="settings-section">
+          <p className="section-label">Συνδρομή</p>
+          <p className="hint-text">
+            Πλάνο: <strong>{tierLabel(tier)}</strong>
+            {periodEndLabel && (
+              <>
+                {" "}
+                · ενεργό έως {periodEndLabel}
+              </>
+            )}
+            . Μπορείς να ακυρώσεις ή να αλλάξεις πλάνο ανά πάσα στιγμή μέσω Stripe.
+          </p>
+          <button
+            type="button"
+            className="btn btn-secondary btn-xl settings-upgrade"
+            disabled={portalBusy}
+            onClick={() => void handleManageSubscription()}
+          >
+            {portalBusy ? "Μετάβαση…" : "Διαχείριση συνδρομής"}
+          </button>
+          {portalMsg && <p className="error-msg">{portalMsg}</p>}
+        </section>
+      )}
+
+      {tier === "free" && !showManageSubscription && (
         <section className="settings-section">
           <p className="section-label">Συνδρομή</p>
           <p className="hint-text">

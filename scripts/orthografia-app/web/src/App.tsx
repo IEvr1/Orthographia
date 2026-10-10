@@ -741,6 +741,9 @@ function AppShell({
                 }
               : undefined
           }
+          subscriptionActive={subscription.active}
+          currentPeriodEnd={subscription.currentPeriodEnd}
+          openPortal={subscription.openPortal}
         />
       )}
 
