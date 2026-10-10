@@ -1943,7 +1943,11 @@ body {
 }
 
 .pricing-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   background: var(--white);
+  border: 2px solid transparent;
   border-radius: var(--radius);
   padding: 1.25rem;
   box-shadow: var(--shadow);
@@ -1951,7 +1955,7 @@ body {
 }
 
 .pricing-card--highlight {
-  border: 2px solid var(--teal);
+  border-color: var(--teal);
   box-shadow: 0 0 0 3px rgba(245, 200, 66, 0.35);
 }
 
@@ -1975,10 +1979,15 @@ body {
 }
 
 .pricing-card-features {
-  margin: 0 0 1rem;
+  margin: 0 0 1.25rem;
   padding-left: 1.1rem;
   color: var(--ink-soft);
   line-height: 1.5;
+}
+
+.pricing-card > .btn,
+.pricing-card > .hint-text {
+  margin-top: auto;
 }
 
 .plan-status,
