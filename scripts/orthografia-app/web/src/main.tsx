@@ -1,6 +1,7 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { ClerkProvider } from "@clerk/clerk-react";
+import { Analytics } from "@vercel/analytics/react";
 import App from "./App";
 import { ContactPage } from "./pages/ContactPage";
 import { PrivacyPage } from "./pages/PrivacyPage";
@@ -22,9 +23,13 @@ const tree = (
     {clerkKey ? (
       <ClerkProvider publishableKey={clerkKey}>
         <Root />
+        <Analytics />
       </ClerkProvider>
     ) : (
-      <Root />
+      <>
+        <Root />
+        <Analytics />
+      </>
     )}
   </StrictMode>
 );
